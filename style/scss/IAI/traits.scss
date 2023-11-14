@@ -1,0 +1,43 @@
+.traits {
+    font-size: 1.3rem;
+}
+.traits.--show {
+    .traits__item {
+        display: flex;
+    }
+    .traits__all {
+        display: none;
+    }
+}
+.traits__item {
+    display: flex;
+}
+.traits__item[data-hide="true"] {
+    display: none;
+}
+.traits__label {
+    width: 95px;
+    min-width: 95px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:after {
+        content: ":";
+    }
+}
+.traits__values {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.traits__value {
+    margin-right: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:after {
+        content: ",";
+    }
+    &:last-child {
+        &:after {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.enclosures__label {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.enclosures__list {
+    list-style: none;
+}
+.enclosures__item {
+    font-size: 1.3rem;
+}
+.enclosures__name {
+    &:before {
+        font-family: FontAwesome;
+        color: #b29370;
+        font-size: 1.5rem;
+        width: 2rem;
+        margin-right: 1rem;
+        text-align: center;
+        display: inline-block;
+    }
+}
+.enclosures__name.--swf {
+    &:before {
+        content: "\F06E";
+    }
+}
+.enclosures__name.--video {
+    &:before {
+        content: "\F008";
+    }
+}
+.enclosures__name.--audio {
+    &:before {
+        content: "\E816";
+    }
+}
+.enclosures__name.--image {
+    &:before {
+        content: "\F1C5";
+    }
+}
+.enclosures__name.--document {
+    &:before {
+        content: "\E881";
+    }
+}
+.enclosures__name.--download {
+    &:before {
+        content: "\F019";
+    }
+}

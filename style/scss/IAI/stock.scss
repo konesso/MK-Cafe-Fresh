@@ -1,0 +1,243 @@
+div.stock_cms {
+    font-weight: normal;
+    margin-bottom: 15px;
+    overflow: hidden;
+    ul {
+        padding: 0 0 0 22px !important;
+    }
+    ol {
+        padding: 0 0 0 22px !important;
+    }
+}
+div.stock_info_outline {
+    margin-bottom: 10px;
+}
+div.stock_label {
+    clear: both;
+}
+div.stock_info_sub {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+div.stock_info_details {
+    position: relative;
+    display: block;
+}
+div.stock_info_section {
+    position: relative;
+}
+div.stock_info_hours {
+    text-align: left;
+    clear: both;
+    margin-left: 0;
+    white-space: nowrap;
+    display: block;
+    padding: 5px 0 10px;
+}
+div.stock_info_hours_day {
+    padding: 2px 0;
+    position: relative;
+}
+div.stock_map_all {
+    border: 1px solid #c4c7c8;
+    clear: both;
+    margin: 20px 0;
+    position: relative;
+}
+div.stock_map_wrapper {
+    background: none repeat scroll 0 0 #c4c7c8;
+    height: 500px;
+    width: 100%;
+}
+span.stock_info_title {
+    margin-right: 5px;
+    font-weight: bold;
+}
+span.stock_info_hours_label {
+    font-family: "Arial", "Helvetica", sans-serif, "Arial", sans-serif;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: left;
+    line-height: 1;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    line-height: 1.1 !important;
+    font-size: 1.1em;
+}
+span.stock_info_hours_day {
+    float: left;
+    width: 50%;
+}
+span.loadingAddress {
+    display: none;
+}
+h1.stock_info_name {
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#stock_info_details_name {
+    span.stock_info_title {
+        display: none;
+    }
+}
+#stock_info_details_gg {
+    img {
+        margin-right: 2px;
+        vertical-align: middle;
+    }
+}
+#stock_info_details_skype {
+    img {
+        height: 17px;
+        margin-right: 2px;
+        vertical-align: middle;
+    }
+}
+#stock_info_58110 {
+    a.show_on_map {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+        i {
+            display: block;
+            font-size: 2.2em;
+        }
+    }
+    div.stock_map_wrapper {
+        height: 390px;
+    }
+    div.loadingMap {
+        height: 391px;
+    }
+    div.loadingBox {
+        top: 165px;
+    }
+}
+div.stock_map_all.hide {
+    display: none;
+    opacity: 0;
+}
+span.stock_info_hours_time {
+    float: right;
+    text-align: right;
+    width: 50%;
+    font-weight: bold;
+}
+div.stocks_cms_label {
+    clear: both;
+}
+div.stocks_cms {
+    font-weight: normal;
+    margin-bottom: 15px;
+    overflow: hidden;
+    ul {
+        padding: 0 0 0 22px !important;
+    }
+    ol {
+        padding: 0 0 0 22px !important;
+    }
+}
+div.stocks_list_label {
+    font-family: "Arial", "Helvetica", sans-serif, "Arial", sans-serif;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: left;
+    line-height: 1;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+div.stocks_list_sub {
+    text-align: left;
+}
+div.stocks_list_wrapper {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: 25%;
+    padding: 25px 10px;
+    font-size: 0.9em;
+    min-height: 124px;
+}
+span.stocks_list_name {
+    display: block;
+}
+span.stocks_list_adress {
+    display: block;
+    margin-bottom: 5px;
+}
+span.stocks_list_phone {
+    display: block;
+}
+p.stocks_list_stock {
+    padding-right: 10px;
+}
+a.stocks_list_name {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a.stocks_list_mail {
+    display: block;
+}
+a.stocks_list_more {
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px 0;
+}
+div.stocks_list_outline {
+    div.dymekWrapper {
+        overflow: hidden;
+        span.stocks_name {
+            display: block;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        span.stocks_street {
+            display: block;
+        }
+        span.stocks_city {
+            display: block;
+        }
+        a.stocks_link {
+            text-decoration: none;
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}
+.stocks_list_sub {
+    .table_row {
+        &:last-child {
+            div.stocks_list_wrapper {
+                border-bottom: none;
+            }
+        }
+    }
+}
+#stocks_map {
+    img {
+        max-width: none;
+    }
+}

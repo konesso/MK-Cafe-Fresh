@@ -1,0 +1,84 @@
+.dictionary__group {
+    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid #c4c7c8;
+    &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+.dictionary__group.--first {
+    padding-top: 2rem;
+    border-top: 1px solid #c4c7c8;
+}
+.dictionary__producer_code.--name {
+    margin-right: 0.3rem;
+    &:after {
+        content: ":";
+    }
+}
+.dictionary__label_txt {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.dictionary__name {
+    text-align: right;
+}
+.dictionary__param {
+    font-size: 1.3rem;
+}
+.dictionary__param[data-producer_code] {
+    display: none;
+}
+.dictionary__value {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    &:last-child {
+        margin: 0;
+    }
+}
+.dictionary__name.--active {
+    .dictionary__description {
+        display: block;
+    }
+    .dictionary__more {
+        &:after {
+            content: "\F106";
+        }
+    }
+}
+.dictionary__value.--active {
+    .dictionary__description {
+        display: block;
+    }
+    .dictionary__more {
+        &:after {
+            content: "\F106";
+        }
+    }
+}
+.dictionary__img {
+    display: block;
+}
+.dictionary__picture {
+    margin-top: 0.5rem;
+}
+.dictionary__description {
+    margin: 0.5rem 0 2rem;
+    display: none;
+}
+.dictionary__description.--active {
+    display: block;
+}
+.dictionary__more {
+    margin-left: 1rem;
+    white-space: nowrap;
+    &:after {
+        content: "\F107";
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: 0.3rem;
+    }
+}

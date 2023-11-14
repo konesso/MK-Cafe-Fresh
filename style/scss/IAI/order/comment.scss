@@ -1,0 +1,21 @@
+.comment_container {
+    .order2_info_sub {
+        display: none;
+    }
+    .order2_info1 {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+}
+.comment_container.open {
+    .order2_info_sub {
+        display: block;
+        &:not(.order_comments) {
+            margin-bottom: 0;
+        }
+    }
+    .order2_info_sub.order_comments {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,115 @@
+div.partners_list_header {
+    margin-bottom: 20px;
+}
+div.partners_text_info {
+    float: left;
+    margin-bottom: 20px;
+    p {
+        clear: both;
+        width: 530px;
+    }
+}
+div.partners_show_city_button {
+    float: right;
+    margin-bottom: 20px;
+}
+div.partners_map_wrapper {
+    background: none repeat scroll 0 0 #c4c7c8;
+    height: 500px;
+    width: 100%;
+    background: none repeat scroll 0 0 #c4c7c8;
+    height: 500px;
+    width: 100%;
+}
+div.partners_list_under {
+    clear: both;
+    div.city_wrapper {
+        overflow: hidden;
+        display: none;
+    }
+    a.city_mail {
+        &:hover {
+            clear: both;
+        }
+    }
+}
+div.partners_list_under_sub {
+    margin-bottom: 10px;
+}
+div.partners_list_under_wrapper {
+    border-bottom: 1px solid #c4c7c8;
+    box-sizing: content-box;
+    float: left;
+    font-size: 0.9em;
+    min-height: 124px;
+    overflow: hidden;
+    padding: 10px 0;
+    position: relative;
+    text-decoration: none;
+    width: 25%;
+}
+div.partners_list_under_wrapper_sub {
+    padding-right: 10px;
+    height: auto !important;
+}
+div.partners_list_city_search_wrapper {
+    border-bottom: 1px solid #c4c7c8;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+div.partners_list_city_list_wrapper {
+    clear: both;
+    max-height: 310px;
+    overflow: auto;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+div.partners_list_buttons {
+    border-top: 1px solid #c4c7c8;
+    overflow: hidden;
+    padding: 10px;
+}
+span.partners_list_noResult {
+    display: none;
+    float: left;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    text-align: center;
+}
+h2.partner_list_city_label {
+    margin: 0 0 5px !important;
+}
+input.partners_list_city_search {
+    float: right;
+    font-size: 0.917em;
+    padding: 4px 0;
+    text-indent: 10px;
+    width: 270px;
+}
+div#partners_list_none {
+    div#partners_list_city_pop {
+        display: none;
+    }
+    display: none;
+}
+div#partners_list_city_pop {
+    display: block;
+}
+div.partners_list_under.limit {
+    display: none;
+}
+#partners_map {
+    img {
+        max-width: none;
+    }
+}
+.partners_list_under {
+    a.show_on_map {
+        margin-top: 10px;
+    }
+}

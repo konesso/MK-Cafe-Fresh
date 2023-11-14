@@ -1,0 +1,41 @@
+#logo {
+    display: flex;
+    align-items: center;
+    .large {
+        display: none;
+        &:before {
+            content: " ";
+            display: block;
+            width: 190px;
+            height: 175px;
+            background-position: 0 -193px;
+            background-image: url(../img/icons.png);
+        }
+    }
+    .small {
+        // display: none;
+        &:before {
+            content: " ";
+            display: block;
+            width: 165px;
+            height: 49px;
+            background-position: -500px -50px;
+            background-image: url(../img/icons.png);
+        }
+    }
+}
+
+.largeLogo #Logo {
+    align-items: flex-start;
+    .small {
+        display: none;
+    }
+    .large {
+        display: block;
+    }
+}
+
+header .text-l {
+    font-size: 2em;
+    color: red;
+}

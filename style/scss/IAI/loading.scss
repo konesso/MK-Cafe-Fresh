@@ -1,0 +1,27 @@
+.less_map_loadingMap {
+    background: url("/gfx/standards/mapLoaderBg.png?r=1698404668");
+    height: 501px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.less_map_loadingContent {
+    position: relative;
+}
+.less_map_loadingBox {
+    background: #ffffff;
+    padding: 10px;
+    position: absolute;
+    opacity: 0;
+}
+.less_map_loadingMap_span {
+    color: #333;
+    display: block;
+    font-size: 11px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.less_map_loadingNav_span {
+    display: none;
+}

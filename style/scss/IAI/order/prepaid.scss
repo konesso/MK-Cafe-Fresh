@@ -1,0 +1,34 @@
+.prepaid_buttons {
+    margin-top: 30px;
+    justify-content: center;
+}
+.prepaid_buttons__button {
+    width: auto;
+    min-width: 168px;
+}
+.prepaid_buttons__button.--cancel.--medium.--outline {
+    color: #e35c5c;
+    border-color: #e35c5c;
+    background: #fff;
+    &:hover {
+        color: #333;
+        border-color: #333;
+        background: #fff;
+    }
+}
+
+.prepaid__label {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1.5rem;
+    &:after {
+        content: "";
+        width: auto;
+        height: 1px;
+        background-color: #c4c7c8;
+    }
+}

@@ -1,0 +1,155 @@
+@keyframes spin_loading {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(359deg);
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        bottom: -100%;
+    }
+    to {
+        bottom: 0;
+    }
+}
+@keyframes slideDown {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes animate-modal-return {
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes skeleton-glow {
+    50% {
+        opacity: 0.2;
+    }
+}
+@keyframes highlight-border {
+    0%,
+    50%,
+    100% {
+        box-shadow: none;
+    }
+    25%,
+    75% {
+        box-shadow: 0 0 0 1px #e35c5c;
+        border-color: #e35c5c;
+    }
+}
+@keyframes highlight-color {
+    0%,
+    50%,
+    100% {
+        box-shadow: none;
+    }
+    25%,
+    75% {
+        box-shadow: 0 0 0 1px #e35c5c;
+        border-color: #e35c5c;
+    }
+}
+
+@keyframes animate-modal-return {
+    to {
+        transform: translate(0, 0);
+    }
+}
+@keyframes animate_after {
+    0% {
+        width: 0px;
+    }
+    10% {
+        width: 0px;
+    }
+    90% {
+        width: 150px;
+    }
+    100% {
+        width: 150px;
+    }
+}
+
+@-webkit-keyframes clockwise {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes clockwise {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes donut-rotate {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    50% {
+        -webkit-transform: rotate(-140deg);
+        transform: rotate(-140deg);
+    }
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+@keyframes donut-rotate {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    50% {
+        -webkit-transform: rotate(-140deg);
+        transform: rotate(-140deg);
+    }
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        bottom: -100%;
+    }
+    to {
+        bottom: 0;
+    }
+}
+@keyframes slideDown {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}

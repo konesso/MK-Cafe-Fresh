@@ -1,0 +1,58 @@
+.n59581_tooltip {
+    position: absolute;
+    z-index: 999;
+    left: -9999px;
+    padding: 5px;
+    background: #fff;
+    font-size: 0.85em;
+    color: #333;
+    border-radius: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: calc(100% - 20px);
+    max-height: 300px;
+    overflow: scroll;
+    p {
+        padding: 2px 7px;
+    }
+}
+.n59581_instalment_note {
+    position: absolute;
+    z-index: 999;
+    left: -9999px;
+    padding: 5px;
+    background: #fff;
+    font-size: 0.85em;
+    color: #333;
+    border-radius: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: calc(100% - 20px);
+    max-height: 300px;
+    overflow: scroll;
+}
+.n59581_tooltip_dictionary {
+    position: absolute;
+    z-index: 999;
+    left: -9999px;
+    padding: 5px;
+    background: #fff;
+    font-size: 0.85em;
+    color: #333;
+    border-radius: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: calc(100% - 20px);
+    max-height: 300px;
+    overflow: scroll;
+    p {
+        padding: 2px 7px;
+        text-align: left;
+    }
+    ul {
+        padding-left: 22px;
+    }
+    ol {
+        padding-left: 22px;
+    }
+}
+.tooltipContent {
+    display: none;
+}

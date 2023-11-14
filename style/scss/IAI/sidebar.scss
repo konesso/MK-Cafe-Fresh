@@ -1,0 +1,24 @@
+html.sidebar_open {
+    #menu_search {
+        .menu_search__block {
+            display: block;
+            position: relative;
+            background: #fff;
+        }
+        .menu_search__input {
+            border: 1px solid #c4c7c8;
+            padding-left: 1rem;
+            padding-right: 5rem;
+            background: #fff;
+            color: #333;
+        }
+        .menu_search__submit {
+            height: 45px;
+            right: 0;
+            color: #333;
+            &:hover {
+                color: #b29370;
+            }
+        }
+    }
+}

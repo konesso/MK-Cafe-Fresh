@@ -1,0 +1,115 @@
+.products-bought {
+    .pagination__element {
+        min-width: 25px;
+    }
+}
+.products-bought__products-button {
+    position: relative;
+    padding: 1.5rem 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    .btn.--solid {
+        padding: 0.95rem 2.5rem;
+    }
+}
+.products-bought__checkbox-all {
+    margin: 0 auto 1rem 0;
+    .f-label {
+        &::before {
+            border-radius: 0;
+        }
+    }
+}
+.products-bought__list {
+    border-left: 1px solid #c4c7c8;
+    margin-bottom: 20px;
+    > div {
+        padding-bottom: 0;
+        margin: 0;
+    }
+}
+.products-bought__list-header {
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.9em;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #c4c7c8;
+}
+.products-bought__header-name {
+    text-align: left;
+    padding-left: 0;
+}
+.products-bought__header-date {
+    white-space: nowrap;
+}
+.products-bought__product {
+    height: 100%;
+    text-align: left;
+    margin: 0 -15px;
+    padding: 15px 10px 0;
+    border: 1px solid #c4c7c8;
+    border-left: none;
+}
+.products-bought__product-inner {
+    height: 100%;
+    flex-flow: column wrap;
+}
+.products-bought__product-info {
+    text-align: left;
+}
+.products-bought__product-single-info {
+    font-size: 0.786em;
+}
+.products-bought__product-date {
+    font-size: 0.786em;
+}
+.products-bought__product-price {
+    font-size: 0.786em;
+    strong {
+        font-size: 1.3em;
+    }
+}
+.products-bought__product-maxprice {
+    display: block;
+    font-size: 1.2rem;
+    del {
+        white-space: nowrap;
+    }
+}
+.products-bought__checkbox.--unavailable {
+    .f-label {
+        pointer-events: none;
+        &::before {
+            background: #f1f1f1;
+        }
+    }
+}
+.products-bought__checkbox {
+    .f-label {
+        height: 18px;
+        padding: 0 9px !important;
+        &::before {
+            border-radius: 0;
+        }
+    }
+}
+.products-bought__product-button {
+    padding-right: 0;
+    > * {
+        width: 100%;
+        display: block;
+    }
+}
+.products-bought__product-unavailable {
+    color: #e35c5c;
+    text-align: center;
+    padding: 0.9rem 0;
+}
+.pb_search_setting {
+    > * {
+        > label {
+            display: none;
+        }
+    }
+}

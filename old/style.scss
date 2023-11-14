@@ -1,0 +1,40 @@
+@import './style/index.scss';
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+@font-face {
+  font-family: 'Futura-Bold';
+  src: url('./assets/FuturaLT-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Futura-Book';
+  src: url('./assets/FuturaLT-Book.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Futura-Medium';
+  src: url('./assets/FuturaLT-Medium-Regular.ttf') format('truetype');
+}
+
+:root {
+  font-family: Futura-Bold, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Futura-Bold', sans-serif !important;
+  color: $color-primary !important;
+}
+
+a {
+  font-family: 'Futura-Medium', sans-serif !important;
+  color: $color-primary !important;
+}

@@ -1,0 +1,1778 @@
+.projector_page {
+    #content {
+        > #menu_messages_warning {
+            padding: 22px 65px !important;
+            margin-bottom: 15px;
+        }
+        > * {
+            &:not(.newsletter) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+    .compare {
+        border: none;
+        width: 100%;
+    }
+}
+
+.projector_bundle {
+    display: none;
+    padding-bottom: 1.3rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #c4c7c8;
+    select {
+        margin-bottom: 0.7rem;
+        &:not(.f-select-select) {
+            height: 25px;
+            font-size: 1.2rem;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            width: 100%;
+            display: block;
+        }
+    }
+    .f-dropdown {
+        margin-bottom: 0.7rem;
+        .f-dropdown-toggle {
+            height: 25px;
+            font-size: 1.2rem;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            width: 100%;
+            display: block;
+            padding-right: 2.5rem;
+        }
+        .f-dropdown-label {
+            padding-right: 0.3rem;
+            font-weight: normal;
+        }
+        .f-dropdown-button {
+            font-weight: bold;
+        }
+        .f-dropdown-li.--dependent {
+            .f-dropdown-item {
+                color: #e35c5c;
+            }
+        }
+    }
+    option.--dependent {
+        color: #e35c5c;
+    }
+}
+.projector_bundle.--skeleton {
+    .projector_bundle__label {
+        background: #f1f1f1;
+        border-radius: 0;
+        height: 26px;
+    }
+    .projector_bundle__icon {
+        background: #f1f1f1;
+        border-radius: 0;
+    }
+    .projector_bundle__name {
+        background: #f1f1f1;
+        border-radius: 0;
+        height: 30px;
+    }
+    .projector_bundle__price_wrapper {
+        background: #f1f1f1;
+        border-radius: 0;
+        height: 19px;
+    }
+    .projector_bundle__option {
+        > * {
+            background: #f1f1f1;
+            border-radius: 0;
+            height: 25px;
+            margin-bottom: 0.5rem;
+            width: 100%;
+        }
+    }
+    .projector_bundle__checkbox_group {
+        background: #f1f1f1;
+        border-radius: 0;
+        width: 18px;
+        height: 18px;
+        margin-right: 1.5rem;
+    }
+    .projector_bundle__item {
+        &:nth-child(n + 3) {
+            display: none;
+        }
+    }
+    .projector_bundle__rebate_label {
+        height: 38px;
+    }
+    .projector_bundle__rebate_wrapper {
+        height: 32px;
+    }
+}
+.projector_bundle__rebate {
+    background: #f1f1f1;
+    border: 1px solid #c3c7c8;
+    border-radius: 0;
+    padding: 1rem 6rem 1rem 1rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+    &:before {
+        content: "";
+        background: #f1f1f1 none repeat scroll 0 0;
+        color: #b29370;
+        display: block;
+        height: 22px;
+        margin-top: -11px;
+        position: absolute;
+        width: 22px;
+        box-sizing: content-box;
+        z-index: 2;
+        right: 20px;
+        top: 50%;
+        transform: rotate(40deg);
+    }
+    &:after {
+        content: "";
+        background: #f1f1f1 none repeat scroll 0 0;
+        color: #b29370;
+        display: block;
+        height: 22px;
+        margin-top: -11px;
+        position: absolute;
+        width: 22px;
+        box-sizing: content-box;
+        z-index: 2;
+        right: 20px;
+        top: 50%;
+        content: "%";
+        font-size: 2rem;
+        line-height: 22px;
+        text-align: center;
+    }
+}
+.projector_bundle__rebate_wrapper {
+    &:before {
+        border: 2px solid #c4c7c8;
+        content: "";
+        display: block;
+        height: 22px;
+        margin-top: -13px;
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        width: 22px;
+        z-index: 1;
+        box-sizing: content-box;
+        transform: rotate(40deg);
+    }
+    &:after {
+        border: 2px solid #c4c7c8;
+        content: "";
+        display: block;
+        height: 22px;
+        margin-top: -13px;
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        width: 22px;
+        z-index: 1;
+        box-sizing: content-box;
+    }
+}
+.projector_bundle__rebate_label {
+    color: #333;
+}
+.projector_bundle__label {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+.projector_bundle__block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+.projector_bundle__item {
+    width: 50%;
+    padding: 0 1rem;
+}
+.projector_bundle__checkbox_group {
+    align-self: center;
+    margin-bottom: 0.7rem;
+}
+.projector_bundle__checkbox_label {
+    height: 1.8rem;
+}
+.projector_bundle__icon {
+    margin-bottom: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    img {
+        max-height: 100px;
+        width: auto;
+    }
+}
+.projector_bundle__name {
+    margin-bottom: 0.7rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.projector_bundle__price_wrapper {
+    margin-bottom: 0.7rem;
+}
+.projector_bundle__availability {
+    margin-bottom: 0.7rem;
+    color: #e35c5c;
+    font-size: 1.2rem;
+}
+.projector_bundle__availability_quantity {
+    margin-bottom: 0.7rem;
+    color: #e35c5c;
+    font-size: 1.2rem;
+    a {
+        display: block;
+    }
+}
+.projector_bundle__option.--chart {
+    margin-bottom: 0.7rem;
+    width: 100%;
+}
+.projector_bundle__size_button {
+    margin-bottom: 0.7rem;
+    height: 25px;
+    font-size: 1.2rem;
+    min-width: 135px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #c4c7c8;
+    background: #fff;
+    color: #333;
+    border-radius: 0;
+    padding: 0.2rem 0.5rem;
+    &:hover {
+        border: 1px solid #b29370;
+    }
+}
+.projector_bundle__name_quantity {
+    display: none;
+}
+.projector_bundle__name_quantity.--active {
+    display: inline;
+}
+.projector_bundle__price {
+    font-size: 1.5rem;
+}
+.projector_bundle__chart_link {
+    font-size: 1.2rem;
+}
+.projector_bundle__options[data-only_onesize] {
+    display: none;
+}
+.projector_bundle__option.--conflict {
+    .f-dropdown-toggle {
+        border: 1px solid #e35c5c;
+        box-shadow: 0 0 0 1px #e35c5c;
+        color: #e35c5c;
+    }
+    .projector_bundle__size_button {
+        border: 1px solid #e35c5c;
+        box-shadow: 0 0 0 1px #e35c5c;
+        color: #e35c5c;
+    }
+}
+.projector_bundle__option.--alert {
+    .f-dropdown-toggle {
+        border: 1px solid #e35c5c;
+        box-shadow: 0 0 0 1px #e35c5c;
+        color: #e35c5c;
+    }
+    .projector_bundle__size_button {
+        border: 1px solid #e35c5c;
+        box-shadow: 0 0 0 1px #e35c5c;
+        color: #e35c5c;
+    }
+}
+.projector_bundle__option[data-onesize] {
+    display: none;
+}
+.projector_bundle__option[data-hide] {
+    display: none;
+}
+.projector_bundle__size_button.--selected {
+    font-weight: bold;
+    border: 1px solid #b29370;
+    box-shadow: inset 0 0 0 1px #b29370;
+}
+.projector_bundle__size_button.--disabled {
+    color: #e35c5c;
+    text-decoration: line-through;
+}
+.projector_bundle__size_name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1;
+}
+.projector_bundle__arrow {
+    text-decoration: none;
+    font-size: 2.2rem;
+    padding: 0 1rem;
+}
+.projector_bundle__arrow.--prev {
+    margin-left: auto;
+}
+.projector_bundle__arrow.slick-disabled {
+    opacity: 0.2;
+}
+
+.projector_smile {
+    order: 1;
+}
+.projector_smile__block.--main {
+    border-radius: 0;
+    padding: 1rem;
+    background: #fcf4f4;
+    color: #333;
+}
+.projector_smile__block.--desc {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+.projector_smile__logo {
+    max-width: 72px;
+    display: block;
+}
+.projector_smile__inpost {
+    display: flex;
+    align-items: center;
+}
+.projector_smile__inpost_text {
+    padding: 0.5rem 0;
+}
+.projector_smile__inpost_logo {
+    max-width: 51px;
+    margin-left: 0.5rem;
+}
+.projector_smile__link {
+    margin-top: -0.5rem;
+    display: block;
+    white-space: nowrap;
+    color: #333;
+    text-decoration: underline;
+    &:hover {
+        color: #b29370;
+    }
+}
+.projector_details {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    .projector_purchase {
+        border-radius: 0;
+        display: flex;
+        padding: 0 20px;
+        background: #f1f1f1;
+        color: #333;
+        border: 1px solid #f1f1f1;
+        .f-label {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
+            color: #333 !important;
+        }
+    }
+    .projector_purchase__price_wrapper {
+        white-space: normal;
+        font-size: 1.3rem;
+    }
+    .projector_purchase__yousave {
+        white-space: normal;
+        color: #e35c5c;
+        font-size: 1.3rem;
+        display: none;
+    }
+    .projector_purchase__label {
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+    .projector_purchase__yousave.--active {
+        display: inline;
+    }
+    .projector_purchase__price_before {
+        margin-right: 5px;
+    }
+    .projector_purchase__price {
+        font-size: 1.4rem;
+    }
+    .projector_versions {
+        margin-bottom: 2rem;
+        select {
+            width: 100%;
+            height: 40px;
+            option.--disabled {
+                color: #999;
+            }
+        }
+        .f-dropdown {
+            margin: 0;
+            width: 100%;
+        }
+        .f-dropdown-toggle {
+            height: 40px;
+            font-size: 1.2rem;
+            .gfx_wrapper {
+                display: none;
+            }
+        }
+        .f-dropdown-button {
+            font-weight: bold;
+            .soldout {
+                display: none;
+            }
+        }
+        .f-dropdown-li.--disabled {
+            .f-dropdown-item {
+                text-decoration: none;
+                .name {
+                    text-decoration: line-through;
+                }
+            }
+        }
+        .f-dropdown-item {
+            display: flex;
+            align-items: center;
+            .gfx_wrapper {
+                display: flex;
+                align-items: center;
+            }
+            .gfx {
+                max-width: 40px;
+                display: block;
+                margin-right: 1rem;
+            }
+            .soldout {
+                margin-left: auto;
+            }
+        }
+    }
+    .projector_multiversions {
+        margin-bottom: 2rem;
+        select {
+            width: 100%;
+            height: 40px;
+            option.--disabled {
+                color: #999;
+            }
+        }
+        .f-dropdown {
+            margin: 0;
+            width: 100%;
+        }
+        .f-dropdown-toggle {
+            height: 40px;
+            font-size: 1.2rem;
+            .gfx_wrapper {
+                display: none;
+            }
+        }
+        .f-dropdown-button {
+            font-weight: bold;
+            .soldout {
+                display: none;
+            }
+        }
+        .f-dropdown-li.--disabled {
+            .f-dropdown-item {
+                text-decoration: none;
+                .name {
+                    text-decoration: line-through;
+                }
+            }
+        }
+        .f-dropdown-item {
+            display: flex;
+            align-items: center;
+            .gfx_wrapper {
+                display: flex;
+                align-items: center;
+            }
+            .gfx {
+                max-width: 40px;
+                display: block;
+                margin-right: 1rem;
+            }
+            .soldout {
+                margin-left: auto;
+            }
+        }
+        .f-dropdown-li.--dependent {
+            .conflict_txt {
+                display: block;
+                color: #e35c5c;
+            }
+        }
+        .conflict_txt {
+            display: none;
+        }
+    }
+    .projector_sizes {
+        margin-bottom: 2rem;
+        select {
+            width: 100%;
+            height: 40px;
+            option.--disabled {
+                color: #999;
+            }
+        }
+        .f-dropdown {
+            margin: 0;
+            width: 100%;
+        }
+        .f-dropdown-toggle {
+            height: 40px;
+            font-size: 1.2rem;
+            .gfx_wrapper {
+                display: none;
+            }
+        }
+        .f-dropdown-button {
+            font-weight: bold;
+            .soldout {
+                display: none;
+            }
+            .count {
+                display: none;
+            }
+        }
+        .f-dropdown-li.--disabled {
+            .f-dropdown-item {
+                text-decoration: none;
+                text-decoration: none;
+                .name {
+                    text-decoration: line-through;
+                }
+            }
+            .name {
+                text-decoration: line-through;
+            }
+        }
+        .f-dropdown-item {
+            display: flex;
+            align-items: center;
+            .gfx_wrapper {
+                display: flex;
+                align-items: center;
+            }
+            .gfx {
+                max-width: 40px;
+                display: block;
+                margin-right: 1rem;
+            }
+            .soldout {
+                margin-left: auto;
+            }
+            .count {
+                margin-left: auto;
+            }
+        }
+        &:not([data-onesize]) + .projector_chart {
+            margin-top: -1rem;
+        }
+    }
+    .projector_subscription {
+        margin-bottom: 2rem;
+        select {
+            width: 100%;
+            height: 40px;
+            option.--disabled {
+                color: #999;
+            }
+        }
+        .f-dropdown {
+            margin: 0;
+            width: 100%;
+        }
+        .f-dropdown-toggle {
+            height: 40px;
+            font-size: 1.2rem;
+            .gfx_wrapper {
+                display: none;
+            }
+        }
+        .f-dropdown-button {
+            font-weight: bold;
+            .soldout {
+                display: none;
+            }
+        }
+        .f-dropdown-li.--disabled {
+            .f-dropdown-item {
+                text-decoration: none;
+                .name {
+                    text-decoration: line-through;
+                }
+            }
+        }
+        .f-dropdown-item {
+            display: flex;
+            align-items: center;
+            .gfx_wrapper {
+                display: flex;
+                align-items: center;
+            }
+            .gfx {
+                max-width: 40px;
+                display: block;
+                margin-right: 1rem;
+            }
+            .soldout {
+                margin-left: auto;
+            }
+        }
+    }
+    .projector_versions__label {
+        display: block;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:after {
+            content: ":";
+        }
+    }
+    .projector_multiversions__label {
+        display: block;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:after {
+            content: ":";
+        }
+    }
+    .projector_sizes__label {
+        display: block;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:after {
+            content: ":";
+        }
+    }
+    .projector_subscription__label {
+        display: block;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:after {
+            content: ":";
+        }
+    }
+    .projector_subscription_rebates {
+        padding-left: 33px;
+        margin: -15px 0 20px;
+        position: relative;
+    }
+    .projector_subscription[data-border] {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #c4c7c8;
+    }
+    .projector_subscription__sub {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -0.5rem;
+        position: relative;
+    }
+    .projector_subscription__item {
+        min-width: 90px;
+        min-height: 35px;
+        font-size: 1.2rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #c4c7c8;
+        background: #fff;
+        color: #333;
+        border-radius: 0;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        z-index: 1;
+        &:hover {
+            border: 1px solid #b29370;
+        }
+    }
+    .projector_subscription__item.--selected {
+        font-weight: bold;
+        border: 1px solid #b29370;
+        box-shadow: inset 0 0 0 1px #b29370;
+    }
+    .projector_subscription__item.--disabled {
+        color: #e35c5c;
+        text-decoration: line-through;
+    }
+    .projector_subscription__name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .projector_versions[data-select] {
+        .projector_versions__sub {
+            margin: 0;
+        }
+    }
+    .projector_versions__sub {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -0.5rem;
+        position: relative;
+    }
+    .projector_versions__item {
+        min-width: 90px;
+        width: 90px;
+        min-height: 35px;
+        font-size: 1.2rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #c4c7c8;
+        background: #fff;
+        color: #333;
+        border-radius: 0;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        &:hover {
+            border: 1px solid #b29370;
+        }
+    }
+    .projector_versions__item.--selected {
+        font-weight: bold;
+        border: 1px solid #b29370;
+        box-shadow: inset 0 0 0 1px #b29370;
+    }
+    .projector_versions__item.--disabled {
+        &:not(.--selected) {
+            opacity: 0.6;
+        }
+    }
+    .projector_versions__gfx {
+        img {
+            display: block;
+        }
+    }
+    .projector_versions__name {
+        display: none;
+    }
+    .projector_multiversions__item {
+        margin-bottom: 1rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .projector_multiversions__item.--conflict {
+        .f-dropdown-toggle {
+            border: 1px solid #e35c5c;
+            box-shadow: 0 0 0 1px #e35c5c;
+            color: #e35c5c;
+        }
+    }
+    .projector_sizes[data-select] {
+        .projector_sizes__sub {
+            margin: 0;
+        }
+    }
+    .projector_sizes[data-onesize] {
+        display: none;
+    }
+    .projector_sizes__sub {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -0.5rem;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            top: -0.5rem;
+            left: -1rem;
+            right: -1rem;
+            bottom: -0.5rem;
+            background-color: #d9706c;
+            opacity: 0;
+        }
+        .alert {
+            position: absolute;
+            top: -0.5rem;
+            z-index: 100;
+            background-color: #fff;
+            left: -1rem;
+            right: -1rem;
+            transform: translateY(-100%);
+            height: 52px;
+            border: 2px solid #d9706c;
+            border-bottom: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            font-weight: 600;
+            opacity: 0;
+            transition: 0.3s all;
+            &:before {
+                position: absolute;
+                content: "\E811";
+                font-family: fontawesome;
+                left: 1.5rem;
+                top: 50%;
+                font-size: 2rem;
+                color: #b29370;
+                transform: translateY(-50%);
+            }
+        }
+        .alert.--open {
+            opacity: 1;
+        }
+    }
+    .projector_sizes__sub.--alert {
+        &:before {
+            transition: 0.3s all;
+            opacity: 1;
+        }
+    }
+    .projector_sizes__item {
+        min-width: 90px;
+        min-height: 35px;
+        font-size: 1.2rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #c4c7c8;
+        background: #fff;
+        color: #333;
+        border-radius: 0;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        z-index: 1;
+        &:hover {
+            border: 1px solid #b29370;
+        }
+    }
+    .projector_sizes__item.--selected {
+        font-weight: bold;
+        border: 1px solid #b29370;
+        box-shadow: inset 0 0 0 1px #b29370;
+    }
+    .projector_sizes__item.--disabled {
+        color: #e35c5c;
+        text-decoration: line-through;
+    }
+    .projector_sizes__name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .projector_chart {
+        margin-bottom: 2rem;
+    }
+    .projector_prices {
+        margin-bottom: 2rem;
+    }
+    .projector_prices.--only-points {
+        .projector_prices__points {
+            margin-top: 0;
+        }
+        .projector_prices__price_wrapper {
+            margin-bottom: 0;
+        }
+    }
+    .projector_prices__contact {
+        img {
+            display: none;
+        }
+        span {
+            font-size: 2rem;
+        }
+    }
+    .projector_prices__maxprice_wrapper {
+        color: #e35c5c;
+        margin-bottom: 0.5rem;
+        .omnibus_label {
+            color: #333;
+        }
+        .omnibus_short {
+            color: #333;
+        }
+    }
+    .projector_prices__maxprice {
+        white-space: nowrap;
+        color: #333;
+    }
+    .projector_prices__unit_sellby {
+        padding-right: 3px;
+    }
+    .projector_prices__percent {
+        padding-left: 3px;
+    }
+    .projector_prices__price_wrapper {
+        margin-bottom: 2rem;
+    }
+    .projector_prices__price {
+        font-size: 3.5rem;
+        line-height: 1;
+        span {
+            white-space: nowrap;
+        }
+    }
+    .projector_prices__info {
+        line-height: 1.4;
+        margin-left: 0.5rem;
+        display: inline;
+    }
+    .projector_prices__period {
+        display: none;
+    }
+    .projector_prices__points_buy {
+        &:not(.--span) {
+            color: #b29370;
+            text-decoration: underline;
+            font-weight: bold;
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+    .projector_prices__srp {
+        padding-left: 0.3rem;
+    }
+    .projector_prices__sellby_label {
+        padding-right: 0.3rem;
+    }
+    .projector_prices__sellby_unit {
+        padding-left: 0.3rem;
+    }
+    .projector_prices__unit_converted_price {
+        padding-left: 0.3rem;
+    }
+    .projector_express {
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+    .projector_express_checkout__button {
+        margin-bottom: 1rem;
+    }
+    .projector_express_checkout__button.--web-authn {
+        &:before {
+            content: "\E8B1";
+            font-family: FontAwesome;
+            font-weight: normal;
+            margin-right: 10px;
+            font-size: 1.8rem;
+            line-height: 16px;
+        }
+    }
+    .projector_express_checkout__button.btn.--large.--solid.--loading {
+        position: relative;
+        pointer-events: none;
+        transition: border-color 0s;
+        border-color: rgba(255, 255, 255, 0.8);
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 2;
+        }
+        &:after {
+            content: "\E838";
+            font-family: FontAwesome;
+            position: absolute;
+            z-index: 2;
+            animation: spin_loading 1.5s infinite linear;
+            top: 50%;
+            left: 50%;
+            font-size: 2.5rem;
+            color: #333;
+        }
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    .projector_express_checkout_clause {
+        font-size: 1.1rem;
+    }
+    .projector_buy {
+        display: flex;
+        margin-bottom: 1.5rem;
+        flex-direction: column;
+    }
+    .projector_buy.--more {
+        .projector_buy__more {
+            pointer-events: auto;
+        }
+        .f-dropdown-button {
+            display: none;
+        }
+    }
+    .projector_buy__number_wrapper {
+        margin-right: 1.5rem;
+        position: relative;
+        margin-bottom: 2rem;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+    }
+    .projector_buy__number_inputs {
+        max-width: 70px;
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    .projector_buy__number_amounts {
+        margin-left: 1.5rem;
+    }
+    .projector_buy__button {
+        flex: 1;
+    }
+    .projector_buy__button[data-express-checkout] {
+        opacity: 0.8;
+    }
+    .projector_buy__number {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        .f-control {
+            text-align: center;
+            height: 100%;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+        }
+        .f-dropdown-menu {
+            min-width: 75px;
+        }
+        .f-dropdown-item {
+            padding: 1rem 1.5rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .f-dropdown-button {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: none;
+        }
+    }
+    .projector_buy__number.--disabled {
+        select {
+            display: none;
+        }
+    }
+    .projector_buy__number.f-select {
+        text-align: center;
+        height: 100%;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .projector_buy__more {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2.8rem;
+        left: 1.1rem;
+        z-index: 1;
+        pointer-events: none;
+        height: 38px;
+    }
+    .projector_buy__more.--active {
+        pointer-events: auto;
+    }
+    .projector_buy__more_input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 0;
+        text-align: center;
+        font-size: 1.4rem;
+        background: #fff;
+        color: #333;
+        border-radius: 0;
+    }
+    .projector_tell_availability {
+        margin-bottom: 2rem;
+        margin-top: -1rem;
+    }
+    .projector_tell_availability__block.--dialog {
+        display: none;
+    }
+    .projector_tell_availability__link {
+        width: 100%;
+    }
+    .projector_oneclick {
+        margin-bottom: 2rem;
+    }
+    .projector_oneclick[data-lang="eng"] {
+        .projector_oneclick__text.--fast {
+            display: inline-flex;
+            strong {
+                order: -1;
+                padding-right: 0.4rem;
+            }
+        }
+    }
+    .projector_oneclick[data-lang="ger"] {
+        .projector_oneclick__text.--fast {
+            display: inline-flex;
+            strong {
+                order: -1;
+                padding-right: 0.4rem;
+            }
+        }
+    }
+    .projector_oneclick[data-hide] {
+        display: none;
+    }
+    .projector_oneclick__label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        &:before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: #c4c7c8;
+        }
+        &:after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: #c4c7c8;
+        }
+    }
+    .projector_oneclick__info {
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .projector_oneclick__text {
+        white-space: nowrap;
+    }
+    .projector_oneclick__text.--registration {
+        display: block;
+        font-size: 1.1rem;
+    }
+    .projector_oneclick__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -0.5rem;
+        justify-content: center;
+    }
+    .projector_oneclick__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border-radius: 0;
+        height: 45px;
+        margin: 0.5rem;
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+        max-width: 300px;
+        overflow: hidden;
+        &:not(.--checked) {
+            > * {
+                pointer-events: none;
+            }
+        }
+        img {
+            max-height: 100%;
+        }
+    }
+    .projector_oneclick__item.--loading {
+        position: relative;
+        pointer-events: none;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 2;
+        }
+        &:after {
+            content: "\E838";
+            font-family: FontAwesome;
+            position: absolute;
+            z-index: 2;
+            animation: spin_loading 1.5s infinite linear;
+            top: 50%;
+            left: 50%;
+            font-size: 2.5rem;
+            color: #333;
+        }
+    }
+    .projector_oneclick[data-columns] {
+        .projector_oneclick__items {
+            flex-wrap: nowrap !important;
+        }
+        .projector_oneclick__item {
+            background: transparent !important;
+            cursor: unset !important;
+            > div {
+                min-width: unset !important;
+            }
+        }
+        .projector_oneclick__item.--paypal {
+            > div {
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: calc(100% + 2px);
+                    height: 45px;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: #ffc439;
+                    pointer-events: none;
+                    transform: translateY(-50%);
+                    z-index: -1;
+                }
+                &:hover {
+                    &:before {
+                        filter: brightness(0.95);
+                    }
+                }
+            }
+        }
+        .projector_oneclick__item.--googlePay {
+            &:before {
+                content: "";
+                position: absolute;
+                width: calc(100% + 0px);
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #000;
+                z-index: -1;
+            }
+            &:hover {
+                &:before {
+                    opacity: 0.75;
+                }
+            }
+        }
+    }
+    .projector_multipack {
+        margin-bottom: 2rem;
+    }
+    .projector_multipack.--active {
+        .projector_multipack__price {
+            display: inline;
+        }
+    }
+    .projector_multipack.--hide {
+        display: none;
+    }
+    .projector_multipack__label {
+        margin-bottom: 1rem;
+        display: block;
+    }
+    .projector_multipack__item {
+        line-height: 1;
+        margin-bottom: 1rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .projector_multipack__unit {
+        padding: 0 3px;
+    }
+    .projector_multipack__price {
+        padding-right: 3px;
+        display: none;
+    }
+    .projector_info.--loading {
+        .projector_info__icon {
+            &:before {
+                content: "\E838";
+                animation: spin 1.5s infinite linear;
+                margin-top: -0.2rem;
+            }
+        }
+    }
+    .projector_info__item {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    .projector_info__icon {
+        width: 20px;
+        min-width: 20px;
+        margin-right: 1rem;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:before {
+            font-family: FontAwesome;
+        }
+    }
+    .projector_info__link {
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .projector_status.--loading {
+        overflow: initial;
+        position: relative;
+        pointer-events: none;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 2;
+        }
+        &:after {
+            content: "\E838";
+            font-family: FontAwesome;
+            position: absolute;
+            z-index: 2;
+            animation: spin_loading 1.5s infinite linear;
+            top: 50%;
+            left: 50%;
+            font-size: 2.5rem;
+            color: #333;
+        }
+    }
+    .projector_status.--status-hide {
+        display: none;
+        strong {
+            font-weight: normal;
+        }
+        .projector_status__gfx {
+            display: none;
+        }
+        .projector_status__description {
+            display: none;
+        }
+        .projector_status__gfx_wrapper {
+            &:before {
+                content: "\E879";
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .projector_status.--status-hide.--time-show {
+        display: flex;
+    }
+    .projector_status.--status-hide.--unknown-show {
+        display: flex;
+    }
+    .projector_status.--phone-disable {
+        display: none;
+    }
+    .projector_status {
+        &:not(.--status-hide) {
+            .projector_status__description {
+                display: inline !important;
+            }
+        }
+    }
+    .projector_status.--time-show {
+        .projector_status__description {
+            &:after {
+                content: ".";
+                line-break: anywhere;
+            }
+        }
+    }
+    .projector_status__wrapper {
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        > div {
+            display: inline;
+        }
+    }
+    .projector_status__unknown {
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .projector_status__description {
+        margin-right: 0.3rem;
+    }
+    .projector_shipping.--loading {
+        pointer-events: none;
+        .projector_shipping__icon {
+            &:before {
+                content: "\E838";
+                animation: spin 1.5s infinite linear;
+                margin-top: -0.2rem;
+            }
+        }
+    }
+    .projector_shipping__icon {
+        &:before {
+            content: "\E883";
+            font-size: 2rem;
+            margin-top: -0.2rem;
+        }
+    }
+    .projector_shipping__price {
+        white-space: nowrap;
+    }
+    .projector_returns__icon {
+        &:before {
+            content: "\E884";
+            font-size: 1.2rem;
+            margin-top: -0.2rem;
+        }
+    }
+    .projector_stocks__icon {
+        &:before {
+            content: "\E815";
+            font-size: 1.7rem;
+            margin-top: -0.2rem;
+        }
+    }
+    .projector_subscription_info__icon {
+        &:before {
+            content: "\E8AC";
+            font-size: 1.8rem;
+            margin-top: -0.2rem;
+        }
+    }
+    .projector_abort_subscription_info__icon {
+        &:before {
+            content: "\F1DE";
+            font-size: 1.6rem;
+            margin-top: -0.2rem;
+            font-weight: bold;
+        }
+    }
+    .projector_safe__icon {
+        &:before {
+            content: "\E89D";
+            font-size: 1.6rem;
+            margin-top: -0.4rem;
+            font-weight: bold;
+        }
+    }
+    .projector_instalments.--active {
+        .projector_instalments__items {
+            display: block;
+        }
+    }
+    .projector_instalments__icon {
+        &:before {
+            content: "\E89C";
+            font-size: 1.6rem;
+        }
+    }
+    .projector_instalments__items {
+        display: none;
+        margin-left: 3rem;
+        width: 100%;
+    }
+    .projector_instalments__item {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .projector_instalments__item_icon {
+        width: 30px;
+        margin-right: 10px;
+    }
+    .projector_instalments__item_text {
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .projector_paypo__icon {
+        &:before {
+            content: "\F133";
+            font-size: 1.6rem;
+        }
+    }
+    .projector_points_recive__icon {
+        &:before {
+            content: "\E8A5";
+            font-size: 1.7rem;
+        }
+    }
+    .projector_points_recive__info {
+        overflow: visible;
+    }
+    .projector_points_recive__value {
+        margin-right: 0.5rem;
+    }
+    .projector_points_recive {
+        .css_tip {
+            margin-left: 0;
+        }
+    }
+    .omnibus_price {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        margin: -15px 0 20px;
+    }
+    .omnibus_price.--hide {
+        display: none;
+    }
+}
+.projector_details.disable {
+    .projector_multipack {
+        display: none;
+    }
+    .projector_oneclick {
+        display: none;
+    }
+    .projector_buy {
+        pointer-events: none;
+        opacity: 0.3;
+    }
+}
+.projector_details.--phone {
+    .projector_multipack {
+        display: none;
+    }
+    .projector_oneclick {
+        display: none;
+    }
+    .projector_buy {
+        pointer-events: none;
+        opacity: 0.3;
+    }
+}
+.projector_details.--submitting {
+    .projector_buy__button {
+        position: relative;
+        pointer-events: none;
+        transition: border-color 0s;
+        border-color: rgba(255, 255, 255, 0.8);
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 2;
+        }
+        &:after {
+            content: "\E838";
+            font-family: FontAwesome;
+            position: absolute;
+            z-index: 2;
+            animation: spin_loading 1.5s infinite linear;
+            top: 50%;
+            left: 50%;
+            font-size: 2.5rem;
+            color: #333;
+        }
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}
+.projector_details[data-sizes_disable] {
+    .projector_oneclick {
+        display: none;
+    }
+}
+.projector_details__wrapper {
+    border: 1px solid #c4c7c8;
+    border-radius: 0;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+.projector_details__advanceprice {
+    margin-bottom: 2rem;
+}
+.projector_details[data-subscription] {
+    &:not([data-subscription="only"]) {
+        .projector_details__wrapper {
+            border-top: none;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            padding-top: 5px;
+            margin-bottom: 15px;
+        }
+    }
+}
+.projector_details[data-subscription="true"] {
+    .projector_purchase.--subscription {
+        border: 1px solid #c4c7c8;
+        border-bottom: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background: #fff;
+        color: #333;
+        margin-bottom: 0;
+        .f-label {
+            color: #333 !important;
+        }
+    }
+    .projector_purchase.--normal {
+        order: 1;
+    }
+    .projector_info__item.--stocks {
+        display: none;
+    }
+    .projector_info__item.--instalments {
+        display: none;
+    }
+    .projector_info__item.--paypo {
+        display: none;
+    }
+    .projector_prices__vat {
+        display: none !important;
+    }
+    .projector_prices__unit_sep {
+        display: none !important;
+    }
+    .projector_prices__unit_sellby {
+        display: none !important;
+    }
+    .projector_prices__unit {
+        display: none !important;
+    }
+    .projector_prices__collection_selected {
+        display: none !important;
+    }
+    .projector_prices__period {
+        display: inline;
+    }
+    .projector_oneclick {
+        display: none !important;
+    }
+    .projector_prices__points {
+        display: none !important;
+    }
+}
+.projector_details[data-subscription="only"] {
+    .projector_purchase.--subscription {
+        border: 1px solid #c4c7c8;
+        border-bottom: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background: #fff;
+        color: #333;
+        margin-bottom: 0;
+        .f-label {
+            color: #333 !important;
+        }
+    }
+    .projector_purchase.--normal {
+        order: 1;
+    }
+    .projector_info__item.--stocks {
+        display: none;
+    }
+    .projector_info__item.--instalments {
+        display: none;
+    }
+    .projector_info__item.--paypo {
+        display: none;
+    }
+    .projector_prices__vat {
+        display: none !important;
+    }
+    .projector_prices__unit_sep {
+        display: none !important;
+    }
+    .projector_prices__unit_sellby {
+        display: none !important;
+    }
+    .projector_prices__unit {
+        display: none !important;
+    }
+    .projector_prices__collection_selected {
+        display: none !important;
+    }
+    .projector_prices__period {
+        display: inline;
+    }
+    .projector_oneclick {
+        display: none !important;
+    }
+    .projector_prices__points {
+        display: none !important;
+    }
+}
+.projector_details[data-subscription="false"] {
+    .projector_purchase.--normal {
+        border: 1px solid #c4c7c8;
+        border-bottom: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background: #fff;
+        color: #333;
+        margin-bottom: 0;
+        .f-label {
+            color: #333 !important;
+        }
+    }
+    .projector_subscription {
+        display: none;
+    }
+    .projector_subscription_rebates {
+        display: none;
+    }
+    .projector_info__item.--subscription {
+        display: none;
+    }
+    .projector_info__item.--abort-subscription {
+        display: none;
+    }
+    .projector_purchase__price_wrapper {
+        display: none;
+    }
+    .projector_details__wrapper {
+        order: 1;
+    }
+}

@@ -1,0 +1,136 @@
+.modal.--shipping-info {
+    .menu_messages_message {
+        margin: 0;
+    }
+}
+.shipping_info__top {
+    background: #cce5ff;
+    color: #004085;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    a {
+        color: #004085;
+        &:hover {
+            color: #333;
+        }
+    }
+}
+.shipping_info__current_region {
+    margin-bottom: 5px;
+}
+.shipping_info__body {
+    margin: -2rem 0 2rem;
+}
+.shipping_info__block {
+    padding-top: 2rem;
+}
+.shipping_info__label {
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+.shipping_info__header {
+    display: flex;
+}
+.shipping_info__header_item {
+    font-size: 1.2rem;
+    color: #999;
+}
+.shipping_info__header_item.--icon-name {
+    width: calc(50% + 15px);
+}
+.shipping_info__header_item.--delivery {
+    flex: 2;
+    text-align: center;
+    margin: 0 1.5rem;
+}
+.shipping_info__header_item.--cost {
+    flex: 1;
+    text-align: right;
+}
+.shipping_info__courier {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #c4c7c8;
+    padding: 1rem 0;
+    &:last-child {
+        border-bottom: none;
+    }
+}
+.shipping_info__item {
+    font-size: 1.2rem;
+}
+.shipping_info__item.--icon {
+    width: 50px;
+    min-width: 50px;
+    margin-right: 1.5rem;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+.shipping_info__item.--name {
+    flex: 3;
+}
+.shipping_info__item.--delivery {
+    flex: 2;
+    text-align: center;
+    margin: 0 1.5rem;
+}
+.shipping_info__item.--cost {
+    flex: 1;
+    text-align: right;
+    white-space: nowrap;
+    font-size: 1.3rem;
+}
+.shipping_info__vat {
+    font-size: 1.2rem;
+    color: #999;
+}
+
+div.n69372_shipping_balance {
+    background: #f1f1f1;
+    padding: 15px 10px 15px 85px;
+    position: relative;
+    margin: 0px -15px 0;
+    width: calc(100% + 3rem);
+    &:after {
+        background: #10ac82 none repeat scroll 0 0;
+        border-radius: 50%;
+        color: #fff;
+        content: "\f0d1";
+        display: block;
+        float: left;
+        font-family: fontawesome;
+        font-size: 1.75em;
+        font-weight: 400;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        text-indent: -1px;
+        width: 45px;
+        position: absolute;
+        top: 50%;
+        left: 19px;
+        margin-top: -23px;
+    }
+    strong {
+        color: #333;
+        display: block;
+        font-size: 0.85714286em;
+        text-transform: uppercase;
+    }
+    div {
+        color: #333;
+        font-size: 0.78571429em;
+    }
+    b {
+        color: #b29370;
+    }
+}

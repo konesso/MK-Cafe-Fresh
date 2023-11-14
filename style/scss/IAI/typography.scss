@@ -1,0 +1,88 @@
+.less_labels {
+    font-family: "Arial", "Helvetica", sans-serif, "Arial", sans-serif;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: left;
+    line-height: 1;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.less_tekst_maly {
+    font-weight: normal;
+}
+.less_tekst_duzy {
+    font-weight: normal;
+}
+.less_product_name {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+.less_product_name_hover {
+    color: #b29370;
+}
+
+.less_small_label {
+    border-left: 7px solid #b29370;
+    color: #333;
+    display: block;
+    font-size: 1.29em;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding: 8px 0 7px 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.less_color-text {
+    color: #b29370;
+}
+.less_color-border {
+    border-color: #c4c7c8;
+}
+.less_color-background {
+    background-color: #b29370;
+}
+.less_text_dark_color {
+    color: #333;
+    clear: both;
+}
+.less_text_dark_color_hover {
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.167em;
+    font-weight: bold;
+    color: #b29370;
+}
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #b29370;
+}
+a {
+    outline: none;
+    color: #333;
+    transition:
+        background-color 0.2s,
+        color 0.2s,
+        border 0.2s;
+    &:hover {
+        outline: none;
+        color: #b29370;
+    }
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        outline: none;
+    }
+}

@@ -1,0 +1,178 @@
+.less_button_large_css3 {
+    background: #b29370;
+    border: 1px solid #b29370;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    font-weight: normal;
+    font-family: "Arial", "Helvetica", sans-serif, "Arial", sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    border-radius: 0;
+}
+.less_button_large_css3_hover {
+    background: #333;
+    border: 1px solid #333;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    font-weight: normal;
+    font-family: "Arial", "Helvetica", sans-serif, "Arial", sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    border-radius: 0;
+}
+.less_button_medium_css3_hover {
+    background: #333;
+    border: 1px solid #333;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 17px;
+    font-weight: normal;
+    font-family: "Arial", "Helvetica", sans-serif, "Arial", sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    border-radius: 0;
+}
+.less_button_small_css3 {
+    background: #b29370;
+    border: 1px solid #b29370;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    font-weight: normal;
+    font-family: "Arial", "Helvetica", sans-serif, "Arial", sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    border-radius: 0;
+}
+.less_button_small_css3_hover {
+    background: #333;
+    border: 1px solid #333;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    font-weight: normal;
+    font-family: "Arial", "Helvetica", sans-serif, "Arial", sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    border-radius: 0;
+}
+.less_button_medium_css3 {
+    background: #b29370;
+    border: 1px solid #b29370;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 17px;
+    font-weight: normal;
+    font-family: "Arial", "Helvetica", sans-serif, "Arial", sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    border-radius: 0;
+}
+
+.btn {
+    [class^="icon-"].icon-large {
+        line-height: 0.9em;
+    }
+    background: none;
+    padding: 0;
+    border: 1px solid transparent;
+    font-family: "Arial", "Helvetica", sans-serif, "Arial", sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: #b29370;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.9rem 1rem;
+    font-weight: normal;
+    transition:
+        background-color 0.2s,
+        color 0.2s,
+        border-color 0.2s;
+    border-radius: 0;
+    &:not(.--solid) {
+        &:not(.--outline) {
+            &:not(.--secondary) {
+                &:not(.--icon) {
+                    text-decoration: underline;
+                    color: #333;
+                    &:hover {
+                        color: #b29370;
+                    }
+                }
+            }
+        }
+    }
+    &:hover {
+        color: #333;
+    }
+}
+.back_button {
+    display: inline-block;
+    vertical-align: middle;
+    width: 85px;
+    font-size: 1em;
+    text-align: left;
+    padding-right: 10px;
+    &:before {
+        content: "";
+        height: 1px;
+        left: -5px;
+        position: absolute;
+        display: block;
+        width: 100vw;
+        background: #c4c7c8;
+        top: 0;
+    }
+    i {
+        font-size: 1.9em;
+        margin-right: 8px;
+        line-height: 1em;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: -5px;
+    }
+}
+
+#toggle_comments_button {
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    &:after {
+        content: "\F107";
+        font-family: "fontawesome";
+        margin-left: 1rem;
+        font-size: 1.5em;
+    }
+}
+#toggle_comments_button.open {
+    &::after {
+        transform: rotate(180deg);
+    }
+}

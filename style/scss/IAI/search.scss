@@ -1,0 +1,104 @@
+.search_name {
+    margin: 1rem 0;
+}
+.search_name__label {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+}
+.search_name__total {
+    display: none;
+}
+.hide_description {
+    display: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+div.search_categoriesdescription {
+    clear: both;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    h1 {
+        display: inline-block;
+        margin: 0;
+        vertical-align: middle;
+        font-size: 1.4em;
+    }
+    .search_categoriesdescription_sub {
+        margin: 1rem 0 0;
+        > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .search_categoriesdescription_sub.skeleton {
+        > * {
+            background: #f1f1f1;
+            color: transparent;
+        }
+    }
+    span.navigation_total {
+        display: none;
+        font-size: 0.9em;
+        padding-left: 15px;
+        vertical-align: middle;
+    }
+}
+.search_categoriesdescription_next {
+    &:not(.expanded) {
+        > * {
+            display: none;
+            display: none;
+        }
+    }
+    .show_description {
+        display: block;
+        cursor: pointer;
+        display: block;
+        cursor: pointer;
+    }
+    margin-bottom: 1.5rem;
+    > * {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.search_categoriesdescription_next.expanded {
+    .show_description {
+        display: none;
+        display: none;
+    }
+}
+.search_categoriesdescription_next.expanded + .hide_description {
+    display: block;
+}
+.search_description {
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.search_description.--skeleton {
+    max-height: 150px;
+    > * {
+        background: #f1f1f1;
+        color: transparent;
+    }
+    a {
+        color: transparent;
+    }
+}
+.search_description__wrapper {
+    > * {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.search_settings {
+    .s_paging__item {
+        .f-group {
+            margin-bottom: 0;
+        }
+    }
+}
