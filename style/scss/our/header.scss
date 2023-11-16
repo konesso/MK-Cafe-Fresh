@@ -35,7 +35,55 @@
     }
 }
 
-header .text-l {
-    font-size: 2em;
-    color: red;
+header {
+    .text-l {
+        font-size: 14px;
+        color: #b29370;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-left: 1px solid #b29370;
+        text-decoration: none;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        &:hover{
+            color: #000;
+            text-decoration: underline;
+        }
+    }
+    .shopping_list_top{
+        border-left: 1px solid #b29370;
+        padding: 10px 20px;
+        a{
+            text-decoration: none;
+        }
+    }
+    .account_link{
+        // border-left: 1px solid #b29370;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    .contact__info{
+        font-size:12px;
+        
+    }   
+    .nav-link{
+        padding: 10px;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+*:hover .menu-item-underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.menu-item-underline {
+    border-color: #b29370;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    transform: scaleX(0);
+    border-top-width: 1px;
+    border-bottom: 0;
 }

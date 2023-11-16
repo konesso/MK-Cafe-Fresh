@@ -1157,17 +1157,17 @@
         box-shadow: none;
         align-items: center;
         background: #fff;
-        grid-template-columns: auto 2fr auto auto;
-        grid-column-gap: 3rem;
-        grid-template-areas:
-            "bars_top bars_top bars_top bars_top bars_top"
-            "rabateCode rabateCode rabateCode rabateCode rabateCode"
-            "freeShipping freeShipping freeShipping freeShipping freeShipping"
-            "contactInfo contactInfo  menu_search menu_search menu_settings"
-            "hrline hrline hrline hrline hrline"
-            "logo menu_categories menu_categories menu_categories  menu_basket"
-            "hr_line hr_line hr_line hr_line hr_line"
-            "breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs";
+        // grid-template-columns: auto 2fr auto auto;
+        // grid-column-gap: 3rem;
+        // grid-template-areas:
+        //     "bars_top bars_top bars_top bars_top bars_top bars_top"
+        //     "rabateCode rabateCode rabateCode rabateCode rabateCode rabateCode"
+        //     "freeShipping freeShipping freeShipping freeShipping freeShipping freeShipping"
+        //     "contactInfo contactInfo contactInfo  menu_search menu_search menu_settings2 menu_settings"
+        //     "hrline hrline hrline hrline hrline hrline"
+        //     "logo menu_categories menu_categories menu_categories menu_categories  menu_basket"
+        //     "hr_line hr_line hr_line hr_line hr_line hr_line"
+        //     "breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs";
         #menu_settings {
             display: flex !important;
         }
@@ -1216,12 +1216,13 @@
                         position: relative;
                         .topBasket__details {
                             display: block;
-                            color: white;
+                            color: #000;
                         }
                         .topBasket__sub {
-                            color: white;
+                            text-decoration: none;
+                            // color: #000;
                             &:hover {
-                                color: white;
+                                // color: #000;
                             }
                         }
                     }
@@ -1464,7 +1465,7 @@
         }
     }
     #logo {
-        height: 100px;
+        // height: 100px;
         margin-top: 0;
         padding-left: 0;
         &:after {
@@ -1503,10 +1504,11 @@
             position: relative;
         }
         .menu_search__input {
-            border-bottom: 1px solid #333;
+            // border-bottom: 1px solid #333;
             font-size: 1.2rem;
             padding-left: 1.5rem;
             padding-right: 7.5rem;
+            border-left: 1px solid #b29370;
         }
         &.--ready {
             .menu_search__mobile {
@@ -1540,7 +1542,7 @@
             display: none;
         }
         .menu_search__input {
-            border-bottom: 1px solid #333;
+            // border-bottom: 1px solid #333;
             font-size: 1.2rem;
             padding-left: 1.5rem;
             padding-right: 7.5rem;
@@ -1664,7 +1666,7 @@
     .topBasket {
         width: 100%;
         position: relative;
-        padding-right: 1.5rem;
+        // padding-right: 1.5rem;
         .badge {
             margin-left: 0.8rem;
             position: static;
@@ -3277,7 +3279,7 @@
                 grid-area: 2 / 2 / 5 / 3;
             }
             #projector_producttraits {
-                grid-area: 3 / 1 / 4 / 2;
+                // grid-area: 3 / 1 / 4 / 2;
             }
         }
     }
@@ -5575,7 +5577,7 @@
     }
     div.list_wrapper {
         border: none;
-        padding: 15px 0;
+        padding: 15px 0 0;
         width: auto;
         overflow: visible;
         display: block;
@@ -9354,7 +9356,7 @@
     }
     header {
         font-size: 1em;
-        grid-column-gap: 5rem;
+        // grid-column-gap: 5rem;
         .navbar-subnav {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         }
@@ -9419,7 +9421,7 @@
         align-items: center;
     }
     .shopping_list_top {
-        margin-left: 2rem;
+        // margin-left: 2rem;
         .slt_lists__nav_link {
             min-width: 215px;
         }
@@ -9794,7 +9796,7 @@
             }
         }
         .projector_prices__price {
-            font-size: 3rem;
+            font-size: 2.2rem;
         }
         .projector_buy__number_wrapper {
             margin-right: 1rem;
@@ -11567,8 +11569,8 @@
     }
     header {
         padding-top: 0;
-        grid-template-columns: auto 2fr auto auto;
-        grid-template-areas: "bars_top bars_top bars_top bars_top" "menu_search logo logo shopping_list_top_mobile menu_basket ";
+        // grid-template-columns: auto 2fr auto auto;
+        // grid-template-areas: "bars_top bars_top bars_top bars_top" "menu_search logo logo shopping_list_top_mobile menu_basket ";
         justify-content: space-between;
         // #menu_search {
         //     display: none;
@@ -11581,11 +11583,11 @@
             }
         }
     }
-    #container {
-        &:not(.affiliate-client_page) {
-            margin-top: 5.4rem;
-        }
-    }
+    // #container {
+    //     &:not(.affiliate-client_page) {
+    //         margin-top: 5.4rem;
+    //     }
+    // }
     .affiliate-clients_page {
         margin-top: 5.4rem;
     }
@@ -12193,14 +12195,14 @@
     }
     .sidebar_open {
         header {
-            grid-template-columns: 25vw 25vw 25vw 25vw;
-            grid-template-areas: "rabateCode rabateCode rabateCode rabateCode" "freeShipping freeShipping freeShipping freeShipping" "menu_categories logo menu_search menu_basket";
+            // grid-template-columns: 25vw 25vw 25vw 25vw;
+            // grid-template-areas: "rabateCode rabateCode rabateCode rabateCode" "freeShipping freeShipping freeShipping freeShipping" "menu_categories logo menu_search menu_basket";
         }
     }
     .filters_open {
         header {
-            grid-template-columns: 25vw 25vw 25vw 25vw;
-            grid-template-areas: "rabateCode rabateCode rabateCode rabateCode" "freeShipping freeShipping freeShipping freeShipping" "menu_categories logo menu_search menu_basket";
+            // grid-template-columns: 25vw 25vw 25vw 25vw;
+            // grid-template-areas: "rabateCode rabateCode rabateCode rabateCode" "freeShipping freeShipping freeShipping freeShipping" "menu_categories logo menu_search menu_basket";
         }
     }
     .pickup_points {
@@ -12620,19 +12622,19 @@
 }
 @media (min-width: 360px) {
     .photos__photo {
-        max-height: 60vh;
+        // max-height: 100vh;
     }
-    .photos__slider[data-skeleton] {
-        .photos__figure {
-            &:not(.--nav) {
-                &:first-child {
-                    .photos__link {
-                        max-height: 60vh;
-                    }
-                }
-            }
-        }
-    }
+    // .photos__slider[data-skeleton] {
+    //     .photos__figure {
+    //         &:not(.--nav) {
+    //             &:first-child {
+    //                 .photos__link {
+    //                     max-height: 60vh;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }
 @media screen and (max-width: 1024px) {
     .pswp__preloader {

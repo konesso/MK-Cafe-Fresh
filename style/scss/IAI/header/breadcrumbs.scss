@@ -51,7 +51,8 @@
                 font-style: normal;
                 font-weight: bold;
                 text-decoration: inherit;
-                padding: 0 5px;
+                padding: 0 10px;
+                color: #b29370;
             }
             &:last-child {
                 &:after {
@@ -91,6 +92,7 @@
     top: 100%;
     left: 0;
     min-width: 100%;
+    text-wrap: nowrap;
     a {
         color: #333;
         &:hover {

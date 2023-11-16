@@ -560,7 +560,7 @@
 }
 .modal.--expchck_retry.--medium {
     .modal__close {
-        right: max(calc(2.5rem + env(safe-area-inset-right)), calc(50% - ((840px - 10px) / 2)));
+        right: 0;
         top: 1.5rem;
         &:before {
             font-size: 1.6rem;
