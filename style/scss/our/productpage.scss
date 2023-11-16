@@ -25,3 +25,51 @@
         }
     }
 }
+
+#product_extra_info{
+    background: #ede5da;
+}
+
+.mk_extra_info{
+    list-style: none;
+    li{
+        margin-bottom: 20px;
+        > *{
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+    @media all and (max-width:976px){
+        display: flex;
+        padding: 10px;
+        li{
+            width:50%;
+        }
+    }
+}
+
+.cafe-method{
+    background: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    &:before{
+        display: block;
+        content: " ";
+        width: 3.4rem;
+        height: 5.1rem;
+        background-image: url(../img/icons.png);  
+    }
+    &.img-method313:before{
+        background-position: -250px -125px;
+    }
+    &.img-method311:before{
+        background-position: -200px -125px;
+    }
+}
+
+@import 'product/blog';

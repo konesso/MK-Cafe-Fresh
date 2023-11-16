@@ -49,7 +49,7 @@
 
     <div class="hrline"></div>
 
-    <div class="row align-items-center justify-content-around">
+    <div class="row align-items-center justify-content-around main-holder">
         <div class="col col-md-2">
             <div id="logo" class=""><a href="https://www.konesso.pl" target="_self">
                 <div class="large"></div>
