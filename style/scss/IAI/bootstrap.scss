@@ -4125,8 +4125,10 @@ img.b-loaded {
     }
 }
 .price {
-    font-size: 2rem;
+    font-size: 1.4rem;
+    font-weight: normal;
     display: block;
+    font-family: Futura;
 }
 .price.--max {
     font-size: 1.2rem;
@@ -4198,12 +4200,18 @@ img.b-loaded {
         box-shadow: 0 0 0 0px transparent inset;
         background: none;
         &:hover {
-            box-shadow: 0 0 0 2px #661f1f inset;
+            box-shadow: 0 0 0 2px #b29370 inset;
+              .product__compare_item.--add.btn {
+                   transition: box-shadow 0.3s ease-in-out;
+                 box-shadow: 0 0 0 2px #b29370 inset;           
+            }
         }
+
+        
         .label_icons {
             position: absolute;
             top: 10;
-            left: 50;
+            left: 66;
             text-align: left;
         }
         .price__unit {
@@ -4248,22 +4256,35 @@ img.b-loaded {
         z-index: 1;
         text-align: center;
         position: relative;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        font-family: Futura;
         color: #333;
-        border: 1px solid #c4c7c8;
-        padding: 5px;
+        background-color: white;
+        transform: translateY(75%);
+        padding: 1.5rem 2.5rem;
         text-decoration: none;
         &:hover {
-            color: #b29370;
+            color: white;
             border: 1px solid #b29370;
+            background-color:#b29370;
+            .icon--right-arrow:after{
+                color: white;
+            }
         }
     }
-    .product__compare_item.--remove {
-        color: #e35c5c;
-        &:hover {
-            color: #b29370;
-        }
+    .icon--right-arrow:after{   
+                content: "\F105";
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 2.5rem;
+                text-decoration: inherit;
+                padding: 0 5px;
+                color: #b29370;
+        
     }
+
+    
     .product__traits {
         display: none !important;
     }
@@ -4281,22 +4302,24 @@ img.b-loaded {
     }
 }
 .product__icon {
-    height: 15rem;
+    // height: 15rem;
     margin-bottom: 1rem;
     position: relative;
     img {
-        max-height: 15rem;
+        // max-height: 15rem;
     }
 }
 .product__name {
     display: block;
     margin-bottom: 1.3rem;
-    font-weight: normal;
+    font-weight: bold;
+    font-family: Futura;
     color: #333;
-    font-size: 1.5rem;
+    font-size: 0.7rem;
     overflow: hidden;
     text-overflow: ellipsis;
     text-decoration: none;
+    text-transform: uppercase;
     &:hover {
         color: #b29370;
     }

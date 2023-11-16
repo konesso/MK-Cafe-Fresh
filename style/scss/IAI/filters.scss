@@ -35,6 +35,11 @@
         margin: 1rem 0 0;
     }
 }
+@media (min-width: 979px) {
+    .filters__block > .filters__toggler.--not-expanded + .filters__expand {
+        display: block;
+    }
+}
 .filters {
     padding-right: env(safe-area-inset-right);
     .f-group {
