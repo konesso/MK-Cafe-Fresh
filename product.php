@@ -94,152 +94,7 @@
                     </div>
                 </div>
                
-                <section id="projector_producttraits" class="traits d-none mb-4 d-md-block">
-                    <div class="row">
-                        <div class="col-md-6">
-                          
-                           
-                            <div class=" d-flex justify-content-between">
-                                <p class="text-uppercase">Profil aromatyczny</p>
-                                <div class="font-bold aroma-links">
-                                    <a href="#">orzech,</a> <a href="#">karmel,</a> <a href="#">miód,</a> <a href="#">mleczna czekolada</a>
-                                </div>
-                            </div>
-
-                            <div class="hrline mt-4 mb-4"></div>
-
-                            <div class=" d-flex justify-content-between">
-                                <p class="text-uppercase">Intensywność</p>
-                                <b class="d-flex align-items-center">2.5
-                                    <span class="stars-coffee ml-3">
-                                        <span class="full"></span>
-                                        <span class="full"></span>
-                                        <span class="half"></span>
-                                        <span class="empty"></span>
-                                        <span class="empty"></span>
-                                    </span>
-                                </b>
-                            </div>
-                            <div class="hrline mt-4 mb-4"></div>
-
-                            <div class="d-flex justify-content-between">
-                                <p class="text-uppercase">Kwasowość</p>
-                                <b class="d-flex align-items-center">1.5
-                                    <span class="stars-coffee ml-3">
-                                        <span class="full"></span>
-                                        <span class="half"></span>
-                                        <span class="empty"></span>
-                                        <span class="empty"></span>
-                                        <span class="empty"></span>
-                                    </span>
-                                </b>
-                            </div>
-                            <!-- <div class="hrline mt-2 mb-2"></div> -->
-                          
-                        </div>
-                        <div class="col-md-6">
-                                <div class="traits__wrapper">
-                                <div class="traits__item mb-2" data-hide="false"><span
-                                        class="traits__label mr-2">Skład</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603424-100-Arabika.html">100% Arabika</a></span></div>
-                                <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Stopień
-                                        palenia</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603489-Sredni.html">Średni</a></span></div>
-                                <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Zawartość
-                                        kofeiny</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603492-Niska.html">Niska</a></span></div>
-                                <div class="traits__item mb-2" data-hide="false"><span
-                                        class="traits__label mr-2">Rodzaj</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603587-Kawa-ziarnista.html">Kawa ziarnista</a></span></div>
-                                <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Przeznaczenie
-                                    </span><span class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603592-Do-ekspresu-automatycznego.html">Do ekspresu
-                                            automatycznego</a><a class="traits__value"
-                                            href="/tra-pol-1335603593-Do-ekspresu-kolbowego.html">Do ekspresu kolbowego</a><a
-                                            class="traits__value" href="/tra-pol-1335603581-Do-biura.html">Do biura</a><a
-                                            class="traits__value" href="/tra-pol-1335603579-Do-kawiarni.html">Do
-                                            kawiarni</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Polecana
-                                        do</span><span class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603896-Espresso.html">Espresso</a><a class="traits__value"
-                                            href="/tra-pol-1335603897-Kawa-czarna.html">Kawa czarna</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Blend czy
-                                        Single</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603893-Blend-Mieszanki.html">Blend /
-                                            Mieszanki</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Pochodzenie
-                                        ziaren</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603921-Ameryka-Poludniowa.html">Ameryka
-                                            Południowa</a><a class="traits__value"
-                                            href="/tra-pol-1335603906-Ameryka-Srodkowa.html">Ameryka Środkowa</a><a
-                                            class="traits__value" href="/tra-pol-1335603904-Indie.html">Indie</a><a
-                                            class="traits__value" href="/tra-pol-1335603902-Etiopia.html">Etiopia</a></span>
-                                </div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Kwasowość</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603946-Mocna.html">Mocna</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Gorycz</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603918-Srednia.html">Średnia</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Słodycz</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603923-Mocna.html">Mocna</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Intensywność
-                                        smaku</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603914-Srednia.html">Średnia</a></span>
-                                </div>
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Wyczuwalne
-                                        smaki</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603925-Czekolada.html">Czekolada</a><a
-                                            class="traits__value" href="/tra-pol-1335603937-Kwiaty.html">Kwiaty</a><a
-                                            class="traits__value" href="/tra-pol-1335603933-Lisc-tytoniu.html">Liść
-                                            tytoniu</a><a class="traits__value"
-                                            href="/tra-pol-1335603932-Przyprawy.html">Przyprawy</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Crema</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603926-Gesta.html">Gęsta</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Sposób
-                                        przygotowania</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603886-Ekspres-automatyczny.html">Ekspres
-                                            automatyczny</a><a class="traits__value"
-                                            href="/tra-pol-1335603888-Ekspres-kolbowy.html">Ekspres kolbowy</a><a
-                                            class="traits__value" href="/tra-pol-1335603883-French-Press.html">French
-                                            Press</a><a class="traits__value"
-                                            href="/tra-pol-1335603880-Kawiarka.html">Kawiarka</a><a class="traits__value"
-                                            href="/tra-pol-1335603879-Tradycyjny.html">Tradycyjny</a><a class="traits__value"
-                                            href="/tra-pol-1335603887-Ekspres-przelewowy.html">Ekspres przelewowy</a></span>
-                                </div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Palarnia</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603600-Wlochy.html">Włochy</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Opakowanie</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603658-1000g.html">1000g</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Blog</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603743--KAWA-baza-wiedzy-bloglist-pol-2-html.html">/KAWA-baza-wiedzy-bloglist-pol-2.html</a></span>
-                                </div>
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Dostępne
-                                        opakowania</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335604276-1000g.html">1000g</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Waga</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335604648-1000.html">1000</a></span></div>
-                            </div><a href="#showAllTraits" class="traits__all">Pokaż wszystkie</a>
-                        </div>
-                    </div>
-                   
-                </section>
+                
                 <section id="projector_productname" class="product_name mb-4">
                     <div class="product_name__block --name mb-2 d-sm-flex justify-content-sm-between mb-sm-3">
                         <h1 class="product_name__name m-0">Kawa ziarnista Bazzara DODICIGRANCRU 1kg </h1>
@@ -738,13 +593,14 @@
                 app_shop.vars.contact_link = "/contact-pol.html";
                 </script>
 
-                <section id="product_extra_info">
-                    <div class="row">
-                        <div class="col-md-3">
+
+<section id="product_extra_info">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center">
                             <img  src="https://mkfreshprod.azureedge.net/img/360/200/70/resize/catalog/product//m/k/mkcafe_1366_produkt_brazil_1.jpg" alt="" >
                         </div>
-                        <div class="col-md-3">
-                            <ul>
+                        <div class="col-md-2">
+                            <ul class="mk_extra_info">
                                 <li>
                                     <span class="text-upercase">REGION</span>
                                     <b>Mogiana</b>
@@ -765,49 +621,201 @@
   
                         </div>
                         <div class="col-md-4">
-                            <canvas id="radar-chart" width="360" height="400" style="display: block; box-sizing: border-box; height: 400px; width: 360px;"></canvas>
+                            <canvas id="radar-chart" width="360" height="400" style=""></canvas>
 
-                            <script src="https://panel.konesso.pl/theme/node_modules/chart.js/dist/Chart.min.js"></script>
+                            <script src="assets/js/Chart.min.js"></script>
                             <script>
                                 var radarChart = new Chart($('#radar-chart'), {
                                 type: 'radar',
                                 data: {
-                                    labels: ['Czekolada', 'Słodycz', 'Karmel', 'Gorycz', 'Nuty kwiatowe', 'Owoce', 'Orzech'],
+                                    labels: ['Czekolada', 'Słodycz', 'Karmel', 'Gorycz', 'Nuty kwiatowe', 'Owoce', 'Orzech', 'Karmel', 'Gorycz', 'Nuty kwiatowe', 'Owoce', 'Orzech'],
                                     datasets: [{
-                                    label: 'My First dataset',
-                                    backgroundColor: 'rgba(220, 220, 220, 0.2)',
-                                    borderColor: 'rgba(220, 220, 220, 1)',
-                                    pointBackgroundColor: 'rgba(220, 220, 220, 1)',
-                                    pointBorderColor: '#fff',
-                                    pointHighlightFill: '#fff',
-                                    pointHighlightStroke: 'rgba(220, 220, 220, 1)',
-                                    data: [65, 59, 90, 81, 56, 55, 40]
-                                    }, {
-                                    label: 'My Second dataset',
-                                    backgroundColor: 'rgba(151, 187, 205, 0.2)',
-                                    borderColor: 'rgba(151, 187, 205, 1)',
-                                    pointBackgroundColor: 'rgba(151, 187, 205, 1)',
-                                    pointBorderColor: '#fff',
-                                    pointHighlightFill: '#fff',
-                                    pointHighlightStroke: 'rgba(151, 187, 205, 1)',
-                                    data: [28, 48, 40, 19, 96, 27, 100]
+                                    backgroundColor: "#b29370",
+                                    borderColor: "#b29370",
+                                    pointBackgroundColor: "transparent",
+                                    pointBorderColor: "transparent",
+                                    fill: "origin",                                    
+                                    data: [65, 59, 90, 81, 56, 55, 40, 0, 40, 10, 50]
                                     }]
                                 },
                                 options: {
-                                    responsive: true
-                                }
+                                    responsive: true,
+                                    legend: {
+                                            display: false
+                                    },
+                                    scale: {
+                                        ticks: {
+                                            display: false,
+                                        }
+                                    }
+                                },
+                               
+                                
+
+                                
                                 }); 
+
+
+                                
                             </script>
                         </div>
                         <div class="col-md-2">
-                            <span class="text-uppercase">REKOMENDOWANY SPOSÓB PARZENIA</span>
-                            <div class="img-method313 show_tip css_tip css_tip_small"
-                                        title="Możesz zamienić zgromadzone punkty lojalnościowe na ten produkt. Obecnie masz 0 punktów.">
-                                
+                            <span class="d-flex justify-content-around mb-3 text-center text-uppercase w-100">REKOMENDOWANY SPOSÓB PARZENIA</span>
+                            <div class="align-items-center d-flex flex-md-column justify-content-around">
+                                <div class="cafe-method img-method313"></div>
+                                <div class="cafe-method img-method311"></div>
                             </div>
                         </div>
                     </div>
                 </section>
+                <section id="projector_producttraits" class="traits mt-5 ">
+                    <div class="row">
+                        <div class="col-md-6 mb-5">
+                          
+                           
+                            <div class=" d-flex justify-content-between">
+                                <p class="text-uppercase">Profil aromatyczny</p>
+                                <div class="font-bold aroma-links">
+                                    <a href="#">orzech,</a> <a href="#">karmel,</a> <a href="#">miód,</a> <a href="#">mleczna czekolada</a>
+                                </div>
+                            </div>
+
+                            <div class="hrline mt-4 mb-4"></div>
+
+                            <div class=" d-flex justify-content-between">
+                                <p class="text-uppercase">Intensywność</p>
+                                <b class="d-flex align-items-center">2.5
+                                    <span class="stars-coffee ml-3">
+                                        <span class="full"></span>
+                                        <span class="full"></span>
+                                        <span class="half"></span>
+                                        <span class="empty"></span>
+                                        <span class="empty"></span>
+                                    </span>
+                                </b>
+                            </div>
+                            <div class="hrline mt-4 mb-4"></div>
+
+                            <div class="d-flex justify-content-between">
+                                <p class="text-uppercase">Kwasowość</p>
+                                <b class="d-flex align-items-center">1.5
+                                    <span class="stars-coffee ml-3">
+                                        <span class="full"></span>
+                                        <span class="half"></span>
+                                        <span class="empty"></span>
+                                        <span class="empty"></span>
+                                        <span class="empty"></span>
+                                    </span>
+                                </b>
+                            </div>
+                            <!-- <div class="hrline mt-2 mb-2"></div> -->
+                          
+                        </div>
+                        <div class="col-md-6 mb-5">
+                                <div class="traits__wrapper">
+                                <div class="traits__item mb-2" data-hide="false"><span
+                                        class="traits__label mr-2">Skład</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603424-100-Arabika.html">100% Arabika</a></span></div>
+                                <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Stopień
+                                        palenia</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335603489-Sredni.html">Średni</a></span></div>
+                                <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Zawartość
+                                        kofeiny</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335603492-Niska.html">Niska</a></span></div>
+                                <div class="traits__item mb-2" data-hide="false"><span
+                                        class="traits__label mr-2">Rodzaj</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603587-Kawa-ziarnista.html">Kawa ziarnista</a></span></div>
+                                <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Przeznaczenie
+                                    </span><span class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603592-Do-ekspresu-automatycznego.html">Do ekspresu
+                                            automatycznego</a><a class="traits__value"
+                                            href="/tra-pol-1335603593-Do-ekspresu-kolbowego.html">Do ekspresu kolbowego</a><a
+                                            class="traits__value" href="/tra-pol-1335603581-Do-biura.html">Do biura</a><a
+                                            class="traits__value" href="/tra-pol-1335603579-Do-kawiarni.html">Do
+                                            kawiarni</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Polecana
+                                        do</span><span class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603896-Espresso.html">Espresso</a><a class="traits__value"
+                                            href="/tra-pol-1335603897-Kawa-czarna.html">Kawa czarna</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Blend czy
+                                        Single</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335603893-Blend-Mieszanki.html">Blend /
+                                            Mieszanki</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Pochodzenie
+                                        ziaren</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335603921-Ameryka-Poludniowa.html">Ameryka
+                                            Południowa</a><a class="traits__value"
+                                            href="/tra-pol-1335603906-Ameryka-Srodkowa.html">Ameryka Środkowa</a><a
+                                            class="traits__value" href="/tra-pol-1335603904-Indie.html">Indie</a><a
+                                            class="traits__value" href="/tra-pol-1335603902-Etiopia.html">Etiopia</a></span>
+                                </div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Kwasowość</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603946-Mocna.html">Mocna</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Gorycz</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603918-Srednia.html">Średnia</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Słodycz</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603923-Mocna.html">Mocna</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Intensywność
+                                        smaku</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335603914-Srednia.html">Średnia</a></span>
+                                </div>
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Wyczuwalne
+                                        smaki</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335603925-Czekolada.html">Czekolada</a><a
+                                            class="traits__value" href="/tra-pol-1335603937-Kwiaty.html">Kwiaty</a><a
+                                            class="traits__value" href="/tra-pol-1335603933-Lisc-tytoniu.html">Liść
+                                            tytoniu</a><a class="traits__value"
+                                            href="/tra-pol-1335603932-Przyprawy.html">Przyprawy</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Crema</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603926-Gesta.html">Gęsta</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Sposób
+                                        przygotowania</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335603886-Ekspres-automatyczny.html">Ekspres
+                                            automatyczny</a><a class="traits__value"
+                                            href="/tra-pol-1335603888-Ekspres-kolbowy.html">Ekspres kolbowy</a><a
+                                            class="traits__value" href="/tra-pol-1335603883-French-Press.html">French
+                                            Press</a><a class="traits__value"
+                                            href="/tra-pol-1335603880-Kawiarka.html">Kawiarka</a><a class="traits__value"
+                                            href="/tra-pol-1335603879-Tradycyjny.html">Tradycyjny</a><a class="traits__value"
+                                            href="/tra-pol-1335603887-Ekspres-przelewowy.html">Ekspres przelewowy</a></span>
+                                </div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Palarnia</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603600-Wlochy.html">Włochy</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Opakowanie</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603658-1000g.html">1000g</a></span></div>
+                               
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Dostępne
+                                        opakowania</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335604276-1000g.html">1000g</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Waga</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335604648-1000.html">1000</a></span></div>
+                            </div><a href="#showAllTraits" class="traits__all" style="text-decoration: none"><i class="icon-angle-down"></i>&nbsp;Pokaż wszystkie </a>
+                        </div>
+                    </div>
+                   
+                </section>
+                
+                <section id="projector_longdescription" class="longdescription cm mt-5  col-12" data-traits="true"
+                    data-dictionary="true">
+                    <div class="base-html-renderer-wrap relative" style="overflow: hidden;"><div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center ml-auto mr-auto row" style="margin-bottom: 20px;"><div class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-0 col-lg-4 col-lg-push-1 text-center"><div style="position: relative; padding-bottom: 69%; height: 0;"><figure class="base-img-wrap inline-block mk2 loaded lazyload"><img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-1.jpg" alt="Brazil Mogiana" class="base-img-image inline w-full" style="position:absolute;top:0;left:0;width:100%;height:100%;"> <!----></figure></div></div> <div class="col-xs-12 col-md-6 col-lg-5 col-lg-push-1"><h2 class="subtitle1" style="margin: 10px 0 0;">Brazil Mogiana - cudowny smak, intensywny aromat</h2> <p class="boldLead">Urzekający smak, który cechuje wyjątkowa delikatność, będzie świetną propozycją na filiżankę kawy o dowolnej porze dnia. Właśnie ze względu na wspomniane wyżej właściwości <strong>Brazil</strong> <strong>Mogiana</strong> cieszy się przydomkiem „klasycznej”, gdyż będzie wyśmienicie smakować zarówno do śniadania, w trakcie lunchu, jak i popołudniowego czasu spędzonego w gronie bliskich, czy znajomych.<strong> Świeżo palona kawa</strong> swoją nazwę zaczerpnęła od regionu umiejscowionego na granicy stanów São Paulo i Minas Gerais, w których znajdują się jej plantacje.</p></div></div> <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center ml-auto mr-auto row"><div class="col-xs-12 col-md-7 col-md-push-1 col-lg-5 col-lg-push-2"><p>Warunki klimatyczne panujące we wspomnianym regionie sprawiają, że <strong>brazylijska</strong> <strong>kawa</strong> <strong>ziarnista</strong> cechuje się łagodnym smakiem o niskiej kwasowości, niewyczuwalnej goryczce i subtelnej słodyczy. Z kolei jej aromat to zdecydowanie nuty orzechowe, miodowe oraz czekoladowe.</p></div></div> <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center ml-auto mr-auto row" style="margin-top: 15px; margin-bottom: 15px;"><div class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-7 col-lg-4 col-lg-push-7 text-center"><div style="position: relative; padding-bottom: 69%; height: 0;"><figure class="base-img-wrap inline-block mk2 loaded lazyload"><img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-2.jpg" alt="Brazil Mogiana" class="base-img-image inline w-full" style="position:absolute;top:0;left:0;width:100%;height:100%;"> <!----></figure></div></div> <div class="col-xs-12 col-md-6 col-md-pull-4 col-lg-5 col-lg-pull-2"><h2 class="subtitle2" style="margin-top: 15px;">Brazylijska kawa ziarnista - owoc najlepszych plantacji w kraju</h2> <p><strong>Kawa ziarnista 250 g</strong> to wynik rzetelnie wykonywanej pracy w obszarze niemalże stworzonym do uprawy kawowca. Mowa tutaj o trzech regionach, do których należy zaliczyć Mogianę, Sul Minas i Cerrado. Wszystkie wyróżnia umiarkowany klimat - temperatura o każdej porze roku ulega bardzo nieznacznym wahaniom. To z kolei sprawia, że panujące na tym terenie warunki są idealne do uprawy Arabiki i Robusty na tutejszych plantacjach.</p></div></div> <div xmlns="http://www.w3.org/1999/xhtml" class="moreContent"><div class="d-flex justify-content-center ml-auto mr-auto row"><div class="col-xs-12 col-md-4 col-md-push-1 col-lg-3 col-lg-push-2"><p>Liczne Arabiki to niezwykle łagodne i delikatne odmiany o subtelnej, wyczuwalnej słodyczy. Efekt ten uzyskiwany jest dzięki tradycyjnej metodzie suchej, która opiera się na suszeniu ziaren razem z miąższem. Przebywają one na otwartym powietrzu przez około cztery tygodnie, czego efektem jest<strong> brazylijska kawa ziarnista</strong> o zrównoważonym smaku.</p> <p>Często zwane „kawowymi wiśniami” ziarna odznaczają się również słodkim aromatem, co przekłada się na delikatny balans znany wśród miłośników kawy jako „okrągły”.</p></div> <div class="hidden-xs hidden-sm col-md-6 col-md-push-1 col-lg-5 col-lg-push-2"><div style="position: relative; padding-bottom: 55%; height: 0;"><figure class="base-img-wrap inline-block mk2 loaded lazyload"><img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-txt-1.jpg" alt="Brazil Mogiana" class="base-img-image inline w-full" style="position:absolute;top:0;left:0;width:100%;height:100%;"> <!----></figure></div></div></div> <div class="d-flex justify-content-center ml-auto mr-auto row" style="margin-top: 15px; margin-bottom: 15px;"><div class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-7 col-lg-4 col-lg-push-7 text-center"><div style="position: relative; padding-bottom: 69%; height: 0;"><figure class="base-img-wrap inline-block mk2 loaded lazyload"><img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-3.jpg" alt="Brazil Mogiana" class="base-img-image inline w-full" style="position:absolute;top:0;left:0;width:100%;height:100%;"> <!----></figure></div></div> <div class="col-xs-12 col-md-6 col-md-pull-4 col-lg-5 col-lg-pull-2"><h2 class="subtitle2" style="margin-top: 15px;">Brazylia - kawowy gigant na rynku</h2> <p>Aż 30% światowych zbiorów kawy pochodzi z Brazylii, okrzykniętej mianem kawowego giganta. Pierwszą osobą, która założyła plantację na południu tego kraju był oficer Francisco de Pahletta. Jego plantacja powstała w połowie XVIII wieku z przemyconych sadzonek kawowca pozyskanych z Gujany Francuskiej i została uznana za pierwszą w całej Brazylii.</p> <p>Na przestrzeni stu lat Brazylia niebagatelnie szybko rozwinęła uprawę kawowców, których efekt w postaci ziaren na stałe wpisał się w codzienność i tradycję Brazylijczyków.</p> <div class="hidden-xs hidden-sm" style="position: relative; padding-bottom: 58%; height: 0;"><figure class="base-img-wrap inline-block mk2 loaded lazyload"><img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-txt-2.jpg" alt="Brazil Mogiana" class="base-img-image inline w-full" style="position:absolute;top:0;left:0;width:100%;height:100%;"> <!----></figure></div></div></div> <div class="d-flex justify-content-center ml-auto mr-auto row"><div class="col-xs-10 col-xs-push-1 hidden-md hidden-lg text-center"><div style="position: relative; padding-bottom: 69%; height: 0;"><figure class="base-img-wrap inline-block mk2 not-loaded w-full text-center lazyload"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAPDw8P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Brazil Mogiana" class="base-img-image inline w-full" style="position:absolute;top:0;left:0;width:100%;height:100%;"> <div class="inner"><div class="spinner-outer"><div class="spinner-wrapper absolute inset-0 bg-grey-light min-h-12"><div class="spinner absolute left-1/2 top-1/2 flex"><div class="inline-block bg-gold-dark w-2 h-10 mx-1/2"></div><div class="inline-block bg-gold-dark w-2 h-10 mx-1/2"></div><div class="inline-block bg-gold-dark w-2 h-10 mx-1/2"></div><div class="inline-block bg-gold-dark w-2 h-10 mx-1/2"></div><div class="inline-block bg-gold-dark w-2 h-10 mx-1/2"></div></div></div></div></div></figure></div></div> <div class="col-xs-12 col-md-6 col-md-push-5 col-lg-5 col-lg-push-6"><p><strong>Kawa ziarnista 250 g </strong>nie jest wyłącznie napojem dodającym energii. To również symbol brazylijskiego stylu życia, nieokiełznanej żywiołowości tutejszych mieszkańców, którzy sposoby uprawy, zbioru, suszenia, obróbki i zaparzania przekazują sobie z pokolenia na pokolenie jako nieodłączny element tradycji. Najczęściej w brazylijskich domach kawa serwowana jest w postaci mocnego słodzonego wywaru zbliżonego do espresso.</p> <p>Kawa przyczyniła się ponadto do szeroko pojętego rozwoju gospodarki i infrastruktury. Spółka Mogiana, która zaczerpnęła swoją nazwę od nazwy regionu, stworzyła pierwsze linie kolejowe, co zapewniło lepszą komunikację i transport pomiędzy plantacjami znajdującymi się na tym obszarze.</p></div> <div class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-0 col-md-pull-6 col-lg-4 col-lg-push-0 col-lg-pull-4 text-center"><div style="position: relative; padding-bottom: 69%; height: 0;"><figure class="base-img-wrap inline-block mk2 loaded lazyload"><img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-5.jpg" alt="Brazil Mogiana" class="base-img-image inline w-full" style="position:absolute;top:0;left:0;width:100%;height:100%;"> <!----></figure></div></div></div> <div class="d-flex justify-content-center ml-auto mr-auto row"><div class="hidden-xs hidden-sm col-md-12 col-lg-9 col-lg-push-1 text-center"><div style="position: relative; padding-bottom: 28%; height: 0;"><figure class="base-img-wrap inline-block mk2 loaded lazyload"><img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-6.jpg" alt="Brazil Mogiana" class="base-img-image inline w-full" style="margin:15px 0;position:absolute;top:0;left:0;width:100%;height:100%;"> <!----></figure></div></div></div></div><div class="more-button-wrap"></div></div>
+                </section>
+
                 <section id="projector_in_bundle" class="hotspot mb-5 --list col-12">
                     <h2><span class="headline"><span class="headline__name">Oszczędź kupując więcej</span></span></h2>
                     <div class="products d-flex flex-wrap">
@@ -830,10 +838,14 @@
                                     <div class="product__prices flex-md-row align-items-md-center">
                                         <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
                                                 class="price --max"><del>989,94 zł</del></span><span
-                                                class="product__promo_info">(Taniej w zestawie o 32%)</span></div>
+                                                class="product__promo_info d-none">(Taniej w zestawie o 32%)</span></div>
                                         <div class="product__price_wrapper"><strong class="price">665,33 zł<span
                                                     class="price_vat"> brutto</span></strong></div>
+                                                    
                                     </div>
+                                    <div class="product__promo_omnibus omnibus_price"><span
+                                            class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
+                                        </span><span class="omnibus_price__value">978,00 zł</span></div>
                                     
                                 </div><a class="product__see d-none d-md-block"
                                     href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html">
@@ -860,10 +872,14 @@
                                     <div class="product__prices flex-md-row align-items-md-center">
                                         <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
                                                 class="price --max"><del>198,97 zł</del></span><span
-                                                class="product__promo_info">(Taniej w zestawie o 36%)</span></div>
+                                                class="product__promo_info d-none">(Taniej w zestawie o 36%)</span></div>
                                         <div class="product__price_wrapper"><strong class="price">126,13 zł<span
                                                     class="price_vat"> brutto</span></strong></div>
+                                                    
                                     </div>
+                                    <div class="product__promo_omnibus omnibus_price"><span
+                                            class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
+                                        </span><span class="omnibus_price__value">178,00 zł</span></div>
                                 </div><a class="product__see d-none d-md-block"
                                     href="/product-pol-4551-Bazzara-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html">
                                     Zobacz zestaw
@@ -890,7 +906,7 @@
                                         <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
                                                 class="price --max"><span class="omnibus_label">Cena regularna:
                                                 </span><del>377,97 zł</del></span><span
-                                                class="product__promo_info">(Taniej w zestawie o 39%)</span></div>
+                                                class="product__promo_info d-none">(Taniej w zestawie o 39%)</span></div>
                                         <div class="product__price_wrapper"><strong class="price">229,14 zł<span
                                                     class="price_vat"> brutto</span></strong></div>
                                     </div>
@@ -905,305 +921,8 @@
                         </div>
                     </div>
                 </section>
-                <section id="projector_longdescription" class="longdescription cm  col-12" data-traits="true"
-                    data-dictionary="true">
-                    <div id="item-desc" class="kawa">
-                        <div id="item-main-desc" class="row flex-column-reverse flex-md-row-reverse ">
-                            <div class="col-md-8 item-main-left">
-                                <h4>KAWA ZIARNISTA BAZZARA DODICIGRANCRU <strong>połączenie 12 najlepszych
-                                        arabik</strong></h4>
-                                <p>Bazzara Dodicigrancru wcześniej znana jako Top12 Gran Cru to z całą pewnością jedna z
-                                    najlepszych mieszanek do espresso na świecie. W jej skład wchodzi <strong>12 odmian
-                                        najlepszych arabik</strong> z całego świata, które zostały umiejętnie wypalone i
-                                    połączonych w odpowiednich proporcjach.</p>
-                                <p>Ziarna mieszanki Dodicigrancru to: <br><strong>Jamaica Blue Mountain</strong>, Puerto
-                                    Rico Yauco Selecto, Santo Domingo Barahona AAA, Meksyk Altura Superior, Honduras SHG
-                                    Marcala, Kostaryka SHB Tarrazu, Salvador Pacamara Gigante, Gwatemala Antigua
-                                    Pastores, Nikaragua Matagalpa Cavallino, Brazylia Sul De Minas Pergamino, Indie
-                                    Plantation Peaberry Bababudan, Etiopia Sidamo Lavado.</p>
-                                <h5>KAWA ODPOWIEDNIA O KAŻDEJ GODZINIE</h5>
-                                <p>Bazzara Dodicigrancru to stuprocentowa arabika, która zawiera <strong>niski poziom
-                                        kofeiny</strong>. Dzięki delikatnym właściwościom pobudzającym, możemy się nią
-                                    cieszyć również późnym popołudniem.</p>
-                            </div>
-                            <div
-                                class="col-md-4 item-main-right d-none d-md-flex flex-column justify-content-center align-content-center">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div id="smaki">
-                                <h2>SMAK - niepowtarzalne doznania</h2>
-                                <p>Zniewalające aromaty kwiatowe przypominające zapach kwiatu pomarańczy w idealny
-                                    sposób rozkwitają w <strong>wybornych doznaniach o likierowym posmaku</strong>.
-                                    Tajemnica wyjątkowego aromatu, w którym delikatnie palony migdał splata się z
-                                    bukietem smakowym karaibskiego rumu oraz przyjemnymi nutami szlachetnych liści
-                                    tytoniu. Gorzkawo-korzenny smak łączy się z zapachami kandyzowanej skórki pomarańczy
-                                    zatopionej w czekoladzie.</p>
-                            </div>
-                        </div>
-                        <div id="profilsensoryczny" class="text-center"><img
-                                src="https://www.konesso.pl/data/include/cms/Podstrony-mario/Bazzara/Bazzara-Grancru-1kg.jpg"
-                                border="0" alt="Bazzara Dodicigrancru profil sensoryczny"></div>
-                        <div id="methods">
-                            <h4 class="metoda">Proponowane sposoby przygotowania <strong>Bazzara Dodicigrancru</strong>
-                            </h4>
-                            <p><strong>Bazzara Dodicigrancru</strong> to niezwykła mieszanka, która najlepiej sprawdzi
-                                się w ekspresie kolbowym i automatycznym. Jeżeli odpowiednio ją zmielimy, to możemy ją
-                                zaparzyć w kawiarce Moka lub French Pressie.</p>
-                        </div>
-                        <div id="item-coffee-type" class="row p-t-5">
-                            <div class="col-sm-4 d-none d-sm-block item-coffee-type-left  "></div>
-                            <div class="col-sm-8 item-coffee-type-right">
-                                <h2>ESPRESSO W MISTRZOWSKIM WYDANIU</h2>
-                                <p>Bazzara Dodicigrancru jest stuprocentową arabiką, stworzoną z najlepszych ziaren. Ta
-                                    kawa zachwyca już od pierwszego kontaktu, a jej prawdziwe oblicze doskonale
-                                    zaprezentuje <strong>mała filiżanka espresso</strong>. Odpowiednio przygotowana
-                                    Dodicigrancru sprawia, że nie liczy się nic więcej.</p>
-                                <div class="item-coffee-type-others">
-                                    <h5>Kawa sprawdzi się również w przygotowaniu innych specjałów kawowych</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="iframe-video-yt"><iframe src="//www.youtube.com/embed/i02SY1zyNHE" width="425"
-                                height="350"></iframe></div>
-                    </div>
-                    <div style="display: block; margin: 50px auto; padding: 50px auto;">
-                        <iframe width="100%" height="600px" src="https://www.youtube.com/embed/2q01ek_8nPw"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen=""></iframe>
-                    </div>
-                </section>
-                <section id="projector_dictionary" class="dictionary col-12 mb-1 mb-sm-4">
-                    <div class="dictionary__group --first --no-group">
-                        <div class="dictionary__param row mb-3" data-producer="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Marka</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><a class="dictionary__value_txt"
-                                        href="/firm-pol-1320750793-BAZZARA.html"
-                                        title="Kliknij, by zobaczyć wszystkie produkty tej marki">BAZZARA</a></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-code="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Symbol</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">8026028003023</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-producer_code="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Kod producenta</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt"><span
-                                            class="dictionary__producer_code --value">8026028001210</span></span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Skład</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">100% Arabika</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Stopień palenia</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Średni</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Zawartość kofeiny</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Niska</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Rodzaj</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Kawa ziarnista</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Przeznaczenie </span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Do ekspresu
-                                        automatycznego</span></div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Do ekspresu
-                                        kolbowego</span></div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Do biura</span></div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Do kawiarni</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Polecana do</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Espresso</span></div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Kawa czarna</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Blend czy Single</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Blend /
-                                        Mieszanki</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Pochodzenie ziaren</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Ameryka
-                                        Południowa</span></div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Ameryka
-                                        Środkowa</span></div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Indie</span></div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Etiopia</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Kwasowość</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Mocna</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Gorycz</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Średnia</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Słodycz</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Mocna</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Intensywność smaku</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Średnia</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Wyczuwalne smaki</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Czekolada</span>
-                                </div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Kwiaty</span></div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Liść tytoniu</span>
-                                </div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Przyprawy</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Crema</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Gęsta</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Sposób przygotowania</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Ekspres
-                                        automatyczny</span></div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Ekspres
-                                        kolbowy</span></div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">French Press</span>
-                                </div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Kawiarka</span></div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Tradycyjny</span>
-                                </div>
-                                <div class="dictionary__value"><span class="dictionary__value_txt">Ekspres
-                                        przelewowy</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-desc_value="true" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Palarnia</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value" data-desc="true"><span
-                                        class="dictionary__value_txt">Włochy<a href="#showDescription"
-                                            class="dictionary__more">Więcej</a></span>
-                                    <div class="dictionary__description --value">
-                                        <p>Najlepsza włoska kawa</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Opakowanie</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">1000g</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Dostępne opakowania</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">1000g</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-duplicate="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end"><span
-                                    class="dictionary__name_txt">Waga</span></div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">1000</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-desc_name="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end" data-desc="true">
-                                <span class="dictionary__name_txt">Długość opakowania w centymetrach<a
-                                        href="#showDescription" class="dictionary__more">Więcej</a></span>
-                                <div class="dictionary__description --name">Długość towaru w centymetrach</div>
-                            </div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">14</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-desc_name="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end" data-desc="true">
-                                <span class="dictionary__name_txt">Wysokość opakowania w centymetrach<a
-                                        href="#showDescription" class="dictionary__more">Więcej</a></span>
-                                <div class="dictionary__description --name">Wysokość towaru w centymetrach</div>
-                            </div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">24</span></div>
-                            </div>
-                        </div>
-                        <div class="dictionary__param row mb-3" data-desc_name="true">
-                            <div class="dictionary__name col-6 d-flex flex-column align-items-end" data-desc="true">
-                                <span class="dictionary__name_txt">Szerokość opakowania w centymetrach<a
-                                        href="#showDescription" class="dictionary__more">Więcej</a></span>
-                                <div class="dictionary__description --name">Szerokość towaru w centymetrach</div>
-                            </div>
-                            <div class="dictionary__values col-6">
-                                <div class="dictionary__value"><span class="dictionary__value_txt">10</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
+             
                 <section id="products_associated_zone1" class="hotspot mb-5 --list col-12" data-ajaxload="true"
                     data-pagetype="projector">
                     <div class="hotspot mb-5 skeleton"><span class="headline"></span>
@@ -1490,9 +1209,6 @@
 
         <?php include 'footer.php'; ?>
 
-        <!-- 
-<script
-            src="main.js"></script>  -->
         <script src="./js/shop.js">
         </script>
 
@@ -1523,7 +1239,8 @@
         <script src="./js/projector_cms_sizes.js.gzip?r=1692344836">
         </script>
         <script>
-        app_shop.runApp();
+          
+                app_shop.runApp();
         </script>
 </body>
 
