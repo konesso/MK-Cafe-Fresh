@@ -1,11 +1,10 @@
-<html lang="pl" class="--vat --gross  --freeShipping --smallLogo " data-browser="Chrome" data-browser-version="117"
+<html lang="pl" class="--vat --gross  --freeShipping --smallLogo no-touch " data-browser="Chrome" data-browser-version="117"
     style="--vh: 8.14px;">
 
 <head>
     <meta name="viewport"
         content="user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, width=device-width, viewport-fit=cover" />
-    <link rel="preload" crossorigin="anonymous" as="font"
-        href="https://www.konesso.pl/gfx/standards/fontello.woff?v=2" />
+   
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Kawa ziarnista świeże kawy w ziarnach Konesso.pl</title>
@@ -17,7 +16,7 @@
     <meta name="msapplication-navbutton-color" content="#0090f6" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#0090f6" />
 
-    <link rel="preload stylesheet" as="style" href="./dist/assets/index.css?v=11" />
+    <link rel="preload stylesheet" as="style" href="css/index.css?v=11" />
     <!-- <link rel="preload stylesheet" as="style" href="./style/index-old.css" /> -->
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->

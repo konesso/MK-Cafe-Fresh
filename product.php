@@ -17,21 +17,21 @@
                                 data-slick-index="0" data-width="92" data-height="160"><img
                                     class="photos__photo b-lazy --nav" width="92" height="160"
                                     alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                    data-src="https://www.konesso.pl/pol_ps_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_3.jpg"></a>
+                                    data-src="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"></a>
                         </figure>
                         <figure class="photos__figure --nav"><a class="photos__link --nav"
                                 href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"
                                 data-slick-index="1" data-width="75" data-height="75"><img
                                     class="photos__photo b-lazy --nav" width="75" height="75"
                                     alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                    data-src="https://www.konesso.pl/pol_ps_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"></a>
+                                    data-src="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico1880x2000.png"></a>
                         </figure>
                         <figure class="photos__figure --nav"><a class="photos__link --nav"
                                 href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"
                                 data-slick-index="2" data-width="75" data-height="75"><img
                                     class="photos__photo b-lazy --nav" width="75" height="75"
                                     alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                    data-src="https://www.konesso.pl/pol_ps_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"></a>
+                                    data-src="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"></a>
                         </figure>
                     </div>
                     <div id="photos_slider" class="photos__slider" data-skeleton="true" data-nav="true">
@@ -40,23 +40,25 @@
                                     href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_3.jpg"
                                     data-width="450" data-height="780"><img class="photos__photo" width="450"
                                         height="780" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                        src="https://www.konesso.pl/pol_pm_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_3.jpg"></a>
+                                        src="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"></a>
                             </figure>
                             <figure class="photos__figure"><a class="photos__link"
                                     href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"
                                     data-width="624" data-height="624"><img class="photos__photo slick-loading"
                                         width="624" height="624" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                        data-lazy="https://www.konesso.pl/pol_pm_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"></a>
+                                        data-lazy="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico1880x2000.png"></a>
                             </figure>
                             <figure class="photos__figure"><a class="photos__link"
                                     href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"
                                     data-width="624" data-height="624"><img class="photos__photo slick-loading"
                                         width="624" height="624" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                        data-lazy="https://www.konesso.pl/pol_pm_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"></a>
+                                        data-lazy="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"></a>
                             </figure>
                         </div>
                     </div>
+
                 </section>
+                
                 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="pswp__bg"></div>
                     <div class="pswp__scroll-wrap">
@@ -91,115 +93,162 @@
                         </div>
                     </div>
                 </div>
+               
                 <section id="projector_producttraits" class="traits d-none mb-4 d-md-block">
-                    <div class="traits__wrapper">
-                        <div class="traits__item mb-2" data-hide="false"><span
-                                class="traits__label mr-2">Skład</span><span
-                                class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                    href="/tra-pol-1335603424-100-Arabika.html">100% Arabika</a></span></div>
-                        <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Stopień
-                                palenia</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                    class="traits__value" href="/tra-pol-1335603489-Sredni.html">Średni</a></span></div>
-                        <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Zawartość
-                                kofeiny</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                    class="traits__value" href="/tra-pol-1335603492-Niska.html">Niska</a></span></div>
-                        <div class="traits__item mb-2" data-hide="false"><span
-                                class="traits__label mr-2">Rodzaj</span><span
-                                class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                    href="/tra-pol-1335603587-Kawa-ziarnista.html">Kawa ziarnista</a></span></div>
-                        <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Przeznaczenie
-                            </span><span class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                    href="/tra-pol-1335603592-Do-ekspresu-automatycznego.html">Do ekspresu
-                                    automatycznego</a><a class="traits__value"
-                                    href="/tra-pol-1335603593-Do-ekspresu-kolbowego.html">Do ekspresu kolbowego</a><a
-                                    class="traits__value" href="/tra-pol-1335603581-Do-biura.html">Do biura</a><a
-                                    class="traits__value" href="/tra-pol-1335603579-Do-kawiarni.html">Do
-                                    kawiarni</a></span></div>
-                        <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Polecana
-                                do</span><span class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                    href="/tra-pol-1335603896-Espresso.html">Espresso</a><a class="traits__value"
-                                    href="/tra-pol-1335603897-Kawa-czarna.html">Kawa czarna</a></span></div>
-                        <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Blend czy
-                                Single</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                    class="traits__value" href="/tra-pol-1335603893-Blend-Mieszanki.html">Blend /
-                                    Mieszanki</a></span></div>
-                        <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Pochodzenie
-                                ziaren</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                    class="traits__value" href="/tra-pol-1335603921-Ameryka-Poludniowa.html">Ameryka
-                                    Południowa</a><a class="traits__value"
-                                    href="/tra-pol-1335603906-Ameryka-Srodkowa.html">Ameryka Środkowa</a><a
-                                    class="traits__value" href="/tra-pol-1335603904-Indie.html">Indie</a><a
-                                    class="traits__value" href="/tra-pol-1335603902-Etiopia.html">Etiopia</a></span>
+                    <div class="row">
+                        <div class="col-md-6">
+                          
+                           
+                            <div class=" d-flex justify-content-between">
+                                <p class="text-uppercase">Profil aromatyczny</p>
+                                <div class="font-bold aroma-links">
+                                    <a href="#">orzech,</a> <a href="#">karmel,</a> <a href="#">miód,</a> <a href="#">mleczna czekolada</a>
+                                </div>
+                            </div>
+
+                            <div class="hrline mt-4 mb-4"></div>
+
+                            <div class=" d-flex justify-content-between">
+                                <p class="text-uppercase">Intensywność</p>
+                                <b class="d-flex align-items-center">2.5
+                                    <span class="stars-coffee ml-3">
+                                        <span class="full"></span>
+                                        <span class="full"></span>
+                                        <span class="half"></span>
+                                        <span class="empty"></span>
+                                        <span class="empty"></span>
+                                    </span>
+                                </b>
+                            </div>
+                            <div class="hrline mt-4 mb-4"></div>
+
+                            <div class="d-flex justify-content-between">
+                                <p class="text-uppercase">Kwasowość</p>
+                                <b class="d-flex align-items-center">1.5
+                                    <span class="stars-coffee ml-3">
+                                        <span class="full"></span>
+                                        <span class="half"></span>
+                                        <span class="empty"></span>
+                                        <span class="empty"></span>
+                                        <span class="empty"></span>
+                                    </span>
+                                </b>
+                            </div>
+                            <!-- <div class="hrline mt-2 mb-2"></div> -->
+                          
                         </div>
-                        <div class="traits__item mb-2" data-hide="true"><span
-                                class="traits__label mr-2">Kwasowość</span><span
-                                class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                    href="/tra-pol-1335603946-Mocna.html">Mocna</a></span></div>
-                        <div class="traits__item mb-2" data-hide="true"><span
-                                class="traits__label mr-2">Gorycz</span><span
-                                class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                    href="/tra-pol-1335603918-Srednia.html">Średnia</a></span></div>
-                        <div class="traits__item mb-2" data-hide="true"><span
-                                class="traits__label mr-2">Słodycz</span><span
-                                class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                    href="/tra-pol-1335603923-Mocna.html">Mocna</a></span></div>
-                        <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Intensywność
-                                smaku</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                    class="traits__value" href="/tra-pol-1335603914-Srednia.html">Średnia</a></span>
+                        <div class="col-md-6">
+                                <div class="traits__wrapper">
+                                <div class="traits__item mb-2" data-hide="false"><span
+                                        class="traits__label mr-2">Skład</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603424-100-Arabika.html">100% Arabika</a></span></div>
+                                <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Stopień
+                                        palenia</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335603489-Sredni.html">Średni</a></span></div>
+                                <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Zawartość
+                                        kofeiny</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335603492-Niska.html">Niska</a></span></div>
+                                <div class="traits__item mb-2" data-hide="false"><span
+                                        class="traits__label mr-2">Rodzaj</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603587-Kawa-ziarnista.html">Kawa ziarnista</a></span></div>
+                                <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Przeznaczenie
+                                    </span><span class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603592-Do-ekspresu-automatycznego.html">Do ekspresu
+                                            automatycznego</a><a class="traits__value"
+                                            href="/tra-pol-1335603593-Do-ekspresu-kolbowego.html">Do ekspresu kolbowego</a><a
+                                            class="traits__value" href="/tra-pol-1335603581-Do-biura.html">Do biura</a><a
+                                            class="traits__value" href="/tra-pol-1335603579-Do-kawiarni.html">Do
+                                            kawiarni</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Polecana
+                                        do</span><span class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603896-Espresso.html">Espresso</a><a class="traits__value"
+                                            href="/tra-pol-1335603897-Kawa-czarna.html">Kawa czarna</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Blend czy
+                                        Single</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335603893-Blend-Mieszanki.html">Blend /
+                                            Mieszanki</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Pochodzenie
+                                        ziaren</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335603921-Ameryka-Poludniowa.html">Ameryka
+                                            Południowa</a><a class="traits__value"
+                                            href="/tra-pol-1335603906-Ameryka-Srodkowa.html">Ameryka Środkowa</a><a
+                                            class="traits__value" href="/tra-pol-1335603904-Indie.html">Indie</a><a
+                                            class="traits__value" href="/tra-pol-1335603902-Etiopia.html">Etiopia</a></span>
+                                </div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Kwasowość</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603946-Mocna.html">Mocna</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Gorycz</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603918-Srednia.html">Średnia</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Słodycz</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603923-Mocna.html">Mocna</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Intensywność
+                                        smaku</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335603914-Srednia.html">Średnia</a></span>
+                                </div>
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Wyczuwalne
+                                        smaki</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335603925-Czekolada.html">Czekolada</a><a
+                                            class="traits__value" href="/tra-pol-1335603937-Kwiaty.html">Kwiaty</a><a
+                                            class="traits__value" href="/tra-pol-1335603933-Lisc-tytoniu.html">Liść
+                                            tytoniu</a><a class="traits__value"
+                                            href="/tra-pol-1335603932-Przyprawy.html">Przyprawy</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Crema</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603926-Gesta.html">Gęsta</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Sposób
+                                        przygotowania</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335603886-Ekspres-automatyczny.html">Ekspres
+                                            automatyczny</a><a class="traits__value"
+                                            href="/tra-pol-1335603888-Ekspres-kolbowy.html">Ekspres kolbowy</a><a
+                                            class="traits__value" href="/tra-pol-1335603883-French-Press.html">French
+                                            Press</a><a class="traits__value"
+                                            href="/tra-pol-1335603880-Kawiarka.html">Kawiarka</a><a class="traits__value"
+                                            href="/tra-pol-1335603879-Tradycyjny.html">Tradycyjny</a><a class="traits__value"
+                                            href="/tra-pol-1335603887-Ekspres-przelewowy.html">Ekspres przelewowy</a></span>
+                                </div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Palarnia</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603600-Wlochy.html">Włochy</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Opakowanie</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603658-1000g.html">1000g</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Blog</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335603743--KAWA-baza-wiedzy-bloglist-pol-2-html.html">/KAWA-baza-wiedzy-bloglist-pol-2.html</a></span>
+                                </div>
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Dostępne
+                                        opakowania</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value" href="/tra-pol-1335604276-1000g.html">1000g</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Waga</span><span
+                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
+                                            href="/tra-pol-1335604648-1000.html">1000</a></span></div>
+                            </div><a href="#showAllTraits" class="traits__all">Pokaż wszystkie</a>
                         </div>
-                        <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Wyczuwalne
-                                smaki</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                    class="traits__value" href="/tra-pol-1335603925-Czekolada.html">Czekolada</a><a
-                                    class="traits__value" href="/tra-pol-1335603937-Kwiaty.html">Kwiaty</a><a
-                                    class="traits__value" href="/tra-pol-1335603933-Lisc-tytoniu.html">Liść
-                                    tytoniu</a><a class="traits__value"
-                                    href="/tra-pol-1335603932-Przyprawy.html">Przyprawy</a></span></div>
-                        <div class="traits__item mb-2" data-hide="true"><span
-                                class="traits__label mr-2">Crema</span><span
-                                class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                    href="/tra-pol-1335603926-Gesta.html">Gęsta</a></span></div>
-                        <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Sposób
-                                przygotowania</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                    class="traits__value" href="/tra-pol-1335603886-Ekspres-automatyczny.html">Ekspres
-                                    automatyczny</a><a class="traits__value"
-                                    href="/tra-pol-1335603888-Ekspres-kolbowy.html">Ekspres kolbowy</a><a
-                                    class="traits__value" href="/tra-pol-1335603883-French-Press.html">French
-                                    Press</a><a class="traits__value"
-                                    href="/tra-pol-1335603880-Kawiarka.html">Kawiarka</a><a class="traits__value"
-                                    href="/tra-pol-1335603879-Tradycyjny.html">Tradycyjny</a><a class="traits__value"
-                                    href="/tra-pol-1335603887-Ekspres-przelewowy.html">Ekspres przelewowy</a></span>
-                        </div>
-                        <div class="traits__item mb-2" data-hide="true"><span
-                                class="traits__label mr-2">Palarnia</span><span
-                                class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                    href="/tra-pol-1335603600-Wlochy.html">Włochy</a></span></div>
-                        <div class="traits__item mb-2" data-hide="true"><span
-                                class="traits__label mr-2">Opakowanie</span><span
-                                class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                    href="/tra-pol-1335603658-1000g.html">1000g</a></span></div>
-                        <div class="traits__item mb-2" data-hide="true"><span
-                                class="traits__label mr-2">Blog</span><span
-                                class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                    href="/tra-pol-1335603743--KAWA-baza-wiedzy-bloglist-pol-2-html.html">/KAWA-baza-wiedzy-bloglist-pol-2.html</a></span>
-                        </div>
-                        <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Dostępne
-                                opakowania</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                    class="traits__value" href="/tra-pol-1335604276-1000g.html">1000g</a></span></div>
-                        <div class="traits__item mb-2" data-hide="true"><span
-                                class="traits__label mr-2">Waga</span><span
-                                class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                    href="/tra-pol-1335604648-1000.html">1000</a></span></div>
-                    </div><a href="#showAllTraits" class="traits__all">Pokaż wszystkie</a>
+                    </div>
+                   
                 </section>
                 <section id="projector_productname" class="product_name mb-4">
                     <div class="product_name__block --name mb-2 d-sm-flex justify-content-sm-between mb-sm-3">
                         <h1 class="product_name__name m-0">Kawa ziarnista Bazzara DODICIGRANCRU 1kg </h1>
-                        <div
+                        <!-- <div
                             class="product_name__firm_logo d-none d-sm-flex justify-content-sm-end align-items-sm-center ml-sm-2">
                             <a class="firm_logo" href="/firm-pol-1320750793-BAZZARA.html"><img class="b-lazy b-loaded"
-                                    src="https://www.konesso.pl/data/langhttps://www.konesso.pl/pol/producers/gfx/projector/1320750793_1.jpg"
+                                    src="https://www.konesso.pl/pol/producers/gfx/projector/1320750793_1.jpg"
                                     title="BAZZARA" alt="BAZZARA"></a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="product_name__block --links d-lg-flex justify-content-lg-end align-items-lg-center">
                         <div class="product_name__notes mb-4 mb-lg-0 mr-lg-auto"><span class="product_name__note"><i
@@ -220,211 +269,210 @@
                     </div>
                     <div class="product_name__block --description mt-3">
                         <ul>
-                            <li>Bazzara Dodicigrancru jest z pewnością jedną z najlepszych mieszanek do espresso na
-                                świecie. Skład: 100% Arabica (5% Jamaica Blue Mountain) </li>
+                            <li>Wysokiej jakości meksykańska Arabika, uprawiana w regionie górskim. Bujna roślinność, deszczowy klimat i duże wysokości dają tej kawie to co najlepsze z meksykańskiego charakteru. Słodycz czekolady, karmelu i migdałów przełamana owocowymi nutami pomarańczy - tak skomponowany smak działa na wyobraźnię i pozwala przenieść się do świata wyjątkowej natury, różnorodności i niezwykłego kolorytu tego regionu.  </li>
                         </ul>
                     </div>
                 </section>
                 <script class="ajaxLoad">
-                cena_raty = 106.50;
+                    cena_raty = 106.50;
 
-                var client_login = 'true'
+                    var client_login = 'true'
 
-                var client_points = '0';
-                var points_used = '';
-                var shop_currency = 'zł';
-                var product_data = {
-                    "product_id": '29',
+                    var client_points = '0';
+                    var points_used = '';
+                    var shop_currency = 'zł';
+                    var product_data = {
+                        "product_id": '29',
 
-                    "currency": "zł",
-                    "product_type": "product_item",
-                    "unit": "szt.",
-                    "unit_plural": "szt.",
+                        "currency": "zł",
+                        "product_type": "product_item",
+                        "unit": "szt.",
+                        "unit_plural": "szt.",
 
-                    "unit_sellby": "1",
-                    "unit_precision": "0",
+                        "unit_sellby": "1",
+                        "unit_precision": "0",
 
-                    "base_price": {
+                        "base_price": {
 
-                        "maxprice": "106.50",
+                            "maxprice": "106.50",
 
-                        "maxprice_formatted": "106,50 zł",
+                            "maxprice_formatted": "106,50 zł",
 
-                        "maxprice_net": "86.59",
+                            "maxprice_net": "86.59",
 
-                        "maxprice_net_formatted": "86,59 zł",
+                            "maxprice_net_formatted": "86,59 zł",
 
-                        "minprice": "106.50",
+                            "minprice": "106.50",
 
-                        "minprice_formatted": "106,50 zł",
+                            "minprice_formatted": "106,50 zł",
 
-                        "minprice_net": "86.59",
+                            "minprice_net": "86.59",
 
-                        "minprice_net_formatted": "86,59 zł",
+                            "minprice_net_formatted": "86,59 zł",
 
-                        "size_max_maxprice_net": "134.14",
+                            "size_max_maxprice_net": "134.14",
 
-                        "size_min_maxprice_net": "134.14",
+                            "size_min_maxprice_net": "134.14",
 
-                        "size_max_maxprice_net_formatted": "134,14 zł",
+                            "size_max_maxprice_net_formatted": "134,14 zł",
 
-                        "size_min_maxprice_net_formatted": "134,14 zł",
+                            "size_min_maxprice_net_formatted": "134,14 zł",
 
-                        "size_max_maxprice": "164.99",
+                            "size_max_maxprice": "164.99",
 
-                        "size_min_maxprice": "164.99",
+                            "size_min_maxprice": "164.99",
 
-                        "size_max_maxprice_formatted": "164,99 zł",
+                            "size_max_maxprice_formatted": "164,99 zł",
 
-                        "size_min_maxprice_formatted": "164,99 zł",
+                            "size_min_maxprice_formatted": "164,99 zł",
 
-                        "price_unit_sellby": "106.50",
+                            "price_unit_sellby": "106.50",
 
-                        "value": "106.50",
-                        "price_formatted": "106,50 zł",
-                        "price_net": "86.59",
-                        "price_net_formatted": "86,59 zł",
-                        "yousave_percent": "35",
-                        "beforerebate": "164.99",
-                        "beforerebate_formatted": "164,99 zł",
-                        "max_worth": "164.99",
-                        "max_worth_formatted": "164,99 zł",
-                        "beforerebate_net": "134.14",
-                        "beforerebate_net_formatted": "134,14 zł",
-                        "max_worth_net": "134.14",
-                        "max_worth_net_formatted": "134,14 zł",
-                        "vat": "23",
-                        "yousave": "58.49",
-                        "maxprice": "164.99",
-                        "yousave_formatted": "58,49 zł",
-                        "maxprice_formatted": "164,99 zł",
-                        "yousave_net": "47.55",
-                        "maxprice_net": "134.14",
-                        "yousave_net_formatted": "47,55 zł",
-                        "maxprice_net_formatted": "134,14 zł",
-                        "worth": "106.50",
-                        "worth_net": "86.59",
-                        "worth_formatted": "106,50 zł",
-                        "worth_net_formatted": "86,59 zł",
-                        "max_diff_gross": "58.49",
-                        "max_diff_gross_formatted": "58,49 zł",
-                        "max_diff_percent": "35",
-                        "max_diff_net": "47.55",
-                        "max_diff_net_formatted": "47,55 zł",
-                        "basket_enable": "y",
-                        "special_offer": "false",
-                        "rebate_code_active": "y",
-                        "priceformula_error": "false"
-                    },
+                            "value": "106.50",
+                            "price_formatted": "106,50 zł",
+                            "price_net": "86.59",
+                            "price_net_formatted": "86,59 zł",
+                            "yousave_percent": "35",
+                            "beforerebate": "164.99",
+                            "beforerebate_formatted": "164,99 zł",
+                            "max_worth": "164.99",
+                            "max_worth_formatted": "164,99 zł",
+                            "beforerebate_net": "134.14",
+                            "beforerebate_net_formatted": "134,14 zł",
+                            "max_worth_net": "134.14",
+                            "max_worth_net_formatted": "134,14 zł",
+                            "vat": "23",
+                            "yousave": "58.49",
+                            "maxprice": "164.99",
+                            "yousave_formatted": "58,49 zł",
+                            "maxprice_formatted": "164,99 zł",
+                            "yousave_net": "47.55",
+                            "maxprice_net": "134.14",
+                            "yousave_net_formatted": "47,55 zł",
+                            "maxprice_net_formatted": "134,14 zł",
+                            "worth": "106.50",
+                            "worth_net": "86.59",
+                            "worth_formatted": "106,50 zł",
+                            "worth_net_formatted": "86,59 zł",
+                            "max_diff_gross": "58.49",
+                            "max_diff_gross_formatted": "58,49 zł",
+                            "max_diff_percent": "35",
+                            "max_diff_net": "47.55",
+                            "max_diff_net_formatted": "47,55 zł",
+                            "basket_enable": "y",
+                            "special_offer": "false",
+                            "rebate_code_active": "y",
+                            "priceformula_error": "false"
+                        },
 
-                    "order_quantity_range": {
+                        "order_quantity_range": {
 
-                    },
+                        },
 
-                    "sizes": {
+                        "sizes": {
 
-                        "uniw": {
+                            "uniw": {
 
-                            "type": "uniw",
+                                "type": "uniw",
 
-                            "priority": "0",
+                                "priority": "0",
 
-                            "description": "uniwersalny",
+                                "description": "uniwersalny",
 
-                            "name": "uniw",
+                                "name": "uniw",
 
-                            "amount": 4941,
+                                "amount": 4941,
 
-                            "amount_mo": 0,
+                                "amount_mo": 0,
 
-                            "amount_mw": 4941,
+                                "amount_mw": 4941,
 
-                            "amount_mp": 0,
+                                "amount_mp": 0,
 
-                            "code_extern": "Baz-top12",
+                                "code_extern": "Baz-top12",
 
-                            "code_producer": "8026028001210",
+                                "code_producer": "8026028001210",
 
-                            "shipping_time": {
+                                "shipping_time": {
 
-                                "days": "0",
-                                "working_days": "0",
-                                "hours": "0",
-                                "minutes": "0",
-                                "time": "2023-11-14 10:10",
-                                "week_day": "2",
-                                "week_amount": "0",
-                                "today": "true",
-                                "today_shipment_deadline": "15:00:00"
-                            },
+                                    "days": "0",
+                                    "working_days": "0",
+                                    "hours": "0",
+                                    "minutes": "0",
+                                    "time": "2023-11-14 10:10",
+                                    "week_day": "2",
+                                    "week_amount": "0",
+                                    "today": "true",
+                                    "today_shipment_deadline": "15:00:00"
+                                },
 
-                            "delay_time": {
+                                "delay_time": {
 
-                                "days": "0",
-                                "hours": "0",
-                                "minutes": "0",
-                                "time": "2023-11-14 10:10:12",
-                                "week_day": "2",
-                                "week_amount": "0",
-                                "unknown_delivery_time": "false"
-                            },
+                                    "days": "0",
+                                    "hours": "0",
+                                    "minutes": "0",
+                                    "time": "2023-11-14 10:10:12",
+                                    "week_day": "2",
+                                    "week_amount": "0",
+                                    "unknown_delivery_time": "false"
+                                },
 
-                            "delivery": {
+                                "delivery": {
 
-                                "undefined": "false",
-                                "shipping": "0.00",
-                                "shipping_formatted": "0,00 zł",
-                                "limitfree": "0.00",
-                                "limitfree_formatted": "0,00 zł"
-                            },
-                            "price": {
+                                    "undefined": "false",
+                                    "shipping": "0.00",
+                                    "shipping_formatted": "0,00 zł",
+                                    "limitfree": "0.00",
+                                    "limitfree_formatted": "0,00 zł"
+                                },
+                                "price": {
 
-                                "value": "106.50",
-                                "price_formatted": "106,50 zł",
-                                "price_net": "86.59",
-                                "price_net_formatted": "86,59 zł",
-                                "yousave_percent": "35",
-                                "beforerebate": "164.99",
-                                "beforerebate_formatted": "164,99 zł",
-                                "max_worth": "164.99",
-                                "max_worth_formatted": "164,99 zł",
-                                "beforerebate_net": "134.14",
-                                "beforerebate_net_formatted": "134,14 zł",
-                                "max_worth_net": "134.14",
-                                "max_worth_net_formatted": "134,14 zł",
-                                "vat": "23",
-                                "yousave": "58.49",
-                                "maxprice": "164.99",
-                                "yousave_formatted": "58,49 zł",
-                                "maxprice_formatted": "164,99 zł",
-                                "yousave_net": "47.55",
-                                "maxprice_net": "134.14",
-                                "yousave_net_formatted": "47,55 zł",
-                                "maxprice_net_formatted": "134,14 zł",
-                                "worth": "106.50",
-                                "worth_net": "86.59",
-                                "worth_formatted": "106,50 zł",
-                                "worth_net_formatted": "86,59 zł",
-                                "max_diff_gross": "58.49",
-                                "max_diff_gross_formatted": "58,49 zł",
-                                "max_diff_percent": "35",
-                                "max_diff_net": "47.55",
-                                "max_diff_net_formatted": "47,55 zł",
-                                "basket_enable": "y",
-                                "special_offer": "false",
-                                "rebate_code_active": "y",
-                                "priceformula_error": "false"
-                            },
-                            "weight": {
+                                    "value": "106.50",
+                                    "price_formatted": "106,50 zł",
+                                    "price_net": "86.59",
+                                    "price_net_formatted": "86,59 zł",
+                                    "yousave_percent": "35",
+                                    "beforerebate": "164.99",
+                                    "beforerebate_formatted": "164,99 zł",
+                                    "max_worth": "164.99",
+                                    "max_worth_formatted": "164,99 zł",
+                                    "beforerebate_net": "134.14",
+                                    "beforerebate_net_formatted": "134,14 zł",
+                                    "max_worth_net": "134.14",
+                                    "max_worth_net_formatted": "134,14 zł",
+                                    "vat": "23",
+                                    "yousave": "58.49",
+                                    "maxprice": "164.99",
+                                    "yousave_formatted": "58,49 zł",
+                                    "maxprice_formatted": "164,99 zł",
+                                    "yousave_net": "47.55",
+                                    "maxprice_net": "134.14",
+                                    "yousave_net_formatted": "47,55 zł",
+                                    "maxprice_net_formatted": "134,14 zł",
+                                    "worth": "106.50",
+                                    "worth_net": "86.59",
+                                    "worth_formatted": "106,50 zł",
+                                    "worth_net_formatted": "86,59 zł",
+                                    "max_diff_gross": "58.49",
+                                    "max_diff_gross_formatted": "58,49 zł",
+                                    "max_diff_percent": "35",
+                                    "max_diff_net": "47.55",
+                                    "max_diff_net_formatted": "47,55 zł",
+                                    "basket_enable": "y",
+                                    "special_offer": "false",
+                                    "rebate_code_active": "y",
+                                    "priceformula_error": "false"
+                                },
+                                "weight": {
 
-                                "g": "1000",
-                                "kg": "1"
+                                    "g": "1000",
+                                    "kg": "1"
+                                }
                             }
                         }
-                    }
 
-                }
-                var trust_level = '1';
+                    }
+                    var trust_level = '1';
                 </script>
                 <form id="projector_form" class="projector_details is-validated enable"
                     action="https://www.konesso.pl/basketchange.php" method="post" data-product_id="29"
@@ -432,21 +480,22 @@
                         id="projector_product_hidden" type="hidden" name="product" value="29"><input
                         id="projector_size_hidden" type="hidden" name="size" autocomplete="off" value="onesize"><input
                         id="projector_mode_hidden" type="hidden" name="mode" value="1">
-                    <div class="projector_details__wrapper">
                         <div id="versions" class="projector_details__versions projector_versions"><span
                                 class="projector_versions__label">Dostępne opakowania</span>
                             <div class="projector_versions__sub"><a class="projector_versions__item --selected"
                                     href="/product-pol-29-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html"
                                     title="1000g"><span class="projector_versions__gfx"><img
-                                            src="https://www.konesso.pl/data/gfx/icons/versions/9/2/29.jpg"
+                                            src="https://mkfreshprod.azureedge.net/img/360/383/70/resize-contain/catalog/product/m/k/mk_fr_christmas_22_1880.jpg"
                                             alt="1000g"></span><span class="projector_versions__name">1000g</span></a><a
                                     class="projector_versions__item"
                                     href="/product-pol-2016-Kawa-ziarnista-Bazzara-DODICIGRANCRU-250g.html"
                                     title="250g"><span class="projector_versions__gfx"><img
-                                            src="https://www.konesso.pl/data/gfx/icons/versions/6/1/2016.jpg"
+                                            src="https://mkfreshprod.azureedge.net/img/360/383/70/resize-contain/catalog/product/b/r/brazil-honey_1880x2000_1.jpg"
                                             alt="250g"></span><span class="projector_versions__name">250g</span></a>
                             </div>
                         </div>
+                    <div class="projector_details__wrapper">
+                        
                         <div id="projector_sizes_cont" class="projector_details__sizes projector_sizes"
                             data-onesize="true" style="display: none;"><span
                                 class="projector_sizes__label">Rozmiar</span>
@@ -471,6 +520,10 @@
                                         style="display:none">1</span><span class="projector_prices__unit"
                                         id="projector_price_unit">szt.</span></div>
                             </div>
+                            <div class="product__promo_omnibus omnibus_price mt-4"><span class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
+                                        </span><span class="omnibus_price__value">188,00 zł</span></div>
+                            <div class="product__promo_forkg omnibus_price"><span class="omnibus_price__text">Cena w przeliczeniu na 1 kg:
+                                        </span><span class="omnibus_price__value">255,00 zł</span></div>
                             <div class="projector_prices__srp_wrapper" id="projector_price_srp_wrapper"
                                 style="display:none;"><span class="projector_prices__srp_label">Cena
                                     katalogowa:</span><strong class="projector_prices__srp"
@@ -581,12 +634,10 @@
                             </div>
                         </div>
                         <div class="projector_details__info projector_info">
+                            
                             <div id="projector_status"
-                                class="projector_info__item --status projector_status --time-show"><span
-                                    id="projector_status_gfx_wrapper"
-                                    class="projector_status__gfx_wrapper projector_info__icon"><img
-                                        id="projector_status_gfx" class="projector_status__gfx" src=""
-                                        alt="Towar dostępny w magazynie" style="display: none;"></span>
+                                class="projector_info__item --status projector_status --time-show ">
+                                <span class="icon-check projector_info__icon text-success"></span>
                                 <div id="projector_shipping_unknown" class="projector_status__unknown"
                                     style="display:none"><span class="projector_status__unknown_text"><a target="_blank"
                                             href="/contact-pol.html">Skontaktuj się z obsługą sklepu</a>, aby oszacować
@@ -600,49 +651,19 @@
                                             class="projector_status__info_label" id="projector_delivery_label">Wysyłka
                                         </strong><strong class="projector_status__info_days"
                                             id="projector_delivery_days" style=""> dzisiaj</strong><span
-                                            class="projector_status__info_amount" id="projector_amount" style=""> (4941
-                                            szt. w magazynie)</span></div>
+                                            class="projector_status__info_amount" id="projector_amount" style=""> </span></div>
                                 </div>
                             </div>
                             <div class="projector_info__item --shipping projector_shipping"
                                 id="projector_shipping_dialog"><span
                                     class="projector_shipping__icon projector_info__icon"></span><a
                                     class="projector_shipping__info projector_info__link" href="#shipping_info"><span
-                                        class="projector_shipping__text">Darmowa i szybka dostawa</span></a></div>
+                                        class="projector_shipping__text">Szybka dostawa od 14,99zł</span></a></div>
                             <div class="projector_info__item --returns projector_returns"><span
                                     class="projector_returns__icon projector_info__icon"></span><span
                                     class="projector_returns__info projector_info__link"><span
                                         class="projector_returns__days">14</span> dni na darmowy zwrot</span></div>
-                            <div class="projector_info__item --stocks projector_stocks"><span
-                                    class="projector_stocks__icon projector_info__icon"></span><a
-                                    class="projector_stocks__info projector_info__link --link"
-                                    href="/product-stocks.php?product=29">
-                                    Sprawdź, w którym sklepie obejrzysz i kupisz od ręki
-                                </a>
-                                <div id="product_stocks" class="product_stocks">
-                                    <div class="product_stocks__block --product pb-3">
-                                        <div class="product_stocks__product d-flex align-items-center"><img
-                                                class="product_stocks__icon mr-4"
-                                                src="https://www.konesso.pl/pol_il_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29.jpg"
-                                                alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg ">
-                                            <div class="product_stocks__details"><strong
-                                                    class="product_stocks__name d-block pr-2">Kawa ziarnista Bazzara
-                                                    DODICIGRANCRU 1kg </strong>
-                                                <div class="product_stocks__versions">
-                                                    <div class="product_stocks__version"><span
-                                                            class="product_stocks__version_name">Dostępne
-                                                            opakowania:</span><span
-                                                            class="product_stocks__version_value">1000g</span></div>
-                                                </div>
-                                                <div class="product_stocks__sizes row mx-n1"><a
-                                                        class="product_stocks__size select_button col mx-1 mt-2 flex-grow-0 flex-shrink-0"
-                                                        href="#onesize" data-type="onesize">uniwersalny</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product_stocks__block --stocks --skeleton"></div>
-                                </div>
-                            </div>
+                          
                             <div class="projector_info__item --safe projector_safe"><span
                                     class="projector_safe__icon projector_info__icon"></span><span
                                     class="projector_safe__info projector_info__link">Bezpieczne zakupy</span></div>
@@ -675,8 +696,7 @@
                             <div class="projector_info__item --paypo projector_paypo"><span
                                     class="projector_paypo__icon projector_info__icon"></span><span
                                     class="projector_paypo__info projector_info__link"><a class="projector_paypo__link"
-                                        href="#showPaypo">Odroczone płatności</a>. Kup teraz, zapłać za 30 dni, jeżeli
-                                    nie zwrócisz</span>
+                                        href="#showPaypo">Odroczone płatności</a>. Kup teraz, zapłać za 30 dni</span>
                                 <div class="paypo_info">
                                     <h6 class="headline"><span class="headline__name">Kup teraz, zapłać później - 4
                                             kroki</span></h6>
@@ -713,9 +733,81 @@
                         </div>
                     </div>
                 </form>
+
                 <script class="ajaxLoad">
                 app_shop.vars.contact_link = "/contact-pol.html";
                 </script>
+
+                <section id="product_extra_info">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img  src="https://mkfreshprod.azureedge.net/img/360/200/70/resize/catalog/product//m/k/mkcafe_1366_produkt_brazil_1.jpg" alt="" >
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                <li>
+                                    <span class="text-upercase">REGION</span>
+                                    <b>Mogiana</b>
+                                </li>
+                                <li>
+                                    <span class="text-upercase">WYSOKOŚĆ UPRAW</span>
+                                    <b>800-1200 m n.p.m.</b>
+                                </li>
+                                <li>
+                                    <span class="text-upercase">METODA OBRÓBKI</span>
+                                    <b>Sucha</b>
+                                </li>
+                                <li>
+                                    <span class="text-upercase">STOPIEŃ PALENIA</span>
+                                    <b>średni (medium)</b>
+                                </li>
+                            </ul>
+  
+                        </div>
+                        <div class="col-md-4">
+                            <canvas id="radar-chart" width="360" height="400" style="display: block; box-sizing: border-box; height: 400px; width: 360px;"></canvas>
+
+                            <script src="https://panel.konesso.pl/theme/node_modules/chart.js/dist/Chart.min.js"></script>
+                            <script>
+                                var radarChart = new Chart($('#radar-chart'), {
+                                type: 'radar',
+                                data: {
+                                    labels: ['Czekolada', 'Słodycz', 'Karmel', 'Gorycz', 'Nuty kwiatowe', 'Owoce', 'Orzech'],
+                                    datasets: [{
+                                    label: 'My First dataset',
+                                    backgroundColor: 'rgba(220, 220, 220, 0.2)',
+                                    borderColor: 'rgba(220, 220, 220, 1)',
+                                    pointBackgroundColor: 'rgba(220, 220, 220, 1)',
+                                    pointBorderColor: '#fff',
+                                    pointHighlightFill: '#fff',
+                                    pointHighlightStroke: 'rgba(220, 220, 220, 1)',
+                                    data: [65, 59, 90, 81, 56, 55, 40]
+                                    }, {
+                                    label: 'My Second dataset',
+                                    backgroundColor: 'rgba(151, 187, 205, 0.2)',
+                                    borderColor: 'rgba(151, 187, 205, 1)',
+                                    pointBackgroundColor: 'rgba(151, 187, 205, 1)',
+                                    pointBorderColor: '#fff',
+                                    pointHighlightFill: '#fff',
+                                    pointHighlightStroke: 'rgba(151, 187, 205, 1)',
+                                    data: [28, 48, 40, 19, 96, 27, 100]
+                                    }]
+                                },
+                                options: {
+                                    responsive: true
+                                }
+                                }); 
+                            </script>
+                        </div>
+                        <div class="col-md-2">
+                            <span class="text-uppercase">REKOMENDOWANY SPOSÓB PARZENIA</span>
+                            <div class="img-method313 show_tip css_tip css_tip_small"
+                                        title="Możesz zamienić zgromadzone punkty lojalnościowe na ten produkt. Obecnie masz 0 punktów.">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section id="projector_in_bundle" class="hotspot mb-5 --list col-12">
                     <h2><span class="headline"><span class="headline__name">Oszczędź kupując więcej</span></span></h2>
                     <div class="products d-flex flex-wrap">
@@ -742,6 +834,7 @@
                                         <div class="product__price_wrapper"><strong class="price">665,33 zł<span
                                                     class="price_vat"> brutto</span></strong></div>
                                     </div>
+                                    
                                 </div><a class="product__see d-none d-md-block"
                                     href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html">
                                     Zobacz zestaw
