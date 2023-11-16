@@ -23,7 +23,7 @@
                             <div class="align-middle hover:text-gold transition-1 text-gold px-2 py-1">
                                 Produkty
                             </div>
-                            <div class="px-2 py-1">
+                            <div class="px-2 py-1 d-flex flex-row justify-content-center align-items-center">
                                 <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
                             </div>
                             <div class="align-middle hover:text-gold transition-1 px-2 py-1">
