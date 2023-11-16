@@ -16,32 +16,32 @@
                             class="search_name__total_value">1479</span> )</span>
                 </section>
                 <hr />
-                <div class="search-results-top-menu">
-                    <div class="graph-wrapper">
-                        <span> Widok:</span>
-                        <span class="cursor-pointer inline-block align-bottom">
-                            <span class="align-middle hover:text-gold transition-1 text-gold">
+                <div class="search-results-top-menu d-flex justify-content-between flex-nowrap">
+                    <div class="graph-wrapper px-2 py-1 d-flex flex-row justify-content-center">
+                        <div class="px-2 py-1"> Widok:</div>
+                        <div class="cursor-pointer  d-flex flex-row justify-content-around align-bottom">
+                            <div class="align-middle hover:text-gold transition-1 text-gold px-2 py-1">
                                 Produkty
-                            </span>
-                            <div>
-                                switch
                             </div>
-                            <span class="align-middle hover:text-gold transition-1">
+                            <div class="px-2 py-1">
+                                <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                            </div>
+                            <div class="align-middle hover:text-gold transition-1 px-2 py-1">
                                 Smaki
-                            </span>
-                        </span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="dropdown-wrapper">
-                        <div class="filter float-left md:float-none cursor-pointer inline-block">
-                            <span class="filter-dropdown-trigger">
+                    <div class="dropdown-wrapper d-flex flex-row justify-content-around px-2 py-1">
+                        <div class="filter float-left md:float-none">
+                            <button class="filter-dropdown-trigger px-2 py-1">
                                 Filtrowanie
-                            </span>
+                            </button>
 
                         </div>
-                        <div class="sort cursor-pointer inline-block">
-                            <span class="sort-dropdown-trigger">
+                        <div class="sort ml-5">
+                            <button class="sort-dropdown-trigger px-2 py-1">
                                 Sortowanie
-                            </span>
+                            </button>
 
                         </div>
                     </div>

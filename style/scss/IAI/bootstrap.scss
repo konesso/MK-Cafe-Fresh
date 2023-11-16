@@ -1619,11 +1619,11 @@ button.btn.--large {
 }
 .label_icons {
     > * {
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: bold;
         margin-right: 2px;
         margin-bottom: 2px;
-        padding: 0.25rem 0.5rem;
+        padding: 0.75rem 4rem;
         text-transform: uppercase;
         border-radius: 0;
         border: 1px solid transparent;
@@ -4211,7 +4211,7 @@ img.b-loaded {
         .label_icons {
             position: absolute;
             top: 10;
-            left: 66;
+            left: 0;
             text-align: left;
         }
         .price__unit {
