@@ -3494,6 +3494,14 @@
         display: grid;
         grid-template-columns: repeat(6, minmax(0, 1fr));
         grid-gap: 1.5rem;
+        font-family: 'Futura';
+    }
+
+    #filter-wrapper{
+         display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-gap: 1.5rem;
+        font-family: 'Futura';
     }
     .filters__toggler {
         padding: 0 1rem;

@@ -41,6 +41,7 @@ const filtersActionsCall = () => {
                 i.parentNode.classList.add("--active")
         }
         ))
+        console.log("🚀 ~ file: search_filters.js:44 ~ document.querySelectorAll ~ click:", click)
     }
     ));
     document.querySelectorAll(".filters__options .--remove").forEach((e => {

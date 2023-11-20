@@ -10,28 +10,30 @@
             <?php include 'aside.php' ?>
 
             <div id="content" class="col-12">
-                <section class="search_name">
+
+                <section class="search_name pb-5">
                     <h1 class="search_name__label headline"><span class="headline__name">Kawa ziarnista - najlepsze kawy
                             do ekspresu! </span></h1><span class="search_name__total">( ilość produktów: <span
                             class="search_name__total_value">1479</span> )</span>
                 </section>
                 <hr />
-                <div class="search-results-top-menu d-flex justify-content-between flex-nowrap">
-                    <div class="graph-wrapper px-2 py-1 d-flex flex-row justify-content-center">
-                        <div class="px-2 py-1"> Widok:</div>
+                <div class="search-results-top-menu py-3 d-flex justify-content-between flex-nowrap">
+                    <div class="graph-wrapper py-1 d-flex flex-row justify-content-center">
+                        <div class="pr-2 py-1"> Widok:</div>
                         <div class="cursor-pointer  d-flex flex-row justify-content-around align-bottom">
-                            <div class="align-middle hover:text-gold transition-1 text-gold px-2 py-1">
+                            <div id="produkty" class="align-middle hover:text-gold transition-1 text-gold px-2 py-1"
+                                style="color: orange;">
                                 Produkty
                             </div>
                             <div class="px-2 py-1 d-flex flex-row justify-content-center align-items-center">
                                 <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
                             </div>
-                            <div class="align-middle hover:text-gold transition-1 px-2 py-1">
+                            <div id="smaki" class="align-middle hover:text-gold transition-1 px-2 py-1">
                                 Smaki
                             </div>
                         </div>
                     </div>
-                    <div class="dropdown-wrapper d-flex flex-row justify-content-around px-2 py-1">
+                    <div class="dropdown-wrapper  justify-content-around px-2 py-1 d-none d-md-flex flex-row">
                         <div class="filter float-left md:float-none">
                             <button class="filter-dropdown-trigger px-2 py-1">
                                 Filtrowanie
@@ -39,7 +41,7 @@
 
                         </div>
                         <div class="sort ml-5">
-                            <button class="sort-dropdown-trigger px-2 py-1">
+                            <button class="sort-dropdown-trigger py-1">
                                 Sortowanie
                             </button>
 
@@ -48,6 +50,7 @@
                 </div>
                 <div class="search_settings">
                     <div id="paging_setting_top" class="s_paging">
+
                         <form class="s_paging__item --sort d-md-none mb-2" action="https://www.konesso.pl/settings.php">
                             <div class="f-dropdown f-group s_paging__select --order --small-md "><select
                                     class="s_paging__select-select --order-select --small-md-select" name="sort_order">
@@ -97,6 +100,8 @@
                                 </ul>
                             </div>
                         </form>
+
+
                         <form class="s_paging__item --portions d-none" action="https://www.konesso.pl/settings.php">
                             <div class="f-dropdown f-group s_paging__select --portions --small-md "><select
                                     class="s_paging__select-select --portions-select --small-md-select"
@@ -171,25 +176,33 @@
                                 </ul>
                             </div>
                         </form>
+
                         <div class="s_paging__item --filters d-md-none mb-2 mb-sm-3"><a class="btn --solid --large"
                                 href="#menu_filter">
                                 Pokaż filtry
                             </a></div>
                     </div>
-                    <section id="Filters" class="filters mb-4">
+                    <section id="Filters" class="filters mb-4 d-md-none">
                         <form class="filters__form" method="get"
                             action="https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista-2160.html">
-                            <div class="s_paging__item --sort --inFilters d-none d-md-block"
+
+                            <div class="sort-element s_paging__item filters__block --sort --inFilters"
                                 data-action="https://www.konesso.pl/settings.php">
                                 <div class="f-dropdown f-group s_paging__select --order --small-md "><select
                                         class="s_paging__select-select --order-select --small-md-select"
                                         name="sort_order">
-                                        <option value="name-a" class="option_name-a">Sortuj po nazwie rosnąco</option>
-                                        <option value="name-d" class="option_name-d">Sortuj po nazwie malejąco</option>
-                                        <option value="price-a" class="option_price-a">Sortuj po cenie rosnąco</option>
-                                        <option value="price-d" class="option_price-d">Sortuj po cenie malejąco</option>
-                                        <option value="date-a" class="option_date-a">Sortuj po dacie rosnąco</option>
-                                        <option value="date-d" class="option_date-d">Sortuj po dacie malejąco</option>
+                                        <option value="name-a" class="option_name-a">Sortuj po nazwie rosnąco
+                                        </option>
+                                        <option value="name-d" class="option_name-d">Sortuj po nazwie malejąco
+                                        </option>
+                                        <option value="price-a" class="option_price-a">Sortuj po cenie rosnąco
+                                        </option>
+                                        <option value="price-d" class="option_price-d">Sortuj po cenie malejąco
+                                        </option>
+                                        <option value="date-a" class="option_date-a">Sortuj po dacie rosnąco
+                                        </option>
+                                        <option value="date-d" class="option_date-d">Sortuj po dacie malejąco
+                                        </option>
                                     </select>
                                     <button type="button" class="f-control f-dropdown-toggle" data-indexcurrent="0">
 
@@ -230,7 +243,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="s_paging__item --portions --inFilters d-none d-md-block"
+                            <div class="sort-element s_paging__item filters__block --portions --inFilters"
                                 data-action="https://www.konesso.pl/settings.php">
                                 <div class="f-dropdown f-group s_paging__select --portions --small-md "><select
                                         class="s_paging__select-select --portions-select --small-md-select"
@@ -305,24 +318,27 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="filters__block"><input type="hidden" class="__serialize"
+
+
+                            <div class="filter-element filters__block"><input type="hidden" class="__serialize"
                                     id="filter_producer_input" name="filter_producer" value=""><a class="filters__toggler
-								" data-id="filter_producer">
+    								" data-id="filter_producer">
                                     <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
                                             old_text="Marka">Marka</span><span class="d-md-none">Marka</span></div>
                                 </a>
                                 <div class="filters__expand p-md-2 pt-md-3" id="filter_producer_expand">
                                     <ul class="filters__content --list" id="filter_producer_content">
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1626156012"
                                                     data-id="filter_producer" value="1626156012"><label class="f-label"
                                                     for="filter_producer_1626156012"><span class="--name">1000 HILLS
-                                                        PRODUCTS</span><span class="--quantity">12</span></label></div>
+                                                        PRODUCTS</span><span class="--quantity">12</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1386331988"
                                                     data-id="filter_producer" value="1386331988"><label class="f-label"
@@ -331,7 +347,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1454661568"
                                                     data-id="filter_producer" value="1454661568"><label class="f-label"
@@ -340,7 +356,7 @@
                                                         class="--quantity">6</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1375789011"
                                                     data-id="filter_producer" value="1375789011"><label class="f-label"
@@ -349,7 +365,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --last-not-hidden">
+    																   --last-not-hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1370952142"
                                                     data-id="filter_producer" value="1370952142"><label class="f-label"
@@ -358,7 +374,7 @@
                                                         class="--quantity">10</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1683007304"
                                                     data-id="filter_producer" value="1683007304"><label class="f-label"
@@ -367,7 +383,7 @@
                                             </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1320750793"
                                                     data-id="filter_producer" value="1320750793"><label class="f-label"
@@ -376,7 +392,7 @@
                                                         class="--quantity">52</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1424771084"
                                                     data-id="filter_producer" value="1424771084"><label class="f-label"
@@ -385,7 +401,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1626156011"
                                                     data-id="filter_producer" value="1626156011"><label class="f-label"
@@ -394,7 +410,7 @@
                                             </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1320750813"
                                                     data-id="filter_producer" value="1320750813"><label class="f-label"
@@ -403,7 +419,7 @@
                                                         class="--quantity">13</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1462196520"
                                                     data-id="filter_producer" value="1462196520"><label class="f-label"
@@ -411,7 +427,7 @@
                                                         FARO</span><span class="--quantity">7</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1605003436"
                                                     data-id="filter_producer" value="1605003436"><label class="f-label"
@@ -419,7 +435,7 @@
                                                         GRANO</span><span class="--quantity">28</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1547711172"
                                                     data-id="filter_producer" value="1547711172"><label class="f-label"
@@ -428,23 +444,25 @@
                                                         class="--quantity">10</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1646032034"
                                                     data-id="filter_producer" value="1646032034"><label class="f-label"
                                                     for="filter_producer_1646032034"><span class="--name">COFFEE
-                                                        HUNTER</span><span class="--quantity">25</span></label></div>
+                                                        HUNTER</span><span class="--quantity">25</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1518508950"
                                                     data-id="filter_producer" value="1518508950"><label class="f-label"
                                                     for="filter_producer_1518508950"><span class="--name">COFFEE
-                                                        JOURNEY</span><span class="--quantity">14</span></label></div>
+                                                        JOURNEY</span><span class="--quantity">14</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1605251531"
                                                     data-id="filter_producer" value="1605251531"><label class="f-label"
@@ -453,7 +471,7 @@
                                                         class="--quantity">39</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1623137618"
                                                     data-id="filter_producer" value="1623137618"><label class="f-label"
@@ -461,7 +479,7 @@
                                                         PLANT</span><span class="--quantity">61</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1649528860"
                                                     data-id="filter_producer" value="1649528860"><label class="f-label"
@@ -470,7 +488,7 @@
                                             </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1538044675"
                                                     data-id="filter_producer" value="1538044675"><label class="f-label"
@@ -479,23 +497,25 @@
                                                         class="--quantity">11</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1601275587"
                                                     data-id="filter_producer" value="1601275587"><label class="f-label"
                                                     for="filter_producer_1601275587"><span class="--name">COSTA
-                                                        COFFEE</span><span class="--quantity">35</span></label></div>
+                                                        COFFEE</span><span class="--quantity">35</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1632836014"
                                                     data-id="filter_producer" value="1632836014"><label class="f-label"
                                                     for="filter_producer_1632836014"><span class="--name">CRAFT COFFEE
-                                                        ROASTERS</span><span class="--quantity">6</span></label></div>
+                                                        ROASTERS</span><span class="--quantity">6</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1624254678"
                                                     data-id="filter_producer" value="1624254678"><label class="f-label"
@@ -503,7 +523,7 @@
                                                         FALA</span><span class="--quantity">20</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1691130863"
                                                     data-id="filter_producer" value="1691130863"><label class="f-label"
@@ -512,7 +532,7 @@
                                                         class="--quantity">7</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1617716735"
                                                     data-id="filter_producer" value="1617716735"><label class="f-label"
@@ -520,7 +540,7 @@
                                                         CAFE</span><span class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1351328802"
                                                     data-id="filter_producer" value="1351328802"><label class="f-label"
@@ -529,7 +549,7 @@
                                                         class="--quantity">11</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1636009286"
                                                     data-id="filter_producer" value="1636009286"><label class="f-label"
@@ -537,7 +557,7 @@
                                                         KAWY</span><span class="--quantity">14</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1460108797"
                                                     data-id="filter_producer" value="1460108797"><label class="f-label"
@@ -545,15 +565,16 @@
                                                         CAFE</span><span class="--quantity">29</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1611578738"
                                                     data-id="filter_producer" value="1611578738"><label class="f-label"
                                                     for="filter_producer_1611578738"><span class="--name">FIGA
-                                                        COFFEE</span><span class="--quantity">10</span></label></div>
+                                                        COFFEE</span><span class="--quantity">10</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1600078819"
                                                     data-id="filter_producer" value="1600078819"><label class="f-label"
@@ -562,7 +583,7 @@
                                                         class="--quantity">15</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1679036991"
                                                     data-id="filter_producer" value="1679036991"><label class="f-label"
@@ -571,7 +592,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1521704255"
                                                     data-id="filter_producer" value="1521704255"><label class="f-label"
@@ -580,7 +601,7 @@
                                             </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1665489419"
                                                     data-id="filter_producer" value="1665489419"><label class="f-label"
@@ -589,7 +610,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1660642623"
                                                     data-id="filter_producer" value="1660642623"><label class="f-label"
@@ -598,7 +619,7 @@
                                                         class="--quantity">9</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1320750882"
                                                     data-id="filter_producer" value="1320750882"><label class="f-label"
@@ -607,7 +628,7 @@
                                                         class="--quantity">13</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1549920956"
                                                     data-id="filter_producer" value="1549920956"><label class="f-label"
@@ -616,15 +637,16 @@
                                                         class="--quantity">65</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1667472552"
                                                     data-id="filter_producer" value="1667472552"><label class="f-label"
                                                     for="filter_producer_1667472552"><span class="--name">HIVE
-                                                        ROASTERS</span><span class="--quantity">14</span></label></div>
+                                                        ROASTERS</span><span class="--quantity">14</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1320750889"
                                                     data-id="filter_producer" value="1320750889"><label class="f-label"
@@ -633,15 +655,16 @@
                                                         class="--quantity">11</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1655704760"
                                                     data-id="filter_producer" value="1655704760"><label class="f-label"
                                                     for="filter_producer_1655704760"><span class="--name">INGAGI
-                                                        COFFEE</span><span class="--quantity">28</span></label></div>
+                                                        COFFEE</span><span class="--quantity">28</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1643118478"
                                                     data-id="filter_producer" value="1643118478"><label class="f-label"
@@ -650,7 +673,7 @@
                                                         class="--quantity">24</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1320750900"
                                                     data-id="filter_producer" value="1320750900"><label class="f-label"
@@ -659,31 +682,34 @@
                                                         class="--quantity">6</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1672126371"
                                                     data-id="filter_producer" value="1672126371"><label class="f-label"
                                                     for="filter_producer_1672126371"><span class="--name">JACOBS DOUWE
-                                                        EGBERTS</span><span class="--quantity">12</span></label></div>
+                                                        EGBERTS</span><span class="--quantity">12</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1427450328"
                                                     data-id="filter_producer" value="1427450328"><label class="f-label"
                                                     for="filter_producer_1427450328"><span class="--name">JAVA
-                                                        COFFEE</span><span class="--quantity">33</span></label></div>
+                                                        COFFEE</span><span class="--quantity">33</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1409647912"
                                                     data-id="filter_producer" value="1409647912"><label class="f-label"
                                                     for="filter_producer_1409647912"><span class="--name">JOHAN &amp;
-                                                        NYSTRÖM</span><span class="--quantity">1</span></label></div>
+                                                        NYSTRÖM</span><span class="--quantity">1</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1382960527"
                                                     data-id="filter_producer" value="1382960527"><label class="f-label"
@@ -692,7 +718,7 @@
                                                         class="--quantity">7</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1534838710"
                                                     data-id="filter_producer" value="1534838710"><label class="f-label"
@@ -700,7 +726,7 @@
                                                         CAFE</span><span class="--quantity">10</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1320750906"
                                                     data-id="filter_producer" value="1320750906"><label class="f-label"
@@ -709,7 +735,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1624254676"
                                                     data-id="filter_producer" value="1624254676"><label class="f-label"
@@ -718,15 +744,16 @@
                                                         class="--quantity">11</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1678692469"
                                                     data-id="filter_producer" value="1678692469"><label class="f-label"
                                                     for="filter_producer_1678692469"><span class="--name">KAFEJETO
-                                                        PALARNIA</span><span class="--quantity">13</span></label></div>
+                                                        PALARNIA</span><span class="--quantity">13</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1668519413"
                                                     data-id="filter_producer" value="1668519413"><label class="f-label"
@@ -735,7 +762,7 @@
                                             </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1683876803"
                                                     data-id="filter_producer" value="1683876803"><label class="f-label"
@@ -744,7 +771,7 @@
                                                         class="--quantity">21</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1624254679"
                                                     data-id="filter_producer" value="1624254679"><label class="f-label"
@@ -753,7 +780,7 @@
                                                         class="--quantity">15</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1320750916"
                                                     data-id="filter_producer" value="1320750916"><label class="f-label"
@@ -762,7 +789,7 @@
                                                         class="--quantity">26</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1624254677"
                                                     data-id="filter_producer" value="1624254677"><label class="f-label"
@@ -771,15 +798,16 @@
                                                         class="--quantity">17</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1320750930"
                                                     data-id="filter_producer" value="1320750930"><label class="f-label"
                                                     for="filter_producer_1320750930"><span class="--name">LA
-                                                        BRASILIANA</span><span class="--quantity">7</span></label></div>
+                                                        BRASILIANA</span><span class="--quantity">7</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1547469995"
                                                     data-id="filter_producer" value="1547469995"><label class="f-label"
@@ -788,7 +816,7 @@
                                                         class="--quantity">62</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1320750707"
                                                     data-id="filter_producer" value="1320750707"><label class="f-label"
@@ -797,7 +825,7 @@
                                                         class="--quantity">44</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1354199479"
                                                     data-id="filter_producer" value="1354199479"><label class="f-label"
@@ -806,7 +834,7 @@
                                                         class="--quantity">12</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1327655932"
                                                     data-id="filter_producer" value="1327655932"><label class="f-label"
@@ -815,7 +843,7 @@
                                                         class="--quantity">9</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1452159959"
                                                     data-id="filter_producer" value="1452159959"><label class="f-label"
@@ -824,15 +852,16 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1695015615"
                                                     data-id="filter_producer" value="1695015615"><label class="f-label"
                                                     for="filter_producer_1695015615"><span class="--name">MIGA
-                                                        COFFEE</span><span class="--quantity">12</span></label></div>
+                                                        COFFEE</span><span class="--quantity">12</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1626156013"
                                                     data-id="filter_producer" value="1626156013"><label class="f-label"
@@ -840,7 +869,7 @@
                                                         CAFE</span><span class="--quantity">19</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1624254675"
                                                     data-id="filter_producer" value="1624254675"><label class="f-label"
@@ -848,15 +877,16 @@
                                                     </span><span class="--quantity">31</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1604387806"
                                                     data-id="filter_producer" value="1604387806"><label class="f-label"
                                                     for="filter_producer_1604387806"><span class="--name">MOTT
-                                                        COFFEE</span><span class="--quantity">14</span></label></div>
+                                                        COFFEE</span><span class="--quantity">14</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1666589830"
                                                     data-id="filter_producer" value="1666589830"><label class="f-label"
@@ -865,7 +895,7 @@
                                                         class="--quantity">14</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1568362177"
                                                     data-id="filter_producer" value="1568362177"><label class="f-label"
@@ -874,7 +904,7 @@
                                                         class="--quantity">8</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1320750965"
                                                     data-id="filter_producer" value="1320750965"><label class="f-label"
@@ -882,7 +912,7 @@
                                                         CAFFE</span><span class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1438846256"
                                                     data-id="filter_producer" value="1438846256"><label class="f-label"
@@ -890,15 +920,16 @@
                                                         CAFFE</span><span class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1626156010"
                                                     data-id="filter_producer" value="1626156010"><label class="f-label"
                                                     for="filter_producer_1626156010"><span class="--name">PALE COFFEE
-                                                        ROASTERS</span><span class="--quantity">2</span></label></div>
+                                                        ROASTERS</span><span class="--quantity">2</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1640761812"
                                                     data-id="filter_producer" value="1640761812"><label class="f-label"
@@ -907,7 +938,7 @@
                                                         class="--quantity">22</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1350653570"
                                                     data-id="filter_producer" value="1350653570"><label class="f-label"
@@ -915,7 +946,7 @@
                                                         CAFFE</span><span class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1358167503"
                                                     data-id="filter_producer" value="1358167503"><label class="f-label"
@@ -924,7 +955,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1320750741"
                                                     data-id="filter_producer" value="1320750741"><label class="f-label"
@@ -933,15 +964,16 @@
                                                         class="--quantity">11</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1683876802"
                                                     data-id="filter_producer" value="1683876802"><label class="f-label"
                                                     for="filter_producer_1683876802"><span class="--name">PIXEL COFFEE
-                                                        ROASTERS</span><span class="--quantity">6</span></label></div>
+                                                        ROASTERS</span><span class="--quantity">6</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1529400875"
                                                     data-id="filter_producer" value="1529400875"><label class="f-label"
@@ -950,23 +982,25 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1652085007"
                                                     data-id="filter_producer" value="1652085007"><label class="f-label"
                                                     for="filter_producer_1652085007"><span class="--name">PRASKA KAWY
-                                                        PALARNIA</span><span class="--quantity">10</span></label></div>
+                                                        PALARNIA</span><span class="--quantity">10</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1649528858"
                                                     data-id="filter_producer" value="1649528858"><label class="f-label"
                                                     for="filter_producer_1649528858"><span class="--name">Produkcja
-                                                        zakończona</span><span class="--quantity">2</span></label></div>
+                                                        zakończona</span><span class="--quantity">2</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1632836015"
                                                     data-id="filter_producer" value="1632836015"><label class="f-label"
@@ -975,7 +1009,7 @@
                                                         class="--quantity">26</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1612854983"
                                                     data-id="filter_producer" value="1612854983"><label class="f-label"
@@ -983,7 +1017,7 @@
                                                         CAFFE</span><span class="--quantity">19</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1630307310"
                                                     data-id="filter_producer" value="1630307310"><label class="f-label"
@@ -992,7 +1026,7 @@
                                                         class="--quantity">43</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1679036990"
                                                     data-id="filter_producer" value="1679036990"><label class="f-label"
@@ -1001,7 +1035,7 @@
                                                         class="--quantity">17</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1320751013"
                                                     data-id="filter_producer" value="1320751013"><label class="f-label"
@@ -1010,7 +1044,7 @@
                                                         class="--quantity">19</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1603792611"
                                                     data-id="filter_producer" value="1603792611"><label class="f-label"
@@ -1018,7 +1052,7 @@
                                                         LEVELT</span><span class="--quantity">9</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1614324792"
                                                     data-id="filter_producer" value="1614324792"><label class="f-label"
@@ -1027,15 +1061,16 @@
                                                         class="--quantity">13</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1580478753"
                                                     data-id="filter_producer" value="1580478753"><label class="f-label"
                                                     for="filter_producer_1580478753"><span class="--name">STORY COFFEE
-                                                        ROASTERS</span><span class="--quantity">26</span></label></div>
+                                                        ROASTERS</span><span class="--quantity">26</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1665489420"
                                                     data-id="filter_producer" value="1665489420"><label class="f-label"
@@ -1044,15 +1079,16 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1661424660"
                                                     data-id="filter_producer" value="1661424660"><label class="f-label"
                                                     for="filter_producer_1661424660"><span class="--name">ŚWIEŻO
-                                                        PALONA</span><span class="--quantity">12</span></label></div>
+                                                        PALONA</span><span class="--quantity">12</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1617713164"
                                                     data-id="filter_producer" value="1617713164"><label class="f-label"
@@ -1061,7 +1097,7 @@
                                                         class="--quantity">17</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1598613441"
                                                     data-id="filter_producer" value="1598613441"><label class="f-label"
@@ -1069,7 +1105,7 @@
                                                         BEAR</span><span class="--quantity">14</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1602690196"
                                                     data-id="filter_producer" value="1602690196"><label class="f-label"
@@ -1078,7 +1114,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1661424659"
                                                     data-id="filter_producer" value="1661424659"><label class="f-label"
@@ -1086,7 +1122,7 @@
                                                         CAFFE</span><span class="--quantity">10</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1541419983"
                                                     data-id="filter_producer" value="1541419983"><label class="f-label"
@@ -1095,7 +1131,7 @@
                                                         class="--quantity">15</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1320750820"
                                                     data-id="filter_producer" value="1320750820"><label class="f-label"
@@ -1104,15 +1140,16 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1642502283"
                                                     data-id="filter_producer" value="1642502283"><label class="f-label"
                                                     for="filter_producer_1642502283"><span class="--name">WILD HILL
-                                                        COFFEE</span><span class="--quantity">10</span></label></div>
+                                                        COFFEE</span><span class="--quantity">10</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1487168281"
                                                     data-id="filter_producer" value="1487168281"><label class="f-label"
@@ -1121,23 +1158,25 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1623137662"
                                                     data-id="filter_producer" value="1623137662"><label class="f-label"
                                                     for="filter_producer_1623137662"><span class="--name">WYSOCKI
-                                                        COFFEE</span><span class="--quantity">22</span></label></div>
+                                                        COFFEE</span><span class="--quantity">22</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1679036992"
                                                     data-id="filter_producer" value="1679036992"><label class="f-label"
                                                     for="filter_producer_1679036992"><span class="--name">YOCO
-                                                        COFFEE</span><span class="--quantity">10</span></label></div>
+                                                        COFFEE</span><span class="--quantity">10</span></label>
+                                            </div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_producer_1352545434"
                                                     data-id="filter_producer" value="1352545434"><label class="f-label"
@@ -1156,10 +1195,10 @@
                                         </button></div>
                                 </div>
                             </div>
-                            <div class="filters__block"><input type="hidden" class="__serialize"
+                            <div class="filter-element filters__block"><input type="hidden" class="__serialize"
                                     id="filter_traits1335603892_input" name="filter_traits[1335603892]" value=""><a
                                     class="filters__toggler
-								" data-id="filter_traits1335603892">
+    								" data-id="filter_traits1335603892">
                                     <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
                                             old_text="Blend czy Single">Blend czy Single</span><span
                                             class="d-md-none">Blend czy Single</span></div>
@@ -1167,7 +1206,7 @@
                                 <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603892_expand">
                                     <ul class="filters__content --list" id="filter_traits1335603892_content">
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603892_1335603893"
                                                     data-id="filter_traits1335603892" value="1335603893"><label
@@ -1176,7 +1215,7 @@
                                                         class="--quantity">725</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603892_1335603898"
                                                     data-id="filter_traits1335603892" value="1335603898"><label
@@ -1193,10 +1232,10 @@
                                         </button></div>
                                 </div>
                             </div>
-                            <div class="filters__block"><input type="hidden" class="__serialize"
+                            <div class="filter-element filters__block"><input type="hidden" class="__serialize"
                                     id="filter_traits1335603899_input" name="filter_traits[1335603899]" value=""><a
                                     class="filters__toggler
-								" data-id="filter_traits1335603899">
+    								" data-id="filter_traits1335603899">
                                     <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
                                             old_text="Pochodzenie ziaren">Pochodzenie ziaren</span><span
                                             class="d-md-none">Pochodzenie ziaren</span></div>
@@ -1204,7 +1243,7 @@
                                 <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603899_expand">
                                     <ul class="filters__content --list" id="filter_traits1335603899_content">
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603972"
                                                     data-id="filter_traits1335603899" value="1335603972"><label
@@ -1213,7 +1252,7 @@
                                                         class="--quantity">47</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335608449"
                                                     data-id="filter_traits1335603899" value="1335608449"><label
@@ -1222,7 +1261,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603921"
                                                     data-id="filter_traits1335603899" value="1335603921"><label
@@ -1231,7 +1270,7 @@
                                                         class="--quantity">109</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603906"
                                                     data-id="filter_traits1335603899" value="1335603906"><label
@@ -1240,7 +1279,7 @@
                                                         class="--quantity">92</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --last-not-hidden">
+    																   --last-not-hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603973"
                                                     data-id="filter_traits1335603899" value="1335603973"><label
@@ -1249,7 +1288,7 @@
                                                         class="--quantity">37</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335604270"
                                                     data-id="filter_traits1335603899" value="1335604270"><label
@@ -1258,7 +1297,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603900"
                                                     data-id="filter_traits1335603899" value="1335603900"><label
@@ -1267,7 +1306,7 @@
                                                         class="--quantity">499</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335604033"
                                                     data-id="filter_traits1335603899" value="1335604033"><label
@@ -1276,7 +1315,7 @@
                                                         class="--quantity">6</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335605033"
                                                     data-id="filter_traits1335603899" value="1335605033"><label
@@ -1285,7 +1324,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335604493"
                                                     data-id="filter_traits1335603899" value="1335604493"><label
@@ -1294,7 +1333,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603954"
                                                     data-id="filter_traits1335603899" value="1335603954"><label
@@ -1303,7 +1342,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603902"
                                                     data-id="filter_traits1335603899" value="1335603902"><label
@@ -1312,7 +1351,7 @@
                                                         class="--quantity">161</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603901"
                                                     data-id="filter_traits1335603899" value="1335603901"><label
@@ -1321,7 +1360,7 @@
                                                         class="--quantity">137</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603957"
                                                     data-id="filter_traits1335603899" value="1335603957"><label
@@ -1330,7 +1369,7 @@
                                                         class="--quantity">57</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603904"
                                                     data-id="filter_traits1335603899" value="1335603904"><label
@@ -1339,7 +1378,7 @@
                                                         class="--quantity">139</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603931"
                                                     data-id="filter_traits1335603899" value="1335603931"><label
@@ -1348,7 +1387,7 @@
                                                         class="--quantity">34</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335605779"
                                                     data-id="filter_traits1335603899" value="1335605779"><label
@@ -1357,7 +1396,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335604020"
                                                     data-id="filter_traits1335603899" value="1335604020"><label
@@ -1366,7 +1405,7 @@
                                                         class="--quantity">9</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603953"
                                                     data-id="filter_traits1335603899" value="1335603953"><label
@@ -1375,7 +1414,7 @@
                                                         class="--quantity">62</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603903"
                                                     data-id="filter_traits1335603899" value="1335603903"><label
@@ -1384,7 +1423,7 @@
                                                         class="--quantity">180</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335604021"
                                                     data-id="filter_traits1335603899" value="1335604021"><label
@@ -1393,7 +1432,7 @@
                                                         class="--quantity">6</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603942"
                                                     data-id="filter_traits1335603899" value="1335603942"><label
@@ -1402,7 +1441,7 @@
                                                         class="--quantity">81</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335605250"
                                                     data-id="filter_traits1335603899" value="1335605250"><label
@@ -1411,7 +1450,7 @@
                                                         class="--quantity">7</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603956"
                                                     data-id="filter_traits1335603899" value="1335603956"><label
@@ -1420,7 +1459,7 @@
                                                         class="--quantity">25</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603948"
                                                     data-id="filter_traits1335603899" value="1335603948"><label
@@ -1429,7 +1468,7 @@
                                                         class="--quantity">30</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335604041"
                                                     data-id="filter_traits1335603899" value="1335604041"><label
@@ -1438,7 +1477,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335604293"
                                                     data-id="filter_traits1335603899" value="1335604293"><label
@@ -1447,7 +1486,7 @@
                                                         class="--quantity">7</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603963"
                                                     data-id="filter_traits1335603899" value="1335603963"><label
@@ -1456,7 +1495,7 @@
                                                         class="--quantity">60</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335607946"
                                                     data-id="filter_traits1335603899" value="1335607946"><label
@@ -1465,7 +1504,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335604058"
                                                     data-id="filter_traits1335603899" value="1335604058"><label
@@ -1474,7 +1513,7 @@
                                                         class="--quantity">73</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603950"
                                                     data-id="filter_traits1335603899" value="1335603950"><label
@@ -1483,7 +1522,7 @@
                                                         class="--quantity">28</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603975"
                                                     data-id="filter_traits1335603899" value="1335603975"><label
@@ -1492,7 +1531,7 @@
                                                         class="--quantity">18</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335609308"
                                                     data-id="filter_traits1335603899" value="1335609308"><label
@@ -1501,7 +1540,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335604019"
                                                     data-id="filter_traits1335603899" value="1335604019"><label
@@ -1510,7 +1549,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603997"
                                                     data-id="filter_traits1335603899" value="1335603997"><label
@@ -1519,7 +1558,7 @@
                                                         class="--quantity">23</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335603905"
                                                     data-id="filter_traits1335603899" value="1335603905"><label
@@ -1528,7 +1567,7 @@
                                                         class="--quantity">23</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603899_1335607992"
                                                     data-id="filter_traits1335603899" value="1335607992"><label
@@ -1538,21 +1577,24 @@
                                         </li>
                                     </ul>
                                     <div class="filters__options"><a class="--show-hidden btn py-0 pl-0 pr-0"
-                                            data-id="filter_traits1335603899"><span class="--show">+ Rozwiń</span><span
-                                                class="--hide">- Ukryj</span></a><button type="submit"
-                                            class="--submit btn --solid --small">
+                                            data-id="filter_traits1335603899"><span class="--show">+
+                                                Rozwiń</span><span class="--hide">- Ukryj</span></a><button
+                                            type="submit" class="--submit btn --solid --small">
                                             Filtruj
                                         </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
                                             Wyczyść filtry
                                         </button></div>
                                 </div>
                             </div>
-                            <div class="filters__more"><a href="##" title="Więcej filtrów"><span
-                                        class="btn --icon-right d-block pr-4">Więcej filtrów</span></a></div>
-                            <div class="filters__block --hide"><input type="hidden" class="__serialize"
+                            <div class="filter-element filters__more"><a href="##" title="Więcej filtrów"><span
+                                        class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
+                                            old_text="Pochodzenie ziaren"> Więcej filtrów</span><span
+                                            class="d-md-none">Więcej
+                                            filtrów</span></a></div>
+                            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
                                     id="filter_traits1335603539_input" name="filter_traits[1335603539]" value=""><a
                                     class="filters__toggler
-								" data-id="filter_traits1335603539">
+    								" data-id="filter_traits1335603539">
                                     <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
                                             old_text="Opakowanie">Opakowanie</span><span
                                             class="d-md-none">Opakowanie</span></div>
@@ -1560,7 +1602,7 @@
                                 <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603539_expand">
                                     <ul class="filters__content --list" id="filter_traits1335603539_content">
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335608736"
                                                     data-id="filter_traits1335603539" value="1335608736"><label
@@ -1569,7 +1611,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335603658"
                                                     data-id="filter_traits1335603539" value="1335603658"><label
@@ -1578,7 +1620,7 @@
                                                         class="--quantity">583</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335607831"
                                                     data-id="filter_traits1335603539" value="1335607831"><label
@@ -1587,7 +1629,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335607822"
                                                     data-id="filter_traits1335603539" value="1335607822"><label
@@ -1596,7 +1638,7 @@
                                                         class="--quantity">7</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --last-not-hidden">
+    																   --last-not-hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335604536"
                                                     data-id="filter_traits1335603539" value="1335604536"><label
@@ -1605,7 +1647,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335604601"
                                                     data-id="filter_traits1335603539" value="1335604601"><label
@@ -1614,7 +1656,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335605181"
                                                     data-id="filter_traits1335603539" value="1335605181"><label
@@ -1623,7 +1665,7 @@
                                                         class="--quantity">20</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335603677"
                                                     data-id="filter_traits1335603539" value="1335603677"><label
@@ -1632,7 +1674,7 @@
                                                         class="--quantity">24</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335608165"
                                                     data-id="filter_traits1335603539" value="1335608165"><label
@@ -1641,7 +1683,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335604294"
                                                     data-id="filter_traits1335603539" value="1335604294"><label
@@ -1650,7 +1692,7 @@
                                                         class="--quantity">685</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335603657"
                                                     data-id="filter_traits1335603539" value="1335603657"><label
@@ -1659,7 +1701,7 @@
                                                         class="--quantity">9</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335608101"
                                                     data-id="filter_traits1335603539" value="1335608101"><label
@@ -1668,7 +1710,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335604690"
                                                     data-id="filter_traits1335603539" value="1335604690"><label
@@ -1677,7 +1719,7 @@
                                                         class="--quantity">10</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335604039"
                                                     data-id="filter_traits1335603539" value="1335604039"><label
@@ -1686,7 +1728,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335605653"
                                                     data-id="filter_traits1335603539" value="1335605653"><label
@@ -1695,7 +1737,7 @@
                                                         class="--quantity">10</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335603659"
                                                     data-id="filter_traits1335603539" value="1335603659"><label
@@ -1704,7 +1746,7 @@
                                                         class="--quantity">75</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335605630"
                                                     data-id="filter_traits1335603539" value="1335605630"><label
@@ -1713,7 +1755,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335607833"
                                                     data-id="filter_traits1335603539" value="1335607833"><label
@@ -1722,7 +1764,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335603661"
                                                     data-id="filter_traits1335603539" value="1335603661"><label
@@ -1731,7 +1773,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335604882"
                                                     data-id="filter_traits1335603539" value="1335604882"><label
@@ -1740,7 +1782,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335604547"
                                                     data-id="filter_traits1335603539" value="1335604547"><label
@@ -1749,7 +1791,7 @@
                                                         class="--quantity">7</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603539_1335604545"
                                                     data-id="filter_traits1335603539" value="1335604545"><label
@@ -1759,19 +1801,19 @@
                                         </li>
                                     </ul>
                                     <div class="filters__options"><a class="--show-hidden btn py-0 pl-0 pr-0"
-                                            data-id="filter_traits1335603539"><span class="--show">+ Rozwiń</span><span
-                                                class="--hide">- Ukryj</span></a><button type="submit"
-                                            class="--submit btn --solid --small">
+                                            data-id="filter_traits1335603539"><span class="--show">+
+                                                Rozwiń</span><span class="--hide">- Ukryj</span></a><button
+                                            type="submit" class="--submit btn --solid --small">
                                             Filtruj
                                         </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
                                             Wyczyść filtry
                                         </button></div>
                                 </div>
                             </div>
-                            <div class="filters__block --hide"><input type="hidden" class="__serialize"
+                            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
                                     id="filter_traits1335604645_input" name="filter_traits[1335604645]" value=""><a
                                     class="filters__toggler
-								" data-id="filter_traits1335604645">
+    								" data-id="filter_traits1335604645">
                                     <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
                                             old_text="Gatunek kawy">Gatunek kawy</span><span class="d-md-none">Gatunek
                                             kawy</span></div>
@@ -1779,7 +1821,7 @@
                                 <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335604645_expand">
                                     <ul class="filters__content --list" id="filter_traits1335604645_content">
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335604645_1335604651"
                                                     data-id="filter_traits1335604645" value="1335604651"><label
@@ -1788,7 +1830,7 @@
                                                         class="--quantity">26</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335604645_1335604646"
                                                     data-id="filter_traits1335604645" value="1335604646"><label
@@ -1797,7 +1839,7 @@
                                                         class="--quantity">27</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335604645_1335604981"
                                                     data-id="filter_traits1335604645" value="1335604981"><label
@@ -1814,17 +1856,17 @@
                                         </button></div>
                                 </div>
                             </div>
-                            <div class="filters__block --hide"><input type="hidden" class="__serialize"
+                            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
                                     id="filter_traits1335603421_input" name="filter_traits[1335603421]" value=""><a
                                     class="filters__toggler
-								" data-id="filter_traits1335603421">
+    								" data-id="filter_traits1335603421">
                                     <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
                                             old_text="Skład">Skład</span><span class="d-md-none">Skład</span></div>
                                 </a>
                                 <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603421_expand">
                                     <ul class="filters__content --list" id="filter_traits1335603421_content">
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603424"
                                                     data-id="filter_traits1335603421" value="1335603424"><label
@@ -1833,7 +1875,7 @@
                                                         class="--quantity">1066</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603573"
                                                     data-id="filter_traits1335603421" value="1335603573"><label
@@ -1842,7 +1884,7 @@
                                                         class="--quantity">12</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335604014"
                                                     data-id="filter_traits1335603421" value="1335604014"><label
@@ -1851,7 +1893,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603431"
                                                     data-id="filter_traits1335603421" value="1335603431"><label
@@ -1860,7 +1902,7 @@
                                                         class="--quantity">9</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --last-not-hidden">
+    																   --last-not-hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335608097"
                                                     data-id="filter_traits1335603421" value="1335608097"><label
@@ -1869,7 +1911,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603468"
                                                     data-id="filter_traits1335603421" value="1335603468"><label
@@ -1878,7 +1920,7 @@
                                                         class="--quantity">6</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603486"
                                                     data-id="filter_traits1335603421" value="1335603486"><label
@@ -1887,7 +1929,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603429"
                                                     data-id="filter_traits1335603421" value="1335603429"><label
@@ -1896,7 +1938,7 @@
                                                         class="--quantity">21</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603555"
                                                     data-id="filter_traits1335603421" value="1335603555"><label
@@ -1905,7 +1947,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603428"
                                                     data-id="filter_traits1335603421" value="1335603428"><label
@@ -1914,7 +1956,7 @@
                                                         class="--quantity">35</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335604280"
                                                     data-id="filter_traits1335603421" value="1335604280"><label
@@ -1923,7 +1965,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603678"
                                                     data-id="filter_traits1335603421" value="1335603678"><label
@@ -1932,7 +1974,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603427"
                                                     data-id="filter_traits1335603421" value="1335603427"><label
@@ -1941,7 +1983,7 @@
                                                         class="--quantity">29</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603572"
                                                     data-id="filter_traits1335603421" value="1335603572"><label
@@ -1950,7 +1992,7 @@
                                                         class="--quantity">10</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603426"
                                                     data-id="filter_traits1335603421" value="1335603426"><label
@@ -1959,7 +2001,7 @@
                                                         class="--quantity">59</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603553"
                                                     data-id="filter_traits1335603421" value="1335603553"><label
@@ -1968,7 +2010,7 @@
                                                         class="--quantity">13</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603443"
                                                     data-id="filter_traits1335603421" value="1335603443"><label
@@ -1977,7 +2019,7 @@
                                                         class="--quantity">61</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603444"
                                                     data-id="filter_traits1335603421" value="1335603444"><label
@@ -1986,7 +2028,7 @@
                                                         class="--quantity">12</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603422"
                                                     data-id="filter_traits1335603421" value="1335603422"><label
@@ -1995,7 +2037,7 @@
                                                         class="--quantity">23</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603445"
                                                     data-id="filter_traits1335603421" value="1335603445"><label
@@ -2004,7 +2046,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603442"
                                                     data-id="filter_traits1335603421" value="1335603442"><label
@@ -2013,7 +2055,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335603446"
                                                     data-id="filter_traits1335603421" value="1335603446"><label
@@ -2022,7 +2064,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335608642"
                                                     data-id="filter_traits1335603421" value="1335608642"><label
@@ -2031,7 +2073,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335604495"
                                                     data-id="filter_traits1335603421" value="1335604495"><label
@@ -2040,7 +2082,7 @@
                                                         class="--quantity">77</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603421_1335608643"
                                                     data-id="filter_traits1335603421" value="1335608643"><label
@@ -2050,19 +2092,19 @@
                                         </li>
                                     </ul>
                                     <div class="filters__options"><a class="--show-hidden btn py-0 pl-0 pr-0"
-                                            data-id="filter_traits1335603421"><span class="--show">+ Rozwiń</span><span
-                                                class="--hide">- Ukryj</span></a><button type="submit"
-                                            class="--submit btn --solid --small">
+                                            data-id="filter_traits1335603421"><span class="--show">+
+                                                Rozwiń</span><span class="--hide">- Ukryj</span></a><button
+                                            type="submit" class="--submit btn --solid --small">
                                             Filtruj
                                         </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
                                             Wyczyść filtry
                                         </button></div>
                                 </div>
                             </div>
-                            <div class="filters__block --hide"><input type="hidden" class="__serialize"
+                            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
                                     id="filter_traits1335603487_input" name="filter_traits[1335603487]" value=""><a
                                     class="filters__toggler
-								" data-id="filter_traits1335603487">
+    								" data-id="filter_traits1335603487">
                                     <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
                                             old_text="Stopień palenia">Stopień palenia</span><span
                                             class="d-md-none">Stopień palenia</span></div>
@@ -2070,7 +2112,7 @@
                                 <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603487_expand">
                                     <ul class="filters__content --list" id="filter_traits1335603487_content">
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603487_1335603490"
                                                     data-id="filter_traits1335603487" value="1335603490"><label
@@ -2079,7 +2121,7 @@
                                                         class="--quantity">151</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603487_1335603488"
                                                     data-id="filter_traits1335603487" value="1335603488"><label
@@ -2088,7 +2130,7 @@
                                                         class="--quantity">344</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603487_1335608971"
                                                     data-id="filter_traits1335603487" value="1335608971"><label
@@ -2097,7 +2139,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603487_1335603489"
                                                     data-id="filter_traits1335603487" value="1335603489"><label
@@ -2106,7 +2148,7 @@
                                                         class="--quantity">953</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --last-not-hidden">
+    																   --last-not-hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603487_1335608710"
                                                     data-id="filter_traits1335603487" value="1335608710"><label
@@ -2123,10 +2165,10 @@
                                         </button></div>
                                 </div>
                             </div>
-                            <div class="filters__block --hide"><input type="hidden" class="__serialize"
+                            <div class=" filter-element filters__block --hide"><input type="hidden" class="__serialize"
                                     id="filter_traits1335603491_input" name="filter_traits[1335603491]" value=""><a
                                     class="filters__toggler
-								" data-id="filter_traits1335603491">
+    								" data-id="filter_traits1335603491">
                                     <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
                                             old_text="Zawartość kofeiny">Zawartość kofeiny</span><span
                                             class="d-md-none">Zawartość kofeiny</span></div>
@@ -2134,7 +2176,7 @@
                                 <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603491_expand">
                                     <ul class="filters__content --list" id="filter_traits1335603491_content">
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603491_1335603495"
                                                     data-id="filter_traits1335603491" value="1335603495"><label
@@ -2143,7 +2185,7 @@
                                                         class="--quantity">37</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603491_1335603492"
                                                     data-id="filter_traits1335603491" value="1335603492"><label
@@ -2152,7 +2194,7 @@
                                                         class="--quantity">1082</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603491_1335603493"
                                                     data-id="filter_traits1335603491" value="1335603493"><label
@@ -2161,7 +2203,7 @@
                                                         class="--quantity">195</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603491_1335603494"
                                                     data-id="filter_traits1335603491" value="1335603494"><label
@@ -2178,17 +2220,18 @@
                                         </button></div>
                                 </div>
                             </div>
-                            <div class="filters__block --hide"><input type="hidden" class="__serialize"
+                            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
                                     id="filter_traits1335603574_input" name="filter_traits[1335603574]" value=""><a
                                     class="filters__toggler
-								" data-id="filter_traits1335603574">
+    								" data-id="filter_traits1335603574">
                                     <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
-                                            old_text="Rodzaj">Rodzaj</span><span class="d-md-none">Rodzaj</span></div>
+                                            old_text="Rodzaj">Rodzaj</span><span class="d-md-none">Rodzaj</span>
+                                    </div>
                                 </a>
                                 <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603574_expand">
                                     <ul class="filters__content --list" id="filter_traits1335603574_content">
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603574_1335603643"
                                                     data-id="filter_traits1335603574" value="1335603643"><label
@@ -2197,7 +2240,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603574_1335603626"
                                                     data-id="filter_traits1335603574" value="1335603626"><label
@@ -2206,7 +2249,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603574_1335603587"
                                                     data-id="filter_traits1335603574" value="1335603587"><label
@@ -2215,7 +2258,7 @@
                                                         class="--quantity">1466</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603574_1335603648"
                                                     data-id="filter_traits1335603574" value="1335603648"><label
@@ -2224,7 +2267,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --last-not-hidden">
+    																   --last-not-hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603574_1335603577"
                                                     data-id="filter_traits1335603574" value="1335603577"><label
@@ -2233,7 +2276,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603574_1335603591"
                                                     data-id="filter_traits1335603574" value="1335603591"><label
@@ -2243,19 +2286,19 @@
                                         </li>
                                     </ul>
                                     <div class="filters__options"><a class="--show-hidden btn py-0 pl-0 pr-0"
-                                            data-id="filter_traits1335603574"><span class="--show">+ Rozwiń</span><span
-                                                class="--hide">- Ukryj</span></a><button type="submit"
-                                            class="--submit btn --solid --small">
+                                            data-id="filter_traits1335603574"><span class="--show">+
+                                                Rozwiń</span><span class="--hide">- Ukryj</span></a><button
+                                            type="submit" class="--submit btn --solid --small">
                                             Filtruj
                                         </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
                                             Wyczyść filtry
                                         </button></div>
                                 </div>
                             </div>
-                            <div class="filters__block --hide"><input type="hidden" class="__serialize"
+                            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
                                     id="filter_traits1335603894_input" name="filter_traits[1335603894]" value=""><a
                                     class="filters__toggler
-								" data-id="filter_traits1335603894">
+    								" data-id="filter_traits1335603894">
                                     <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
                                             old_text="Wyczuwalne smaki">Wyczuwalne smaki</span><span
                                             class="d-md-none">Wyczuwalne smaki</span></div>
@@ -2263,7 +2306,7 @@
                                 <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603894_expand">
                                     <ul class="filters__content --list" id="filter_traits1335603894_content">
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603979"
                                                     data-id="filter_traits1335603894" value="1335603979"><label
@@ -2272,7 +2315,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608738"
                                                     data-id="filter_traits1335603894" value="1335608738"><label
@@ -2281,7 +2324,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603974"
                                                     data-id="filter_traits1335603894" value="1335603974"><label
@@ -2290,7 +2333,7 @@
                                                         class="--quantity">9</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604034"
                                                     data-id="filter_traits1335603894" value="1335604034"><label
@@ -2299,7 +2342,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --last-not-hidden">
+    																   --last-not-hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605051"
                                                     data-id="filter_traits1335603894" value="1335605051"><label
@@ -2308,7 +2351,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605582"
                                                     data-id="filter_traits1335603894" value="1335605582"><label
@@ -2317,7 +2360,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604016"
                                                     data-id="filter_traits1335603894" value="1335604016"><label
@@ -2326,7 +2369,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604500"
                                                     data-id="filter_traits1335603894" value="1335604500"><label
@@ -2335,7 +2378,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603986"
                                                     data-id="filter_traits1335603894" value="1335603986"><label
@@ -2344,7 +2387,7 @@
                                                         class="--quantity">12</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605253"
                                                     data-id="filter_traits1335603894" value="1335605253"><label
@@ -2353,7 +2396,7 @@
                                                         class="--quantity">7</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605049"
                                                     data-id="filter_traits1335603894" value="1335605049"><label
@@ -2362,7 +2405,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609253"
                                                     data-id="filter_traits1335603894" value="1335609253"><label
@@ -2371,7 +2414,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608432"
                                                     data-id="filter_traits1335603894" value="1335608432"><label
@@ -2380,7 +2423,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608737"
                                                     data-id="filter_traits1335603894" value="1335608737"><label
@@ -2389,7 +2432,7 @@
                                                         class="--quantity">10</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607532"
                                                     data-id="filter_traits1335603894" value="1335607532"><label
@@ -2398,7 +2441,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604291"
                                                     data-id="filter_traits1335603894" value="1335604291"><label
@@ -2407,7 +2450,7 @@
                                                         class="--quantity">9</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607798"
                                                     data-id="filter_traits1335603894" value="1335607798"><label
@@ -2416,7 +2459,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608713"
                                                     data-id="filter_traits1335603894" value="1335608713"><label
@@ -2425,7 +2468,7 @@
                                                         class="--quantity">10</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608442"
                                                     data-id="filter_traits1335603894" value="1335608442"><label
@@ -2434,7 +2477,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604009"
                                                     data-id="filter_traits1335603894" value="1335604009"><label
@@ -2443,7 +2486,7 @@
                                                         class="--quantity">45</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609136"
                                                     data-id="filter_traits1335603894" value="1335609136"><label
@@ -2452,7 +2495,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605182"
                                                     data-id="filter_traits1335603894" value="1335605182"><label
@@ -2461,7 +2504,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605241"
                                                     data-id="filter_traits1335603894" value="1335605241"><label
@@ -2470,7 +2513,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604018"
                                                     data-id="filter_traits1335603894" value="1335604018"><label
@@ -2479,7 +2522,7 @@
                                                         class="--quantity">7</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607751"
                                                     data-id="filter_traits1335603894" value="1335607751"><label
@@ -2488,7 +2531,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335606024"
                                                     data-id="filter_traits1335603894" value="1335606024"><label
@@ -2497,7 +2540,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607588"
                                                     data-id="filter_traits1335603894" value="1335607588"><label
@@ -2506,7 +2549,7 @@
                                                         class="--quantity">6</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604511"
                                                     data-id="filter_traits1335603894" value="1335604511"><label
@@ -2515,7 +2558,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608422"
                                                     data-id="filter_traits1335603894" value="1335608422"><label
@@ -2524,7 +2567,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609288"
                                                     data-id="filter_traits1335603894" value="1335609288"><label
@@ -2533,7 +2576,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604586"
                                                     data-id="filter_traits1335603894" value="1335604586"><label
@@ -2542,7 +2585,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607945"
                                                     data-id="filter_traits1335603894" value="1335607945"><label
@@ -2551,7 +2594,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604060"
                                                     data-id="filter_traits1335603894" value="1335604060"><label
@@ -2560,7 +2603,7 @@
                                                         class="--quantity">94</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609123"
                                                     data-id="filter_traits1335603894" value="1335609123"><label
@@ -2569,7 +2612,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609119"
                                                     data-id="filter_traits1335603894" value="1335609119"><label
@@ -2578,7 +2621,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605563"
                                                     data-id="filter_traits1335603894" value="1335605563"><label
@@ -2587,7 +2630,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608739"
                                                     data-id="filter_traits1335603894" value="1335608739"><label
@@ -2596,7 +2639,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604025"
                                                     data-id="filter_traits1335603894" value="1335604025"><label
@@ -2605,7 +2648,7 @@
                                                         class="--quantity">32</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603977"
                                                     data-id="filter_traits1335603894" value="1335603977"><label
@@ -2614,7 +2657,7 @@
                                                         class="--quantity">13</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609636"
                                                     data-id="filter_traits1335603894" value="1335609636"><label
@@ -2623,7 +2666,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603966"
                                                     data-id="filter_traits1335603894" value="1335603966"><label
@@ -2632,7 +2675,7 @@
                                                         class="--quantity">35</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603987"
                                                     data-id="filter_traits1335603894" value="1335603987"><label
@@ -2641,7 +2684,7 @@
                                                         class="--quantity">48</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603976"
                                                     data-id="filter_traits1335603894" value="1335603976"><label
@@ -2650,7 +2693,7 @@
                                                         class="--quantity">18</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604017"
                                                     data-id="filter_traits1335603894" value="1335604017"><label
@@ -2659,7 +2702,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603925"
                                                     data-id="filter_traits1335603894" value="1335603925"><label
@@ -2668,7 +2711,7 @@
                                                         class="--quantity">361</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335606210"
                                                     data-id="filter_traits1335603894" value="1335606210"><label
@@ -2677,7 +2720,7 @@
                                                         class="--quantity">15</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604051"
                                                     data-id="filter_traits1335603894" value="1335604051"><label
@@ -2686,7 +2729,7 @@
                                                         class="--quantity">21</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604499"
                                                     data-id="filter_traits1335603894" value="1335604499"><label
@@ -2695,7 +2738,7 @@
                                                         class="--quantity">8</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604037"
                                                     data-id="filter_traits1335603894" value="1335604037"><label
@@ -2704,7 +2747,7 @@
                                                         class="--quantity">19</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608341"
                                                     data-id="filter_traits1335603894" value="1335608341"><label
@@ -2713,7 +2756,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604277"
                                                     data-id="filter_traits1335603894" value="1335604277"><label
@@ -2722,7 +2765,7 @@
                                                         class="--quantity">18</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605629"
                                                     data-id="filter_traits1335603894" value="1335605629"><label
@@ -2731,7 +2774,7 @@
                                                         class="--quantity">39</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605183"
                                                     data-id="filter_traits1335603894" value="1335605183"><label
@@ -2740,7 +2783,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604036"
                                                     data-id="filter_traits1335603894" value="1335604036"><label
@@ -2749,7 +2792,7 @@
                                                         class="--quantity">6</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609377"
                                                     data-id="filter_traits1335603894" value="1335609377"><label
@@ -2758,7 +2801,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603994"
                                                     data-id="filter_traits1335603894" value="1335603994"><label
@@ -2767,7 +2810,7 @@
                                                         class="--quantity">6</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604508"
                                                     data-id="filter_traits1335603894" value="1335604508"><label
@@ -2776,7 +2819,7 @@
                                                         class="--quantity">6</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604692"
                                                     data-id="filter_traits1335603894" value="1335604692"><label
@@ -2785,7 +2828,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604003"
                                                     data-id="filter_traits1335603894" value="1335604003"><label
@@ -2794,7 +2837,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605633"
                                                     data-id="filter_traits1335603894" value="1335605633"><label
@@ -2803,7 +2846,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608433"
                                                     data-id="filter_traits1335603894" value="1335608433"><label
@@ -2812,7 +2855,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609519"
                                                     data-id="filter_traits1335603894" value="1335609519"><label
@@ -2821,7 +2864,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608434"
                                                     data-id="filter_traits1335603894" value="1335608434"><label
@@ -2830,7 +2873,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605595"
                                                     data-id="filter_traits1335603894" value="1335605595"><label
@@ -2839,7 +2882,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609311"
                                                     data-id="filter_traits1335603894" value="1335609311"><label
@@ -2848,7 +2891,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608411"
                                                     data-id="filter_traits1335603894" value="1335608411"><label
@@ -2857,7 +2900,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609007"
                                                     data-id="filter_traits1335603894" value="1335609007"><label
@@ -2866,7 +2909,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609693"
                                                     data-id="filter_traits1335603894" value="1335609693"><label
@@ -2875,7 +2918,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608988"
                                                     data-id="filter_traits1335603894" value="1335608988"><label
@@ -2884,7 +2927,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605782"
                                                     data-id="filter_traits1335603894" value="1335605782"><label
@@ -2893,7 +2936,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335606292"
                                                     data-id="filter_traits1335603894" value="1335606292"><label
@@ -2902,7 +2945,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603999"
                                                     data-id="filter_traits1335603894" value="1335603999"><label
@@ -2911,7 +2954,7 @@
                                                         class="--quantity">8</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335606033"
                                                     data-id="filter_traits1335603894" value="1335606033"><label
@@ -2920,7 +2963,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335606153"
                                                     data-id="filter_traits1335603894" value="1335606153"><label
@@ -2929,7 +2972,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604624"
                                                     data-id="filter_traits1335603894" value="1335604624"><label
@@ -2938,7 +2981,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603971"
                                                     data-id="filter_traits1335603894" value="1335603971"><label
@@ -2947,7 +2990,7 @@
                                                         class="--quantity">80</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605647"
                                                     data-id="filter_traits1335603894" value="1335605647"><label
@@ -2956,7 +2999,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604071"
                                                     data-id="filter_traits1335603894" value="1335604071"><label
@@ -2965,7 +3008,7 @@
                                                         class="--quantity">7</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608758"
                                                     data-id="filter_traits1335603894" value="1335608758"><label
@@ -2974,7 +3017,7 @@
                                                         class="--quantity">13</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604010"
                                                     data-id="filter_traits1335603894" value="1335604010"><label
@@ -2983,7 +3026,7 @@
                                                         class="--quantity">7</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605576"
                                                     data-id="filter_traits1335603894" value="1335605576"><label
@@ -2992,7 +3035,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608424"
                                                     data-id="filter_traits1335603894" value="1335608424"><label
@@ -3001,7 +3044,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604504"
                                                     data-id="filter_traits1335603894" value="1335604504"><label
@@ -3010,7 +3053,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609657"
                                                     data-id="filter_traits1335603894" value="1335609657"><label
@@ -3019,7 +3062,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605852"
                                                     data-id="filter_traits1335603894" value="1335605852"><label
@@ -3028,7 +3071,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609120"
                                                     data-id="filter_traits1335603894" value="1335609120"><label
@@ -3037,7 +3080,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604587"
                                                     data-id="filter_traits1335603894" value="1335604587"><label
@@ -3046,7 +3089,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605599"
                                                     data-id="filter_traits1335603894" value="1335605599"><label
@@ -3055,7 +3098,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604042"
                                                     data-id="filter_traits1335603894" value="1335604042"><label
@@ -3064,7 +3107,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604024"
                                                     data-id="filter_traits1335603894" value="1335604024"><label
@@ -3073,7 +3116,7 @@
                                                         class="--quantity">23</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609723"
                                                     data-id="filter_traits1335603894" value="1335609723"><label
@@ -3082,7 +3125,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604063"
                                                     data-id="filter_traits1335603894" value="1335604063"><label
@@ -3091,7 +3134,7 @@
                                                         class="--quantity">50</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603929"
                                                     data-id="filter_traits1335603894" value="1335603929"><label
@@ -3100,7 +3143,7 @@
                                                         class="--quantity">31</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604011"
                                                     data-id="filter_traits1335603894" value="1335604011"><label
@@ -3109,7 +3152,7 @@
                                                         class="--quantity">7</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608727"
                                                     data-id="filter_traits1335603894" value="1335608727"><label
@@ -3118,7 +3161,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608991"
                                                     data-id="filter_traits1335603894" value="1335608991"><label
@@ -3127,7 +3170,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603945"
                                                     data-id="filter_traits1335603894" value="1335603945"><label
@@ -3136,7 +3179,7 @@
                                                         class="--quantity">138</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335606289"
                                                     data-id="filter_traits1335603894" value="1335606289"><label
@@ -3145,7 +3188,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608711"
                                                     data-id="filter_traits1335603894" value="1335608711"><label
@@ -3154,7 +3197,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605583"
                                                     data-id="filter_traits1335603894" value="1335605583"><label
@@ -3163,7 +3206,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603927"
                                                     data-id="filter_traits1335603894" value="1335603927"><label
@@ -3172,7 +3215,7 @@
                                                         class="--quantity">236</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607784"
                                                     data-id="filter_traits1335603894" value="1335607784"><label
@@ -3181,7 +3224,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608427"
                                                     data-id="filter_traits1335603894" value="1335608427"><label
@@ -3190,7 +3233,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609401"
                                                     data-id="filter_traits1335603894" value="1335609401"><label
@@ -3199,7 +3242,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608353"
                                                     data-id="filter_traits1335603894" value="1335608353"><label
@@ -3208,7 +3251,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608466"
                                                     data-id="filter_traits1335603894" value="1335608466"><label
@@ -3217,7 +3260,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608756"
                                                     data-id="filter_traits1335603894" value="1335608756"><label
@@ -3226,7 +3269,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603965"
                                                     data-id="filter_traits1335603894" value="1335603965"><label
@@ -3235,7 +3278,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605646"
                                                     data-id="filter_traits1335603894" value="1335605646"><label
@@ -3244,7 +3287,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609517"
                                                     data-id="filter_traits1335603894" value="1335609517"><label
@@ -3253,7 +3296,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604054"
                                                     data-id="filter_traits1335603894" value="1335604054"><label
@@ -3262,7 +3305,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603952"
                                                     data-id="filter_traits1335603894" value="1335603952"><label
@@ -3271,7 +3314,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604049"
                                                     data-id="filter_traits1335603894" value="1335604049"><label
@@ -3280,7 +3323,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604053"
                                                     data-id="filter_traits1335603894" value="1335604053"><label
@@ -3289,7 +3332,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604287"
                                                     data-id="filter_traits1335603894" value="1335604287"><label
@@ -3298,7 +3341,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609252"
                                                     data-id="filter_traits1335603894" value="1335609252"><label
@@ -3307,7 +3350,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608467"
                                                     data-id="filter_traits1335603894" value="1335608467"><label
@@ -3316,7 +3359,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607840"
                                                     data-id="filter_traits1335603894" value="1335607840"><label
@@ -3325,7 +3368,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603937"
                                                     data-id="filter_traits1335603894" value="1335603937"><label
@@ -3334,7 +3377,7 @@
                                                         class="--quantity">76</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604415"
                                                     data-id="filter_traits1335603894" value="1335604415"><label
@@ -3343,7 +3386,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607867"
                                                     data-id="filter_traits1335603894" value="1335607867"><label
@@ -3352,7 +3395,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609692"
                                                     data-id="filter_traits1335603894" value="1335609692"><label
@@ -3361,7 +3404,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604828"
                                                     data-id="filter_traits1335603894" value="1335604828"><label
@@ -3370,7 +3413,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605780"
                                                     data-id="filter_traits1335603894" value="1335605780"><label
@@ -3379,7 +3422,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604057"
                                                     data-id="filter_traits1335603894" value="1335604057"><label
@@ -3388,7 +3431,7 @@
                                                         class="--quantity">18</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603933"
                                                     data-id="filter_traits1335603894" value="1335603933"><label
@@ -3397,7 +3440,7 @@
                                                         class="--quantity">20</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603959"
                                                     data-id="filter_traits1335603894" value="1335603959"><label
@@ -3406,7 +3449,7 @@
                                                         class="--quantity">9</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604494"
                                                     data-id="filter_traits1335603894" value="1335604494"><label
@@ -3415,7 +3458,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607733"
                                                     data-id="filter_traits1335603894" value="1335607733"><label
@@ -3424,7 +3467,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603964"
                                                     data-id="filter_traits1335603894" value="1335603964"><label
@@ -3433,7 +3476,7 @@
                                                         class="--quantity">39</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603958"
                                                     data-id="filter_traits1335603894" value="1335603958"><label
@@ -3442,7 +3485,7 @@
                                                         class="--quantity">15</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604029"
                                                     data-id="filter_traits1335603894" value="1335604029"><label
@@ -3451,7 +3494,7 @@
                                                         class="--quantity">16</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604067"
                                                     data-id="filter_traits1335603894" value="1335604067"><label
@@ -3460,7 +3503,7 @@
                                                         class="--quantity">6</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603995"
                                                     data-id="filter_traits1335603894" value="1335603995"><label
@@ -3469,7 +3512,7 @@
                                                         class="--quantity">36</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603978"
                                                     data-id="filter_traits1335603894" value="1335603978"><label
@@ -3478,7 +3521,7 @@
                                                         class="--quantity">9</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604030"
                                                     data-id="filter_traits1335603894" value="1335604030"><label
@@ -3487,7 +3530,7 @@
                                                         class="--quantity">22</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603996"
                                                     data-id="filter_traits1335603894" value="1335603996"><label
@@ -3496,7 +3539,7 @@
                                                         class="--quantity">9</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604679"
                                                     data-id="filter_traits1335603894" value="1335604679"><label
@@ -3505,7 +3548,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603949"
                                                     data-id="filter_traits1335603894" value="1335603949"><label
@@ -3514,7 +3557,7 @@
                                                         class="--quantity">79</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603940"
                                                     data-id="filter_traits1335603894" value="1335603940"><label
@@ -3523,7 +3566,7 @@
                                                         class="--quantity">89</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608450"
                                                     data-id="filter_traits1335603894" value="1335608450"><label
@@ -3532,7 +3575,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604281"
                                                     data-id="filter_traits1335603894" value="1335604281"><label
@@ -3541,7 +3584,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603968"
                                                     data-id="filter_traits1335603894" value="1335603968"><label
@@ -3550,7 +3593,7 @@
                                                         class="--quantity">83</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608721"
                                                     data-id="filter_traits1335603894" value="1335608721"><label
@@ -3559,7 +3602,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604035"
                                                     data-id="filter_traits1335603894" value="1335604035"><label
@@ -3568,7 +3611,7 @@
                                                         class="--quantity">26</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604048"
                                                     data-id="filter_traits1335603894" value="1335604048"><label
@@ -3577,7 +3620,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604065"
                                                     data-id="filter_traits1335603894" value="1335604065"><label
@@ -3586,7 +3629,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603984"
                                                     data-id="filter_traits1335603894" value="1335603984"><label
@@ -3595,7 +3638,7 @@
                                                         class="--quantity">34</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605050"
                                                     data-id="filter_traits1335603894" value="1335605050"><label
@@ -3604,7 +3647,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607486"
                                                     data-id="filter_traits1335603894" value="1335607486"><label
@@ -3613,7 +3656,7 @@
                                                         class="--quantity">28</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604383"
                                                     data-id="filter_traits1335603894" value="1335604383"><label
@@ -3622,7 +3665,7 @@
                                                         class="--quantity">12</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608704"
                                                     data-id="filter_traits1335603894" value="1335608704"><label
@@ -3631,7 +3674,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603895"
                                                     data-id="filter_traits1335603894" value="1335603895"><label
@@ -3640,7 +3683,7 @@
                                                         class="--quantity">297</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608423"
                                                     data-id="filter_traits1335603894" value="1335608423"><label
@@ -3649,7 +3692,7 @@
                                                         class="--quantity">6</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609637"
                                                     data-id="filter_traits1335603894" value="1335609637"><label
@@ -3658,7 +3701,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607791"
                                                     data-id="filter_traits1335603894" value="1335607791"><label
@@ -3667,7 +3710,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608732"
                                                     data-id="filter_traits1335603894" value="1335608732"><label
@@ -3676,7 +3719,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607944"
                                                     data-id="filter_traits1335603894" value="1335607944"><label
@@ -3685,7 +3728,7 @@
                                                         class="--quantity">6</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335606221"
                                                     data-id="filter_traits1335603894" value="1335606221"><label
@@ -3694,7 +3737,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608419"
                                                     data-id="filter_traits1335603894" value="1335608419"><label
@@ -3703,7 +3746,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608435"
                                                     data-id="filter_traits1335603894" value="1335608435"><label
@@ -3712,7 +3755,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604026"
                                                     data-id="filter_traits1335603894" value="1335604026"><label
@@ -3721,7 +3764,7 @@
                                                         class="--quantity">66</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603930"
                                                     data-id="filter_traits1335603894" value="1335603930"><label
@@ -3730,7 +3773,7 @@
                                                         class="--quantity">97</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609570"
                                                     data-id="filter_traits1335603894" value="1335609570"><label
@@ -3739,7 +3782,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603941"
                                                     data-id="filter_traits1335603894" value="1335603941"><label
@@ -3748,7 +3791,7 @@
                                                         class="--quantity">11</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603934"
                                                     data-id="filter_traits1335603894" value="1335603934"><label
@@ -3757,7 +3800,7 @@
                                                         class="--quantity">15</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604292"
                                                     data-id="filter_traits1335603894" value="1335604292"><label
@@ -3766,7 +3809,7 @@
                                                         class="--quantity">13</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603947"
                                                     data-id="filter_traits1335603894" value="1335603947"><label
@@ -3775,7 +3818,7 @@
                                                         class="--quantity">20</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608418"
                                                     data-id="filter_traits1335603894" value="1335608418"><label
@@ -3784,7 +3827,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609694"
                                                     data-id="filter_traits1335603894" value="1335609694"><label
@@ -3793,7 +3836,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605044"
                                                     data-id="filter_traits1335603894" value="1335605044"><label
@@ -3802,7 +3845,7 @@
                                                         class="--quantity">10</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603991"
                                                     data-id="filter_traits1335603894" value="1335603991"><label
@@ -3811,7 +3854,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605598"
                                                     data-id="filter_traits1335603894" value="1335605598"><label
@@ -3820,7 +3863,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607786"
                                                     data-id="filter_traits1335603894" value="1335607786"><label
@@ -3829,7 +3872,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604501"
                                                     data-id="filter_traits1335603894" value="1335604501"><label
@@ -3838,7 +3881,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608787"
                                                     data-id="filter_traits1335603894" value="1335608787"><label
@@ -3847,7 +3890,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608476"
                                                     data-id="filter_traits1335603894" value="1335608476"><label
@@ -3856,7 +3899,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605924"
                                                     data-id="filter_traits1335603894" value="1335605924"><label
@@ -3865,7 +3908,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335606201"
                                                     data-id="filter_traits1335603894" value="1335606201"><label
@@ -3874,7 +3917,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608733"
                                                     data-id="filter_traits1335603894" value="1335608733"><label
@@ -3883,7 +3926,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609124"
                                                     data-id="filter_traits1335603894" value="1335609124"><label
@@ -3892,7 +3935,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603961"
                                                     data-id="filter_traits1335603894" value="1335603961"><label
@@ -3901,7 +3944,7 @@
                                                         class="--quantity">48</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605533"
                                                     data-id="filter_traits1335603894" value="1335605533"><label
@@ -3910,7 +3953,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609400"
                                                     data-id="filter_traits1335603894" value="1335609400"><label
@@ -3919,7 +3962,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608728"
                                                     data-id="filter_traits1335603894" value="1335608728"><label
@@ -3928,7 +3971,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604278"
                                                     data-id="filter_traits1335603894" value="1335604278"><label
@@ -3937,7 +3980,7 @@
                                                         class="--quantity">9</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605433"
                                                     data-id="filter_traits1335603894" value="1335605433"><label
@@ -3946,7 +3989,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604061"
                                                     data-id="filter_traits1335603894" value="1335604061"><label
@@ -3955,7 +3998,7 @@
                                                         class="--quantity">11</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604050"
                                                     data-id="filter_traits1335603894" value="1335604050"><label
@@ -3964,7 +4007,7 @@
                                                         class="--quantity">32</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608425"
                                                     data-id="filter_traits1335603894" value="1335608425"><label
@@ -3973,7 +4016,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608004"
                                                     data-id="filter_traits1335603894" value="1335608004"><label
@@ -3982,7 +4025,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603955"
                                                     data-id="filter_traits1335603894" value="1335603955"><label
@@ -3991,7 +4034,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608412"
                                                     data-id="filter_traits1335603894" value="1335608412"><label
@@ -4000,7 +4043,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607528"
                                                     data-id="filter_traits1335603894" value="1335607528"><label
@@ -4009,7 +4052,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603960"
                                                     data-id="filter_traits1335603894" value="1335603960"><label
@@ -4018,7 +4061,7 @@
                                                         class="--quantity">24</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603932"
                                                     data-id="filter_traits1335603894" value="1335603932"><label
@@ -4027,7 +4070,7 @@
                                                         class="--quantity">31</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608187"
                                                     data-id="filter_traits1335603894" value="1335608187"><label
@@ -4036,7 +4079,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603980"
                                                     data-id="filter_traits1335603894" value="1335603980"><label
@@ -4045,7 +4088,7 @@
                                                         class="--quantity">15</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603944"
                                                     data-id="filter_traits1335603894" value="1335603944"><label
@@ -4054,7 +4097,7 @@
                                                         class="--quantity">17</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335606129"
                                                     data-id="filter_traits1335603894" value="1335606129"><label
@@ -4063,7 +4106,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604068"
                                                     data-id="filter_traits1335603894" value="1335604068"><label
@@ -4072,7 +4115,7 @@
                                                         class="--quantity">18</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604052"
                                                     data-id="filter_traits1335603894" value="1335604052"><label
@@ -4081,7 +4124,7 @@
                                                         class="--quantity">13</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608007"
                                                     data-id="filter_traits1335603894" value="1335608007"><label
@@ -4090,7 +4133,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605566"
                                                     data-id="filter_traits1335603894" value="1335605566"><label
@@ -4099,7 +4142,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607943"
                                                     data-id="filter_traits1335603894" value="1335607943"><label
@@ -4108,7 +4151,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609695"
                                                     data-id="filter_traits1335603894" value="1335609695"><label
@@ -4117,7 +4160,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604286"
                                                     data-id="filter_traits1335603894" value="1335604286"><label
@@ -4126,7 +4169,7 @@
                                                         class="--quantity">15</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603992"
                                                     data-id="filter_traits1335603894" value="1335603992"><label
@@ -4135,7 +4178,7 @@
                                                         class="--quantity">47</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605045"
                                                     data-id="filter_traits1335603894" value="1335605045"><label
@@ -4144,7 +4187,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607607"
                                                     data-id="filter_traits1335603894" value="1335607607"><label
@@ -4153,7 +4196,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603951"
                                                     data-id="filter_traits1335603894" value="1335603951"><label
@@ -4162,7 +4205,7 @@
                                                         class="--quantity">8</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608759"
                                                     data-id="filter_traits1335603894" value="1335608759"><label
@@ -4171,7 +4214,7 @@
                                                         class="--quantity">3</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609518"
                                                     data-id="filter_traits1335603894" value="1335609518"><label
@@ -4180,7 +4223,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335606291"
                                                     data-id="filter_traits1335603894" value="1335606291"><label
@@ -4189,7 +4232,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609310"
                                                     data-id="filter_traits1335603894" value="1335609310"><label
@@ -4198,7 +4241,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603943"
                                                     data-id="filter_traits1335603894" value="1335603943"><label
@@ -4207,7 +4250,7 @@
                                                         class="--quantity">7</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604040"
                                                     data-id="filter_traits1335603894" value="1335604040"><label
@@ -4216,7 +4259,7 @@
                                                         class="--quantity">12</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605490"
                                                     data-id="filter_traits1335603894" value="1335605490"><label
@@ -4225,7 +4268,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335606034"
                                                     data-id="filter_traits1335603894" value="1335606034"><label
@@ -4234,7 +4277,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603970"
                                                     data-id="filter_traits1335603894" value="1335603970"><label
@@ -4243,7 +4286,7 @@
                                                         class="--quantity">52</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608987"
                                                     data-id="filter_traits1335603894" value="1335608987"><label
@@ -4252,7 +4295,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608468"
                                                     data-id="filter_traits1335603894" value="1335608468"><label
@@ -4261,7 +4304,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604264"
                                                     data-id="filter_traits1335603894" value="1335604264"><label
@@ -4270,7 +4313,7 @@
                                                         class="--quantity">14</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609762"
                                                     data-id="filter_traits1335603894" value="1335609762"><label
@@ -4279,7 +4322,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605570"
                                                     data-id="filter_traits1335603894" value="1335605570"><label
@@ -4288,7 +4331,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604015"
                                                     data-id="filter_traits1335603894" value="1335604015"><label
@@ -4297,7 +4340,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335606290"
                                                     data-id="filter_traits1335603894" value="1335606290"><label
@@ -4306,7 +4349,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603962"
                                                     data-id="filter_traits1335603894" value="1335603962"><label
@@ -4315,7 +4358,7 @@
                                                         class="--quantity">22</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603969"
                                                     data-id="filter_traits1335603894" value="1335603969"><label
@@ -4324,7 +4367,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603988"
                                                     data-id="filter_traits1335603894" value="1335603988"><label
@@ -4333,7 +4376,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605781"
                                                     data-id="filter_traits1335603894" value="1335605781"><label
@@ -4342,7 +4385,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604002"
                                                     data-id="filter_traits1335603894" value="1335604002"><label
@@ -4351,7 +4394,7 @@
                                                         class="--quantity">31</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608098"
                                                     data-id="filter_traits1335603894" value="1335608098"><label
@@ -4360,7 +4403,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605564"
                                                     data-id="filter_traits1335603894" value="1335605564"><label
@@ -4369,7 +4412,7 @@
                                                         class="--quantity">6</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608871"
                                                     data-id="filter_traits1335603894" value="1335608871"><label
@@ -4378,7 +4421,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605975"
                                                     data-id="filter_traits1335603894" value="1335605975"><label
@@ -4387,7 +4430,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335609449"
                                                     data-id="filter_traits1335603894" value="1335609449"><label
@@ -4396,7 +4439,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603928"
                                                     data-id="filter_traits1335603894" value="1335603928"><label
@@ -4405,7 +4448,7 @@
                                                         class="--quantity">49</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605976"
                                                     data-id="filter_traits1335603894" value="1335605976"><label
@@ -4414,7 +4457,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608705"
                                                     data-id="filter_traits1335603894" value="1335608705"><label
@@ -4423,7 +4466,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605532"
                                                     data-id="filter_traits1335603894" value="1335605532"><label
@@ -4432,7 +4475,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335607785"
                                                     data-id="filter_traits1335603894" value="1335607785"><label
@@ -4441,7 +4484,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608712"
                                                     data-id="filter_traits1335603894" value="1335608712"><label
@@ -4450,7 +4493,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604056"
                                                     data-id="filter_traits1335603894" value="1335604056"><label
@@ -4459,7 +4502,7 @@
                                                         class="--quantity">15</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605246"
                                                     data-id="filter_traits1335603894" value="1335605246"><label
@@ -4468,7 +4511,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604032"
                                                     data-id="filter_traits1335603894" value="1335604032"><label
@@ -4477,7 +4520,7 @@
                                                         class="--quantity">44</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335605573"
                                                     data-id="filter_traits1335603894" value="1335605573"><label
@@ -4486,7 +4529,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335606202"
                                                     data-id="filter_traits1335603894" value="1335606202"><label
@@ -4495,7 +4538,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335608916"
                                                     data-id="filter_traits1335603894" value="1335608916"><label
@@ -4504,7 +4547,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604619"
                                                     data-id="filter_traits1335603894" value="1335604619"><label
@@ -4513,7 +4556,7 @@
                                                         class="--quantity">5</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604282"
                                                     data-id="filter_traits1335603894" value="1335604282"><label
@@ -4522,7 +4565,7 @@
                                                         class="--quantity">2</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604008"
                                                     data-id="filter_traits1335603894" value="1335604008"><label
@@ -4531,7 +4574,7 @@
                                                         class="--quantity">8</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335604503"
                                                     data-id="filter_traits1335603894" value="1335604503"><label
@@ -4540,7 +4583,7 @@
                                                         class="--quantity">24</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335606164"
                                                     data-id="filter_traits1335603894" value="1335606164"><label
@@ -4549,7 +4592,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603894_1335603993"
                                                     data-id="filter_traits1335603894" value="1335603993"><label
@@ -4559,19 +4602,19 @@
                                         </li>
                                     </ul>
                                     <div class="filters__options"><a class="--show-hidden btn py-0 pl-0 pr-0"
-                                            data-id="filter_traits1335603894"><span class="--show">+ Rozwiń</span><span
-                                                class="--hide">- Ukryj</span></a><button type="submit"
-                                            class="--submit btn --solid --small">
+                                            data-id="filter_traits1335603894"><span class="--show">+
+                                                Rozwiń</span><span class="--hide">- Ukryj</span></a><button
+                                            type="submit" class="--submit btn --solid --small">
                                             Filtruj
                                         </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
                                             Wyczyść filtry
                                         </button></div>
                                 </div>
                             </div>
-                            <div class="filters__block --hide"><input type="hidden" class="__serialize"
+                            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
                                     id="filter_traits1335603533_input" name="filter_traits[1335603533]" value=""><a
                                     class="filters__toggler
-								" data-id="filter_traits1335603533">
+    								" data-id="filter_traits1335603533">
                                     <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
                                             old_text="Przeznaczenie ">Przeznaczenie </span><span
                                             class="d-md-none">Przeznaczenie </span></div>
@@ -4579,7 +4622,7 @@
                                 <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603533_expand">
                                     <ul class="filters__content --list" id="filter_traits1335603533_content">
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603533_1335603580"
                                                     data-id="filter_traits1335603533" value="1335603580"><label
@@ -4588,7 +4631,7 @@
                                                         class="--quantity">360</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603533_1335603581"
                                                     data-id="filter_traits1335603533" value="1335603581"><label
@@ -4597,7 +4640,7 @@
                                                         class="--quantity">642</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603533_1335603578"
                                                     data-id="filter_traits1335603533" value="1335603578"><label
@@ -4606,7 +4649,7 @@
                                                         class="--quantity">1162</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603533_1335603592"
                                                     data-id="filter_traits1335603533" value="1335603592"><label
@@ -4615,7 +4658,7 @@
                                                         class="--quantity">1077</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --last-not-hidden">
+    																   --last-not-hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603533_1335603593"
                                                     data-id="filter_traits1335603533" value="1335603593"><label
@@ -4624,7 +4667,7 @@
                                                         class="--quantity">1079</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603533_1335609115"
                                                     data-id="filter_traits1335603533" value="1335609115"><label
@@ -4633,7 +4676,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603533_1335606212"
                                                     data-id="filter_traits1335603533" value="1335606212"><label
@@ -4642,7 +4685,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603533_1335603690"
                                                     data-id="filter_traits1335603533" value="1335603690"><label
@@ -4651,7 +4694,7 @@
                                                         class="--quantity">77</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603533_1335603594"
                                                     data-id="filter_traits1335603533" value="1335603594"><label
@@ -4660,7 +4703,7 @@
                                                         class="--quantity">307</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603533_1335603579"
                                                     data-id="filter_traits1335603533" value="1335603579"><label
@@ -4670,19 +4713,19 @@
                                         </li>
                                     </ul>
                                     <div class="filters__options"><a class="--show-hidden btn py-0 pl-0 pr-0"
-                                            data-id="filter_traits1335603533"><span class="--show">+ Rozwiń</span><span
-                                                class="--hide">- Ukryj</span></a><button type="submit"
-                                            class="--submit btn --solid --small">
+                                            data-id="filter_traits1335603533"><span class="--show">+
+                                                Rozwiń</span><span class="--hide">- Ukryj</span></a><button
+                                            type="submit" class="--submit btn --solid --small">
                                             Filtruj
                                         </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
                                             Wyczyść filtry
                                         </button></div>
                                 </div>
                             </div>
-                            <div class="filters__block --hide"><input type="hidden" class="__serialize"
+                            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
                                     id="filter_traits1335603586_input" name="filter_traits[1335603586]" value=""><a
                                     class="filters__toggler
-								" data-id="filter_traits1335603586">
+    								" data-id="filter_traits1335603586">
                                     <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
                                             old_text="Palarnia">Palarnia</span><span class="d-md-none">Palarnia</span>
                                     </div>
@@ -4690,7 +4733,7 @@
                                 <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603586_expand">
                                     <ul class="filters__content --list" id="filter_traits1335603586_content">
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603586_1335603595"
                                                     data-id="filter_traits1335603586" value="1335603595"><label
@@ -4699,7 +4742,7 @@
                                                         class="--quantity">30</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603586_1335604031"
                                                     data-id="filter_traits1335603586" value="1335604031"><label
@@ -4708,7 +4751,7 @@
                                                         class="--quantity">14</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603586_1335604678"
                                                     data-id="filter_traits1335603586" value="1335604678"><label
@@ -4717,7 +4760,7 @@
                                                         class="--quantity">9</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																  ">
+    																  ">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603586_1335603876"
                                                     data-id="filter_traits1335603586" value="1335603876"><label
@@ -4726,7 +4769,7 @@
                                                         class="--quantity">9</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --last-not-hidden">
+    																   --last-not-hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603586_1335603597"
                                                     data-id="filter_traits1335603586" value="1335603597"><label
@@ -4735,7 +4778,7 @@
                                                         class="--quantity">621</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603586_1335608760"
                                                     data-id="filter_traits1335603586" value="1335608760"><label
@@ -4744,7 +4787,7 @@
                                                         class="--quantity">4</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603586_1335603598"
                                                     data-id="filter_traits1335603586" value="1335603598"><label
@@ -4753,7 +4796,7 @@
                                                         class="--quantity">1</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2
-																   --hidden">
+    																   --hidden">
                                             <div class="f-group --small --checkbox mb-0"><input type="checkbox"
                                                     class="f-control focused" id="filter_traits1335603586_1335603600"
                                                     data-id="filter_traits1335603586" value="1335603600"><label
@@ -4763,17 +4806,17 @@
                                         </li>
                                     </ul>
                                     <div class="filters__options"><a class="--show-hidden btn py-0 pl-0 pr-0"
-                                            data-id="filter_traits1335603586"><span class="--show">+ Rozwiń</span><span
-                                                class="--hide">- Ukryj</span></a><button type="submit"
-                                            class="--submit btn --solid --small">
+                                            data-id="filter_traits1335603586"><span class="--show">+
+                                                Rozwiń</span><span class="--hide">- Ukryj</span></a><button
+                                            type="submit" class="--submit btn --solid --small">
                                             Filtruj
                                         </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
                                             Wyczyść filtry
                                         </button></div>
                                 </div>
                             </div>
-                            <div class="filters__block --hide"><a class="filters__toggler
-								" data-id="filter_dual">
+                            <div class="filter-element filters__block --hide"><a class="filters__toggler
+    								" data-id="filter_dual">
                                     <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
                                             old_text="Pokaż tylko">
                                             Pokaż tylko
@@ -4829,9 +4872,9 @@
                                         </button></div>
                                 </div>
                             </div>
-                            <div class="filters__block --hide"><input type="hidden" class="__serialize"
+                            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
                                     id="filter_price_input" name="filter_price" value=""><a class="filters__toggler
-								" data-id="filter_price">
+    								" data-id="filter_price">
                                     <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
                                             old_text="Cena">Cena</span><span class="d-md-none">Cena</span></div>
                                 </a>
@@ -4860,6 +4903,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="f-group filters__buttons d-md-none"><button type="submit"
                                     class="btn --medium --solid" title="Kliknij aby zastosować wybrane filtry">
 
@@ -5039,18 +5083,83 @@
                 <script>
                 var _additional_ajax = true;
                 </script>
+                <div class="additional-info px-6">
+                    <div>
+                        <h2 class="py-3">Czy wraz z poranną kawą możesz wyruszyć w podróż dookoła świata?</h2>
+                        <p>Tak! Poranna filiżanka kawy może przenieść Cię w dalekie, egzotyczne kraje – za każdym razem
+                            w inne! Udaj się z nami w podróż dookoła świata, poznaj bogactwo smaków i aromatów kaw z
+                            różnych zakątków globu.</p><br />
+                        <p>W sklepie MK Cafe Fresh proponujemy Ci rozmaite rodzaje <strong>kaw Arabica</strong>,
+                            pochodzące z różnych stron świata. Oferujemy zarówno ziarna zebrane na plantacjach
+                            azjatyckich, afrykańskich, jak i środkowo- oraz południowoamerykańskich. Każda z
+                            proponowanych przez nas kaw charakteryzuje się unikalnym profilem aromatycznym,
+                            intensywnością oraz poziomem kwasowości. Wszyscy znajdą tu więc coś dla siebie – niezależnie
+                            od tego, czy potrzebują <strong>kawy do ekspresu ciśnieniowego</strong>, <strong>kawy do
+                                kawiarki</strong> czy innych urządzeń do parzenia kawy.</p><br />
+                        <div class="moreContent">
+                            <p>Wybrane kawy możesz otrzymać od nas zarówno w ziarnach, jak i zmielone, gotowe do
+                                parzenia. Oczywiście każde opakowanie kawy zawiera wyłącznie ziarna świeżo palone w
+                                naszej Manufakturze! Możesz wybierać spośród <a
+                                    href="https://mkfresh.pl/kawy/kawy-jednorodne">kaw jednorodnych
+                                    (<em>origins</em>)</a>, czyli ziaren pochodzących wyłącznie z jednego obszaru
+                                geograficznego, jednego kraju czy jednej plantacji, oraz specjalnie skomponowanych <a
+                                    href="https://mkfresh.pl/kawy/kawy-swiata">mieszanek ziaren</a> z różnych regionów –
+                                <em>blend</em>.
+                            </p><br />
+                            <p>W poszukiwaniu nowych doznań smakowych warto zajrzeć do zakładki „Edycja limitowana”,
+                                gdzie znajdziesz wyjątkowe <a href="https://mkfresh.pl/kawy/kawy-swiata">kawy
+                                    świata</a>. Różne odsłony kaw prosto z Brazylii zachwycą Cię miodową słodyczą
+                                (Brazil Cemorrado Honey), cytrusową świeżością czy różnymi wariantami delikatnych smaków
+                                czekoladowo-orzechowych. Miłośników orientalnych, głębokich smaków z pewnością
+                                zainteresują kawy z Indii. Odkryjesz w nich wyraziste nuty czekolady, karmelu, przypraw
+                                korzennych oraz szlachetnego drewna.</p><br />
+                            <p>A może wybierzesz jedną z kaw Arabica z gorącej Etiopii? Sidamo należy do wysokiej
+                                jakości, klasycznych kaw zachodniej części kraju. Coś jeszcze bardziej egzotycznego? To
+                                może intensywna, owocowo-karmelowo-czekoladowa Indonesia Java Purbaya! Albo mieszanka
+                                słodyczy i orzeźwienia – Las Campanillas z Nikaragui.</p><br />
+                            <p>Kawy Origins to jednorodne ziarna pochodzące z pięciu regionów tzw. pasa kawowego, czyli
+                                obszaru mieszczącego się pomiędzy Zwrotnikiem Raka a Zwrotnikiem Koziorożca. Kawy
+                                Origins cechuje bogaty smak i aromat, które stanowią wypadkową wielu czynników: klimatu,
+                                typu gleby, wysokości upraw, metody zbioru i obróbki. Proponujemy w naszym sklepie
+                                <strong>kawy ziarniste</strong> jednorodne pochodzące z Brazylii, Kenii, Indii,
+                                Indonezji, Kolumbii i Kostaryki.
+                            </p><br />
+                            <p>Kawy typu „blend” to z kolei mieszanki, w skład których wchodzą ziarna z dwóch lub
+                                większej liczby upraw. Ziarna zostały dobrane w specjalnych proporcjach, a efektem jest
+                                połączenie najlepszych kaw świata w nowe, ciekawe kompozycje. Jeśli cenisz delikatną w
+                                smaku klasykę, spróbuj <a href="https://mkfresh.pl/master-blend">kawy Master Blend</a>
+                                stanowiącej mieszankę ziaren brazylijskich i kolumbijskich. <a
+                                    href="https://mkfresh.pl/subtle-harmony">Kawa Subtle Harmony</a> dodaje do tej pary
+                                jeszcze ziarna z Kostaryki, stawiając kropkę nad „i” brzoskwiniowymi nutami smakowymi.
+                                Ciekawą mieszanką jest też Supreme Strength – unikalna fuzja ziaren z Brazylii i
+                                Kolumbii z korzenną, aromatyczną kawą indyjską.</p><br />
+                            <p>Nie wiesz, na jaką kawę się zdecydować? A może szukasz pomysłu na prezent? Dostępne w
+                                naszym sklepie zestawy kaw to doskonała sposobność na degustację różnych rodzajów kaw, a
+                                także wspaniały, elegancki i wyszukany podarunek. Kawy są zawsze <a
+                                    href="https://mkfresh.pl/unikatowa-manufaktura">świeżo palone</a> i pakowane w
+                                gustowne pudełko.</p><br />
+                            <p>Jeżeli nie możesz się zdecydować może pomóc Tobie nasz internetowy konfigurator, który
+                                pomoże Tobie <a href="https://mkfresh.pl/front/wizard/">jaką kawę wybrać</a> i przy
+                                pomocy trzech pytań pozwoli Ci znaleźć idealną dla Ciebie 100% kawę arabica.</p><br />
+                        </div>
+                    </div>
+                    <p class="text-center m-0"><button
+                            class="hover:bg-gold-dark hover:border-gold-dark px-6 py-2 bg-gold border-solid border-2 border-gold text-white transition hidden">
+                            Czytaj więcej
+                        </button></p>
+                </div>
             </div>
         </div>
 
         <?php include 'footer.php'; ?>
 
-        <!-- 
-<script
-            src="main.js"></script>  -->
-        <script src="./js/shop.js">
+
+
+
+
+
+        <script src="https://www.konesso.pl/data/designs/60dd8e70dc8481.63628788_3/gfx/pol/shop.js.gzip?r=1699540674">
         </script>
-        <!-- <script src="https://www.konesso.pl/data/designs/60dd8e70dc8481.63628788_3/gfx/pol/shop.js.gzip?r=1699540674">
-        </script> -->
         <script src="./js/envelope.js.gzip">
         </script>
         <script src="./js/menu_suggested_shop_for_language.js.gzip">
@@ -5072,10 +5181,14 @@
         <script
             src="https://www.konesso.pl/data/designs/60dd8e70dc8481.63628788_3/gfx/pol/search_promo_products.js.gzip?r=1699540673">
         </script>
-        <!-- <script src="./js/search.js"></script>
-        <script src="./js/search_filters.js"></script>
+        <script src="./js/search.js"></script>
         <script src="./js/search_promo_products.js">
-        </script> -->
+        </script>
+        <script src="./js/search_filters.js"></script>
+        <script src="main.js"></script>
+        <script src="search.js"></script>
+        <script src="assets/js/Chart.min.js"></script>
+        <script src="./js/shop.js"></script>
         <script>
         app_shop.runApp();
         </script>

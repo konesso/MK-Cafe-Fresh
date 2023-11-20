@@ -49,9 +49,9 @@ function calculateSubscriptionPrice(e) {
           p || app_shop.vars?.currency?.beforeValue || app_shop.vars.currency_before_value),
         (this.rebateType = a || 'percentage');
       const d =
-          'percentage' === this.rebateType
-            ? this.percentagePrice(+t, +n, +o, +r)
-            : this.quotaPrice(+t, +n, +r),
+        'percentage' === this.rebateType
+          ? this.percentagePrice(+t, +n, +o, +r)
+          : this.quotaPrice(+t, +n, +r),
         u = this.calculatePercent(t, d),
         h = this.netPrice(i, u);
       return {
@@ -66,14 +66,13 @@ function calculateSubscriptionPrice(e) {
 app_shop.graphql || (app_shop.graphql = {}),
   (app_shop.graphql.getLowestPrice = async e => {
     const t = JSON.stringify({
-      query: `query {\n      getLastLowestProductPrices(${e}) {\n        id\n        sizes {\n          id\n          price {\n            ${
-        app_shop?.vars?.priceType || 'gross'
-      } {\n              value\n              currency\n              formatted\n            }\n          }\n        }\n      }\n    }`,
+      query: `query {\n      getLastLowestProductPrices(${e}) {\n        id\n        sizes {\n          id\n          price {\n            ${app_shop?.vars?.priceType || 'gross'
+        } {\n              value\n              currency\n              formatted\n            }\n          }\n        }\n      }\n    }`,
     });
     try {
       const e = app_shop?.urls?.graphql
-          ? `${app_shop?.urls?.graphql}?getLastLowestProductPrices`
-          : '/graphql/v1/?getLastLowestProductPrices',
+        ? `${app_shop?.urls?.graphql}?getLastLowestProductPrices`
+        : '/graphql/v1/?getLastLowestProductPrices',
         i = await fetch(e, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
@@ -88,7 +87,7 @@ class VanillaCalendar {
   constructor(e, t) {
     (this.HTMLElement = 'object' == typeof e ? e : document.querySelector(e)),
       this.HTMLElement &&
-        ((this.type = t?.type ?? 'default'),
+      ((this.type = t?.type ?? 'default'),
         (this.date = {
           min: t?.date?.min ?? '1970-01-01',
           max: t?.date?.max ?? '2470-12-31',
@@ -159,26 +158,26 @@ class VanillaCalendar {
       0 === t
         ? (i = '12')
         : 13 === t
-        ? (i = '01')
-        : 14 === t
-        ? (i = '02')
-        : 15 === t
-        ? (i = '03')
-        : 16 === t
-        ? (i = '04')
-        : 17 === t
-        ? (i = '05')
-        : 18 === t
-        ? (i = '06')
-        : 19 === t
-        ? (i = '07')
-        : 20 === t
-        ? (i = '08')
-        : 21 === t
-        ? (i = '09')
-        : 22 === t
-        ? (i = '10')
-        : 23 === t && (i = '11'),
+          ? (i = '01')
+          : 14 === t
+            ? (i = '02')
+            : 15 === t
+              ? (i = '03')
+              : 16 === t
+                ? (i = '04')
+                : 17 === t
+                  ? (i = '05')
+                  : 18 === t
+                    ? (i = '06')
+                    : 19 === t
+                      ? (i = '07')
+                      : 20 === t
+                        ? (i = '08')
+                        : 21 === t
+                          ? (i = '09')
+                          : 22 === t
+                            ? (i = '10')
+                            : 23 === t && (i = '11'),
       i
     );
   }
@@ -189,27 +188,27 @@ class VanillaCalendar {
       'AM' === t
         ? 12 === i && (n = '00')
         : 'PM' === t &&
-          (1 === i
-            ? (n = '13')
-            : 2 === i
+        (1 === i
+          ? (n = '13')
+          : 2 === i
             ? (n = '14')
             : 3 === i
-            ? (n = '15')
-            : 4 === i
-            ? (n = '16')
-            : 5 === i
-            ? (n = '17')
-            : 6 === i
-            ? (n = '18')
-            : 7 === i
-            ? (n = '19')
-            : 8 === i
-            ? (n = '20')
-            : 9 === i
-            ? (n = '21')
-            : 10 === i
-            ? (n = '22')
-            : 11 === i && (n = '23')),
+              ? (n = '15')
+              : 4 === i
+                ? (n = '16')
+                : 5 === i
+                  ? (n = '17')
+                  : 6 === i
+                    ? (n = '18')
+                    : 7 === i
+                      ? (n = '19')
+                      : 8 === i
+                        ? (n = '20')
+                        : 9 === i
+                          ? (n = '21')
+                          : 10 === i
+                            ? (n = '22')
+                            : 11 === i && (n = '23')),
       n
     );
   }
@@ -218,13 +217,13 @@ class VanillaCalendar {
       ? (this.selectedDates = this.settings.selected.dates)
       : (this.selectedDates = []),
       null !== this.settings.selected.month &&
-      this.settings.selected.month >= 0 &&
-      this.settings.selected.month < 12
+        this.settings.selected.month >= 0 &&
+        this.settings.selected.month < 12
         ? (this.selectedMonth = this.settings.selected.month)
         : (this.selectedMonth = this.date.today.getUTCMonth()),
       null !== this.settings.selected.year &&
-      this.settings.selected.year >= 0 &&
-      this.settings.selected.year <= 9999
+        this.settings.selected.year >= 0 &&
+        this.settings.selected.year <= 9999
         ? (this.selectedYear = this.settings.selected.year)
         : (this.selectedYear = this.date.today.getUTCFullYear()),
       (this.viewYear = this.selectedYear),
@@ -250,7 +249,7 @@ class VanillaCalendar {
           (this.selectedMinutes = this.date.today.getMinutes()),
           (this.selectedKeeping = Number(this.date.today.getHours()) > 12 ? 'PM' : 'AM'))
         : this.userTime ||
-          ((this.selectedHours = this.date.today.getHours()),
+        ((this.selectedHours = this.date.today.getHours()),
           (this.selectedMinutes = this.date.today.getMinutes())),
         (this.selectedHours =
           Number(this.selectedHours) < 10
@@ -260,54 +259,48 @@ class VanillaCalendar {
           Number(this.selectedMinutes) < 10
             ? `0${Number(this.selectedMinutes)}`
             : `${this.selectedMinutes}`),
-        (this.selectedTime = `${this.selectedHours}:${this.selectedMinutes}${
-          this.selectedKeeping ? ` ${this.selectedKeeping}` : ''
-        }`);
+        (this.selectedTime = `${this.selectedHours}:${this.selectedMinutes}${this.selectedKeeping ? ` ${this.selectedKeeping}` : ''
+          }`);
     } else
       this.settings.selection.time &&
         ((this.settings.selection.time = null),
-        console.error('The value of the time property can be: false, true, 12 or 24.'));
+          console.error('The value of the time property can be: false, true, 12 or 24.'));
   }
   createDOM() {
     'default' === this.currentType
       ? (this.HTMLElement.classList.add('vanilla-calendar_default'),
         this.HTMLElement.classList.remove('vanilla-calendar_month'),
         this.HTMLElement.classList.remove('vanilla-calendar_year'),
-        (this.HTMLElement.innerHTML = `\n      ${
-          this.info.top ? '\n      <div class="vanilla-calendar-info --top"></div>\n      ' : ''
-        }\n      <div class="vanilla-calendar-header">\n        <button type="button"\n          class="vanilla-calendar-arrow vanilla-calendar-arrow_prev"\n          data-calendar-arrow="prev"\n          title="Prev">\n        </button>\n        <div class="vanilla-calendar-header__content"></div>\n        <button type="button"\n          class="vanilla-calendar-arrow vanilla-calendar-arrow_next"\n          data-calendar-arrow="next"\n          title="Next">\n        </button>\n      </div>\n      ${
-          this.settings.visibility.weekNumbers
+        (this.HTMLElement.innerHTML = `\n      ${this.info.top ? '\n      <div class="vanilla-calendar-info --top"></div>\n      ' : ''
+          }\n      <div class="vanilla-calendar-header">\n        <button type="button"\n          class="vanilla-calendar-arrow vanilla-calendar-arrow_prev"\n          data-calendar-arrow="prev"\n          title="Prev">\n        </button>\n        <div class="vanilla-calendar-header__content"></div>\n        <button type="button"\n          class="vanilla-calendar-arrow vanilla-calendar-arrow_next"\n          data-calendar-arrow="next"\n          title="Next">\n        </button>\n      </div>\n      ${this.settings.visibility.weekNumbers
             ? '\n      <div class="vanilla-calendar-column">\n        <b class="vanilla-calendar-column__title">#</b>\n        <div class="vanilla-calendar-column__content vanilla-calendar-week-numbers"></div>\n      </div>\n      '
             : ''
-        }\n      <div class="vanilla-calendar-content">\n        <div class="vanilla-calendar-week"></div>\n        <div class="vanilla-calendar-days"></div>\n        ${
-          this.settings.selection.time
+          }\n      <div class="vanilla-calendar-content">\n        <div class="vanilla-calendar-week"></div>\n        <div class="vanilla-calendar-days"></div>\n        ${this.settings.selection.time
             ? '\n        <div class="vanilla-calendar-time"></div>\n        '
             : ''
-        }\n      </div>\n      ${
-          this.info.bottom
+          }\n      </div>\n      ${this.info.bottom
             ? '\n      <div class="vanilla-calendar-info --bottom"></div>\n      '
             : ''
-        }\n    `))
+          }\n    `))
       : 'month' === this.currentType
-      ? (this.HTMLElement.classList.remove('vanilla-calendar_default'),
-        this.HTMLElement.classList.add('vanilla-calendar_month'),
-        this.HTMLElement.classList.remove('vanilla-calendar_year'),
-        (this.HTMLElement.innerHTML =
-          '\n      <div class="vanilla-calendar-header">\n        <div class="vanilla-calendar-header__content"></div>\n      </div>\n      <div class="vanilla-calendar-content">\n        <div class="vanilla-calendar-months"></div>\n      </div>'))
-      : 'year' === this.currentType &&
+        ? (this.HTMLElement.classList.remove('vanilla-calendar_default'),
+          this.HTMLElement.classList.add('vanilla-calendar_month'),
+          this.HTMLElement.classList.remove('vanilla-calendar_year'),
+          (this.HTMLElement.innerHTML =
+            '\n      <div class="vanilla-calendar-header">\n        <div class="vanilla-calendar-header__content"></div>\n      </div>\n      <div class="vanilla-calendar-content">\n        <div class="vanilla-calendar-months"></div>\n      </div>'))
+        : 'year' === this.currentType &&
         (this.HTMLElement.classList.remove('vanilla-calendar_default'),
-        this.HTMLElement.classList.remove('vanilla-calendar_month'),
-        this.HTMLElement.classList.add('vanilla-calendar_year'),
-        (this.HTMLElement.innerHTML =
-          '\n      <div class="vanilla-calendar-header">\n        <button type="button"\n          class="vanilla-calendar-arrow vanilla-calendar-arrow_prev"\n          title="prev">\n        </button>\n        <div class="vanilla-calendar-header__content"></div>\n        <button type="button"\n          class="vanilla-calendar-arrow vanilla-calendar-arrow_next"\n          title="next">\n        </button>\n      </div>\n      <div class="vanilla-calendar-content">\n        <div class="vanilla-calendar-years"></div>\n      </div>'));
+          this.HTMLElement.classList.remove('vanilla-calendar_month'),
+          this.HTMLElement.classList.add('vanilla-calendar_year'),
+          (this.HTMLElement.innerHTML =
+            '\n      <div class="vanilla-calendar-header">\n        <button type="button"\n          class="vanilla-calendar-arrow vanilla-calendar-arrow_prev"\n          title="prev">\n        </button>\n        <div class="vanilla-calendar-header__content"></div>\n        <button type="button"\n          class="vanilla-calendar-arrow vanilla-calendar-arrow_next"\n          title="next">\n        </button>\n      </div>\n      <div class="vanilla-calendar-content">\n        <div class="vanilla-calendar-years"></div>\n      </div>'));
   }
   createHeader() {
     const e = this.HTMLElement.querySelector('.vanilla-calendar-header__content'),
       t = this.settings.selection.month ? '' : ' vanilla-calendar-month_disabled',
       i = this.settings.selection.year ? '' : ' vanilla-calendar-year_disabled',
-      n = `\n    <button type="button"\n      class="vanilla-calendar-month${t}"\n      data-calendar-selected-month="${
-        this.selectedMonth
-      }">\n      ${this.locale.months[this.selectedMonth]}\n    </button>`.replace(/[\n\t]/g, ''),
+      n = `\n    <button type="button"\n      class="vanilla-calendar-month${t}"\n      data-calendar-selected-month="${this.selectedMonth
+        }">\n      ${this.locale.months[this.selectedMonth]}\n    </button>`.replace(/[\n\t]/g, ''),
       o = `\n    <button type="button"\n      class="vanilla-calendar-year${i}"\n      data-calendar-selected-year="${this.selectedYear}">\n      ${this.selectedYear}\n    </button>`.replace(
         /[\n\t]/g,
         '',
@@ -337,9 +330,9 @@ class VanillaCalendar {
           (this.dateMin.getUTCFullYear() && this.viewYear - 7 <= this.dateMin.getUTCFullYear()
             ? (e.style.visibility = 'hidden')
             : (e.style.visibility = null),
-          this.dateMax.getUTCFullYear() && this.viewYear + 7 >= this.dateMax.getUTCFullYear()
-            ? (t.style.visibility = 'hidden')
-            : (t.style.visibility = null));
+            this.dateMax.getUTCFullYear() && this.viewYear + 7 >= this.dateMax.getUTCFullYear()
+              ? (t.style.visibility = 'hidden')
+              : (t.style.visibility = null));
       })();
   }
   createWeek() {
@@ -354,8 +347,8 @@ class VanillaCalendar {
       this.settings.visibility.weekend && this.settings.iso8601
         ? (5 !== n && 6 !== n) || r.classList.add('vanilla-calendar-week__day_weekend')
         : this.settings.visibility.weekend &&
-          !this.settings.iso8601 &&
-          ((0 !== n && 6 !== n) || r.classList.add('vanilla-calendar-week__day_weekend')),
+        !this.settings.iso8601 &&
+        ((0 !== n && 6 !== n) || r.classList.add('vanilla-calendar-week__day_weekend')),
         (r.innerText = `${o}`),
         e.append(r);
     }
@@ -406,59 +399,59 @@ class VanillaCalendar {
       (r.className = 'vanilla-calendar-day__btn'),
       (r.type = 'button'),
       ['single', 'multiple', 'multiple-ranged'].includes(this.settings.selection.day) &&
-        n.classList.add('vanilla-calendar-days_selecting'),
+      n.classList.add('vanilla-calendar-days_selecting'),
       (n.innerHTML = '');
     const a = (e, t, i, n) => {
-        !this.settings.visibility.weekend ||
-          (0 !== t && 6 !== t) ||
-          e.classList.add('vanilla-calendar-day__btn_weekend'),
-          Array.isArray(this.settings.selected.holidays) &&
-            this.settings.selected.holidays.forEach(t => {
-              t === i && e.classList.add('vanilla-calendar-day__btn_holiday');
-            });
-        let o = this.date.today.getUTCDate(),
-          r = this.date.today.getUTCMonth() + 1;
-        (o = o < 10 ? `0${o}` : o), (r = r < 10 ? `0${r}` : r);
-        const a = `${this.date.today.getUTCFullYear()}-${r}-${o}`;
-        this.settings.visibility.today &&
-          e.dataset.calendarDay === a &&
-          e.classList.add('vanilla-calendar-day__btn_today'),
-          0 === this.selectedDates.indexOf(i) ||
+      !this.settings.visibility.weekend ||
+        (0 !== t && 6 !== t) ||
+        e.classList.add('vanilla-calendar-day__btn_weekend'),
+        Array.isArray(this.settings.selected.holidays) &&
+        this.settings.selected.holidays.forEach(t => {
+          t === i && e.classList.add('vanilla-calendar-day__btn_holiday');
+        });
+      let o = this.date.today.getUTCDate(),
+        r = this.date.today.getUTCMonth() + 1;
+      (o = o < 10 ? `0${o}` : o), (r = r < 10 ? `0${r}` : r);
+      const a = `${this.date.today.getUTCFullYear()}-${r}-${o}`;
+      this.settings.visibility.today &&
+        e.dataset.calendarDay === a &&
+        e.classList.add('vanilla-calendar-day__btn_today'),
+        0 === this.selectedDates.indexOf(i) ||
           (this.selectedDates[0] && this.selectedDates.indexOf(i) === this.selectedDates.length - 1)
-            ? e.classList.add('vanilla-calendar-day__btn_selected')
-            : 'multiple-ranged' === this.settings.selection.day && this.selectedDates.indexOf(i) > 0
+          ? e.classList.add('vanilla-calendar-day__btn_selected')
+          : 'multiple-ranged' === this.settings.selection.day && this.selectedDates.indexOf(i) > 0
             ? (e.classList.add('vanilla-calendar-day__btn_selected'),
               e.classList.add('vanilla-calendar-day__btn_intermediate'))
             : this.selectedDates.indexOf(i) > 0 &&
-              e.classList.add('vanilla-calendar-day__btn_selected'),
-          (this.settings.range.min > i || this.settings.range.max < i) &&
-            e.classList.add('vanilla-calendar-day__btn_disabled'),
-          this.settings.selection.month ||
-            n ||
-            e.classList.add('vanilla-calendar-day__btn_disabled'),
-          this.settings.selection.year ||
-            new Date(i).getFullYear() === this.selectedYear ||
-            e.classList.add('vanilla-calendar-day__btn_disabled'),
-          Array.isArray(this.settings.range.disabled)
-            ? this.settings.range.disabled.forEach(t => {
-                t === i && e.classList.add('vanilla-calendar-day__btn_disabled');
-              })
-            : Array.isArray(this.settings.range.enabled) &&
-              (e.classList.add('vanilla-calendar-day__btn_disabled'),
-              this.settings.range.enabled.forEach(t => {
-                t === i && e.classList.remove('vanilla-calendar-day__btn_disabled');
-              })),
-          !this.settings.disabled.weekends ||
-            (0 !== t && 6 !== t) ||
-            e.classList.add('vanilla-calendar-day__btn_disabled'),
-          Array.isArray(this.settings.disabled.weekDay) &&
-            this.settings.disabled.weekDay.forEach(i => {
-              i === t && e.classList.add('vanilla-calendar-day__btn_disabled');
-            }),
-          Array.isArray(this.settings.workingDays) &&
-            (this.settings.workingDays.includes(t) ||
-              e.classList.add('vanilla-calendar-day__btn_disabled'));
-      },
+            e.classList.add('vanilla-calendar-day__btn_selected'),
+        (this.settings.range.min > i || this.settings.range.max < i) &&
+        e.classList.add('vanilla-calendar-day__btn_disabled'),
+        this.settings.selection.month ||
+        n ||
+        e.classList.add('vanilla-calendar-day__btn_disabled'),
+        this.settings.selection.year ||
+        new Date(i).getFullYear() === this.selectedYear ||
+        e.classList.add('vanilla-calendar-day__btn_disabled'),
+        Array.isArray(this.settings.range.disabled)
+          ? this.settings.range.disabled.forEach(t => {
+            t === i && e.classList.add('vanilla-calendar-day__btn_disabled');
+          })
+          : Array.isArray(this.settings.range.enabled) &&
+          (e.classList.add('vanilla-calendar-day__btn_disabled'),
+            this.settings.range.enabled.forEach(t => {
+              t === i && e.classList.remove('vanilla-calendar-day__btn_disabled');
+            })),
+        !this.settings.disabled.weekends ||
+        (0 !== t && 6 !== t) ||
+        e.classList.add('vanilla-calendar-day__btn_disabled'),
+        Array.isArray(this.settings.disabled.weekDay) &&
+        this.settings.disabled.weekDay.forEach(i => {
+          i === t && e.classList.add('vanilla-calendar-day__btn_disabled');
+        }),
+        Array.isArray(this.settings.workingDays) &&
+        (this.settings.workingDays.includes(t) ||
+          e.classList.add('vanilla-calendar-day__btn_disabled'));
+    },
       s = (e, t, i, s, l) => {
         const c = o.cloneNode(!0),
           p = r.cloneNode(!0);
@@ -541,9 +534,9 @@ class VanillaCalendar {
         o = t.cloneNode(!0);
       n === this.selectedYear && o.classList.add('vanilla-calendar-years__year_selected'),
         n < this.dateMin.getUTCFullYear() &&
-          o.classList.add('vanilla-calendar-years__year_disabled'),
+        o.classList.add('vanilla-calendar-years__year_disabled'),
         n > this.dateMax.getUTCFullYear() &&
-          o.classList.add('vanilla-calendar-years__year_disabled'),
+        o.classList.add('vanilla-calendar-years__year_disabled'),
         (o.dataset.calendarYear = n),
         (o.innerText = `${n}`),
         e.append(o);
@@ -560,11 +553,11 @@ class VanillaCalendar {
         o = t.cloneNode(!0);
       i === this.selectedMonth && o.classList.add('vanilla-calendar-months__month_selected'),
         i < this.dateMin.getUTCMonth() &&
-          this.selectedYear === this.dateMin.getUTCFullYear() &&
-          o.classList.add('vanilla-calendar-months__month_disabled'),
+        this.selectedYear === this.dateMin.getUTCFullYear() &&
+        o.classList.add('vanilla-calendar-months__month_disabled'),
         i > this.dateMax.getUTCMonth() &&
-          this.selectedYear === this.dateMax.getUTCFullYear() &&
-          o.classList.add('vanilla-calendar-months__month_disabled'),
+        this.selectedYear === this.dateMax.getUTCFullYear() &&
+        o.classList.add('vanilla-calendar-months__month_disabled'),
         (o.dataset.calendarMonth = i),
         (o.title = `${n}`),
         (o.innerText = `${this.settings.visibility.monthShort ? n.substring(0, 3) : n}`),
@@ -587,18 +580,17 @@ class VanillaCalendar {
         'hours' === i
           ? (this.selectedHours = `${t}`)
           : 'minutes' === i && (this.selectedMinutes = `${t}`),
-          (this.selectedTime = `${this.selectedHours}:${this.selectedMinutes}${
-            this.selectedKeeping ? ` ${this.selectedKeeping}` : ''
-          }`),
+          (this.selectedTime = `${this.selectedHours}:${this.selectedMinutes}${this.selectedKeeping ? ` ${this.selectedKeeping}` : ''
+            }`),
           (this.settings.selected.time = this.selectedTime),
           this.actions.changeTime &&
-            this.actions.changeTime(
-              e,
-              this.selectedTime,
-              this.selectedHours,
-              this.selectedMinutes,
-              this.selectedKeeping,
-            );
+          this.actions.changeTime(
+            e,
+            this.selectedTime,
+            this.selectedHours,
+            this.selectedMinutes,
+            this.selectedKeeping,
+          );
       },
       c = (e, t, i, n) => {
         e.addEventListener('input', e => {
@@ -611,8 +603,8 @@ class VanillaCalendar {
                   (r.innerText = this.selectedKeeping),
                   l(e, o, i))
                 : (0 === Number(e.target.value)
-                    ? ((this.selectedKeeping = 'AM'), (r.innerText = 'AM'))
-                    : ((this.selectedKeeping = 'PM'), (r.innerText = 'PM')),
+                  ? ((this.selectedKeeping = 'AM'), (r.innerText = 'AM'))
+                  : ((this.selectedKeeping = 'PM'), (r.innerText = 'PM')),
                   (t.value = this.transformTime12(e.target.value)),
                   l(e, this.transformTime12(e.target.value), i))
               : ((t.value = o), l(e, o, i));
@@ -630,18 +622,18 @@ class VanillaCalendar {
                 : t.target.value &&
                   Number(t.target.value) < 24 &&
                   (Number(t.target.value) > n || 0 === Number(t.target.value))
-                ? (0 === Number(t.target.value)
+                  ? (0 === Number(t.target.value)
                     ? ((this.selectedKeeping = 'AM'), (r.innerText = 'AM'))
                     : ((this.selectedKeeping = 'PM'), (r.innerText = 'PM')),
-                  (t.target.value = this.transformTime12(t.target.value)),
-                  (e.value = o),
-                  l(t, this.transformTime12(t.target.value), i))
-                : (t.target.value = this.selectedHours)
+                    (t.target.value = this.transformTime12(t.target.value)),
+                    (e.value = o),
+                    l(t, this.transformTime12(t.target.value), i))
+                  : (t.target.value = this.selectedHours)
               : t.target.value && Number(t.target.value) <= n && Number(t.target.value) >= 0
-              ? ((t.target.value = o), (e.value = o), l(t, o, i))
-              : 'hours' === i
-              ? (t.target.value = this.selectedHours)
-              : 'minutes' === i && (t.target.value = this.selectedMinutes);
+                ? ((t.target.value = o), (e.value = o), l(t, o, i))
+                : 'hours' === i
+                  ? (t.target.value = this.selectedHours)
+                  : 'minutes' === i && (t.target.value = this.selectedMinutes);
         });
       };
     a(t, n),
@@ -653,41 +645,33 @@ class VanillaCalendar {
       p(t, n, 'hours', 24 === e ? 23 : e),
       p(i, o, 'minutes', 59),
       r &&
-        r.addEventListener('click', e => {
-          r.innerText.includes('AM')
-            ? (this.selectedKeeping = 'PM')
-            : (this.selectedKeeping = 'AM'),
-            (t.value = this.transformTime24(this.selectedHours, this.selectedKeeping)),
-            l(e, this.selectedHours, 'hours'),
-            (r.innerText = this.selectedKeeping);
-        });
+      r.addEventListener('click', e => {
+        r.innerText.includes('AM')
+          ? (this.selectedKeeping = 'PM')
+          : (this.selectedKeeping = 'AM'),
+          (t.value = this.transformTime24(this.selectedHours, this.selectedKeeping)),
+          l(e, this.selectedHours, 'hours'),
+          (r.innerText = this.selectedKeeping);
+      });
   }
   createTime() {
     const e = this.HTMLElement.querySelector('.vanilla-calendar-time');
     if (!e) return;
     const t = !0 === this.settings.selection.time ? 12 : this.settings.selection.time,
       i = 'range' === this.settings.selection.controlTime;
-    (e.innerHTML = `\n    <div class="vanilla-calendar-time__content">\n      <label class="vanilla-calendar-time__hours">\n        <input type="text"\n          name="hours"\n          maxlength="2"\n          value="${
-      this.selectedHours
-    }"\n          ${
-      i ? 'disabled' : ''
-    }>\n      </label>\n      <label class="vanilla-calendar-time__minutes">\n        <input type="text"\n          name="minutes"\n          maxlength="2"\n          value="${
-      this.selectedMinutes
-    }"\n          ${i ? 'disabled' : ''}>\n      </label>\n      ${
-      12 === t
-        ? `\n      <button type="button"\n        class="vanilla-calendar-time__keeping"\n        ${
-            i ? 'disabled' : ''
-          }>${this.selectedKeeping}</button>\n      `
+    (e.innerHTML = `\n    <div class="vanilla-calendar-time__content">\n      <label class="vanilla-calendar-time__hours">\n        <input type="text"\n          name="hours"\n          maxlength="2"\n          value="${this.selectedHours
+      }"\n          ${i ? 'disabled' : ''
+      }>\n      </label>\n      <label class="vanilla-calendar-time__minutes">\n        <input type="text"\n          name="minutes"\n          maxlength="2"\n          value="${this.selectedMinutes
+      }"\n          ${i ? 'disabled' : ''}>\n      </label>\n      ${12 === t
+        ? `\n      <button type="button"\n        class="vanilla-calendar-time__keeping"\n        ${i ? 'disabled' : ''
+        }>${this.selectedKeeping}</button>\n      `
         : ''
-    }\n    </div>\n    <div class="vanilla-calendar-time__ranges">\n      <label class="vanilla-calendar-time__range">\n        <input type="range"\n          name="hours"\n          min="0"\n          max="23"\n          step="${
-      this.settings.selection.stepHours
-    }"\n          value="${
-      this.selectedKeeping
+      }\n    </div>\n    <div class="vanilla-calendar-time__ranges">\n      <label class="vanilla-calendar-time__range">\n        <input type="range"\n          name="hours"\n          min="0"\n          max="23"\n          step="${this.settings.selection.stepHours
+      }"\n          value="${this.selectedKeeping
         ? this.transformTime24(this.selectedHours, this.selectedKeeping)
         : this.selectedHours
-    }">\n      </label>\n      <label class="vanilla-calendar-time__range">\n        <input type="range"\n          name="minutes"\n          min="0"\n          max="59"\n          step="${
-      this.settings.selection.stepMinutes
-    }"\n          value="${this.selectedMinutes}">\n      </label>\n    </div>`),
+      }">\n      </label>\n      <label class="vanilla-calendar-time__range">\n        <input type="range"\n          name="minutes"\n          min="0"\n          max="59"\n          step="${this.settings.selection.stepMinutes
+      }"\n          value="${this.selectedMinutes}">\n      </label>\n    </div>`),
       this.controlTime(t);
   }
   getLocale() {
@@ -729,8 +713,8 @@ class VanillaCalendar {
       'default' === this.currentType
         ? (this.createWeek(), this.createDays())
         : 'month' === this.currentType
-        ? this.createMonths()
-        : 'year' === this.currentType && this.createYears();
+          ? this.createMonths()
+          : 'year' === this.currentType && this.createYears();
   }
   click() {
     this.HTMLElement.addEventListener('click', e => {
@@ -757,17 +741,17 @@ class VanillaCalendar {
         h = () => {
           if (
             (this.selectedDates.length > 1 && (this.selectedDates = []),
-            this.selectedDates.push(o.dataset.calendarDay),
-            !this.selectedDates[1])
+              this.selectedDates.push(o.dataset.calendarDay),
+              !this.selectedDates[1])
           )
             return;
           const e = new Date(
-              Date.UTC(
-                new Date(this.selectedDates[0]).getUTCFullYear(),
-                new Date(this.selectedDates[0]).getUTCMonth(),
-                new Date(this.selectedDates[0]).getUTCDate(),
-              ),
+            Date.UTC(
+              new Date(this.selectedDates[0]).getUTCFullYear(),
+              new Date(this.selectedDates[0]).getUTCMonth(),
+              new Date(this.selectedDates[0]).getUTCDate(),
             ),
+          ),
             t = new Date(
               Date.UTC(
                 new Date(this.selectedDates[1]).getUTCFullYear(),
@@ -815,34 +799,34 @@ class VanillaCalendar {
             (t && 'year' === this.currentType
               ? (n ? (this.viewYear += 15) : i && (this.viewYear -= 15), this.createYears())
               : 'year' !== this.currentType && s
-              ? this.createYears()
-              : 'year' === this.currentType && s
-              ? ((this.currentType = this.type), this.update())
-              : l &&
-                ((this.selectedYear = Number(l.dataset.calendarYear)),
-                (this.currentType = this.type),
-                this.selectedMonth < this.dateMin.getUTCMonth() &&
-                  this.selectedYear === this.dateMin.getUTCFullYear() &&
-                  (this.settings.selected.month = this.dateMin.getUTCMonth()),
-                this.selectedMonth > this.dateMax.getUTCMonth() &&
-                  this.selectedYear === this.dateMax.getUTCFullYear() &&
-                  (this.settings.selected.month = this.dateMax.getUTCMonth()),
-                this.actions.clickYear && this.actions.clickYear(e, this.selectedYear),
-                (this.settings.selected.year = this.selectedYear),
-                this.update()));
+                ? this.createYears()
+                : 'year' === this.currentType && s
+                  ? ((this.currentType = this.type), this.update())
+                  : l &&
+                  ((this.selectedYear = Number(l.dataset.calendarYear)),
+                    (this.currentType = this.type),
+                    this.selectedMonth < this.dateMin.getUTCMonth() &&
+                    this.selectedYear === this.dateMin.getUTCFullYear() &&
+                    (this.settings.selected.month = this.dateMin.getUTCMonth()),
+                    this.selectedMonth > this.dateMax.getUTCMonth() &&
+                    this.selectedYear === this.dateMax.getUTCFullYear() &&
+                    (this.settings.selected.month = this.dateMax.getUTCMonth()),
+                    this.actions.clickYear && this.actions.clickYear(e, this.selectedYear),
+                    (this.settings.selected.year = this.selectedYear),
+                    this.update()));
         })(),
         (() => {
           this.settings.selection.month &&
             ('month' !== this.currentType && c
               ? this.createMonths()
               : 'month' === this.currentType && c
-              ? ((this.currentType = this.type), this.update())
-              : p &&
+                ? ((this.currentType = this.type), this.update())
+                : p &&
                 ((this.selectedMonth = Number(p.dataset.calendarMonth)),
-                (this.currentType = this.type),
-                this.actions.clickMonth && this.actions.clickMonth(e, this.selectedMonth),
-                (this.settings.selected.month = this.selectedMonth),
-                this.update()));
+                  (this.currentType = this.type),
+                  this.actions.clickMonth && this.actions.clickMonth(e, this.selectedMonth),
+                  (this.settings.selected.month = this.selectedMonth),
+                  this.update()));
         })();
     });
   }
@@ -1411,8 +1395,8 @@ function FormValidation(e) {
         n = [...i].filter(e => e.closest('.f-feedback:not(.--error):not(.--success)'));
       await this.validateInputs(n);
       const o = t.querySelectorAll(
-          'select.f-select.--validate:not(:disabled), div.f-select.--validate select:not(:disabled)',
-        ),
+        'select.f-select.--validate:not(:disabled), div.f-select.--validate select:not(:disabled)',
+      ),
         r = [...o].filter(e => e.closest('.f-feedback:not(.--error):not(.--success)'));
       this.validateSelects(r);
       const a = t.querySelectorAll('.f-control.--validate[type="checkbox"]:not(:disabled)'),
@@ -1466,8 +1450,8 @@ function FormValidation(e) {
       return t.classList.contains('--success')
         ? 'success'
         : t.classList.contains('--error')
-        ? 'error'
-        : '';
+          ? 'error'
+          : '';
     }),
     (this.removeAllValidityState = e => {
       (e || this.form).querySelectorAll('.f-control.--validate').forEach(e => {
@@ -1487,7 +1471,7 @@ function FormValidation(e) {
           : e.removeEventListener('change', this.events.onChange);
       }),
         'FORM' === this.form.tagName &&
-          this.form.removeEventListener('submit', this.events.onSubmit);
+        this.form.removeEventListener('submit', this.events.onSubmit);
     }),
     (this.initEvents = () => {
       this.form.querySelectorAll('.f-control.--validate').forEach(e => {
@@ -1517,10 +1501,10 @@ app_shop.graphql || (app_shop.graphql = {}),
     const n = JSON.stringify({ query: 'query {\n      trackingEvents\n    }' });
     try {
       const e = await fetch(app_shop?.urls?.graphql || '/graphql/v1/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: n,
-        }),
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: n,
+      }),
         t = await e.json();
       return (
         t.data.trackingEvents?.forEach(e => {
@@ -1544,7 +1528,7 @@ app_shop.graphql || (app_shop.graphql = {}),
           t = document.getElementById('ajaxLoadSite_cover');
         e && e.remove(), t && t.remove();
       })(),
-      !e)
+        !e)
     )
       return;
     const t = `\n    <div id="ajaxLoadSite_cover" style="height:${document.body.scrollHeight}px;width:100%;position:absolute;left:0;top:0;"></div>\n    <div id="ajaxLoadSite" style="left:50%;transform:translateX(-50%);"></div>\n  `;
@@ -1743,11 +1727,11 @@ class WebAuthn {
     'use strict';
     'object' == typeof module && 'object' == typeof module.exports
       ? (module.exports = e.document
-          ? t(e, !0)
-          : function (e) {
-              if (!e.document) throw new Error('jQuery requires a window with a document');
-              return t(e);
-            })
+        ? t(e, !0)
+        : function (e) {
+          if (!e.document) throw new Error('jQuery requires a window with a document');
+          return t(e);
+        })
       : t(e);
   })('undefined' != typeof window ? window : this, function (e, t) {
     'use strict';
@@ -1756,11 +1740,11 @@ class WebAuthn {
       o = i.slice,
       r = i.flat
         ? function (e) {
-            return i.flat.call(e);
-          }
+          return i.flat.call(e);
+        }
         : function (e) {
-            return i.concat.apply([], e);
-          },
+          return i.concat.apply([], e);
+        },
       a = i.push,
       s = i.indexOf,
       l = {},
@@ -1789,8 +1773,8 @@ class WebAuthn {
       return null == e
         ? e + ''
         : 'object' == typeof e || 'function' == typeof e
-        ? l[c.call(e)] || 'object'
-        : typeof e;
+          ? l[c.call(e)] || 'object'
+          : typeof e;
     }
     var b = '3.5.1',
       w = function (e, t) {
@@ -1877,8 +1861,8 @@ class WebAuthn {
           c = !1;
         for (
           'boolean' == typeof a && ((c = a), (a = arguments[s] || {}), s++),
-            'object' == typeof a || _(a) || (a = {}),
-            s === l && ((a = this), s--);
+          'object' == typeof a || _(a) || (a = {}),
+          s === l && ((a = this), s--);
           s < l;
           s++
         )
@@ -1886,13 +1870,13 @@ class WebAuthn {
             for (t in e)
               (n = e[t]),
                 '__proto__' !== t &&
-                  a !== n &&
-                  (c && n && (w.isPlainObject(n) || (o = Array.isArray(n)))
-                    ? ((i = a[t]),
-                      (r = o && !Array.isArray(i) ? [] : o || w.isPlainObject(i) ? i : {}),
-                      (o = !1),
-                      (a[t] = w.extend(c, r, n)))
-                    : void 0 !== n && (a[t] = n));
+                a !== n &&
+                (c && n && (w.isPlainObject(n) || (o = Array.isArray(n)))
+                  ? ((i = a[t]),
+                    (r = o && !Array.isArray(i) ? [] : o || w.isPlainObject(i) ? i : {}),
+                    (o = !1),
+                    (a[t] = w.extend(c, r, n)))
+                  : void 0 !== n && (a[t] = n));
         return a;
       }),
       w.extend({
@@ -1901,7 +1885,7 @@ class WebAuthn {
         error: function (e) {
           throw new Error(e);
         },
-        noop: function () {},
+        noop: function () { },
         isPlainObject: function (e) {
           var t, i;
           return !(
@@ -2045,25 +2029,25 @@ class WebAuthn {
           PSEUDO: new RegExp('^' + F),
           CHILD: new RegExp(
             '^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\(' +
-              N +
-              '*(even|odd|(([+-]|)(\\d*)n|)' +
-              N +
-              '*(?:([+-]|)' +
-              N +
-              '*(\\d+)|))' +
-              N +
-              '*\\)|)',
+            N +
+            '*(even|odd|(([+-]|)(\\d*)n|)' +
+            N +
+            '*(?:([+-]|)' +
+            N +
+            '*(\\d+)|))' +
+            N +
+            '*\\)|)',
             'i',
           ),
           bool: new RegExp('^(?:' + P + ')$', 'i'),
           needsContext: new RegExp(
             '^' +
-              N +
-              '*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\(' +
-              N +
-              '*((?:-\\d)?\\d*)' +
-              N +
-              '*\\)|)(?=[^-]|$)',
+            N +
+            '*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\(' +
+            N +
+            '*((?:-\\d)?\\d*)' +
+            N +
+            '*\\)|)(?=[^-]|$)',
             'i',
           ),
         },
@@ -2106,12 +2090,12 @@ class WebAuthn {
         L = {
           apply: D.length
             ? function (e, t) {
-                E.apply(e, O.call(t));
-              }
+              E.apply(e, O.call(t));
+            }
             : function (e, t) {
-                for (var i = e.length, n = 0; (e[i++] = t[n++]); );
-                e.length = i - 1;
-              },
+              for (var i = e.length, n = 0; (e[i++] = t[n++]););
+              e.length = i - 1;
+            },
         };
       }
       function se(e, t, n, o) {
@@ -2148,10 +2132,10 @@ class WebAuthn {
             if (((g = e), (y = t), 1 === w && (Y.test(e) || W.test(e)))) {
               for (
                 ((y = (ee.test(e) && ge(t.parentNode)) || t) === t && i.scope) ||
-                  ((p = t.getAttribute('id'))
-                    ? (p = p.replace(ne, oe))
-                    : t.setAttribute('id', (p = b))),
-                  s = (_ = a(e)).length;
+                ((p = t.getAttribute('id'))
+                  ? (p = p.replace(ne, oe))
+                  : t.setAttribute('id', (p = b))),
+                s = (_ = a(e)).length;
                 s--;
 
               )
@@ -2189,13 +2173,13 @@ class WebAuthn {
         }
       }
       function de(e, t) {
-        for (var i = e.split('|'), o = i.length; o--; ) n.attrHandle[i[o]] = t;
+        for (var i = e.split('|'), o = i.length; o--;) n.attrHandle[i[o]] = t;
       }
       function ue(e, t) {
         var i = t && e,
           n = i && 1 === e.nodeType && 1 === t.nodeType && e.sourceIndex - t.sourceIndex;
         if (n) return n;
-        if (i) for (; (i = i.nextSibling); ) if (i === t) return -1;
+        if (i) for (; (i = i.nextSibling);) if (i === t) return -1;
         return e ? 1 : -1;
       }
       function he(e) {
@@ -2227,7 +2211,7 @@ class WebAuthn {
           return (
             (t = +t),
             ce(function (i, n) {
-              for (var o, r = e([], i.length, t), a = r.length; a--; )
+              for (var o, r = e([], i.length, t), a = r.length; a--;)
                 i[(o = r[a])] && (i[o] = !(n[o] = i[o]));
             })
           );
@@ -2237,106 +2221,106 @@ class WebAuthn {
         return e && void 0 !== e.getElementsByTagName && e;
       }
       for (t in ((i = se.support = {}),
-      (r = se.isXML = function (e) {
-        var t = e.namespaceURI,
-          i = (e.ownerDocument || e).documentElement;
-        return !G.test(t || (i && i.nodeName) || 'HTML');
-      }),
-      (u = se.setDocument = function (e) {
-        var t,
-          o,
-          a = e ? e.ownerDocument || e : w;
-        return (
-          a != h &&
+        (r = se.isXML = function (e) {
+          var t = e.namespaceURI,
+            i = (e.ownerDocument || e).documentElement;
+          return !G.test(t || (i && i.nodeName) || 'HTML');
+        }),
+        (u = se.setDocument = function (e) {
+          var t,
+            o,
+            a = e ? e.ownerDocument || e : w;
+          return (
+            a != h &&
             9 === a.nodeType &&
             a.documentElement &&
             ((_ = (h = a).documentElement),
-            (f = !r(h)),
-            w != h &&
+              (f = !r(h)),
+              w != h &&
               (o = h.defaultView) &&
               o.top !== o &&
               (o.addEventListener
                 ? o.addEventListener('unload', re, !1)
                 : o.attachEvent && o.attachEvent('onunload', re)),
-            (i.scope = pe(function (e) {
-              return (
-                _.appendChild(e).appendChild(h.createElement('div')),
-                void 0 !== e.querySelectorAll && !e.querySelectorAll(':scope fieldset div').length
-              );
-            })),
-            (i.attributes = pe(function (e) {
-              return (e.className = 'i'), !e.getAttribute('className');
-            })),
-            (i.getElementsByTagName = pe(function (e) {
-              return e.appendChild(h.createComment('')), !e.getElementsByTagName('*').length;
-            })),
-            (i.getElementsByClassName = K.test(h.getElementsByClassName)),
-            (i.getById = pe(function (e) {
-              return (
-                (_.appendChild(e).id = b), !h.getElementsByName || !h.getElementsByName(b).length
-              );
-            })),
-            i.getById
-              ? ((n.filter.ID = function (e) {
+              (i.scope = pe(function (e) {
+                return (
+                  _.appendChild(e).appendChild(h.createElement('div')),
+                  void 0 !== e.querySelectorAll && !e.querySelectorAll(':scope fieldset div').length
+                );
+              })),
+              (i.attributes = pe(function (e) {
+                return (e.className = 'i'), !e.getAttribute('className');
+              })),
+              (i.getElementsByTagName = pe(function (e) {
+                return e.appendChild(h.createComment('')), !e.getElementsByTagName('*').length;
+              })),
+              (i.getElementsByClassName = K.test(h.getElementsByClassName)),
+              (i.getById = pe(function (e) {
+                return (
+                  (_.appendChild(e).id = b), !h.getElementsByName || !h.getElementsByName(b).length
+                );
+              })),
+              i.getById
+                ? ((n.filter.ID = function (e) {
                   var t = e.replace(te, ie);
                   return function (e) {
                     return e.getAttribute('id') === t;
                   };
                 }),
-                (n.find.ID = function (e, t) {
-                  if (void 0 !== t.getElementById && f) {
-                    var i = t.getElementById(e);
-                    return i ? [i] : [];
-                  }
-                }))
-              : ((n.filter.ID = function (e) {
+                  (n.find.ID = function (e, t) {
+                    if (void 0 !== t.getElementById && f) {
+                      var i = t.getElementById(e);
+                      return i ? [i] : [];
+                    }
+                  }))
+                : ((n.filter.ID = function (e) {
                   var t = e.replace(te, ie);
                   return function (e) {
                     var i = void 0 !== e.getAttributeNode && e.getAttributeNode('id');
                     return i && i.value === t;
                   };
                 }),
-                (n.find.ID = function (e, t) {
-                  if (void 0 !== t.getElementById && f) {
-                    var i,
-                      n,
-                      o,
-                      r = t.getElementById(e);
-                    if (r) {
-                      if ((i = r.getAttributeNode('id')) && i.value === e) return [r];
-                      for (o = t.getElementsByName(e), n = 0; (r = o[n++]); )
+                  (n.find.ID = function (e, t) {
+                    if (void 0 !== t.getElementById && f) {
+                      var i,
+                        n,
+                        o,
+                        r = t.getElementById(e);
+                      if (r) {
                         if ((i = r.getAttributeNode('id')) && i.value === e) return [r];
+                        for (o = t.getElementsByName(e), n = 0; (r = o[n++]);)
+                          if ((i = r.getAttributeNode('id')) && i.value === e) return [r];
+                      }
+                      return [];
                     }
-                    return [];
-                  }
-                })),
-            (n.find.TAG = i.getElementsByTagName
-              ? function (e, t) {
+                  })),
+              (n.find.TAG = i.getElementsByTagName
+                ? function (e, t) {
                   return void 0 !== t.getElementsByTagName
                     ? t.getElementsByTagName(e)
                     : i.qsa
-                    ? t.querySelectorAll(e)
-                    : void 0;
+                      ? t.querySelectorAll(e)
+                      : void 0;
                 }
-              : function (e, t) {
+                : function (e, t) {
                   var i,
                     n = [],
                     o = 0,
                     r = t.getElementsByTagName(e);
                   if ('*' === e) {
-                    for (; (i = r[o++]); ) 1 === i.nodeType && n.push(i);
+                    for (; (i = r[o++]);) 1 === i.nodeType && n.push(i);
                     return n;
                   }
                   return r;
                 }),
-            (n.find.CLASS =
-              i.getElementsByClassName &&
-              function (e, t) {
-                if (void 0 !== t.getElementsByClassName && f) return t.getElementsByClassName(e);
-              }),
-            (g = []),
-            (m = []),
-            (i.qsa = K.test(h.querySelectorAll)) &&
+              (n.find.CLASS =
+                i.getElementsByClassName &&
+                function (e, t) {
+                  if (void 0 !== t.getElementsByClassName && f) return t.getElementsByClassName(e);
+                }),
+              (g = []),
+              (m = []),
+              (i.qsa = K.test(h.querySelectorAll)) &&
               (pe(function (e) {
                 var t;
                 (_.appendChild(e).innerHTML =
@@ -2346,49 +2330,49 @@ class WebAuthn {
                   b +
                   "-\r\\' msallowcapture=''><option selected=''></option></select>"),
                   e.querySelectorAll("[msallowcapture^='']").length &&
-                    m.push('[*^$]=' + N + '*(?:\'\'|"")'),
+                  m.push('[*^$]=' + N + '*(?:\'\'|"")'),
                   e.querySelectorAll('[selected]').length ||
-                    m.push('\\[' + N + '*(?:value|' + P + ')'),
+                  m.push('\\[' + N + '*(?:value|' + P + ')'),
                   e.querySelectorAll('[id~=' + b + '-]').length || m.push('~='),
                   (t = h.createElement('input')).setAttribute('name', ''),
                   e.appendChild(t),
                   e.querySelectorAll("[name='']").length ||
-                    m.push('\\[' + N + '*name' + N + '*=' + N + '*(?:\'\'|"")'),
+                  m.push('\\[' + N + '*name' + N + '*=' + N + '*(?:\'\'|"")'),
                   e.querySelectorAll(':checked').length || m.push(':checked'),
                   e.querySelectorAll('a#' + b + '+*').length || m.push('.#.+[+~]'),
                   e.querySelectorAll('\\\f'),
                   m.push('[\\r\\n\\f]');
               }),
-              pe(function (e) {
-                e.innerHTML =
-                  "<a href='' disabled='disabled'></a><select disabled='disabled'><option/></select>";
-                var t = h.createElement('input');
-                t.setAttribute('type', 'hidden'),
-                  e.appendChild(t).setAttribute('name', 'D'),
-                  e.querySelectorAll('[name=d]').length && m.push('name' + N + '*[*^$|!~]?='),
-                  2 !== e.querySelectorAll(':enabled').length && m.push(':enabled', ':disabled'),
-                  (_.appendChild(e).disabled = !0),
-                  2 !== e.querySelectorAll(':disabled').length && m.push(':enabled', ':disabled'),
-                  e.querySelectorAll('*,:x'),
-                  m.push(',.*:');
-              })),
-            (i.matchesSelector = K.test(
-              (y =
-                _.matches ||
-                _.webkitMatchesSelector ||
-                _.mozMatchesSelector ||
-                _.oMatchesSelector ||
-                _.msMatchesSelector),
-            )) &&
+                pe(function (e) {
+                  e.innerHTML =
+                    "<a href='' disabled='disabled'></a><select disabled='disabled'><option/></select>";
+                  var t = h.createElement('input');
+                  t.setAttribute('type', 'hidden'),
+                    e.appendChild(t).setAttribute('name', 'D'),
+                    e.querySelectorAll('[name=d]').length && m.push('name' + N + '*[*^$|!~]?='),
+                    2 !== e.querySelectorAll(':enabled').length && m.push(':enabled', ':disabled'),
+                    (_.appendChild(e).disabled = !0),
+                    2 !== e.querySelectorAll(':disabled').length && m.push(':enabled', ':disabled'),
+                    e.querySelectorAll('*,:x'),
+                    m.push(',.*:');
+                })),
+              (i.matchesSelector = K.test(
+                (y =
+                  _.matches ||
+                  _.webkitMatchesSelector ||
+                  _.mozMatchesSelector ||
+                  _.oMatchesSelector ||
+                  _.msMatchesSelector),
+              )) &&
               pe(function (e) {
                 (i.disconnectedMatch = y.call(e, '*')), y.call(e, "[s!='']:x"), g.push('!=', F);
               }),
-            (m = m.length && new RegExp(m.join('|'))),
-            (g = g.length && new RegExp(g.join('|'))),
-            (t = K.test(_.compareDocumentPosition)),
-            (v =
-              t || K.test(_.contains)
-                ? function (e, t) {
+              (m = m.length && new RegExp(m.join('|'))),
+              (g = g.length && new RegExp(g.join('|'))),
+              (t = K.test(_.compareDocumentPosition)),
+              (v =
+                t || K.test(_.contains)
+                  ? function (e, t) {
                     var i = 9 === e.nodeType ? e.documentElement : e,
                       n = t && t.parentNode;
                     return (
@@ -2402,12 +2386,12 @@ class WebAuthn {
                       )
                     );
                   }
-                : function (e, t) {
-                    if (t) for (; (t = t.parentNode); ) if (t === e) return !0;
+                  : function (e, t) {
+                    if (t) for (; (t = t.parentNode);) if (t === e) return !0;
                     return !1;
                   }),
-            (j = t
-              ? function (e, t) {
+              (j = t
+                ? function (e, t) {
                   if (e === t) return (d = !0), 0;
                   var n = !e.compareDocumentPosition - !t.compareDocumentPosition;
                   return (
@@ -2417,20 +2401,20 @@ class WebAuthn {
                         (e.ownerDocument || e) == (t.ownerDocument || t)
                           ? e.compareDocumentPosition(t)
                           : 1) ||
-                    (!i.sortDetached && t.compareDocumentPosition(e) === n)
+                      (!i.sortDetached && t.compareDocumentPosition(e) === n)
                       ? e == h || (e.ownerDocument == w && v(w, e))
                         ? -1
                         : t == h || (t.ownerDocument == w && v(w, t))
-                        ? 1
-                        : p
-                        ? M(p, e) - M(p, t)
-                        : 0
+                          ? 1
+                          : p
+                            ? M(p, e) - M(p, t)
+                            : 0
                       : 4 & n
-                      ? -1
-                      : 1)
+                        ? -1
+                        : 1)
                   );
                 }
-              : function (e, t) {
+                : function (e, t) {
                   if (e === t) return (d = !0), 0;
                   var i,
                     n = 0,
@@ -2441,177 +2425,177 @@ class WebAuthn {
                   if (!o || !r)
                     return e == h ? -1 : t == h ? 1 : o ? -1 : r ? 1 : p ? M(p, e) - M(p, t) : 0;
                   if (o === r) return ue(e, t);
-                  for (i = e; (i = i.parentNode); ) a.unshift(i);
-                  for (i = t; (i = i.parentNode); ) s.unshift(i);
-                  for (; a[n] === s[n]; ) n++;
+                  for (i = e; (i = i.parentNode);) a.unshift(i);
+                  for (i = t; (i = i.parentNode);) s.unshift(i);
+                  for (; a[n] === s[n];) n++;
                   return n ? ue(a[n], s[n]) : a[n] == w ? -1 : s[n] == w ? 1 : 0;
                 })),
-          h
-        );
-      }),
-      (se.matches = function (e, t) {
-        return se(e, null, null, t);
-      }),
-      (se.matchesSelector = function (e, t) {
-        if (
-          (u(e), i.matchesSelector && f && !z[t + ' '] && (!g || !g.test(t)) && (!m || !m.test(t)))
-        )
-          try {
-            var n = y.call(e, t);
-            if (n || i.disconnectedMatch || (e.document && 11 !== e.document.nodeType)) return n;
-          } catch (e) {
-            z(t, !0);
+            h
+          );
+        }),
+        (se.matches = function (e, t) {
+          return se(e, null, null, t);
+        }),
+        (se.matchesSelector = function (e, t) {
+          if (
+            (u(e), i.matchesSelector && f && !z[t + ' '] && (!g || !g.test(t)) && (!m || !m.test(t)))
+          )
+            try {
+              var n = y.call(e, t);
+              if (n || i.disconnectedMatch || (e.document && 11 !== e.document.nodeType)) return n;
+            } catch (e) {
+              z(t, !0);
+            }
+          return 0 < se(t, h, null, [e]).length;
+        }),
+        (se.contains = function (e, t) {
+          return (e.ownerDocument || e) != h && u(e), v(e, t);
+        }),
+        (se.attr = function (e, t) {
+          (e.ownerDocument || e) != h && u(e);
+          var o = n.attrHandle[t.toLowerCase()],
+            r = o && T.call(n.attrHandle, t.toLowerCase()) ? o(e, t, !f) : void 0;
+          return void 0 !== r
+            ? r
+            : i.attributes || !f
+              ? e.getAttribute(t)
+              : (r = e.getAttributeNode(t)) && r.specified
+                ? r.value
+                : null;
+        }),
+        (se.escape = function (e) {
+          return (e + '').replace(ne, oe);
+        }),
+        (se.error = function (e) {
+          throw new Error('Syntax error, unrecognized expression: ' + e);
+        }),
+        (se.uniqueSort = function (e) {
+          var t,
+            n = [],
+            o = 0,
+            r = 0;
+          if (((d = !i.detectDuplicates), (p = !i.sortStable && e.slice(0)), e.sort(j), d)) {
+            for (; (t = e[r++]);) t === e[r] && (o = n.push(r));
+            for (; o--;) e.splice(n[o], 1);
           }
-        return 0 < se(t, h, null, [e]).length;
-      }),
-      (se.contains = function (e, t) {
-        return (e.ownerDocument || e) != h && u(e), v(e, t);
-      }),
-      (se.attr = function (e, t) {
-        (e.ownerDocument || e) != h && u(e);
-        var o = n.attrHandle[t.toLowerCase()],
-          r = o && T.call(n.attrHandle, t.toLowerCase()) ? o(e, t, !f) : void 0;
-        return void 0 !== r
-          ? r
-          : i.attributes || !f
-          ? e.getAttribute(t)
-          : (r = e.getAttributeNode(t)) && r.specified
-          ? r.value
-          : null;
-      }),
-      (se.escape = function (e) {
-        return (e + '').replace(ne, oe);
-      }),
-      (se.error = function (e) {
-        throw new Error('Syntax error, unrecognized expression: ' + e);
-      }),
-      (se.uniqueSort = function (e) {
-        var t,
-          n = [],
-          o = 0,
-          r = 0;
-        if (((d = !i.detectDuplicates), (p = !i.sortStable && e.slice(0)), e.sort(j), d)) {
-          for (; (t = e[r++]); ) t === e[r] && (o = n.push(r));
-          for (; o--; ) e.splice(n[o], 1);
-        }
-        return (p = null), e;
-      }),
-      (o = se.getText = function (e) {
-        var t,
-          i = '',
-          n = 0,
-          r = e.nodeType;
-        if (r) {
-          if (1 === r || 9 === r || 11 === r) {
-            if ('string' == typeof e.textContent) return e.textContent;
-            for (e = e.firstChild; e; e = e.nextSibling) i += o(e);
-          } else if (3 === r || 4 === r) return e.nodeValue;
-        } else for (; (t = e[n++]); ) i += o(t);
-        return i;
-      }),
-      ((n = se.selectors = {
-        cacheLength: 50,
-        createPseudo: ce,
-        match: V,
-        attrHandle: {},
-        find: {},
-        relative: {
-          '>': { dir: 'parentNode', first: !0 },
-          ' ': { dir: 'parentNode' },
-          '+': { dir: 'previousSibling', first: !0 },
-          '~': { dir: 'previousSibling' },
-        },
-        preFilter: {
-          ATTR: function (e) {
-            return (
-              (e[1] = e[1].replace(te, ie)),
-              (e[3] = (e[3] || e[4] || e[5] || '').replace(te, ie)),
-              '~=' === e[2] && (e[3] = ' ' + e[3] + ' '),
-              e.slice(0, 4)
-            );
+          return (p = null), e;
+        }),
+        (o = se.getText = function (e) {
+          var t,
+            i = '',
+            n = 0,
+            r = e.nodeType;
+          if (r) {
+            if (1 === r || 9 === r || 11 === r) {
+              if ('string' == typeof e.textContent) return e.textContent;
+              for (e = e.firstChild; e; e = e.nextSibling) i += o(e);
+            } else if (3 === r || 4 === r) return e.nodeValue;
+          } else for (; (t = e[n++]);) i += o(t);
+          return i;
+        }),
+        ((n = se.selectors = {
+          cacheLength: 50,
+          createPseudo: ce,
+          match: V,
+          attrHandle: {},
+          find: {},
+          relative: {
+            '>': { dir: 'parentNode', first: !0 },
+            ' ': { dir: 'parentNode' },
+            '+': { dir: 'previousSibling', first: !0 },
+            '~': { dir: 'previousSibling' },
           },
-          CHILD: function (e) {
-            return (
-              (e[1] = e[1].toLowerCase()),
-              'nth' === e[1].slice(0, 3)
-                ? (e[3] || se.error(e[0]),
-                  (e[4] = +(e[4] ? e[5] + (e[6] || 1) : 2 * ('even' === e[3] || 'odd' === e[3]))),
-                  (e[5] = +(e[7] + e[8] || 'odd' === e[3])))
-                : e[3] && se.error(e[0]),
-              e
-            );
-          },
-          PSEUDO: function (e) {
-            var t,
-              i = !e[6] && e[2];
-            return V.CHILD.test(e[0])
-              ? null
-              : (e[3]
+          preFilter: {
+            ATTR: function (e) {
+              return (
+                (e[1] = e[1].replace(te, ie)),
+                (e[3] = (e[3] || e[4] || e[5] || '').replace(te, ie)),
+                '~=' === e[2] && (e[3] = ' ' + e[3] + ' '),
+                e.slice(0, 4)
+              );
+            },
+            CHILD: function (e) {
+              return (
+                (e[1] = e[1].toLowerCase()),
+                'nth' === e[1].slice(0, 3)
+                  ? (e[3] || se.error(e[0]),
+                    (e[4] = +(e[4] ? e[5] + (e[6] || 1) : 2 * ('even' === e[3] || 'odd' === e[3]))),
+                    (e[5] = +(e[7] + e[8] || 'odd' === e[3])))
+                  : e[3] && se.error(e[0]),
+                e
+              );
+            },
+            PSEUDO: function (e) {
+              var t,
+                i = !e[6] && e[2];
+              return V.CHILD.test(e[0])
+                ? null
+                : (e[3]
                   ? (e[2] = e[4] || e[5] || '')
                   : i &&
-                    U.test(i) &&
-                    (t = a(i, !0)) &&
-                    (t = i.indexOf(')', i.length - t) - i.length) &&
-                    ((e[0] = e[0].slice(0, t)), (e[2] = i.slice(0, t))),
-                e.slice(0, 3));
+                  U.test(i) &&
+                  (t = a(i, !0)) &&
+                  (t = i.indexOf(')', i.length - t) - i.length) &&
+                  ((e[0] = e[0].slice(0, t)), (e[2] = i.slice(0, t))),
+                  e.slice(0, 3));
+            },
           },
-        },
-        filter: {
-          TAG: function (e) {
-            var t = e.replace(te, ie).toLowerCase();
-            return '*' === e
-              ? function () {
+          filter: {
+            TAG: function (e) {
+              var t = e.replace(te, ie).toLowerCase();
+              return '*' === e
+                ? function () {
                   return !0;
                 }
-              : function (e) {
+                : function (e) {
                   return e.nodeName && e.nodeName.toLowerCase() === t;
                 };
-          },
-          CLASS: function (e) {
-            var t = $[e + ' '];
-            return (
-              t ||
-              ((t = new RegExp('(^|' + N + ')' + e + '(' + N + '|$)')) &&
-                $(e, function (e) {
-                  return t.test(
-                    ('string' == typeof e.className && e.className) ||
+            },
+            CLASS: function (e) {
+              var t = $[e + ' '];
+              return (
+                t ||
+                ((t = new RegExp('(^|' + N + ')' + e + '(' + N + '|$)')) &&
+                  $(e, function (e) {
+                    return t.test(
+                      ('string' == typeof e.className && e.className) ||
                       (void 0 !== e.getAttribute && e.getAttribute('class')) ||
                       '',
-                  );
-                }))
-            );
-          },
-          ATTR: function (e, t, i) {
-            return function (n) {
-              var o = se.attr(n, e);
-              return null == o
-                ? '!=' === t
-                : !t ||
-                    ((o += ''),
+                    );
+                  }))
+              );
+            },
+            ATTR: function (e, t, i) {
+              return function (n) {
+                var o = se.attr(n, e);
+                return null == o
+                  ? '!=' === t
+                  : !t ||
+                  ((o += ''),
                     '=' === t
                       ? o === i
                       : '!=' === t
-                      ? o !== i
-                      : '^=' === t
-                      ? i && 0 === o.indexOf(i)
-                      : '*=' === t
-                      ? i && -1 < o.indexOf(i)
-                      : '$=' === t
-                      ? i && o.slice(-i.length) === i
-                      : '~=' === t
-                      ? -1 < (' ' + o.replace(H, ' ') + ' ').indexOf(i)
-                      : '|=' === t && (o === i || o.slice(0, i.length + 1) === i + '-'));
-            };
-          },
-          CHILD: function (e, t, i, n, o) {
-            var r = 'nth' !== e.slice(0, 3),
-              a = 'last' !== e.slice(-4),
-              s = 'of-type' === t;
-            return 1 === n && 0 === o
-              ? function (e) {
+                        ? o !== i
+                        : '^=' === t
+                          ? i && 0 === o.indexOf(i)
+                          : '*=' === t
+                            ? i && -1 < o.indexOf(i)
+                            : '$=' === t
+                              ? i && o.slice(-i.length) === i
+                              : '~=' === t
+                                ? -1 < (' ' + o.replace(H, ' ') + ' ').indexOf(i)
+                                : '|=' === t && (o === i || o.slice(0, i.length + 1) === i + '-'));
+              };
+            },
+            CHILD: function (e, t, i, n, o) {
+              var r = 'nth' !== e.slice(0, 3),
+                a = 'last' !== e.slice(-4),
+                s = 'of-type' === t;
+              return 1 === n && 0 === o
+                ? function (e) {
                   return !!e.parentNode;
                 }
-              : function (t, i, l) {
+                : function (t, i, l) {
                   var c,
                     p,
                     d,
@@ -2625,8 +2609,8 @@ class WebAuthn {
                     v = !1;
                   if (m) {
                     if (r) {
-                      for (; f; ) {
-                        for (u = t; (u = u[f]); )
+                      for (; f;) {
+                        for (u = t; (u = u[f]);)
                           if (s ? u.nodeName.toLowerCase() === g : 1 === u.nodeType) return !1;
                         _ = f = 'only' === e && !_ && 'nextSibling';
                       }
@@ -2635,12 +2619,12 @@ class WebAuthn {
                     if (((_ = [a ? m.firstChild : m.lastChild]), a && y)) {
                       for (
                         v =
-                          (h =
-                            (c =
-                              (p =
-                                (d = (u = m)[b] || (u[b] = {}))[u.uniqueID] ||
-                                (d[u.uniqueID] = {}))[e] || [])[0] === k && c[1]) && c[2],
-                          u = h && m.childNodes[h];
+                        (h =
+                          (c =
+                            (p =
+                              (d = (u = m)[b] || (u[b] = {}))[u.uniqueID] ||
+                              (d[u.uniqueID] = {}))[e] || [])[0] === k && c[1]) && c[2],
+                        u = h && m.childNodes[h];
                         (u = (++h && u && u[f]) || (v = h = 0) || _.pop());
 
                       )
@@ -2654,9 +2638,9 @@ class WebAuthn {
                           (c =
                             (p =
                               (d = (u = t)[b] || (u[b] = {}))[u.uniqueID] || (d[u.uniqueID] = {}))[
-                              e
+                            e
                             ] || [])[0] === k && c[1]),
-                      !1 === v)
+                        !1 === v)
                     )
                       for (
                         ;
@@ -2667,154 +2651,154 @@ class WebAuthn {
                             ((p = (d = u[b] || (u[b] = {}))[u.uniqueID] || (d[u.uniqueID] = {}))[
                               e
                             ] = [k, v]),
-                          u !== t));
+                            u !== t));
 
                       );
                     return (v -= o) === n || (v % n == 0 && 0 <= v / n);
                   }
                 };
+            },
+            PSEUDO: function (e, t) {
+              var i,
+                o =
+                  n.pseudos[e] ||
+                  n.setFilters[e.toLowerCase()] ||
+                  se.error('unsupported pseudo: ' + e);
+              return o[b]
+                ? o(t)
+                : 1 < o.length
+                  ? ((i = [e, e, '', t]),
+                    n.setFilters.hasOwnProperty(e.toLowerCase())
+                      ? ce(function (e, i) {
+                        for (var n, r = o(e, t), a = r.length; a--;)
+                          e[(n = M(e, r[a]))] = !(i[n] = r[a]);
+                      })
+                      : function (e) {
+                        return o(e, 0, i);
+                      })
+                  : o;
+            },
           },
-          PSEUDO: function (e, t) {
-            var i,
-              o =
-                n.pseudos[e] ||
-                n.setFilters[e.toLowerCase()] ||
-                se.error('unsupported pseudo: ' + e);
-            return o[b]
-              ? o(t)
-              : 1 < o.length
-              ? ((i = [e, e, '', t]),
-                n.setFilters.hasOwnProperty(e.toLowerCase())
-                  ? ce(function (e, i) {
-                      for (var n, r = o(e, t), a = r.length; a--; )
-                        e[(n = M(e, r[a]))] = !(i[n] = r[a]);
-                    })
-                  : function (e) {
-                      return o(e, 0, i);
-                    })
-              : o;
-          },
-        },
-        pseudos: {
-          not: ce(function (e) {
-            var t = [],
-              i = [],
-              n = s(e.replace(B, '$1'));
-            return n[b]
-              ? ce(function (e, t, i, o) {
-                  for (var r, a = n(e, null, o, []), s = e.length; s--; )
+          pseudos: {
+            not: ce(function (e) {
+              var t = [],
+                i = [],
+                n = s(e.replace(B, '$1'));
+              return n[b]
+                ? ce(function (e, t, i, o) {
+                  for (var r, a = n(e, null, o, []), s = e.length; s--;)
                     (r = a[s]) && (e[s] = !(t[s] = r));
                 })
-              : function (e, o, r) {
+                : function (e, o, r) {
                   return (t[0] = e), n(t, null, r, i), (t[0] = null), !i.pop();
                 };
-          }),
-          has: ce(function (e) {
-            return function (t) {
-              return 0 < se(e, t).length;
-            };
-          }),
-          contains: ce(function (e) {
-            return (
-              (e = e.replace(te, ie)),
-              function (t) {
-                return -1 < (t.textContent || o(t)).indexOf(e);
-              }
-            );
-          }),
-          lang: ce(function (e) {
-            return (
-              Q.test(e || '') || se.error('unsupported lang: ' + e),
-              (e = e.replace(te, ie).toLowerCase()),
-              function (t) {
-                var i;
-                do {
-                  if ((i = f ? t.lang : t.getAttribute('xml:lang') || t.getAttribute('lang')))
-                    return (i = i.toLowerCase()) === e || 0 === i.indexOf(e + '-');
-                } while ((t = t.parentNode) && 1 === t.nodeType);
-                return !1;
-              }
-            );
-          }),
-          target: function (t) {
-            var i = e.location && e.location.hash;
-            return i && i.slice(1) === t.id;
+            }),
+            has: ce(function (e) {
+              return function (t) {
+                return 0 < se(e, t).length;
+              };
+            }),
+            contains: ce(function (e) {
+              return (
+                (e = e.replace(te, ie)),
+                function (t) {
+                  return -1 < (t.textContent || o(t)).indexOf(e);
+                }
+              );
+            }),
+            lang: ce(function (e) {
+              return (
+                Q.test(e || '') || se.error('unsupported lang: ' + e),
+                (e = e.replace(te, ie).toLowerCase()),
+                function (t) {
+                  var i;
+                  do {
+                    if ((i = f ? t.lang : t.getAttribute('xml:lang') || t.getAttribute('lang')))
+                      return (i = i.toLowerCase()) === e || 0 === i.indexOf(e + '-');
+                  } while ((t = t.parentNode) && 1 === t.nodeType);
+                  return !1;
+                }
+              );
+            }),
+            target: function (t) {
+              var i = e.location && e.location.hash;
+              return i && i.slice(1) === t.id;
+            },
+            root: function (e) {
+              return e === _;
+            },
+            focus: function (e) {
+              return (
+                e === h.activeElement &&
+                (!h.hasFocus || h.hasFocus()) &&
+                !!(e.type || e.href || ~e.tabIndex)
+              );
+            },
+            enabled: fe(!1),
+            disabled: fe(!0),
+            checked: function (e) {
+              var t = e.nodeName.toLowerCase();
+              return ('input' === t && !!e.checked) || ('option' === t && !!e.selected);
+            },
+            selected: function (e) {
+              return e.parentNode && e.parentNode.selectedIndex, !0 === e.selected;
+            },
+            empty: function (e) {
+              for (e = e.firstChild; e; e = e.nextSibling) if (e.nodeType < 6) return !1;
+              return !0;
+            },
+            parent: function (e) {
+              return !n.pseudos.empty(e);
+            },
+            header: function (e) {
+              return Z.test(e.nodeName);
+            },
+            input: function (e) {
+              return J.test(e.nodeName);
+            },
+            button: function (e) {
+              var t = e.nodeName.toLowerCase();
+              return ('input' === t && 'button' === e.type) || 'button' === t;
+            },
+            text: function (e) {
+              var t;
+              return (
+                'input' === e.nodeName.toLowerCase() &&
+                'text' === e.type &&
+                (null == (t = e.getAttribute('type')) || 'text' === t.toLowerCase())
+              );
+            },
+            first: me(function () {
+              return [0];
+            }),
+            last: me(function (e, t) {
+              return [t - 1];
+            }),
+            eq: me(function (e, t, i) {
+              return [i < 0 ? i + t : i];
+            }),
+            even: me(function (e, t) {
+              for (var i = 0; i < t; i += 2) e.push(i);
+              return e;
+            }),
+            odd: me(function (e, t) {
+              for (var i = 1; i < t; i += 2) e.push(i);
+              return e;
+            }),
+            lt: me(function (e, t, i) {
+              for (var n = i < 0 ? i + t : t < i ? t : i; 0 <= --n;) e.push(n);
+              return e;
+            }),
+            gt: me(function (e, t, i) {
+              for (var n = i < 0 ? i + t : i; ++n < t;) e.push(n);
+              return e;
+            }),
           },
-          root: function (e) {
-            return e === _;
-          },
-          focus: function (e) {
-            return (
-              e === h.activeElement &&
-              (!h.hasFocus || h.hasFocus()) &&
-              !!(e.type || e.href || ~e.tabIndex)
-            );
-          },
-          enabled: fe(!1),
-          disabled: fe(!0),
-          checked: function (e) {
-            var t = e.nodeName.toLowerCase();
-            return ('input' === t && !!e.checked) || ('option' === t && !!e.selected);
-          },
-          selected: function (e) {
-            return e.parentNode && e.parentNode.selectedIndex, !0 === e.selected;
-          },
-          empty: function (e) {
-            for (e = e.firstChild; e; e = e.nextSibling) if (e.nodeType < 6) return !1;
-            return !0;
-          },
-          parent: function (e) {
-            return !n.pseudos.empty(e);
-          },
-          header: function (e) {
-            return Z.test(e.nodeName);
-          },
-          input: function (e) {
-            return J.test(e.nodeName);
-          },
-          button: function (e) {
-            var t = e.nodeName.toLowerCase();
-            return ('input' === t && 'button' === e.type) || 'button' === t;
-          },
-          text: function (e) {
-            var t;
-            return (
-              'input' === e.nodeName.toLowerCase() &&
-              'text' === e.type &&
-              (null == (t = e.getAttribute('type')) || 'text' === t.toLowerCase())
-            );
-          },
-          first: me(function () {
-            return [0];
-          }),
-          last: me(function (e, t) {
-            return [t - 1];
-          }),
-          eq: me(function (e, t, i) {
-            return [i < 0 ? i + t : i];
-          }),
-          even: me(function (e, t) {
-            for (var i = 0; i < t; i += 2) e.push(i);
-            return e;
-          }),
-          odd: me(function (e, t) {
-            for (var i = 1; i < t; i += 2) e.push(i);
-            return e;
-          }),
-          lt: me(function (e, t, i) {
-            for (var n = i < 0 ? i + t : t < i ? t : i; 0 <= --n; ) e.push(n);
-            return e;
-          }),
-          gt: me(function (e, t, i) {
-            for (var n = i < 0 ? i + t : i; ++n < t; ) e.push(n);
-            return e;
-          }),
-        },
-      }).pseudos.nth = n.pseudos.eq),
-      { radio: !0, checkbox: !0, file: !0, password: !0, image: !0 }))
+        }).pseudos.nth = n.pseudos.eq),
+        { radio: !0, checkbox: !0, file: !0, password: !0, image: !0 }))
         n.pseudos[t] = he(t);
       for (t in { submit: !0, reset: !0 }) n.pseudos[t] = _e(t);
-      function ye() {}
+      function ye() { }
       function ve(e) {
         for (var t = 0, i = e.length, n = ''; t < i; t++) n += e[t].value;
         return n;
@@ -2827,37 +2811,37 @@ class WebAuthn {
           s = x++;
         return t.first
           ? function (t, i, o) {
-              for (; (t = t[n]); ) if (1 === t.nodeType || a) return e(t, i, o);
-              return !1;
-            }
+            for (; (t = t[n]);) if (1 === t.nodeType || a) return e(t, i, o);
+            return !1;
+          }
           : function (t, i, l) {
-              var c,
-                p,
-                d,
-                u = [k, s];
-              if (l) {
-                for (; (t = t[n]); ) if ((1 === t.nodeType || a) && e(t, i, l)) return !0;
-              } else
-                for (; (t = t[n]); )
-                  if (1 === t.nodeType || a)
-                    if (
-                      ((p = (d = t[b] || (t[b] = {}))[t.uniqueID] || (d[t.uniqueID] = {})),
+            var c,
+              p,
+              d,
+              u = [k, s];
+            if (l) {
+              for (; (t = t[n]);) if ((1 === t.nodeType || a) && e(t, i, l)) return !0;
+            } else
+              for (; (t = t[n]);)
+                if (1 === t.nodeType || a)
+                  if (
+                    ((p = (d = t[b] || (t[b] = {}))[t.uniqueID] || (d[t.uniqueID] = {})),
                       o && o === t.nodeName.toLowerCase())
-                    )
-                      t = t[n] || t;
-                    else {
-                      if ((c = p[r]) && c[0] === k && c[1] === s) return (u[2] = c[2]);
-                      if (((p[r] = u)[2] = e(t, i, l))) return !0;
-                    }
-              return !1;
-            };
+                  )
+                    t = t[n] || t;
+                  else {
+                    if ((c = p[r]) && c[0] === k && c[1] === s) return (u[2] = c[2]);
+                    if (((p[r] = u)[2] = e(t, i, l))) return !0;
+                  }
+            return !1;
+          };
       }
       function we(e) {
         return 1 < e.length
           ? function (t, i, n) {
-              for (var o = e.length; o--; ) if (!e[o](t, i, n)) return !1;
-              return !0;
-            }
+            for (var o = e.length; o--;) if (!e[o](t, i, n)) return !1;
+            return !0;
+          }
           : e[0];
       }
       function ke(e, t, i, n, o) {
@@ -2885,15 +2869,15 @@ class WebAuthn {
               m = !e || (!r && t) ? f : ke(f, u, e, s, l),
               g = i ? (o || (r ? e : _ || n) ? [] : a) : m;
             if ((i && i(m, g, s, l), n))
-              for (c = ke(g, h), n(c, [], s, l), p = c.length; p--; )
+              for (c = ke(g, h), n(c, [], s, l), p = c.length; p--;)
                 (d = c[p]) && (g[h[p]] = !(m[h[p]] = d));
             if (r) {
               if (o || e) {
                 if (o) {
-                  for (c = [], p = g.length; p--; ) (d = g[p]) && c.push((m[p] = d));
+                  for (c = [], p = g.length; p--;) (d = g[p]) && c.push((m[p] = d));
                   o(null, (g = []), c, l);
                 }
-                for (p = g.length; p--; )
+                for (p = g.length; p--;)
                   (d = g[p]) && -1 < (c = o ? M(r, d) : u[p]) && (r[c] = !(a[c] = d));
               }
             } else (g = ke(g === a ? g.splice(_, g.length) : g)), o ? o(null, a, g, l) : L.apply(a, g);
@@ -2903,32 +2887,32 @@ class WebAuthn {
       function $e(e) {
         for (
           var t,
-            i,
-            o,
-            r = e.length,
-            a = n.relative[e[0].type],
-            s = a || n.relative[' '],
-            l = a ? 1 : 0,
-            p = be(
-              function (e) {
-                return e === t;
-              },
-              s,
-              !0,
-            ),
-            d = be(
-              function (e) {
-                return -1 < M(t, e);
-              },
-              s,
-              !0,
-            ),
-            u = [
-              function (e, i, n) {
-                var o = (!a && (n || i !== c)) || ((t = i).nodeType ? p(e, i, n) : d(e, i, n));
-                return (t = null), o;
-              },
-            ];
+          i,
+          o,
+          r = e.length,
+          a = n.relative[e[0].type],
+          s = a || n.relative[' '],
+          l = a ? 1 : 0,
+          p = be(
+            function (e) {
+              return e === t;
+            },
+            s,
+            !0,
+          ),
+          d = be(
+            function (e) {
+              return -1 < M(t, e);
+            },
+            s,
+            !0,
+          ),
+          u = [
+            function (e, i, n) {
+              var o = (!a && (n || i !== c)) || ((t = i).nodeType ? p(e, i, n) : d(e, i, n));
+              return (t = null), o;
+            },
+          ];
           l < r;
           l++
         )
@@ -2939,10 +2923,10 @@ class WebAuthn {
               return xe(
                 1 < l && we(u),
                 1 < l &&
-                  ve(e.slice(0, l - 1).concat({ value: ' ' === e[l - 2].type ? '*' : '' })).replace(
-                    B,
-                    '$1',
-                  ),
+                ve(e.slice(0, l - 1).concat({ value: ' ' === e[l - 2].type ? '*' : '' })).replace(
+                  B,
+                  '$1',
+                ),
                 i,
                 l < o && $e(e.slice(l, o)),
                 o < r && $e((e = e.slice(o))),
@@ -2966,20 +2950,20 @@ class WebAuthn {
             c,
             p = C[e + ' '];
           if (p) return t ? 0 : p.slice(0);
-          for (s = e, l = [], c = n.preFilter; s; ) {
+          for (s = e, l = [], c = n.preFilter; s;) {
             for (a in ((i && !(o = R.exec(s))) ||
               (o && (s = s.slice(o[0].length) || s), l.push((r = []))),
-            (i = !1),
-            (o = W.exec(s)) &&
+              (i = !1),
+              (o = W.exec(s)) &&
               ((i = o.shift()),
-              r.push({ value: i, type: o[0].replace(B, ' ') }),
-              (s = s.slice(i.length))),
-            n.filter))
+                r.push({ value: i, type: o[0].replace(B, ' ') }),
+                (s = s.slice(i.length))),
+              n.filter))
               !(o = V[a].exec(s)) ||
                 (c[a] && !(o = c[a](o))) ||
                 ((i = o.shift()),
-                r.push({ value: i, type: a, matches: o }),
-                (s = s.slice(i.length)));
+                  r.push({ value: i, type: a, matches: o }),
+                  (s = s.slice(i.length)));
             if (!i) break;
           }
           return t ? s.length : s ? se.error(e) : C(e, l).slice(0);
@@ -2995,46 +2979,46 @@ class WebAuthn {
             _ = [],
             m = S[e + ' '];
           if (!m) {
-            for (t || (t = a(e)), i = t.length; i--; ) (m = $e(t[i]))[b] ? d.push(m) : _.push(m);
+            for (t || (t = a(e)), i = t.length; i--;) (m = $e(t[i]))[b] ? d.push(m) : _.push(m);
             (m = S(
               e,
               ((o = _),
-              (s = 0 < (r = d).length),
-              (l = 0 < o.length),
-              (p = function (e, t, i, a, p) {
-                var d,
-                  _,
-                  m,
-                  g = 0,
-                  y = '0',
-                  v = e && [],
-                  b = [],
-                  w = c,
-                  x = e || (l && n.find.TAG('*', p)),
-                  $ = (k += null == w ? 1 : Math.random() || 0.1),
-                  C = x.length;
-                for (p && (c = t == h || t || p); y !== C && null != (d = x[y]); y++) {
-                  if (l && d) {
-                    for (_ = 0, t || d.ownerDocument == h || (u(d), (i = !f)); (m = o[_++]); )
-                      if (m(d, t || h, i)) {
-                        a.push(d);
-                        break;
-                      }
-                    p && (k = $);
+                (s = 0 < (r = d).length),
+                (l = 0 < o.length),
+                (p = function (e, t, i, a, p) {
+                  var d,
+                    _,
+                    m,
+                    g = 0,
+                    y = '0',
+                    v = e && [],
+                    b = [],
+                    w = c,
+                    x = e || (l && n.find.TAG('*', p)),
+                    $ = (k += null == w ? 1 : Math.random() || 0.1),
+                    C = x.length;
+                  for (p && (c = t == h || t || p); y !== C && null != (d = x[y]); y++) {
+                    if (l && d) {
+                      for (_ = 0, t || d.ownerDocument == h || (u(d), (i = !f)); (m = o[_++]);)
+                        if (m(d, t || h, i)) {
+                          a.push(d);
+                          break;
+                        }
+                      p && (k = $);
+                    }
+                    s && ((d = !m && d) && g--, e && v.push(d));
                   }
-                  s && ((d = !m && d) && g--, e && v.push(d));
-                }
-                if (((g += y), s && y !== g)) {
-                  for (_ = 0; (m = r[_++]); ) m(v, b, t, i);
-                  if (e) {
-                    if (0 < g) for (; y--; ) v[y] || b[y] || (b[y] = A.call(a));
-                    b = ke(b);
+                  if (((g += y), s && y !== g)) {
+                    for (_ = 0; (m = r[_++]);) m(v, b, t, i);
+                    if (e) {
+                      if (0 < g) for (; y--;) v[y] || b[y] || (b[y] = A.call(a));
+                      b = ke(b);
+                    }
+                    L.apply(a, b), p && !e && 0 < b.length && 1 < g + r.length && se.uniqueSort(a);
                   }
-                  L.apply(a, b), p && !e && 0 < b.length && 1 < g + r.length && se.uniqueSort(a);
-                }
-                return p && ((k = $), (c = w)), v;
-              }),
-              s ? ce(p) : p),
+                  return p && ((k = $), (c = w)), v;
+                }),
+                s ? ce(p) : p),
             )).selector = e;
           }
           return m;
@@ -3082,9 +3066,9 @@ class WebAuthn {
         pe(function (e) {
           return (e.innerHTML = "<a href='#'></a>"), '#' === e.firstChild.getAttribute('href');
         }) ||
-          de('type|href|height|width', function (e, t, i) {
-            if (!i) return e.getAttribute(t, 'type' === t.toLowerCase() ? 1 : 2);
-          }),
+        de('type|href|height|width', function (e, t, i) {
+          if (!i) return e.getAttribute(t, 'type' === t.toLowerCase() ? 1 : 2);
+        }),
         (i.attributes &&
           pe(function (e) {
             return (
@@ -3093,21 +3077,21 @@ class WebAuthn {
               '' === e.firstChild.getAttribute('value')
             );
           })) ||
-          de('value', function (e, t, i) {
-            if (!i && 'input' === e.nodeName.toLowerCase()) return e.defaultValue;
-          }),
+        de('value', function (e, t, i) {
+          if (!i && 'input' === e.nodeName.toLowerCase()) return e.defaultValue;
+        }),
         pe(function (e) {
           return null == e.getAttribute('disabled');
         }) ||
-          de(P, function (e, t, i) {
-            var n;
-            if (!i)
-              return !0 === e[t]
-                ? t.toLowerCase()
-                : (n = e.getAttributeNode(t)) && n.specified
+        de(P, function (e, t, i) {
+          var n;
+          if (!i)
+            return !0 === e[t]
+              ? t.toLowerCase()
+              : (n = e.getAttributeNode(t)) && n.specified
                 ? n.value
                 : null;
-          }),
+        }),
         se
       );
     })(e);
@@ -3120,13 +3104,13 @@ class WebAuthn {
       (w.contains = x.contains),
       (w.escapeSelector = x.escape);
     var $ = function (e, t, i) {
-        for (var n = [], o = void 0 !== i; (e = e[t]) && 9 !== e.nodeType; )
-          if (1 === e.nodeType) {
-            if (o && w(e).is(i)) break;
-            n.push(e);
-          }
-        return n;
-      },
+      for (var n = [], o = void 0 !== i; (e = e[t]) && 9 !== e.nodeType;)
+        if (1 === e.nodeType) {
+          if (o && w(e).is(i)) break;
+          n.push(e);
+        }
+      return n;
+    },
       C = function (e, t) {
         for (var i = []; e; e = e.nextSibling) 1 === e.nodeType && e !== t && i.push(e);
         return i;
@@ -3139,17 +3123,17 @@ class WebAuthn {
     function T(e, t, i) {
       return _(t)
         ? w.grep(e, function (e, n) {
-            return !!t.call(e, n, e) !== i;
-          })
+          return !!t.call(e, n, e) !== i;
+        })
         : t.nodeType
-        ? w.grep(e, function (e) {
+          ? w.grep(e, function (e) {
             return (e === t) !== i;
           })
-        : 'string' != typeof t
-        ? w.grep(e, function (e) {
-            return -1 < s.call(t, e) !== i;
-          })
-        : w.filter(t, e, i);
+          : 'string' != typeof t
+            ? w.grep(e, function (e) {
+              return -1 < s.call(t, e) !== i;
+            })
+            : w.filter(t, e, i);
     }
     (w.filter = function (e, t, i) {
       var n = t[0];
@@ -3160,11 +3144,11 @@ class WebAuthn {
             ? [n]
             : []
           : w.find.matches(
-              e,
-              w.grep(t, function (e) {
-                return 1 === e.nodeType;
-              }),
-            )
+            e,
+            w.grep(t, function (e) {
+              return 1 === e.nodeType;
+            }),
+          )
       );
     }),
       w.fn.extend({
@@ -3209,8 +3193,8 @@ class WebAuthn {
         if (n[1]) {
           if (
             ((t = t instanceof w ? t[0] : t),
-            w.merge(this, w.parseHTML(n[1], t && t.nodeType ? t.ownerDocument || t : m, !0)),
-            j.test(n[1]) && w.isPlainObject(t))
+              w.merge(this, w.parseHTML(n[1], t && t.nodeType ? t.ownerDocument || t : m, !0)),
+              j.test(n[1]) && w.isPlainObject(t))
           )
             for (n in t) _(this[n]) ? this[n](t[n]) : this.attr(n, t[n]);
           return this;
@@ -3220,16 +3204,16 @@ class WebAuthn {
       return e.nodeType
         ? ((this[0] = e), (this.length = 1), this)
         : _(e)
-        ? void 0 !== i.ready
-          ? i.ready(e)
-          : e(w)
-        : w.makeArray(e, this);
+          ? void 0 !== i.ready
+            ? i.ready(e)
+            : e(w)
+          : w.makeArray(e, this);
     }).prototype = w.fn),
       (D = w(m));
     var E = /^(?:parents|prev(?:Until|All))/,
       L = { children: !0, contents: !0, next: !0, prev: !0 };
     function O(e, t) {
-      for (; (e = e[t]) && 1 !== e.nodeType; );
+      for (; (e = e[t]) && 1 !== e.nodeType;);
       return e;
     }
     w.fn.extend({
@@ -3264,8 +3248,8 @@ class WebAuthn {
             ? s.call(w(e), this[0])
             : s.call(this, e.jquery ? e[0] : e)
           : this[0] && this[0].parentNode
-          ? this.first().prevAll().length
-          : -1;
+            ? this.first().prevAll().length
+            : -1;
       },
       add: function (e, t) {
         return this.pushStack(w.uniqueSort(w.merge(this.get(), w(e, t))));
@@ -3341,8 +3325,8 @@ class WebAuthn {
         e && _((o = e.promise))
           ? o.call(e).done(t).fail(i)
           : e && _((o = e.then))
-          ? o.call(e, t, i)
-          : t.apply(void 0, [e].slice(n));
+            ? o.call(e, t, i)
+            : t.apply(void 0, [e].slice(n));
       } catch (e) {
         i.apply(void 0, [e]);
       }
@@ -3367,7 +3351,7 @@ class WebAuthn {
         c = -1,
         p = function () {
           for (a = a || e.once, r = n = !0; l.length; c = -1)
-            for (o = l.shift(); ++c < s.length; )
+            for (o = l.shift(); ++c < s.length;)
               !1 === s[c].apply(o[0], o[1]) && e.stopOnFalse && ((c = s.length), (o = !1));
           e.memory || (o = !1), (n = !1), a && (s = o ? [] : '');
         },
@@ -3375,7 +3359,7 @@ class WebAuthn {
           add: function () {
             return (
               s &&
-                (o && !n && ((c = s.length - 1), l.push(o)),
+              (o && !n && ((c = s.length - 1), l.push(o)),
                 (function t(i) {
                   w.each(i, function (i, n) {
                     _(n)
@@ -3390,7 +3374,7 @@ class WebAuthn {
           remove: function () {
             return (
               w.each(arguments, function (e, t) {
-                for (var i; -1 < (i = w.inArray(t, s, i)); ) s.splice(i, 1), i <= c && c--;
+                for (var i; -1 < (i = w.inArray(t, s, i));) s.splice(i, 1), i <= c && c--;
               }),
               this
             );
@@ -3428,24 +3412,24 @@ class WebAuthn {
       w.extend({
         Deferred: function (t) {
           var i = [
-              ['notify', 'progress', w.Callbacks('memory'), w.Callbacks('memory'), 2],
-              [
-                'resolve',
-                'done',
-                w.Callbacks('once memory'),
-                w.Callbacks('once memory'),
-                0,
-                'resolved',
-              ],
-              [
-                'reject',
-                'fail',
-                w.Callbacks('once memory'),
-                w.Callbacks('once memory'),
-                1,
-                'rejected',
-              ],
+            ['notify', 'progress', w.Callbacks('memory'), w.Callbacks('memory'), 2],
+            [
+              'resolve',
+              'done',
+              w.Callbacks('once memory'),
+              w.Callbacks('once memory'),
+              0,
+              'resolved',
             ],
+            [
+              'reject',
+              'fail',
+              w.Callbacks('once memory'),
+              w.Callbacks('once memory'),
+              1,
+              'rejected',
+            ],
+          ],
             n = 'pending',
             o = {
               state: function () {
@@ -3497,14 +3481,14 @@ class WebAuthn {
                       p = o
                         ? c
                         : function () {
-                            try {
-                              c();
-                            } catch (e) {
-                              w.Deferred.exceptionHook && w.Deferred.exceptionHook(e, p.stackTrace),
-                                r <= t + 1 &&
-                                  (n !== N && ((s = void 0), (l = [e])), i.rejectWith(s, l));
-                            }
-                          };
+                          try {
+                            c();
+                          } catch (e) {
+                            w.Deferred.exceptionHook && w.Deferred.exceptionHook(e, p.stackTrace),
+                              r <= t + 1 &&
+                              (n !== N && ((s = void 0), (l = [e])), i.rejectWith(s, l));
+                          }
+                        };
                     t
                       ? p()
                       : (w.Deferred.getStackHook && (p.stackTrace = w.Deferred.getStackHook()),
@@ -3530,15 +3514,15 @@ class WebAuthn {
                 s = t[5];
               (o[t[1]] = a.add),
                 s &&
-                  a.add(
-                    function () {
-                      n = s;
-                    },
-                    i[3 - e][2].disable,
-                    i[3 - e][3].disable,
-                    i[0][2].lock,
-                    i[0][3].lock,
-                  ),
+                a.add(
+                  function () {
+                    n = s;
+                  },
+                  i[3 - e][2].disable,
+                  i[3 - e][3].disable,
+                  i[0][2].lock,
+                  i[0][3].lock,
+                ),
                 a.add(t[3].fire),
                 (r[t[0]] = function () {
                   return r[t[0] + 'With'](this === r ? void 0 : this, arguments), this;
@@ -3566,10 +3550,10 @@ class WebAuthn {
           if (
             t <= 1 &&
             (I(e, a.done(s(i)).resolve, a.reject, !t),
-            'pending' === a.state() || _(r[i] && r[i].then))
+              'pending' === a.state() || _(r[i] && r[i].then))
           )
             return a.then();
-          for (; i--; ) I(r[i], s(i), a.reject);
+          for (; i--;) I(r[i], s(i), a.reject);
           return a.promise();
         },
       });
@@ -3612,26 +3596,26 @@ class WebAuthn {
         ? e.setTimeout(w.ready)
         : (m.addEventListener('DOMContentLoaded', H), e.addEventListener('load', H));
     var B = function (e, t, i, n, o, r, a) {
-        var s = 0,
-          l = e.length,
-          c = null == i;
-        if ('object' === v(i)) for (s in ((o = !0), i)) B(e, t, s, i[s], !0, r, a);
-        else if (
-          void 0 !== n &&
-          ((o = !0),
+      var s = 0,
+        l = e.length,
+        c = null == i;
+      if ('object' === v(i)) for (s in ((o = !0), i)) B(e, t, s, i[s], !0, r, a);
+      else if (
+        void 0 !== n &&
+        ((o = !0),
           _(n) || (a = !0),
           c &&
-            (a
-              ? (t.call(e, n), (t = null))
-              : ((c = t),
-                (t = function (e, t, i) {
-                  return c.call(w(e), i);
-                }))),
+          (a
+            ? (t.call(e, n), (t = null))
+            : ((c = t),
+              (t = function (e, t, i) {
+                return c.call(w(e), i);
+              }))),
           t)
-        )
-          for (; s < l; s++) t(e[s], i, a ? n : n.call(e[s], s, t(e[s], i)));
-        return o ? e : c ? t.call(e) : l ? t(e[0], i) : r;
-      },
+      )
+        for (; s < l; s++) t(e[s], i, a ? n : n.call(e[s], s, t(e[s], i)));
+      return o ? e : c ? t.call(e) : l ? t(e[0], i) : r;
+    },
       R = /^-ms-/,
       W = /-([a-z])/g;
     function Y(e, t) {
@@ -3652,11 +3636,11 @@ class WebAuthn {
           var t = e[this.expando];
           return (
             t ||
-              ((t = {}),
+            ((t = {}),
               Q(e) &&
-                (e.nodeType
-                  ? (e[this.expando] = t)
-                  : Object.defineProperty(e, this.expando, { value: t, configurable: !0 }))),
+              (e.nodeType
+                ? (e[this.expando] = t)
+                : Object.defineProperty(e, this.expando, { value: t, configurable: !0 }))),
             t
           );
         },
@@ -3682,7 +3666,7 @@ class WebAuthn {
             if (void 0 !== t) {
               i = (t = Array.isArray(t) ? t.map(U) : (t = U(t)) in n ? [t] : t.match(M) || [])
                 .length;
-              for (; i--; ) delete n[t[i]];
+              for (; i--;) delete n[t[i]];
             }
             (void 0 === t || w.isEmptyObject(n)) &&
               (e.nodeType ? (e[this.expando] = void 0) : delete e[this.expando]);
@@ -3702,14 +3686,14 @@ class WebAuthn {
       if (void 0 === i && 1 === e.nodeType)
         if (
           ((n = 'data-' + t.replace(K, '-$&').toLowerCase()),
-          'string' == typeof (i = e.getAttribute(n)))
+            'string' == typeof (i = e.getAttribute(n)))
         ) {
           try {
             i =
               'true' === (o = i) ||
               ('false' !== o &&
                 ('null' === o ? null : o === +o + '' ? +o : Z.test(o) ? JSON.parse(o) : o));
-          } catch (e) {}
+          } catch (e) { }
           J.set(e, t, i);
         } else i = void 0;
       return i;
@@ -3740,7 +3724,7 @@ class WebAuthn {
             a = r && r.attributes;
           if (void 0 === e) {
             if (this.length && ((o = J.get(r)), 1 === r.nodeType && !G.get(r, 'hasDataAttrs'))) {
-              for (i = a.length; i--; )
+              for (i = a.length; i--;)
                 a[i] &&
                   0 === (n = a[i].name).indexOf('data-') &&
                   ((n = U(n.slice(5))), X(r, n, o[n]));
@@ -3750,24 +3734,24 @@ class WebAuthn {
           }
           return 'object' == typeof e
             ? this.each(function () {
-                J.set(this, e);
-              })
+              J.set(this, e);
+            })
             : B(
-                this,
-                function (t) {
-                  var i;
-                  if (r && void 0 === t)
-                    return void 0 !== (i = J.get(r, e)) || void 0 !== (i = X(r, e)) ? i : void 0;
-                  this.each(function () {
-                    J.set(this, e, t);
-                  });
-                },
-                null,
-                t,
-                1 < arguments.length,
-                null,
-                !0,
-              );
+              this,
+              function (t) {
+                var i;
+                if (r && void 0 === t)
+                  return void 0 !== (i = J.get(r, e)) || void 0 !== (i = X(r, e)) ? i : void 0;
+                this.each(function () {
+                  J.set(this, e, t);
+                });
+              },
+              null,
+              t,
+              1 < arguments.length,
+              null,
+              !0,
+            );
         },
         removeData: function (e) {
           return this.each(function () {
@@ -3794,7 +3778,7 @@ class WebAuthn {
             r = w._queueHooks(e, t);
           'inprogress' === o && ((o = i.shift()), n--),
             o &&
-              ('fx' === t && i.unshift('inprogress'),
+            ('fx' === t && i.unshift('inprogress'),
               delete r.stop,
               o.call(
                 e,
@@ -3825,8 +3809,8 @@ class WebAuthn {
             arguments.length < i
               ? w.queue(this[0], e)
               : void 0 === t
-              ? this
-              : this.each(function () {
+                ? this
+                : this.each(function () {
                   var i = w.queue(this, e, t);
                   w._queueHooks(this, e), 'fx' === e && 'inprogress' !== i[0] && w.dequeue(this, e);
                 })
@@ -3849,7 +3833,7 @@ class WebAuthn {
             s = function () {
               --n || o.resolveWith(r, [r]);
             };
-          for ('string' != typeof e && ((t = e), (e = void 0)), e = e || 'fx'; a--; )
+          for ('string' != typeof e && ((t = e), (e = void 0)), e = e || 'fx'; a--;)
             (i = G.get(r[a], e + 'queueHooks')) && i.empty && (n++, i.empty.add(s));
           return s(), o.promise(t);
         },
@@ -3878,22 +3862,22 @@ class WebAuthn {
         a = 20,
         s = n
           ? function () {
-              return n.cur();
-            }
+            return n.cur();
+          }
           : function () {
-              return w.css(e, t, '');
-            },
+            return w.css(e, t, '');
+          },
         l = s(),
         c = (i && i[3]) || (w.cssNumber[t] ? '' : 'px'),
         p = e.nodeType && (w.cssNumber[t] || ('px' !== c && +l)) && te.exec(w.css(e, t));
       if (p && p[3] !== c) {
-        for (l /= 2, c = c || p[3], p = +l || 1; a--; )
+        for (l /= 2, c = c || p[3], p = +l || 1; a--;)
           w.style(e, t, p + c), (1 - r) * (1 - (r = s() / l || 0.5)) <= 0 && (a = 0), (p /= r);
         (p *= 2), w.style(e, t, p + c), (i = i || []);
       }
       return (
         i &&
-          ((p = +p || +l || 0),
+        ((p = +p || +l || 0),
           (o = i[1] ? p + (i[1] + 1) * i[2] : +i[2]),
           n && ((n.unit = c), (n.start = p), (n.end = o))),
         o
@@ -3904,22 +3888,22 @@ class WebAuthn {
       for (var i, n, o, r, a, s, l, c = [], p = 0, d = e.length; p < d; p++)
         (n = e[p]).style &&
           ((i = n.style.display),
-          t
-            ? ('none' === i &&
+            t
+              ? ('none' === i &&
                 ((c[p] = G.get(n, 'display') || null), c[p] || (n.style.display = '')),
-              '' === n.style.display &&
+                '' === n.style.display &&
                 ae(n) &&
                 (c[p] =
                   ((l = a = r = void 0),
-                  (a = (o = n).ownerDocument),
-                  (s = o.nodeName),
-                  (l = le[s]) ||
+                    (a = (o = n).ownerDocument),
+                    (s = o.nodeName),
+                    (l = le[s]) ||
                     ((r = a.body.appendChild(a.createElement(s))),
-                    (l = w.css(r, 'display')),
-                    r.parentNode.removeChild(r),
-                    'none' === l && (l = 'block'),
-                    (le[s] = l)))))
-            : 'none' !== i && ((c[p] = 'none'), G.set(n, 'display', i)));
+                      (l = w.css(r, 'display')),
+                      r.parentNode.removeChild(r),
+                      'none' === l && (l = 'block'),
+                      (le[s] = l)))))
+              : 'none' !== i && ((c[p] = 'none'), G.set(n, 'display', i)));
       for (p = 0; p < d; p++) null != c[p] && (e[p].style.display = c[p]);
       return e;
     }
@@ -3936,8 +3920,8 @@ class WebAuthn {
             ? this.show()
             : this.hide()
           : this.each(function () {
-              ae(this) ? w(this).show() : w(this).hide();
-            });
+            ae(this) ? w(this).show() : w(this).hide();
+          });
       },
     });
     var pe,
@@ -3969,8 +3953,8 @@ class WebAuthn {
           void 0 !== e.getElementsByTagName
             ? e.getElementsByTagName(t || '*')
             : void 0 !== e.querySelectorAll
-            ? e.querySelectorAll(t || '*')
-            : []),
+              ? e.querySelectorAll(t || '*')
+              : []),
         void 0 === t || (t && z(e, t)) ? w.merge([e], i) : i
       );
     }
@@ -3993,20 +3977,20 @@ class WebAuthn {
           else if (ye.test(r)) {
             for (
               a = a || d.appendChild(t.createElement('div')),
-                s = (he.exec(r) || ['', ''])[1].toLowerCase(),
-                l = fe[s] || fe._default,
-                a.innerHTML = l[1] + w.htmlPrefilter(r) + l[2],
-                p = l[0];
+              s = (he.exec(r) || ['', ''])[1].toLowerCase(),
+              l = fe[s] || fe._default,
+              a.innerHTML = l[1] + w.htmlPrefilter(r) + l[2],
+              p = l[0];
               p--;
 
             )
               a = a.lastChild;
             w.merge(u, a.childNodes), ((a = d.firstChild).textContent = '');
           } else u.push(t.createTextNode(r));
-      for (d.textContent = '', h = 0; (r = u[h++]); )
+      for (d.textContent = '', h = 0; (r = u[h++]);)
         if (n && -1 < w.inArray(r, n)) o && o.push(r);
         else if (((c = oe(r)), (a = me(d.appendChild(r), 'script')), c && ge(a), i))
-          for (p = 0; (r = a[p++]); ) _e.test(r.type || '') && i.push(r);
+          for (p = 0; (r = a[p++]);) _e.test(r.type || '') && i.push(r);
       return d;
     }
     var be = /^key/,
@@ -4024,7 +4008,7 @@ class WebAuthn {
           (function () {
             try {
               return m.activeElement;
-            } catch (e) {}
+            } catch (e) { }
           })()) ==
         ('focus' === t)
       );
@@ -4040,14 +4024,14 @@ class WebAuthn {
         (null == n && null == o
           ? ((o = i), (n = i = void 0))
           : null == o &&
-            ('string' == typeof i ? ((o = n), (n = void 0)) : ((o = n), (n = i), (i = void 0))),
-        !1 === o)
+          ('string' == typeof i ? ((o = n), (n = void 0)) : ((o = n), (n = i), (i = void 0))),
+          !1 === o)
       )
         o = $e;
       else if (!o) return e;
       return (
         1 === r &&
-          ((a = o),
+        ((a = o),
           ((o = function (e) {
             return w().off(e), a.apply(this, arguments);
           }).guid = a.guid || (a.guid = w.guid++))),
@@ -4069,11 +4053,11 @@ class WebAuthn {
                 if (a.length) (w.event.special[t] || {}).delegateType && e.stopPropagation();
                 else if (
                   ((a = o.call(arguments)),
-                  G.set(this, t, a),
-                  (n = i(this, t)),
-                  this[t](),
-                  a !== (r = G.get(this, t)) || n ? G.set(this, t, !1) : (r = {}),
-                  a !== r)
+                    G.set(this, t, a),
+                    (n = i(this, t)),
+                    this[t](),
+                    a !== (r = G.get(this, t)) || n ? G.set(this, t, !1) : (r = {}),
+                    a !== r)
                 )
                   return e.stopImmediatePropagation(), e.preventDefault(), r.value;
               } else
@@ -4081,7 +4065,7 @@ class WebAuthn {
                   (G.set(this, t, {
                     value: w.event.trigger(w.extend(a[0], w.Event.prototype), a.slice(1), this),
                   }),
-                  e.stopImmediatePropagation());
+                    e.stopImmediatePropagation());
             },
           }))
         : void 0 === G.get(e, t) && w.event.add(e, t, xe);
@@ -4104,23 +4088,23 @@ class WebAuthn {
         if (Q(e))
           for (
             i.handler && ((i = (r = i).handler), (o = r.selector)),
-              o && w.find.matchesSelector(ne, o),
-              i.guid || (i.guid = w.guid++),
-              (l = m.events) || (l = m.events = Object.create(null)),
-              (a = m.handle) ||
-                (a = m.handle = function (t) {
-                  return void 0 !== w && w.event.triggered !== t.type
-                    ? w.event.dispatch.apply(e, arguments)
-                    : void 0;
-                }),
-              c = (t = (t || '').match(M) || ['']).length;
+            o && w.find.matchesSelector(ne, o),
+            i.guid || (i.guid = w.guid++),
+            (l = m.events) || (l = m.events = Object.create(null)),
+            (a = m.handle) ||
+            (a = m.handle = function (t) {
+              return void 0 !== w && w.event.triggered !== t.type
+                ? w.event.dispatch.apply(e, arguments)
+                : void 0;
+            }),
+            c = (t = (t || '').match(M) || ['']).length;
             c--;
 
           )
             (h = f = (s = ke.exec(t[c]) || [])[1]),
               (_ = (s[2] || '').split('.').sort()),
               h &&
-                ((d = w.event.special[h] || {}),
+              ((d = w.event.special[h] || {}),
                 (h = (o ? d.delegateType : d.bindType) || h),
                 (d = w.event.special[h] || {}),
                 (p = w.extend(
@@ -4137,9 +4121,9 @@ class WebAuthn {
                   r,
                 )),
                 (u = l[h]) ||
-                  (((u = l[h] = []).delegateCount = 0),
+                (((u = l[h] = []).delegateCount = 0),
                   (d.setup && !1 !== d.setup.call(e, n, _, a)) ||
-                    (e.addEventListener && e.addEventListener(h, a))),
+                  (e.addEventListener && e.addEventListener(h, a))),
                 d.add && (d.add.call(e, p), p.handler.guid || (p.handler.guid = i.guid)),
                 o ? u.splice(u.delegateCount++, 0, p) : u.push(p),
                 (w.event.global[h] = !0));
@@ -4158,29 +4142,29 @@ class WebAuthn {
           f,
           m = G.hasData(e) && G.get(e);
         if (m && (l = m.events)) {
-          for (c = (t = (t || '').match(M) || ['']).length; c--; )
+          for (c = (t = (t || '').match(M) || ['']).length; c--;)
             if (((h = f = (s = ke.exec(t[c]) || [])[1]), (_ = (s[2] || '').split('.').sort()), h)) {
               for (
                 d = w.event.special[h] || {},
-                  u = l[(h = (n ? d.delegateType : d.bindType) || h)] || [],
-                  s = s[2] && new RegExp('(^|\\.)' + _.join('\\.(?:.*\\.|)') + '(\\.|$)'),
-                  a = r = u.length;
+                u = l[(h = (n ? d.delegateType : d.bindType) || h)] || [],
+                s = s[2] && new RegExp('(^|\\.)' + _.join('\\.(?:.*\\.|)') + '(\\.|$)'),
+                a = r = u.length;
                 r--;
 
               )
                 (p = u[r]),
                   (!o && f !== p.origType) ||
-                    (i && i.guid !== p.guid) ||
-                    (s && !s.test(p.namespace)) ||
-                    (n && n !== p.selector && ('**' !== n || !p.selector)) ||
-                    (u.splice(r, 1),
+                  (i && i.guid !== p.guid) ||
+                  (s && !s.test(p.namespace)) ||
+                  (n && n !== p.selector && ('**' !== n || !p.selector)) ||
+                  (u.splice(r, 1),
                     p.selector && u.delegateCount--,
                     d.remove && d.remove.call(e, p));
               a &&
                 !u.length &&
                 ((d.teardown && !1 !== d.teardown.call(e, _, m.handle)) ||
                   w.removeEvent(e, h, m.handle),
-                delete l[h]);
+                  delete l[h]);
             } else for (h in l) w.event.remove(e, h + t[c], i, n, !0);
           w.isEmptyObject(l) && G.remove(e, 'handle events');
         }
@@ -4210,8 +4194,8 @@ class WebAuthn {
             )
               (l.rnamespace && !1 !== r.namespace && !l.rnamespace.test(r.namespace)) ||
                 ((l.handleObj = r),
-                (l.data = r.data),
-                void 0 !==
+                  (l.data = r.data),
+                  void 0 !==
                   (n = ((w.event.special[r.origType] || {}).handle || r.handler).apply(
                     o.elem,
                     s,
@@ -4249,11 +4233,11 @@ class WebAuthn {
           configurable: !0,
           get: _(t)
             ? function () {
-                if (this.originalEvent) return t(this.originalEvent);
-              }
+              if (this.originalEvent) return t(this.originalEvent);
+            }
             : function () {
-                if (this.originalEvent) return this.originalEvent[e];
-              },
+              if (this.originalEvent) return this.originalEvent[e];
+            },
           set: function (t) {
             Object.defineProperty(this, e, {
               enumerable: !0,
@@ -4370,14 +4354,14 @@ class WebAuthn {
                 ? e.charCode
                 : e.keyCode
               : !e.which && void 0 !== t && we.test(e.type)
-              ? 1 & t
-                ? 1
-                : 2 & t
-                ? 3
-                : 4 & t
-                ? 2
-                : 0
-              : e.which;
+                ? 1 & t
+                  ? 1
+                  : 2 & t
+                    ? 3
+                    : 4 & t
+                      ? 2
+                      : 0
+                : e.which;
           },
         },
         w.event.addProp,
@@ -4410,7 +4394,7 @@ class WebAuthn {
                 o = e.handleObj;
               return (
                 (n && (n === this || w.contains(this, n))) ||
-                  ((e.type = o.origType), (i = o.handler.apply(this, arguments)), (e.type = t)),
+                ((e.type = o.origType), (i = o.handler.apply(this, arguments)), (e.type = t)),
                 i
               );
             },
@@ -4501,8 +4485,8 @@ class WebAuthn {
       if (
         u &&
         ((a = (o = ve(t, e[0].ownerDocument, !1, e, n)).firstChild),
-        1 === o.childNodes.length && (o = a),
-        a || n)
+          1 === o.childNodes.length && (o = a),
+          a || n)
       ) {
         for (l = (s = w.map(me(o, 'script'), Ee)).length; d < u; d++)
           (c = o),
@@ -4512,13 +4496,13 @@ class WebAuthn {
           for (p = s[s.length - 1].ownerDocument, w.map(s, Le), d = 0; d < l; d++)
             (c = s[d]),
               _e.test(c.type || '') &&
-                !G.access(c, 'globalEval') &&
-                w.contains(p, c) &&
-                (c.src && 'module' !== (c.type || '').toLowerCase()
-                  ? w._evalUrl &&
-                    !c.noModule &&
-                    w._evalUrl(c.src, { nonce: c.nonce || c.getAttribute('nonce') }, p)
-                  : y(c.textContent.replace(De, ''), c, p));
+              !G.access(c, 'globalEval') &&
+              w.contains(p, c) &&
+              (c.src && 'module' !== (c.type || '').toLowerCase()
+                ? w._evalUrl &&
+                !c.noModule &&
+                w._evalUrl(c.src, { nonce: c.nonce || c.getAttribute('nonce') }, p)
+                : y(c.textContent.replace(De, ''), c, p));
       }
       return e;
     }
@@ -4580,9 +4564,9 @@ class WebAuthn {
               return void 0 === e
                 ? w.text(this)
                 : this.empty().each(function () {
-                    (1 !== this.nodeType && 11 !== this.nodeType && 9 !== this.nodeType) ||
-                      (this.textContent = e);
-                  });
+                  (1 !== this.nodeType && 11 !== this.nodeType && 9 !== this.nodeType) ||
+                    (this.textContent = e);
+                });
             },
             null,
             e,
@@ -4646,7 +4630,7 @@ class WebAuthn {
                     1 === (t = this[i] || {}).nodeType &&
                       (w.cleanData(me(t, !1)), (t.innerHTML = e));
                   t = 0;
-                } catch (e) {}
+                } catch (e) { }
               }
               t && this.empty().append(e);
             },
@@ -4706,11 +4690,11 @@ class WebAuthn {
         s = e.style;
       return (
         (i = i || Ie(e)) &&
-          ('' !== (a = i.getPropertyValue(t) || i[t]) || oe(e) || (a = w.style(e, t)),
+        ('' !== (a = i.getPropertyValue(t) || i[t]) || oe(e) || (a = w.style(e, t)),
           !h.pixelBoxStyles() &&
-            Ne.test(a) &&
-            Fe.test(t) &&
-            ((n = s.width),
+          Ne.test(a) &&
+          Fe.test(t) &&
+          ((n = s.width),
             (o = s.minWidth),
             (r = s.maxWidth),
             (s.minWidth = s.maxWidth = s.width = a),
@@ -4762,42 +4746,42 @@ class WebAuthn {
         p = m.createElement('div');
       p.style &&
         ((p.style.backgroundClip = 'content-box'),
-        (p.cloneNode(!0).style.backgroundClip = ''),
-        (h.clearCloneStyle = 'content-box' === p.style.backgroundClip),
-        w.extend(h, {
-          boxSizingReliable: function () {
-            return t(), o;
-          },
-          pixelBoxStyles: function () {
-            return t(), a;
-          },
-          pixelPosition: function () {
-            return t(), n;
-          },
-          reliableMarginLeft: function () {
-            return t(), l;
-          },
-          scrollboxSize: function () {
-            return t(), r;
-          },
-          reliableTrDimensions: function () {
-            var t, i, n, o;
-            return (
-              null == s &&
+          (p.cloneNode(!0).style.backgroundClip = ''),
+          (h.clearCloneStyle = 'content-box' === p.style.backgroundClip),
+          w.extend(h, {
+            boxSizingReliable: function () {
+              return t(), o;
+            },
+            pixelBoxStyles: function () {
+              return t(), a;
+            },
+            pixelPosition: function () {
+              return t(), n;
+            },
+            reliableMarginLeft: function () {
+              return t(), l;
+            },
+            scrollboxSize: function () {
+              return t(), r;
+            },
+            reliableTrDimensions: function () {
+              var t, i, n, o;
+              return (
+                null == s &&
                 ((t = m.createElement('table')),
-                (i = m.createElement('tr')),
-                (n = m.createElement('div')),
-                (t.style.cssText = 'position:absolute;left:-11111px'),
-                (i.style.height = '1px'),
-                (n.style.height = '9px'),
-                ne.appendChild(t).appendChild(i).appendChild(n),
-                (o = e.getComputedStyle(i)),
-                (s = 3 < parseInt(o.height)),
-                ne.removeChild(t)),
-              s
-            );
-          },
-        }));
+                  (i = m.createElement('tr')),
+                  (n = m.createElement('div')),
+                  (t.style.cssText = 'position:absolute;left:-11111px'),
+                  (i.style.height = '1px'),
+                  (n.style.height = '9px'),
+                  ne.appendChild(t).appendChild(i).appendChild(n),
+                  (o = e.getComputedStyle(i)),
+                  (s = 3 < parseInt(o.height)),
+                  ne.removeChild(t)),
+                s
+              );
+            },
+          }));
     })();
     var Re = ['Webkit', 'Moz', 'ms'],
       We = m.createElement('div').style,
@@ -4809,10 +4793,10 @@ class WebAuthn {
         (e in We
           ? e
           : (Ye[e] =
-              (function (e) {
-                for (var t = e[0].toUpperCase() + e.slice(1), i = Re.length; i--; )
-                  if ((e = Re[i] + t) in We) return e;
-              })(e) || e))
+            (function (e) {
+              for (var t = e[0].toUpperCase() + e.slice(1), i = Re.length; i--;)
+                if ((e = Re[i] + t) in We) return e;
+            })(e) || e))
       );
     }
     var Qe = /^(none|table(?!-c[ea]).+)/,
@@ -4839,12 +4823,12 @@ class WebAuthn {
                 : (s += w.css(e, 'border' + ie[a] + 'Width', !0, o)));
       return (
         !n &&
-          0 <= r &&
-          (l +=
-            Math.max(
-              0,
-              Math.ceil(e['offset' + t[0].toUpperCase() + t.slice(1)] - r - l - s - 0.5),
-            ) || 0),
+        0 <= r &&
+        (l +=
+          Math.max(
+            0,
+            Math.ceil(e['offset' + t[0].toUpperCase() + t.slice(1)] - r - l - s - 0.5),
+          ) || 0),
         l
       );
     }
@@ -4863,8 +4847,8 @@ class WebAuthn {
           (!h.reliableTrDimensions() && z(e, 'tr')) ||
           'auto' === a ||
           (!parseFloat(a) && 'inline' === w.css(e, 'display', !1, n))) &&
-          e.getClientRects().length &&
-          ((o = 'border-box' === w.css(e, 'boxSizing', !1, n)), (r = s in e) && (a = e[s])),
+        e.getClientRects().length &&
+        ((o = 'border-box' === w.css(e, 'boxSizing', !1, n)), (r = s in e) && (a = e[s])),
         (a = parseFloat(a) || 0) + Ke(e, t, i || (o ? 'border' : 'content'), r, n, a) + 'px'
       );
     }
@@ -4920,11 +4904,11 @@ class WebAuthn {
             o[1] &&
             ((i = se(e, t, o)), (r = 'number')),
             null != i &&
-              i == i &&
-              ('number' !== r || l || (i += (o && o[3]) || (w.cssNumber[s] ? '' : 'px')),
+            i == i &&
+            ('number' !== r || l || (i += (o && o[3]) || (w.cssNumber[s] ? '' : 'px')),
               h.clearCloneStyle || '' !== i || 0 !== t.indexOf('background') || (c[t] = 'inherit'),
               (a && 'set' in a && void 0 === (i = a.set(e, i, n))) ||
-                (l ? c.setProperty(t, i) : (c[t] = i)));
+              (l ? c.setProperty(t, i) : (c[t] = i)));
         }
       },
       css: function (e, t, i, n) {
@@ -4949,8 +4933,8 @@ class WebAuthn {
                 (e.getClientRects().length && e.getBoundingClientRect().width)
                 ? Xe(e, t, n)
                 : qe(e, Ge, function () {
-                    return Xe(e, t, n);
-                  });
+                  return Xe(e, t, n);
+                });
           },
           set: function (e, i, n) {
             var o,
@@ -4960,17 +4944,17 @@ class WebAuthn {
               l = n ? Ke(e, t, n, s, r) : 0;
             return (
               s &&
-                a &&
-                (l -= Math.ceil(
-                  e['offset' + t[0].toUpperCase() + t.slice(1)] -
-                    parseFloat(r[t]) -
-                    Ke(e, t, 'border', !1, r) -
-                    0.5,
-                )),
+              a &&
+              (l -= Math.ceil(
+                e['offset' + t[0].toUpperCase() + t.slice(1)] -
+                parseFloat(r[t]) -
+                Ke(e, t, 'border', !1, r) -
+                0.5,
+              )),
               l &&
-                (o = te.exec(i)) &&
-                'px' !== (o[3] || 'px') &&
-                ((e.style[t] = i), (i = w.css(e, t))),
+              (o = te.exec(i)) &&
+              'px' !== (o[3] || 'px') &&
+              ((e.style[t] = i), (i = w.css(e, t))),
               Ze(0, i, l)
             );
           },
@@ -4981,9 +4965,9 @@ class WebAuthn {
           return (
             (parseFloat(He(e, 'marginLeft')) ||
               e.getBoundingClientRect().left -
-                qe(e, { marginLeft: 0 }, function () {
-                  return e.getBoundingClientRect().left;
-                })) + 'px'
+              qe(e, { marginLeft: 0 }, function () {
+                return e.getBoundingClientRect().left;
+              })) + 'px'
           );
       })),
       w.each({ margin: '', padding: '', border: 'Width' }, function (e, t) {
@@ -5038,12 +5022,12 @@ class WebAuthn {
           return (
             this.options.duration
               ? (this.pos = t = w.easing[this.easing](
-                  e,
-                  this.options.duration * e,
-                  0,
-                  1,
-                  this.options.duration,
-                ))
+                e,
+                this.options.duration * e,
+                0,
+                1,
+                this.options.duration,
+              ))
               : (this.pos = t = e),
             (this.now = (this.end - this.start) * t + this.start),
             this.options.step && this.options.step.call(this.elem, this.now, this),
@@ -5059,15 +5043,15 @@ class WebAuthn {
             return 1 !== e.elem.nodeType || (null != e.elem[e.prop] && null == e.elem.style[e.prop])
               ? e.elem[e.prop]
               : (t = w.css(e.elem, e.prop, '')) && 'auto' !== t
-              ? t
-              : 0;
+                ? t
+                : 0;
           },
           set: function (e) {
             w.fx.step[e.prop]
               ? w.fx.step[e.prop](e)
               : 1 !== e.elem.nodeType || (!w.cssHooks[e.prop] && null == e.elem.style[Ue(e.prop)])
-              ? (e.elem[e.prop] = e.now)
-              : w.style(e.elem, e.prop, e.now + e.unit);
+                ? (e.elem[e.prop] = e.now)
+                : w.style(e.elem, e.prop, e.now + e.unit);
           },
         },
       }).scrollTop = et.propHooks.scrollLeft = {
@@ -5097,7 +5081,7 @@ class WebAuthn {
         (!1 === m.hidden && e.requestAnimationFrame
           ? e.requestAnimationFrame(st)
           : e.setTimeout(st, w.fx.interval),
-        w.fx.tick());
+          w.fx.tick());
     }
     function lt() {
       return (
@@ -5134,10 +5118,10 @@ class WebAuthn {
           if (o) return !1;
           for (
             var t = tt || lt(),
-              i = Math.max(0, c.startTime + c.duration - t),
-              n = 1 - (i / c.duration || 0),
-              r = 0,
-              a = c.tweens.length;
+            i = Math.max(0, c.startTime + c.duration - t),
+            n = 1 - (i / c.duration || 0),
+            r = 0,
+            a = c.tweens.length;
             r < a;
             r++
           )
@@ -5178,10 +5162,10 @@ class WebAuthn {
           for (i in e)
             if (
               ((o = t[(n = U(i))]),
-              (r = e[i]),
-              Array.isArray(r) && ((o = r[1]), (r = e[i] = r[0])),
-              i !== n && ((e[n] = r), delete e[i]),
-              (a = w.cssHooks[n]) && ('expand' in a))
+                (r = e[i]),
+                Array.isArray(r) && ((o = r[1]), (r = e[i] = r[0])),
+                i !== n && ((e[n] = r), delete e[i]),
+                (a = w.cssHooks[n]) && ('expand' in a))
             )
               for (i in ((r = a.expand(r)), delete e[n], r))
                 (i in e) || ((e[i] = r[i]), (t[i] = o));
@@ -5237,17 +5221,17 @@ class WebAuthn {
           for (n in (i.queue ||
             (null == (a = w._queueHooks(e, 'fx')).unqueued &&
               ((a.unqueued = 0),
-              (s = a.empty.fire),
-              (a.empty.fire = function () {
-                a.unqueued || s();
-              })),
-            a.unqueued++,
-            u.always(function () {
+                (s = a.empty.fire),
+                (a.empty.fire = function () {
+                  a.unqueued || s();
+                })),
+              a.unqueued++,
               u.always(function () {
-                a.unqueued--, w.queue(e, 'fx').length || a.empty.fire();
-              });
-            })),
-          t))
+                u.always(function () {
+                  a.unqueued--, w.queue(e, 'fx').length || a.empty.fire();
+                });
+              })),
+            t))
             if (((o = t[n]), rt.test(o))) {
               if ((delete t[n], (r = r || 'toggle' === o), o === (f ? 'hide' : 'show'))) {
                 if ('show' !== o || !m || void 0 === m[n]) continue;
@@ -5259,35 +5243,35 @@ class WebAuthn {
             for (n in (d &&
               1 === e.nodeType &&
               ((i.overflow = [_.overflow, _.overflowX, _.overflowY]),
-              null == (c = m && m.display) && (c = G.get(e, 'display')),
-              'none' === (p = w.css(e, 'display')) &&
+                null == (c = m && m.display) && (c = G.get(e, 'display')),
+                'none' === (p = w.css(e, 'display')) &&
                 (c
                   ? (p = c)
                   : (ce([e], !0), (c = e.style.display || c), (p = w.css(e, 'display')), ce([e]))),
-              ('inline' === p || ('inline-block' === p && null != c)) &&
+                ('inline' === p || ('inline-block' === p && null != c)) &&
                 'none' === w.css(e, 'float') &&
                 (l ||
                   (u.done(function () {
                     _.display = c;
                   }),
-                  null == c && ((p = _.display), (c = 'none' === p ? '' : p))),
-                (_.display = 'inline-block'))),
-            i.overflow &&
+                    null == c && ((p = _.display), (c = 'none' === p ? '' : p))),
+                  (_.display = 'inline-block'))),
+              i.overflow &&
               ((_.overflow = 'hidden'),
-              u.always(function () {
-                (_.overflow = i.overflow[0]),
-                  (_.overflowX = i.overflow[1]),
-                  (_.overflowY = i.overflow[2]);
-              })),
-            (l = !1),
-            h))
+                u.always(function () {
+                  (_.overflow = i.overflow[0]),
+                    (_.overflowX = i.overflow[1]),
+                    (_.overflowY = i.overflow[2]);
+                })),
+              (l = !1),
+              h))
               l ||
                 (m ? 'hidden' in m && (f = m.hidden) : (m = G.access(e, 'fxshow', { display: c })),
-                r && (m.hidden = !f),
-                f && ce([e], !0),
-                u.done(function () {
-                  for (n in (f || ce([e]), G.remove(e, 'fxshow'), h)) w.style(e, n, h[n]);
-                })),
+                  r && (m.hidden = !f),
+                  f && ce([e], !0),
+                  u.done(function () {
+                    for (n in (f || ce([e]), G.remove(e, 'fxshow'), h)) w.style(e, n, h[n]);
+                  })),
                 (l = pt(f ? m[n] : 0, n, u)),
                 n in m || ((m[n] = l.start), f && ((l.end = l.start), (l.start = 0)));
         },
@@ -5301,17 +5285,17 @@ class WebAuthn {
           e && 'object' == typeof e
             ? w.extend({}, e)
             : {
-                complete: i || (!i && t) || (_(e) && e),
-                duration: e,
-                easing: (i && t) || (t && !_(t) && t),
-              };
+              complete: i || (!i && t) || (_(e) && e),
+              duration: e,
+              easing: (i && t) || (t && !_(t) && t),
+            };
         return (
           w.fx.off
             ? (n.duration = 0)
             : 'number' != typeof n.duration &&
-              (n.duration in w.fx.speeds
-                ? (n.duration = w.fx.speeds[n.duration])
-                : (n.duration = w.fx.speeds._default)),
+            (n.duration in w.fx.speeds
+              ? (n.duration = w.fx.speeds[n.duration])
+              : (n.duration = w.fx.speeds._default)),
           (null != n.queue && !0 !== n.queue) || (n.queue = 'fx'),
           (n.old = n.complete),
           (n.complete = function () {
@@ -5348,7 +5332,7 @@ class WebAuthn {
                 a = G.get(this);
               if (o) a[o] && a[o].stop && n(a[o]);
               else for (o in a) a[o] && a[o].stop && at.test(o) && n(a[o]);
-              for (o = r.length; o--; )
+              for (o = r.length; o--;)
                 r[o].elem !== this ||
                   (null != e && r[o].queue !== e) ||
                   (r[o].anim.stop(i), (t = !1), r.splice(o, 1));
@@ -5368,9 +5352,9 @@ class WebAuthn {
                 a = n ? n.length : 0;
               for (
                 i.finish = !0,
-                  w.queue(this, e, []),
-                  o && o.stop && o.stop.call(this, !0),
-                  t = r.length;
+                w.queue(this, e, []),
+                o && o.stop && o.stop.call(this, !0),
+                t = r.length;
                 t--;
 
               )
@@ -5464,18 +5448,18 @@ class WebAuthn {
             return void 0 === e.getAttribute
               ? w.prop(e, t, i)
               : ((1 === r && w.isXMLDoc(e)) ||
-                  (o = w.attrHooks[t.toLowerCase()] || (w.expr.match.bool.test(t) ? ut : void 0)),
+                (o = w.attrHooks[t.toLowerCase()] || (w.expr.match.bool.test(t) ? ut : void 0)),
                 void 0 !== i
                   ? null === i
                     ? void w.removeAttr(e, t)
                     : o && 'set' in o && void 0 !== (n = o.set(e, i, t))
-                    ? n
-                    : (e.setAttribute(t, i + ''), i)
+                      ? n
+                      : (e.setAttribute(t, i + ''), i)
                   : o && 'get' in o && null !== (n = o.get(e, t))
-                  ? n
-                  : null == (n = w.find.attr(e, t))
-                  ? void 0
-                  : n);
+                    ? n
+                    : null == (n = w.find.attr(e, t))
+                      ? void 0
+                      : n);
         },
         attrHooks: {
           type: {
@@ -5491,7 +5475,7 @@ class WebAuthn {
           var i,
             n = 0,
             o = t && t.match(M);
-          if (o && 1 === e.nodeType) for (; (i = o[n++]); ) e.removeAttribute(i);
+          if (o && 1 === e.nodeType) for (; (i = o[n++]);) e.removeAttribute(i);
         },
       }),
       (ut = {
@@ -5544,8 +5528,8 @@ class WebAuthn {
                   ? n
                   : (e[t] = i)
                 : o && 'get' in o && null !== (n = o.get(e, t))
-                ? n
-                : e[t]
+                  ? n
+                  : e[t]
             );
         },
         propHooks: {
@@ -5555,24 +5539,24 @@ class WebAuthn {
               return t
                 ? parseInt(t, 10)
                 : _t.test(e.nodeName) || (ft.test(e.nodeName) && e.href)
-                ? 0
-                : -1;
+                  ? 0
+                  : -1;
             },
           },
         },
         propFix: { for: 'htmlFor', class: 'className' },
       }),
       h.optSelected ||
-        (w.propHooks.selected = {
-          get: function (e) {
-            var t = e.parentNode;
-            return t && t.parentNode && t.parentNode.selectedIndex, null;
-          },
-          set: function (e) {
-            var t = e.parentNode;
-            t && (t.selectedIndex, t.parentNode && t.parentNode.selectedIndex);
-          },
-        }),
+      (w.propHooks.selected = {
+        get: function (e) {
+          var t = e.parentNode;
+          return t && t.parentNode && t.parentNode.selectedIndex, null;
+        },
+        set: function (e) {
+          var t = e.parentNode;
+          t && (t.selectedIndex, t.parentNode && t.parentNode.selectedIndex);
+        },
+      }),
       w.each(
         [
           'tabIndex',
@@ -5605,9 +5589,9 @@ class WebAuthn {
               w(this).addClass(e.call(this, t, gt(this)));
             });
           if ((t = yt(e)).length)
-            for (; (i = this[l++]); )
+            for (; (i = this[l++]);)
               if (((o = gt(i)), (n = 1 === i.nodeType && ' ' + mt(o) + ' '))) {
-                for (a = 0; (r = t[a++]); ) n.indexOf(' ' + r + ' ') < 0 && (n += r + ' ');
+                for (a = 0; (r = t[a++]);) n.indexOf(' ' + r + ' ') < 0 && (n += r + ' ');
                 o !== (s = mt(n)) && i.setAttribute('class', s);
               }
           return this;
@@ -5627,10 +5611,10 @@ class WebAuthn {
             });
           if (!arguments.length) return this.attr('class', '');
           if ((t = yt(e)).length)
-            for (; (i = this[l++]); )
+            for (; (i = this[l++]);)
               if (((o = gt(i)), (n = 1 === i.nodeType && ' ' + mt(o) + ' '))) {
-                for (a = 0; (r = t[a++]); )
-                  for (; -1 < n.indexOf(' ' + r + ' '); ) n = n.replace(' ' + r + ' ', ' ');
+                for (a = 0; (r = t[a++]);)
+                  for (; -1 < n.indexOf(' ' + r + ' ');) n = n.replace(' ' + r + ' ', ' ');
                 o !== (s = mt(n)) && i.setAttribute('class', s);
               }
           return this;
@@ -5643,18 +5627,18 @@ class WebAuthn {
               ? this.addClass(e)
               : this.removeClass(e)
             : _(e)
-            ? this.each(function (i) {
+              ? this.each(function (i) {
                 w(this).toggleClass(e.call(this, i, gt(this), t), t);
               })
-            : this.each(function () {
+              : this.each(function () {
                 var t, o, r, a;
                 if (n)
-                  for (o = 0, r = w(this), a = yt(e); (t = a[o++]); )
+                  for (o = 0, r = w(this), a = yt(e); (t = a[o++]);)
                     r.hasClass(t) ? r.removeClass(t) : r.addClass(t);
                 else
                   (void 0 !== e && 'boolean' !== i) ||
                     ((t = gt(this)) && G.set(this, '__className__', t),
-                    this.setAttribute &&
+                      this.setAttribute &&
                       this.setAttribute(
                         'class',
                         t || !1 === e ? '' : G.get(this, '__className__') || '',
@@ -5665,7 +5649,7 @@ class WebAuthn {
           var t,
             i,
             n = 0;
-          for (t = ' ' + e + ' '; (i = this[n++]); )
+          for (t = ' ' + e + ' '; (i = this[n++]);)
             if (1 === i.nodeType && -1 < (' ' + mt(gt(i)) + ' ').indexOf(t)) return !0;
           return !1;
         },
@@ -5685,27 +5669,27 @@ class WebAuthn {
                 (null == (o = n ? e.call(this, i, w(this).val()) : e)
                   ? (o = '')
                   : 'number' == typeof o
-                  ? (o += '')
-                  : Array.isArray(o) &&
+                    ? (o += '')
+                    : Array.isArray(o) &&
                     (o = w.map(o, function (e) {
                       return null == e ? '' : e + '';
                     })),
-                ((t = w.valHooks[this.type] || w.valHooks[this.nodeName.toLowerCase()]) &&
-                  'set' in t &&
-                  void 0 !== t.set(this, o, 'value')) ||
+                  ((t = w.valHooks[this.type] || w.valHooks[this.nodeName.toLowerCase()]) &&
+                    'set' in t &&
+                    void 0 !== t.set(this, o, 'value')) ||
                   (this.value = o));
             }))
           : o
-          ? (t = w.valHooks[o.type] || w.valHooks[o.nodeName.toLowerCase()]) &&
-            'get' in t &&
-            void 0 !== (i = t.get(o, 'value'))
-            ? i
-            : 'string' == typeof (i = o.value)
-            ? i.replace(vt, '')
-            : null == i
-            ? ''
-            : i
-          : void 0;
+            ? (t = w.valHooks[o.type] || w.valHooks[o.nodeName.toLowerCase()]) &&
+              'get' in t &&
+              void 0 !== (i = t.get(o, 'value'))
+              ? i
+              : 'string' == typeof (i = o.value)
+                ? i.replace(vt, '')
+                : null == i
+                  ? ''
+                  : i
+            : void 0;
       },
     }),
       w.extend({
@@ -5738,7 +5722,7 @@ class WebAuthn {
               return s;
             },
             set: function (e, t) {
-              for (var i, n, o = e.options, r = w.makeArray(t), a = o.length; a--; )
+              for (var i, n, o = e.options, r = w.makeArray(t), a = o.length; a--;)
                 ((n = o[a]).selected = -1 < w.inArray(w.valHooks.option.get(n), r)) && (i = !0);
               return i || (e.selectedIndex = -1), r;
             },
@@ -5752,9 +5736,9 @@ class WebAuthn {
           },
         }),
           h.checkOn ||
-            (w.valHooks[this].get = function (e) {
-              return null === e.getAttribute('value') ? 'on' : e.value;
-            });
+          (w.valHooks[this].get = function (e) {
+            return null === e.getAttribute('value') ? 'on' : e.value;
+          });
       }),
       (h.focusin = 'onfocusin' in e);
     var bt = /^(?:focusinfocus|focusoutblur)$/,
@@ -5776,48 +5760,48 @@ class WebAuthn {
           v = p.call(t, 'namespace') ? t.namespace.split('.') : [];
         if (
           ((a = h = s = n = n || m),
-          3 !== n.nodeType &&
+            3 !== n.nodeType &&
             8 !== n.nodeType &&
             !bt.test(y + w.event.triggered) &&
             (-1 < y.indexOf('.') && ((y = (v = y.split('.')).shift()), v.sort()),
-            (c = y.indexOf(':') < 0 && 'on' + y),
-            ((t = t[w.expando] ? t : new w.Event(y, 'object' == typeof t && t)).isTrigger = o
-              ? 2
-              : 3),
-            (t.namespace = v.join('.')),
-            (t.rnamespace = t.namespace
-              ? new RegExp('(^|\\.)' + v.join('\\.(?:.*\\.|)') + '(\\.|$)')
-              : null),
-            (t.result = void 0),
-            t.target || (t.target = n),
-            (i = null == i ? [t] : w.makeArray(i, [t])),
-            (u = w.event.special[y] || {}),
-            o || !u.trigger || !1 !== u.trigger.apply(n, i)))
+              (c = y.indexOf(':') < 0 && 'on' + y),
+              ((t = t[w.expando] ? t : new w.Event(y, 'object' == typeof t && t)).isTrigger = o
+                ? 2
+                : 3),
+              (t.namespace = v.join('.')),
+              (t.rnamespace = t.namespace
+                ? new RegExp('(^|\\.)' + v.join('\\.(?:.*\\.|)') + '(\\.|$)')
+                : null),
+              (t.result = void 0),
+              t.target || (t.target = n),
+              (i = null == i ? [t] : w.makeArray(i, [t])),
+              (u = w.event.special[y] || {}),
+              o || !u.trigger || !1 !== u.trigger.apply(n, i)))
         ) {
           if (!o && !u.noBubble && !f(n)) {
             for (l = u.delegateType || y, bt.test(l + y) || (a = a.parentNode); a; a = a.parentNode)
               g.push(a), (s = a);
             s === (n.ownerDocument || m) && g.push(s.defaultView || s.parentWindow || e);
           }
-          for (r = 0; (a = g[r++]) && !t.isPropagationStopped(); )
+          for (r = 0; (a = g[r++]) && !t.isPropagationStopped();)
             (h = a),
               (t.type = 1 < r ? l : u.bindType || y),
               (d = (G.get(a, 'events') || Object.create(null))[t.type] && G.get(a, 'handle')) &&
-                d.apply(a, i),
+              d.apply(a, i),
               (d = c && a[c]) &&
-                d.apply &&
-                Q(a) &&
-                ((t.result = d.apply(a, i)), !1 === t.result && t.preventDefault());
+              d.apply &&
+              Q(a) &&
+              ((t.result = d.apply(a, i)), !1 === t.result && t.preventDefault());
           return (
             (t.type = y),
             o ||
-              t.isDefaultPrevented() ||
-              (u._default && !1 !== u._default.apply(g.pop(), i)) ||
-              !Q(n) ||
-              (c &&
-                _(n[y]) &&
-                !f(n) &&
-                ((s = n[c]) && (n[c] = null),
+            t.isDefaultPrevented() ||
+            (u._default && !1 !== u._default.apply(g.pop(), i)) ||
+            !Q(n) ||
+            (c &&
+              _(n[y]) &&
+              !f(n) &&
+              ((s = n[c]) && (n[c] = null),
                 (w.event.triggered = y),
                 t.isPropagationStopped() && h.addEventListener(y, wt),
                 n[y](),
@@ -5845,23 +5829,23 @@ class WebAuthn {
         },
       }),
       h.focusin ||
-        w.each({ focus: 'focusin', blur: 'focusout' }, function (e, t) {
-          var i = function (e) {
-            w.event.simulate(t, e.target, w.event.fix(e));
-          };
-          w.event.special[t] = {
-            setup: function () {
-              var n = this.ownerDocument || this.document || this,
-                o = G.access(n, t);
-              o || n.addEventListener(e, i, !0), G.access(n, t, (o || 0) + 1);
-            },
-            teardown: function () {
-              var n = this.ownerDocument || this.document || this,
-                o = G.access(n, t) - 1;
-              o ? G.access(n, t, o) : (n.removeEventListener(e, i, !0), G.remove(n, t));
-            },
-          };
-        });
+      w.each({ focus: 'focusin', blur: 'focusout' }, function (e, t) {
+        var i = function (e) {
+          w.event.simulate(t, e.target, w.event.fix(e));
+        };
+        w.event.special[t] = {
+          setup: function () {
+            var n = this.ownerDocument || this.document || this,
+              o = G.access(n, t);
+            o || n.addEventListener(e, i, !0), G.access(n, t, (o || 0) + 1);
+          },
+          teardown: function () {
+            var n = this.ownerDocument || this.document || this,
+              o = G.access(n, t) - 1;
+            o ? G.access(n, t, o) : (n.removeEventListener(e, i, !0), G.remove(n, t));
+          },
+        };
+      });
     var kt = e.location,
       xt = { guid: Date.now() },
       $t = /\?/;
@@ -5931,10 +5915,10 @@ class WebAuthn {
               return null == i
                 ? null
                 : Array.isArray(i)
-                ? w.map(i, function (e) {
+                  ? w.map(i, function (e) {
                     return { name: t.name, value: e.replace(St, '\r\n') };
                   })
-                : { name: t.name, value: i.replace(St, '\r\n') };
+                  : { name: t.name, value: i.replace(St, '\r\n') };
             })
             .get();
         },
@@ -5956,7 +5940,7 @@ class WebAuthn {
           o = 0,
           r = t.toLowerCase().match(M) || [];
         if (_(i))
-          for (; (n = r[o++]); )
+          for (; (n = r[o++]);)
             '+' === n[0]
               ? ((n = n.slice(1) || '*'), (e[n] = e[n] || []).unshift(i))
               : (e[n] = e[n] || []).push(i);
@@ -6051,7 +6035,7 @@ class WebAuthn {
                 var t;
                 if (c) {
                   if (!a)
-                    for (a = {}; (t = Lt.exec(r)); )
+                    for (a = {}; (t = Lt.exec(r));)
                       a[t[1].toLowerCase() + ' '] = (a[t[1].toLowerCase() + ' '] || []).concat(
                         t[2],
                       );
@@ -6085,10 +6069,10 @@ class WebAuthn {
             };
           if (
             (g.promise($),
-            (h.url = ((t || h.url || kt.href) + '').replace(Mt, kt.protocol + '//')),
-            (h.type = i.method || i.type || h.method || h.type),
-            (h.dataTypes = (h.dataType || '*').toLowerCase().match(M) || ['']),
-            null == h.crossDomain)
+              (h.url = ((t || h.url || kt.href) + '').replace(Mt, kt.protocol + '//')),
+              (h.type = i.method || i.type || h.method || h.type),
+              (h.dataTypes = (h.dataType || '*').toLowerCase().match(M) || ['']),
+              null == h.crossDomain)
           ) {
             l = m.createElement('a');
             try {
@@ -6104,46 +6088,46 @@ class WebAuthn {
               h.processData &&
               'string' != typeof h.data &&
               (h.data = w.param(h.data, h.traditional)),
-            Ht(Pt, h, i, $),
-            c)
+              Ht(Pt, h, i, $),
+              c)
           )
             return $;
           for (d in ((p = w.event && h.global) && 0 == w.active++ && w.event.trigger('ajaxStart'),
-          (h.type = h.type.toUpperCase()),
-          (h.hasContent = !Ot.test(h.type)),
-          (o = h.url.replace(At, '')),
-          h.hasContent
-            ? h.data &&
+            (h.type = h.type.toUpperCase()),
+            (h.hasContent = !Ot.test(h.type)),
+            (o = h.url.replace(At, '')),
+            h.hasContent
+              ? h.data &&
               h.processData &&
               0 === (h.contentType || '').indexOf('application/x-www-form-urlencoded') &&
               (h.data = h.data.replace(Dt, '+'))
-            : ((u = h.url.slice(o.length)),
-              h.data &&
+              : ((u = h.url.slice(o.length)),
+                h.data &&
                 (h.processData || 'string' == typeof h.data) &&
                 ((o += ($t.test(o) ? '&' : '?') + h.data), delete h.data),
-              !1 === h.cache &&
+                !1 === h.cache &&
                 ((o = o.replace(Et, '$1')), (u = ($t.test(o) ? '&' : '?') + '_=' + xt.guid++ + u)),
-              (h.url = o + u)),
-          h.ifModified &&
+                (h.url = o + u)),
+            h.ifModified &&
             (w.lastModified[o] && $.setRequestHeader('If-Modified-Since', w.lastModified[o]),
-            w.etag[o] && $.setRequestHeader('If-None-Match', w.etag[o])),
-          ((h.data && h.hasContent && !1 !== h.contentType) || i.contentType) &&
+              w.etag[o] && $.setRequestHeader('If-None-Match', w.etag[o])),
+            ((h.data && h.hasContent && !1 !== h.contentType) || i.contentType) &&
             $.setRequestHeader('Content-Type', h.contentType),
-          $.setRequestHeader(
-            'Accept',
-            h.dataTypes[0] && h.accepts[h.dataTypes[0]]
-              ? h.accepts[h.dataTypes[0]] + ('*' !== h.dataTypes[0] ? ', ' + It + '; q=0.01' : '')
-              : h.accepts['*'],
-          ),
-          h.headers))
+            $.setRequestHeader(
+              'Accept',
+              h.dataTypes[0] && h.accepts[h.dataTypes[0]]
+                ? h.accepts[h.dataTypes[0]] + ('*' !== h.dataTypes[0] ? ', ' + It + '; q=0.01' : '')
+                : h.accepts['*'],
+            ),
+            h.headers))
             $.setRequestHeader(d, h.headers[d]);
           if (h.beforeSend && (!1 === h.beforeSend.call(_, $, h) || c)) return $.abort();
           if (
             ((x = 'abort'),
-            y.add(h.complete),
-            $.done(h.success),
-            $.fail(h.error),
-            (n = Ht(Nt, h, i, $)))
+              y.add(h.complete),
+              $.done(h.success),
+              $.fail(h.error),
+              (n = Ht(Nt, h, i, $)))
           ) {
             if ((($.readyState = 1), p && f.trigger('ajaxSend', [$, h]), c)) return $;
             h.async &&
@@ -6167,14 +6151,14 @@ class WebAuthn {
               x = i;
             c ||
               ((c = !0),
-              s && e.clearTimeout(s),
-              (n = void 0),
-              (r = l || ''),
-              ($.readyState = 0 < t ? 4 : 0),
-              (d = (200 <= t && t < 300) || 304 === t),
-              a &&
+                s && e.clearTimeout(s),
+                (n = void 0),
+                (r = l || ''),
+                ($.readyState = 0 < t ? 4 : 0),
+                (d = (200 <= t && t < 300) || 304 === t),
+                a &&
                 (b = (function (e, t, i) {
-                  for (var n, o, r, a, s = e.contents, l = e.dataTypes; '*' === l[0]; )
+                  for (var n, o, r, a, s = e.contents, l = e.dataTypes; '*' === l[0];)
                     l.shift(),
                       void 0 === n && (n = e.mimeType || t.getResponseHeader('Content-Type'));
                   if (n)
@@ -6196,68 +6180,68 @@ class WebAuthn {
                   }
                   if (r) return r !== l[0] && l.unshift(r), i[r];
                 })(h, $, a)),
-              !d &&
+                !d &&
                 -1 < w.inArray('script', h.dataTypes) &&
-                (h.converters['text script'] = function () {}),
-              (b = (function (e, t, i, n) {
-                var o,
-                  r,
-                  a,
-                  s,
-                  l,
-                  c = {},
-                  p = e.dataTypes.slice();
-                if (p[1]) for (a in e.converters) c[a.toLowerCase()] = e.converters[a];
-                for (r = p.shift(); r; )
-                  if (
-                    (e.responseFields[r] && (i[e.responseFields[r]] = t),
-                    !l && n && e.dataFilter && (t = e.dataFilter(t, e.dataType)),
-                    (l = r),
-                    (r = p.shift()))
-                  )
-                    if ('*' === r) r = l;
-                    else if ('*' !== l && l !== r) {
-                      if (!(a = c[l + ' ' + r] || c['* ' + r]))
-                        for (o in c)
-                          if (
-                            (s = o.split(' '))[1] === r &&
-                            (a = c[l + ' ' + s[0]] || c['* ' + s[0]])
-                          ) {
-                            !0 === a ? (a = c[o]) : !0 !== c[o] && ((r = s[0]), p.unshift(s[1]));
-                            break;
-                          }
-                      if (!0 !== a)
-                        if (a && e.throws) t = a(t);
-                        else
-                          try {
-                            t = a(t);
-                          } catch (e) {
-                            return {
-                              state: 'parsererror',
-                              error: a ? e : 'No conversion from ' + l + ' to ' + r,
-                            };
-                          }
-                    }
-                return { state: 'success', data: t };
-              })(h, b, $, d)),
-              d
-                ? (h.ifModified &&
+                (h.converters['text script'] = function () { }),
+                (b = (function (e, t, i, n) {
+                  var o,
+                    r,
+                    a,
+                    s,
+                    l,
+                    c = {},
+                    p = e.dataTypes.slice();
+                  if (p[1]) for (a in e.converters) c[a.toLowerCase()] = e.converters[a];
+                  for (r = p.shift(); r;)
+                    if (
+                      (e.responseFields[r] && (i[e.responseFields[r]] = t),
+                        !l && n && e.dataFilter && (t = e.dataFilter(t, e.dataType)),
+                        (l = r),
+                        (r = p.shift()))
+                    )
+                      if ('*' === r) r = l;
+                      else if ('*' !== l && l !== r) {
+                        if (!(a = c[l + ' ' + r] || c['* ' + r]))
+                          for (o in c)
+                            if (
+                              (s = o.split(' '))[1] === r &&
+                              (a = c[l + ' ' + s[0]] || c['* ' + s[0]])
+                            ) {
+                              !0 === a ? (a = c[o]) : !0 !== c[o] && ((r = s[0]), p.unshift(s[1]));
+                              break;
+                            }
+                        if (!0 !== a)
+                          if (a && e.throws) t = a(t);
+                          else
+                            try {
+                              t = a(t);
+                            } catch (e) {
+                              return {
+                                state: 'parsererror',
+                                error: a ? e : 'No conversion from ' + l + ' to ' + r,
+                              };
+                            }
+                      }
+                  return { state: 'success', data: t };
+                })(h, b, $, d)),
+                d
+                  ? (h.ifModified &&
                     ((k = $.getResponseHeader('Last-Modified')) && (w.lastModified[o] = k),
-                    (k = $.getResponseHeader('etag')) && (w.etag[o] = k)),
-                  204 === t || 'HEAD' === h.type
-                    ? (x = 'nocontent')
-                    : 304 === t
-                    ? (x = 'notmodified')
-                    : ((x = b.state), (u = b.data), (d = !(m = b.error))))
-                : ((m = x), (!t && x) || ((x = 'error'), t < 0 && (t = 0))),
-              ($.status = t),
-              ($.statusText = (i || x) + ''),
-              d ? g.resolveWith(_, [u, x, $]) : g.rejectWith(_, [$, x, m]),
-              $.statusCode(v),
-              (v = void 0),
-              p && f.trigger(d ? 'ajaxSuccess' : 'ajaxError', [$, h, d ? u : m]),
-              y.fireWith(_, [$, x]),
-              p && (f.trigger('ajaxComplete', [$, h]), --w.active || w.event.trigger('ajaxStop')));
+                      (k = $.getResponseHeader('etag')) && (w.etag[o] = k)),
+                    204 === t || 'HEAD' === h.type
+                      ? (x = 'nocontent')
+                      : 304 === t
+                        ? (x = 'notmodified')
+                        : ((x = b.state), (u = b.data), (d = !(m = b.error))))
+                  : ((m = x), (!t && x) || ((x = 'error'), t < 0 && (t = 0))),
+                ($.status = t),
+                ($.statusText = (i || x) + ''),
+                d ? g.resolveWith(_, [u, x, $]) : g.rejectWith(_, [$, x, m]),
+                $.statusCode(v),
+                (v = void 0),
+                p && f.trigger(d ? 'ajaxSuccess' : 'ajaxError', [$, h, d ? u : m]),
+                y.fireWith(_, [$, x]),
+                p && (f.trigger('ajaxComplete', [$, h]), --w.active || w.event.trigger('ajaxStop')));
           }
           return $;
         },
@@ -6294,7 +6278,7 @@ class WebAuthn {
           cache: !0,
           async: !1,
           global: !1,
-          converters: { 'text script': function () {} },
+          converters: { 'text script': function () { } },
           dataFilter: function (e) {
             w.globalEval(e, t, i);
           },
@@ -6305,12 +6289,12 @@ class WebAuthn {
           var t;
           return (
             this[0] &&
-              (_(e) && (e = e.call(this[0])),
+            (_(e) && (e = e.call(this[0])),
               (t = w(e, this[0].ownerDocument).eq(0).clone(!0)),
               this[0].parentNode && t.insertBefore(this[0]),
               t
                 .map(function () {
-                  for (var e = this; e.firstElementChild; ) e = e.firstElementChild;
+                  for (var e = this; e.firstElementChild;) e = e.firstElementChild;
                   return e;
                 })
                 .append(this)),
@@ -6320,13 +6304,13 @@ class WebAuthn {
         wrapInner: function (e) {
           return _(e)
             ? this.each(function (t) {
-                w(this).wrapInner(e.call(this, t));
-              })
+              w(this).wrapInner(e.call(this, t));
+            })
             : this.each(function () {
-                var t = w(this),
-                  i = t.contents();
-                i.length ? i.wrapAll(e) : t.append(e);
-              });
+              var t = w(this),
+                i = t.contents();
+              i.length ? i.wrapAll(e) : t.append(e);
+            });
         },
         wrap: function (e) {
           var t = _(e);
@@ -6354,7 +6338,7 @@ class WebAuthn {
       (w.ajaxSettings.xhr = function () {
         try {
           return new e.XMLHttpRequest();
-        } catch (e) {}
+        } catch (e) { }
       });
     var Rt = { 0: 200, 1223: 204 },
       Wt = w.ajaxSettings.xhr();
@@ -6370,27 +6354,27 @@ class WebAuthn {
               if ((s.open(t.type, t.url, t.async, t.username, t.password), t.xhrFields))
                 for (a in t.xhrFields) s[a] = t.xhrFields[a];
               for (a in (t.mimeType && s.overrideMimeType && s.overrideMimeType(t.mimeType),
-              t.crossDomain || o['X-Requested-With'] || (o['X-Requested-With'] = 'XMLHttpRequest'),
-              o))
+                t.crossDomain || o['X-Requested-With'] || (o['X-Requested-With'] = 'XMLHttpRequest'),
+                o))
                 s.setRequestHeader(a, o[a]);
               (i = function (e) {
                 return function () {
                   i &&
                     ((i = n = s.onload = s.onerror = s.onabort = s.ontimeout = s.onreadystatechange = null),
-                    'abort' === e
-                      ? s.abort()
-                      : 'error' === e
-                      ? 'number' != typeof s.status
-                        ? r(0, 'error')
-                        : r(s.status, s.statusText)
-                      : r(
-                          Rt[s.status] || s.status,
-                          s.statusText,
-                          'text' !== (s.responseType || 'text') || 'string' != typeof s.responseText
-                            ? { binary: s.response }
-                            : { text: s.responseText },
-                          s.getAllResponseHeaders(),
-                        ));
+                      'abort' === e
+                        ? s.abort()
+                        : 'error' === e
+                          ? 'number' != typeof s.status
+                            ? r(0, 'error')
+                            : r(s.status, s.statusText)
+                          : r(
+                            Rt[s.status] || s.status,
+                            s.statusText,
+                            'text' !== (s.responseType || 'text') || 'string' != typeof s.responseText
+                              ? { binary: s.response }
+                              : { text: s.responseText },
+                            s.getAllResponseHeaders(),
+                          ));
                 };
               }),
                 (s.onload = i()),
@@ -6398,11 +6382,11 @@ class WebAuthn {
                 void 0 !== s.onabort
                   ? (s.onabort = n)
                   : (s.onreadystatechange = function () {
-                      4 === s.readyState &&
-                        e.setTimeout(function () {
-                          i && n();
-                        });
-                    }),
+                    4 === s.readyState &&
+                      e.setTimeout(function () {
+                        i && n();
+                      });
+                  }),
                 (i = i('abort'));
               try {
                 s.send((t.hasContent && t.data) || null);
@@ -6473,9 +6457,9 @@ class WebAuthn {
             (Qt.test(t.url)
               ? 'url'
               : 'string' == typeof t.data &&
-                0 === (t.contentType || '').indexOf('application/x-www-form-urlencoded') &&
-                Qt.test(t.data) &&
-                'data');
+              0 === (t.contentType || '').indexOf('application/x-www-form-urlencoded') &&
+              Qt.test(t.data) &&
+              'data');
         if (s || 'jsonp' === t.dataTypes[0])
           return (
             (o = t.jsonpCallback = _(t.jsonpCallback) ? t.jsonpCallback() : t.jsonpCallback),
@@ -6502,17 +6486,17 @@ class WebAuthn {
       (h.createHTMLDocument =
         (((Yt = m.implementation.createHTMLDocument('').body).innerHTML =
           '<form></form><form></form>'),
-        2 === Yt.childNodes.length)),
+          2 === Yt.childNodes.length)),
       (w.parseHTML = function (e, t, i) {
         return 'string' != typeof e
           ? []
           : ('boolean' == typeof t && ((i = t), (t = !1)),
             t ||
-              (h.createHTMLDocument
-                ? (((n = (t = m.implementation.createHTMLDocument('')).createElement('base')).href =
-                    m.location.href),
-                  t.head.appendChild(n))
-                : (t = m)),
+            (h.createHTMLDocument
+              ? (((n = (t = m.implementation.createHTMLDocument('')).createElement('base')).href =
+                m.location.href),
+                t.head.appendChild(n))
+              : (t = m)),
             (r = !i && []),
             (o = j.exec(e))
               ? [t.createElement(o[1])]
@@ -6529,19 +6513,19 @@ class WebAuthn {
           -1 < s && ((n = mt(e.slice(s))), (e = e.slice(0, s))),
           _(t) ? ((i = t), (t = void 0)) : t && 'object' == typeof t && (o = 'POST'),
           0 < a.length &&
-            w
-              .ajax({ url: e, type: o || 'GET', dataType: 'html', data: t })
-              .done(function (e) {
-                (r = arguments), a.html(n ? w('<div>').append(w.parseHTML(e)).find(n) : e);
-              })
-              .always(
-                i &&
-                  function (e, t) {
-                    a.each(function () {
-                      i.apply(this, r || [e.responseText, t, e]);
-                    });
-                  },
-              ),
+          w
+            .ajax({ url: e, type: o || 'GET', dataType: 'html', data: t })
+            .done(function (e) {
+              (r = arguments), a.html(n ? w('<div>').append(w.parseHTML(e)).find(n) : e);
+            })
+            .always(
+              i &&
+              function (e, t) {
+                a.each(function () {
+                  i.apply(this, r || [e.responseText, t, e]);
+                });
+              },
+            ),
           this
         );
       }),
@@ -6584,8 +6568,8 @@ class WebAuthn {
             return void 0 === e
               ? this
               : this.each(function (t) {
-                  w.offset.setOffset(this, e, t);
-                });
+                w.offset.setOffset(this, e, t);
+              });
           var t,
             i,
             n = this[0];
@@ -6616,7 +6600,7 @@ class WebAuthn {
                 e !== n &&
                 1 === e.nodeType &&
                 (((o = w(e).offset()).top += w.css(e, 'borderTopWidth', !0)),
-                (o.left += w.css(e, 'borderLeftWidth', !0)));
+                  (o.left += w.css(e, 'borderLeftWidth', !0)));
             }
             return {
               top: t.top - o.top - w.css(n, 'marginTop', !0),
@@ -6626,7 +6610,7 @@ class WebAuthn {
         },
         offsetParent: function () {
           return this.map(function () {
-            for (var e = this.offsetParent; e && 'static' === w.css(e, 'position'); )
+            for (var e = this.offsetParent; e && 'static' === w.css(e, 'position');)
               e = e.offsetParent;
             return e || ne;
           });
@@ -6668,17 +6652,17 @@ class WebAuthn {
                     ? t['inner' + e]
                     : t.document.documentElement['client' + e]
                   : 9 === t.nodeType
-                  ? ((r = t.documentElement),
-                    Math.max(
-                      t.body['scroll' + e],
-                      r['scroll' + e],
-                      t.body['offset' + e],
-                      r['offset' + e],
-                      r['client' + e],
-                    ))
-                  : void 0 === o
-                  ? w.css(t, i, s)
-                  : w.style(t, i, o, s);
+                    ? ((r = t.documentElement),
+                      Math.max(
+                        t.body['scroll' + e],
+                        r['scroll' + e],
+                        t.body['offset' + e],
+                        r['offset' + e],
+                        r['client' + e],
+                      ))
+                    : void 0 === o
+                      ? w.css(t, i, s)
+                      : w.style(t, i, o, s);
               },
               t,
               a ? o : void 0,
@@ -6753,10 +6737,10 @@ class WebAuthn {
         return null == e ? '' : (e + '').replace(Vt, '');
       }),
       'function' == typeof define &&
-        define.amd &&
-        define('jquery', [], function () {
-          return w;
-        });
+      define.amd &&
+      define('jquery', [], function () {
+        return w;
+      });
     var Gt = e.jQuery,
       Jt = e.$;
     return (
@@ -6781,11 +6765,11 @@ class WebAuthn {
     'use strict';
     'function' == typeof define && define.amd
       ? define(['jquery'], function (t) {
-          return e(t, window);
-        })
+        return e(t, window);
+      })
       : 'object' == typeof module && module.exports
-      ? (module.exports = e(require('jquery'), window))
-      : e(jQuery, window);
+        ? (module.exports = e(require('jquery'), window))
+        : e(jQuery, window);
   })(function (e, t) {
     'use strict';
     function i(t) {
@@ -6839,71 +6823,71 @@ class WebAuthn {
       var t = Array.prototype.slice.call(arguments);
       return 'string' == typeof e && '#' === e && (t[0] = []), s.apply(this, t);
     }),
-    (e.fn.init.prototype = e.fn),
-    (e.find = function (e) {
-      var i = Array.prototype.slice.call(arguments);
-      if ('string' == typeof e && c.test(e))
-        try {
-          t.document.querySelector(e);
-        } catch (n) {
-          e = e.replace(p, function (e, t, i, n) {
-            return '[' + t + i + '"' + n + '"]';
-          });
+      (e.fn.init.prototype = e.fn),
+      (e.find = function (e) {
+        var i = Array.prototype.slice.call(arguments);
+        if ('string' == typeof e && c.test(e))
           try {
-            t.document.querySelector(e), i[0], (i[0] = e);
-          } catch (e) {
-            i[0];
+            t.document.querySelector(e);
+          } catch (n) {
+            e = e.replace(p, function (e, t, i, n) {
+              return '[' + t + i + '"' + n + '"]';
+            });
+            try {
+              t.document.querySelector(e), i[0], (i[0] = e);
+            } catch (e) {
+              i[0];
+            }
           }
-        }
-      return l.apply(this, i);
-    }),
-    l))
+        return l.apply(this, i);
+      }),
+      l))
       Object.prototype.hasOwnProperty.call(l, r) && (e.find[r] = l[r]);
     if (
       (o(e.fn, 'size', function () {
         return this.length;
       }),
-      o(e, 'parseJSON', function () {
-        return JSON.parse.apply(null, arguments);
-      }),
-      o(e, 'holdReady', e.holdReady),
-      o(e, 'unique', e.uniqueSort),
-      n(e.expr, 'filters', e.expr.pseudos),
-      n(e.expr, ':', e.expr.pseudos),
-      i('3.1.1') &&
+        o(e, 'parseJSON', function () {
+          return JSON.parse.apply(null, arguments);
+        }),
+        o(e, 'holdReady', e.holdReady),
+        o(e, 'unique', e.uniqueSort),
+        n(e.expr, 'filters', e.expr.pseudos),
+        n(e.expr, ':', e.expr.pseudos),
+        i('3.1.1') &&
         o(e, 'trim', function (e) {
           return null == e ? '' : (e + '').replace(d, '');
         }),
-      i('3.2.0') &&
+        i('3.2.0') &&
         o(e, 'nodeName', function (e, t) {
           return e.nodeName && e.nodeName.toLowerCase() === t.toLowerCase();
         }),
-      i('3.3.0') &&
+        i('3.3.0') &&
         (o(e, 'isNumeric', function (e) {
           var t = typeof e;
           return ('number' === t || 'string' === t) && !isNaN(e - parseFloat(e));
         }),
-        e.each(
-          'Boolean Number String Function Array Date RegExp Object Error Symbol'.split(' '),
-          function (e, t) {
-            a['[object ' + t + ']'] = t.toLowerCase();
-          },
-        ),
-        o(e, 'type', function (e) {
-          return null == e
-            ? e + ''
-            : 'object' == typeof e || 'function' == typeof e
-            ? a[Object.prototype.toString.call(e)] || 'object'
-            : typeof e;
-        }),
-        o(e, 'isFunction', function (e) {
-          return 'function' == typeof e;
-        }),
-        o(e, 'isWindow', function (e) {
-          return null != e && e === e.window;
-        }),
-        o(e, 'isArray', Array.isArray)),
-      e.ajax)
+          e.each(
+            'Boolean Number String Function Array Date RegExp Object Error Symbol'.split(' '),
+            function (e, t) {
+              a['[object ' + t + ']'] = t.toLowerCase();
+            },
+          ),
+          o(e, 'type', function (e) {
+            return null == e
+              ? e + ''
+              : 'object' == typeof e || 'function' == typeof e
+                ? a[Object.prototype.toString.call(e)] || 'object'
+                : typeof e;
+          }),
+          o(e, 'isFunction', function (e) {
+            return 'function' == typeof e;
+          }),
+          o(e, 'isWindow', function (e) {
+            return null != e && e === e.window;
+          }),
+          o(e, 'isArray', Array.isArray)),
+        e.ajax)
     ) {
       var u = e.ajax;
       e.ajax = function () {
@@ -6935,14 +6919,14 @@ class WebAuthn {
         return void 0 !== t && 'boolean' != typeof t
           ? _.apply(this, arguments)
           : this.each(function () {
-              var i = (this.getAttribute && this.getAttribute('class')) || '';
-              i && e.data(this, '__className__', i),
-                this.setAttribute &&
-                  this.setAttribute(
-                    'class',
-                    i || !1 === t ? '' : e.data(this, '__className__') || '',
-                  );
-            });
+            var i = (this.getAttribute && this.getAttribute('class')) || '';
+            i && e.data(this, '__className__', i),
+              this.setAttribute &&
+              this.setAttribute(
+                'class',
+                i || !1 === t ? '' : e.data(this, '__className__') || '',
+              );
+          });
       });
     var g,
       y = /^[a-z]/,
@@ -6968,12 +6952,12 @@ class WebAuthn {
         return o;
       }),
       i('3.4.0') &&
-        'undefined' != typeof Proxy &&
-        (e.cssProps = new Proxy(e.cssProps || {}, {
-          set: function () {
-            return Reflect.set.apply(this, arguments);
-          },
-        })),
+      'undefined' != typeof Proxy &&
+      (e.cssProps = new Proxy(e.cssProps || {}, {
+        set: function () {
+          return Reflect.set.apply(this, arguments);
+        },
+      })),
       e.cssNumber || (e.cssNumber = {}),
       (g = e.fn.css),
       (e.fn.css = function (t, i) {
@@ -6981,11 +6965,11 @@ class WebAuthn {
           o = this;
         return (
           t &&
-            'object' == typeof t &&
-            !Array.isArray(t) &&
-            e.each(t, function (t, i) {
-              e.fn.css.call(o, t, i);
-            }),
+          'object' == typeof t &&
+          !Array.isArray(t) &&
+          e.each(t, function (t, i) {
+            e.fn.css.call(o, t, i);
+          }),
           'number' == typeof i && !b((n = m(t))) && e.cssNumber[n],
           g.apply(this, arguments)
         );
@@ -7007,7 +6991,7 @@ class WebAuthn {
           ? (arguments.length > 2 && (o[i] = n), o[i])
           : w.apply(this, arguments);
       }),
-      e.fx)
+        e.fx)
     ) {
       var k,
         x = e.Tween.prototype.run,
@@ -7021,16 +7005,16 @@ class WebAuthn {
         (k = e.fx.interval || 13),
         'jQuery.fx.interval is deprecated',
         t.requestAnimationFrame &&
-          Object.defineProperty(e.fx, 'interval', {
-            configurable: !0,
-            enumerable: !0,
-            get: function () {
-              return t.document.hidden, k;
-            },
-            set: function (e) {
-              k = e;
-            },
-          });
+        Object.defineProperty(e.fx, 'interval', {
+          configurable: !0,
+          enumerable: !0,
+          get: function () {
+            return t.document.hidden, k;
+          },
+          set: function (e) {
+            k = e;
+          },
+        });
     }
     var C = e.fn.load,
       S = e.event.add,
@@ -7043,9 +7027,9 @@ class WebAuthn {
           n = t.type,
           o = this.fixHooks[n],
           r = e.event.props;
-        if (r.length) for (r.join(); r.length; ) e.event.addProp(r.pop());
+        if (r.length) for (r.join(); r.length;) e.event.addProp(r.pop());
         if (o && !o._migrated_ && ((o._migrated_ = !0), (r = o.props) && r.length))
-          for (; r.length; ) e.event.addProp(r.pop());
+          for (; r.length;) e.event.addProp(r.pop());
         return (i = z.call(this, t)), o && o.filter ? o.filter(i, t) : i;
       }),
       (e.event.add = function (e, i) {
@@ -7122,10 +7106,10 @@ class WebAuthn {
         return !e || (e.nodeType && e.getBoundingClientRect)
           ? E.apply(this, arguments)
           : arguments.length
-          ? this
-          : void 0;
+            ? this
+            : void 0;
       }),
-      e.ajax)
+        e.ajax)
     ) {
       var L = e.param;
       e.param = function (t, i) {
@@ -7138,7 +7122,7 @@ class WebAuthn {
       ((e.fn.andSelf = function () {
         return O.apply(this, arguments);
       }),
-      e.Deferred)
+        e.Deferred)
     ) {
       var M = e.Deferred,
         P = [
@@ -7196,7 +7180,7 @@ class WebAuthn {
     },
   });
 var console = console || {};
-(console.log = console.log || function () {}), (console.info = console.info || function () {});
+(console.log = console.log || function () { }), (console.info = console.info || function () { });
 var fun_pc = [],
   fun_pc_large = [],
   fun_tablet = [],
@@ -7251,105 +7235,105 @@ function _createClass(e, t, i) {
             ? $(r).size() && s && (a(), console.log('mode ' + t + ':' + r))
             : s && (a(), console.log('mode ' + t + ':' + r))
           : r
-          ? $(r).size() && (a(), console.log('mode ' + t + ':' + r))
-          : (a(), console.log('mode ' + t + ':' + r));
+            ? $(r).size() && (a(), console.log('mode ' + t + ':' + r))
+            : (a(), console.log('mode ' + t + ':' + r));
       }
     }
   });
 var iaiGetAjax = (function () {
-    function e(t) {
-      _classCallCheck(this, e), (this.data = {}), (this.cache = {}), (this.fn = []);
-    }
-    return (
-      _createClass(e, [
-        {
-          key: 'projector',
-          value: function () {
-            (this.data.Projector = { format: 'json', params: {} }), this.fn.push(fn);
-          },
+  function e(t) {
+    _classCallCheck(this, e), (this.data = {}), (this.cache = {}), (this.fn = []);
+  }
+  return (
+    _createClass(e, [
+      {
+        key: 'projector',
+        value: function () {
+          (this.data.Projector = { format: 'json', params: {} }), this.fn.push(fn);
         },
-        {
-          key: 'basket',
-          value: function (e) {
-            (this.data.Basket = {}), this.fn.push(e);
-          },
+      },
+      {
+        key: 'basket',
+        value: function (e) {
+          (this.data.Basket = {}), this.fn.push(e);
         },
-        {
-          key: 'wishlist',
-          value: function (e) {
-            (this.data.Wishlist = {}), this.fn.push(e);
-          },
+      },
+      {
+        key: 'wishlist',
+        value: function (e) {
+          (this.data.Wishlist = {}), this.fn.push(e);
         },
-        {
-          key: 'comparers',
-          value: function (e) {
-            (this.data.Comparers = {}), this.fn.push(e);
-          },
+      },
+      {
+        key: 'comparers',
+        value: function (e) {
+          (this.data.Comparers = {}), this.fn.push(e);
         },
-        {
-          key: 'snippets',
-          value: function (e, t) {
-            this.data.Snippets
-              ? console.log('Snippets data exist')
-              : (this.data.Snippets = {
-                  format: 'json',
-                  params: {
-                    mobile: t.mobile,
-                    tablet: t.tablet,
-                    pc: t.pc,
-                    request_uri: t.request_uri,
-                    additional_ajax: t.additional_ajax,
-                  },
-                }),
-              this.fn.push(e);
-          },
-        },
-        {
-          key: 'toplayersAndWidgets',
-          value: function (e, t) {
-            this.data.ToplayersAndWidgets
-              ? console.log('ToplayersAndWidgets data exist')
-              : (this.data.ToplayersAndWidgets = {
-                  format: 'json',
-                  params: {
-                    mobile: t.mobile,
-                    tablet: t.tablet,
-                    pc: t.pc,
-                    request_uri: t.request_uri,
-                    additional_ajax: t.additional_ajax,
-                  },
-                }),
-              this.fn.push(e);
-          },
-        },
-        { key: 'hotspot', value: function (e, t) {} },
-        { key: 'hotspotMain', value: function (e, t) {} },
-        { key: 'hotspotProjector', value: function (e, t) {} },
-        { key: 'hotspotSearch', value: function (e, t) {} },
-        {
-          key: 'init',
-          value: function () {
-            var e = 'request=' + JSON.stringify(this.data),
-              t = this;
-            $.ajax({
-              type: 'POST',
-              url: '/ajax/get.php',
-              dataType: 'JSON',
-              data: e,
-              success: function (e) {
-                (t.cache = e),
-                  t.fn.forEach(function (e) {
-                    e(t.cache);
-                  });
+      },
+      {
+        key: 'snippets',
+        value: function (e, t) {
+          this.data.Snippets
+            ? console.log('Snippets data exist')
+            : (this.data.Snippets = {
+              format: 'json',
+              params: {
+                mobile: t.mobile,
+                tablet: t.tablet,
+                pc: t.pc,
+                request_uri: t.request_uri,
+                additional_ajax: t.additional_ajax,
               },
-              error: function () {},
-            });
-          },
+            }),
+            this.fn.push(e);
         },
-      ]),
-      e
-    );
-  })(),
+      },
+      {
+        key: 'toplayersAndWidgets',
+        value: function (e, t) {
+          this.data.ToplayersAndWidgets
+            ? console.log('ToplayersAndWidgets data exist')
+            : (this.data.ToplayersAndWidgets = {
+              format: 'json',
+              params: {
+                mobile: t.mobile,
+                tablet: t.tablet,
+                pc: t.pc,
+                request_uri: t.request_uri,
+                additional_ajax: t.additional_ajax,
+              },
+            }),
+            this.fn.push(e);
+        },
+      },
+      { key: 'hotspot', value: function (e, t) { } },
+      { key: 'hotspotMain', value: function (e, t) { } },
+      { key: 'hotspotProjector', value: function (e, t) { } },
+      { key: 'hotspotSearch', value: function (e, t) { } },
+      {
+        key: 'init',
+        value: function () {
+          var e = 'request=' + JSON.stringify(this.data),
+            t = this;
+          $.ajax({
+            type: 'POST',
+            url: '/ajax/get.php',
+            dataType: 'JSON',
+            data: e,
+            success: function (e) {
+              (t.cache = e),
+                t.fn.forEach(function (e) {
+                  e(t.cache);
+                });
+            },
+            error: function () { },
+          });
+        },
+      },
+    ]),
+    e
+  );
+})(),
   iaiGet = new iaiGetAjax();
 (app_shop.fn.change_url = function (e) {
   history.pushState && history.pushState({ foo: 'bar' }, '', decodeURIComponent(e));
@@ -7386,14 +7370,14 @@ var iaiGetAjax = (function () {
   (app_shop.fn.setGrid = function () {
     1 == app_shop.vars.view
       ? $('.setMobileGrid').each(function () {
-          var e = $(this).data('item');
-          $(e).before('<del class="domHandler" data-item="' + e + '" style="display:none">'),
-            $(this).append($(e));
-        })
+        var e = $(this).data('item');
+        $(e).before('<del class="domHandler" data-item="' + e + '" style="display:none">'),
+          $(this).append($(e));
+      })
       : $('.domHandler').each(function () {
-          var e = $(this).data('item');
-          $(this).after($(e)), $(this).remove();
-        });
+        var e = $(this).data('item');
+        $(this).after($(e)), $(this).remove();
+      });
   }),
   (app_shop.fn.runAjaxFn = function () {
     app_shop.vars.view = Math.round($('#viewType').width());
@@ -7411,7 +7395,7 @@ var iaiGetAjax = (function () {
       $(window).on('resize.view', function () {
         (app_shop.vars.view = Math.round($('#viewType').width())),
           app_shop.vars.view != e &&
-            ((e = app_shop.vars.view),
+          ((e = app_shop.vars.view),
             app_shop.runArr(app_shop.fnrun[app_shop.vars.view], app_shop.vars.view),
             app_shop.fn.setGrid());
       }),
@@ -7420,11 +7404,11 @@ var iaiGetAjax = (function () {
   }),
   (app_shop.fn.getRwdSrc = function (e) {
     var t = [
-        e.data('src_mobile'),
-        e.data('src_tablet'),
-        e.data('src_desktop'),
-        e.data('src_desktop'),
-      ],
+      e.data('src_mobile'),
+      e.data('src_tablet'),
+      e.data('src_desktop'),
+      e.data('src_desktop'),
+    ],
       i = t[app_shop.vars.view - 1];
     return (
       i || ((t = t.join(' ').split(' ')).length && (i = 1 == app_shop.vars.view ? t[0] : t.pop())),
@@ -7492,8 +7476,8 @@ var iaiGetAjax = (function () {
     'function' == typeof define && define.amd
       ? define(['jquery'], e)
       : 'undefined' != typeof exports
-      ? (module.exports = e(require('jquery')))
-      : e(jQuery);
+        ? (module.exports = e(require('jquery')))
+        : e(jQuery);
   })(function (e) {
     'use strict';
     var t = window.Slick || {};
@@ -7613,7 +7597,7 @@ var iaiGetAjax = (function () {
           void 0 !== document.mozHidden
             ? ((r.hidden = 'mozHidden'), (r.visibilityChange = 'mozvisibilitychange'))
             : void 0 !== document.webkitHidden &&
-              ((r.hidden = 'webkitHidden'), (r.visibilityChange = 'webkitvisibilitychange')),
+            ((r.hidden = 'webkitHidden'), (r.visibilityChange = 'webkitvisibilitychange')),
           (r.autoPlay = e.proxy(r.autoPlay, r)),
           (r.autoPlayClear = e.proxy(r.autoPlayClear, r)),
           (r.autoPlayIterator = e.proxy(r.autoPlayIterator, r)),
@@ -7645,11 +7629,11 @@ var iaiGetAjax = (function () {
             ? 0 === i && 0 === o.$slides.length
               ? e(t).appendTo(o.$slideTrack)
               : n
-              ? e(t).insertBefore(o.$slides.eq(i))
-              : e(t).insertAfter(o.$slides.eq(i))
+                ? e(t).insertBefore(o.$slides.eq(i))
+                : e(t).insertAfter(o.$slides.eq(i))
             : !0 === n
-            ? e(t).prependTo(o.$slideTrack)
-            : e(t).appendTo(o.$slideTrack),
+              ? e(t).prependTo(o.$slideTrack)
+              : e(t).appendTo(o.$slideTrack),
           (o.$slides = o.$slideTrack.children(this.options.slide)),
           o.$slideTrack.children(this.options.slide).detach(),
           o.$slideTrack.append(o.$slides),
@@ -7680,30 +7664,30 @@ var iaiGetAjax = (function () {
               ? o.$slideTrack.animate({ left: t }, o.options.speed, o.options.easing, i)
               : o.$slideTrack.animate({ top: t }, o.options.speed, o.options.easing, i)
             : !1 === o.cssTransitions
-            ? (!0 === o.options.rtl && (o.currentLeft = -o.currentLeft),
-              e({ animStart: o.currentLeft }).animate(
-                { animStart: t },
-                {
-                  duration: o.options.speed,
-                  easing: o.options.easing,
-                  step: function (e) {
-                    (e = Math.ceil(e)),
-                      !1 === o.options.vertical
-                        ? ((n[o.animType] = 'translate(' + e + 'px, 0px)'), o.$slideTrack.css(n))
-                        : ((n[o.animType] = 'translate(0px,' + e + 'px)'), o.$slideTrack.css(n));
+              ? (!0 === o.options.rtl && (o.currentLeft = -o.currentLeft),
+                e({ animStart: o.currentLeft }).animate(
+                  { animStart: t },
+                  {
+                    duration: o.options.speed,
+                    easing: o.options.easing,
+                    step: function (e) {
+                      (e = Math.ceil(e)),
+                        !1 === o.options.vertical
+                          ? ((n[o.animType] = 'translate(' + e + 'px, 0px)'), o.$slideTrack.css(n))
+                          : ((n[o.animType] = 'translate(0px,' + e + 'px)'), o.$slideTrack.css(n));
+                    },
+                    complete: function () {
+                      i && i.call();
+                    },
                   },
-                  complete: function () {
-                    i && i.call();
-                  },
-                },
-              ))
-            : (o.applyTransition(),
-              (t = Math.ceil(t)),
-              !1 === o.options.vertical
-                ? (n[o.animType] = 'translate3d(' + t + 'px, 0px, 0px)')
-                : (n[o.animType] = 'translate3d(0px,' + t + 'px, 0px)'),
-              o.$slideTrack.css(n),
-              i &&
+                ))
+              : (o.applyTransition(),
+                (t = Math.ceil(t)),
+                !1 === o.options.vertical
+                  ? (n[o.animType] = 'translate3d(' + t + 'px, 0px, 0px)')
+                  : (n[o.animType] = 'translate3d(0px,' + t + 'px, 0px)'),
+                o.$slideTrack.css(n),
+                i &&
                 setTimeout(function () {
                   o.disableTransition(), i.call();
                 }, o.options.speed));
@@ -7726,7 +7710,7 @@ var iaiGetAjax = (function () {
           i = {};
         !1 === t.options.fade
           ? (i[t.transitionType] =
-              t.transformType + ' ' + t.options.speed + 'ms ' + t.options.cssEase)
+            t.transformType + ' ' + t.options.speed + 'ms ' + t.options.cssEase)
           : (i[t.transitionType] = 'opacity ' + t.options.speed + 'ms ' + t.options.cssEase),
           !1 === t.options.fade ? t.$slideTrack.css(i) : t.$slides.eq(e).css(i);
       }),
@@ -7734,7 +7718,7 @@ var iaiGetAjax = (function () {
         var e = this;
         e.autoPlayClear(),
           e.slideCount > e.options.slidesToShow &&
-            (e.autoPlayTimer = setInterval(e.autoPlayIterator, e.options.autoplaySpeed));
+          (e.autoPlayTimer = setInterval(e.autoPlayIterator, e.options.autoplaySpeed));
       }),
       (t.prototype.autoPlayClear = function () {
         this.autoPlayTimer && clearInterval(this.autoPlayTimer);
@@ -7749,24 +7733,24 @@ var iaiGetAjax = (function () {
             (1 === e.direction && e.currentSlide + 1 === e.slideCount - 1
               ? (e.direction = 0)
               : 0 === e.direction &&
-                ((t = e.currentSlide - e.options.slidesToScroll),
+              ((t = e.currentSlide - e.options.slidesToScroll),
                 e.currentSlide - 1 == 0 && (e.direction = 1))),
-          e.slideHandler(t));
+            e.slideHandler(t));
       }),
       (t.prototype.buildArrows = function () {
         var t = this;
         !0 === t.options.arrows &&
           ((t.$prevArrow = e(t.options.prevArrow).addClass('slick-arrow')),
-          (t.$nextArrow = e(t.options.nextArrow).addClass('slick-arrow')),
-          t.slideCount > t.options.slidesToShow
-            ? (t.$prevArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex'),
-              t.$nextArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex'),
-              t.htmlExpr.test(t.options.prevArrow) &&
+            (t.$nextArrow = e(t.options.nextArrow).addClass('slick-arrow')),
+            t.slideCount > t.options.slidesToShow
+              ? (t.$prevArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex'),
+                t.$nextArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex'),
+                t.htmlExpr.test(t.options.prevArrow) &&
                 t.$prevArrow.prependTo(t.options.appendArrows),
-              t.htmlExpr.test(t.options.nextArrow) && t.$nextArrow.appendTo(t.options.appendArrows),
-              !0 !== t.options.infinite &&
+                t.htmlExpr.test(t.options.nextArrow) && t.$nextArrow.appendTo(t.options.appendArrows),
+                !0 !== t.options.infinite &&
                 t.$prevArrow.addClass('slick-disabled').attr('aria-disabled', 'true'))
-            : t.$prevArrow
+              : t.$prevArrow
                 .add(t.$nextArrow)
                 .addClass('slick-hidden')
                 .attr({ 'aria-disabled': 'true', tabindex: '-1' }));
@@ -7778,8 +7762,8 @@ var iaiGetAjax = (function () {
         if (!0 === n.options.dots) {
           for (
             n.$slider.addClass('slick-dotted'),
-              i = e('<ul />').addClass(n.options.dotsClass),
-              t = 0;
+            i = e('<ul />').addClass(n.options.dotsClass),
+            t = 0;
             t <= n.getDotCount();
             t += 1
           )
@@ -7807,7 +7791,7 @@ var iaiGetAjax = (function () {
           (t.$list = t.$slideTrack.wrap('<div class="slick-list"/>').parent()),
           t.$slideTrack.css('opacity', 0),
           (!0 !== t.options.centerMode && !0 !== t.options.swipeToSlide) ||
-            (t.options.slidesToScroll = 1),
+          (t.options.slidesToScroll = 1),
           e('img[data-lazy]', t.$slider).not('[src]').addClass('slick-loading'),
           t.setupInfinite(),
           t.buildArrows(),
@@ -7864,9 +7848,9 @@ var iaiGetAjax = (function () {
           ('window' === a.respondTo
             ? (r = c)
             : 'slider' === a.respondTo
-            ? (r = l)
-            : 'min' === a.respondTo && (r = Math.min(c, l)),
-          a.options.responsive && a.options.responsive.length && null !== a.options.responsive)
+              ? (r = l)
+              : 'min' === a.respondTo && (r = Math.min(c, l)),
+            a.options.responsive && a.options.responsive.length && null !== a.options.responsive)
         ) {
           for (n in ((o = null), a.breakpoints))
             a.breakpoints.hasOwnProperty(n) &&
@@ -7876,7 +7860,7 @@ var iaiGetAjax = (function () {
           null !== o
             ? null !== a.activeBreakpoint
               ? (o !== a.activeBreakpoint || i) &&
-                ((a.activeBreakpoint = o),
+              ((a.activeBreakpoint = o),
                 'unslick' === a.breakpointSettings[o]
                   ? a.unslick(o)
                   : ((a.options = e.extend({}, a.originalSettings, a.breakpointSettings[o])),
@@ -7891,7 +7875,7 @@ var iaiGetAjax = (function () {
                     a.refresh(t)),
                 (s = o))
             : null !== a.activeBreakpoint &&
-              ((a.activeBreakpoint = null),
+            ((a.activeBreakpoint = null),
               (a.options = a.originalSettings),
               !0 === t && (a.currentSlide = a.options.initialSlide),
               a.refresh(t),
@@ -7905,7 +7889,7 @@ var iaiGetAjax = (function () {
           r = this,
           a = e(t.currentTarget);
         switch (
-          (a.is('a') && t.preventDefault(),
+        (a.is('a') && t.preventDefault(),
           a.is('li') || (a = a.closest('li')),
           (n =
             r.slideCount % r.options.slidesToScroll != 0
@@ -7950,14 +7934,14 @@ var iaiGetAjax = (function () {
             .off('click.slick', t.changeSlide)
             .off('mouseenter.slick', e.proxy(t.interrupt, t, !0))
             .off('mouseleave.slick', e.proxy(t.interrupt, t, !1)),
-          !0 === t.options.accessibility && t.$dots.off('keydown.slick', t.keyHandler)),
+            !0 === t.options.accessibility && t.$dots.off('keydown.slick', t.keyHandler)),
           t.$slider.off('focus.slick blur.slick'),
           !0 === t.options.arrows &&
-            t.slideCount > t.options.slidesToShow &&
-            (t.$prevArrow && t.$prevArrow.off('click.slick', t.changeSlide),
+          t.slideCount > t.options.slidesToShow &&
+          (t.$prevArrow && t.$prevArrow.off('click.slick', t.changeSlide),
             t.$nextArrow && t.$nextArrow.off('click.slick', t.changeSlide),
             !0 === t.options.accessibility &&
-              (t.$prevArrow && t.$prevArrow.off('keydown.slick', t.keyHandler),
+            (t.$prevArrow && t.$prevArrow.off('keydown.slick', t.keyHandler),
               t.$nextArrow && t.$nextArrow.off('keydown.slick', t.keyHandler))),
           t.$list.off('touchstart.slick mousedown.slick', t.swipeHandler),
           t.$list.off('touchmove.slick mousemove.slick', t.swipeHandler),
@@ -7968,7 +7952,7 @@ var iaiGetAjax = (function () {
           t.cleanUpSlideEvents(),
           !0 === t.options.accessibility && t.$list.off('keydown.slick', t.keyHandler),
           !0 === t.options.focusOnSelect &&
-            e(t.$slideTrack).children().off('click.slick', t.selectHandler),
+          e(t.$slideTrack).children().off('click.slick', t.selectHandler),
           e(window).off('orientationchange.slick.slick-' + t.instanceUid, t.orientationChange),
           e(window).off('resize.slick.slick-' + t.instanceUid, t.resize),
           e('[draggable!=true]', t.$slideTrack).off('dragstart', t.preventDefault),
@@ -7997,27 +7981,27 @@ var iaiGetAjax = (function () {
           e('.slick-cloned', i.$slider).detach(),
           i.$dots && i.$dots.remove(),
           i.$prevArrow &&
-            i.$prevArrow.length &&
-            (i.$prevArrow
-              .removeClass('slick-disabled slick-arrow slick-hidden')
-              .removeAttr('aria-hidden aria-disabled tabindex')
-              .css('display', ''),
+          i.$prevArrow.length &&
+          (i.$prevArrow
+            .removeClass('slick-disabled slick-arrow slick-hidden')
+            .removeAttr('aria-hidden aria-disabled tabindex')
+            .css('display', ''),
             i.htmlExpr.test(i.options.prevArrow) && i.$prevArrow.remove()),
           i.$nextArrow &&
-            i.$nextArrow.length &&
-            (i.$nextArrow
-              .removeClass('slick-disabled slick-arrow slick-hidden')
-              .removeAttr('aria-hidden aria-disabled tabindex')
-              .css('display', ''),
+          i.$nextArrow.length &&
+          (i.$nextArrow
+            .removeClass('slick-disabled slick-arrow slick-hidden')
+            .removeAttr('aria-hidden aria-disabled tabindex')
+            .css('display', ''),
             i.htmlExpr.test(i.options.nextArrow) && i.$nextArrow.remove()),
           i.$slides &&
-            (i.$slides
-              .removeClass('slick-slide slick-active slick-center slick-visible slick-current')
-              .removeAttr('aria-hidden')
-              .removeAttr('data-slick-index')
-              .each(function () {
-                e(this).attr('style', e(this).data('originalStyling'));
-              }),
+          (i.$slides
+            .removeClass('slick-slide slick-active slick-center slick-visible slick-current')
+            .removeAttr('aria-hidden')
+            .removeAttr('data-slick-index')
+            .each(function () {
+              e(this).attr('style', e(this).data('originalStyling'));
+            }),
             i.$slideTrack.children(this.options.slide).detach(),
             i.$slideTrack.detach(),
             i.$list.detach(),
@@ -8043,20 +8027,20 @@ var iaiGetAjax = (function () {
           : (i.applyTransition(e),
             i.$slides.eq(e).css({ opacity: 1, zIndex: i.options.zIndex }),
             t &&
-              setTimeout(function () {
-                i.disableTransition(e), t.call();
-              }, i.options.speed));
+            setTimeout(function () {
+              i.disableTransition(e), t.call();
+            }, i.options.speed));
       }),
       (t.prototype.fadeSlideOut = function (e) {
         var t = this;
         !1 === t.cssTransitions
           ? t.$slides
-              .eq(e)
-              .animate(
-                { opacity: 0, zIndex: t.options.zIndex - 2 },
-                t.options.speed,
-                t.options.easing,
-              )
+            .eq(e)
+            .animate(
+              { opacity: 0, zIndex: t.options.zIndex - 2 },
+              t.options.speed,
+              t.options.easing,
+            )
           : (t.applyTransition(e),
             t.$slides.eq(e).css({ opacity: 0, zIndex: t.options.zIndex - 2 }));
       }),
@@ -8064,10 +8048,10 @@ var iaiGetAjax = (function () {
         var t = this;
         null !== e &&
           ((t.$slidesCache = t.$slides),
-          t.unload(),
-          t.$slideTrack.children(this.options.slide).detach(),
-          t.$slidesCache.filter(e).appendTo(t.$slideTrack),
-          t.reinit());
+            t.unload(),
+            t.$slideTrack.children(this.options.slide).detach(),
+            t.$slidesCache.filter(e).appendTo(t.$slideTrack),
+            t.reinit());
       }),
       (t.prototype.focusHandler = function () {
         var t = this;
@@ -8090,7 +8074,7 @@ var iaiGetAjax = (function () {
         if (!0 === e.options.infinite)
           if (e.slideCount <= e.options.slidesToShow) ++n;
           else
-            for (; t < e.slideCount; )
+            for (; t < e.slideCount;)
               ++n,
                 (t = i + e.options.slidesToScroll),
                 (i +=
@@ -8099,7 +8083,7 @@ var iaiGetAjax = (function () {
                     : e.options.slidesToShow);
         else if (!0 === e.options.centerMode) n = e.slideCount;
         else if (e.options.asNavFor)
-          for (; t < e.slideCount; )
+          for (; t < e.slideCount;)
             ++n,
               (t = i + e.options.slidesToScroll),
               (i +=
@@ -8121,65 +8105,65 @@ var iaiGetAjax = (function () {
           (i = r.$slides.first().outerHeight(!0)),
           !0 === r.options.infinite
             ? (r.slideCount > r.options.slidesToShow &&
-                ((r.slideOffset = r.slideWidth * r.options.slidesToShow * -1),
+              ((r.slideOffset = r.slideWidth * r.options.slidesToShow * -1),
                 (o = -1),
                 !0 === r.options.vertical &&
-                  !0 === r.options.centerMode &&
-                  (2 === r.options.slidesToShow
-                    ? (o = -1.5)
-                    : 1 === r.options.slidesToShow && (o = -2)),
+                !0 === r.options.centerMode &&
+                (2 === r.options.slidesToShow
+                  ? (o = -1.5)
+                  : 1 === r.options.slidesToShow && (o = -2)),
                 (a = i * r.options.slidesToShow * o)),
               r.slideCount % r.options.slidesToScroll != 0 &&
-                e + r.options.slidesToScroll > r.slideCount &&
-                r.slideCount > r.options.slidesToShow &&
-                (e > r.slideCount
-                  ? ((r.slideOffset =
-                      (r.options.slidesToShow - (e - r.slideCount)) * r.slideWidth * -1),
-                    (a = (r.options.slidesToShow - (e - r.slideCount)) * i * -1))
-                  : ((r.slideOffset =
-                      (r.slideCount % r.options.slidesToScroll) * r.slideWidth * -1),
-                    (a = (r.slideCount % r.options.slidesToScroll) * i * -1))))
+              e + r.options.slidesToScroll > r.slideCount &&
+              r.slideCount > r.options.slidesToShow &&
+              (e > r.slideCount
+                ? ((r.slideOffset =
+                  (r.options.slidesToShow - (e - r.slideCount)) * r.slideWidth * -1),
+                  (a = (r.options.slidesToShow - (e - r.slideCount)) * i * -1))
+                : ((r.slideOffset =
+                  (r.slideCount % r.options.slidesToScroll) * r.slideWidth * -1),
+                  (a = (r.slideCount % r.options.slidesToScroll) * i * -1))))
             : e + r.options.slidesToShow > r.slideCount &&
-              ((r.slideOffset = (e + r.options.slidesToShow - r.slideCount) * r.slideWidth),
+            ((r.slideOffset = (e + r.options.slidesToShow - r.slideCount) * r.slideWidth),
               (a = (e + r.options.slidesToShow - r.slideCount) * i)),
           r.slideCount <= r.options.slidesToShow && ((r.slideOffset = 0), (a = 0)),
           !0 === r.options.centerMode && r.slideCount <= r.options.slidesToShow
             ? (r.slideOffset =
-                (r.slideWidth * Math.floor(r.options.slidesToShow)) / 2 -
-                (r.slideWidth * r.slideCount) / 2)
+              (r.slideWidth * Math.floor(r.options.slidesToShow)) / 2 -
+              (r.slideWidth * r.slideCount) / 2)
             : !0 === r.options.centerMode && !0 === r.options.infinite
-            ? (r.slideOffset +=
+              ? (r.slideOffset +=
                 r.slideWidth * Math.floor(r.options.slidesToShow / 2) - r.slideWidth)
-            : !0 === r.options.centerMode &&
+              : !0 === r.options.centerMode &&
               ((r.slideOffset = 0),
-              (r.slideOffset += r.slideWidth * Math.floor(r.options.slidesToShow / 2))),
+                (r.slideOffset += r.slideWidth * Math.floor(r.options.slidesToShow / 2))),
           (t = !1 === r.options.vertical ? e * r.slideWidth * -1 + r.slideOffset : e * i * -1 + a),
           !0 === r.options.variableWidth &&
-            ((n =
-              r.slideCount <= r.options.slidesToShow || !1 === r.options.infinite
-                ? r.$slideTrack.children('.slick-slide').eq(e)
-                : r.$slideTrack.children('.slick-slide').eq(e + r.options.slidesToShow)),
+          ((n =
+            r.slideCount <= r.options.slidesToShow || !1 === r.options.infinite
+              ? r.$slideTrack.children('.slick-slide').eq(e)
+              : r.$slideTrack.children('.slick-slide').eq(e + r.options.slidesToShow)),
             (t =
               !0 === r.options.rtl
                 ? n[0]
                   ? -1 * (r.$slideTrack.width() - n[0].offsetLeft - n.width())
                   : 0
                 : n[0]
-                ? -1 * n[0].offsetLeft
-                : 0),
+                  ? -1 * n[0].offsetLeft
+                  : 0),
             !0 === r.options.centerMode &&
-              ((n =
-                r.slideCount <= r.options.slidesToShow || !1 === r.options.infinite
-                  ? r.$slideTrack.children('.slick-slide').eq(e)
-                  : r.$slideTrack.children('.slick-slide').eq(e + r.options.slidesToShow + 1)),
+            ((n =
+              r.slideCount <= r.options.slidesToShow || !1 === r.options.infinite
+                ? r.$slideTrack.children('.slick-slide').eq(e)
+                : r.$slideTrack.children('.slick-slide').eq(e + r.options.slidesToShow + 1)),
               (t =
                 !0 === r.options.rtl
                   ? n[0]
                     ? -1 * (r.$slideTrack.width() - n[0].offsetLeft - n.width())
                     : 0
                   : n[0]
-                  ? -1 * n[0].offsetLeft
-                  : 0),
+                    ? -1 * n[0].offsetLeft
+                    : 0),
               (t += (r.$list.width() - n.outerWidth()) / 2))),
           t
         );
@@ -8224,8 +8208,8 @@ var iaiGetAjax = (function () {
               : 0),
           !0 === n.options.swipeToSlide
             ? (n.$slideTrack.find('.slick-slide').each(function (o, r) {
-                if (r.offsetLeft - i + e(r).outerWidth() / 2 > -1 * n.swipeLeft) return (t = r), !1;
-              }),
+              if (r.offsetLeft - i + e(r).outerWidth() / 2 > -1 * n.swipeLeft) return (t = r), !1;
+            }),
               Math.abs(e(t).attr('data-slick-index') - n.currentSlide) || 1)
             : n.options.slidesToScroll
         );
@@ -8237,16 +8221,16 @@ var iaiGetAjax = (function () {
         var i = this;
         e(i.$slider).hasClass('slick-initialized') ||
           (e(i.$slider).addClass('slick-initialized'),
-          i.buildRows(),
-          i.buildOut(),
-          i.setProps(),
-          i.startLoad(),
-          i.loadSlider(),
-          i.initializeEvents(),
-          i.updateArrows(),
-          i.updateDots(),
-          i.checkResponsive(!0),
-          i.focusHandler()),
+            i.buildRows(),
+            i.buildOut(),
+            i.setProps(),
+            i.startLoad(),
+            i.loadSlider(),
+            i.initializeEvents(),
+            i.updateArrows(),
+            i.updateDots(),
+            i.checkResponsive(!0),
+            i.focusHandler()),
           t && i.$slider.trigger('init', [i]),
           !0 === i.options.accessibility && i.initADA(),
           i.options.autoplay && ((i.paused = !1), i.autoPlay());
@@ -8263,16 +8247,16 @@ var iaiGetAjax = (function () {
           .find('a, input, button, select')
           .attr({ tabindex: '-1' }),
           null !== t.$dots &&
-            (t.$slides.not(t.$slideTrack.find('.slick-cloned')).each(function (i) {
-              var o = n.indexOf(i);
-              e(this).attr({
-                role: 'tabpanel',
-                id: 'slick-slide' + t.instanceUid + i,
-                tabindex: -1,
-              }),
-                -1 !== o &&
-                  e(this).attr({ 'aria-describedby': 'slick-slide-control' + t.instanceUid + o });
+          (t.$slides.not(t.$slideTrack.find('.slick-cloned')).each(function (i) {
+            var o = n.indexOf(i);
+            e(this).attr({
+              role: 'tabpanel',
+              id: 'slick-slide' + t.instanceUid + i,
+              tabindex: -1,
             }),
+              -1 !== o &&
+              e(this).attr({ 'aria-describedby': 'slick-slide-control' + t.instanceUid + o });
+          }),
             t.$dots
               .attr('role', 'tablist')
               .find('li')
@@ -8306,27 +8290,27 @@ var iaiGetAjax = (function () {
           (e.$prevArrow
             .off('click.slick')
             .on('click.slick', { message: 'previous' }, e.changeSlide),
-          e.$nextArrow.off('click.slick').on('click.slick', { message: 'next' }, e.changeSlide),
-          !0 === e.options.accessibility &&
+            e.$nextArrow.off('click.slick').on('click.slick', { message: 'next' }, e.changeSlide),
+            !0 === e.options.accessibility &&
             (e.$prevArrow.on('keydown.slick', e.keyHandler),
-            e.$nextArrow.on('keydown.slick', e.keyHandler)));
+              e.$nextArrow.on('keydown.slick', e.keyHandler)));
       }),
       (t.prototype.initDotEvents = function () {
         var t = this;
         !0 === t.options.dots &&
           (e('li', t.$dots).on('click.slick', { message: 'index' }, t.changeSlide),
-          !0 === t.options.accessibility && t.$dots.on('keydown.slick', t.keyHandler)),
+            !0 === t.options.accessibility && t.$dots.on('keydown.slick', t.keyHandler)),
           !0 === t.options.dots &&
-            !0 === t.options.pauseOnDotsHover &&
-            e('li', t.$dots)
-              .on('mouseenter.slick', e.proxy(t.interrupt, t, !0))
-              .on('mouseleave.slick', e.proxy(t.interrupt, t, !1));
+          !0 === t.options.pauseOnDotsHover &&
+          e('li', t.$dots)
+            .on('mouseenter.slick', e.proxy(t.interrupt, t, !0))
+            .on('mouseleave.slick', e.proxy(t.interrupt, t, !1));
       }),
       (t.prototype.initSlideEvents = function () {
         var t = this;
         t.options.pauseOnHover &&
           (t.$list.on('mouseenter.slick', e.proxy(t.interrupt, t, !0)),
-          t.$list.on('mouseleave.slick', e.proxy(t.interrupt, t, !1)));
+            t.$list.on('mouseleave.slick', e.proxy(t.interrupt, t, !1)));
       }),
       (t.prototype.initializeEvents = function () {
         var t = this;
@@ -8341,7 +8325,7 @@ var iaiGetAjax = (function () {
           e(document).on(t.visibilityChange, e.proxy(t.visibility, t)),
           !0 === t.options.accessibility && t.$list.on('keydown.slick', t.keyHandler),
           !0 === t.options.focusOnSelect &&
-            e(t.$slideTrack).children().on('click.slick', t.selectHandler),
+          e(t.$slideTrack).children().on('click.slick', t.selectHandler),
           e(window).on(
             'orientationchange.slick.slick-' + t.instanceUid,
             e.proxy(t.orientationChange, t),
@@ -8364,8 +8348,8 @@ var iaiGetAjax = (function () {
           (37 === e.keyCode && !0 === t.options.accessibility
             ? t.changeSlide({ data: { message: !0 === t.options.rtl ? 'next' : 'previous' } })
             : 39 === e.keyCode &&
-              !0 === t.options.accessibility &&
-              t.changeSlide({ data: { message: !0 === t.options.rtl ? 'previous' : 'next' } }));
+            !0 === t.options.accessibility &&
+            t.changeSlide({ data: { message: !0 === t.options.rtl ? 'previous' : 'next' } }));
       }),
       (t.prototype.lazyLoad = function () {
         function t(t) {
@@ -8402,16 +8386,16 @@ var iaiGetAjax = (function () {
           (!0 === r.options.centerMode
             ? !0 === r.options.infinite
               ? (o =
-                  (n = r.currentSlide + (r.options.slidesToShow / 2 + 1)) +
-                  r.options.slidesToShow +
-                  2)
+                (n = r.currentSlide + (r.options.slidesToShow / 2 + 1)) +
+                r.options.slidesToShow +
+                2)
               : ((n = Math.max(0, r.currentSlide - (r.options.slidesToShow / 2 + 1))),
                 (o = r.options.slidesToShow / 2 + 1 + 2 + r.currentSlide))
             : ((n = r.options.infinite ? r.options.slidesToShow + r.currentSlide : r.currentSlide),
               (o = Math.ceil(n + r.options.slidesToShow)),
               !0 === r.options.fade && (n > 0 && n--, o <= r.slideCount && o++)),
-          (i = r.$slider.find('.slick-slide').slice(n, o)),
-          'anticipated' === r.options.lazyLoad)
+            (i = r.$slider.find('.slick-slide').slice(n, o)),
+            'anticipated' === r.options.lazyLoad)
         )
           for (
             var a = n - 1, s = o, l = r.$slider.find('.slick-slide'), c = 0;
@@ -8423,8 +8407,8 @@ var iaiGetAjax = (function () {
           r.slideCount <= r.options.slidesToShow
             ? t(r.$slider.find('.slick-slide'))
             : r.currentSlide >= r.slideCount - r.options.slidesToShow
-            ? t(r.$slider.find('.slick-cloned').slice(0, r.options.slidesToShow))
-            : 0 === r.currentSlide &&
+              ? t(r.$slider.find('.slick-cloned').slice(0, r.options.slidesToShow))
+              : 0 === r.currentSlide &&
               t(r.$slider.find('.slick-cloned').slice(-1 * r.options.slidesToShow));
       }),
       (t.prototype.loadSlider = function () {
@@ -8456,13 +8440,13 @@ var iaiGetAjax = (function () {
         var i = this;
         i.unslicked ||
           (i.$slider.trigger('afterChange', [i, t]),
-          (i.animating = !1),
-          i.slideCount > i.options.slidesToShow && i.setPosition(),
-          (i.swipeLeft = null),
-          i.options.autoplay && i.autoPlay(),
-          !0 === i.options.accessibility &&
+            (i.animating = !1),
+            i.slideCount > i.options.slidesToShow && i.setPosition(),
+            (i.swipeLeft = null),
+            i.options.autoplay && i.autoPlay(),
+            !0 === i.options.accessibility &&
             (i.initADA(),
-            i.options.focusOnChange &&
+              i.options.focusOnChange &&
               e(i.$slides.get(i.currentSlide)).attr('tabindex', 0).focus()));
       }),
       (t.prototype.prev = t.prototype.slickPrev = function () {
@@ -8498,12 +8482,12 @@ var iaiGetAjax = (function () {
             (a.onerror = function () {
               t < 3
                 ? setTimeout(function () {
-                    s.progressiveLazyLoad(t + 1);
-                  }, 500)
+                  s.progressiveLazyLoad(t + 1);
+                }, 500)
                 : (i
-                    .removeAttr('data-lazy')
-                    .removeClass('slick-loading')
-                    .addClass('slick-lazyload-error'),
+                  .removeAttr('data-lazy')
+                  .removeClass('slick-loading')
+                  .addClass('slick-lazyload-error'),
                   s.$slider.trigger('lazyLoadError', [s, i, n]),
                   s.progressiveLazyLoad());
             }),
@@ -8532,7 +8516,7 @@ var iaiGetAjax = (function () {
         if ('array' === e.type(r) && r.length) {
           for (t in ((o.respondTo = o.options.respondTo || 'window'), r))
             if (((n = o.breakpoints.length - 1), r.hasOwnProperty(t))) {
-              for (i = r[t].breakpoint; n >= 0; )
+              for (i = r[t].breakpoint; n >= 0;)
                 o.breakpoints[n] && o.breakpoints[n] === i && o.breakpoints.splice(n, 1), n--;
               o.breakpoints.push(i), (o.breakpointSettings[i] = r[t].settings);
             }
@@ -8546,8 +8530,8 @@ var iaiGetAjax = (function () {
         (t.$slides = t.$slideTrack.children(t.options.slide).addClass('slick-slide')),
           (t.slideCount = t.$slides.length),
           t.currentSlide >= t.slideCount &&
-            0 !== t.currentSlide &&
-            (t.currentSlide = t.currentSlide - t.options.slidesToScroll),
+          0 !== t.currentSlide &&
+          (t.currentSlide = t.currentSlide - t.options.slidesToScroll),
           t.slideCount <= t.options.slidesToShow && (t.currentSlide = 0),
           t.registerBreakpoints(),
           t.setProps(),
@@ -8562,7 +8546,7 @@ var iaiGetAjax = (function () {
           t.initSlideEvents(),
           t.checkResponsive(!1, !0),
           !0 === t.options.focusOnSelect &&
-            e(t.$slideTrack).children().on('click.slick', t.selectHandler),
+          e(t.$slideTrack).children().on('click.slick', t.selectHandler),
           t.setSlideClasses('number' == typeof t.currentSlide ? t.currentSlide : 0),
           t.setPosition(),
           t.focusHandler(),
@@ -8574,18 +8558,18 @@ var iaiGetAjax = (function () {
         var t = this;
         e(window).width() !== t.windowWidth &&
           (clearTimeout(t.windowDelay),
-          (t.windowDelay = window.setTimeout(function () {
-            (t.windowWidth = e(window).width()),
-              t.checkResponsive(),
-              t.unslicked || t.setPosition();
-          }, 50)));
+            (t.windowDelay = window.setTimeout(function () {
+              (t.windowWidth = e(window).width()),
+                t.checkResponsive(),
+                t.unslicked || t.setPosition();
+            }, 50)));
       }),
       (t.prototype.removeSlide = t.prototype.slickRemove = function (e, t, i) {
         var n = this;
         if (
           ((e =
             'boolean' == typeof e ? (!0 === (t = e) ? 0 : n.slideCount - 1) : !0 === t ? --e : e),
-          n.slideCount < 1 || e < 0 || e > n.slideCount - 1)
+            n.slideCount < 1 || e < 0 || e > n.slideCount - 1)
         )
           return !1;
         n.unload(),
@@ -8619,10 +8603,10 @@ var iaiGetAjax = (function () {
         var e = this;
         !1 === e.options.vertical
           ? !0 === e.options.centerMode &&
-            e.$list.css({ padding: '0px ' + e.options.centerPadding })
+          e.$list.css({ padding: '0px ' + e.options.centerPadding })
           : (e.$list.height(e.$slides.first().outerHeight(!0) * e.options.slidesToShow),
             !0 === e.options.centerMode &&
-              e.$list.css({ padding: e.options.centerPadding + ' 0px' })),
+            e.$list.css({ padding: e.options.centerPadding + ' 0px' })),
           (e.listWidth = e.$list.width()),
           (e.listHeight = e.$list.height()),
           !1 === e.options.vertical && !1 === e.options.variableWidth
@@ -8631,13 +8615,13 @@ var iaiGetAjax = (function () {
                 Math.ceil(e.slideWidth * e.$slideTrack.children('.slick-slide').length),
               ))
             : !0 === e.options.variableWidth
-            ? e.$slideTrack.width(5e3 * e.slideCount)
-            : ((e.slideWidth = Math.ceil(e.listWidth)),
-              e.$slideTrack.height(
-                Math.ceil(
-                  e.$slides.first().outerHeight(!0) * e.$slideTrack.children('.slick-slide').length,
-                ),
-              ));
+              ? e.$slideTrack.width(5e3 * e.slideCount)
+              : ((e.slideWidth = Math.ceil(e.listWidth)),
+                e.$slideTrack.height(
+                  Math.ceil(
+                    e.$slides.first().outerHeight(!0) * e.$slideTrack.children('.slick-slide').length,
+                  ),
+                ));
         var t = e.$slides.first().outerWidth(!0) - e.$slides.first().width();
         !1 === e.options.variableWidth &&
           e.$slideTrack.children('.slick-slide').width(e.slideWidth - t);
@@ -8649,19 +8633,19 @@ var iaiGetAjax = (function () {
           (t = i.slideWidth * n * -1),
             !0 === i.options.rtl
               ? e(o).css({
-                  position: 'relative',
-                  right: t,
-                  top: 0,
-                  zIndex: i.options.zIndex - 2,
-                  opacity: 0,
-                })
+                position: 'relative',
+                right: t,
+                top: 0,
+                zIndex: i.options.zIndex - 2,
+                opacity: 0,
+              })
               : e(o).css({
-                  position: 'relative',
-                  left: t,
-                  top: 0,
-                  zIndex: i.options.zIndex - 2,
-                  opacity: 0,
-                });
+                position: 'relative',
+                left: t,
+                top: 0,
+                zIndex: i.options.zIndex - 2,
+                opacity: 0,
+              });
         }),
           i.$slides.eq(i.currentSlide).css({ zIndex: i.options.zIndex - 1, opacity: 1 });
       }),
@@ -8688,13 +8672,13 @@ var iaiGetAjax = (function () {
           ('object' === e.type(arguments[0])
             ? ((n = arguments[0]), (s = arguments[1]), (r = 'multiple'))
             : 'string' === e.type(arguments[0]) &&
-              ((n = arguments[0]),
+            ((n = arguments[0]),
               (o = arguments[1]),
               (s = arguments[2]),
               'responsive' === arguments[0] && 'array' === e.type(arguments[1])
                 ? (r = 'responsive')
                 : void 0 !== arguments[1] && (r = 'single')),
-          'single' === r)
+            'single' === r)
         )
           a.options[n] = o;
         else if ('multiple' === r)
@@ -8705,7 +8689,7 @@ var iaiGetAjax = (function () {
           for (i in o)
             if ('array' !== e.type(a.options.responsive)) a.options.responsive = [o[i]];
             else {
-              for (t = a.options.responsive.length - 1; t >= 0; )
+              for (t = a.options.responsive.length - 1; t >= 0;)
                 a.options.responsive[t].breakpoint === o[i].breakpoint &&
                   a.options.responsive.splice(t, 1),
                   t--;
@@ -8730,38 +8714,38 @@ var iaiGetAjax = (function () {
           (void 0 === t.WebkitTransition &&
             void 0 === t.MozTransition &&
             void 0 === t.msTransition) ||
-            (!0 === e.options.useCSS && (e.cssTransitions = !0)),
+          (!0 === e.options.useCSS && (e.cssTransitions = !0)),
           e.options.fade &&
-            ('number' == typeof e.options.zIndex
-              ? e.options.zIndex < 3 && (e.options.zIndex = 3)
-              : (e.options.zIndex = e.defaults.zIndex)),
+          ('number' == typeof e.options.zIndex
+            ? e.options.zIndex < 3 && (e.options.zIndex = 3)
+            : (e.options.zIndex = e.defaults.zIndex)),
           void 0 !== t.OTransform &&
-            ((e.animType = 'OTransform'),
+          ((e.animType = 'OTransform'),
             (e.transformType = '-o-transform'),
             (e.transitionType = 'OTransition'),
             void 0 === t.perspectiveProperty &&
-              void 0 === t.webkitPerspective &&
-              (e.animType = !1)),
+            void 0 === t.webkitPerspective &&
+            (e.animType = !1)),
           void 0 !== t.MozTransform &&
-            ((e.animType = 'MozTransform'),
+          ((e.animType = 'MozTransform'),
             (e.transformType = '-moz-transform'),
             (e.transitionType = 'MozTransition'),
             void 0 === t.perspectiveProperty && void 0 === t.MozPerspective && (e.animType = !1)),
           void 0 !== t.webkitTransform &&
-            ((e.animType = 'webkitTransform'),
+          ((e.animType = 'webkitTransform'),
             (e.transformType = '-webkit-transform'),
             (e.transitionType = 'webkitTransition'),
             void 0 === t.perspectiveProperty &&
-              void 0 === t.webkitPerspective &&
-              (e.animType = !1)),
+            void 0 === t.webkitPerspective &&
+            (e.animType = !1)),
           void 0 !== t.msTransform &&
-            ((e.animType = 'msTransform'),
+          ((e.animType = 'msTransform'),
             (e.transformType = '-ms-transform'),
             (e.transitionType = 'msTransition'),
             void 0 === t.msTransform && (e.animType = !1)),
           void 0 !== t.transform &&
-            !1 !== e.animType &&
-            ((e.animType = 'transform'),
+          !1 !== e.animType &&
+          ((e.animType = 'transform'),
             (e.transformType = 'transform'),
             (e.transitionType = 'transition')),
           (e.transformsEnabled =
@@ -8778,22 +8762,22 @@ var iaiGetAjax = (function () {
             .find('.slick-slide')
             .removeClass('slick-active slick-center slick-current')
             .attr('aria-hidden', 'true')),
-          r.$slides.eq(e).addClass('slick-current'),
-          !0 === r.options.centerMode)
+            r.$slides.eq(e).addClass('slick-current'),
+            !0 === r.options.centerMode)
         ) {
           var a = r.options.slidesToShow % 2 == 0 ? 1 : 0;
           (t = Math.floor(r.options.slidesToShow / 2)),
             !0 === r.options.infinite &&
-              (e >= t && e <= r.slideCount - 1 - t
-                ? r.$slides
-                    .slice(e - t + a, e + t + 1)
-                    .addClass('slick-active')
-                    .attr('aria-hidden', 'false')
-                : ((n = r.options.slidesToShow + e),
-                  i
-                    .slice(n - t + 1 + a, n + t + 2)
-                    .addClass('slick-active')
-                    .attr('aria-hidden', 'false')),
+            (e >= t && e <= r.slideCount - 1 - t
+              ? r.$slides
+                .slice(e - t + a, e + t + 1)
+                .addClass('slick-active')
+                .attr('aria-hidden', 'false')
+              : ((n = r.options.slidesToShow + e),
+                i
+                  .slice(n - t + 1 + a, n + t + 2)
+                  .addClass('slick-active')
+                  .attr('aria-hidden', 'false')),
               0 === e
                 ? i.eq(i.length - 1 - r.options.slidesToShow).addClass('slick-center')
                 : e === r.slideCount - 1 && i.eq(r.options.slidesToShow).addClass('slick-center')),
@@ -8801,20 +8785,20 @@ var iaiGetAjax = (function () {
         } else
           e >= 0 && e <= r.slideCount - r.options.slidesToShow
             ? r.$slides
-                .slice(e, e + r.options.slidesToShow)
-                .addClass('slick-active')
-                .attr('aria-hidden', 'false')
+              .slice(e, e + r.options.slidesToShow)
+              .addClass('slick-active')
+              .attr('aria-hidden', 'false')
             : i.length <= r.options.slidesToShow
-            ? i.addClass('slick-active').attr('aria-hidden', 'false')
-            : ((o = r.slideCount % r.options.slidesToShow),
-              (n = !0 === r.options.infinite ? r.options.slidesToShow + e : e),
-              r.options.slidesToShow == r.options.slidesToScroll &&
-              r.slideCount - e < r.options.slidesToShow
-                ? i
+              ? i.addClass('slick-active').attr('aria-hidden', 'false')
+              : ((o = r.slideCount % r.options.slidesToShow),
+                (n = !0 === r.options.infinite ? r.options.slidesToShow + e : e),
+                r.options.slidesToShow == r.options.slidesToScroll &&
+                  r.slideCount - e < r.options.slidesToShow
+                  ? i
                     .slice(n - (r.options.slidesToShow - o), n + o)
                     .addClass('slick-active')
                     .attr('aria-hidden', 'false')
-                : i
+                  : i
                     .slice(n, n + r.options.slidesToShow)
                     .addClass('slick-active')
                     .attr('aria-hidden', 'false'));
@@ -8827,13 +8811,13 @@ var iaiGetAjax = (function () {
           o = this;
         if (
           (!0 === o.options.fade && (o.options.centerMode = !1),
-          !0 === o.options.infinite &&
+            !0 === o.options.infinite &&
             !1 === o.options.fade &&
             ((i = null), o.slideCount > o.options.slidesToShow))
         ) {
           for (
             n = !0 === o.options.centerMode ? o.options.slidesToShow + 1 : o.options.slidesToShow,
-              t = o.slideCount;
+            t = o.slideCount;
             t > o.slideCount - n;
             t -= 1
           )
@@ -8880,28 +8864,28 @@ var iaiGetAjax = (function () {
           c = this;
         if (
           ((t = t || !1),
-          !(
-            (!0 === c.animating && !0 === c.options.waitForAnimate) ||
-            (!0 === c.options.fade && c.currentSlide === e)
-          ))
+            !(
+              (!0 === c.animating && !0 === c.options.waitForAnimate) ||
+              (!0 === c.options.fade && c.currentSlide === e)
+            ))
         )
           if (
             (!1 === t && c.asNavFor(e),
-            (n = e),
-            (l = c.getLeft(n)),
-            (a = c.getLeft(c.currentSlide)),
-            (c.currentLeft = null === c.swipeLeft ? a : c.swipeLeft),
-            !1 === c.options.infinite &&
+              (n = e),
+              (l = c.getLeft(n)),
+              (a = c.getLeft(c.currentSlide)),
+              (c.currentLeft = null === c.swipeLeft ? a : c.swipeLeft),
+              !1 === c.options.infinite &&
               !1 === c.options.centerMode &&
               (e < 0 || e > c.getDotCount() * c.options.slidesToScroll))
           )
             !1 === c.options.fade &&
               ((n = c.currentSlide),
-              !0 !== i
-                ? c.animateSlide(a, function () {
+                !0 !== i
+                  ? c.animateSlide(a, function () {
                     c.postSlide(n);
                   })
-                : c.postSlide(n));
+                  : c.postSlide(n));
           else if (
             !1 === c.options.infinite &&
             !0 === c.options.centerMode &&
@@ -8909,36 +8893,36 @@ var iaiGetAjax = (function () {
           )
             !1 === c.options.fade &&
               ((n = c.currentSlide),
-              !0 !== i
-                ? c.animateSlide(a, function () {
+                !0 !== i
+                  ? c.animateSlide(a, function () {
                     c.postSlide(n);
                   })
-                : c.postSlide(n));
+                  : c.postSlide(n));
           else {
             if (
               (c.options.autoplay && clearInterval(c.autoPlayTimer),
-              (o =
-                n < 0
-                  ? c.slideCount % c.options.slidesToScroll != 0
-                    ? c.slideCount - (c.slideCount % c.options.slidesToScroll)
-                    : c.slideCount + n
-                  : n >= c.slideCount
-                  ? c.slideCount % c.options.slidesToScroll != 0
-                    ? 0
-                    : n - c.slideCount
-                  : n),
-              (c.animating = !0),
-              c.$slider.trigger('beforeChange', [c, c.currentSlide, o]),
-              (r = c.currentSlide),
-              (c.currentSlide = o),
-              c.setSlideClasses(c.currentSlide),
-              c.options.asNavFor &&
+                (o =
+                  n < 0
+                    ? c.slideCount % c.options.slidesToScroll != 0
+                      ? c.slideCount - (c.slideCount % c.options.slidesToScroll)
+                      : c.slideCount + n
+                    : n >= c.slideCount
+                      ? c.slideCount % c.options.slidesToScroll != 0
+                        ? 0
+                        : n - c.slideCount
+                      : n),
+                (c.animating = !0),
+                c.$slider.trigger('beforeChange', [c, c.currentSlide, o]),
+                (r = c.currentSlide),
+                (c.currentSlide = o),
+                c.setSlideClasses(c.currentSlide),
+                c.options.asNavFor &&
                 (s = (s = c.getNavTarget()).slick('getSlick')).slideCount <=
-                  s.options.slidesToShow &&
+                s.options.slidesToShow &&
                 s.setSlideClasses(c.currentSlide),
-              c.updateDots(),
-              c.updateArrows(),
-              !0 === c.options.fade)
+                c.updateDots(),
+                c.updateArrows(),
+                !0 === c.options.fade)
             )
               return (
                 !0 !== i
@@ -8951,8 +8935,8 @@ var iaiGetAjax = (function () {
               );
             !0 !== i
               ? c.animateSlide(l, function () {
-                  c.postSlide(o);
-                })
+                c.postSlide(o);
+              })
               : c.postSlide(o);
           }
       }),
@@ -8980,14 +8964,14 @@ var iaiGetAjax = (function () {
               ? 'left'
               : 'right'
             : n >= 135 && n <= 225
-            ? !1 === o.options.rtl
-              ? 'right'
-              : 'left'
-            : !0 === o.options.verticalSwiping
-            ? n >= 35 && n <= 135
-              ? 'down'
-              : 'up'
-            : 'vertical'
+              ? !1 === o.options.rtl
+                ? 'right'
+                : 'left'
+              : !0 === o.options.verticalSwiping
+                ? n >= 35 && n <= 135
+                  ? 'down'
+                  : 'up'
+                : 'vertical'
         );
       }),
       (t.prototype.swipeEnd = function (e) {
@@ -8997,13 +8981,13 @@ var iaiGetAjax = (function () {
         if (((n.dragging = !1), (n.swiping = !1), n.scrolling)) return (n.scrolling = !1), !1;
         if (
           ((n.interrupted = !1),
-          (n.shouldClick = !(n.touchObject.swipeLength > 10)),
-          void 0 === n.touchObject.curX)
+            (n.shouldClick = !(n.touchObject.swipeLength > 10)),
+            void 0 === n.touchObject.curX)
         )
           return !1;
         if (
           (!0 === n.touchObject.edgeHit && n.$slider.trigger('edge', [n, n.swipeDirection()]),
-          n.touchObject.swipeLength >= n.touchObject.minSwipe)
+            n.touchObject.swipeLength >= n.touchObject.minSwipe)
         ) {
           switch ((i = n.swipeDirection())) {
             case 'left':
@@ -9036,13 +9020,13 @@ var iaiGetAjax = (function () {
           )
         )
           switch (
-            ((t.touchObject.fingerCount =
-              e.originalEvent && void 0 !== e.originalEvent.touches
-                ? e.originalEvent.touches.length
-                : 1),
+          ((t.touchObject.fingerCount =
+            e.originalEvent && void 0 !== e.originalEvent.touches
+              ? e.originalEvent.touches.length
+              : 1),
             (t.touchObject.minSwipe = t.listWidth / t.options.touchThreshold),
             !0 === t.options.verticalSwiping &&
-              (t.touchObject.minSwipe = t.listHeight / t.options.touchThreshold),
+            (t.touchObject.minSwipe = t.listHeight / t.options.touchThreshold),
             e.data.action)
           ) {
             case 'start':
@@ -9066,7 +9050,7 @@ var iaiGetAjax = (function () {
         return (
           (r = void 0 !== e.originalEvent ? e.originalEvent.touches : null),
           !(!s.dragging || s.scrolling || (r && 1 !== r.length)) &&
-            ((t = s.getLeft(s.currentSlide)),
+          ((t = s.getLeft(s.currentSlide)),
             (s.touchObject.curX = void 0 !== r ? r[0].pageX : e.clientX),
             (s.touchObject.curY = void 0 !== r ? r[0].pageY : e.clientY),
             (s.touchObject.swipeLength = Math.round(
@@ -9078,27 +9062,27 @@ var iaiGetAjax = (function () {
               : (!0 === s.options.verticalSwiping && (s.touchObject.swipeLength = a),
                 (i = s.swipeDirection()),
                 void 0 !== e.originalEvent &&
-                  s.touchObject.swipeLength > 4 &&
-                  ((s.swiping = !0), e.preventDefault()),
+                s.touchObject.swipeLength > 4 &&
+                ((s.swiping = !0), e.preventDefault()),
                 (o =
                   (!1 === s.options.rtl ? 1 : -1) *
                   (s.touchObject.curX > s.touchObject.startX ? 1 : -1)),
                 !0 === s.options.verticalSwiping &&
-                  (o = s.touchObject.curY > s.touchObject.startY ? 1 : -1),
+                (o = s.touchObject.curY > s.touchObject.startY ? 1 : -1),
                 (n = s.touchObject.swipeLength),
                 (s.touchObject.edgeHit = !1),
                 !1 === s.options.infinite &&
-                  ((0 === s.currentSlide && 'right' === i) ||
-                    (s.currentSlide >= s.getDotCount() && 'left' === i)) &&
-                  ((n = s.touchObject.swipeLength * s.options.edgeFriction),
+                ((0 === s.currentSlide && 'right' === i) ||
+                  (s.currentSlide >= s.getDotCount() && 'left' === i)) &&
+                ((n = s.touchObject.swipeLength * s.options.edgeFriction),
                   (s.touchObject.edgeHit = !0)),
                 !1 === s.options.vertical
                   ? (s.swipeLeft = t + n * o)
                   : (s.swipeLeft = t + n * (s.$list.height() / s.listWidth) * o),
                 !0 === s.options.verticalSwiping && (s.swipeLeft = t + n * o),
                 !0 !== s.options.fade &&
-                  !1 !== s.options.touchMove &&
-                  (!0 === s.animating ? ((s.swipeLeft = null), !1) : void s.setCSS(s.swipeLeft))))
+                !1 !== s.options.touchMove &&
+                (!0 === s.animating ? ((s.swipeLeft = null), !1) : void s.setCSS(s.swipeLeft))))
         );
       }),
       (t.prototype.swipeStart = function (e) {
@@ -9106,7 +9090,7 @@ var iaiGetAjax = (function () {
           i = this;
         if (
           ((i.interrupted = !0),
-          1 !== i.touchObject.fingerCount || i.slideCount <= i.options.slidesToShow)
+            1 !== i.touchObject.fingerCount || i.slideCount <= i.options.slidesToShow)
         )
           return (i.touchObject = {}), !1;
         void 0 !== e.originalEvent &&
@@ -9120,9 +9104,9 @@ var iaiGetAjax = (function () {
         var e = this;
         null !== e.$slidesCache &&
           (e.unload(),
-          e.$slideTrack.children(this.options.slide).detach(),
-          e.$slidesCache.appendTo(e.$slideTrack),
-          e.reinit());
+            e.$slideTrack.children(this.options.slide).detach(),
+            e.$slidesCache.appendTo(e.$slideTrack),
+            e.reinit());
       }),
       (t.prototype.unload = function () {
         var t = this;
@@ -9143,27 +9127,27 @@ var iaiGetAjax = (function () {
         var e = this;
         Math.floor(e.options.slidesToShow / 2),
           !0 === e.options.arrows &&
-            e.slideCount > e.options.slidesToShow &&
-            !e.options.infinite &&
-            (e.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false'),
+          e.slideCount > e.options.slidesToShow &&
+          !e.options.infinite &&
+          (e.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false'),
             e.$nextArrow.removeClass('slick-disabled').attr('aria-disabled', 'false'),
             0 === e.currentSlide
               ? (e.$prevArrow.addClass('slick-disabled').attr('aria-disabled', 'true'),
                 e.$nextArrow.removeClass('slick-disabled').attr('aria-disabled', 'false'))
               : ((e.currentSlide >= e.slideCount - e.options.slidesToShow &&
-                  !1 === e.options.centerMode) ||
-                  (e.currentSlide >= e.slideCount - 1 && !0 === e.options.centerMode)) &&
-                (e.$nextArrow.addClass('slick-disabled').attr('aria-disabled', 'true'),
+                !1 === e.options.centerMode) ||
+                (e.currentSlide >= e.slideCount - 1 && !0 === e.options.centerMode)) &&
+              (e.$nextArrow.addClass('slick-disabled').attr('aria-disabled', 'true'),
                 e.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false')));
       }),
       (t.prototype.updateDots = function () {
         var e = this;
         null !== e.$dots &&
           (e.$dots.find('li').removeClass('slick-active').end(),
-          e.$dots
-            .find('li')
-            .eq(Math.floor(e.currentSlide / e.options.slidesToScroll))
-            .addClass('slick-active'));
+            e.$dots
+              .find('li')
+              .eq(Math.floor(e.currentSlide / e.options.slidesToScroll))
+              .addClass('slick-active'));
       }),
       (t.prototype.visibility = function () {
         var e = this;
@@ -9181,7 +9165,7 @@ var iaiGetAjax = (function () {
             ('object' == typeof o || void 0 === o
               ? (n[e].slick = new t(n[e], o))
               : (i = n[e].slick[o].apply(n[e].slick, r)),
-            void 0 !== i)
+              void 0 !== i)
           )
             return i;
         return n;
@@ -9199,20 +9183,20 @@ var centerImage = function (e, t, i) {
           elementHeight > t
             ? n[e].css('max-height', t)
             : n[e].css({
+              'background-color': i,
+              'padding-top': (t - elementHeight) / 2,
+              'padding-bottom': (t - elementHeight) / 2,
+            }))
+        : (o.onload = function () {
+          (elementHeight = n[e].is(':visible') ? n[e].height() : o.height),
+            elementHeight > t
+              ? n[e].css('max-height', t)
+              : n[e].css({
                 'background-color': i,
                 'padding-top': (t - elementHeight) / 2,
                 'padding-bottom': (t - elementHeight) / 2,
-              }))
-        : (o.onload = function () {
-            (elementHeight = n[e].is(':visible') ? n[e].height() : o.height),
-              elementHeight > t
-                ? n[e].css('max-height', t)
-                : n[e].css({
-                    'background-color': i,
-                    'padding-top': (t - elementHeight) / 2,
-                    'padding-bottom': (t - elementHeight) / 2,
-                  });
-          });
+              });
+        });
   });
 };
 function parseURLParams(e) {
@@ -9252,8 +9236,8 @@ function parseURLParams(e) {
   var r,
     a = (i = t || {}).raw
       ? function (e) {
-          return e;
-        }
+        return e;
+      }
       : decodeURIComponent;
   return (r = new RegExp('(?:^|; )' + encodeURIComponent(e) + '=([^;]*)').exec(document.cookie))
     ? a(r[1])
@@ -9745,21 +9729,21 @@ function parseURLParams(e) {
         ? i
           ? h(t, e)
           : (function (e, t) {
-              return p(h(e, t));
-            })(t, e)
+            return p(h(e, t));
+          })(t, e)
         : i
-        ? u(e)
-        : (function (e) {
+          ? u(e)
+          : (function (e) {
             return p(u(e));
           })(e);
     }
     'function' == typeof define && define.amd
       ? define(function () {
-          return _;
-        })
+        return _;
+      })
       : 'object' == typeof module && module.exports
-      ? (module.exports = _)
-      : (e.md5 = _);
+        ? (module.exports = _)
+        : (e.md5 = _);
   })(window),
   (window.format_price = function (e, t) {
     var i = e,
@@ -9782,7 +9766,7 @@ function parseURLParams(e) {
     var h = n[0].split(p);
     n[0] = h.join('');
     var _ = n[0] && n[0].indexOf('0');
-    if (_ > -1) for (; u[0].length < n[0].length - _; ) u[0] = '0' + u[0];
+    if (_ > -1) for (; u[0].length < n[0].length - _;) u[0] = '0' + u[0];
     else 0 == +u[0] && (u[0] = '');
     (i = i.split('.'))[0] = u[0];
     var f = h[1] && h[h.length - 1].length;
@@ -9810,20 +9794,20 @@ function parseURLParams(e) {
     function o(i) {
       (i && 3 === i.which) ||
         (e('.dropdown-backdrop').remove(),
-        e(t).each(function () {
-          var t = e(this),
-            o = n(t),
-            r = { relatedTarget: this };
-          o.hasClass('open') &&
-            ((i &&
-              'click' == i.type &&
-              /input|textarea/i.test(i.target.tagName) &&
-              e.contains(o[0], i.target)) ||
-              (o.trigger((i = e.Event('hide.bs.dropdown', r))),
-              i.isDefaultPrevented() ||
-                (t.attr('aria-expanded', 'false'),
-                o.removeClass('open').trigger(e.Event('hidden.bs.dropdown', r)))));
-        }));
+          e(t).each(function () {
+            var t = e(this),
+              o = n(t),
+              r = { relatedTarget: this };
+            o.hasClass('open') &&
+              ((i &&
+                'click' == i.type &&
+                /input|textarea/i.test(i.target.tagName) &&
+                e.contains(o[0], i.target)) ||
+                (o.trigger((i = e.Event('hide.bs.dropdown', r))),
+                  i.isDefaultPrevented() ||
+                  (t.attr('aria-expanded', 'false'),
+                    o.removeClass('open').trigger(e.Event('hidden.bs.dropdown', r)))));
+          }));
     }
     (i.VERSION = '3.3.6'),
       (i.prototype.toggle = function (t) {
@@ -9890,8 +9874,8 @@ function parseURLParams(e) {
     'object' == typeof exports && 'undefined' != typeof module
       ? t()
       : 'function' == typeof define && define.amd
-      ? define(t)
-      : t();
+        ? define(t)
+        : t();
   })(0, function () {
     'use strict';
     function e(e) {
@@ -9909,7 +9893,7 @@ function parseURLParams(e) {
         },
       );
     }
-    function t() {}
+    function t() { }
     function i(e) {
       if (!(this instanceof i)) throw new TypeError('Promises must be constructed via new');
       if ('function' != typeof e) throw new TypeError('not a function');
@@ -9920,7 +9904,7 @@ function parseURLParams(e) {
         s(e, this);
     }
     function n(e, t) {
-      for (; 3 === e._state; ) e = e._value;
+      for (; 3 === e._state;) e = e._value;
       0 !== e._state
         ? ((e._handled = !0),
           i._immediateFn(function () {
@@ -10035,8 +10019,8 @@ function parseURLParams(e) {
         return e && 'object' == typeof e && e.constructor === i
           ? e
           : new i(function (t) {
-              t(e);
-            });
+            t(e);
+          });
       }),
       (i.reject = function (e) {
         return new i(function (t, i) {
@@ -10086,16 +10070,16 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
       (this.options = []),
       (this.options.hide_unit = !1),
       (this.options.friendly_shipping_format = []),
-      (this.options.endStartFunction = function () {}),
-      (this.options.endInitFunction = function () {}),
-      (this.options.beginStartFunction = function () {}),
-      (this.options.endShippingFunction = function () {}),
-      (this.options.formatPrice = function (e) {}),
+      (this.options.endStartFunction = function () { }),
+      (this.options.endInitFunction = function () { }),
+      (this.options.beginStartFunction = function () { }),
+      (this.options.endShippingFunction = function () { }),
+      (this.options.formatPrice = function (e) { }),
       (this.externalFormatFn = !1),
-      (this.options.endGetAjaxProductDataFunction = function () {}),
-      (this.options.clearXMLGetAjaxProductDataFunction = function (e) {}),
-      (this.options.beginGetAjaxProductDataFunction = function () {}),
-      (this.options.endSetCurrentSizeFunction = function () {}),
+      (this.options.endGetAjaxProductDataFunction = function () { }),
+      (this.options.clearXMLGetAjaxProductDataFunction = function (e) { }),
+      (this.options.beginGetAjaxProductDataFunction = function () { }),
+      (this.options.endSetCurrentSizeFunction = function () { }),
       (this.options.ajaxAddFunction = function (e) {
         classObj.alert(classObj.txt.dodano_produkt);
       }),
@@ -10165,7 +10149,7 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
       (this.getData = function (e) {
         try {
           return e;
-        } catch (e) {}
+        } catch (e) { }
       }),
       (this.getIndex = function (e, t) {
         var i = 0;
@@ -10180,30 +10164,30 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           (currency = i || this.currentSizeObj.currency),
           (o = !!o),
           t &&
-            (this.configObj.rebateNumber && o && (e = this.configObj.rebateNumber.price),
+          (this.configObj.rebateNumber && o && (e = this.configObj.rebateNumber.price),
             (e *= this.configObj.valueOfNumberInput)),
           n
             ? e
             : this.externalFormatFn
-            ? this.options.formatPrice({ price: e, currency: currency })
-            : this.options.curr_before_price
-            ? '<span class="projector_price"><span class="projector_currency">' +
-              currency +
-              '</span>' +
-              (1 * e).toFixed(2) +
-              '</span>'
-            : '<span class="projector_price">' +
-              (1 * e).toFixed(2) +
-              '<span class="projector_currency">' +
-              currency +
-              '</span></span>'
+              ? this.options.formatPrice({ price: e, currency: currency })
+              : this.options.curr_before_price
+                ? '<span class="projector_price"><span class="projector_currency">' +
+                currency +
+                '</span>' +
+                (1 * e).toFixed(2) +
+                '</span>'
+                : '<span class="projector_price">' +
+                (1 * e).toFixed(2) +
+                '<span class="projector_currency">' +
+                currency +
+                '</span></span>'
         );
       }),
       (this.status_description = function () {
         if (
           ($('#' + this.prefix + 'status_gfx').hide(),
-          $('#' + this.prefix + 'status').addClass('--status-hide'),
-          this.currentSizeObj.amount_mm && this.currentSizeObj.amount_mo && '' != this.txt.ilosc_mm)
+            $('#' + this.prefix + 'status').addClass('--status-hide'),
+            this.currentSizeObj.amount_mm && this.currentSizeObj.amount_mo && '' != this.txt.ilosc_mm)
         ) {
           var e = this.currentSizeObj.amount_mm,
             t = this.currentSizeObj.amount_mo,
@@ -10215,14 +10199,14 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             return (
               $('#' + this.prefix + 'status_description').html(
                 '<div id="#' +
-                  this.prefix +
-                  'amount_mm">' +
-                  o +
-                  '</div><div id="#' +
-                  this.prefix +
-                  'amount_mo">' +
-                  this.txt.ilosc_mo_inf +
-                  '</div>',
+                this.prefix +
+                'amount_mm">' +
+                o +
+                '</div><div id="#' +
+                this.prefix +
+                'amount_mo">' +
+                this.txt.ilosc_mo_inf +
+                '</div>',
               ),
               !1
             );
@@ -10230,48 +10214,48 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             return (
               $('#' + this.prefix + 'status_description').html(
                 '<div id="#' +
-                  this.prefix +
-                  'amount_mm">' +
-                  o +
-                  '</div><div id="#' +
-                  this.prefix +
-                  'amount_mo">' +
-                  r +
-                  '</div>',
+                this.prefix +
+                'amount_mm">' +
+                o +
+                '</div><div id="#' +
+                this.prefix +
+                'amount_mo">' +
+                r +
+                '</div>',
               ),
               !1
             );
         }
         this.currentSizeObj.availability.delivery_date &&
-        'disable' == this.currentSizeObj.availability.status
+          'disable' == this.currentSizeObj.availability.status
           ? $('#' + this.prefix + 'status_description').html(
-              this.currentSizeObj.availability.status_description +
-                ' <span>' +
-                this.currentSizeObj.availability.delivery_date +
-                '</span>',
-            )
+            this.currentSizeObj.availability.status_description +
+            ' <span>' +
+            this.currentSizeObj.availability.delivery_date +
+            '</span>',
+          )
           : this.currentSizeObj.availability.status_description
-          ? ($('#' + this.prefix + 'status_description').html(
+            ? ($('#' + this.prefix + 'status_description').html(
               this.currentSizeObj.availability.status_description,
             ),
-            $('#' + this.prefix + 'status').removeClass('--status-hide --phone-disable'))
-          : 'disable' == this.currentSizeObj.availability.status
-          ? ($('#' + this.prefix + 'status').addClass('--status-hide --phone-disable'),
-            $('#' + this.prefix + 'status_description_wrapper').hide())
-          : ($('#' + this.prefix + 'status').removeClass('--status-hide --phone-disable'),
-            $('#' + this.prefix + 'status_description_wrapper').hide()),
+              $('#' + this.prefix + 'status').removeClass('--status-hide --phone-disable'))
+            : 'disable' == this.currentSizeObj.availability.status
+              ? ($('#' + this.prefix + 'status').addClass('--status-hide --phone-disable'),
+                $('#' + this.prefix + 'status_description_wrapper').hide())
+              : ($('#' + this.prefix + 'status').removeClass('--status-hide --phone-disable'),
+                $('#' + this.prefix + 'status_description_wrapper').hide()),
           this.currentSizeObj.availability.status_gfx &&
-            ($('#' + this.prefix + 'status_gfx')
-              .show()
-              .attr('src', this.currentSizeObj.availability.status_gfx),
+          ($('#' + this.prefix + 'status_gfx')
+            .show()
+            .attr('src', this.currentSizeObj.availability.status_gfx),
             $('#' + this.prefix + 'status').removeClass('--status-hide'));
       }),
       (this.sellBy = function (e, t, i) {
         if ('disable' == this.currentSizeObj.availability.status)
           return (
             !this.onDisableAlert ||
-              ('product_bundle' == this.currentSizeObj.product_type && 1 == this.firstRun) ||
-              this.alert(this.txt.niedostepny),
+            ('product_bundle' == this.currentSizeObj.product_type && 1 == this.firstRun) ||
+            this.alert(this.txt.niedostepny),
             e
           );
         if (
@@ -10342,39 +10326,39 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
         if (!this.isset('product_data')) return this.errorMsg.push('no data'), !1;
         (this.curr_class = $('#' + this.prefix + 'form').attr('class')),
           e.contenersPrefix &&
-            ((this.options.contenersPrefix = e.contenersPrefix), (this.prefix = e.contenersPrefix)),
+          ((this.options.contenersPrefix = e.contenersPrefix), (this.prefix = e.contenersPrefix)),
           'undefined' !== e.onDisableAlert && (this.onDisableAlert = e.onDisableAlert),
           e.beginStartFunction && (this.options.beginStartFunction = e.beginStartFunction),
           e.formatPrice &&
-            ((this.options.formatPrice = e.formatPrice), (this.externalFormatFn = !0)),
+          ((this.options.formatPrice = e.formatPrice), (this.externalFormatFn = !0)),
           e.endInitFunction && (this.options.endInitFunction = e.endInitFunction),
           e.endStartFunction && (this.options.endStartFunction = e.endStartFunction),
           e.endShippingFunction && (this.options.endShippingFunction = e.endShippingFunction),
           e.endSetCurrentSizeFunction &&
-            (this.options.endSetCurrentSizeFunction = e.endSetCurrentSizeFunction),
+          (this.options.endSetCurrentSizeFunction = e.endSetCurrentSizeFunction),
           e.ajaxAddFunction && (this.options.ajaxAddFunction = e.ajaxAddFunction),
           e.clearXMLGetAjaxProductDataFunction &&
-            (this.options.clearXMLGetAjaxProductDataFunction =
-              e.clearXMLGetAjaxProductDataFunction),
+          (this.options.clearXMLGetAjaxProductDataFunction =
+            e.clearXMLGetAjaxProductDataFunction),
           e.endGetAjaxProductDataFunction &&
-            (this.options.endGetAjaxProductDataFunction = e.endGetAjaxProductDataFunction),
+          (this.options.endGetAjaxProductDataFunction = e.endGetAjaxProductDataFunction),
           e.beginGetAjaxProductDataFunction &&
-            (this.options.beginGetAjaxProductDataFunction = e.beginGetAjaxProductDataFunction),
+          (this.options.beginGetAjaxProductDataFunction = e.beginGetAjaxProductDataFunction),
           e.hide_unit && (this.options.hide_unit = e.hide_unit),
           e.curr_before_price && (this.options.curr_before_price = e.curr_before_price),
           e.contact_link && (this.options.contact_link = e.contact_link),
           e.hoursBeforeOrderBy && (this.options.hoursBeforeOrderBy = e.hoursBeforeOrderBy),
           e.getShippingTimeFunction &&
-            e.productParamsFunction &&
-            ((this.options.getShippingTimeFunction = e.getShippingTimeFunction),
+          e.productParamsFunction &&
+          ((this.options.getShippingTimeFunction = e.getShippingTimeFunction),
             (this.options.productParamsFunction = e.productParamsFunction)),
           e.friendly_shipping_format &&
-            (this.options.friendly_shipping_format = e.friendly_shipping_format),
+          (this.options.friendly_shipping_format = e.friendly_shipping_format),
           product_data.currency && (this.currency = product_data.currency),
           (this.txt.amount = $('#' + this.prefix + 'amount').html()),
           product_data.sizes &&
-            product_data.sizes.onesize &&
-            (this.setCurrentSizeObj(this.getIndex(product_data.sizes, 0)), this.start()),
+          product_data.sizes.onesize &&
+          (this.setCurrentSizeObj(this.getIndex(product_data.sizes, 0)), this.start()),
           this.options.endInitFunction();
       }),
       (this.variety = function (e, t, i) {
@@ -10409,7 +10393,7 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
         if (
           ((projectorv3_disable_ajax && 0 == projectorv3_disable_ajax) ||
             (n = await this.updateShippingTime()),
-          'disable' !== this.currentSizeObj.availability.status &&
+            'disable' !== this.currentSizeObj.availability.status &&
             this.currentSizeObj.shipping_time)
         ) {
           const e = this.currentSizeObj.shipping_time;
@@ -10455,8 +10439,8 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
       (this.start = function () {
         if (
           (this.options.beginStartFunction(),
-          (window.projectorv3_disable_ajax = projectorv3_disable_ajax || 1),
-          !this.currentSizeObj.type)
+            (window.projectorv3_disable_ajax = projectorv3_disable_ajax || 1),
+            !this.currentSizeObj.type)
         )
           return !1;
         var t = this;
@@ -10465,49 +10449,49 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           (product_data.sizes.uniw || product_data.sizes.onesize) && t.setCurrentSizeObj('uniw'),
             'true' === n
               ? (t.currentSizeObj.price =
-                  product_data.sizes[t.currentSizeObj.type].price_subscription)
+                product_data.sizes[t.currentSizeObj.type].price_subscription)
               : 'false' === n &&
-                (t.currentSizeObj.price = product_data.sizes[t.currentSizeObj.type].price_normal),
+              (t.currentSizeObj.price = product_data.sizes[t.currentSizeObj.type].price_normal),
             $('#' + t.prefix + 'form').attr(
               'class',
               t.curr_class + ' ' + t.currentSizeObj.availability.status,
             ),
             (t.configObj.displaySize = 'onesize' != t.currentSizeObj.type),
             t.currentSizeObj.availability &&
-              (t.configObj.disableNumberInput = 'disable' == t.currentSizeObj.availability.status),
+            (t.configObj.disableNumberInput = 'disable' == t.currentSizeObj.availability.status),
             (t.configObj.disableBuyButton = !1),
             ('disable' != t.currentSizeObj.availability.status &&
               'true' != t.currentSizeObj.phone_price) ||
-              (t.configObj.disableBuyButton = !0),
+            (t.configObj.disableBuyButton = !0),
             (t.configObj.displayBuySection = !!t.currentSizeObj.gratis);
           var o = t.currentSizeObj.unit_sellby + '';
           if (
             ($('#' + t.options.contenersPrefix + 'number').size() &&
               (o = $('#' + t.options.contenersPrefix + 'number').val()),
-            (t.configObj.valueOfNumberInput = t.sellBy(
-              t.currentSizeObj.unit_sellby,
-              t.currentSizeObj.unit_precision,
-              o.replace(',', '.'),
-            )),
-            t.currentSizeObj.rebateNumber)
+              (t.configObj.valueOfNumberInput = t.sellBy(
+                t.currentSizeObj.unit_sellby,
+                t.currentSizeObj.unit_precision,
+                o.replace(',', '.'),
+              )),
+              t.currentSizeObj.rebateNumber)
           )
             for (i in ((t.configObj.rabatIndex = -1),
-            (t.configObj.rabatIndex_last = -1),
-            t.currentSizeObj.rebateNumber)) {
+              (t.configObj.rabatIndex_last = -1),
+              t.currentSizeObj.rebateNumber)) {
               var r = t.currentSizeObj.rebateNumber[i].threshold_end
                 ? t.currentSizeObj.rebateNumber[i].threshold_end
                 : t.configObj.valueOfNumberInput;
               if (
                 parseFloat(t.configObj.valueOfNumberInput) >=
-                  parseFloat(t.currentSizeObj.rebateNumber[i].threshold) &&
+                parseFloat(t.currentSizeObj.rebateNumber[i].threshold) &&
                 parseFloat(t.configObj.valueOfNumberInput) <= parseFloat(r)
               ) {
                 if (
                   ((t.configObj.rabatIndex = i),
-                  (t.configObj.rabatIndex_last = i),
-                  !t.currentSizeObj.rebateNumber[1 * i + 1] ||
+                    (t.configObj.rabatIndex_last = i),
+                    !t.currentSizeObj.rebateNumber[1 * i + 1] ||
                     parseFloat(t.configObj.valueOfNumberInput) <
-                      parseFloat(t.currentSizeObj.rebateNumber[1 * i + 1].threshold))
+                    parseFloat(t.currentSizeObj.rebateNumber[1 * i + 1].threshold))
                 )
                   break;
               } else
@@ -10520,26 +10504,26 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
               ? ((t.configObj.rebateNumber = t.currentSizeObj.rebateNumber[t.configObj.rabatIndex]),
                 (t.configObj.rebateNumberNext = t.configObj.rebateNumber))
               : (t.configObj.rebateNumber = !1),
-            t.currentSizeObj.rebateNumber &&
+              t.currentSizeObj.rebateNumber &&
               t.currentSizeObj.rebateNumber[1 * t.configObj.rabatIndex + 1] &&
               (t.configObj.rebateNumberNext =
                 t.currentSizeObj.rebateNumber[1 * t.configObj.rabatIndex + 1]),
-            t.configObj.rabatIndex_last &&
+              t.configObj.rabatIndex_last &&
               t.currentSizeObj.rebateNumber[1 * t.configObj.rabatIndex_last + 1] &&
               (t.configObj.rebateNumberNext =
                 t.currentSizeObj.rebateNumber[1 * t.configObj.rabatIndex_last + 1]),
-            'onesize' == t.currentSizeObj.type || 'uniw' == t.currentSizeObj.type
-              ? $('#' + t.prefix + 'sizes_cont').hide()
-              : $('#' + t.prefix + 'sizes_cont').show(),
-            t.status_description(),
-            $('#' + t.prefix + 'amount').size())
+              'onesize' == t.currentSizeObj.type || 'uniw' == t.currentSizeObj.type
+                ? $('#' + t.prefix + 'sizes_cont').hide()
+                : $('#' + t.prefix + 'sizes_cont').show(),
+              t.status_description(),
+              $('#' + t.prefix + 'amount').size())
           ) {
             $('#' + t.prefix + 'amount').show();
             var a = t.currentSizeObj.amount;
             0 == a
               ? $('#' + t.prefix + 'amount').hide()
               : -1 == a &&
-                ((a = t.txt.infinity), '' == t.txt.infinity && $('#' + t.prefix + 'amount').hide()),
+              ((a = t.txt.infinity), '' == t.txt.infinity && $('#' + t.prefix + 'amount').hide()),
               1 == a
                 ? (a = a + ' ' + t.currentSizeObj.unit)
                 : a > 1 && (a = a + ' ' + t.currentSizeObj.unit_plural),
@@ -10549,32 +10533,32 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             (t.currentSizeObj.product_type &&
               'product_virtual' == t.currentSizeObj.product_type &&
               $('#' + t.prefix + 'amount').hide(),
-            'y' == t.currentSizeObj.availability.visible &&
-            t.currentSizeObj &&
-            t.currentSizeObj.availability.status_description
-              ? ($('#' + t.prefix + 'status_description_wrapper').show(),
-                t.currentSizeObj.availability.status_gfx && $('#' + t.prefix + 'status_gfx').show(),
-                $('#' + t.prefix + 'status').removeClass('--status-hide'))
-              : ($('#' + t.prefix + 'status_description_wrapper').hide(),
-                $('#' + t.prefix + 'status_gfx').hide(),
-                $('#' + t.prefix + 'status').addClass('--status-hide')),
-            'true' == t.currentSizeObj.availability.delivery_days_undefined &&
-            'true' == t.currentSizeObj.delivery.undefined
-              ? $('#' + t.prefix + 'delivery_wrapper').hide()
-              : $('#' + t.prefix + 'delivery_wrapper').show(),
-            $('#' + t.prefix + 'delivery_days').hide(),
-            projectorv3_disable_ajax && 0 == projectorv3_disable_ajax)
+              'y' == t.currentSizeObj.availability.visible &&
+                t.currentSizeObj &&
+                t.currentSizeObj.availability.status_description
+                ? ($('#' + t.prefix + 'status_description_wrapper').show(),
+                  t.currentSizeObj.availability.status_gfx && $('#' + t.prefix + 'status_gfx').show(),
+                  $('#' + t.prefix + 'status').removeClass('--status-hide'))
+                : ($('#' + t.prefix + 'status_description_wrapper').hide(),
+                  $('#' + t.prefix + 'status_gfx').hide(),
+                  $('#' + t.prefix + 'status').addClass('--status-hide')),
+              'true' == t.currentSizeObj.availability.delivery_days_undefined &&
+                'true' == t.currentSizeObj.delivery.undefined
+                ? $('#' + t.prefix + 'delivery_wrapper').hide()
+                : $('#' + t.prefix + 'delivery_wrapper').show(),
+              $('#' + t.prefix + 'delivery_days').hide(),
+              projectorv3_disable_ajax && 0 == projectorv3_disable_ajax)
           ) {
             if (
               ($('#' + t.prefix + 'delivery_days').hide(),
-              t.currentSizeObj && 'true' != t.currentSizeObj.availability.delivery_days_undefined)
+                t.currentSizeObj && 'true' != t.currentSizeObj.availability.delivery_days_undefined)
             ) {
               $('#' + t.prefix + 'status').addClass('--loading --time-show');
               const e = await t.shippingTime();
               e.value.length
                 ? ($('#' + t.prefix + 'delivery_label')
-                    .show()
-                    .html(e.value[0]),
+                  .show()
+                  .html(e.value[0]),
                   $('#' + t.prefix + 'delivery_days')
                     .show()
                     .html(e.value[1]))
@@ -10596,8 +10580,8 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                 const e = await t.shippingTime();
                 e.value.length
                   ? ($('#' + t.prefix + 'delivery_label')
-                      .show()
-                      .html(e.value[0]),
+                    .show()
+                    .html(e.value[0]),
                     $('#' + t.prefix + 'delivery_days')
                       .show()
                       .html(e.value[1]))
@@ -10613,7 +10597,7 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             (t.currentSizeObj.product_type &&
               ('product_virtual' == t.currentSizeObj.product_type ||
                 'product_service' == t.currentSizeObj.product_type)) ||
-            'disable' == t.currentSizeObj.availability.status
+              'disable' == t.currentSizeObj.availability.status
               ? ($('#' + t.prefix + 'shipping_info').hide(),
                 $('#' + t.prefix + 'shipping_dialog').hide(),
                 t.currentSizeObj.availability.status_description
@@ -10623,8 +10607,8 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                 $('#' + t.prefix + 'shipping_dialog').show(),
                 $('#' + t.prefix + 'status_description').hide()),
             t.currentSizeObj.delay_time &&
-            'true' == t.currentSizeObj.delay_time.unknown_delivery_time &&
-            'order' == t.currentSizeObj.availability.status
+              'true' == t.currentSizeObj.delay_time.unknown_delivery_time &&
+              'order' == t.currentSizeObj.availability.status
               ? ($('#' + t.prefix + 'shipping_info').hide(),
                 $('#' + t.prefix + 'shipping_dialog').hide(),
                 $('#' + t.prefix + 'status_description').hide(),
@@ -10636,8 +10620,8 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             0 == t.currentSizeObj.delivery.shipping
               ? $('#' + t.prefix + 'shipping').html(t.txt.gratis)
               : $('#' + t.prefix + 'shipping').html(
-                  t.txt.koszt_od + t.formatPrice(t.currentSizeObj.delivery.shipping, e),
-                ),
+                t.txt.koszt_od + t.formatPrice(t.currentSizeObj.delivery.shipping, e),
+              ),
             'true' == t.currentSizeObj.delivery.undefined
               ? $('#' + t.prefix + 'shipping').hide()
               : $('#' + t.prefix + 'shipping').show(),
@@ -10655,8 +10639,8 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             ),
             $('#' + t.prefix + 'prices_wrapper').hide(),
             t.currentSizeObj.price.srp &&
-            t.currentSizeObj.price.srp > 0 &&
-            t.currentSizeObj.price.srp != t.currentSizeObj.price.value
+              t.currentSizeObj.price.srp > 0 &&
+              t.currentSizeObj.price.srp != t.currentSizeObj.price.value
               ? ($('#' + t.prefix + 'price_srp_wrapper').show(),
                 $('#' + t.prefix + 'prices_wrapper').show(),
                 $('#' + t.prefix + 'price_srp').html(
@@ -10689,57 +10673,57 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                   .show()
                   .removeClass('--only-points'),
                 t.currentSizeObj.availability.status_gfx_tel &&
-                '' != t.currentSizeObj.availability.status_gfx_tel
+                  '' != t.currentSizeObj.availability.status_gfx_tel
                   ? $('#' + t.prefix + 'price_value').html(
-                      '<a class="projector_prices__contact" target="_blank" href="' +
-                        t.options.contact_link +
-                        '"><img src="' +
-                        t.currentSizeObj.availability.status_gfx_tel +
-                        '"/><span>' +
-                        t.currentSizeObj.availability.status_description_tel +
-                        '</span></a>',
-                    )
+                    '<a class="projector_prices__contact" target="_blank" href="' +
+                    t.options.contact_link +
+                    '"><img src="' +
+                    t.currentSizeObj.availability.status_gfx_tel +
+                    '"/><span>' +
+                    t.currentSizeObj.availability.status_description_tel +
+                    '</span></a>',
+                  )
                   : $('#' + t.prefix + 'price_value').html(
-                      '<a class="projector_prices__contact" target="_blank" href="' +
-                        t.options.contact_link +
-                        '">' +
-                        t.currentSizeObj.availability.status_description_tel +
-                        '</a>',
-                    ));
+                    '<a class="projector_prices__contact" target="_blank" href="' +
+                    t.options.contact_link +
+                    '">' +
+                    t.currentSizeObj.availability.status_description_tel +
+                    '</a>',
+                  ));
           else if (
             ($('#' + t.prefix + 'prices_wrapper')
               .show()
               .removeClass('--only-points'),
-            $('#' + t.prefix + 'price_value').show(),
-            t.currentSizeObj.price.rebateNumber)
+              $('#' + t.prefix + 'price_value').show(),
+              t.currentSizeObj.price.rebateNumber)
           ) {
             const e = t.configObj.valueOfNumberInput;
             if (t.currentSizeObj.price.rebateNumber.items.includes(null))
               +e >= +t.currentSizeObj.price.rebateNumber.nextleft
                 ? ($('#' + t.prefix + 'price_value').html(
-                    t.formatPrice(
-                      t.nettoPrice
-                        ? t.currentSizeObj.price.rebateNumber.nextprice_net
-                        : t.currentSizeObj.price.rebateNumber.nextprice,
-                      !0,
-                      !1,
-                      !1,
-                    ),
+                  t.formatPrice(
+                    t.nettoPrice
+                      ? t.currentSizeObj.price.rebateNumber.nextprice_net
+                      : t.currentSizeObj.price.rebateNumber.nextprice,
+                    !0,
+                    !1,
+                    !1,
                   ),
+                ),
                   (l = t.nettoPrice
                     ? t.currentSizeObj.price.rebateNumber.nextprice_net
                     : t.currentSizeObj.price.rebateNumber.nextprice),
                   (t.rebateThreshold = t.currentSizeObj.price.rebateNumber.nextthreshold))
                 : ($('#' + t.prefix + 'price_value').html(
-                    t.formatPrice(
-                      t.nettoPrice
-                        ? t.currentSizeObj.price.price_net
-                        : t.currentSizeObj.price.value,
-                      !0,
-                      !1,
-                      !1,
-                    ),
+                  t.formatPrice(
+                    t.nettoPrice
+                      ? t.currentSizeObj.price.price_net
+                      : t.currentSizeObj.price.value,
+                    !0,
+                    !1,
+                    !1,
                   ),
+                ),
                   (t.rebateThreshold = !1));
             else {
               const i = [...t.currentSizeObj.price.rebateNumber.items]
@@ -10747,20 +10731,20 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                 .find(t => e >= +t.left);
               i
                 ? ($('#' + t.prefix + 'price_value').html(
-                    t.formatPrice(t.nettoPrice ? i.price_net : i.price, !0, !1, !1),
-                  ),
+                  t.formatPrice(t.nettoPrice ? i.price_net : i.price, !0, !1, !1),
+                ),
                   (l = t.nettoPrice ? i.price_net : i.price),
                   (t.rebateThreshold = i.threshold))
                 : ($('#' + t.prefix + 'price_value').html(
-                    t.formatPrice(
-                      t.nettoPrice
-                        ? t.currentSizeObj.price.price_net
-                        : t.currentSizeObj.price.value,
-                      !0,
-                      !1,
-                      !1,
-                    ),
+                  t.formatPrice(
+                    t.nettoPrice
+                      ? t.currentSizeObj.price.price_net
+                      : t.currentSizeObj.price.value,
+                    !0,
+                    !1,
+                    !1,
                   ),
+                ),
                   (t.rebateThreshold = !1));
             }
           } else
@@ -10785,44 +10769,44 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                 ))
               : $('#' + t.prefix + 'price_maxprice').hide()
             : '' != l
-            ? ((t.currentSizeObj.price.maxprice = t.currentSizeObj.price.value),
-              (t.currentSizeObj.price.maxprice_net = t.currentSizeObj.price.price_net),
-              t.currentSizeObj.price.maxprice > 0
-                ? ($('#' + t.prefix + 'price_maxprice').show(),
-                  $('#' + t.prefix + 'price_maxprice').html(
-                    t.formatPrice(
-                      t.nettoPrice
-                        ? t.currentSizeObj.price.maxprice_net
-                        : t.currentSizeObj.price.maxprice,
-                      e,
-                    ),
-                  ))
-                : $('#' + t.prefix + 'price_maxprice').hide())
-            : $('#' + t.prefix + 'price_maxprice').hide(),
+              ? ((t.currentSizeObj.price.maxprice = t.currentSizeObj.price.value),
+                (t.currentSizeObj.price.maxprice_net = t.currentSizeObj.price.price_net),
+                t.currentSizeObj.price.maxprice > 0
+                  ? ($('#' + t.prefix + 'price_maxprice').show(),
+                    $('#' + t.prefix + 'price_maxprice').html(
+                      t.formatPrice(
+                        t.nettoPrice
+                          ? t.currentSizeObj.price.maxprice_net
+                          : t.currentSizeObj.price.maxprice,
+                        e,
+                      ),
+                    ))
+                  : $('#' + t.prefix + 'price_maxprice').hide())
+              : $('#' + t.prefix + 'price_maxprice').hide(),
             t.currentSizeObj.price.omnibus_price &&
-              $('#' + t.prefix + 'omnibus_price_value').html(
-                t.formatPrice(
-                  t.nettoPrice
-                    ? t.currentSizeObj.price.omnibus_price_net
-                    : t.currentSizeObj.price.omnibus_price,
-                  e,
-                ),
+            $('#' + t.prefix + 'omnibus_price_value').html(
+              t.formatPrice(
+                t.nettoPrice
+                  ? t.currentSizeObj.price.omnibus_price_net
+                  : t.currentSizeObj.price.omnibus_price,
+                e,
               ),
+            ),
             t.options.hide_unit
               ? $('#' + t.prefix + 'price_unit_sellby, #' + t.prefix + 'price_unit').hide()
               : 1 == t.configObj.valueOfNumberInput
-              ? ($('#' + t.prefix + 'price_unit_sellby')
+                ? ($('#' + t.prefix + 'price_unit_sellby')
                   .hide()
                   .html(t.configObj.valueOfNumberInput),
-                $('#' + t.prefix + 'price_unit').html(t.currentSizeObj.unit))
-              : ($('#' + t.prefix + 'price_unit_sellby')
+                  $('#' + t.prefix + 'price_unit').html(t.currentSizeObj.unit))
+                : ($('#' + t.prefix + 'price_unit_sellby')
                   .show()
                   .html(t.configObj.valueOfNumberInput),
-                $('#' + t.prefix + 'price_unit').html(
-                  t.currentSizeObj.unit_plural
-                    ? t.currentSizeObj.unit_plural
-                    : t.currentSizeObj.unit,
-                )),
+                  $('#' + t.prefix + 'price_unit').html(
+                    t.currentSizeObj.unit_plural
+                      ? t.currentSizeObj.unit_plural
+                      : t.currentSizeObj.unit,
+                  )),
             t.currentSizeObj.bundle_price || t.currentSizeObj.price.yousave_percent
               ? $('#' + t.prefix + 'yousave_bundle_wrapper').show()
               : $('#' + t.prefix + 'yousave_bundle_wrapper').hide(),
@@ -10831,9 +10815,9 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
               : t.currentSizeObj.price.yousave),
             (yousave_percentTmp = t.currentSizeObj.price.yousave_percent),
             '' != l &&
-              ((yousaveTmp = t.nettoPrice
-                ? +t.currentSizeObj.price.maxprice_net - +l
-                : +t.currentSizeObj.price.maxprice - +l),
+            ((yousaveTmp = t.nettoPrice
+              ? +t.currentSizeObj.price.maxprice_net - +l
+              : +t.currentSizeObj.price.maxprice - +l),
               (yousave_percentTmp = (
                 (100 * +yousaveTmp) /
                 (t.nettoPrice
@@ -10841,49 +10825,49 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                   : +t.currentSizeObj.price.maxprice)
               ).toFixed())),
             0 == +yousave_percentTmp &&
-              (yousave_percentTmp = (
-                (+yousaveTmp /
-                  (t.nettoPrice
-                    ? +t.currentSizeObj.price.price_net
-                    : +t.currentSizeObj.price.value)) *
-                100
-              ).toFixed(1)),
+            (yousave_percentTmp = (
+              (+yousaveTmp /
+                (t.nettoPrice
+                  ? +t.currentSizeObj.price.price_net
+                  : +t.currentSizeObj.price.value)) *
+              100
+            ).toFixed(1)),
             'true' != t.currentSizeObj.phone_price &&
-            t.currentSizeObj.bundle_price &&
-            t.currentSizeObj.bundle_price.amount_diff_gross > 0
+              t.currentSizeObj.bundle_price &&
+              t.currentSizeObj.bundle_price.amount_diff_gross > 0
               ? $('#' + t.prefix + 'price_yousave')
-                  .show()
-                  .html(
-                    t.txt.oszczedzasz +
-                      t.currentSizeObj.bundle_price.percent_diff +
-                      t.txt.taniej +
-                      t.formatPrice(
-                        t.nettoPrice
-                          ? t.currentSizeObj.bundle_price.amount_diff_net
-                          : t.currentSizeObj.bundle_price.amount_diff_gross,
-                        e,
-                      ) +
-                      t.txt.wzestawie,
-                  )
-              : 'true' != t.currentSizeObj.phone_price && yousaveTmp
-              ? $('#' + t.prefix + 'price_yousave')
-                  .show()
-                  .html(
-                    t.txt.oszczedzasz +
-                      yousave_percentTmp +
-                      t.txt.taniej +
-                      t.formatPrice(yousaveTmp, e) +
-                      t.txt.nawias_end,
-                  )
-              : $('#' + t.prefix + 'price_yousave').hide(),
-            $('#' + t.prefix + 'price_points_wrapper').hide(),
-            t.currentSizeObj.price.points > 0 &&
-              ($('#' + t.prefix + 'price_points')
                 .show()
                 .html(
-                  t.formatPrice(t.currentSizeObj.price.points, e, t.txt.pkt, !0).toFixed(2) +
-                    t.txt.pkt,
-                ),
+                  t.txt.oszczedzasz +
+                  t.currentSizeObj.bundle_price.percent_diff +
+                  t.txt.taniej +
+                  t.formatPrice(
+                    t.nettoPrice
+                      ? t.currentSizeObj.bundle_price.amount_diff_net
+                      : t.currentSizeObj.bundle_price.amount_diff_gross,
+                    e,
+                  ) +
+                  t.txt.wzestawie,
+                )
+              : 'true' != t.currentSizeObj.phone_price && yousaveTmp
+                ? $('#' + t.prefix + 'price_yousave')
+                  .show()
+                  .html(
+                    t.txt.oszczedzasz +
+                    yousave_percentTmp +
+                    t.txt.taniej +
+                    t.formatPrice(yousaveTmp, e) +
+                    t.txt.nawias_end,
+                  )
+                : $('#' + t.prefix + 'price_yousave').hide(),
+            $('#' + t.prefix + 'price_points_wrapper').hide(),
+            t.currentSizeObj.price.points > 0 &&
+            ($('#' + t.prefix + 'price_points')
+              .show()
+              .html(
+                t.formatPrice(t.currentSizeObj.price.points, e, t.txt.pkt, !0).toFixed(2) +
+                t.txt.pkt,
+              ),
               $('#' + t.prefix + 'points_wrapper').show(),
               $('#' + t.prefix + 'price_points_wrapper').show()),
             t.currentSizeObj.price.points_recive > 0
@@ -10932,36 +10916,36 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                   .find('input')
                   .prop('disabled', !1))
               : 'true' == t.currentSizeObj.phone_price && t.currentSizeObj.price.points > 0
-              ? ($('#' + t.prefix + 'button_basket')
+                ? ($('#' + t.prefix + 'button_basket')
                   .on('click', function () {
                     return classObj.alert(classObj.txt.tylko_punkty), !1;
                   })
                   .addClass('disabled'),
-                $('#' + t.prefix + 'number').prop('disabled', !0))
-              : 'true' == t.currentSizeObj.phone_price
-              ? ($('#' + t.prefix + 'number').prop('disabled', !1),
-                $('#' + t.prefix + 'button_basket')
-                  .on('click', function () {
-                    return classObj.alert(classObj.txt.tylkotel), !1;
-                  })
-                  .addClass('disabled'),
-                $('#' + t.prefix + 'number').prop('disabled', !0),
-                $('#' + t.prefix + 'form').addClass('--phone'))
-              : ($('#' + t.prefix + 'button_basket')
-                  .off('click')
-                  .removeClass('disabled'),
-                $('#' + t.prefix + 'number').prop('disabled', !1),
-                $('#' + t.prefix + 'form').removeClass('--phone'));
+                  $('#' + t.prefix + 'number').prop('disabled', !0))
+                : 'true' == t.currentSizeObj.phone_price
+                  ? ($('#' + t.prefix + 'number').prop('disabled', !1),
+                    $('#' + t.prefix + 'button_basket')
+                      .on('click', function () {
+                        return classObj.alert(classObj.txt.tylkotel), !1;
+                      })
+                      .addClass('disabled'),
+                    $('#' + t.prefix + 'number').prop('disabled', !0),
+                    $('#' + t.prefix + 'form').addClass('--phone'))
+                  : ($('#' + t.prefix + 'button_basket')
+                    .off('click')
+                    .removeClass('disabled'),
+                    $('#' + t.prefix + 'number').prop('disabled', !1),
+                    $('#' + t.prefix + 'form').removeClass('--phone'));
           return (
             t.currentSizeObj.gratis &&
-              ($('#' + t.prefix + 'buy_section').hide(),
+            ($('#' + t.prefix + 'buy_section').hide(),
               $('#' + t.prefix + 'price_points_wrapper').hide()),
             t.currentSizeObj.price.basket_enable &&
-              'y' == t.currentSizeObj.price.basket_enable &&
-              'true' == t.currentSizeObj.phone_price &&
-              ($('#' + t.prefix + 'button_basket')
-                .off('click')
-                .removeClass('disabled'),
+            'y' == t.currentSizeObj.price.basket_enable &&
+            'true' == t.currentSizeObj.phone_price &&
+            ($('#' + t.prefix + 'button_basket')
+              .off('click')
+              .removeClass('disabled'),
               $('#' + t.prefix + 'number').prop('disabled', !1),
               $('#' + t.prefix + 'price_value').html(
                 '<span class="' + t.prefix + '_price_gratis">' + t.txt.gratis_produkt + '</span>',
@@ -10971,9 +10955,9 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
               t.configObj.valueOfNumberInput,
             ),
             t.configObj.rebateNumberNext &&
-              ($('#' + t.prefix + 'product_rebatenumber_value').text(
-                (t.configObj.rebateNumberNext.value + t.txt.proc).replace(/\.00/gi, ''),
-              ),
+            ($('#' + t.prefix + 'product_rebatenumber_value').text(
+              (t.configObj.rebateNumberNext.value + t.txt.proc).replace(/\.00/gi, ''),
+            ),
               $('#' + t.prefix + 'product_rebatenumber_threshold').text(
                 t.configObj.rebateNumberNext.threshold.replace(/\.00/gi, ''),
               )),
@@ -10987,54 +10971,54 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             ? 'false' !== n || product_data.sizes[t.currentSizeObj.type].price_normal
               ? o()
               : $.getJSON(
-                  '/ajax/projector.php?action=get&product=' +
-                    product_data.product_id +
-                    '&size=' +
-                    t.currentSizeObj.type +
-                    '&get=sizeprices',
-                  function (e) {
-                    (product_data.sizes[t.currentSizeObj.type].price = e.sizeprices),
-                      (product_data.sizes[t.currentSizeObj.type].price_normal = e.sizeprices),
-                      o();
-                  },
-                )
-            : $.getJSON(
                 '/ajax/projector.php?action=get&product=' +
-                  product_data.product_id +
-                  '&size=' +
-                  t.currentSizeObj.type +
-                  '&get=sizeprices&subscription=1',
+                product_data.product_id +
+                '&size=' +
+                t.currentSizeObj.type +
+                '&get=sizeprices',
                 function (e) {
                   (product_data.sizes[t.currentSizeObj.type].price = e.sizeprices),
-                    (product_data.sizes[t.currentSizeObj.type].price_subscription = e.sizeprices),
+                    (product_data.sizes[t.currentSizeObj.type].price_normal = e.sizeprices),
                     o();
                 },
               )
+            : $.getJSON(
+              '/ajax/projector.php?action=get&product=' +
+              product_data.product_id +
+              '&size=' +
+              t.currentSizeObj.type +
+              '&get=sizeprices&subscription=1',
+              function (e) {
+                (product_data.sizes[t.currentSizeObj.type].price = e.sizeprices),
+                  (product_data.sizes[t.currentSizeObj.type].price_subscription = e.sizeprices),
+                  o();
+              },
+            )
           : product_data.sizes &&
-            ('product_bundle' != product_data.product_type
-              ? $.getJSON(
-                  '/ajax/projector.php?action=get&product=' +
-                    product_data.product_id +
-                    '&size=' +
-                    t.currentSizeObj.type +
-                    '&get=sizeavailability,sizedelivery,sizeprices' +
-                    ('true' === n ? '&subscription=1' : ''),
-                  function (e) {
-                    (product_data.sizes[t.currentSizeObj.type].availability = e.sizeavailability),
-                      (product_data.sizes[t.currentSizeObj.type].delivery = e.sizedelivery),
-                      (product_data.sizes[t.currentSizeObj.type].price = e.sizeprices),
-                      (product_data.sizes[t.currentSizeObj.type].delay_time =
-                        e.sizeavailability.delay_time),
-                      'true' === n
-                        ? (product_data.sizes[t.currentSizeObj.type].price_subscription =
-                            e.sizeprices)
-                        : (product_data.sizes[t.currentSizeObj.type].price_normal = e.sizeprices),
-                      o();
-                  },
-                )
-              : 'product_bundle' == product_data.product_type &&
-                app_shop.fn.update_bundle &&
-                app_shop.fn.update_bundle());
+          ('product_bundle' != product_data.product_type
+            ? $.getJSON(
+              '/ajax/projector.php?action=get&product=' +
+              product_data.product_id +
+              '&size=' +
+              t.currentSizeObj.type +
+              '&get=sizeavailability,sizedelivery,sizeprices' +
+              ('true' === n ? '&subscription=1' : ''),
+              function (e) {
+                (product_data.sizes[t.currentSizeObj.type].availability = e.sizeavailability),
+                  (product_data.sizes[t.currentSizeObj.type].delivery = e.sizedelivery),
+                  (product_data.sizes[t.currentSizeObj.type].price = e.sizeprices),
+                  (product_data.sizes[t.currentSizeObj.type].delay_time =
+                    e.sizeavailability.delay_time),
+                  'true' === n
+                    ? (product_data.sizes[t.currentSizeObj.type].price_subscription =
+                      e.sizeprices)
+                    : (product_data.sizes[t.currentSizeObj.type].price_normal = e.sizeprices),
+                  o();
+              },
+            )
+            : 'product_bundle' == product_data.product_type &&
+            app_shop.fn.update_bundle &&
+            app_shop.fn.update_bundle());
       }),
       (this.liczProcent = function (e, t) {
         return (e = parseFloat(e)) - e * ((t = parseFloat(t)) / 100);
@@ -11081,23 +11065,23 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                     (t.currentSizeObj.unit_precision =
                       '' != product_data.unit_precision ? product_data.unit_precision : 0),
                     product_data.for_points &&
-                      (t.currentSizeObj.for_points = product_data.for_points))
+                    (t.currentSizeObj.for_points = product_data.for_points))
                   : t.errorMsg.push('setCurrentSize no data');
             };
           product_data.sizes
             ? i()
             : $.getJSON(
-                '/ajax/projector.php?action=get&product=' + product_data.product_id + '&get=sizes',
-                function (e) {
-                  e.sizes &&
-                    ((product_data.sizes = {}),
+              '/ajax/projector.php?action=get&product=' + product_data.product_id + '&get=sizes',
+              function (e) {
+                e.sizes &&
+                  ((product_data.sizes = {}),
                     $.each(e.sizes.items, function (e, t) {
                       product_data.sizes[t.type] = t;
                     }),
                     i(),
                     t.start());
-                },
-              ),
+              },
+            ),
             this.options.endSetCurrentSizeFunction();
         }
       }),
@@ -11141,7 +11125,7 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                 projectorObj.start(),
                 classObj.options.endGetAjaxProductDataFunction();
             },
-            error: function () {},
+            error: function () { },
           });
       });
   };
@@ -11289,8 +11273,8 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
       (this.dpDiv = n(
         e(
           "<div id='" +
-            this._mainDivId +
-            "' class='ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all'></div>",
+          this._mainDivId +
+          "' class='ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all'></div>",
         ),
       ));
   }
@@ -11300,19 +11284,19 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
       .on('mouseout', i, function () {
         e(this).removeClass('ui-state-hover'),
           -1 !== this.className.indexOf('ui-datepicker-prev') &&
-            e(this).removeClass('ui-datepicker-prev-hover'),
+          e(this).removeClass('ui-datepicker-prev-hover'),
           -1 !== this.className.indexOf('ui-datepicker-next') &&
-            e(this).removeClass('ui-datepicker-next-hover');
+          e(this).removeClass('ui-datepicker-next-hover');
       })
       .on('mouseover', i, o);
   }
   function o() {
     e.datepicker._isDisabledDatepicker(t.inline ? t.dpDiv.parent()[0] : t.input[0]) ||
       (e(this).parents('.ui-datepicker-calendar').find('a').removeClass('ui-state-hover'),
-      e(this).addClass('ui-state-hover'),
-      -1 !== this.className.indexOf('ui-datepicker-prev') &&
+        e(this).addClass('ui-state-hover'),
+        -1 !== this.className.indexOf('ui-datepicker-prev') &&
         e(this).addClass('ui-datepicker-prev-hover'),
-      -1 !== this.className.indexOf('ui-datepicker-next') &&
+        -1 !== this.className.indexOf('ui-datepicker-next') &&
         e(this).addClass('ui-datepicker-next-hover'));
   }
   function r(t, i) {
@@ -11356,12 +11340,12 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           inline: i,
           dpDiv: i
             ? n(
-                e(
-                  "<div class='" +
-                    this._inlineClass +
-                    " ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all'></div>",
-                ),
-              )
+              e(
+                "<div class='" +
+                this._inlineClass +
+                " ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all'></div>",
+              ),
+            )
             : this.dpDiv,
         };
       },
@@ -11370,7 +11354,7 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
         (i.append = e([])),
           (i.trigger = e([])),
           n.hasClass(this.markerClassName) ||
-            (this._attachments(n, i),
+          (this._attachments(n, i),
             n
               .addClass(this.markerClassName)
               .on('keydown', this._doKeyDown)
@@ -11388,19 +11372,19 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           s = this._get(i, 'isRTL');
         i.append && i.append.remove(),
           a &&
-            ((i.append = e('<span>').addClass(this._appendClass).text(a)),
+          ((i.append = e('<span>').addClass(this._appendClass).text(a)),
             t[s ? 'before' : 'after'](i.append)),
           t.off('focus', this._showDatepicker),
           i.trigger && i.trigger.remove(),
           ('focus' !== (n = this._get(i, 'showOn')) && 'both' !== n) ||
-            t.on('focus', this._showDatepicker),
+          t.on('focus', this._showDatepicker),
           ('button' !== n && 'both' !== n) ||
-            ((o = this._get(i, 'buttonText')),
+          ((o = this._get(i, 'buttonText')),
             (r = this._get(i, 'buttonImage')),
             this._get(i, 'buttonImageOnly')
               ? (i.trigger = e('<img>')
-                  .addClass(this._triggerClass)
-                  .attr({ src: r, alt: o, title: o }))
+                .addClass(this._triggerClass)
+                .attr({ src: r, alt: o, title: o }))
               : ((i.trigger = e("<button type='button'>").addClass(this._triggerClass)),
                 r
                   ? i.trigger.html(e('<img>').attr({ src: r, alt: o, title: o }))
@@ -11411,8 +11395,8 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                 e.datepicker._datepickerShowing && e.datepicker._lastInput === t[0]
                   ? e.datepicker._hideDatepicker()
                   : e.datepicker._datepickerShowing && e.datepicker._lastInput !== t[0]
-                  ? (e.datepicker._hideDatepicker(), e.datepicker._showDatepicker(t[0]))
-                  : e.datepicker._showDatepicker(t[0]),
+                    ? (e.datepicker._hideDatepicker(), e.datepicker._showDatepicker(t[0]))
+                    : e.datepicker._showDatepicker(t[0]),
                 !1
               );
             }));
@@ -11431,10 +11415,10 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                 e[o].length > i && ((i = e[o].length), (n = o));
               return n;
             }),
-            r.setMonth(t(this._get(e, a.match(/MM/) ? 'monthNames' : 'monthNamesShort'))),
-            r.setDate(
-              t(this._get(e, a.match(/DD/) ? 'dayNames' : 'dayNamesShort')) + 20 - r.getDay(),
-            )),
+              r.setMonth(t(this._get(e, a.match(/MM/) ? 'monthNames' : 'monthNamesShort'))),
+              r.setDate(
+                t(this._get(e, a.match(/DD/) ? 'dayNames' : 'dayNamesShort')) + 20 - r.getDay(),
+              )),
             e.input.attr('size', this._formatDate(e, r).length);
         }
       },
@@ -11442,12 +11426,12 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
         var n = e(t);
         n.hasClass(this.markerClassName) ||
           (n.addClass(this.markerClassName).append(i.dpDiv),
-          e.data(t, 'datepicker', i),
-          this._setDate(i, this._getDefaultDate(i), !0),
-          this._updateDatepicker(i),
-          this._updateAlternate(i),
-          i.settings.disabled && this._disableDatepicker(t),
-          i.dpDiv.css('display', 'block'));
+            e.data(t, 'datepicker', i),
+            this._setDate(i, this._getDefaultDate(i), !0),
+            this._updateDatepicker(i),
+            this._updateAlternate(i),
+            i.settings.disabled && this._disableDatepicker(t),
+            i.dpDiv.css('display', 'block'));
       },
       _dialogDatepicker: function (t, i, n, o, a) {
         var s,
@@ -11458,12 +11442,12 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           u = this._dialogInst;
         return (
           u ||
-            ((this.uuid += 1),
+          ((this.uuid += 1),
             (s = 'dp' + this.uuid),
             (this._dialogInput = e(
               "<input type='text' id='" +
-                s +
-                "' style='position: absolute; top: -100px; width: 0px;'/>",
+              s +
+              "' style='position: absolute; top: -100px; width: 0px;'/>",
             )),
             this._dialogInput.on('keydown', this._doKeyDown),
             e('body').append(this._dialogInput),
@@ -11474,7 +11458,7 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           this._dialogInput.val(i),
           (this._pos = a ? (a.length ? a : [a.pageX, a.pageY]) : null),
           this._pos ||
-            ((l = document.documentElement.clientWidth),
+          ((l = document.documentElement.clientWidth),
             (c = document.documentElement.clientHeight),
             (p = document.documentElement.scrollLeft || document.body.scrollLeft),
             (d = document.documentElement.scrollTop || document.body.scrollTop),
@@ -11495,18 +11479,18 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           r = e.data(i, 'datepicker');
         o.hasClass(this.markerClassName) &&
           ((n = i.nodeName.toLowerCase()),
-          e.removeData(i, 'datepicker'),
-          'input' === n
-            ? (r.append.remove(),
-              r.trigger.remove(),
-              o
-                .removeClass(this.markerClassName)
-                .off('focus', this._showDatepicker)
-                .off('keydown', this._doKeyDown)
-                .off('keypress', this._doKeyPress)
-                .off('keyup', this._doKeyUp))
-            : ('div' !== n && 'span' !== n) || o.removeClass(this.markerClassName).empty(),
-          t === r && ((t = null), (this._curInst = null)));
+            e.removeData(i, 'datepicker'),
+            'input' === n
+              ? (r.append.remove(),
+                r.trigger.remove(),
+                o
+                  .removeClass(this.markerClassName)
+                  .off('focus', this._showDatepicker)
+                  .off('keydown', this._doKeyDown)
+                  .off('keypress', this._doKeyPress)
+                  .off('keyup', this._doKeyUp))
+              : ('div' !== n && 'span' !== n) || o.removeClass(this.markerClassName).empty(),
+            t === r && ((t = null), (this._curInst = null)));
       },
       _enableDatepicker: function (t) {
         var i,
@@ -11525,13 +11509,13 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                 .filter('img')
                 .css({ opacity: '1.0', cursor: '' }))
             : ('div' !== i && 'span' !== i) ||
-              ((n = o.children('.' + this._inlineClass))
-                .children()
-                .removeClass('ui-state-disabled'),
+            ((n = o.children('.' + this._inlineClass))
+              .children()
+              .removeClass('ui-state-disabled'),
               n.find('select.ui-datepicker-month, select.ui-datepicker-year').prop('disabled', !1)),
-          (this._disabledInputs = e.map(this._disabledInputs, function (e) {
-            return e === t ? null : e;
-          })));
+            (this._disabledInputs = e.map(this._disabledInputs, function (e) {
+              return e === t ? null : e;
+            })));
       },
       _disableDatepicker: function (t) {
         var i,
@@ -11550,12 +11534,12 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                 .filter('img')
                 .css({ opacity: '0.5', cursor: 'default' }))
             : ('div' !== i && 'span' !== i) ||
-              ((n = o.children('.' + this._inlineClass)).children().addClass('ui-state-disabled'),
+            ((n = o.children('.' + this._inlineClass)).children().addClass('ui-state-disabled'),
               n.find('select.ui-datepicker-month, select.ui-datepicker-year').prop('disabled', !0)),
-          (this._disabledInputs = e.map(this._disabledInputs, function (e) {
-            return e === t ? null : e;
-          })),
-          (this._disabledInputs[this._disabledInputs.length] = t));
+            (this._disabledInputs = e.map(this._disabledInputs, function (e) {
+              return e === t ? null : e;
+            })),
+            (this._disabledInputs[this._disabledInputs.length] = t));
       },
       _isDisabledDatepicker: function (e) {
         if (!e) return !1;
@@ -11580,28 +11564,28 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           return 'defaults' === i
             ? e.extend({}, e.datepicker._defaults)
             : c
-            ? 'all' === i
-              ? e.extend({}, c.settings)
-              : this._get(c, i)
-            : null;
+              ? 'all' === i
+                ? e.extend({}, c.settings)
+                : this._get(c, i)
+              : null;
         (o = i || {}),
           'string' == typeof i && ((o = {})[i] = n),
           c &&
-            (this._curInst === c && this._hideDatepicker(),
+          (this._curInst === c && this._hideDatepicker(),
             (a = this._getDateDatepicker(t, !0)),
             (s = this._getMinMaxDate(c, 'min')),
             (l = this._getMinMaxDate(c, 'max')),
             r(c.settings, o),
             null !== s &&
-              void 0 !== o.dateFormat &&
-              void 0 === o.minDate &&
-              (c.settings.minDate = this._formatDate(c, s)),
+            void 0 !== o.dateFormat &&
+            void 0 === o.minDate &&
+            (c.settings.minDate = this._formatDate(c, s)),
             null !== l &&
-              void 0 !== o.dateFormat &&
-              void 0 === o.maxDate &&
-              (c.settings.maxDate = this._formatDate(c, l)),
+            void 0 !== o.dateFormat &&
+            void 0 === o.maxDate &&
+            (c.settings.maxDate = this._formatDate(c, l)),
             'disabled' in o &&
-              (o.disabled ? this._disableDatepicker(t) : this._enableDatepicker(t)),
+            (o.disabled ? this._disableDatepicker(t) : this._enableDatepicker(t)),
             this._attachments(e(t), c),
             this._autoSize(c),
             this._setDate(c, a),
@@ -11680,13 +11664,13 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
               (t.ctrlKey || t.metaKey) && e.datepicker._adjustDate(t.target, s ? 1 : -1, 'D'),
                 (a = t.ctrlKey || t.metaKey),
                 t.originalEvent.altKey &&
-                  e.datepicker._adjustDate(
-                    t.target,
-                    t.ctrlKey
-                      ? -e.datepicker._get(r, 'stepBigMonths')
-                      : -e.datepicker._get(r, 'stepMonths'),
-                    'M',
-                  );
+                e.datepicker._adjustDate(
+                  t.target,
+                  t.ctrlKey
+                    ? -e.datepicker._get(r, 'stepBigMonths')
+                    : -e.datepicker._get(r, 'stepMonths'),
+                  'M',
+                );
               break;
             case 38:
               (t.ctrlKey || t.metaKey) && e.datepicker._adjustDate(t.target, -7, 'D'),
@@ -11696,13 +11680,13 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
               (t.ctrlKey || t.metaKey) && e.datepicker._adjustDate(t.target, s ? -1 : 1, 'D'),
                 (a = t.ctrlKey || t.metaKey),
                 t.originalEvent.altKey &&
-                  e.datepicker._adjustDate(
-                    t.target,
-                    t.ctrlKey
-                      ? +e.datepicker._get(r, 'stepBigMonths')
-                      : +e.datepicker._get(r, 'stepMonths'),
-                    'M',
-                  );
+                e.datepicker._adjustDate(
+                  t.target,
+                  t.ctrlKey
+                    ? +e.datepicker._get(r, 'stepBigMonths')
+                    : +e.datepicker._get(r, 'stepMonths'),
+                  'M',
+                );
               break;
             case 40:
               (t.ctrlKey || t.metaKey) && e.datepicker._adjustDate(t.target, 7, 'D'),
@@ -11735,75 +11719,75 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
               e.datepicker._getFormatConfig(i),
             ) &&
               (e.datepicker._setDateFromField(i),
-              e.datepicker._updateAlternate(i),
-              e.datepicker._updateDatepicker(i));
-          } catch (e) {}
+                e.datepicker._updateAlternate(i),
+                e.datepicker._updateDatepicker(i));
+          } catch (e) { }
         return !0;
       },
       _showDatepicker: function (t) {
         var i, n, o, a, s, l, c;
         ('input' !== (t = t.target || t).nodeName.toLowerCase() &&
           (t = e('input', t.parentNode)[0]),
-        e.datepicker._isDisabledDatepicker(t) || e.datepicker._lastInput === t) ||
+          e.datepicker._isDisabledDatepicker(t) || e.datepicker._lastInput === t) ||
           ((i = e.datepicker._getInst(t)),
-          e.datepicker._curInst &&
+            e.datepicker._curInst &&
             e.datepicker._curInst !== i &&
             (e.datepicker._curInst.dpDiv.stop(!0, !0),
-            i &&
+              i &&
               e.datepicker._datepickerShowing &&
               e.datepicker._hideDatepicker(e.datepicker._curInst.input[0])),
-          !1 !== (o = (n = e.datepicker._get(i, 'beforeShow')) ? n.apply(t, [t, i]) : {}) &&
+            !1 !== (o = (n = e.datepicker._get(i, 'beforeShow')) ? n.apply(t, [t, i]) : {}) &&
             (r(i.settings, o),
-            (i.lastVal = null),
-            (e.datepicker._lastInput = t),
-            e.datepicker._setDateFromField(i),
-            e.datepicker._inDialog && (t.value = ''),
-            e.datepicker._pos ||
+              (i.lastVal = null),
+              (e.datepicker._lastInput = t),
+              e.datepicker._setDateFromField(i),
+              e.datepicker._inDialog && (t.value = ''),
+              e.datepicker._pos ||
               ((e.datepicker._pos = e.datepicker._findPos(t)),
-              (e.datepicker._pos[1] += t.offsetHeight)),
-            (a = !1),
-            e(t)
-              .parents()
-              .each(function () {
-                return !(a |= 'fixed' === e(this).css('position'));
+                (e.datepicker._pos[1] += t.offsetHeight)),
+              (a = !1),
+              e(t)
+                .parents()
+                .each(function () {
+                  return !(a |= 'fixed' === e(this).css('position'));
+                }),
+              (s = { left: e.datepicker._pos[0], top: e.datepicker._pos[1] }),
+              (e.datepicker._pos = null),
+              i.dpDiv.empty(),
+              i.dpDiv.css({ position: 'absolute', display: 'block', top: '-1000px' }),
+              e.datepicker._updateDatepicker(i),
+              (s = e.datepicker._checkOffset(i, s, a)),
+              i.dpDiv.css({
+                position: e.datepicker._inDialog && e.blockUI ? 'static' : a ? 'fixed' : 'absolute',
+                display: 'none',
+                left: s.left + 'px',
+                top: s.top + 'px',
               }),
-            (s = { left: e.datepicker._pos[0], top: e.datepicker._pos[1] }),
-            (e.datepicker._pos = null),
-            i.dpDiv.empty(),
-            i.dpDiv.css({ position: 'absolute', display: 'block', top: '-1000px' }),
-            e.datepicker._updateDatepicker(i),
-            (s = e.datepicker._checkOffset(i, s, a)),
-            i.dpDiv.css({
-              position: e.datepicker._inDialog && e.blockUI ? 'static' : a ? 'fixed' : 'absolute',
-              display: 'none',
-              left: s.left + 'px',
-              top: s.top + 'px',
-            }),
-            i.inline ||
+              i.inline ||
               ((l = e.datepicker._get(i, 'showAnim')),
-              (c = e.datepicker._get(i, 'duration')),
-              i.dpDiv.css(
-                'z-index',
-                (function (e) {
-                  for (var t, i; e.length && e[0] !== document; ) {
-                    if (
-                      ('absolute' === (t = e.css('position')) ||
-                        'relative' === t ||
-                        'fixed' === t) &&
-                      ((i = parseInt(e.css('zIndex'), 10)), !isNaN(i) && 0 !== i)
-                    )
-                      return i;
-                    e = e.parent();
-                  }
-                  return 0;
-                })(e(t)) + 1,
-              ),
-              (e.datepicker._datepickerShowing = !0),
-              e.effects && e.effects.effect[l]
-                ? i.dpDiv.show(l, e.datepicker._get(i, 'showOptions'), c)
-                : i.dpDiv[l || 'show'](l ? c : null),
-              e.datepicker._shouldFocusInput(i) && i.input.trigger('focus'),
-              (e.datepicker._curInst = i))));
+                (c = e.datepicker._get(i, 'duration')),
+                i.dpDiv.css(
+                  'z-index',
+                  (function (e) {
+                    for (var t, i; e.length && e[0] !== document;) {
+                      if (
+                        ('absolute' === (t = e.css('position')) ||
+                          'relative' === t ||
+                          'fixed' === t) &&
+                        ((i = parseInt(e.css('zIndex'), 10)), !isNaN(i) && 0 !== i)
+                      )
+                        return i;
+                      e = e.parent();
+                    }
+                    return 0;
+                  })(e(t)) + 1,
+                ),
+                (e.datepicker._datepickerShowing = !0),
+                e.effects && e.effects.effect[l]
+                  ? i.dpDiv.show(l, e.datepicker._get(i, 'showOptions'), c)
+                  : i.dpDiv[l || 'show'](l ? c : null),
+                e.datepicker._shouldFocusInput(i) && i.input.trigger('focus'),
+                (e.datepicker._curInst = i))));
       },
       _updateDatepicker: function (i) {
         (this.maxRows = 4),
@@ -11823,11 +11807,11 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           i.dpDiv[(1 !== r[0] || 1 !== r[1] ? 'add' : 'remove') + 'Class']('ui-datepicker-multi'),
           i.dpDiv[(this._get(i, 'isRTL') ? 'add' : 'remove') + 'Class']('ui-datepicker-rtl'),
           i === e.datepicker._curInst &&
-            e.datepicker._datepickerShowing &&
-            e.datepicker._shouldFocusInput(i) &&
-            i.input.trigger('focus'),
+          e.datepicker._datepickerShowing &&
+          e.datepicker._shouldFocusInput(i) &&
+          i.input.trigger('focus'),
           i.yearshtml &&
-            ((n = i.yearshtml),
+          ((n = i.yearshtml),
             setTimeout(function () {
               n === i.yearshtml &&
                 i.yearshtml &&
@@ -11876,25 +11860,25 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           (t && a !== e.data(t, 'datepicker')) ||
           (this._datepickerShowing &&
             ((i = this._get(a, 'showAnim')),
-            (n = this._get(a, 'duration')),
-            (o = function () {
-              e.datepicker._tidyDialog(a);
-            }),
-            e.effects && (e.effects.effect[i] || e.effects[i])
-              ? a.dpDiv.hide(i, e.datepicker._get(a, 'showOptions'), n, o)
-              : a.dpDiv['slideDown' === i ? 'slideUp' : 'fadeIn' === i ? 'fadeOut' : 'hide'](
+              (n = this._get(a, 'duration')),
+              (o = function () {
+                e.datepicker._tidyDialog(a);
+              }),
+              e.effects && (e.effects.effect[i] || e.effects[i])
+                ? a.dpDiv.hide(i, e.datepicker._get(a, 'showOptions'), n, o)
+                : a.dpDiv['slideDown' === i ? 'slideUp' : 'fadeIn' === i ? 'fadeOut' : 'hide'](
                   i ? n : null,
                   o,
                 ),
-            i || o(),
-            (this._datepickerShowing = !1),
-            (r = this._get(a, 'onClose')) &&
+              i || o(),
+              (this._datepickerShowing = !1),
+              (r = this._get(a, 'onClose')) &&
               r.apply(a.input ? a.input[0] : null, [a.input ? a.input.val() : '', a]),
-            (this._lastInput = null),
-            this._inDialog &&
+              (this._lastInput = null),
+              this._inDialog &&
               (this._dialogInput.css({ position: 'absolute', left: '0', top: '-100px' }),
-              e.blockUI && (e.unblockUI(), e('body').append(this.dpDiv))),
-            (this._inDialog = !1)));
+                e.blockUI && (e.unblockUI(), e('body').append(this.dpDiv))),
+              (this._inDialog = !1)));
       },
       _tidyDialog: function (e) {
         e.dpDiv.removeClass(this._dialogClass).off('.ui-datepicker-calendar');
@@ -11951,9 +11935,9 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           (((r = this._getInst(a[0])).selectedDay = r.currentDay = parseInt(
             e('a', o).attr('data-date'),
           )),
-          (r.selectedMonth = r.currentMonth = i),
-          (r.selectedYear = r.currentYear = n),
-          this._selectDate(t, this._formatDate(r, r.currentDay, r.currentMonth, r.currentYear)));
+            (r.selectedMonth = r.currentMonth = i),
+            (r.selectedYear = r.currentYear = n),
+            this._selectDate(t, this._formatDate(r, r.currentDay, r.currentMonth, r.currentYear)));
       },
       _clearDate: function (t) {
         var i = e(t);
@@ -11983,9 +11967,9 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           r = this._get(t, 'altField');
         r &&
           ((i = this._get(t, 'altFormat') || this._get(t, 'dateFormat')),
-          (n = this._getDate(t)),
-          (o = this.formatDate(i, n, this._getFormatConfig(t))),
-          e(document).find(r).val(o));
+            (n = this._getDate(t)),
+            (o = this.formatDate(i, n, this._getFormatConfig(t))),
+            e(document).find(r).val(o));
       },
       noWeekends: function (e) {
         var t = e.getDay();
@@ -12048,7 +12032,7 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                 if (i.substr(l, n.length).toLowerCase() === n.toLowerCase())
                   return (r = t[0]), (l += n.length), !1;
               }),
-              -1 !== r)
+                -1 !== r)
             )
               return r + 1;
             throw 'Unknown name at position ' + l;
@@ -12101,11 +12085,11 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           (-1 === f
             ? (f = new Date().getFullYear())
             : f < 100 &&
-              (f +=
-                new Date().getFullYear() - (new Date().getFullYear() % 100) + (f <= p ? 0 : -100)),
-          y > -1)
+            (f +=
+              new Date().getFullYear() - (new Date().getFullYear() % 100) + (f <= p ? 0 : -100)),
+            y > -1)
         )
-          for (m = 1, g = y; ; ) {
+          for (m = 1, g = y; ;) {
             if (g <= (r = this._getDaysInMonth(f, m - 1))) break;
             m++, (g -= r);
           }
@@ -12144,7 +12128,7 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           },
           c = function (e, t, i) {
             var n = '' + t;
-            if (l(e)) for (; n.length < i; ) n = '0' + n;
+            if (l(e)) for (; n.length < i;) n = '0' + n;
             return n;
           },
           p = function (e, t, i, n) {
@@ -12169,7 +12153,7 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                     Math.round(
                       (new Date(t.getFullYear(), t.getMonth(), t.getDate()).getTime() -
                         new Date(t.getFullYear(), 0, 0).getTime()) /
-                        864e5,
+                      864e5,
                     ),
                     3,
                   );
@@ -12263,22 +12247,22 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           null == i || '' === i
             ? n
             : 'string' == typeof i
-            ? (function (i) {
+              ? (function (i) {
                 try {
                   return e.datepicker.parseDate(
                     e.datepicker._get(t, 'dateFormat'),
                     i,
                     e.datepicker._getFormatConfig(t),
                   );
-                } catch (e) {}
+                } catch (e) { }
                 for (
                   var n =
-                      (i.toLowerCase().match(/^c/) ? e.datepicker._getDate(t) : null) || new Date(),
-                    o = n.getFullYear(),
-                    r = n.getMonth(),
-                    a = n.getDate(),
-                    s = /([+\-]?[0-9]+)\s*(d|D|w|W|m|M|y|Y)?/g,
-                    l = s.exec(i);
+                    (i.toLowerCase().match(/^c/) ? e.datepicker._getDate(t) : null) || new Date(),
+                  o = n.getFullYear(),
+                  r = n.getMonth(),
+                  a = n.getDate(),
+                  s = /([+\-]?[0-9]+)\s*(d|D|w|W|m|M|y|Y)?/g,
+                  l = s.exec(i);
                   l;
 
                 ) {
@@ -12305,17 +12289,17 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                 }
                 return new Date(o, r, a);
               })(i)
-            : 'number' == typeof i
-            ? isNaN(i)
-              ? n
-              : (function (e) {
-                  var t = new Date();
-                  return t.setDate(t.getDate() + e), t;
-                })(i)
-            : new Date(i.getTime());
+              : 'number' == typeof i
+                ? isNaN(i)
+                  ? n
+                  : (function (e) {
+                    var t = new Date();
+                    return t.setDate(t.getDate() + e), t;
+                  })(i)
+                : new Date(i.getTime());
         return (
           (o = o && 'Invalid Date' === o.toString() ? n : o) &&
-            (o.setHours(0), o.setMinutes(0), o.setSeconds(0), o.setMilliseconds(0)),
+          (o.setHours(0), o.setMinutes(0), o.setSeconds(0), o.setMilliseconds(0)),
           this._daylightSavingAdjust(o)
         );
       },
@@ -12441,127 +12425,127 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             i = this._daylightSavingAdjust(
               new Date(X.getFullYear(), X.getMonth() - Q[0] * Q[1] + 1, X.getDate()),
             ),
-              i = K && i < K ? K : i;
+            i = K && i < K ? K : i;
             this._daylightSavingAdjust(new Date(te, ee, 1)) > i;
 
           )
             --ee < 0 && ((ee = 11), te--);
         for (
           t.drawMonth = ee,
-            t.drawYear = te,
-            n = this._get(t, 'prevText'),
-            n = U
-              ? this.formatDate(
-                  n,
-                  this._daylightSavingAdjust(new Date(te, ee - G, 1)),
-                  this._getFormatConfig(t),
-                )
-              : n,
-            o = this._canAdjustMonth(t, -1, te, ee)
-              ? e('<a>')
-                  .attr({
-                    class: 'ui-datepicker-prev ui-corner-all',
-                    'data-handler': 'prev',
-                    'data-event': 'click',
-                    title: n,
-                  })
-                  .append(
-                    e('<span>')
-                      .addClass('ui-icon ui-icon-circle-triangle-' + (R ? 'e' : 'w'))
-                      .text(n),
-                  )[0].outerHTML
-              : Y
+          t.drawYear = te,
+          n = this._get(t, 'prevText'),
+          n = U
+            ? this.formatDate(
+              n,
+              this._daylightSavingAdjust(new Date(te, ee - G, 1)),
+              this._getFormatConfig(t),
+            )
+            : n,
+          o = this._canAdjustMonth(t, -1, te, ee)
+            ? e('<a>')
+              .attr({
+                class: 'ui-datepicker-prev ui-corner-all',
+                'data-handler': 'prev',
+                'data-event': 'click',
+                title: n,
+              })
+              .append(
+                e('<span>')
+                  .addClass('ui-icon ui-icon-circle-triangle-' + (R ? 'e' : 'w'))
+                  .text(n),
+              )[0].outerHTML
+            : Y
               ? ''
               : e('<a>')
-                  .attr({ class: 'ui-datepicker-prev ui-corner-all ui-state-disabled', title: n })
-                  .append(
-                    e('<span>')
-                      .addClass('ui-icon ui-icon-circle-triangle-' + (R ? 'e' : 'w'))
-                      .text(n),
-                  )[0].outerHTML,
-            r = this._get(t, 'nextText'),
-            r = U
-              ? this.formatDate(
-                  r,
-                  this._daylightSavingAdjust(new Date(te, ee + G, 1)),
-                  this._getFormatConfig(t),
-                )
-              : r,
-            a = this._canAdjustMonth(t, 1, te, ee)
-              ? e('<a>')
-                  .attr({
-                    class: 'ui-datepicker-next ui-corner-all',
-                    'data-handler': 'next',
-                    'data-event': 'click',
-                    title: r,
-                  })
-                  .append(
-                    e('<span>')
-                      .addClass('ui-icon ui-icon-circle-triangle-' + (R ? 'w' : 'e'))
-                      .text(r),
-                  )[0].outerHTML
-              : Y
-              ? ''
-              : e('<a>')
-                  .attr({ class: 'ui-datepicker-next ui-corner-all ui-state-disabled', title: r })
-                  .append(
-                    e('<span>')
-                      .attr('class', 'ui-icon ui-icon-circle-triangle-' + (R ? 'w' : 'e'))
-                      .text(r),
-                  )[0].outerHTML,
-            s = this._get(t, 'currentText'),
-            l = this._get(t, 'gotoCurrent') && t.currentDay ? Z : B,
-            s = U ? this.formatDate(s, l, this._getFormatConfig(t)) : s,
-            c = '',
-            t.inline ||
-              (c = e('<button>')
-                .attr({
-                  type: 'button',
-                  class: 'ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all',
-                  'data-handler': 'hide',
-                  'data-event': 'click',
-                })
-                .text(this._get(t, 'closeText'))[0].outerHTML),
-            p = '',
-            W &&
-              (p = e("<div class='ui-datepicker-buttonpane ui-widget-content'>")
-                .append(R ? c : '')
+                .attr({ class: 'ui-datepicker-prev ui-corner-all ui-state-disabled', title: n })
                 .append(
-                  this._isInRange(t, l)
-                    ? e('<button>')
-                        .attr({
-                          type: 'button',
-                          class:
-                            'ui-datepicker-current ui-state-default ui-priority-secondary ui-corner-all',
-                          'data-handler': 'today',
-                          'data-event': 'click',
-                        })
-                        .text(s)
-                    : '',
-                )
-                .append(R ? '' : c)[0].outerHTML),
-            d = parseInt(this._get(t, 'firstDay'), 10),
-            d = isNaN(d) ? 0 : d,
-            u = this._get(t, 'showWeek'),
-            h = this._get(t, 'dayNames'),
-            _ = this._get(t, 'dayNamesMin'),
-            f = this._get(t, 'monthNames'),
-            m = this._get(t, 'monthNamesShort'),
-            g = this._get(t, 'beforeShowDay'),
-            y = this._get(t, 'showOtherMonths'),
-            v = this._get(t, 'selectOtherMonths'),
-            b = this._getDefaultDate(t),
-            w = '',
-            x = 0;
+                  e('<span>')
+                    .addClass('ui-icon ui-icon-circle-triangle-' + (R ? 'e' : 'w'))
+                    .text(n),
+                )[0].outerHTML,
+          r = this._get(t, 'nextText'),
+          r = U
+            ? this.formatDate(
+              r,
+              this._daylightSavingAdjust(new Date(te, ee + G, 1)),
+              this._getFormatConfig(t),
+            )
+            : r,
+          a = this._canAdjustMonth(t, 1, te, ee)
+            ? e('<a>')
+              .attr({
+                class: 'ui-datepicker-next ui-corner-all',
+                'data-handler': 'next',
+                'data-event': 'click',
+                title: r,
+              })
+              .append(
+                e('<span>')
+                  .addClass('ui-icon ui-icon-circle-triangle-' + (R ? 'w' : 'e'))
+                  .text(r),
+              )[0].outerHTML
+            : Y
+              ? ''
+              : e('<a>')
+                .attr({ class: 'ui-datepicker-next ui-corner-all ui-state-disabled', title: r })
+                .append(
+                  e('<span>')
+                    .attr('class', 'ui-icon ui-icon-circle-triangle-' + (R ? 'w' : 'e'))
+                    .text(r),
+                )[0].outerHTML,
+          s = this._get(t, 'currentText'),
+          l = this._get(t, 'gotoCurrent') && t.currentDay ? Z : B,
+          s = U ? this.formatDate(s, l, this._getFormatConfig(t)) : s,
+          c = '',
+          t.inline ||
+          (c = e('<button>')
+            .attr({
+              type: 'button',
+              class: 'ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all',
+              'data-handler': 'hide',
+              'data-event': 'click',
+            })
+            .text(this._get(t, 'closeText'))[0].outerHTML),
+          p = '',
+          W &&
+          (p = e("<div class='ui-datepicker-buttonpane ui-widget-content'>")
+            .append(R ? c : '')
+            .append(
+              this._isInRange(t, l)
+                ? e('<button>')
+                  .attr({
+                    type: 'button',
+                    class:
+                      'ui-datepicker-current ui-state-default ui-priority-secondary ui-corner-all',
+                    'data-handler': 'today',
+                    'data-event': 'click',
+                  })
+                  .text(s)
+                : '',
+            )
+            .append(R ? '' : c)[0].outerHTML),
+          d = parseInt(this._get(t, 'firstDay'), 10),
+          d = isNaN(d) ? 0 : d,
+          u = this._get(t, 'showWeek'),
+          h = this._get(t, 'dayNames'),
+          _ = this._get(t, 'dayNamesMin'),
+          f = this._get(t, 'monthNames'),
+          m = this._get(t, 'monthNamesShort'),
+          g = this._get(t, 'beforeShowDay'),
+          y = this._get(t, 'showOtherMonths'),
+          v = this._get(t, 'selectOtherMonths'),
+          b = this._getDefaultDate(t),
+          w = '',
+          x = 0;
           x < Q[0];
           x++
         ) {
           for ($ = '', this.maxRows = 4, C = 0; C < Q[1]; C++) {
             if (
               ((S = this._daylightSavingAdjust(new Date(te, ee, t.selectedDay))),
-              (z = ' ui-corner-all'),
-              (j = ''),
-              J)
+                (z = ' ui-corner-all'),
+                (j = ''),
+                J)
             ) {
               if (((j += "<div class='ui-datepicker-group"), Q[1] > 1))
                 switch (C) {
@@ -12580,17 +12564,17 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             }
             for (
               j +=
-                "<div class='ui-datepicker-header ui-widget-header ui-helper-clearfix" +
-                z +
-                "'>" +
-                (/all|left/.test(z) && 0 === x ? (R ? a : o) : '') +
-                (/all|right/.test(z) && 0 === x ? (R ? o : a) : '') +
-                this._generateMonthYearHeader(t, ee, te, K, X, x > 0 || C > 0, f, m) +
-                "</div><table class='ui-datepicker-calendar'><thead><tr>",
-                T = u
-                  ? "<th class='ui-datepicker-week-col'>" + this._get(t, 'weekHeader') + '</th>'
-                  : '',
-                k = 0;
+              "<div class='ui-datepicker-header ui-widget-header ui-helper-clearfix" +
+              z +
+              "'>" +
+              (/all|left/.test(z) && 0 === x ? (R ? a : o) : '') +
+              (/all|right/.test(z) && 0 === x ? (R ? o : a) : '') +
+              this._generateMonthYearHeader(t, ee, te, K, X, x > 0 || C > 0, f, m) +
+              "</div><table class='ui-datepicker-calendar'><thead><tr>",
+              T = u
+                ? "<th class='ui-datepicker-week-col'>" + this._get(t, 'weekHeader') + '</th>'
+                : '',
+              k = 0;
               k < 7;
               k++
             )
@@ -12604,27 +12588,27 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                 '</span></th>';
             for (
               j += T + '</tr></thead><tbody>',
-                A = this._getDaysInMonth(te, ee),
-                te === t.selectedYear &&
-                  ee === t.selectedMonth &&
-                  (t.selectedDay = Math.min(t.selectedDay, A)),
-                E = (this._getFirstDayOfMonth(te, ee) - d + 7) % 7,
-                L = Math.ceil((E + A) / 7),
-                O = J && this.maxRows > L ? this.maxRows : L,
-                this.maxRows = O,
-                M = this._daylightSavingAdjust(new Date(te, ee, 1 - E)),
-                P = 0;
+              A = this._getDaysInMonth(te, ee),
+              te === t.selectedYear &&
+              ee === t.selectedMonth &&
+              (t.selectedDay = Math.min(t.selectedDay, A)),
+              E = (this._getFirstDayOfMonth(te, ee) - d + 7) % 7,
+              L = Math.ceil((E + A) / 7),
+              O = J && this.maxRows > L ? this.maxRows : L,
+              this.maxRows = O,
+              M = this._daylightSavingAdjust(new Date(te, ee, 1 - E)),
+              P = 0;
               P < O;
               P++
             ) {
               for (
                 j += '<tr>',
-                  N = u
-                    ? "<td class='ui-datepicker-week-col'>" +
-                      this._get(t, 'calculateWeek')(M) +
-                      '</td>'
-                    : '',
-                  k = 0;
+                N = u
+                  ? "<td class='ui-datepicker-week-col'>" +
+                  this._get(t, 'calculateWeek')(M) +
+                  '</td>'
+                  : '',
+                k = 0;
                 k < 7;
                 k++
               )
@@ -12635,31 +12619,31 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                     ((k + d + 6) % 7 >= 5 ? ' ui-datepicker-week-end' : '') +
                     (q ? ' ui-datepicker-other-month' : '') +
                     ((M.getTime() === S.getTime() && ee === t.selectedMonth && t._keyEvent) ||
-                    (b.getTime() === M.getTime() && b.getTime() === S.getTime())
+                      (b.getTime() === M.getTime() && b.getTime() === S.getTime())
                       ? ' ' + this._dayOverClass
                       : '') +
                     (F ? ' ' + this._unselectableClass + ' ui-state-disabled' : '') +
                     (q && !y
                       ? ''
                       : ' ' +
-                        I[1] +
-                        (M.getTime() === Z.getTime() ? ' ' + this._currentClass : '') +
-                        (M.getTime() === B.getTime() ? ' ui-datepicker-today' : '')) +
+                      I[1] +
+                      (M.getTime() === Z.getTime() ? ' ' + this._currentClass : '') +
+                      (M.getTime() === B.getTime() ? ' ui-datepicker-today' : '')) +
                     "'" +
                     ((q && !y) || !I[2] ? '' : " title='" + I[2].replace(/'/g, '&#39;') + "'") +
                     (F
                       ? ''
                       : " data-handler='selectDay' data-event='click' data-month='" +
-                        M.getMonth() +
-                        "' data-year='" +
-                        M.getFullYear() +
-                        "'") +
+                      M.getMonth() +
+                      "' data-year='" +
+                      M.getFullYear() +
+                      "'") +
                     '>' +
                     (q && !y
                       ? '&#xa0;'
                       : F
-                      ? "<span class='ui-state-default'>" + M.getDate() + '</span>'
-                      : "<a class='ui-state-default" +
+                        ? "<span class='ui-state-default'>" + M.getDate() + '</span>'
+                        : "<a class='ui-state-default" +
                         (M.getTime() === B.getTime() ? ' ui-state-highlight' : '') +
                         (M.getTime() === Z.getTime() ? ' ui-state-active' : '') +
                         (q ? ' ui-priority-secondary' : '') +
@@ -12680,9 +12664,9 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                 '</tbody></table>' +
                 (J
                   ? '</div>' +
-                    (Q[0] > 0 && C === Q[1] - 1
-                      ? "<div class='ui-datepicker-row-break'></div>"
-                      : '')
+                  (Q[0] > 0 && C === Q[1] - 1
+                    ? "<div class='ui-datepicker-row-break'></div>"
+                    : '')
                   : ''));
           }
           w += $;
@@ -12709,12 +12693,12 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
         else {
           for (
             l = n && n.getFullYear() === i,
-              c = o && o.getFullYear() === i,
-              k +=
-                "<select class='ui-datepicker-month' aria-label='" +
-                v +
-                "' data-handler='selectMonth' data-event='change'>",
-              p = 0;
+            c = o && o.getFullYear() === i,
+            k +=
+            "<select class='ui-datepicker-month' aria-label='" +
+            v +
+            "' data-handler='selectMonth' data-event='change'>",
+            p = 0;
             p < 12;
             p++
           )
@@ -12736,23 +12720,23 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           else {
             for (
               d = this._get(e, 'yearRange').split(':'),
-                u = new Date().getFullYear(),
-                h = function (e) {
-                  var t = e.match(/c[+\-].*/)
-                    ? i + parseInt(e.substring(1), 10)
-                    : e.match(/[+\-].*/)
+              u = new Date().getFullYear(),
+              h = function (e) {
+                var t = e.match(/c[+\-].*/)
+                  ? i + parseInt(e.substring(1), 10)
+                  : e.match(/[+\-].*/)
                     ? u + parseInt(e, 10)
                     : parseInt(e, 10);
-                  return isNaN(t) ? u : t;
-                },
-                _ = h(d[0]),
-                f = Math.max(_, h(d[1] || '')),
-                _ = n ? Math.max(_, n.getFullYear()) : _,
-                f = o ? Math.min(f, o.getFullYear()) : f,
-                e.yearshtml +=
-                  "<select class='ui-datepicker-year' aria-label='" +
-                  b +
-                  "' data-handler='selectYear' data-event='change'>";
+                return isNaN(t) ? u : t;
+              },
+              _ = h(d[0]),
+              f = Math.max(_, h(d[1] || '')),
+              _ = n ? Math.max(_, n.getFullYear()) : _,
+              f = o ? Math.min(f, o.getFullYear()) : f,
+              e.yearshtml +=
+              "<select class='ui-datepicker-year' aria-label='" +
+              b +
+              "' data-handler='selectYear' data-event='change'>";
               _ <= f;
               _++
             )
@@ -12823,16 +12807,16 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
           l = this._get(e, 'yearRange');
         return (
           l &&
-            ((i = l.split(':')),
+          ((i = l.split(':')),
             (n = new Date().getFullYear()),
             (a = parseInt(i[0], 10)),
             (s = parseInt(i[1], 10)),
             i[0].match(/[+\-].*/) && (a += n),
             i[1].match(/[+\-].*/) && (s += n)),
           (!o || t.getTime() >= o.getTime()) &&
-            (!r || t.getTime() <= r.getTime()) &&
-            (!a || t.getFullYear() >= a) &&
-            (!s || t.getFullYear() <= s)
+          (!r || t.getTime() <= r.getTime()) &&
+          (!a || t.getFullYear() >= a) &&
+          (!s || t.getFullYear() <= s)
         );
       },
       _getFormatConfig: function (e) {
@@ -12849,8 +12833,8 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
       _formatDate: function (e, t, i, n) {
         t ||
           ((e.currentDay = e.selectedDay),
-          (e.currentMonth = e.selectedMonth),
-          (e.currentYear = e.selectedYear));
+            (e.currentMonth = e.selectedMonth),
+            (e.currentYear = e.selectedYear));
         var o = t
           ? 'object' == typeof t
             ? t
@@ -12863,17 +12847,17 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
       if (!this.length) return this;
       e.datepicker.initialized ||
         (e(document).on('mousedown', e.datepicker._checkExternalClick),
-        (e.datepicker.initialized = !0)),
+          (e.datepicker.initialized = !0)),
         0 === e('#' + e.datepicker._mainDivId).length && e('body').append(e.datepicker.dpDiv);
       var i = Array.prototype.slice.call(arguments, 1);
       return 'string' != typeof t || ('isDisabled' !== t && 'getDate' !== t && 'widget' !== t)
         ? 'option' === t && 2 === arguments.length && 'string' == typeof arguments[1]
           ? e.datepicker['_' + t + 'Datepicker'].apply(e.datepicker, [this[0]].concat(i))
           : this.each(function () {
-              'string' == typeof t
-                ? e.datepicker['_' + t + 'Datepicker'].apply(e.datepicker, [this].concat(i))
-                : e.datepicker._attachDatepicker(this, t);
-            })
+            'string' == typeof t
+              ? e.datepicker['_' + t + 'Datepicker'].apply(e.datepicker, [this].concat(i))
+              : e.datepicker._attachDatepicker(this, t);
+          })
         : e.datepicker['_' + t + 'Datepicker'].apply(e.datepicker, [this[0]].concat(i));
     }),
     (e.datepicker = new i()),
@@ -12982,9 +12966,9 @@ app_shop.run(
               },
             })),
             1 === app_shop.vars.view &&
-              $(
-                '.hotspot:not(.--list):not(.--slider):not(.--bundle):not(.--added) .products.slick-initialized',
-              ).slick('unslick'),
+            $(
+              '.hotspot:not(.--list):not(.--slider):not(.--bundle):not(.--added) .products.slick-initialized',
+            ).slick('unslick'),
             app_shop.fn.projectorTabs && app_shop.fn.projectorTabs.init(),
             $('.hotspot .products').scroll(function () {
               app_shop.vars.bLazy && app_shop.vars.bLazy.revalidate();
@@ -13038,8 +13022,8 @@ app_shop.run(
       }),
         1 === app_shop.vars.view
           ? $(
-              '.hotspot:not(.--list):not(.--slider):not(.--bundle):not(.--added) .products.slick-initialized',
-            ).slick('unslick')
+            '.hotspot:not(.--list):not(.--slider):not(.--bundle):not(.--added) .products.slick-initialized',
+          ).slick('unslick')
           : app_shop.fn.hotspotSlick.init();
     },
     [1, 2, 3, 4],
@@ -13130,10 +13114,10 @@ app_shop.run(
         success: function (e) {
           $(e).parents('.loading').removeClass('loading'),
             $('#main_banner1 .main_slider.slick-slider').length &&
-              setTimeout(() => {
-                $('#main_banner1 .main_slider').find('.slick-slide').height('auto'),
-                  $('#main_banner1 .main_slider').slick('setOption', '', '', !0);
-              }, 100);
+            setTimeout(() => {
+              $('#main_banner1 .main_slider').find('.slick-slide').height('auto'),
+                $('#main_banner1 .main_slider').slick('setOption', '', '', !0);
+            }, 100);
         },
       })),
       $('.form-group .form-control, .f-group .f-control').on(
@@ -13236,12 +13220,12 @@ app_shop.run(
     (navigator.userAgent.includes('Mac') && 'ontouchend' in document)),
   (app_shop.vars.isIos = app_shop.fn.isIos()),
   (app_shop.fn.isSafari = () =>
-    (isSafari =
-      navigator.vendor &&
-      navigator.vendor.indexOf('Apple') > -1 &&
-      navigator.userAgent &&
-      -1 == navigator.userAgent.indexOf('CriOS') &&
-      -1 == navigator.userAgent.indexOf('FxiOS'))),
+  (isSafari =
+    navigator.vendor &&
+    navigator.vendor.indexOf('Apple') > -1 &&
+    navigator.userAgent &&
+    -1 == navigator.userAgent.indexOf('CriOS') &&
+    -1 == navigator.userAgent.indexOf('FxiOS'))),
   (app_shop.vars.isSafari = app_shop.fn.isSafari()),
   app_shop.run(
     function () {
@@ -13286,11 +13270,11 @@ function _objectSpread(e) {
     var i = null != arguments[t] ? arguments[t] : {};
     t % 2
       ? ownKeys(Object(i), !0).forEach(function (t) {
-          _defineProperty(e, t, i[t]);
-        })
+        _defineProperty(e, t, i[t]);
+      })
       : Object.getOwnPropertyDescriptors
-      ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(i))
-      : ownKeys(Object(i)).forEach(function (t) {
+        ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(i))
+        : ownKeys(Object(i)).forEach(function (t) {
           Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(i, t));
         });
   }
@@ -13320,20 +13304,19 @@ const Alertek = {
   Start: (e, t, i = 4e3) => {
     if (
       (clearTimeout(Alertek.alert_timer),
-      $('#alert_cover').remove(),
-      $('body').append(
-        `<div id="alert_cover" class="alertek ${
-          t ? `${t}` : ''
-        }" style="display:none" onclick="Alertek.hide_alert();"><![CDATA[]]></div>`,
-      ),
-      t || $('#alert_cover').addClass('menu_messages_message'),
-      (Alertek.cloudID = $('#alert_cover')),
-      e)
+        $('#alert_cover').remove(),
+        $('body').append(
+          `<div id="alert_cover" class="alertek ${t ? `${t}` : ''
+          }" style="display:none" onclick="Alertek.hide_alert();"><![CDATA[]]></div>`,
+        ),
+        t || $('#alert_cover').addClass('menu_messages_message'),
+        (Alertek.cloudID = $('#alert_cover')),
+        e)
     ) {
       if ((Alertek.cloudID.html(e), !t)) {
         const e = parseInt(
-            $(window).height() / 2 - Alertek.cloudID.height() / 2 + $(window).scrollTop(),
-          ),
+          $(window).height() / 2 - Alertek.cloudID.height() / 2 + $(window).scrollTop(),
+        ),
           t = parseInt($(window).width() / 2 - Alertek.cloudID.width() / 2);
         Alertek.cloudID.css({ top: e, marginLeft: t, left: 0 });
       }
@@ -13402,10 +13385,10 @@ $(this).addClass($(this).attr('data-tablet-class')),
         if (
           ($this.is('.' + i.tableClass) &&
             ($this.removeClass(i.tableClass),
-            t.removeClass(i.cellClass),
-            t.find('> *').unwrap(),
-            (t = $this.find('> *'))),
-          i.wrapp)
+              t.removeClass(i.cellClass),
+              t.find('> *').unwrap(),
+              (t = $this.find('> *'))),
+            i.wrapp)
         ) {
           $this.addClass(i.tableClass), t.addClass(i.cellClass);
           for (var n = 0, o = t.length; n < o; n += i.numCol)
@@ -13457,9 +13440,9 @@ $(document).on('change', 'input[type=file]', function () {
     s || (l && app_shop.txt.txt_77752_2)
       ? (c = app_shop.txt.txt_77752_2.format(t))
       : !a &&
-        app_shop.txt.txt_77752_1 &&
-        r &&
-        (c = app_shop.txt.txt_77752_1.format(t, (r / 1048576).toFixed(2))),
+      app_shop.txt.txt_77752_1 &&
+      r &&
+      (c = app_shop.txt.txt_77752_1.format(t, (r / 1048576).toFixed(2))),
     c ? ($(this).val(''), Alertek.Start(c), !1) : void 0
   );
 }),
@@ -13531,8 +13514,8 @@ $(document).on('change', 'input[type=file]', function () {
       return 'function' != typeof t.createElement
         ? t.createElement(arguments[0])
         : $
-        ? t.createElementNS.call(t, 'http://www.w3.org/2000/svg', arguments[0])
-        : t.createElement.apply(t, arguments);
+          ? t.createElementNS.call(t, 'http://www.w3.org/2000/svg', arguments[0])
+          : t.createElement.apply(t, arguments);
     }
     function l(t, i, n) {
       var o;
@@ -13569,7 +13552,7 @@ $(document).on('change', 'input[type=file]', function () {
           return e || ((e = s($ ? 'svg' : 'body')).fake = !0), e;
         })();
       if (parseInt(n, 10))
-        for (; n--; ) ((l = s('div')).id = o ? o[n] : p + (n + 1)), d.appendChild(l);
+        for (; n--;) ((l = s('div')).id = o ? o[n] : p + (n + 1)), d.appendChild(l);
       return (
         ((r = s('style')).type = 'text/css'),
         (r.id = 's' + p),
@@ -13578,7 +13561,7 @@ $(document).on('change', 'input[type=file]', function () {
         r.styleSheet ? (r.styleSheet.cssText = e) : r.appendChild(t.createTextNode(e)),
         (d.id = p),
         u.fake &&
-          ((u.style.background = ''),
+        ((u.style.background = ''),
           (u.style.overflow = 'hidden'),
           (c = x.style.overflow),
           (x.style.overflow = 'hidden'),
@@ -13600,11 +13583,11 @@ $(document).on('change', 'input[type=file]', function () {
     function h(t, n) {
       var o = t.length;
       if ('CSS' in e && 'supports' in e.CSS) {
-        for (; o--; ) if (e.CSS.supports(u(t[o]), n)) return !0;
+        for (; o--;) if (e.CSS.supports(u(t[o]), n)) return !0;
         return !1;
       }
       if ('CSSSupportsRule' in e) {
-        for (var r = []; o--; ) r.push('(' + u(t[o]) + ':' + n + ')');
+        for (var r = []; o--;) r.push('(' + u(t[o]) + ':' + n + ')');
         return d(
           '@supports (' + (r = r.join(' or ')) + ') { #modernizr { position: absolute; } }',
           function (e) {
@@ -13622,14 +13605,14 @@ $(document).on('change', 'input[type=file]', function () {
         var p = h(e, o);
         if (!n(p, 'undefined')) return p;
       }
-      for (var d, u, _, f, m, g = ['modernizr', 'tspan', 'samp']; !A.style && g.length; )
+      for (var d, u, _, f, m, g = ['modernizr', 'tspan', 'samp']; !A.style && g.length;)
         (d = !0), (A.modElem = s(g.shift())), (A.style = A.modElem.style);
       for (_ = e.length, u = 0; _ > u; u++)
         if (((f = e[u]), (m = A.style[f]), c(f, '-') && (f = a(f)), A.style[f] !== i)) {
           if (r || n(o, 'undefined')) return l(), 'pfx' != t || f;
           try {
             A.style[f] = o;
-          } catch (e) {}
+          } catch (e) { }
           if (A.style[f] != m) return l(), 'pfx' != t || f;
         }
       return l(), !1;
@@ -13640,12 +13623,12 @@ $(document).on('change', 'input[type=file]', function () {
       return n(t, 'string') || n(t, 'undefined')
         ? _(s, t, o, r)
         : (function (e, t, i) {
-            var o;
-            for (var r in e)
-              if (e[r] in t)
-                return !1 === i ? e[r] : n((o = t[e[r]]), 'function') ? p(o, i || t) : o;
-            return !1;
-          })((s = (e + ' ' + S.join(a + ' ') + a).split(' ')), t, i);
+          var o;
+          for (var r in e)
+            if (e[r] in t)
+              return !1 === i ? e[r] : n((o = t[e[r]]), 'function') ? p(o, i || t) : o;
+          return !1;
+        })((s = (e + ' ' + S.join(a + ' ') + a).split(' ')), t, i);
     }
     function m(e, t, n) {
       return f(e, i, i, t, n);
@@ -13669,7 +13652,7 @@ $(document).on('change', 'input[type=file]', function () {
           y.push({ name: null, fn: e });
         },
       },
-      b = function () {};
+      b = function () { };
     (b.prototype = v), (b = new b());
     var w = v._config.usePrefixes ? ' -webkit- -moz- -o- -ms- '.split(' ') : ['', ''];
     v._prefixes = w;
@@ -13684,20 +13667,20 @@ $(document).on('change', 'input[type=file]', function () {
         k =
           n(e, 'undefined') || n(e.call, 'undefined')
             ? function (e, t) {
-                return t in e && n(e.constructor.prototype[t], 'undefined');
-              }
+              return t in e && n(e.constructor.prototype[t], 'undefined');
+            }
             : function (t, i) {
-                return e.call(t, i);
-              };
+              return e.call(t, i);
+            };
       })(),
       (v._l = {}),
       (v.on = function (e, t) {
         this._l[e] || (this._l[e] = []),
           this._l[e].push(t),
           b.hasOwnProperty(e) &&
-            setTimeout(function () {
-              b._trigger(e, b[e]);
-            }, 0);
+          setTimeout(function () {
+            b._trigger(e, b[e]);
+          }, 0);
       }),
       (v._trigger = function (e, t) {
         if (this._l[e]) {
@@ -13778,9 +13761,9 @@ $(document).on('change', 'input[type=file]', function () {
           if (y.hasOwnProperty(s)) {
             if (
               ((e = []),
-              (t = y[s]).name &&
+                (t = y[s]).name &&
                 (e.push(t.name.toLowerCase()),
-                t.options && t.options.aliases && t.options.aliases.length))
+                  t.options && t.options.aliases && t.options.aliases.length))
             )
               for (i = 0; i < t.options.aliases.length; i++)
                 e.push(t.options.aliases[i].toLowerCase());
@@ -13802,8 +13785,8 @@ $(document).on('change', 'input[type=file]', function () {
     'function' == typeof define && define.amd
       ? define(t)
       : 'object' == typeof exports
-      ? (module.exports = t())
-      : (e.Blazy = t());
+        ? (module.exports = t())
+        : (e.Blazy = t());
   })(this, function () {
     function e(e) {
       var i = e._util;
@@ -13817,11 +13800,11 @@ $(document).on('change', 'input[type=file]', function () {
       })(e.options)),
         (i.count = i.elements.length),
         i.destroyed &&
-          ((i.destroyed = !1),
+        ((i.destroyed = !1),
           e.options.container &&
-            d(e.options.container, function (e) {
-              c(e, 'scroll', i.validateT);
-            }),
+          d(e.options.container, function (e) {
+            c(e, 'scroll', i.validateT);
+          }),
           c(window, 'resize', i.saveViewportOffsetT),
           c(window, 'resize', i.validateT),
           c(window, 'scroll', i.validateT)),
@@ -13836,16 +13819,16 @@ $(document).on('change', 'input[type=file]', function () {
         var l = s.getBoundingClientRect();
         o.container && m && (s = s.closest(o.containerClass))
           ? (o =
-              !!i((s = s.getBoundingClientRect()), _) &&
-              i(l, {
-                top: s.top - o.offset,
-                right: s.right + o.offset,
-                bottom: s.bottom + o.offset,
-                left: s.left - o.offset,
-              }))
+            !!i((s = s.getBoundingClientRect()), _) &&
+            i(l, {
+              top: s.top - o.offset,
+              right: s.right + o.offset,
+              bottom: s.bottom + o.offset,
+              left: s.left - o.offset,
+            }))
           : (o = i(l, _)),
           (o || a(r, e.options.successClass)) &&
-            (e.load(r), t.elements.splice(n, 1), t.count--, n--);
+          (e.load(r), t.elements.splice(n, 1), t.count--, n--);
       }
       0 === t.count && e.destroy();
     }
@@ -13878,11 +13861,11 @@ $(document).on('change', 'input[type=file]', function () {
               };
             _ &&
               ((m = e),
-              d(t.getElementsByTagName('source'), function (e) {
-                var t = i.srcset,
-                  n = e.getAttribute(t);
-                n && (e.setAttribute('srcset', n), e.removeAttribute(t));
-              })),
+                d(t.getElementsByTagName('source'), function (e) {
+                  var t = i.srcset,
+                    n = e.getAttribute(t);
+                  n && (e.setAttribute('srcset', n), e.removeAttribute(t));
+                })),
               c(m, 'error', g),
               c(m, 'load', y),
               r(m, n, l);
@@ -13890,10 +13873,10 @@ $(document).on('change', 'input[type=file]', function () {
         } else
           'video' === e.nodeName.toLowerCase()
             ? (d(e.getElementsByTagName('source'), function (e) {
-                var t = i.src,
-                  n = e.getAttribute(t);
-                n && (e.setAttribute('src', n), e.removeAttribute(t));
-              }),
+              var t = i.src,
+                n = e.getAttribute(t);
+              n && (e.setAttribute('src', n), e.removeAttribute(t));
+            }),
               e.load(),
               o(e, i))
             : (i.error && i.error(e, 'missing'), s(e, i.errorClass));
@@ -13947,12 +13930,12 @@ $(document).on('change', 'input[type=file]', function () {
         document.querySelectorAll = function (e, t, i, n, r) {
           for (
             r = document.all,
-              t = [],
-              i = (e = e.replace(/\[for\b/gi, '[htmlFor').split(',')).length;
+            t = [],
+            i = (e = e.replace(/\[for\b/gi, '[htmlFor').split(',')).length;
             i--;
 
           ) {
-            for (o.addRule(e[i], 'k:v'), n = r.length; n--; ) r[n].currentStyle.k && t.push(r[n]);
+            for (o.addRule(e[i], 'k:v'), n = r.length; n--;) r[n].currentStyle.k && t.push(r[n]);
             o.removeRule(0);
           }
           return t;
@@ -13992,8 +13975,8 @@ $(document).on('change', 'input[type=file]', function () {
           void 0 === e.length
             ? n(e, t, i)
             : d(e, function (e) {
-                n(e, t, i);
-              });
+              n(e, t, i);
+            });
         }),
         (r.destroy = function () {
           var e = this._util;
@@ -14059,7 +14042,7 @@ $(document).on('change', 'input[type=file]', function () {
         f = '';
       if ((this.html(h), c === a)) {
         if (this.height() <= u) return;
-        for (t = 0, n = _ - 1; t <= n; )
+        for (t = 0, n = _ - 1; t <= n;)
           (o = t + ((n - t) >> 1)),
             (r = i.eatStr(h, p, _ - o, d)),
             this.html(r),
@@ -14109,12 +14092,12 @@ $(document).on('change', 'input[type=file]', function () {
           if (i.eatStr.cache[u]) return i.eatStr.cache[u];
           if (
             (('string' == typeof t && 0 !== d) || e.error('Invalid source string "' + t + '".'),
-            s < 0 || s > d)
+              s < 0 || s > d)
           )
             e.error('Invalid bite size "' + s + '".');
           else if (0 === s) return t;
           switch (
-            ('string' != typeof (l + '') && e.error('Fill unable to be converted to a string.'), a)
+          ('string' != typeof (l + '') && e.error('Fill unable to be converted to a string.'), a)
           ) {
             case r:
               return (i.eatStr.cache[u] = e.trim(t.substr(0, d - s)) + l);
@@ -14158,8 +14141,8 @@ $(document).on('change', 'input[type=file]', function () {
         return t[i]
           ? t[i].apply(this, Array.prototype.slice.call(arguments, 1))
           : 'object' != typeof i && i
-          ? void e.error('Method ' + i + ' does not exist on jQuery.trunk8')
-          : t.init.apply(this, arguments);
+            ? void e.error('Method ' + i + ' does not exist on jQuery.trunk8')
+            : t.init.apply(this, arguments);
       }),
       (e.fn.trunk8.defaults = { fill: '&hellip;', lines: 1, side: r, tooltip: !0, width: a });
   })(jQuery);
@@ -14181,9 +14164,9 @@ var responsiveSwitch = (function () {
           document.documentElement.clientWidth != window.innerWidth
             ? (document.location.href = f())
             : o.setAttribute(
-                i,
-                'width=' + e + 'px, initial-scale=' + document.documentElement.clientWidth / e,
-              ))
+              i,
+              'width=' + e + 'px, initial-scale=' + document.documentElement.clientWidth / e,
+            ))
         : ((document.cookie = t + '=false;path=/;expires=Thu, 01 Jan 1970 00:00:01 GMT'),
           document.documentElement.clientWidth != window.innerWidth
             ? (document.location.href = f())
@@ -14197,17 +14180,17 @@ var responsiveSwitch = (function () {
       var n = t[i];
       null != n &&
         (_(n, r),
-        _(n, o),
-        _(n, a),
-        _(n, s),
-        u()
-          ? (h(n, r), h(n, s), (n.innerHTML = n.getAttribute('data-link-responsive')))
-          : document.documentElement &&
-            (document.documentElement.clientWidth < e ||
-              'true' == n.getAttribute('data-always-visible'))
-          ? (h(n, o), h(n, s), (n.innerHTML = n.getAttribute('data-link-desktop')))
-          : (h(n, a), (n.innerHTML = '')),
-        c ||
+          _(n, o),
+          _(n, a),
+          _(n, s),
+          u()
+            ? (h(n, r), h(n, s), (n.innerHTML = n.getAttribute('data-link-responsive')))
+            : document.documentElement &&
+              (document.documentElement.clientWidth < e ||
+                'true' == n.getAttribute('data-always-visible'))
+              ? (h(n, o), h(n, s), (n.innerHTML = n.getAttribute('data-link-desktop')))
+              : (h(n, a), (n.innerHTML = '')),
+          c ||
           n.addEventListener(
             'click',
             function (e) {
@@ -14246,7 +14229,7 @@ var responsiveSwitch = (function () {
   return (
     u() && l(),
     document.addEventListener &&
-      (document.addEventListener('DOMContentLoaded', p, !1),
+    (document.addEventListener('DOMContentLoaded', p, !1),
       document.addEventListener('orientationchange', p, !1),
       window.addEventListener('resize', p, !1)),
     { toggle: d }
@@ -14279,14 +14262,14 @@ function procesArrayFunctions(e) {
     );
   });
 var setMobileClass = function () {
-    $('[data-tablet-class]').each(function () {
-      $(this).removeClass($(this).attr('data-tablet-class'));
+  $('[data-tablet-class]').each(function () {
+    $(this).removeClass($(this).attr('data-tablet-class'));
+  }),
+    $('[data-mobile-class]').each(function () {
+      $(this).addClass($(this).attr('data-mobile-class'));
     }),
-      $('[data-mobile-class]').each(function () {
-        $(this).addClass($(this).attr('data-mobile-class'));
-      }),
-      $('html').addClass('_mobile');
-  },
+    $('html').addClass('_mobile');
+},
   setTabletClass = function () {
     $('[data-mobile-class]').each(function () {
       $(this).removeClass($(this).attr('data-mobile-class'));
@@ -14317,37 +14300,37 @@ var setMobileClass = function () {
     var r, a, s, l, c, p;
     if (
       ((a = this),
-      (s = e.parent()),
-      (l = e.data('validation')),
-      (p = e.data('ajaxtype')),
-      (r = l + '=' + t),
-      e.data('serialize') &&
+        (s = e.parent()),
+        (l = e.data('validation')),
+        (p = e.data('ajaxtype')),
+        (r = l + '=' + t),
+        e.data('serialize') &&
         e.data('serialize').indexOf('data-') > -1 &&
         (r += '&' + e.attr(e.data('serialize'))),
-      '' == t)
+        '' == t)
     )
       return a.clearValidation(s), a.resetRequiredClass(s), !1;
     'get' == p
       ? $.get(
-          i,
-          r,
-          function (t) {
-            t.errno
-              ? ('bankAccount' == l && (c = a.vars.bankAccount), a.addError(e, c), o && o())
-              : (a.addSuccess(e), n && n());
-          },
-          'json',
-        )
+        i,
+        r,
+        function (t) {
+          t.errno
+            ? ('bankAccount' == l && (c = a.vars.bankAccount), a.addError(e, c), o && o())
+            : (a.addSuccess(e), n && n());
+        },
+        'json',
+      )
       : $.post(
-          i,
-          r,
-          function (t) {
-            t.errno
-              ? ('bankAccount' == l && (c = a.vars.bankAccount), a.addError(e, c), o && o())
-              : (a.addSuccess(e), n && n());
-          },
-          'json',
-        );
+        i,
+        r,
+        function (t) {
+          t.errno
+            ? ('bankAccount' == l && (c = a.vars.bankAccount), a.addError(e, c), o && o())
+            : (a.addSuccess(e), n && n());
+        },
+        'json',
+      );
   },
   ajaxValidationWithData: function (e, t, i, n) {
     $.post(
@@ -14367,24 +14350,24 @@ var setMobileClass = function () {
     var i, n, o, r, a, s, l;
     if (
       ((o = e.parent()),
-      (i = e.attr('type')),
-      (n = e.val()),
-      this.patterns.email,
-      (r = e.attr('minlength')),
-      (a = e.attr('maxlength')),
-      (s = e.data('validate')),
-      (l = e.data('validation-url')),
-      'checkbox' == e.attr('type'))
+        (i = e.attr('type')),
+        (n = e.val()),
+        this.patterns.email,
+        (r = e.attr('minlength')),
+        (a = e.attr('maxlength')),
+        (s = e.data('validate')),
+        (l = e.data('validation-url')),
+        'checkbox' == e.attr('type'))
     )
       e.is(':checked')
         ? e
-            .parents('.has-feedback, .f-feedback')
-            .removeClass('has-error --error')
-            .addClass('has-success --success')
+          .parents('.has-feedback, .f-feedback')
+          .removeClass('has-error --error')
+          .addClass('has-success --success')
         : e
-            .parents('.has-feedback, .f-feedback')
-            .removeClass('has-success --success')
-            .addClass('has-error --error');
+          .parents('.has-feedback, .f-feedback')
+          .removeClass('has-success --success')
+          .addClass('has-error --error');
     else if (l) this.ajaxValidation(e, n, l);
     else {
       if (r) {
@@ -14397,13 +14380,13 @@ var setMobileClass = function () {
       }
       'email' == i && this.checkMail(e),
         s &&
-          'text' == i &&
-          (s.indexOf('phone') > -1 || s.indexOf('email') > -1) &&
-          (this.isNumeric(n)
-            ? n.length < 9
-              ? this.addError(e, this.vars.phone)
-              : this.addSuccess(e)
-            : s.indexOf('email') > -1
+        'text' == i &&
+        (s.indexOf('phone') > -1 || s.indexOf('email') > -1) &&
+        (this.isNumeric(n)
+          ? n.length < 9
+            ? this.addError(e, this.vars.phone)
+            : this.addSuccess(e)
+          : s.indexOf('email') > -1
             ? this.checkMail(e)
             : s.indexOf('phone') > -1 && this.addError(e, this.vars.phone)),
         n || t || (this.clearValidation(o), this.resetRequiredClass(o));
@@ -14423,27 +14406,27 @@ var setMobileClass = function () {
       !0,
       (o = this),
       !i.length ||
-        (i.each(function () {
-          o.validate($(this), !0);
-        }),
+      (i.each(function () {
+        o.validate($(this), !0);
+      }),
         this.resetRequiredClass(i),
         !(n = e.find('.has-error:visible:first, .--error:visible:first')).length ||
-          ($('html, body').animate(
-            {
-              scrollTop:
-                app_shop.vars.view < 3
-                  ? n.offset().top - 10 - $('header').outerHeight()
-                  : n.offset().top - 10,
-            },
-            300,
-          ),
+        ($('html, body').animate(
+          {
+            scrollTop:
+              app_shop.vars.view < 3
+                ? n.offset().top - 10 - $('header').outerHeight()
+                : n.offset().top - 10,
+          },
+          300,
+        ),
           !1))
     );
   },
   checkValidateFields: function (e, t) {
     var i = e.find(
-        'input.validate:enabled:visible, textarea.validate:enabled:visible, input.--validate:enabled:visible, textarea.--validate:enabled:visible',
-      ),
+      'input.validate:enabled:visible, textarea.validate:enabled:visible, input.--validate:enabled:visible, textarea.--validate:enabled:visible',
+    ),
       n = e.find('input#terms_agree[required]').not('[disabled]').not(':checked'),
       o = !0;
     if (
@@ -14452,22 +14435,22 @@ var setMobileClass = function () {
         ($this = $(this)),
           (o = !$.trim($this.val())),
           $this.is('[required]') &&
-            o &&
-            (that.addError($this),
+          o &&
+          (that.addError($this),
             $this
               .parents('.form-group, .f-group')
               .find(' > div')
               .append(
                 '<span class="help-block validate_message text-danger">' +
-                  app_shop.txt.txt_validation4 +
-                  '</span>',
+                app_shop.txt.txt_validation4 +
+                '</span>',
               ),
             n.each(function () {
               that.addError($this);
             }));
       }),
-      that.resetRequiredClass(e),
-      e.find('.has-error:visible:first, .--error:visible:first').length)
+        that.resetRequiredClass(e),
+        e.find('.has-error:visible:first, .--error:visible:first').length)
     )
       return !1;
     return !0;
@@ -14605,32 +14588,25 @@ const SelectToDropdown = function (e) {
         (this.afterClickDropdownCallback = n),
         (this.disableMobileView = o),
         this.selects.length &&
-          (this.generateDropdown(), document.addEventListener('click', this.closeDropdown));
+        (this.generateDropdown(), document.addEventListener('click', this.closeDropdown));
     }),
     (this.generateDropdown = () => {
       this.selects.forEach(e => {
         e.selectedIndex < 0 && (e.selectedIndex = 0);
-        const t = `<div class="f-dropdown f-group ${e.getAttribute('class')} ${
-            this.disableMobileView ? '--disable-mobile-view' : ''
-          }">\n        <button type="button" class="f-control f-dropdown-toggle${
-            e.disabled ? ' --disabled' : ''
-          }${e.hasAttribute('readonly') ? ' --readonly' : ''}" data-indexcurrent="${
-            e.options[e.selectedIndex].index
-          }">\n          ${
-            e.hasAttribute('data-label')
-              ? `<strong class="f-dropdown-label">${e.getAttribute('data-label')}</strong>`
-              : ''
-          }\n          <span class="f-dropdown-button">${
-            e.options[e.selectedIndex].text
+        const t = `<div class="f-dropdown f-group ${e.getAttribute('class')} ${this.disableMobileView ? '--disable-mobile-view' : ''
+          }">\n        <button type="button" class="f-control f-dropdown-toggle${e.disabled ? ' --disabled' : ''
+          }${e.hasAttribute('readonly') ? ' --readonly' : ''}" data-indexcurrent="${e.options[e.selectedIndex].index
+          }">\n          ${e.hasAttribute('data-label')
+            ? `<strong class="f-dropdown-label">${e.getAttribute('data-label')}</strong>`
+            : ''
+          }\n          <span class="f-dropdown-button">${e.options[e.selectedIndex].text
           }</span>\n        </button>\n        <ul class="f-dropdown-menu">\n          ${[
             ...e.querySelectorAll('option'),
           ]
             .map(
               (e, t) =>
-                `\n            <li class="f-dropdown-li${
-                  e.hasAttribute('class') ? ` ${e.getAttribute('class')}` : ''
-                }${e.disabled ? ' --disabled' : ''}">\n              <a class="f-dropdown-item${
-                  e.selected ? ' --selected' : ''
+                `\n            <li class="f-dropdown-li${e.hasAttribute('class') ? ` ${e.getAttribute('class')}` : ''
+                }${e.disabled ? ' --disabled' : ''}">\n              <a class="f-dropdown-item${e.selected ? ' --selected' : ''
                 }" href="#${e.getAttribute(
                   'value',
                 )}" data-index="${t}" data-value="${e.getAttribute('value')}" ${[...e.attributes]
@@ -14708,8 +14684,8 @@ const SelectToDropdown = function (e) {
         const t = e.closest('.f-dropdown');
         t &&
           (t.insertAdjacentElement('afterend', e),
-          t.remove(),
-          e.classList.forEach(t => e.classList.replace(t, t.slice(0, -7))));
+            t.remove(),
+            e.classList.forEach(t => e.classList.replace(t, t.slice(0, -7))));
       });
     }),
     (this.reInit = () => {
@@ -14727,8 +14703,8 @@ app_shop.fn.changeLiteral = (e, t, i) => {
     1 === e && t[1]
       ? r.push(t[1])
       : (0 === e || (n >= 0 && n <= 1) || (n >= 5 && n <= 9) || (o > 10 && o < 20)) && t[0]
-      ? r.push(t[0])
-      : (o < 10 || o > 20) && n >= 2 && n <= 4 && t[2] && r.push(t[2]),
+        ? r.push(t[0])
+        : (o < 10 || o > 20) && n >= 2 && n <= 4 && t[2] && r.push(t[2]),
     r.join(' ')
   );
 };
@@ -14752,7 +14728,7 @@ const HotspotAjaxInit = function (e) {
       e.forEach(e => {
         e.isIntersecting &&
           (t.vars.loaded || (t.getHotspot(), (t.vars.loaded = !0)),
-          t.hotspotInView.unobserve(e.target));
+            t.hotspotInView.unobserve(e.target));
       });
     })),
     (this.getHotspot = async () => {
@@ -14769,9 +14745,9 @@ const HotspotAjaxInit = function (e) {
         (document.querySelectorAll('.productslist_item').forEach(e => {
           i.push(e.querySelector('input[name*="product"]').value);
         }),
-        document.querySelectorAll('.basket__block[data-product-id]').forEach(e => {
-          i.push(e.querySelector('input[name*="product"]').value);
-        }));
+          document.querySelectorAll('.basket__block[data-product-id]').forEach(e => {
+            i.push(e.querySelector('input[name*="product"]').value);
+          }));
       const n = [...this.vars.hotspotElements].map(e => e.getAttribute('id')).join(','),
         o = `/ajax/hotspots.php?action=get-hotspots-html&zones-names=${n}&components=${n}&zones-types=${[
           ...this.vars.hotspotElements,
@@ -14784,8 +14760,8 @@ const HotspotAjaxInit = function (e) {
       const r = await this.fetchHotspots(o);
       r
         ? (this.vars.hotspotElements.forEach(e => {
-            e.classList.remove('load-content');
-          }),
+          e.classList.remove('load-content');
+        }),
           Object.keys(r).forEach(e => {
             const i = document.getElementById(e);
             '' !== r[e] ? i && (i.outerHTML = r[e]) : i && i.parentNode.removeChild(i),
@@ -14794,8 +14770,8 @@ const HotspotAjaxInit = function (e) {
           }),
           t.afterAllHotspotsCallback && t.afterAllHotspotsCallback())
         : this.vars.hotspotElements.forEach(e => {
-            e.parentNode.removeChild(e);
-          });
+          e.parentNode.removeChild(e);
+        });
     }),
     (this.init = () => {
       const { afterOneHotspotCallback: e, afterAllHotspotsCallback: i } = this.params;
@@ -14808,7 +14784,7 @@ const HotspotAjaxInit = function (e) {
     this.init()
   );
 };
-function FixedElement(e = 'element', t = '--fixed', i = 'spacerClass', n = 'top', o = () => {}) {
+function FixedElement(e = 'element', t = '--fixed', i = 'spacerClass', n = 'top', o = () => { }) {
   const r = this;
   let a = !1;
   const s = document.querySelector(e),
@@ -14829,18 +14805,18 @@ function FixedElement(e = 'element', t = '--fixed', i = 'spacerClass', n = 'top'
         'top' === n
           ? window.scrollY > l.elOffset
           : 'bottom' === n
-          ? window.scrollY - l.elH + window.screen.height < l.elOffset
-          : void 0
+            ? window.scrollY - l.elH + window.screen.height < l.elOffset
+            : void 0
       )
         ? !s.classList.contains(t) &&
-          (s.classList.add(t),
+        (s.classList.add(t),
           (e => {
             let t = document.createElement('div');
             (t.className = i), (t.style.paddingTop = `${e}px`), s.after(t);
           })(l.elH),
           o(!0))
         : s.classList.contains(t) &&
-          (s.classList.remove(t),
+        (s.classList.remove(t),
           (() => {
             const e = document.querySelector(`.${i}`);
             e && e.parentNode.removeChild(e);
@@ -14934,126 +14910,126 @@ function Bars() {
       this.removeClosedBars(),
         document.addEventListener('click', this.closeBarClick),
         app_shop.vars.view < 3 &&
-          (this.setBarsHeight(), window.addEventListener('resize', this.setBarsHeight)),
+        (this.setBarsHeight(), window.addEventListener('resize', this.setBarsHeight)),
         app_shop.vars.view > 2 &&
-          (this.setPosition(), this.fixed(), document.addEventListener('scroll', this.fixed));
+        (this.setPosition(), this.fixed(), document.addEventListener('scroll', this.fixed));
     });
 }
 (Modal = function (e) {
   const t = this;
   if (
     ((this.params = e || {}),
-    (this.closeModal = () => {
-      const e = document.getElementById('modal');
-      this.beforeClose && this.beforeClose(e);
-      const t = document.getElementById('modal_placeholder');
-      if (t) {
-        const i = e.querySelector('.modal__content > *');
-        t.insertAdjacentElement('afterend', i), t.parentNode.removeChild(t);
-      }
-      e.parentNode.removeChild(e),
-        document.documentElement.classList.remove('--modal'),
-        document.removeEventListener('click', this.events.eventDelegation, !0),
-        document.removeEventListener('keydown', this.events.escClick),
-        this.afterClose && this.afterClose(e, this);
-    }),
-    (this.createElement = e => {
-      const { element: t, classes: i, id: n, href: o } = e,
-        r = document.createElement(t);
-      return (
-        void 0 !== i && (r.className = i),
-        void 0 !== n && (r.id = n),
-        void 0 !== o && (r.href = o),
-        r
-      );
-    }),
-    (this.createModal = () => {
-      document.getElementById('modal') && this.closeModal();
-      const e = this.createElement({
+      (this.closeModal = () => {
+        const e = document.getElementById('modal');
+        this.beforeClose && this.beforeClose(e);
+        const t = document.getElementById('modal_placeholder');
+        if (t) {
+          const i = e.querySelector('.modal__content > *');
+          t.insertAdjacentElement('afterend', i), t.parentNode.removeChild(t);
+        }
+        e.parentNode.removeChild(e),
+          document.documentElement.classList.remove('--modal'),
+          document.removeEventListener('click', this.events.eventDelegation, !0),
+          document.removeEventListener('keydown', this.events.escClick),
+          this.afterClose && this.afterClose(e, this);
+      }),
+      (this.createElement = e => {
+        const { element: t, classes: i, id: n, href: o } = e,
+          r = document.createElement(t);
+        return (
+          void 0 !== i && (r.className = i),
+          void 0 !== n && (r.id = n),
+          void 0 !== o && (r.href = o),
+          r
+        );
+      }),
+      (this.createModal = () => {
+        document.getElementById('modal') && this.closeModal();
+        const e = this.createElement({
           element: 'div',
           classes: this.classList ? `modal ${this.classList}` : 'modal',
           id: 'modal',
         }),
-        t = this.createElement({ element: 'div', classes: 'modal__wrapper' }),
-        i = this.createElement({ element: 'div', id: 'modal_placeholder' }),
-        n = this.createElement({ element: 'a', classes: 'modal__close', href: '#modalClose' }),
-        o = this.createElement({ element: 'div', classes: 'modal__content' });
-      this.element
-        ? this.element instanceof jQuery && this.element.length
-          ? (document.body.contains(this.element[0]) &&
+          t = this.createElement({ element: 'div', classes: 'modal__wrapper' }),
+          i = this.createElement({ element: 'div', id: 'modal_placeholder' }),
+          n = this.createElement({ element: 'a', classes: 'modal__close', href: '#modalClose' }),
+          o = this.createElement({ element: 'div', classes: 'modal__content' });
+        this.element
+          ? this.element instanceof jQuery && this.element.length
+            ? (document.body.contains(this.element[0]) &&
               this.element[0].insertAdjacentElement('afterend', i),
-            o.appendChild(this.element[0]))
-          : this.element instanceof jQuery ||
+              o.appendChild(this.element[0]))
+            : this.element instanceof jQuery ||
             (document.body.contains(this.element) &&
               this.element.insertAdjacentElement('afterend', i),
-            o.appendChild(this.element))
-        : this.html && (o.innerHTML = this.html),
-        t.appendChild(n),
-        t.appendChild(o),
-        e.appendChild(t),
-        document.documentElement.classList.add('--modal'),
-        this.initEvents(),
-        this.beforeShow && this.beforeShow(e, this),
-        document.body.appendChild(e),
-        this.classList && this.classList.includes('--absolute') && window.scrollTo(0, 0),
-        app_shop?.vars?.bLazy?.revalidate(),
-        this.afterShow && this.afterShow(e, this);
-    }),
-    (this.events = {
-      eventDelegation: e => {
-        const i = document.getElementById('modal'),
-          n = !(
-            !document.getElementById('topLayerBackDrop') ||
-            'none' === document.getElementById('topLayerBackDrop').style.display
-          ),
-          o = !(
-            !document.querySelector('#iai_cookie_wrapper') ||
-            document.querySelector('#iai_cookie_wrapper').classList.contains('d-none')
-          );
-        for (const t of this.notCloseSelectors) if (e.target.closest(t)) return !1;
-        return (
-          ((i &&
-            !i.querySelector('.modal__wrapper').contains(e.target) &&
-            !n &&
-            !o &&
-            'INPUT' !== document.activeElement.tagName) ||
-            e.target.closest('.modal__close')) &&
+              o.appendChild(this.element))
+          : this.html && (o.innerHTML = this.html),
+          t.appendChild(n),
+          t.appendChild(o),
+          e.appendChild(t),
+          document.documentElement.classList.add('--modal'),
+          this.initEvents(),
+          this.beforeShow && this.beforeShow(e, this),
+          document.body.appendChild(e),
+          this.classList && this.classList.includes('--absolute') && window.scrollTo(0, 0),
+          app_shop?.vars?.bLazy?.revalidate(),
+          this.afterShow && this.afterShow(e, this);
+      }),
+      (this.events = {
+        eventDelegation: e => {
+          const i = document.getElementById('modal'),
+            n = !(
+              !document.getElementById('topLayerBackDrop') ||
+              'none' === document.getElementById('topLayerBackDrop').style.display
+            ),
+            o = !(
+              !document.querySelector('#iai_cookie_wrapper') ||
+              document.querySelector('#iai_cookie_wrapper').classList.contains('d-none')
+            );
+          for (const t of this.notCloseSelectors) if (e.target.closest(t)) return !1;
+          return (
+            ((i &&
+              !i.querySelector('.modal__wrapper').contains(e.target) &&
+              !n &&
+              !o &&
+              'INPUT' !== document.activeElement.tagName) ||
+              e.target.closest('.modal__close')) &&
             (e.preventDefault(), t.closeModal()),
-          !1
-        );
-      },
-      escClick: e => {
-        'Escape' === e.key && t.closeModal();
-      },
-    }),
-    (this.initEvents = () => {
-      document.removeEventListener('click', this.events.eventDelegation, !0),
-        document.addEventListener('click', this.events.eventDelegation, !0),
-        document.removeEventListener('keydown', this.events.escClick),
-        document.addEventListener('keydown', this.events.escClick);
-    }),
-    (this.init = () => {
-      const {
-        element: e,
-        html: t,
-        classList: i,
-        beforeShow: n,
-        afterShow: o,
-        beforeClose: r,
-        afterClose: a,
-        notCloseSelectors: s,
-      } = this.params;
-      (this.element = e || !1),
-        (this.html = t || !1),
-        (this.beforeShow = n || !1),
-        (this.afterShow = o || !1),
-        (this.beforeClose = r || !1),
-        (this.afterClose = a || !1),
-        (this.classList = i || !1),
-        (this.notCloseSelectors = s || []),
-        this.createModal();
-    }),
-    !this.params.notInit)
+            !1
+          );
+        },
+        escClick: e => {
+          'Escape' === e.key && t.closeModal();
+        },
+      }),
+      (this.initEvents = () => {
+        document.removeEventListener('click', this.events.eventDelegation, !0),
+          document.addEventListener('click', this.events.eventDelegation, !0),
+          document.removeEventListener('keydown', this.events.escClick),
+          document.addEventListener('keydown', this.events.escClick);
+      }),
+      (this.init = () => {
+        const {
+          element: e,
+          html: t,
+          classList: i,
+          beforeShow: n,
+          afterShow: o,
+          beforeClose: r,
+          afterClose: a,
+          notCloseSelectors: s,
+        } = this.params;
+        (this.element = e || !1),
+          (this.html = t || !1),
+          (this.beforeShow = n || !1),
+          (this.afterShow = o || !1),
+          (this.beforeClose = r || !1),
+          (this.afterClose = a || !1),
+          (this.classList = i || !1),
+          (this.notCloseSelectors = s || []),
+          this.createModal();
+      }),
+      !this.params.notInit)
   )
     return this.init();
 }),
@@ -15096,7 +15072,7 @@ function Bars() {
       document.addEventListener('click', e => {
         const { target: t } = e;
         if (t.closest('.l_welcome__element.--logout') || t.closest('.logout_link'))
-          for (let e = 0; e < sessionStorage.length; ) {
+          for (let e = 0; e < sessionStorage.length;) {
             const t = sessionStorage.key(e);
             t.startsWith('expchck') ? sessionStorage.removeItem(t) : (e += 1);
           }
@@ -15159,39 +15135,39 @@ function Bars() {
         const e = document.querySelector('.modal');
         e && e.classList.add('--loading');
         const t = await this.fetchData({
-            data: this.queries.unsetRegion(),
-            linkParameter: '?mutation=unsetRegion',
-          }),
+          data: this.queries.unsetRegion(),
+          linkParameter: '?mutation=unsetRegion',
+        }),
           { status: i } = t?.data?.unsetTemporaryRegion;
         e && e.classList.add('--remove'),
           'success' === i &&
-            ((document.cookie = 'setRegionForced=; path=/; Max-Age=-99999999;'),
+          ((document.cookie = 'setRegionForced=; path=/; Max-Age=-99999999;'),
             window.location.reload());
       }),
       (this.unsetTemporaryZipcode = async () => {
         const e = document.querySelector('.modal');
         e && e.classList.add('--loading');
         const t = await this.fetchData({
-            data: this.queries.unsetZipcode(),
-            linkParameter: '?mutation=unsetZipcode',
-          }),
+          data: this.queries.unsetZipcode(),
+          linkParameter: '?mutation=unsetZipcode',
+        }),
           { status: i } = t?.data?.unsetTemporaryZipcode;
         e && e.classList.add('--remove'),
           'success' === i &&
-            ((document.cookie = 'setZipcodeForced=; path=/; Max-Age=-99999999;'),
+          ((document.cookie = 'setZipcodeForced=; path=/; Max-Age=-99999999;'),
             window.location.reload());
       }),
       (this.unsetTemporaryRegionAndZipcode = async () => {
         const e = document.querySelector('.modal');
         e && e.classList.add('--loading');
         const t = await this.fetchData({
-            data: this.queries.unsetRegionAndZipcode(),
-            linkParameter: '?mutation=unsetRegionAndZipcode',
-          }),
+          data: this.queries.unsetRegionAndZipcode(),
+          linkParameter: '?mutation=unsetRegionAndZipcode',
+        }),
           { status: i } = t?.data?.unsetTemporaryRegion;
         e && e.classList.add('--remove'),
           'success' === i &&
-            ((document.cookie = 'setRegionForced=; path=/; Max-Age=-99999999;'),
+          ((document.cookie = 'setRegionForced=; path=/; Max-Age=-99999999;'),
             (document.cookie = 'setZipcodeForced=; path=/; Max-Age=-99999999;'),
             window.location.reload());
       }),
@@ -15209,27 +15185,18 @@ function Bars() {
           r = !o && i,
           a = document.createElement('div');
         a.classList.add('region_forced'),
-          (a.innerHTML = `<div class="region_forced__label">\n      <span class="region_forced__label_text">${
-            o ? this.txt.labelZipcode : this.txt.label
-          }</span>\n      <strong class="region_forced__label_value">${
-            o ? i : e
-          }</strong>\n    </div>\n    <div class="region_forced__body">\n      <div class="region_forced__item --currency">\n        <span classs="region_forced__item_text">${
-            this.txt.currency
-          }</span>\n        <strong class="region_forced__item_value">${
-            app_shop?.vars?.currency?.id
-          }</strong>\n      </div>\n      <div class="region_forced__item --delivery">\n        <span classs="region_forced__item_text">${
-            o ? this.txt.timeAndCostsZipcode : this.txt.timeAndCosts
-          }</span>\n        <strong class="region_forced__item_value">${
-            o ? i : e
-          }</strong>\n        ${
-            r
+          (a.innerHTML = `<div class="region_forced__label">\n      <span class="region_forced__label_text">${o ? this.txt.labelZipcode : this.txt.label
+            }</span>\n      <strong class="region_forced__label_value">${o ? i : e
+            }</strong>\n    </div>\n    <div class="region_forced__body">\n      <div class="region_forced__item --currency">\n        <span classs="region_forced__item_text">${this.txt.currency
+            }</span>\n        <strong class="region_forced__item_value">${app_shop?.vars?.currency?.id
+            }</strong>\n      </div>\n      <div class="region_forced__item --delivery">\n        <span classs="region_forced__item_text">${o ? this.txt.timeAndCostsZipcode : this.txt.timeAndCosts
+            }</span>\n        <strong class="region_forced__item_value">${o ? i : e
+            }</strong>\n        ${r
               ? `<span class="region_forced__and_region">${this.txt.andRegion}<strong>${i}</strong></span>`
               : ''
-          }\n      </div>\n    </div>\n    <div class="region_forced__buttons">\n      <button class="region_forced__continue btn --solid --large" type="button">${
-            this.txt.continue
-          }</button>\n      <a href="#unsetTemporaryRegion" class="region_forced__unset">${
-            o ? this.txt.restoreDefaultZipcode : this.txt.restoreDefault
-          }<strong>${o ? n : t}</strong></a>\n    </div>`),
+            }\n      </div>\n    </div>\n    <div class="region_forced__buttons">\n      <button class="region_forced__continue btn --solid --large" type="button">${this.txt.continue
+            }</button>\n      <a href="#unsetTemporaryRegion" class="region_forced__unset">${o ? this.txt.restoreDefaultZipcode : this.txt.restoreDefault
+            }<strong>${o ? n : t}</strong></a>\n    </div>`),
           (this.modal = new Modal({ element: a, classList: '--region-forced' }));
         let s = 'region';
         o && (s = 'zipcode'), r && (s = 'regionAndZipcode'), this.initEvents({ type: s });
@@ -15242,15 +15209,15 @@ function Bars() {
         i &&
           ((i.showModal = !1), (document.cookie = `setRegionForced=${JSON.stringify(i)}; path=/;`)),
           n &&
-            ((n.showModal = !1),
+          ((n.showModal = !1),
             (document.cookie = `setZipcodeForced=${JSON.stringify(n)}; path=/;`));
       }),
       (this.initEvents = ({ type: e }) => {
         const t = document.querySelector('.region_forced__unset');
         t &&
           ('region' === e && t.addEventListener('click', this.events.unsetRegion),
-          'zipcode' === e && t.addEventListener('click', this.events.unsetZipcode),
-          'regionAndZipcode' === e &&
+            'zipcode' === e && t.addEventListener('click', this.events.unsetZipcode),
+            'regionAndZipcode' === e &&
             t.addEventListener('click', this.events.unsetRegionAndZipcode));
         const i = document.querySelector('.region_forced__continue');
         i && i.addEventListener('click', this.events.continue);
@@ -15450,10 +15417,10 @@ const searchTxt = {
       });
       try {
         const i = await fetch(this.vars.searchResultQuery, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-            body: t,
-          }),
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: t,
+        }),
           n = (await i.json()).data.productsTextSearch;
         return sessionStorage.setItem(`search_${e}`, JSON.stringify(n)), n;
       } catch (e) {
@@ -15465,21 +15432,21 @@ const searchTxt = {
         (this.resultsWrapper.scrollTop = 0),
         document.documentElement.classList.add('--results-open'),
         document.querySelector('#container.main_page') &&
-          document.documentElement.classList.add('--results-main-open');
+        document.documentElement.classList.add('--results-main-open');
     }),
     (this.closeResults = () => {
       this.searchInput.closest('form').classList.remove('--open'),
         document.documentElement.classList.remove('--results-open'),
         document.querySelector('#container.main_page') &&
-          document.documentElement.classList.remove('--results-main-open');
+        document.documentElement.classList.remove('--results-main-open');
     }),
     (this.buildResult = async () => {
       this.searchInput.closest('form').classList.add('--loading');
       const e = await this.fetchData();
       if (
         (this.searchInput.closest('form').classList.remove('--loading'),
-        (this.resultsWrapper.innerHTML = ''),
-        e)
+          (this.resultsWrapper.innerHTML = ''),
+          e)
       ) {
         if (!Object.values(e).filter(e => (e ? e.length : '')).length)
           return this.closeResults(), !1;
@@ -15500,81 +15467,69 @@ const searchTxt = {
           .filter(e => 'searchQueries' !== e)
           .some(t => (e[t] ? e[t].length : '')) &&
           ((this.resultsWrapper.innerHTML += '<div class="search_result__block --others"></div>'),
-          e.products &&
+            e.products &&
             e.products.length &&
             (this.resultsWrapper.querySelector(
               '.search_result__block.--others',
             ).innerHTML += `\n            <div class="search_result__sub --products">\n              ${e.products
               .map(
                 e =>
-                  `\n                <a class="search_result__item --product" href="${
-                    e.link
-                  }">\n                  <span class="search_result__icon">${
-                    void 0 !== e.iconSmallSecond
-                      ? `<picture>\n                      <source type="image/webp" srcset="${e.iconSmall}"/>\n                      <img src="${e.iconSmallSecond}" alt="${e.name}">\n                    </picture>`
-                      : `<img src="${e.iconSmall}" alt="${e.name}" />`
-                  }</span>\n                  <span class="search_result__name_wrapper">\n                    <span class="search_result__name">${
-                    e.name
-                  }</span>\n                    <span class="search_result__price">${
-                    t.netPrice
-                      ? 0 !== e.price.price.net.value
-                        ? e.price.price.net.formatted
-                        : searchTxt.telPrice
-                      : 0 !== e.price.price.gross.value
+                  `\n                <a class="search_result__item --product" href="${e.link
+                  }">\n                  <span class="search_result__icon">${void 0 !== e.iconSmallSecond
+                    ? `<picture>\n                      <source type="image/webp" srcset="${e.iconSmall}"/>\n                      <img src="${e.iconSmallSecond}" alt="${e.name}">\n                    </picture>`
+                    : `<img src="${e.iconSmall}" alt="${e.name}" />`
+                  }</span>\n                  <span class="search_result__name_wrapper">\n                    <span class="search_result__name">${e.name
+                  }</span>\n                    <span class="search_result__price">${t.netPrice
+                    ? 0 !== e.price.price.net.value
+                      ? e.price.price.net.formatted
+                      : searchTxt.telPrice
+                    : 0 !== e.price.price.gross.value
                       ? e.price.price.gross.formatted
                       : searchTxt.telPrice
                   }</span>\n                  </span>\n                </a>\n              `,
               )
               .join(
                 '',
-              )}\n              <button type="submit" class="search_result__item --button-all${
-              t.buttonAllClass
-            }">${searchTxt.buttonAllText}</button>\n            </div>\n          `),
-          ((e.producers && e.producers.length) ||
-            (e.series && e.series.length) ||
-            (e.menuNodes && e.menuNodes.length)) &&
+              )}\n              <button type="submit" class="search_result__item --button-all${t.buttonAllClass
+              }">${searchTxt.buttonAllText}</button>\n            </div>\n          `),
+            ((e.producers && e.producers.length) ||
+              (e.series && e.series.length) ||
+              (e.menuNodes && e.menuNodes.length)) &&
             (this.resultsWrapper.querySelector(
               '.search_result__block.--others',
-            ).innerHTML += `\n            <div class="search_result__sub --categories">\n              <strong class="search_result__label">${
-              searchTxt.categories
-            }</strong>\n              <div class="search_result__items">\n                ${
-              e.producers
-                ? e.producers
-                    .map(
-                      e =>
-                        `\n                  <a class="search_result__item --producer" href="${e.link}">\n                    <span class="search_result__name_label">${searchTxt.beforeProducer}</span><span class="search_result__name">${e.name}</span>\n                  </a>\n                `,
-                    )
-                    .join('')
-                : ''
-            }\n\n                ${
-              e.series
+            ).innerHTML += `\n            <div class="search_result__sub --categories">\n              <strong class="search_result__label">${searchTxt.categories
+            }</strong>\n              <div class="search_result__items">\n                ${e.producers
+              ? e.producers
+                .map(
+                  e =>
+                    `\n                  <a class="search_result__item --producer" href="${e.link}">\n                    <span class="search_result__name_label">${searchTxt.beforeProducer}</span><span class="search_result__name">${e.name}</span>\n                  </a>\n                `,
+                )
+                .join('')
+              : ''
+              }\n\n                ${e.series
                 ? e.series
-                    .map(
-                      e =>
-                        `\n                  <a class="search_result__item --series" href="${e.link}">\n                    <span class="search_result__name_label">${searchTxt.beforeSeries}</span><span class="search_result__name">${e.name}</span>\n                  </a>\n                `,
-                    )
-                    .join('')
+                  .map(
+                    e =>
+                      `\n                  <a class="search_result__item --series" href="${e.link}">\n                    <span class="search_result__name_label">${searchTxt.beforeSeries}</span><span class="search_result__name">${e.name}</span>\n                  </a>\n                `,
+                  )
+                  .join('')
                 : ''
-            }\n\n                ${
-              e.menuNodes
+              }\n\n                ${e.menuNodes
                 ? e.menuNodes
-                    .map(
-                      e =>
-                        `\n                  <a class="search_result__item --menu" href="${
-                          e.link
-                        }">\n                    <span class="search_result__name">${
-                          e.bc ? e.bc.item.map(e => e.title).join(searchTxt.separator) : e.name
-                        }</span>\n                  </a>\n                `,
-                    )
-                    .join('')
+                  .map(
+                    e =>
+                      `\n                  <a class="search_result__item --menu" href="${e.link
+                      }">\n                    <span class="search_result__name">${e.bc ? e.bc.item.map(e => e.title).join(searchTxt.separator) : e.name
+                      }</span>\n                  </a>\n                `,
+                  )
+                  .join('')
                 : ''
-            }\n              </div>\n            </div>\n          `),
-          e.cms &&
+              }\n              </div>\n            </div>\n          `),
+            e.cms &&
             e.cms.length &&
             (this.resultsWrapper.querySelector(
               '.search_result__block.--others',
-            ).innerHTML += `\n            <div class="search_result__sub --cms">\n              <strong class="search_result__label">${
-              searchTxt.cms
+            ).innerHTML += `\n            <div class="search_result__sub --cms">\n              <strong class="search_result__label">${searchTxt.cms
             }</strong>\n              <div class="search_result__items">\n                ${e.cms
               .map(
                 e =>
@@ -15587,7 +15542,7 @@ const searchTxt = {
     (this.updateSearchInput = () => {
       const e = t.resultsWrapper.querySelector('.search_result__item.--active .search_result__name')
         ? t.resultsWrapper.querySelector('.search_result__item.--active .search_result__name')
-            .textContent
+          .textContent
         : t.resultsWrapper.querySelector('.search_result__item.--active').textContent;
       t.searchInput.value = e;
     }),
@@ -15613,11 +15568,11 @@ const searchTxt = {
             39 !== i &&
             40 !== i &&
             (t.searchInput.setAttribute('data-value', this.value),
-            clearTimeout(t.vars.typingTimer),
-            (t.vars.typingTimer = setTimeout(t.buildResult, t.vars.doneTypingInterval)),
-            document.querySelector(
-              'html._mobile:not(.sidebar_open):not(.--search-open) .main_page',
-            ) && window.scrollTo(0, 0));
+              clearTimeout(t.vars.typingTimer),
+              (t.vars.typingTimer = setTimeout(t.buildResult, t.vars.doneTypingInterval)),
+              document.querySelector(
+                'html._mobile:not(.sidebar_open):not(.--search-open) .main_page',
+              ) && window.scrollTo(0, 0));
         }),
         this.searchInput.addEventListener('keydown', function (e) {
           const i = e.which || e.keyCode || 0;
@@ -15627,9 +15582,9 @@ const searchTxt = {
             39 === i ||
             40 === i ||
             (t.searchInput.setAttribute('data-value', this.value),
-            clearTimeout(t.vars.typingTimer),
-            t.searchInput.closest('form').classList.add('--focus'),
-            !document.querySelector('.--search-open') || 13 !== i) ||
+              clearTimeout(t.vars.typingTimer),
+              t.searchInput.closest('form').classList.add('--focus'),
+              !document.querySelector('.--search-open') || 13 !== i) ||
             (e.preventDefault(), this.closest('form').submit(), !1)
           );
         }),
@@ -15640,8 +15595,8 @@ const searchTxt = {
           window.scrollY > 0
             ? document.documentElement.classList.add('--scroll-down')
             : $('html').hasClass('sidebar_open') ||
-              $('html').hasClass('filters_open') ||
-              document.documentElement.classList.remove('--scroll-down');
+            $('html').hasClass('filters_open') ||
+            document.documentElement.classList.remove('--scroll-down');
         }),
         document
           .querySelector('.search_result, .search_result__block')
@@ -15654,9 +15609,9 @@ const searchTxt = {
             if (37 === i || 38 === i || 39 === i || 40 === i) {
               e.preventDefault();
               const n = [
-                  ...t.resultsWrapper.querySelectorAll('.search_result__item'),
-                  t.resultsWrapper.querySelector('.search_result__button_all'),
-                ],
+                ...t.resultsWrapper.querySelectorAll('.search_result__item'),
+                t.resultsWrapper.querySelector('.search_result__button_all'),
+              ],
                 o = t.resultsWrapper.querySelector('.search_result__item.--query'),
                 r = t.resultsWrapper.querySelector(
                   '.search_result__block.--others .search_result__item',
@@ -15695,19 +15650,19 @@ const searchTxt = {
         document.addEventListener('click', function (e) {
           return (
             e.target.closest('.menu_search__mobile') &&
-              (e.preventDefault(),
+            (e.preventDefault(),
               document.documentElement.classList.add('--search-open'),
               $('.main_slider').slick('slickSetOption', 'autoplay', !1, !0),
               t.searchInput.focus()),
             e.target.closest('.--search-open .menu_search__submit') &&
-              (e.preventDefault(),
+            (e.preventDefault(),
               document.documentElement.classList.remove('--search-open', '--results-main-open'),
               $('.main_slider').slick('slickSetOption', 'autoplay', !0, !0)),
             e.target.closest('header .navbar-toggler') &&
-              document.documentElement.classList.remove('--results-main-open'),
+            document.documentElement.classList.remove('--results-main-open'),
             t.searchInput.closest('form').classList.contains('--focus') &&
-              !t.searchInput.closest('form').contains(e.target) &&
-              t.searchInput.closest('form').classList.remove('--focus'),
+            !t.searchInput.closest('form').contains(e.target) &&
+            t.searchInput.closest('form').classList.remove('--focus'),
             !1
           );
         });
@@ -15788,8 +15743,8 @@ const DefaultShoppingList = function () {
           '.slt_link.--empty, .slt_lists__nav_link.--empty, .slm_lists__nav_link.--empty',
         ) &&
           (e.preventDefault(),
-          await this.createList(),
-          (window.location.href = t.closest('[href]')?.href));
+            await this.createList(),
+            (window.location.href = t.closest('[href]')?.href));
       });
     }),
     this.initEvents()
@@ -15817,38 +15772,30 @@ app_shop.run(
 var menu_basket_cache = function (e) {
   app_shop.fn.customBusket ||
     (app_shop.fn.customBusket = function (e) {
-      return `\n    <div class="topBasket__row">\n      <a class="topBasket__item --photo" href="${
-        e.link
-      }">\n        ${
-        void 0 !== e.icon_second
+      return `\n    <div class="topBasket__row">\n      <a class="topBasket__item --photo" href="${e.link
+        }">\n        ${void 0 !== e.icon_second
           ? `<picture>\n            <source type="image/webp" srcset="${e.icon}"/>\n            <img src="${e.icon_second}" alt="${e.name}">\n          </picture>`
           : `<img src="${e.icon}" alt="${e.name}">`
-      }\n      </a>\n      <a class="topBasket__item --name" href="${
-        e.link
-      }">\n        <span class="topBasket__name">${e.name}</span>\n        ${
-        'uniw' != e.size ? '<span class="topBasket__size">' + e.size_name + '</span>' : ''
-      }${
-        e.product_version_name
+        }\n      </a>\n      <a class="topBasket__item --name" href="${e.link
+        }">\n        <span class="topBasket__name">${e.name}</span>\n        ${'uniw' != e.size ? '<span class="topBasket__size">' + e.size_name + '</span>' : ''
+        }${e.product_version_name
           ? '<span class="topBasket__version">' + e.product_version_name + '</span>'
           : ''
-      }\n      </a>\n      <span class="topBasket__item --sum">\n        <span class="value">${
-        e.count
-      }</span>\n        <span class="unit">${
-        e.worth_unit
-      }</span>\n      </span>\n      <span class="topBasket__item --prices">${
-        'net' === app_shop.vars.priceType
+        }\n      </a>\n      <span class="topBasket__item --sum">\n        <span class="value">${e.count
+        }</span>\n        <span class="unit">${e.worth_unit
+        }</span>\n      </span>\n      <span class="topBasket__item --prices">${'net' === app_shop.vars.priceType
           ? e.prices.worth_net_formatted
           : e.prices.worth_gros_formatted
-      }</span>\n    </div>`;
+        }</span>\n    </div>`;
     }),
     app_shop.fn.basketCacheCallBack ||
-      (app_shop.fn.basketCacheCallBack = function () {
-        $('#menu_basket')
-          .not('.--hide')
-          .hover(function () {
-            $('.topBasket__sub').toggleClass('--hover');
-          });
-      }),
+    (app_shop.fn.basketCacheCallBack = function () {
+      $('#menu_basket')
+        .not('.--hide')
+        .hover(function () {
+          $('.topBasket__sub').toggleClass('--hover');
+        });
+    }),
     $.ajax({
       type: 'GET',
       url: '/ajax/basket.php?&getAjax=true',
@@ -15856,28 +15803,28 @@ var menu_basket_cache = function (e) {
       success: function (e) {
         if (
           (0 == (e = e.basket).products.length && $('#menu_basket').addClass('--hide'),
-          e.products.length >= parseFloat(app_shop.txt.txt_76942_basket_list) &&
+            e.products.length >= parseFloat(app_shop.txt.txt_76942_basket_list) &&
             ($('.topBasket__details.--products').addClass('--list'),
-            $('#menu_basket').removeClass('--hide')),
-          e.products.length > parseFloat(app_shop.txt.txt_76942_basket_hide) &&
+              $('#menu_basket').removeClass('--hide')),
+            e.products.length > parseFloat(app_shop.txt.txt_76942_basket_hide) &&
             $('#menu_basket').addClass('--hide'),
-          $('#menu_basket .topBasket__price').html(
-            'net' === app_shop.vars.priceType ? e.worth_net_formatted : e.worth_formatted,
-          ),
-          e.productsCounter > 0
-            ? $('#menu_basket .badge').html(e.productsCounter)
-            : $('#menu_basket .badge').html(''),
-          $('#menu_basket #shipppingCost').text(
-            'net' === app_shop.vars.priceType
-              ? e.shippingCost_net_formatted
-              : e.shippingCost_formatted,
-          ),
-          $('#freeShipping').length > 0 && 0 == parseFloat(e.toShippingFree)
-            ? $('#freeShipping').addClass('--active')
-            : $('#freeShipping').length > 0 &&
+            $('#menu_basket .topBasket__price').html(
+              'net' === app_shop.vars.priceType ? e.worth_net_formatted : e.worth_formatted,
+            ),
+            e.productsCounter > 0
+              ? $('#menu_basket .badge').html(e.productsCounter)
+              : $('#menu_basket .badge').html(''),
+            $('#menu_basket #shipppingCost').text(
+              'net' === app_shop.vars.priceType
+                ? e.shippingCost_net_formatted
+                : e.shippingCost_formatted,
+            ),
+            $('#freeShipping').length > 0 && 0 == parseFloat(e.toShippingFree)
+              ? $('#freeShipping').addClass('--active')
+              : $('#freeShipping').length > 0 &&
               parseFloat(e.toShippingFree) >= 0 &&
               $('#freeShipping').removeClass('--active'),
-          0 != e.products.length)
+            0 != e.products.length)
         ) {
           let t = '';
           const n = [...e.products];
@@ -15895,15 +15842,15 @@ var menu_basket_cache = function (e) {
       },
     }),
     e &&
-      iaiGet.wishlist(function (e) {
-        if (!e.Wishlist.response.attributes) return !1;
-        var t = $('#menu_basket .wishes_link span.hidden-phone'),
-          i = t.text(),
-          n = e.Wishlist.response.attributes.count;
-        t.text(i.replace(/\(.{1,3}\)/, '(' + n + ')')),
-          t.next('.badge').remove(),
-          n > 0 && t.after('<span class="badge badge-important visible-phone">' + n + '</span>');
-      });
+    iaiGet.wishlist(function (e) {
+      if (!e.Wishlist.response.attributes) return !1;
+      var t = $('#menu_basket .wishes_link span.hidden-phone'),
+        i = t.text(),
+        n = e.Wishlist.response.attributes.count;
+      t.text(i.replace(/\(.{1,3}\)/, '(' + n + ')')),
+        t.next('.badge').remove(),
+        n > 0 && t.after('<span class="badge badge-important visible-phone">' + n + '</span>');
+    });
 };
 (app_shop.fn.sesion2link = function () {
   var e = $.cookie('client'),
@@ -15968,17 +15915,17 @@ var submenuWidth = '200',
         }),
         app_shop.vars.view < 2
           ? window.matchMedia('(display-mode: standalone)').matches &&
-            $('.nav-link').each(function (e) {
-              $(this).next().is('ul') &&
-                ($(this).attr('data-href', $(this).attr('href')),
+          $('.nav-link').each(function (e) {
+            $(this).next().is('ul') &&
+              ($(this).attr('data-href', $(this).attr('href')),
                 $(this).attr('href', '##'),
                 $(this).addClass('not_selectable'));
-            })
+          })
           : $('.nav-link').each(function (e) {
-              '' != $(this).attr('data-href') &&
-                ($(this).attr('href', $(this).attr('data-href')), $(this).removeAttr('data-href')),
-                $(this).removeClass('not_selectable');
-            }),
+            '' != $(this).attr('data-href') &&
+              ($(this).attr('href', $(this).attr('data-href')), $(this).removeAttr('data-href')),
+              $(this).removeClass('not_selectable');
+          }),
         app_shop.vars.view > 2 && $('html').removeClass('filters_open').removeClass('sidebar_open');
     },
     [1, 2, 3, 4],
@@ -16067,26 +16014,26 @@ $(document).on('click', 'aside .navbar-collapse .nav-link', function () {
     return (
       $('.nav-item ul').removeClass('active'),
       $(this).parent().parent().hasClass('navbar-nav') &&
-        $('.navbar-subnav').removeClass('--hover'),
+      $('.navbar-subnav').removeClass('--hover'),
       !!($('#menu_navbar').parent('.wide').size() && t.parents('ul').size() > 1) ||
-        (t.is('ul')
-          ? (i
-              ? (t.removeClass('active'),
-                t.find('ul.active').removeClass('active'),
-                t.parents('ul').not('.navbar-nav').addClass('active'))
-              : (t.addClass('active'),
-                t.parents('ul').not('.navbar-nav').addClass('active'),
-                $('body').off('click.navbar'),
-                $('body').on('click.navbar', function (e) {
-                  $('.nav-item ul').removeClass('active');
-                })),
-            $(this).next('.navbar-subnav').length > 0 &&
-              (!$(this).attr('data-visited') &&
-                (app_shop.fn.concatColumns(t), app_shop.fn.setPositionMenu(t)),
-              $(this).attr('data-visited', 'true')),
-            e.preventDefault(),
-            !1)
-          : void 0)
+      (t.is('ul')
+        ? (i
+          ? (t.removeClass('active'),
+            t.find('ul.active').removeClass('active'),
+            t.parents('ul').not('.navbar-nav').addClass('active'))
+          : (t.addClass('active'),
+            t.parents('ul').not('.navbar-nav').addClass('active'),
+            $('body').off('click.navbar'),
+            $('body').on('click.navbar', function (e) {
+              $('.nav-item ul').removeClass('active');
+            })),
+          $(this).next('.navbar-subnav').length > 0 &&
+          (!$(this).attr('data-visited') &&
+            (app_shop.fn.concatColumns(t), app_shop.fn.setPositionMenu(t)),
+            $(this).attr('data-visited', 'true')),
+          e.preventDefault(),
+          !1)
+        : void 0)
     );
   }),
   $(document).on(
@@ -16106,6 +16053,10 @@ $(document).on('click', 'aside .navbar-collapse .nav-link', function () {
       return false;
     },
   );
+app_shop.run(
+  function () {
+    console.log('moja funkcja')
+  });
 
 app_shop.run(
   function () {
@@ -16125,90 +16076,118 @@ app_shop.run(
             );
           });
       }),
+        // szuba 20-11-2023
+        // search page
+        // switch + filters dropdown;
 
-      // mega menu szuba
-      $('.nav-item.mega-menu-content-category').on('mouseover', function () {
-        const title = $(this).find('a').attr('title');
-        const imgNum = $(this).find('a').data('img-num');
 
-        $('#mega-menu-content').html(
-          `<li class="bg-danger"><a href="#" class="bg-danger">${title}</a></li>`,
-        );
-        const newImageSrc = `./img/kawa-zdj-${imgNum}.jpg`;
-        $('.mega-menu-photo img').attr('src', newImageSrc);
-      }),
-      $('.nav-item.mega-menu-content-category').on('mouseleave', function () {
-        $('#mega-menu-content').empty();
-        $('.mega-menu-photo img').attr('src', './img/Kawa.jpg'); 
-      }),
-      $('#mega-menu-content')
-        .html(`<li class="bg-danger"><a href="#" class="bg-danger">${title}</a></li>`)
-        .on('mouseleave', function () {
-          // Gdy opuścimy element 'nav-item' myszką, usuniemy zawartość z 'mega-menu-content'
-          $('#mega-menu-content').empty();
+
+        // Event listener dla zmiany stanu przełącznika
+        $('#switch').on('change', function () {
+          console.log('switched from main.js', $(this).is(':checked'));
+          if ($(this).is(':checked')) {
+            // Gdy przełącznik jest w pozycji "on"
+            console.log("🚀 ~ file: main.js:16171 ~ on")
+            $('#produkty').css('color', 'black');
+            $('#smaki').css('color', 'orange');
+            $('.graph-background').show();
+            $('picture').hide();
+          } else {
+            // Gdy przełącznik jest w pozycji "off"
+            console.log("🚀 ~ file: main.js:16176 ~ off:")
+            $('#produkty').css('color', 'orange');
+            $('#smaki').css('color', 'black');
+            $('.graph-background').hide();
+            $('picture').show();
+          }
         }),
-      $('.navbar-subnav').removeClass('--hover'),
-      // Dodatkowo, jeśli chcesz usunąć klasę '--hover' z poprzednio najechanego elementu
-      // i dodać ją do aktualnie najechanego elementu, możesz użyć poniższej logiki
-      $('.nav-item.mega-menu-content-category').on('mouseover', function () {
-        $('.navbar-subnav').removeClass('--hover');
-        $(this).closest('.navbar-subnav').addClass('--hover');
-      }),
-      $('.no-touch .navbar-nav > .nav-item > .nav-link').on('mouseover', function () {
-        $(this).next('.navbar-subnav').length > 0 &&
-          (!$(this).attr('data-visited') &&
-            (app_shop.fn.concatColumns($(this).next('.navbar-subnav')),
-            app_shop.fn.setPositionMenu($(this).next('.navbar-subnav'))),
-          $(this).attr('data-visited', 'true'));
-      }),
-      (app_shop.fn.concatColumns = function (e) {
-        if (void 0 !== dlmenu_columnConcat && '' != dlmenu_columnConcat) {
-          let t = $('<li>', { class: 'nav-item nav-merge' }),
-            i = parseInt(dlmenu_columnHeight);
-          e.find(' > .nav-item').each(function () {
-            const e = $(this);
-            let n = e.height(),
-              o = e.next().height();
-            !e.hasClass('nav-merge') && (n = e.height()),
-              !e.next().hasClass('nav-merge') && (o = e.next().height()),
-              e.hasClass('--all') && (i = 0),
-              n < i && o + n < i
-                ? (e.after(t), t.append(e), (i -= n))
-                : n < i &&
+
+
+        // mega menu szuba
+        $('.nav-item.mega-menu-content-category').on('mouseover', function () {
+          const title = $(this).find('a').attr('title');
+          console.log("🚀 ~ file: main.js:16101 ~ title:")
+          const imgNum = $(this).find('a').data('img-num');
+
+          $('#mega-menu-content').html(
+            `<li class="bg-danger"><a href="#" class="bg-danger">${title}</a></li>`,
+          );
+          const newImageSrc = `./img/kawa-zdj-${imgNum}.jpg`;
+          $('.mega-menu-photo img').attr('src', newImageSrc);
+        }),
+        $('.nav-item.mega-menu-content-category').on('mouseleave', function () {
+          $('#mega-menu-content').empty();
+          $('.mega-menu-photo img').attr('src', './img/Kawa.jpg');
+        }),
+        $('#mega-menu-content')
+          .html(`<li class="bg-danger"><a href="#" class="bg-danger">${title}</a></li>`)
+          .on('mouseleave', function () {
+            // Gdy opuścimy element 'nav-item' myszką, usuniemy zawartość z 'mega-menu-content'
+            $('#mega-menu-content').empty();
+          }),
+        $('.navbar-subnav').removeClass('--hover'),
+        // Dodatkowo, jeśli chcesz usunąć klasę '--hover' z poprzednio najechanego elementu
+        // i dodać ją do aktualnie najechanego elementu, możesz użyć poniższej logiki
+        $('.nav-item.mega-menu-content-category').on('mouseover', function () {
+          $('.navbar-subnav').removeClass('--hover');
+          $(this).closest('.navbar-subnav').addClass('--hover');
+        }),
+        $('.no-touch .navbar-nav > .nav-item > .nav-link').on('mouseover', function () {
+          $(this).next('.navbar-subnav').length > 0 &&
+            (!$(this).attr('data-visited') &&
+              (app_shop.fn.concatColumns($(this).next('.navbar-subnav')),
+                app_shop.fn.setPositionMenu($(this).next('.navbar-subnav'))),
+              $(this).attr('data-visited', 'true'));
+        }),
+        (app_shop.fn.concatColumns = function (e) {
+          if (void 0 !== dlmenu_columnConcat && '' != dlmenu_columnConcat) {
+            let t = $('<li>', { class: 'nav-item nav-merge' }),
+              i = parseInt(dlmenu_columnHeight);
+            e.find(' > .nav-item').each(function () {
+              const e = $(this);
+              let n = e.height(),
+                o = e.next().height();
+              !e.hasClass('nav-merge') && (n = e.height()),
+                !e.next().hasClass('nav-merge') && (o = e.next().height()),
+                e.hasClass('--all') && (i = 0),
+                n < i && o + n < i
+                  ? (e.after(t), t.append(e), (i -= n))
+                  : n < i &&
                   (e.after(t),
-                  t.append(e),
-                  (i = parseInt(dlmenu_columnHeight)),
-                  (t = $('<li>', { class: 'nav-item nav-merge' })));
-          });
-        }
-      }),
-      $('#menu_categories .navbar-nav > .nav-item').each(function () {
-        0 === $(this).find('li.nav-item:not(.empty):not(.nav-merge)').length &&
-          $(this).addClass('--noBold');
-      }),
-      (app_shop.fn.setPositionMenu = function (e) {
-        const t = $('#menu_categories').width() - dlmenu_padding,
-          i = e.find('> .nav-item:not(.--all)').length;
-        if (
-          (e.addClass('--cols' + i),
-          (i < dlmenu_columns && window.screen.width > 1200) ||
-            (i < dlmenu_columns - 1 && window.screen.width < 1200))
-        ) {
-          let i = e,
-            n = i.parent().position().left;
-          n = n < 0 ? 0 : n;
-          let o = t - (i.width() + n),
-            r = n - -1 * o;
-          (r = o > 0 ? n : r), i.css('left', r + 'px');
-        }
-      }),
-      document.querySelectorAll('.nav-link:not(.nav-gfx) > img.gfx_lvl_1.--omo').forEach(e => {
-        e.style.maxWidth = `${e.previousElementSibling.offsetWidth}px`;
-      }));
+                    t.append(e),
+                    (i = parseInt(dlmenu_columnHeight)),
+                    (t = $('<li>', { class: 'nav-item nav-merge' })));
+            });
+          }
+        }),
+        $('#menu_categories .navbar-nav > .nav-item').each(function () {
+          0 === $(this).find('li.nav-item:not(.empty):not(.nav-merge)').length &&
+            $(this).addClass('--noBold');
+        }),
+        (app_shop.fn.setPositionMenu = function (e) {
+          const t = $('#menu_categories').width() - dlmenu_padding,
+            i = e.find('> .nav-item:not(.--all)').length;
+          if (
+            (e.addClass('--cols' + i),
+              (i < dlmenu_columns && window.screen.width > 1200) ||
+              (i < dlmenu_columns - 1 && window.screen.width < 1200))
+          ) {
+            let i = e,
+              n = i.parent().position().left;
+            n = n < 0 ? 0 : n;
+            let o = t - (i.width() + n),
+              r = n - -1 * o;
+            (r = o > 0 ? n : r), i.css('left', r + 'px');
+          }
+        }),
+        document.querySelectorAll('.nav-link:not(.nav-gfx) > img.gfx_lvl_1.--omo').forEach(e => {
+          e.style.maxWidth = `${e.previousElementSibling.offsetWidth}px`;
+        }));
   },
   [3, 4],
   '#menu_categories',
 ),
+
   app_shop.run(
     function () {
       $('.nav-link.nav-gfx').on({
@@ -16219,15 +16198,15 @@ app_shop.run(
             n = e.parent().innerHeight() - e.parent().height();
           t &&
             (e.parent().css('min-width', e.width() + i),
-            e.parent().css('min-height', e.height() + n),
-            e.attr('data-tmp_img', e.attr('src')),
-            'img_rwd' === t
-              ? 1 === app_shop.vars.view
-                ? e.attr('src', e.data('omo_mobile'))
-                : 2 === app_shop.vars.view
-                ? e.attr('src', e.data('omo_tablet'))
-                : e.attr('src', e.data('omo_desktop'))
-              : e.attr('src', e.data('omo_img')));
+              e.parent().css('min-height', e.height() + n),
+              e.attr('data-tmp_img', e.attr('src')),
+              'img_rwd' === t
+                ? 1 === app_shop.vars.view
+                  ? e.attr('src', e.data('omo_mobile'))
+                  : 2 === app_shop.vars.view
+                    ? e.attr('src', e.data('omo_tablet'))
+                    : e.attr('src', e.data('omo_desktop'))
+                : e.attr('src', e.data('omo_img')));
         },
         mouseleave() {
           const e = $(this).find('img'),
@@ -16299,13 +16278,13 @@ app_shop.run(
   }),
   (app_shop.fn.setMobileCategories = function () {
     const e = (e, t) => {
-        t.split(',').forEach(e => {
-          $(e).hide(), $(e).removeClass('--active');
-        }),
-          e.split(',').forEach(e => {
-            $(e).show(), $(e).addClass('--active');
-          });
-      },
+      t.split(',').forEach(e => {
+        $(e).hide(), $(e).removeClass('--active');
+      }),
+        e.split(',').forEach(e => {
+          $(e).show(), $(e).addClass('--active');
+        });
+    },
       t = () => {
         $('aside').prepend($('#mobileCategories'));
         let t = '';
@@ -16357,8 +16336,8 @@ const filtersActionsCall = () => {
       const t = $(this);
       (app_shop.vars.clickedXPRESS = t.attr('name').split('_')[1]),
         t.is(':checked') &&
-          'false' === t.attr('data-localized') &&
-          Modal({ html: $('#xpress_toplayer').html(), classList: 'xpress_zipcode_verification' });
+        'false' === t.attr('data-localized') &&
+        Modal({ html: $('#xpress_toplayer').html(), classList: 'xpress_zipcode_verification' });
     });
   document.querySelector('.filters__form').addEventListener('submit', function (e) {
     const t = document.querySelector('#PriceRangeFrom'),
@@ -16408,11 +16387,11 @@ function simple_tooltip(e, t, i) {
         },
       ),
       '' != n &&
-        ' ' != n &&
-        'undefined' != n &&
-        ($('#' + t)
-          .find('p')
-          .html(n),
+      ' ' != n &&
+      'undefined' != n &&
+      ($('#' + t)
+        .find('p')
+        .html(n),
         $('#' + t).fadeIn(400));
   }),
     $(document).on('mousemove', e, function (e) {
@@ -16423,9 +16402,9 @@ function simple_tooltip(e, t, i) {
         s = 15;
       i || !1
         ? ((n =
-            e.pageX - $('#' + t).outerWidth(!0) - s <= 0
-              ? e.pageX + s
-              : e.pageX - s - $('#' + t).outerWidth(!0)),
+          e.pageX - $('#' + t).outerWidth(!0) - s <= 0
+            ? e.pageX + s
+            : e.pageX - s - $('#' + t).outerWidth(!0)),
           (o =
             r + 30 >= e.pageY - $('#' + t).height()
               ? r + s
@@ -16479,11 +16458,11 @@ function simple_tooltip(e, t, i) {
   $('.progress_bar_1.active').size()
     ? $('div.progress_bar_keeper').addClass('progress_bar_1_active')
     : $('.progress_bar_2.active').size()
-    ? $('div.progress_bar_keeper').addClass('progress_bar_2_active')
-    : $('.progress_bar_3.active').size()
-    ? $('div.progress_bar_keeper').addClass('progress_bar_3_active')
-    : $('.progress_bar_4.active').size() &&
-      $('div.progress_bar_keeper').addClass('progress_bar_4_active'),
+      ? $('div.progress_bar_keeper').addClass('progress_bar_2_active')
+      : $('.progress_bar_3.active').size()
+        ? $('div.progress_bar_keeper').addClass('progress_bar_3_active')
+        : $('.progress_bar_4.active').size() &&
+        $('div.progress_bar_keeper').addClass('progress_bar_4_active'),
   app_shop.run(
     function () {
       $('footer').before($('#search_hotspot_zone1'));
@@ -16587,14 +16566,14 @@ var iaical_dateFormat = 'yy-mm-dd',
   (iaical_monthNext = 'NastÄpny miesiÄc'),
   (iaical_monthPrev = 'Poprzedni miesiÄc');
 var iaical_daysShort = [
-    days_01_txt,
-    days_02_txt,
-    days_03_txt,
-    days_04_txt,
-    days_05_txt,
-    days_06_txt,
-    days_07_txt,
-  ],
+  days_01_txt,
+  days_02_txt,
+  days_03_txt,
+  days_04_txt,
+  days_05_txt,
+  days_06_txt,
+  days_07_txt,
+],
   iaical_monthNames = [
     month_01_txt,
     month_02_txt,
@@ -16646,7 +16625,7 @@ var iaical_daysShort = [
         l = new Date(i, t - 1, e);
       l.setDate(l.getDate() + parseInt(n)),
         $('#pickupl_calbind').length &&
-          $('#pickupl_calbind').datepicker({ defaultDate: l, minDate: l }),
+        $('#pickupl_calbind').datepicker({ defaultDate: l, minDate: l }),
         $(o + '1').length && document.getElementById(o + '1').onclick();
       for (var c = 1; c <= r; c++) {
         for (
@@ -16660,7 +16639,7 @@ var iaical_daysShort = [
             (_day = l.getDate());
         var p = 100;
         if (!$.isEmptyObject(s))
-          for (; --p; ) {
+          for (; --p;) {
             if (-1 != $.inArray(l.getDay(), s)) {
               (_year = l.getFullYear()), (_month = l.getMonth() + 1), (_day = l.getDate());
               break;
@@ -16742,8 +16721,8 @@ function calculate_instalments(params) {
         ? instalmentData.priceNet * document.getElementById('projector_number').value
         : instalmentData.priceNet
       : document.getElementById('projector_number')
-      ? instalmentData.price * document.getElementById('projector_number').value
-      : instalmentData.price;
+        ? instalmentData.price * document.getElementById('projector_number').value
+        : instalmentData.price;
   const productsPriceFormat = `${format_price(productsPrice, {
     mask: app_shop.vars.currency_format,
     currency: instalmentData.currency,
@@ -16754,7 +16733,7 @@ function calculate_instalments(params) {
     (link &&
       -1 !== link.indexOf('{calculate_price}') &&
       (link = link.replace('{calculate_price}', 'XXX')),
-    0 === productsPrice)
+      0 === productsPrice)
   )
     return eval(link), !1;
   if (
@@ -16767,16 +16746,16 @@ function calculate_instalments(params) {
   minPrice && productsPrice < minPrice
     ? (infoHTML = `\n      <div class='menu_messages_message'>\n        <div class='menu_messages_message_sub'>\n          <p>${app_shop.txt.instalmentLabelMin}${instalmentName}${app_shop.txt.instalmentLabelTo}${minPriceFormat}</p>\n        </div>\n      </div>\n    `)
     : maxPrice &&
-      productsPrice > maxPrice &&
-      (infoHTML = `\n      <div class='menu_messages_message'>\n        <div class='menu_messages_message_sub'>\n          <p>${app_shop.txt.instalmentLabelMax}${instalmentName}${app_shop.txt.instalmentLabelTo}${maxPriceFormat}</p>\n        </div>\n      </div>\n    `);
+    productsPrice > maxPrice &&
+    (infoHTML = `\n      <div class='menu_messages_message'>\n        <div class='menu_messages_message_sub'>\n          <p>${app_shop.txt.instalmentLabelMax}${instalmentName}${app_shop.txt.instalmentLabelTo}${maxPriceFormat}</p>\n        </div>\n      </div>\n    `);
   let sumPrice = 0;
   sumPrice = totalPrice
     ? (totalPrice + productsPrice).toFixed(2)
     : (
-        (priceType && 'net' === priceType
-          ? instalmentData.basketCostNet
-          : instalmentData.basketCost) + productsPrice
-      ).toFixed(2);
+      (priceType && 'net' === priceType
+        ? instalmentData.basketCostNet
+        : instalmentData.basketCost) + productsPrice
+    ).toFixed(2);
   const sumPriceFormat = `${format_price(sumPrice, {
     mask: app_shop.vars.currency_format,
     currency: instalmentData.currency,
@@ -16786,68 +16765,53 @@ function calculate_instalments(params) {
   let buttonHTML = '';
   if (
     (document.querySelector('#container.projector_page') &&
-      ((buttonHTML = `\n      <button class="instalment_calculator__button ${
-        (minPrice && productsPrice < minPrice) || (maxPrice && productsPrice > maxPrice)
-          ? app_shop.txt.instalmentButtonDisableClassDialog
-          : app_shop.txt.instalmentButtonClassDialog
-      }"${
-        (minPrice && productsPrice < minPrice) || (maxPrice && productsPrice > maxPrice)
+      ((buttonHTML = `\n      <button class="instalment_calculator__button ${(minPrice && productsPrice < minPrice) || (maxPrice && productsPrice > maxPrice)
+        ? app_shop.txt.instalmentButtonDisableClassDialog
+        : app_shop.txt.instalmentButtonClassDialog
+        }"${(minPrice && productsPrice < minPrice) || (maxPrice && productsPrice > maxPrice)
           ? ''
           : ` onclick="${link.replace('XXX', productsPrice)}"`
-      }>\n        <span class="instalment_calculator__button_txt">${
-        app_shop.txt.instalmentSingleProduct
-      }</span>\n        <span class="instalment_calculator__button_price">${productsPriceFormat}</span>\n        ${
-        minPrice && productsPrice < minPrice
+        }>\n        <span class="instalment_calculator__button_txt">${app_shop.txt.instalmentSingleProduct
+        }</span>\n        <span class="instalment_calculator__button_price">${productsPriceFormat}</span>\n        ${minPrice && productsPrice < minPrice
           ? `<span class="instalment_calculator__button_info">${app_shop.txt.instalmentTextMin}</span>`
           : ''
-      }\n        ${
-        maxPrice && productsPrice > maxPrice
+        }\n        ${maxPrice && productsPrice > maxPrice
           ? `<span class="instalment_calculator__button_info">${app_shop.txt.instalmentTextMax}</span>`
           : ''
-      }\n      </button>\n    `),
-      0 !== instalmentData.basketCount &&
-        (buttonHTML += `\n        <button class="instalment_calculator__button ${
-          (minPrice && sumPrice < minPrice) || (maxPrice && sumPrice > maxPrice)
-            ? app_shop.txt.instalmentButtonDisableClassDialog
-            : app_shop.txt.instalmentButtonClassDialog
-        }"${
-          (minPrice && sumPrice < minPrice) || (maxPrice && sumPrice > maxPrice)
+        }\n      </button>\n    `),
+        0 !== instalmentData.basketCount &&
+        (buttonHTML += `\n        <button class="instalment_calculator__button ${(minPrice && sumPrice < minPrice) || (maxPrice && sumPrice > maxPrice)
+          ? app_shop.txt.instalmentButtonDisableClassDialog
+          : app_shop.txt.instalmentButtonClassDialog
+          }"${(minPrice && sumPrice < minPrice) || (maxPrice && sumPrice > maxPrice)
             ? ''
             : ` onclick="${link.replace('XXX', sumPrice)}"`
-        }>\n          <span class="instalment_calculator__button_txt">${
-          app_shop.txt.instalmentBasketProduct
-        }</span>\n          <span class="instalment_calculator__button_price">${sumPriceFormat}</span>\n          ${
-          minPrice && sumPrice < minPrice
+          }>\n          <span class="instalment_calculator__button_txt">${app_shop.txt.instalmentBasketProduct
+          }</span>\n          <span class="instalment_calculator__button_price">${sumPriceFormat}</span>\n          ${minPrice && sumPrice < minPrice
             ? `<span class="instalment_calculator__button_info">${app_shop.txt.instalmentTextMinBasket}</span>`
             : ''
-        }\n          ${
-          maxPrice && sumPrice > maxPrice
+          }\n          ${maxPrice && sumPrice > maxPrice
             ? `<span class="instalment_calculator__button_info">${app_shop.txt.instalmentTextMaxBasket}</span>`
             : ''
-        }\n        </button>\n      `)),
-    document.querySelector('#container.basketedit_page'))
+          }\n        </button>\n      `)),
+      document.querySelector('#container.basketedit_page'))
   ) {
     if (minPrice && productsPrice >= minPrice && maxPrice && productsPrice <= maxPrice)
       return eval(link.replace('XXX', productsPrice)), !1;
-    buttonHTML = `\n      <button class="instalment_calculator__button ${
-      (minPrice && productsPrice < minPrice) || (maxPrice && productsPrice > maxPrice)
-        ? app_shop.txt.instalmentButtonDisableClassDialog
-        : app_shop.txt.instalmentButtonClassDialog
-    }"${
-      (minPrice && productsPrice < minPrice) || (maxPrice && productsPrice > maxPrice)
+    buttonHTML = `\n      <button class="instalment_calculator__button ${(minPrice && productsPrice < minPrice) || (maxPrice && productsPrice > maxPrice)
+      ? app_shop.txt.instalmentButtonDisableClassDialog
+      : app_shop.txt.instalmentButtonClassDialog
+      }"${(minPrice && productsPrice < minPrice) || (maxPrice && productsPrice > maxPrice)
         ? ''
         : ` onclick="${link.replace('XXX', productsPrice)}"`
-    }>\n        <span class="instalment_calculator__button_txt">${
-      app_shop.txt.instalmentMultiProduct
-    }</span>\n        <span class="instalment_calculator__button_price">${productsPriceFormat}</span>\n        ${
-      minPrice && productsPrice < minPrice
+      }>\n        <span class="instalment_calculator__button_txt">${app_shop.txt.instalmentMultiProduct
+      }</span>\n        <span class="instalment_calculator__button_price">${productsPriceFormat}</span>\n        ${minPrice && productsPrice < minPrice
         ? `<span class="instalment_calculator__button_info">${app_shop.txt.instalmentTextMinB}</span>`
         : ''
-    }\n        ${
-      maxPrice && productsPrice > maxPrice
+      }\n        ${maxPrice && productsPrice > maxPrice
         ? `<span class="instalment_calculator__button_info">${app_shop.txt.instalmentTextMaxB}</span>`
         : ''
-    }\n      </button>\n    `;
+      }\n      </button>\n    `;
   }
   Modal({ html: infoHTML + buttonHTML, classList: 'instalment_calculator' });
 }
@@ -17050,11 +17014,11 @@ const basketActionsCall = e => {
         : $('.basket__product_checkbox').prop('checked', !1);
     }),
     $('.basket__gift_inputs[data-nogiftforyou]').length > 0 &&
-      (Alertek.show_alert(productslist_maxvalue_05_txt),
+    (Alertek.show_alert(productslist_maxvalue_05_txt),
       $.post(
         $('form.basket__form').attr('action'),
         $('form.basket__form').serialize(),
-        function () {},
+        function () { },
         'json',
       )),
     $('.basket__add .add__textarea').blur(function () {
@@ -17063,7 +17027,7 @@ const basketActionsCall = e => {
         i = productslist_maxvalue_04_txt;
       t > i &&
         (e.val(e.val().substring(0, i)),
-        Alertek.show_alert(productslist_03a_txt + i + productslist_03b_txt));
+          Alertek.show_alert(productslist_03a_txt + i + productslist_03b_txt));
     }),
     $('.basket__quantity .quantity__input').on('keyup', function () {
       const e = $(this),
@@ -17149,8 +17113,8 @@ const basketeditTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygod
             ? $('strong.basket__division_weeks').html(orderTxtShipping[0])
             : $('strong.basket__division_weeks').html(orderTxtShipping[parseInt(n, 10)]))
         : $('strong.basket__division_weeks').html(
-            app_shop.fn.changeLiteral(parseInt(i, 10), e, !1),
-          ),
+          app_shop.fn.changeLiteral(parseInt(i, 10), e, !1),
+        ),
         $('input[name="allow_division_order"]').on('change', function () {
           $(this).parents('form').submit();
         });
@@ -17177,11 +17141,11 @@ var basket_gross_txt = ' brutto';
 function countAnnuityEraty(e, t, i) {
   window.open(
     'https://www.eraty.pl/symulator/oblicz.php?numerSklepu=' +
-      e +
-      '&wariantSklepu=' +
-      t +
-      '&typProduktu=0&wartoscTowarow=' +
-      i,
+    e +
+    '&wariantSklepu=' +
+    t +
+    '&typProduktu=0&wartoscTowarow=' +
+    i,
     'count_zagiel',
     'width=630,height=500,directories=no,location=no,menubar=no,resizable=yes,scrollbars=yes,status=no,toolbar=no',
   );
@@ -17195,9 +17159,9 @@ function init_basketedit_summary() {
         parseInt($(this).attr('data-bankcount')) > 1
           ? $('#n66734_instalment div.n68242_instalment_list').toggle()
           : 1 == parseInt($(this).attr('data-bankcount')) &&
-            (cena_raty > 0
-              ? $('a.n68242_single_instalment_action').click()
-              : $('#n66734_instalment div.n68242_instalment_list').show('fast')),
+          (cena_raty > 0
+            ? $('a.n68242_single_instalment_action').click()
+            : $('#n66734_instalment div.n68242_instalment_list').show('fast')),
         !1
       );
     }),
@@ -17210,13 +17174,13 @@ function init_basketedit_summary() {
       );
     }),
     $('div.basketedit_calculations').children().length < 3 &&
-      $('div.basketedit_calculations').hide(),
+    $('div.basketedit_calculations').hide(),
     $('#basket_go_next, #basket_go_next_phone').on('click', function () {
       return (
         $(this).attr('data-disabled') ||
-          ($('form.basket__form , form.basketedit_productslist').append(
-            '<input type="hidden" name="after_basket_change" value="order"/>',
-          ),
+        ($('form.basket__form , form.basketedit_productslist').append(
+          '<input type="hidden" name="after_basket_change" value="order"/>',
+        ),
           $('form.basket__form , form.basketedit_productslist').submit()),
         !($('form.basket__form').length > 0 || $('form.basketedit_productslist').length > 0)
       );
@@ -17241,8 +17205,8 @@ function setGiftsItems() {
       $('.basket__gift_inputs').remove(),
       $('form.basketedit_productslist').length
         ? $('<div class="basket__gift_inputs d-none"></div>').appendTo(
-            'form.basketedit_productslist',
-          )
+          'form.basketedit_productslist',
+        )
         : $('<div class="basket__gift_inputs d-none"></div>').appendTo('form.basket__form'),
       $(this)
         .parents('.gift_enable')
@@ -17260,32 +17224,32 @@ function setGiftsItems() {
       $(this).find('div.gift_tooltip');
       $(this).find('div.gift_tooltip').length
         ? $(this).click(function () {
-            $(this).hasClass('gift_active')
-              ? ($(this).find('div.gift_choose').hide(), $(this).find('div.gift_resign').show())
-              : ($(this).find('div.gift_choose').show(), $(this).find('div.gift_resign').hide()),
-              $('#basketedit_gifts li.gift_enable').not(this).find('div.gift_tooltip').hide(),
-              $(this).find('div.gift_tooltip').toggle();
-          })
+          $(this).hasClass('gift_active')
+            ? ($(this).find('div.gift_choose').hide(), $(this).find('div.gift_resign').show())
+            : ($(this).find('div.gift_choose').show(), $(this).find('div.gift_resign').hide()),
+            $('#basketedit_gifts li.gift_enable').not(this).find('div.gift_tooltip').hide(),
+            $(this).find('div.gift_tooltip').toggle();
+        })
         : $(this).click(function () {
-            $(this).is('.gift_active')
-              ? e()
-              : (e(),
-                $(this)
-                  .addClass('gift_active')
-                  .find('h3')
-                  .prepend('<div id="your_gift_txt">' + twoj_prezent_txt),
-                $(this).find('input[type=radio]').attr('checked', !0),
-                $(this).parents('.gift_enable').find('input[name="set_quantity[0]"]').val(1),
-                $('.basket__gift_inputs').remove(),
-                $('form.basketedit_productslist').length
-                  ? $('<div class="basket__gift_inputs d-none"></div>').appendTo(
-                      'form.basketedit_productslist',
-                    )
-                  : $('<div class="basket__gift_inputs d-none"></div>').appendTo(
-                      'form.basket__form',
-                    ),
-                $(this).find('input[type=hidden]').clone().appendTo('.basket__gift_inputs'));
-          });
+          $(this).is('.gift_active')
+            ? e()
+            : (e(),
+              $(this)
+                .addClass('gift_active')
+                .find('h3')
+                .prepend('<div id="your_gift_txt">' + twoj_prezent_txt),
+              $(this).find('input[type=radio]').attr('checked', !0),
+              $(this).parents('.gift_enable').find('input[name="set_quantity[0]"]').val(1),
+              $('.basket__gift_inputs').remove(),
+              $('form.basketedit_productslist').length
+                ? $('<div class="basket__gift_inputs d-none"></div>').appendTo(
+                  'form.basketedit_productslist',
+                )
+                : $('<div class="basket__gift_inputs d-none"></div>').appendTo(
+                  'form.basket__form',
+                ),
+              $(this).find('input[type=hidden]').clone().appendTo('.basket__gift_inputs'));
+        });
     }),
     $('#basketedit_gifts li.gift_enable select').click(function (e) {
       $('#basketedit_gifts li.gift_enable').removeClass('gift_active'),
@@ -17294,8 +17258,8 @@ function setGiftsItems() {
         $('.basket__gift_inputs').remove(),
         $('form.basketedit_productslist').length
           ? $('<div class="basket__gift_inputs d-none"></div>').appendTo(
-              'form.basketedit_productslist',
-            )
+            'form.basketedit_productslist',
+          )
           : $('<div class="basket__gift_inputs d-none"></div>').appendTo('form.basket__form'),
         $(this).parents('li').find('input[type=hidden]').clone().appendTo('.basket__gift_inputs'),
         $(this).parents('.gift_enable').hasClass('gift_active')
@@ -17311,8 +17275,8 @@ function setGiftsItems() {
         $('.basket__gift_inputs').remove(),
         $('form.basketedit_productslist').length
           ? $('<div class="basket__gift_inputs d-none"></div>').appendTo(
-              'form.basketedit_productslist',
-            )
+            'form.basketedit_productslist',
+          )
           : $('<div class="basket__gift_inputs d-none"></div>').appendTo('form.basket__form'),
         $(this).parents('li').find('input[type=hidden]').clone().appendTo('.basket__gift_inputs');
     });
@@ -17429,7 +17393,7 @@ app_shop.run(
             return $('#button_alert').show(), !1;
           }),
         $('#submit_register').hover(
-          function () {},
+          function () { },
           function () {
             $('#button_alert').hide();
           },
@@ -17579,8 +17543,8 @@ var clientNewErrorCode = [];
           $('.rebates_active__sub.--form').removeClass('d-none'),
           $(this).parent().addClass('d-none'),
           app_shop.vars.view > 1 &&
-            app_shop.vars.view < 4 &&
-            $('.rebates_active__sub.--info').addClass('d-none'),
+          app_shop.vars.view < 4 &&
+          $('.rebates_active__sub.--info').addClass('d-none'),
           !1
         );
       });
@@ -17629,13 +17593,13 @@ app_shop.run(
           return contact_map.showMap(), !1;
         }),
         1 == app_shop.vars.view &&
-          $('div.contact_contact_right p').each(function () {
-            $(this).find('a').size() &&
-              ($(this).css('cursor', 'pointer'),
+        $('div.contact_contact_right p').each(function () {
+          $(this).find('a').size() &&
+            ($(this).css('cursor', 'pointer'),
               $(this).click(function () {
                 window.location = $(this).find('a').attr('href');
               }));
-          });
+        });
     },
     'all',
     '#contact_contact',
@@ -17650,11 +17614,11 @@ app_shop.run(
         n.data('label') && ($labelName = '<b>' + n.data('label') + '</b>'),
         ($ul = $(
           '<div class="dropdown dropdownsearching form-group ' +
-            n.attr('class') +
-            '"><ul class="dropdown-menu" aria-labelledby="' +
-            t +
-            o +
-            '"></ul></div>',
+          n.attr('class') +
+          '"><ul class="dropdown-menu" aria-labelledby="' +
+          t +
+          o +
+          '"></ul></div>',
         )),
         n.children().each(function (e) {
           var t = $(this);
@@ -17665,7 +17629,7 @@ app_shop.run(
               var n = 'data-' + e + '=' + t;
               i.push(n);
             }),
-            i.length)
+              i.length)
           )
             var n = i.join(' ');
           else n = '';
@@ -17682,25 +17646,25 @@ app_shop.run(
         $ul
           .prepend(
             '<button id="' +
-              t +
-              o +
-              '" class="form-control dropdown-toggle" data-indexcurrent="0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">' +
-              $labelName +
-              '<span>' +
-              n.find('option:selected').text() +
-              '</span></button>',
+            t +
+            o +
+            '" class="form-control dropdown-toggle" data-indexcurrent="0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">' +
+            $labelName +
+            '<span>' +
+            n.find('option:selected').text() +
+            '</span></button>',
           )
           .prepend(
             '<input class="select_hidden searching_ajax" type="hidden" name="' +
-              $selectName +
-              '" value="' +
-              $selectValue +
-              '" />',
+            $selectName +
+            '" value="' +
+            $selectValue +
+            '" />',
           ),
         i &&
-          $ul.find('li').on('click.option', function () {
-            i($(this));
-          }),
+        $ul.find('li').on('click.option', function () {
+          i($(this));
+        }),
         n.replaceWith($ul);
     });
   }),
@@ -17768,13 +17732,13 @@ var newsletter = {
     $('#mailing_action_contact').val(e),
       'remove' == e
         ? ($('input[name="newsletter_consent"], input[name="mailing_name"]').removeClass(
-            'validate',
-          ),
+          'validate',
+        ),
           $('#newsletter_privacy_consent').find('.has-feedback').removeClass('has-error'),
           $('input[name="mailing_name"]').parent().removeClass('has-error'),
           $('input[name="mailing_name"]').siblings('.validate_message').html(''))
         : 'add' == e &&
-          $('input[name="newsletter_consent"], input[name="mailing_name"]').addClass('validate');
+        $('input[name="newsletter_consent"], input[name="mailing_name"]').addClass('validate');
   },
 };
 function opinionsTruncate() {
@@ -17876,31 +17840,31 @@ app_shop.run(
     '.order_open',
   );
 const orderTxt = {
-    gratis: 'Gratis!',
-    pkt: ' pkt.',
-    gross: ' brutto',
-    day: ' dzieĹ ',
-    days: ' dni ',
-    hour: ' godz. ',
-    hours: ' godz. ',
-    minutes: ' min',
-    time_pick1: 'Przewidywana dostawa ',
-    time_pick2: 'Przewidywana dostawa ',
-    time_pick3: 'Odbierz zamĂłwienie za ',
-    time_pick4: 'Odbierz zamĂłwienie - ',
-    time_pick5: 'Przewidywana dostawa - ',
-    time_pick5de: '',
-    time_pick6: 'ZamĂłwienie bÄdzie gotowe do odbioru natychmiast po przyjÄciu zamĂłwienia',
-    shipping0: 'Dzisiaj',
-    shipping1: 'PoniedziaĹek',
-    shipping2: 'Wtorek',
-    shipping3: 'Ĺroda',
-    shipping4: 'Czwartek',
-    shipping5: 'PiÄtek',
-    shipping6: 'Sobota',
-    shipping7: 'Niedziela',
-    servicesError: 'WystÄpiĹ problem z poĹÄczeniem. Za chwilÄ nastÄpi ponowna prĂłba poĹÄczenia.',
-  },
+  gratis: 'Gratis!',
+  pkt: ' pkt.',
+  gross: ' brutto',
+  day: ' dzieĹ ',
+  days: ' dni ',
+  hour: ' godz. ',
+  hours: ' godz. ',
+  minutes: ' min',
+  time_pick1: 'Przewidywana dostawa ',
+  time_pick2: 'Przewidywana dostawa ',
+  time_pick3: 'Odbierz zamĂłwienie za ',
+  time_pick4: 'Odbierz zamĂłwienie - ',
+  time_pick5: 'Przewidywana dostawa - ',
+  time_pick5de: '',
+  time_pick6: 'ZamĂłwienie bÄdzie gotowe do odbioru natychmiast po przyjÄciu zamĂłwienia',
+  shipping0: 'Dzisiaj',
+  shipping1: 'PoniedziaĹek',
+  shipping2: 'Wtorek',
+  shipping3: 'Ĺroda',
+  shipping4: 'Czwartek',
+  shipping5: 'PiÄtek',
+  shipping6: 'Sobota',
+  shipping7: 'Niedziela',
+  servicesError: 'WystÄpiĹ problem z poĹÄczeniem. Za chwilÄ nastÄpi ponowna prĂłba poĹÄczenia.',
+},
   orderTxtShipping = [
     orderTxt.shipping0,
     orderTxt.shipping1,
@@ -17994,7 +17958,7 @@ function order2_terms_valid() {
           return (
             $(window).unbind('beforeunload'),
             $(this).is('input.order2_button_order, a.n57856_orderlink') &&
-              $('#ajaxLoadSite,#ajaxLoadSite_cover').show(),
+            $('#ajaxLoadSite,#ajaxLoadSite_cover').show(),
             !0
           );
         }),
@@ -18005,15 +17969,15 @@ function order2_terms_valid() {
           $(this).parent().parent().removeClass('required');
         }),
         'undefined' != typeof only_virtual &&
-          'yes' == only_virtual &&
-          $('div.wrappers_price').hide();
+        'yes' == only_virtual &&
+        $('div.wrappers_price').hide();
     },
     'all',
     'form.order2_form',
     !0,
   );
 var confirmmessage =
-    'Twoje zamĂłwienie nie zostaĹo jeszcze zĹoĹźone. Opuszczenie tej strony oznacza porzucenie zamĂłwienia. PamiÄtaj, Ĺźe wracajÄc do zamĂłwienia za jakiĹ czas niektĂłre z produktĂłw lub cen mogÄ byÄ juĹź nieaktualne.',
+  'Twoje zamĂłwienie nie zostaĹo jeszcze zĹoĹźone. Opuszczenie tej strony oznacza porzucenie zamĂłwienia. PamiÄtaj, Ĺźe wracajÄc do zamĂłwienia za jakiĹ czas niektĂłre z produktĂłw lub cen mogÄ byÄ juĹź nieaktualne.',
   confirmmessage2 =
     'Twoje zamĂłwienie nie zostaĹo jeszcze zĹoĹźone. Dopiero przejĹcie do kolejnego etapu zamĂłwienia oznacza wysĹanie go do realizacji. PamiÄtaj, Ĺźe wracajÄc do zamĂłwienia za jakiĹ czas niektĂłre z produktĂłw lub cen mogÄ byÄ juĹź nieaktualne.',
   confirmwarning = 'OstrzeĹźenie',
@@ -18069,8 +18033,8 @@ app_shop.run(
             ? $('.shipping_time_division strong').html(orderTxtShipping[0])
             : $('.shipping_time_division strong').html(orderTxtShipping[parseInt(n, 10)]))
         : $('.shipping_time_division strong').html(
-            app_shop.fn.changeLiteral(parseInt(i, 10), e, !1),
-          );
+          app_shop.fn.changeLiteral(parseInt(i, 10), e, !1),
+        );
     },
     'all',
     '.shipping_time_division',
@@ -18143,7 +18107,7 @@ app_shop.run(
         'pickuplSpacer',
         'bottom',
       )),
-      app_shop.fn.fixedElement.init());
+        app_shop.fn.fixedElement.init());
   },
   [1, 2],
   '#pickup_site',
@@ -18247,7 +18211,7 @@ var txt_62619_label = 'WpĹaty ',
         e && e.classList.remove('--pay_overlay');
       }
     },
-    ajaxLoadSiteMessage: function (e) {},
+    ajaxLoadSiteMessage: function (e) { },
   };
 app_shop.run(
   function () {
@@ -18419,7 +18383,7 @@ const prepaidTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni'
     $('.show_tab').click(function () {
       return (
         1 == app_shop.vars.view &&
-          ($(this).toggleClass('tab_hidden').toggleClass('tab_visible'),
+        ($(this).toggleClass('tab_hidden').toggleClass('tab_visible'),
           $($(this).attr('href')).slideToggle('fast')),
         !1
       );
@@ -18490,9 +18454,9 @@ const prepaidTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni'
               t[i].checked
                 ? e.href
                 : (updatedHref = e.href
-                    .split('&')
-                    .map(e => (e.includes('number') ? 'number=0' : e))
-                    .join('&')),
+                  .split('&')
+                  .map(e => (e.includes('number') ? 'number=0' : e))
+                  .join('&')),
             )
             .forEach((t, i) => {
               t.split('?')[1]
@@ -18531,7 +18495,7 @@ const prepaidTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni'
   $(document).on(
     'hover.zoomContainer',
     '.zoomContainer, .photos__slider .photos__link',
-    function () {},
+    function () { },
   ),
   $(document).on('click', '#photos_slider .photos__link, #photos_nav a.--more', function (e) {
     e.preventDefault();
@@ -18643,23 +18607,23 @@ const prepaidTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni'
           s.init(),
           'function' == typeof r ? r(s) : this.setThumbnails(s),
           document.querySelector('.photos__figure.--video video[src]') &&
-            document.querySelector('.photos__figure.--video video[src]').pause();
+          document.querySelector('.photos__figure.--video video[src]').pause();
       }),
       (this.setItemsArray = () => {
         [].slice.call(document.querySelectorAll(this.selector)).forEach(e => {
           const t =
-              /\.webp$/i.test(e.querySelector('img')?.currentSrc) || !e.getAttribute('data-href'),
+            /\.webp$/i.test(e.querySelector('img')?.currentSrc) || !e.getAttribute('data-href'),
             i = e.classList.contains('--video')
               ? {
-                  html: `<video controls="controls" autoplay="autoplay" data-src="${e.getAttribute(
-                    'href',
-                  )}"></video>`,
-                }
+                html: `<video controls="controls" autoplay="autoplay" data-src="${e.getAttribute(
+                  'href',
+                )}"></video>`,
+              }
               : {
-                  src: t ? e.getAttribute('href') : e.getAttribute('data-href'),
-                  w: e.getAttribute('data-width'),
-                  h: e.getAttribute('data-height'),
-                };
+                src: t ? e.getAttribute('href') : e.getAttribute('data-href'),
+                w: e.getAttribute('data-width'),
+                h: e.getAttribute('data-height'),
+              };
           this.items.push(i);
         });
       }),
@@ -18678,13 +18642,13 @@ const prepaidTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni'
             )
             .join('')),
           document.querySelector('.photos__link.--video video') &&
-            (document.querySelector('div.photoSwipe_innerthumbs').innerHTML +=
-              '<figure class="photos__figure --nav --video">\n        <span class="photos__link --nav --video"></span>\n      </figure>'),
+          (document.querySelector('div.photoSwipe_innerthumbs').innerHTML +=
+            '<figure class="photos__figure --nav --video">\n        <span class="photos__link --nav --video"></span>\n      </figure>'),
           document
             .querySelectorAll('div.photoSwipe_innerthumbs .photos__photo')
             .forEach(e => e.classList.add('--nav')),
           1 === document.querySelectorAll('#photos_slider .photos__photo').length &&
-            document.querySelector('div.photoSwipe_innerthumbs').classList.add('--one');
+          document.querySelector('div.photoSwipe_innerthumbs').classList.add('--one');
         const i = document.querySelectorAll('div.photoSwipe_innerthumbs .photos__link'),
           n = e.getCurrentIndex();
         i[n].classList.add('--active');
@@ -18711,16 +18675,16 @@ const prepaidTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni'
         };
         a(),
           4 == app_shop.vars.view &&
-            $('.photoSwipe_innerthumbs').slick({
-              mobileFirst: !0,
-              vertical: !0,
-              dots: !1,
-              arrows: !0,
-              infinite: !1,
-              prevArrow: '<a class="slick-prev" href=""><i class="icon-angle-up"></i></a>',
-              nextArrow: '<a class="slick-next" href=""><i class="icon-angle-down"></i></a>',
-              slidesToShow: 7,
-            }),
+          $('.photoSwipe_innerthumbs').slick({
+            mobileFirst: !0,
+            vertical: !0,
+            dots: !1,
+            arrows: !0,
+            infinite: !1,
+            prevArrow: '<a class="slick-prev" href=""><i class="icon-angle-up"></i></a>',
+            nextArrow: '<a class="slick-next" href=""><i class="icon-angle-down"></i></a>',
+            slidesToShow: 7,
+          }),
           i.forEach(t => {
             t.addEventListener('click', function () {
               i.forEach(e => {
@@ -18732,8 +18696,8 @@ const prepaidTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni'
             const n = t.querySelector('.photos__photo.slick-loading');
             n &&
               (n.setAttribute('src', n.getAttribute('data-lazy')),
-              n.removeAttribute('data-lazy'),
-              n.classList.remove('slick-loading'));
+                n.removeAttribute('data-lazy'),
+                n.classList.remove('slick-loading'));
           }),
           e.listen('close', function () {
             document
@@ -18741,7 +18705,7 @@ const prepaidTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni'
               .parentNode.removeChild(document.querySelector('.photoSwipe_innerthumbs')),
               document.body.removeChild(document.querySelector('.photoSwipe_overlay')),
               document.querySelector('.pswp video[src]') &&
-                document.querySelector('.pswp video[src]').pause();
+              document.querySelector('.pswp video[src]').pause();
           }),
           e.listen('afterChange', function () {
             const t = document.querySelectorAll('div.photoSwipe_innerthumbs .photos__link'),
@@ -18783,17 +18747,17 @@ const prepaidTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni'
     return (
       app_shop.vars.isLogged
         ? await app_shop.fn.expChck.goStep('summary', {
-            previousStep: null,
-            virtualProduct: o,
-            serviceProduct: r,
-          })
+          previousStep: null,
+          virtualProduct: o,
+          serviceProduct: r,
+        })
         : 'pin' === e
-        ? await app_shop.fn.expChck.goStep('login', {
+          ? await app_shop.fn.expChck.goStep('login', {
             previousStep: null,
             virtualProduct: o,
             serviceProduct: r,
           })
-        : await app_shop.fn.expChck.goStep('loginServices', {
+          : await app_shop.fn.expChck.goStep('loginServices', {
             previousStep: null,
             virtualProduct: o,
             serviceProduct: r,
@@ -18808,13 +18772,13 @@ const prepaidTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni'
         (e.addEventListener('click', async () => {
           e.classList.add('--loading'),
             e.getAttribute('data-login') &&
-              sessionStorage.setItem('expressCheckoutLogin', e.getAttribute('data-login')),
+            sessionStorage.setItem('expressCheckoutLogin', e.getAttribute('data-login')),
             e.getAttribute('data-type') &&
-              sessionStorage.setItem('expressCheckoutLoginType', e.getAttribute('data-type')),
+            sessionStorage.setItem('expressCheckoutLoginType', e.getAttribute('data-type')),
             await app_shop.fn.createExpressAutofillConsent(e.getAttribute('data-type')),
             e.classList.remove('--loading');
         }),
-        !app_shop.fn.webAuthnExpChck)
+          !app_shop.fn.webAuthnExpChck)
       )
         return;
       (await app_shop.fn.webAuthnExpChck.checkBrowserSupport()) &&
@@ -18826,7 +18790,7 @@ const prepaidTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni'
             e.classList.toggle('--web-authn', n);
           }
         }),
-        'true' === localStorage.getItem('expchckDeviceRegistered') &&
+          'true' === localStorage.getItem('expchckDeviceRegistered') &&
           'false' !== localStorage.getItem('expchckSaveDevice') &&
           e.classList.add('--web-authn'));
     },
@@ -18882,7 +18846,7 @@ app_shop.run(
     document.querySelectorAll('.projector_oneclick__item').forEach(e => {
       if (
         (e.addEventListener('click', expressCheckoutApiClickEvent),
-        'undefined' != typeof expressCheckoutApi &&
+          'undefined' != typeof expressCheckoutApi &&
           'function' == typeof expressCheckoutApi.renderButton)
       ) {
         const t = e.getAttribute('data-id');
@@ -18921,20 +18885,20 @@ function projectorEndStartCallback() {
       i = !!projectorObj.rebateThreshold && parseFloat(projectorObj.rebateThreshold, 10);
     $('.projector_multipack__item').length > 1
       ? $('.projector_multipack__item').each(function (e) {
-          $(this)
-            .find('.projector_multipack__price')
-            .text(
-              'net' === app_shop.vars.priceType
-                ? t.items[e].price_net_formatted
-                : t.items[e].price_formatted,
-            ),
-            i && i === parseFloat($(this).data('value'), 10)
-              ? $(this).find('input').prop('checked', !0)
-              : $(this).find('input').prop('checked', !1);
-        })
+        $(this)
+          .find('.projector_multipack__price')
+          .text(
+            'net' === app_shop.vars.priceType
+              ? t.items[e].price_net_formatted
+              : t.items[e].price_formatted,
+          ),
+          i && i === parseFloat($(this).data('value'), 10)
+            ? $(this).find('input').prop('checked', !0)
+            : $(this).find('input').prop('checked', !1);
+      })
       : ($('.projector_multipack__price').text(
-          'net' === app_shop.vars.priceType ? t.nextprice_net_formatted : t.nextprice_formatted,
-        ),
+        'net' === app_shop.vars.priceType ? t.nextprice_net_formatted : t.nextprice_formatted,
+      ),
         i && i === parseFloat($('.projector_multipack__item').data('value'), 10)
           ? $('.projector_multipack__item input').prop('checked', !0)
           : $('.projector_multipack__item input').prop('checked', !1));
@@ -18956,31 +18920,28 @@ function projectorEndStartCallback() {
     +i > +t && n.classList.add('disable');
   }
 }
-function projectorEndInitFunctionCallback() {}
+function projectorEndInitFunctionCallback() { }
 (app_shop.fn.updateYouSave = () => {
   ($('#projector_form[data-collection]').length &&
     1 === $('#projector_form[data-collection] .projector_bundle__checkbox:checked').length) ||
-  'true' == projectorObj.currentSizeObj.phone_price ||
-  'undefined' == typeof yousaveTmp ||
-  isNaN(yousaveTmp)
+    'true' == projectorObj.currentSizeObj.phone_price ||
+    'undefined' == typeof yousaveTmp ||
+    isNaN(yousaveTmp)
     ? $('#projector_price_yousave').hide()
     : ($('#projector_price_yousave')
-        .show()
-        .html(
-          `<span class="projector_prices__percent_before">${
-            projectorObj.txt.oszczedzasz
-          }</span><span class="projector_prices__percent_value">${
-            +yousave_percentTmp < 1 ? yousave_percentTmp : yousave_percentTmp.split('.')[0]
-          }</span><span class="projector_prices__percent_after">${
-            'product_bundle' === product_data.product_type &&
-            +projectorObj.currentSizeObj.bundle_price.percent_diff > 0 &&
-            +projectorObj.currentSizeObj.bundle_price.amount_diff_gross > 0
-              ? document.querySelector('.projector_details[data-collection]')
-                ? projectorObj.txt.nawias_end_collection
-                : projectorObj.txt.nawias_end_bundle
-              : projectorObj.txt.nawias_end
-          }</span>`,
-        ),
+      .show()
+      .html(
+        `<span class="projector_prices__percent_before">${projectorObj.txt.oszczedzasz
+        }</span><span class="projector_prices__percent_value">${+yousave_percentTmp < 1 ? yousave_percentTmp : yousave_percentTmp.split('.')[0]
+        }</span><span class="projector_prices__percent_after">${'product_bundle' === product_data.product_type &&
+          +projectorObj.currentSizeObj.bundle_price.percent_diff > 0 &&
+          +projectorObj.currentSizeObj.bundle_price.amount_diff_gross > 0
+          ? document.querySelector('.projector_details[data-collection]')
+            ? projectorObj.txt.nawias_end_collection
+            : projectorObj.txt.nawias_end_bundle
+          : projectorObj.txt.nawias_end
+        }</span>`,
+      ),
       $('#projector_price_maxprice_wrapper').show());
 }),
   app_shop.run(
@@ -19033,16 +18994,16 @@ function projectorEndInitFunctionCallback() {}
         function (e) {
           return app_shop.fn.projectorForm.sizeSelected()
             ? !(
-                'function' == typeof app_shop.fn.bundleSizeSelected &&
-                !app_shop.fn.bundleSizeSelected()
-              ) &&
-                (app_shop.fn.shoppingList.addProductToList([
-                  [
-                    document.getElementById('projector_product_hidden').value,
-                    document.getElementById('projector_size_hidden').value,
-                  ],
-                ]),
-                !1)
+              'function' == typeof app_shop.fn.bundleSizeSelected &&
+              !app_shop.fn.bundleSizeSelected()
+            ) &&
+            (app_shop.fn.shoppingList.addProductToList([
+              [
+                document.getElementById('projector_product_hidden').value,
+                document.getElementById('projector_size_hidden').value,
+              ],
+            ]),
+              !1)
             : (app_shop.fn.projectorForm.alertProjector(), !1);
         },
       );
@@ -19245,12 +19206,12 @@ function CountdownTimer(e, t) {
       if (!(this.tl - t > 0)) return clearTimeout(this.tid), void this.elem.remove();
       (e += '<label class="projector_label">' + app_shop.txt.txt_74629_1 + '</label><div>'),
         this.addZero(i) > 0 &&
-          (e +=
-            '<span class="number-wrapper"><div class="line"></div><div class="caption">' +
-            app_shop.txt.txt_74629_3 +
-            '</div><span class="number day">' +
-            this.addZero(i) +
-            '</span></span>'),
+        (e +=
+          '<span class="number-wrapper"><div class="line"></div><div class="caption">' +
+          app_shop.txt.txt_74629_3 +
+          '</div><span class="number day">' +
+          this.addZero(i) +
+          '</span></span>'),
         (e +=
           '<span class="number-wrapper"><div class="line"></div><div class="caption">' +
           app_shop.txt.txt_74629_4 +
@@ -19286,32 +19247,27 @@ function CountdownTimer(e, t) {
       ]
         .map(
           e =>
-            `{\n      id: ${
-              e.closest('.projector_bundle__item').querySelector('.projector_bundle__product_id')
-                .value
-            }\n      size: "${
-              e.closest('.projector_bundle__item').querySelector('.projector_bundle__product_size')
-                ? e
-                    .closest('.projector_bundle__item')
-                    .querySelector('.projector_bundle__product_size').value
-                : e
-                    .closest('.projector_bundle__item')
-                    .querySelector('.projector_bundle__size-select').value
+            `{\n      id: ${e.closest('.projector_bundle__item').querySelector('.projector_bundle__product_id')
+              .value
+            }\n      size: "${e.closest('.projector_bundle__item').querySelector('.projector_bundle__product_size')
+              ? e
+                .closest('.projector_bundle__item')
+                .querySelector('.projector_bundle__product_size').value
+              : e
+                .closest('.projector_bundle__item')
+                .querySelector('.projector_bundle__size-select').value
             }"\n    }`,
         )
         .join('')}]`;
     }
-    return `ShippingInput: {\n    mode: product\n    products: [{\n      id: ${
-      document.getElementById('projector_product_hidden').value
-    }\n      size: "${
-      'onesize' === document.getElementById('projector_size_hidden').value
+    return `ShippingInput: {\n    mode: product\n    products: [{\n      id: ${document.getElementById('projector_product_hidden').value
+      }\n      size: "${'onesize' === document.getElementById('projector_size_hidden').value
         ? 'uniw'
         : document.getElementById('projector_size_hidden').value
-    }"\n      quantity: ${
-      document.getElementById('projector_number')
+      }"\n      quantity: ${document.getElementById('projector_number')
         ? document.getElementById('projector_number').value
         : product_data.unit_sellby
-    }\n      ${e}\n    }]\n  }`;
+      }\n      ${e}\n    }]\n  }`;
   }),
   (app_shop.graphql.getShippingTime = async e => {
     const t = JSON.stringify({
@@ -19387,13 +19343,13 @@ function CountdownTimer(e, t) {
         const e = document.querySelector('.modal');
         e && e.classList.add('--loading');
         const t = await this.fetchData({
-            data: this.queries.unsetRegion(),
-            linkParameter: '?mutation=unsetRegion',
-          }),
+          data: this.queries.unsetRegion(),
+          linkParameter: '?mutation=unsetRegion',
+        }),
           { status: i } = t?.data?.unsetTemporaryRegion;
         e && e.classList.add('--remove'),
           'success' === i &&
-            ((document.cookie = 'setRegionForced=; path=/; Max-Age=-99999999;'),
+          ((document.cookie = 'setRegionForced=; path=/; Max-Age=-99999999;'),
             (this.couriersDataBuffer = []),
             this.init());
       }),
@@ -19401,13 +19357,13 @@ function CountdownTimer(e, t) {
         const e = document.querySelector('.modal');
         e && e.classList.add('--loading');
         const t = await this.fetchData({
-            data: this.queries.unsetZipcode(),
-            linkParameter: '?mutation=unsetZipcode',
-          }),
+          data: this.queries.unsetZipcode(),
+          linkParameter: '?mutation=unsetZipcode',
+        }),
           { status: i } = t?.data?.unsetTemporaryZipcode;
         e && e.classList.add('--remove'),
           'success' === i &&
-            ((document.cookie = 'setZipcodeForced=; path=/; Max-Age=-99999999;'),
+          ((document.cookie = 'setZipcodeForced=; path=/; Max-Age=-99999999;'),
             (this.couriersDataBuffer = []),
             this.init());
       }),
@@ -19415,13 +19371,13 @@ function CountdownTimer(e, t) {
         const e = document.querySelector('.modal');
         e && e.classList.add('--loading');
         const t = await this.fetchData({
-            data: this.queries.unsetRegionAndZipcode(),
-            linkParameter: '?mutation=unsetRegionAndZipcode',
-          }),
+          data: this.queries.unsetRegionAndZipcode(),
+          linkParameter: '?mutation=unsetRegionAndZipcode',
+        }),
           { status: i } = t?.data?.unsetTemporaryRegion;
         e && e.classList.add('--remove'),
           'success' === i &&
-            ((document.cookie = 'setRegionForced=; path=/; Max-Age=-99999999;'),
+          ((document.cookie = 'setRegionForced=; path=/; Max-Age=-99999999;'),
             (document.cookie = 'setZipcodeForced=; path=/; Max-Age=-99999999;'),
             (this.couriersDataBuffer = []),
             this.init());
@@ -19451,10 +19407,10 @@ function CountdownTimer(e, t) {
           a =
             e.deliveryTime.weekAmount > 0
               ? `Â (${t.calculateDate({
-                  days: e.deliveryTime.time.days,
-                  hours: e.deliveryTime.time.hours,
-                  minutes: e.deliveryTime.time.minutes,
-                })})`
+                days: e.deliveryTime.time.days,
+                hours: e.deliveryTime.time.hours,
+                minutes: e.deliveryTime.time.minutes,
+              })})`
               : '',
           s = e.cost.value > 0 ? e.cost.formatted : gratis_txt;
         return (
@@ -19473,15 +19429,12 @@ function CountdownTimer(e, t) {
         if (!a && !c) return '';
         const p = !o && s,
           d = !p && s;
-        return `<div class="shipping_info__top">\n      <span class="shipping_info__current_region">${
-          p ? app_shop.txt.shippingInfoCurrentZipcode : app_shop.txt.shippingInfoCurrentRegion
-        }<strong class="shipping_info__region_name">${p ? s : o}</strong>${
-          d
+        return `<div class="shipping_info__top">\n      <span class="shipping_info__current_region">${p ? app_shop.txt.shippingInfoCurrentZipcode : app_shop.txt.shippingInfoCurrentRegion
+          }<strong class="shipping_info__region_name">${p ? s : o}</strong>${d
             ? `<span class="shipping_info__and_region">${app_shop.txt.shippingInfoAndRegion}<strong>${s}</strong></span>`
             : ''
-        }</span>\n      <a href="#unsetTemporaryRegion" class="shipping_info__default_region">${
-          p ? app_shop.txt.shippingInfoDefaultZipcode : app_shop.txt.shippingInfoDefaultRegion
-        }<strong class="shipping_info__region_name">${p ? l : r}</strong></a>\n    </div>`;
+          }</span>\n      <a href="#unsetTemporaryRegion" class="shipping_info__default_region">${p ? app_shop.txt.shippingInfoDefaultZipcode : app_shop.txt.shippingInfoDefaultRegion
+          }<strong class="shipping_info__region_name">${p ? l : r}</strong></a>\n    </div>`;
       }),
       (this.create = async () => {
         const e = md5(this.productParamsFunction()),
@@ -19492,7 +19445,7 @@ function CountdownTimer(e, t) {
             ? (n = JSON.parse(i[0].value))
             : ((n = await this.getCouriersFunction(this.productParamsFunction())),
               this.couriersDataBuffer.push({ key: e, value: JSON.stringify(n) })),
-          n && n.data && n.data.shipping && n.data.shipping.shipping)
+            n && n.data && n.data.shipping && n.data.shipping.shipping)
         ) {
           const e = this.createRegionForcedMessage(),
             { shipping: i } = n.data.shipping,
@@ -19501,44 +19454,33 @@ function CountdownTimer(e, t) {
             a = document.createElement('div');
           a.classList.add('shipping_info'),
             (a.id = 'shipping_info'),
-            (a.innerHTML = `${e}<div class="shipping_info__body">\n        ${
-              r.length
-                ? `<div class="shipping_info__block --prepaid">\n          <strong class="shipping_info__label">${
-                    app_shop.txt.shippingInfoPrepaid
-                  }</strong>\n          <div class="shipping_info__header">\n            <span class="shipping_info__header_item --icon-name">${
-                    app_shop.txt.shippingInfoHeaderName
-                  }</span>\n            <span class="shipping_info__header_item --delivery">${
-                    app_shop.txt.shippingInfoHeaderDelivery
-                  }</span>\n            <span class="shipping_info__header_item --cost">${
-                    app_shop.txt.shippingInfoHeaderCost
-                  }</span>\n          </div>\n          <div class="shipping_info__couriers">\n            ${r
-                    .map(e => t.getCourierHtml(e).outerHTML)
-                    .join('')}\n          </div>\n        </div>`
+            (a.innerHTML = `${e}<div class="shipping_info__body">\n        ${r.length
+              ? `<div class="shipping_info__block --prepaid">\n          <strong class="shipping_info__label">${app_shop.txt.shippingInfoPrepaid
+              }</strong>\n          <div class="shipping_info__header">\n            <span class="shipping_info__header_item --icon-name">${app_shop.txt.shippingInfoHeaderName
+              }</span>\n            <span class="shipping_info__header_item --delivery">${app_shop.txt.shippingInfoHeaderDelivery
+              }</span>\n            <span class="shipping_info__header_item --cost">${app_shop.txt.shippingInfoHeaderCost
+              }</span>\n          </div>\n          <div class="shipping_info__couriers">\n            ${r
+                .map(e => t.getCourierHtml(e).outerHTML)
+                .join('')}\n          </div>\n        </div>`
+              : ''
+              }\n        ${o.length
+                ? `<div class="shipping_info__block --prepaid">\n          <strong class="shipping_info__label">${app_shop.txt.shippingInfoDvp
+                }</strong>\n          <div class="shipping_info__header">\n            <span class="shipping_info__header_item --icon-name">${app_shop.txt.shippingInfoHeaderName
+                }</span>\n            <span class="shipping_info__header_item --delivery">${app_shop.txt.shippingInfoHeaderDelivery
+                }</span>\n            <span class="shipping_info__header_item --cost">${app_shop.txt.shippingInfoHeaderCost
+                }</span>\n          </div>\n          <div class="shipping_info__couriers">\n            ${o
+                  .map(e => t.getCourierHtml(e).outerHTML)
+                  .join('')}\n          </div>\n        </div>`
                 : ''
-            }\n        ${
-              o.length
-                ? `<div class="shipping_info__block --prepaid">\n          <strong class="shipping_info__label">${
-                    app_shop.txt.shippingInfoDvp
-                  }</strong>\n          <div class="shipping_info__header">\n            <span class="shipping_info__header_item --icon-name">${
-                    app_shop.txt.shippingInfoHeaderName
-                  }</span>\n            <span class="shipping_info__header_item --delivery">${
-                    app_shop.txt.shippingInfoHeaderDelivery
-                  }</span>\n            <span class="shipping_info__header_item --cost">${
-                    app_shop.txt.shippingInfoHeaderCost
-                  }</span>\n          </div>\n          <div class="shipping_info__couriers">\n            ${o
-                    .map(e => t.getCourierHtml(e).outerHTML)
-                    .join('')}\n          </div>\n        </div>`
-                : ''
-            }\n      </div>\n      <div class="shipping_info__footer">\n        <span class="shipping_info__vat">${
-              app_shop.txt.shippingInfoVat
-            }</span>\n      </div>`),
+              }\n      </div>\n      <div class="shipping_info__footer">\n        <span class="shipping_info__vat">${app_shop.txt.shippingInfoVat
+              }</span>\n      </div>`),
             this.onlyHtml
               ? this.onlyHtml(a)
               : Modal({
-                  element: a,
-                  classList: '--shipping-info --large',
-                  afterShow: this.afterShowModal,
-                });
+                element: a,
+                classList: '--shipping-info --large',
+                afterShow: this.afterShowModal,
+              });
           const s = this.getCookieByName('setRegionForced'),
             l = this.getCookieByName('setZipcodeForced');
           let c = 'region';
@@ -19556,8 +19498,8 @@ function CountdownTimer(e, t) {
         const t = document.querySelector('.shipping_info__default_region');
         t &&
           ('region' === e && t.addEventListener('click', this.events.unsetRegion),
-          'zipcode' === e && t.addEventListener('click', this.events.unsetZipcode),
-          'regionAndZipcode' === e &&
+            'zipcode' === e && t.addEventListener('click', this.events.unsetZipcode),
+            'regionAndZipcode' === e &&
             t.addEventListener('click', this.events.unsetRegionAndZipcode));
       }),
       (this.init = () => {
@@ -19626,22 +19568,17 @@ function CountdownTimer(e, t) {
   ),
   app_shop.run(
     function () {
-      const e = `<span class="opinions_tabs__count">(${
-        document.querySelectorAll('#opinions_section .opinions_list .opinions_element').length
-      })</span>${
-        document.querySelector('#opinions_section .average_opinions_box .comments .note span')
-          ? `<span class="opinions_tabs__icons note">${
-              document.querySelector('#opinions_section .average_opinions_box .comments .note span')
-                .innerHTML
-            }</span>`
+      const e = `<span class="opinions_tabs__count">(${document.querySelectorAll('#opinions_section .opinions_list .opinions_element').length
+        })</span>${document.querySelector('#opinions_section .average_opinions_box .comments .note span')
+          ? `<span class="opinions_tabs__icons note">${document.querySelector('#opinions_section .average_opinions_box .comments .note span')
+            .innerHTML
+          }</span>`
           : ''
-      }${
-        document.querySelector('#opinions_section .average_opinions_score')
-          ? `<span class="opinions_tabs__score">${
-              document.querySelector('#opinions_section .average_opinions_score').innerHTML
-            }</span>`
+        }${document.querySelector('#opinions_section .average_opinions_score')
+          ? `<span class="opinions_tabs__score">${document.querySelector('#opinions_section .average_opinions_score').innerHTML
+          }</span>`
           : ''
-      }`;
+        }`;
       app_shop.fn.projectorTabs = new ProjectorTabs({
         mobileTabs: [
           { selector: '#projector_longdescription', name: projectorTabsTxt.description },
@@ -19670,7 +19607,7 @@ function CountdownTimer(e, t) {
                 ((e = $('html.--fixed-header header').length
                   ? $('html.--fixed-header header').outerHeight()
                   : 0),
-                (t = $('.projector_tabs__tabs').outerHeight()));
+                  (t = $('.projector_tabs__tabs').outerHeight()));
               const i = $('.projector_tabs__tabs').offset().top,
                 n = $('.projector_tabs__tabs.--fixed')
                   ? $('.projector_tabs').offset().top + e
@@ -19688,7 +19625,7 @@ function CountdownTimer(e, t) {
                   const i = $($(this).data('target')).offset().top;
                   o >= i - e - t - 55 &&
                     ($('.projector_tabs__tab').removeClass('--active'),
-                    $(this).addClass('--active'));
+                      $(this).addClass('--active'));
                 });
             });
           } else
@@ -19755,18 +19692,18 @@ app_shop.run(
           (t = $(this).hasClass('--audio')
             ? `<audio src="${$(this).attr('href')}" controls autoplay></audio>`
             : `<video width="100%" height="478" src="${$(this).attr(
-                'href',
-              )}" controls autoplay></video>`),
+              'href',
+            )}" controls autoplay></video>`),
           Modal({ html: t, classList: '--enclosures' }),
           !1
         );
       }),
         'function' == typeof ProjectorPhotoSwipe &&
-          ($('.enclosures__name.--image').on('click', function (e) {
-            e.preventDefault();
-            const t = parseInt($(this).data('index'), 10);
-            return app_shop.vars.projectorEnclosuresPhotoSwipe.init(t), !1;
-          }),
+        ($('.enclosures__name.--image').on('click', function (e) {
+          e.preventDefault();
+          const t = parseInt($(this).data('index'), 10);
+          return app_shop.vars.projectorEnclosuresPhotoSwipe.init(t), !1;
+        }),
           $('.enclosures__name.--image').each(function (e) {
             $(this).attr('data-index', e);
           }),
@@ -19864,7 +19801,7 @@ app_shop.run(
           this.checked && 'false' === e.getAttribute('data-confirmed')
             ? (e.setAttribute('data-hide', !0),
               app_shop.vars.view > 2 &&
-                document.getElementById('opinions_section').scrollIntoView({ behavior: 'smooth' }))
+              document.getElementById('opinions_section').scrollIntoView({ behavior: 'smooth' }))
             : (e.setAttribute('data-hide', !1), app_shop?.vars?.bLazy?.revalidate());
         }),
           document.querySelector('.opinions_list__item[data-hide="false"]')
@@ -19890,23 +19827,23 @@ app_shop.run(
         $(t).parent().removeClass('has-error').find('.validate_message').remove(),
           $(t).val()
             ? 'email' !== $(t).prop('type') ||
-              app_shop.fn.validateEmail($(t).val()) ||
-              $(t)
-                .parent()
-                .addClass('has-error')
-                .append(
-                  '<span class="help-block validate_message text-danger">' +
-                    app_shop.vars.opinions_not_email +
-                    '</span>',
-                )
+            app_shop.fn.validateEmail($(t).val()) ||
+            $(t)
+              .parent()
+              .addClass('has-error')
+              .append(
+                '<span class="help-block validate_message text-danger">' +
+                app_shop.vars.opinions_not_email +
+                '</span>',
+              )
             : $(t)
-                .parent()
-                .addClass('has-error')
-                .append(
-                  '<span class="help-block validate_message text-danger">' +
-                    app_shop.vars.opinions_empty_input +
-                    '</span>',
-                );
+              .parent()
+              .addClass('has-error')
+              .append(
+                '<span class="help-block validate_message text-danger">' +
+                app_shop.vars.opinions_empty_input +
+                '</span>',
+              );
       }),
       !e.find('.has-error').length
     );
@@ -19939,12 +19876,12 @@ $(document).on('click', 'div.return_type.disabled_inpost', function () {
       $(this).addClass('active').find('input.return_type').prop('checked', !0),
       $(
         '.return_type.choose_return_type:not(.current_method) .return_methods_param > input, div.return_delitem_items:not(#delitem_item' +
-          e +
-          ') .return_methods_param > input',
+        e +
+        ') .return_methods_param > input',
       ).prop('checked', !1),
       $('div.return_delivery_form, div.return_delitem_items').hide(),
       $('#delitem_item' + e).size() &&
-        ($('div.return_delivery_form, #delitem_item' + e).show(),
+      ($('div.return_delivery_form, #delitem_item' + e).show(),
         $('#delitem_item' + e)
           .find('div.return_delitem:first')
           .click()),
@@ -20070,8 +20007,8 @@ app_shop.run(
             ? parseFloat((d * o).toFixed(6)) == l
               ? (d * o).toFixed(a)
               : d * o < l
-              ? ((d + 1) * o).toFixed(a)
-              : Math.abs((Math.ceil(l) * o).toFixed(a))
+                ? ((d + 1) * o).toFixed(a)
+                : Math.abs((Math.ceil(l) * o).toFixed(a))
             : o),
             i.val(p);
         }
@@ -20088,21 +20025,21 @@ app_shop.run(
       $('.productslist_product_action input').not(':checked').size()
         ? ($('.step2 .select_all').html(txt_1_zaznacz_w_p),
           '' !== txt_1_new_button &&
-            $('.step2 .select_all').removeClass('icon-minus').addClass('icon-plus'))
+          $('.step2 .select_all').removeClass('icon-minus').addClass('icon-plus'))
         : ($('.step2 .select_all').html(txt_1_odznacz_w_p),
           '' !== txt_1_new_button &&
-            $('.step2 .select_all').removeClass('icon-plus').addClass('icon-minus')),
+          $('.step2 .select_all').removeClass('icon-plus').addClass('icon-minus')),
       $(document).on('click', '.step2 .select_all', function () {
         return (
           $('.productslist_product_action input').not(':checked').size()
             ? ($('.productslist_product_action input').prop('checked', !0),
               $('.step2 .select_all').html(txt_1_odznacz_w_p),
               '' !== txt_1_new_button &&
-                $('.step2 .select_all').removeClass('icon-plus').addClass('icon-minus'))
+              $('.step2 .select_all').removeClass('icon-plus').addClass('icon-minus'))
             : ($('.productslist_product_action input').prop('checked', !1),
               $('.step2 .select_all').html(txt_1_zaznacz_w_p),
               '' !== txt_1_new_button &&
-                $('.step2 .select_all').removeClass('icon-minus').addClass('icon-plus')),
+              $('.step2 .select_all').removeClass('icon-minus').addClass('icon-plus')),
           $('.productslist_product_action input').each(function () {
             var e = $(this)
               .parents('.productslist_item')
@@ -20195,7 +20132,7 @@ app_shop.run(
       $('a#rma_add_form_submit').on('click', function () {
         return (
           1 == app_shop.formControl.checkForm($(this).parents('form')) &&
-            $('form#rma_add_form').submit(),
+          $('form#rma_add_form').submit(),
           !1
         );
       });
@@ -20211,88 +20148,88 @@ app_shop.run(
     '.rma_add_form_outline',
   );
 var rma_add = {
-    placeTrigger: 0,
-    setPlace: function (e) {
-      $('.rma_add_form_boxsub_hidden').css('display', 'none'),
-        $('#' + e).css('display', 'block'),
-        (rma_add.placeTrigger = 'rma_add_form_buyplace_other' == e ? 1 : 0);
-    },
-    setPayment: function (e) {
-      switch (
-        ($('.rma_add_form_boxsub2_hidden').css('display', 'none'),
-        $('#' + e).css('display', 'block'),
-        e)
-      ) {
-        case 'rma_add_form_payp':
-          rma_add_paymentTrigger = 1;
-          break;
-        case 'rma_add_form_payb':
-          rma_add_paymentTrigger = 2;
-          break;
-        case 'rma_add_form_payc':
-          rma_add_paymentTrigger = 3;
-          break;
-        case 'rma_add_form_payt':
-          rma_add_paymentTrigger = 4;
-      }
-      rma_add.checkInps();
-    },
-    hideInfoText: function (e, t) {},
-    showInfo: function (e, t, i) {
-      t
-        ? ((document.getElementById(e + '_off').style.display = ''),
-          (document.getElementById(e + '_on').style.display = 'none'),
-          i
-            ? ((document.getElementById(e + '_help').style.display = 'block'),
-              (document.getElementById(e + '_help').firstChild.innerHTML = i),
-              rma_add.hideInfoText(e, 5))
-            : (document.getElementById(e + '_help').style.display = 'none'))
-        : ((document.getElementById(e + '_off').style.display = 'none'),
-          (document.getElementById(e + '_on').style.display = ''),
-          (document.getElementById(e + '_help').style.display = 'none'));
-    },
-    checkInps: function (e) {},
-    setTime: function (e, t) {
-      var i = $('#rma_add_form_begin_ymd').datepicker('getDate');
-      $('#rma_add_form_beginy').val(i.getFullYear()),
-        $('#rma_add_form_beginm').val(i.getMonth() + 1),
-        $('#rma_add_form_begind').val(i.getDate()),
-        app_shop.formControl.validate($('#rma_add_form_begin_ymd'));
-    },
-    chooseSite: function (e) {
-      var t = e.slice(5);
-      $('.rma_add_form_stock').removeClass('rmaf_selected'),
-        $('#' + e).addClass('rmaf_selected'),
-        $('#rma_stock').val(t);
-    },
+  placeTrigger: 0,
+  setPlace: function (e) {
+    $('.rma_add_form_boxsub_hidden').css('display', 'none'),
+      $('#' + e).css('display', 'block'),
+      (rma_add.placeTrigger = 'rma_add_form_buyplace_other' == e ? 1 : 0);
   },
+  setPayment: function (e) {
+    switch (
+    ($('.rma_add_form_boxsub2_hidden').css('display', 'none'),
+      $('#' + e).css('display', 'block'),
+      e)
+    ) {
+      case 'rma_add_form_payp':
+        rma_add_paymentTrigger = 1;
+        break;
+      case 'rma_add_form_payb':
+        rma_add_paymentTrigger = 2;
+        break;
+      case 'rma_add_form_payc':
+        rma_add_paymentTrigger = 3;
+        break;
+      case 'rma_add_form_payt':
+        rma_add_paymentTrigger = 4;
+    }
+    rma_add.checkInps();
+  },
+  hideInfoText: function (e, t) { },
+  showInfo: function (e, t, i) {
+    t
+      ? ((document.getElementById(e + '_off').style.display = ''),
+        (document.getElementById(e + '_on').style.display = 'none'),
+        i
+          ? ((document.getElementById(e + '_help').style.display = 'block'),
+            (document.getElementById(e + '_help').firstChild.innerHTML = i),
+            rma_add.hideInfoText(e, 5))
+          : (document.getElementById(e + '_help').style.display = 'none'))
+      : ((document.getElementById(e + '_off').style.display = 'none'),
+        (document.getElementById(e + '_on').style.display = ''),
+        (document.getElementById(e + '_help').style.display = 'none'));
+  },
+  checkInps: function (e) { },
+  setTime: function (e, t) {
+    var i = $('#rma_add_form_begin_ymd').datepicker('getDate');
+    $('#rma_add_form_beginy').val(i.getFullYear()),
+      $('#rma_add_form_beginm').val(i.getMonth() + 1),
+      $('#rma_add_form_begind').val(i.getDate()),
+      app_shop.formControl.validate($('#rma_add_form_begin_ymd'));
+  },
+  chooseSite: function (e) {
+    var t = e.slice(5);
+    $('.rma_add_form_stock').removeClass('rmaf_selected'),
+      $('#' + e).addClass('rmaf_selected'),
+      $('#rma_stock').val(t);
+  },
+},
   form_validation_error = '',
   prefered_form_complain = 'Preferowana forma reklamacji';
 const fetchRMAMessages = async () => {
-    document.querySelector('.rma_questions').classList.add('load-content');
-    try {
-      await fetch(window.location.href)
-        .then(e => e.text())
-        .then(e => {
-          var t = new DOMParser().parseFromString(e, 'text/html');
-          (document.querySelector('.rma_questions').innerHTML = t.querySelector(
-            '.rma_questions',
-          ).innerHTML),
-            document.querySelector('.rma_questions').classList.remove('load-content'),
-            $('a.rma_attach_file').on('click', function () {
-              $(this).closest('form').find('div.rma_af_files').show(), $(this).hide();
-            }),
-            document.querySelector('.rma_af_addMoreAttachments').addEventListener('click', e => {
-              const t = document.querySelector('.rma_af_foto input').cloneNode(!0);
-              console.log(t),
-                (t.value = ''),
-                document.querySelector('.rma_af_foto').insertAdjacentElement('beforeend', t);
-            });
-        });
-    } catch (e) {
-      throw new Error(e);
-    }
-  },
+  document.querySelector('.rma_questions').classList.add('load-content');
+  try {
+    await fetch(window.location.href)
+      .then(e => e.text())
+      .then(e => {
+        var t = new DOMParser().parseFromString(e, 'text/html');
+        (document.querySelector('.rma_questions').innerHTML = t.querySelector(
+          '.rma_questions',
+        ).innerHTML),
+          document.querySelector('.rma_questions').classList.remove('load-content'),
+          $('a.rma_attach_file').on('click', function () {
+            $(this).closest('form').find('div.rma_af_files').show(), $(this).hide();
+          }),
+          document.querySelector('.rma_af_addMoreAttachments').addEventListener('click', e => {
+            const t = document.querySelector('.rma_af_foto input').cloneNode(!0);
+            console.log(t),
+              (t.value = ''),
+              document.querySelector('.rma_af_foto').insertAdjacentElement('beforeend', t);
+          });
+      });
+  } catch (e) {
+    throw new Error(e);
+  }
+},
   sendComplaintMethod = async () => {
     if (null !== localStorage.getItem('complaint_method')) {
       const e = new FormData();
@@ -20350,8 +20287,8 @@ app_shop.run(
     $('.step5a div.return_form').removeClass('active'),
       $(this).addClass('active').find('input').prop('checked', !0),
       $(this).is('#disable_button') &&
-        $('#disable_button input.return_form').val().length < 3 &&
-        $('#return_go_next').prop('disabled', 'disabled').css('opacity', '0.6');
+      $('#disable_button input.return_form').val().length < 3 &&
+      $('#return_go_next').prop('disabled', 'disabled').css('opacity', '0.6');
   }),
   $(document).on('click', 'label.return_type', function () {
     $('label.return_type.active').removeClass('active'), $(this).addClass('active');
@@ -20379,27 +20316,27 @@ var rmaHideSpeed = 200,
         ($('#' + e)
           .siblings()
           .removeClass('rma_on'),
-        $('#' + e).addClass('rma_on')),
+          $('#' + e).addClass('rma_on')),
         $('#' + t) &&
-          ($('#' + t)
-            .siblings()
-            .hide(),
+        ($('#' + t)
+          .siblings()
+          .hide(),
           $('#' + t).show());
     },
     chooseRma: function (e) {
       $('#rmal_' + e) &&
         ($('#rmal_' + e).toggleClass('rma_itema'),
-        $('#rmal_' + e)
-          .children('.rma_list_item_operation')
-          .toggleClass('ophidden'),
-        'none' ==
-        $('#rmal_' + e)
-          .next()
-          .css('display')
-          ? $('#rmal_' + e)
+          $('#rmal_' + e)
+            .children('.rma_list_item_operation')
+            .toggleClass('ophidden'),
+          'none' ==
+            $('#rmal_' + e)
+              .next()
+              .css('display')
+            ? $('#rmal_' + e)
               .next()
               .slideDown(rmaHideSpeed)
-          : $('#rmal_' + e)
+            : $('#rmal_' + e)
               .next()
               .slideUp(rmaHideSpeed));
     },
@@ -20432,15 +20369,15 @@ app_shop.run(
     '.rma_open',
   );
 const rmaTxt = {
-    chooseProducts: 'Wybierz towary',
-    complain: 'Reklamuj',
-    product: ' towar',
-    products: ' towary',
-    noDetailsOnComplain: 'ProszÄ o podanie opisu usterki i powodu reklamacji',
-    noFileSelected: 'Nie wybrano pliku',
-    mobile_complain: 'Reklamuj towar',
-    cancel_complain: 'Zrezygnuj z reklamacji',
-  },
+  chooseProducts: 'Wybierz towary',
+  complain: 'Reklamuj',
+  product: ' towar',
+  products: ' towary',
+  noDetailsOnComplain: 'ProszÄ o podanie opisu usterki i powodu reklamacji',
+  noFileSelected: 'Nie wybrano pliku',
+  mobile_complain: 'Reklamuj towar',
+  cancel_complain: 'Zrezygnuj z reklamacji',
+},
   RmaProductList = function (e) {
     (this.params = e), (this.vars = { productsToComplain: 0, dropdowns: null });
     const t = this;
@@ -20454,17 +20391,17 @@ const rmaTxt = {
           afterClickDropdownCallback: e => {
             'more' != e.querySelector('.--selected').dataset.value
               ? ((e
-                  .closest('.productslist_item')
-                  .querySelector('.productslist_product_action input').checked = !0),
+                .closest('.productslist_item')
+                .querySelector('.productslist_product_action input').checked = !0),
                 (e
                   .closest('.productslist_quantity')
                   .querySelector('.productslist_quantity__more_input').value = parseFloat(
-                  e.closest('.productslist_quantity').querySelector('select').value,
-                )),
+                    e.closest('.productslist_quantity').querySelector('select').value,
+                  )),
                 this.countProductsToComplain())
               : ((e
-                  .closest('.productslist_quantity')
-                  .querySelector('.productslist_quantity__more_input').value = ''),
+                .closest('.productslist_quantity')
+                .querySelector('.productslist_quantity__more_input').value = ''),
                 e
                   .closest('.productslist_quantity')
                   .querySelector('.productslist_quantity__more_input')
@@ -20512,8 +20449,7 @@ const rmaTxt = {
       }),
       (this.changeNextButton = e => {
         e > 0
-          ? ((document.querySelector('#return_go_next').innerHTML = `${rmaTxt.complain} (${e}) ${
-              1 == e ? rmaTxt.product : rmaTxt.products
+          ? ((document.querySelector('#return_go_next').innerHTML = `${rmaTxt.complain} (${e}) ${1 == e ? rmaTxt.product : rmaTxt.products
             }`),
             document.querySelector('#return_go_next').classList.remove('disabled'))
           : ((document.querySelector('#return_go_next').innerHTML = rmaTxt.chooseProducts),
@@ -20534,8 +20470,8 @@ const rmaTxt = {
                       'beforeend',
                       `<span class="help-block validate_message text-danger">${rmaTxt.noDetailsOnComplain}</span>`,
                     ),
-                t.querySelector('.productslist_product_comment').classList.add('has-error'),
-                (e = !0));
+                  t.querySelector('.productslist_product_comment').classList.add('has-error'),
+                  (e = !0));
             }),
             !e);
       }),
@@ -20594,8 +20530,8 @@ const rmaTxt = {
                 ? ((e.querySelector('span').innerHTML = rmaTxt.cancel_complain),
                   t.querySelector('.f-dropdown-item[data-index="1"]').click())
                 : ((e.querySelector(
-                    'span',
-                  ).innerHTML = `<i class="icon-plus"></i> ${rmaTxt.mobile_complain}`),
+                  'span',
+                ).innerHTML = `<i class="icon-plus"></i> ${rmaTxt.mobile_complain}`),
                   t.querySelector('.f-dropdown-item[data-index="0"]').click());
           });
         });
@@ -20638,10 +20574,10 @@ app_shop.run(
       e.length >= 26 &&
         (e.indexOf('.') > 0
           ? $(this).text(
-              e.substring(0, 26 < e.lastIndexOf('.') ? 20 : e.indexOf('.') - 6) +
-                '[...].' +
-                e.split('.').pop(),
-            )
+            e.substring(0, 26 < e.lastIndexOf('.') ? 20 : e.indexOf('.') - 6) +
+            '[...].' +
+            e.split('.').pop(),
+          )
           : $(this).text(e.substring(0, 26)));
     }),
       $(document).on('click', 'a.previewFile[href="#previewFile"]', function (e) {
@@ -20677,107 +20613,107 @@ var txt_1_69260 = 'Wybierz produkty do reklamacji';
   (productslist_03b_txt = ' znakĂłw. '),
   (productslist_maxvalue_04_txt = '255');
 var Basketedit = {
-    getValues: function (e) {
-      var t = e.attr('data-amount'),
-        i = e.attr('data-unit_sellby'),
-        n = e.attr('data-unit');
-      return {
-        precision: e.attr('data-unit_precision'),
-        unit_sellby: i,
-        unit: n,
-        amount: t,
-        max_q: e.attr('data-max_q'),
-        max_s: e.attr('data-max_s'),
-        min_q: e.attr('data-min_q'),
-        min_s: e.attr('data-min_s'),
-      };
-    },
-    roundNumber: function (e, t) {
-      return (num = parseFloat(e)), (result = Math.abs(num.toFixed(t))), result;
-    },
-    if_isanumber: function (e, t) {
-      return isNaN(e) ? 1 : 1 == t ? e : t;
-    },
-    sellby_recount: function (e, t, i) {
-      return 'up' == i ? e * t : Math.round(i / t) * t;
-    },
-    number_check: function (e) {
-      console.log('test');
-      var t = e,
-        i = Basketedit.getValues(e),
-        n = parseFloat(i.unit_sellby),
-        o = parseFloat(i.precision),
-        r = parseFloat(i.amount),
-        a = i.unit;
-      console.log(s);
-      var s = parseFloat(t.val());
-      if (s < 0) return t.val(0), !1;
-      if (0 === (s = parseFloat(s))) return t.val(0), !1;
-      var l = parseFloat(i.max_q),
-        c = parseFloat(i.max_s),
-        p = parseFloat(i.min_q),
-        d = parseFloat(i.min_s);
-      if (!$.isNumeric(s) || s <= n) {
-        if (isNaN(l) && isNaN(c) && isNaN(p) && isNaN(d)) return t.val(n.toFixed(o)), !0;
-        n = n.toFixed(o);
-      }
-      (number = Math.floor(s / n) * n),
-        (number =
-          ((s / n) * n - number).toFixed(o + 1) > 0
-            ? (1 * number + n).toFixed(o)
-            : number.toFixed(o)),
-        (number = parseFloat(number));
-      var u = r,
-        h = n,
-        _ = -1;
-      if (!isNaN(l)) {
-        _ =
-          (_ =
-            l -
-            (_ = $.map($('.' + t.attr('class')), function (e) {
-              return parseFloat($(e).val());
-            }).reduce(function (e, t) {
-              return e + t;
-            }))) < 0
-            ? 'end'
-            : _;
-        var f = $('.' + t.attr('class')).not(t);
-        f.size() &&
+  getValues: function (e) {
+    var t = e.attr('data-amount'),
+      i = e.attr('data-unit_sellby'),
+      n = e.attr('data-unit');
+    return {
+      precision: e.attr('data-unit_precision'),
+      unit_sellby: i,
+      unit: n,
+      amount: t,
+      max_q: e.attr('data-max_q'),
+      max_s: e.attr('data-max_s'),
+      min_q: e.attr('data-min_q'),
+      min_s: e.attr('data-min_s'),
+    };
+  },
+  roundNumber: function (e, t) {
+    return (num = parseFloat(e)), (result = Math.abs(num.toFixed(t))), result;
+  },
+  if_isanumber: function (e, t) {
+    return isNaN(e) ? 1 : 1 == t ? e : t;
+  },
+  sellby_recount: function (e, t, i) {
+    return 'up' == i ? e * t : Math.round(i / t) * t;
+  },
+  number_check: function (e) {
+    console.log('test');
+    var t = e,
+      i = Basketedit.getValues(e),
+      n = parseFloat(i.unit_sellby),
+      o = parseFloat(i.precision),
+      r = parseFloat(i.amount),
+      a = i.unit;
+    console.log(s);
+    var s = parseFloat(t.val());
+    if (s < 0) return t.val(0), !1;
+    if (0 === (s = parseFloat(s))) return t.val(0), !1;
+    var l = parseFloat(i.max_q),
+      c = parseFloat(i.max_s),
+      p = parseFloat(i.min_q),
+      d = parseFloat(i.min_s);
+    if (!$.isNumeric(s) || s <= n) {
+      if (isNaN(l) && isNaN(c) && isNaN(p) && isNaN(d)) return t.val(n.toFixed(o)), !0;
+      n = n.toFixed(o);
+    }
+    (number = Math.floor(s / n) * n),
+      (number =
+        ((s / n) * n - number).toFixed(o + 1) > 0
+          ? (1 * number + n).toFixed(o)
+          : number.toFixed(o)),
+      (number = parseFloat(number));
+    var u = r,
+      h = n,
+      _ = -1;
+    if (!isNaN(l)) {
+      _ =
+        (_ =
           l -
-            $.map(f, function (e) {
-              return parseFloat($(e).val());
-            }).reduce(function (e, t) {
-              return e + t;
-            }),
-          (u = u > l ? l : u);
-      }
-      return (
-        isNaN(c) || (u = u > c ? c : u),
-        isNaN(p) || (h = p > h ? p : h),
-        isNaN(d) || (h = d > h ? d : h),
-        -1 != u && (h = u > h ? h : n),
-        h && number < h
+          (_ = $.map($('.' + t.attr('class')), function (e) {
+            return parseFloat($(e).val());
+          }).reduce(function (e, t) {
+            return e + t;
+          }))) < 0
+          ? 'end'
+          : _;
+      var f = $('.' + t.attr('class')).not(t);
+      f.size() &&
+        l -
+        $.map(f, function (e) {
+          return parseFloat($(e).val());
+        }).reduce(function (e, t) {
+          return e + t;
+        }),
+        (u = u > l ? l : u);
+    }
+    return (
+      isNaN(c) || (u = u > c ? c : u),
+      isNaN(p) || (h = p > h ? p : h),
+      isNaN(d) || (h = d > h ? d : h),
+      -1 != u && (h = u > h ? h : n),
+      h && number < h
+        ? (Alertek.show_alert(
+          Projector_txt_minimalnie + ' ' + Math.ceil(parseFloat(h) / n) * n + ' ' + a,
+        ),
+          t.val(Math.ceil(parseFloat(h) / n) * n),
+          !0)
+        : 'end' == _
           ? (Alertek.show_alert(
-              Projector_txt_minimalnie + ' ' + Math.ceil(parseFloat(h) / n) * n + ' ' + a,
-            ),
-            t.val(Math.ceil(parseFloat(h) / n) * n),
-            !0)
-          : 'end' == _
-          ? (Alertek.show_alert(
-              Projector_txt_maksymalnie + ' ' + Math.floor(parseFloat(l) / n) * n + ' ' + a,
-            ),
+            Projector_txt_maksymalnie + ' ' + Math.floor(parseFloat(l) / n) * n + ' ' + a,
+          ),
             t.val(Math.floor(parseFloat(l) / n) * n),
             !0)
           : number > u && -1 != u
-          ? (Alertek.show_alert(
+            ? (Alertek.show_alert(
               Projector_txt_maksymalnie + ' ' + Math.floor(parseFloat(u) / n) * n + ' ' + a,
             ),
-            t.val(Math.floor(parseFloat(u) / n) * n),
-            !0)
-          : (t.val(number), !0)
-      );
-    },
+              t.val(Math.floor(parseFloat(u) / n) * n),
+              !0)
+            : (t.val(number), !0)
+    );
   },
+},
   basketedit_productslist_init = function () {
     $('#basketedit_productslist .productslist_product_quantity input[type=text]').each(function () {
       var e = $(this).parent().find('.delQuantity');
@@ -20790,7 +20726,7 @@ var Basketedit = {
           t = productslist_maxvalue_04_txt;
         e > t &&
           ($(this).val($(this).val().substring(0, t)),
-          Alertek.show_alert(productslist_03a_txt + t + productslist_03b_txt));
+            Alertek.show_alert(productslist_03a_txt + t + productslist_03b_txt));
       }),
       $('#basketedit_productslist .productslist_product_quantity input[type=text]').change(
         function () {
@@ -20845,17 +20781,17 @@ var Basketedit = {
               $(this).parents('.rma__row').next().next().find('div.prodl_comment').length
                 ? (e = $(this).parents('.rma__row').next().next())
                 : $(this).parents('.rma__row').next().find('div.prodl_comment').length &&
-                  (e = $(this).parents('.rma__row').next()),
+                (e = $(this).parents('.rma__row').next()),
               void 0 !== e &&
-                (e.find('div.prodl_comment').toggle(), e.find('div.prodl_comment_top').toggle()),
+              (e.find('div.prodl_comment').toggle(), e.find('div.prodl_comment_top').toggle()),
               !1
             );
           case '#clearComment':
             return $(this).prevAll('textarea').val(''), !1;
           case '#addQuantity':
             var t = parseFloat(
-                Basketedit.getValues($(this).parent().find('input[type=text]')).unit_sellby,
-              ),
+              Basketedit.getValues($(this).parent().find('input[type=text]')).unit_sellby,
+            ),
               i = parseFloat($(this).parent().find('input[type=text]').val()) + t;
             return $(this).parent().find('input[type=text]').val(i).change(), !1;
           case '#delQuantity':
@@ -20874,7 +20810,7 @@ var Basketedit = {
           case '#addComment':
             return (
               $(this).parents('.productslist_item').find('.prodl_comment').length > 0 &&
-                ($(this).parents('.productslist_item').find('.prodl_comment_top').toggle(),
+              ($(this).parents('.productslist_item').find('.prodl_comment_top').toggle(),
                 $(this).parents('.productslist_item').find('.prodl_comment').toggle()),
               !1
             );
@@ -20884,9 +20820,9 @@ var Basketedit = {
             return (
               $('td.procuctCheckbox_sub input:checked').length > 0
                 ? ($('td.procuctCheckbox_sub input:checked')
-                    .parents('tr.productslist_product_sizes')
-                    .find('.productslist_product_quantity input[type=text]')
-                    .val(0),
+                  .parents('tr.productslist_product_sizes')
+                  .find('.productslist_product_quantity input[type=text]')
+                  .val(0),
                   $('form.basketedit_productslist').submit())
                 : Alertek.show_alert(productslist_01_txt),
               !1
@@ -20910,7 +20846,7 @@ var Basketedit = {
         $('td.procuctCheckbox input').not(':checked').length > 0 &&
           $('input.selectAllCheckbox').removeAttr('checked'),
           $('td.procuctCheckbox input:checked').length == $('td.procuctCheckbox input').length &&
-            $('input.selectAllCheckbox').prop('checked', !0),
+          $('input.selectAllCheckbox').prop('checked', !0),
           $(this).is(':checked')
             ? ($(this).parent().addClass('procuctCheckboxSelect'),
               $(this)
@@ -20941,16 +20877,16 @@ var Basketedit = {
         $('td.procuctCheckbox_sub input').not(':checked').length > 0 &&
           $('input.selectAllCheckbox').removeAttr('checked'),
           $('td.procuctCheckbox_sub input:checked').length ==
-            $('td.procuctCheckbox_sub input').length &&
-            $('input.selectAllCheckbox').prop('checked', !0),
+          $('td.procuctCheckbox_sub input').length &&
+          $('input.selectAllCheckbox').prop('checked', !0),
           $(this)
             .parents('table.productslist_product_sizes')
             .find('td.procuctCheckbox_sub input')
             .not(':checked').length > 0 &&
-            ($(this)
-              .parents('td.productslist_product_sizes_wrapper')
-              .siblings('td.procuctCheckbox')
-              .removeClass('procuctCheckboxSelect'),
+          ($(this)
+            .parents('td.productslist_product_sizes_wrapper')
+            .siblings('td.procuctCheckbox')
+            .removeClass('procuctCheckboxSelect'),
             $(this)
               .parents('td.productslist_product_sizes_wrapper')
               .siblings('td.procuctCheckbox')
@@ -20959,12 +20895,12 @@ var Basketedit = {
           $(this)
             .parents('table.productslist_product_sizes')
             .find('td.procuctCheckbox_sub input:checked').length ==
-            $(this).parents('table.productslist_product_sizes').find('td.procuctCheckbox_sub input')
-              .length &&
-            ($(this)
-              .parents('td.productslist_product_sizes_wrapper')
-              .siblings('td.procuctCheckbox')
-              .addClass('procuctCheckboxSelect'),
+          $(this).parents('table.productslist_product_sizes').find('td.procuctCheckbox_sub input')
+            .length &&
+          ($(this)
+            .parents('td.productslist_product_sizes_wrapper')
+            .siblings('td.procuctCheckbox')
+            .addClass('procuctCheckboxSelect'),
             $(this)
               .parents('td.productslist_product_sizes_wrapper')
               .siblings('td.procuctCheckbox')
@@ -21003,7 +20939,7 @@ var txt_1_69378 = 'Wybierz formÄ zwrotu naleĹźnoĹci',
             (e &&
               0 !== e.querySelector('select').selectedIndex &&
               localStorage.setItem('complaint_method', e.querySelector('select').value),
-            !$('.return_form.form-control.validate').parent().is('.has-success') &&
+              !$('.return_form.form-control.validate').parent().is('.has-success') &&
               $('.return_form.form-control.validate').parents('.return_form').is('.active'))
           )
             return (
@@ -21058,26 +20994,26 @@ var txt_1_69378 = 'Wybierz formÄ zwrotu naleĹźnoĹci',
       n = void 0 !== app_shop.vars.categorySize ? app_shop.vars.categorySize : 512;
     return (
       i.length > 1 &&
-        !$(t).parent().find('.search_categoriesdescription_next').length &&
-        0 !== n &&
-        ($.each(i, function (e, i) {
-          var o = -1 * (n - i.innerText.length);
-          n - i.innerText.length <= 0 &&
-            o >= n &&
-            ($(t).parent().find('.search_categoriesdescription_next').length ||
-              $(t).after(
-                '<div class="search_categoriesdescription_next cm"><a class="show_description pt-3">' +
-                  app_shop.vars.show_description +
-                  '</a></div>',
-              ),
+      !$(t).parent().find('.search_categoriesdescription_next').length &&
+      0 !== n &&
+      ($.each(i, function (e, i) {
+        var o = -1 * (n - i.innerText.length);
+        n - i.innerText.length <= 0 &&
+          o >= n &&
+          ($(t).parent().find('.search_categoriesdescription_next').length ||
+            $(t).after(
+              '<div class="search_categoriesdescription_next cm"><a class="show_description pt-3">' +
+              app_shop.vars.show_description +
+              '</a></div>',
+            ),
             $(i).appendTo($(t).parent().find('.search_categoriesdescription_next'))),
-            (n -= i.innerText.length);
-        }),
+          (n -= i.innerText.length);
+      }),
         app_shop.vars.hide_description &&
-          $(t)
-            .parent()
-            .find('.search_categoriesdescription_next')
-            .after('<a class="hide_description pb-3">' + app_shop.vars.hide_description + '</a>')),
+        $(t)
+          .parent()
+          .find('.search_categoriesdescription_next')
+          .after('<a class="hide_description pb-3">' + app_shop.vars.hide_description + '</a>')),
       $(t).removeClass('skeleton'),
       $(t).parent().removeClass('--skeleton'),
       !1
@@ -21150,8 +21086,8 @@ var txt_1_69378 = 'Wybierz formÄ zwrotu naleĹźnoĹci',
             $('#search .product__prices').setHeight($('#search')),
             $('#search .product__name').setHeight($('#search')),
             void 0 !== runOmnibusFallback &&
-              'function' == typeof runOmnibusFallback &&
-              runOmnibusFallback();
+            'function' == typeof runOmnibusFallback &&
+            runOmnibusFallback();
         },
       })),
         app_shop.fn.infiniteScroll.init();

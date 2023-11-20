@@ -1,0 +1,517 @@
+<div class="dropdown-wrapper d-flex flex-row justify-content-around px-2 py-1">
+    <div class="filter float-left md:float-none">
+        <button class="filter-dropdown-trigger px-2 py-1">
+            Filtrowanie
+        </button>
+
+    </div>
+    <div class="sort ml-5">
+        <button class="sort-dropdown-trigger py-1">
+            Sortowanie
+        </button>
+
+    </div>
+</div>
+</div>
+<div class="search_settings">
+    <div id="paging_setting_top" class="s_paging">
+        <form class="s_paging__item --sort d-md-none mb-2" action="https://www.konesso.pl/settings.php">
+            <div class="f-dropdown f-group s_paging__select --order --small-md "><select
+                    class="s_paging__select-select --order-select --small-md-select" name="sort_order">
+                    <option value="name-a" class="option_name-a">Sortuj po nazwie rosnąco</option>
+                    <option value="name-d" class="option_name-d">Sortuj po nazwie malejąco</option>
+                    <option value="price-a" class="option_price-a">Sortuj po cenie rosnąco</option>
+                    <option value="price-d" class="option_price-d">Sortuj po cenie malejąco</option>
+                    <option value="date-a" class="option_date-a">Sortuj po dacie rosnąco</option>
+                    <option value="date-d" class="option_date-d">Sortuj po dacie malejąco</option>
+                </select>
+                <button type="button" class="f-control f-dropdown-toggle" data-indexcurrent="0">
+
+                    <span class="f-dropdown-button">Sortuj po nazwie rosnąco</span>
+                </button>
+                <ul class="f-dropdown-menu">
+
+                    <li class="f-dropdown-li option_name-a">
+                        <a class="f-dropdown-item --selected" href="#name-a" data-index="0" data-value="name-a">Sortuj
+                            po nazwie rosnąco</a>
+                    </li>
+
+                </ul>
+            </div>
+        </form>
+
+
+        <form class="s_paging__item --portions d-none" action="https://www.konesso.pl/settings.php">
+            <div class="f-dropdown f-group s_paging__select --portions --small-md "><select
+                    class="s_paging__select-select --portions-select --small-md-select" id="select_top_portions"
+                    name="portions">
+                    <option value="30" selected="">Pokaż 30</option>
+                    <option value="60">Pokaż 60</option>
+                    <option value="90">Pokaż 90</option>
+
+                </select>
+                <button type="button" class="f-control f-dropdown-toggle" data-indexcurrent="0">
+
+                    <span class="f-dropdown-button">Pokaż 30</span>
+                </button>
+                <ul class="f-dropdown-menu">
+
+                    <li class="f-dropdown-li">
+                        <a class="f-dropdown-item --selected" href="#30" data-index="0" data-value="30">Pokaż 30</a>
+                    </li>
+
+                    <li class="f-dropdown-li">
+                        <a class="f-dropdown-item" href="#60" data-index="1" data-value="60">Pokaż
+                            60</a>
+                    </li>
+
+                    <li class="f-dropdown-li">
+                        <a class="f-dropdown-item" href="#90" data-index="2" data-value="90">Pokaż
+                            90</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </form>
+
+        <div class="s_paging__item --filters d-md-none mb-2 mb-sm-3"><a class="btn --solid --large" href="#menu_filter">
+                Pokaż filtry
+            </a></div>
+    </div>
+    <section id="Filters" class="filters mb-4 d-none">
+        <form class="filters__form" method="get"
+            action="https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista-2160.html">
+
+            <div class="sort-element s_paging__item --sort --inFilters d-none"
+                data-action="https://www.konesso.pl/settings.php">
+                <div class="f-dropdown f-group s_paging__select --order --small-md "><select
+                        class="s_paging__select-select --order-select --small-md-select" name="sort_order">
+                        <option value="name-a" class="option_name-a">Sortuj po nazwie rosnąco
+                        </option>
+                        <option value="name-d" class="option_name-d">Sortuj po nazwie malejąco
+                        </option>
+
+                    </select>
+                    <button type="button" class="f-control f-dropdown-toggle" data-indexcurrent="0">
+
+                        <span class="f-dropdown-button">Sortuj po nazwie rosnąco</span>
+                    </button>
+                    <ul class="f-dropdown-menu">
+
+                        <li class="f-dropdown-li option_name-a">
+                            <a class="f-dropdown-item --selected" href="#name-a" data-index="0"
+                                data-value="name-a">Sortuj po nazwie rosnąco</a>
+                        </li>
+
+                        <li class="f-dropdown-li option_name-d">
+                            <a class="f-dropdown-item" href="#name-d" data-index="1" data-value="name-d">Sortuj po
+                                nazwie malejąco</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="sort-element s_paging__item --portions --inFilters d-none "
+                data-action="https://www.konesso.pl/settings.php">
+                <div class="f-dropdown f-group s_paging__select --portions --small-md "><select
+                        class="s_paging__select-select --portions-select --small-md-select" id="select_top_portions"
+                        name="portions">
+                        <option value="30" selected="">Pokaż 30</option>
+                        <option value="60">Pokaż 60</option>
+                        <option value="90">Pokaż 90</option>
+                        <option value="120">Pokaż 120</option>
+
+                    </select>
+                    <button type="button" class="f-control f-dropdown-toggle" data-indexcurrent="0">
+
+                        <span class="f-dropdown-button">Pokaż 30</span>
+                    </button>
+                    <ul class="f-dropdown-menu">
+
+                        <li class="f-dropdown-li">
+                            <a class="f-dropdown-item --selected" href="#30" data-index="0" data-value="30">Pokaż
+                                30</a>
+                        </li>
+
+                        <li class="f-dropdown-li">
+                            <a class="f-dropdown-item" href="#60" data-index="1" data-value="60">Pokaż
+                                60</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="filter-element filters__block"><input type="hidden" class="__serialize"
+                    id="filter_producer_input" name="filter_producer" value=""><a class="filters__toggler
+                " data-id="filter_producer">
+                    <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
+                            old_text="Marka">Marka</span><span class="d-md-none">Marka</span></div>
+                </a>
+                <div class="filters__expand p-md-2 pt-md-3" id="filter_producer_expand">
+                    <ul class="filters__content --list" id="filter_producer_content">
+                        <li class="filters__item mb-2
+                                                  ">
+                            <div class="f-group --small --checkbox mb-0"><input type="checkbox"
+                                    class="f-control focused" id="filter_producer_1626156012" data-id="filter_producer"
+                                    value="1626156012"><label class="f-label" for="filter_producer_1626156012"><span
+                                        class="--name">1000 HILLS
+                                        PRODUCTS</span><span class="--quantity">12</span></label>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    <div class="filters__options"><a class="--show-hidden btn py-0 pl-0 pr-0"
+                            data-id="filter_producer"><span class="--show">+ Rozwiń</span><span class="--hide">-
+                                Ukryj</span></a><button type="submit" class="--submit btn --solid --small">
+                            Filtruj
+                        </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
+                            Wyczyść filtry
+                        </button></div>
+                </div>
+            </div>
+            <div class="filter-element filters__block"><input type="hidden" class="__serialize"
+                    id="filter_traits1335603892_input" name="filter_traits[1335603892]" value=""><a class="filters__toggler
+                " data-id="filter_traits1335603892">
+                    <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
+                            old_text="Blend czy Single">Blend czy Single</span><span class="d-md-none">Blend czy
+                            Single</span></div>
+                </a>
+                <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603892_expand">
+                    <ul class="filters__content --list" id="filter_traits1335603892_content">
+                        <li class="filters__item mb-2
+                                                  ">
+                            <div class="f-group --small --checkbox mb-0"><input type="checkbox"
+                                    class="f-control focused" id="filter_traits1335603892_1335603893"
+                                    data-id="filter_traits1335603892" value="1335603893"><label class="f-label"
+                                    for="filter_traits1335603892_1335603893"><span class="--name">Blend /
+                                        Mieszanki</span><span class="--quantity">725</span></label></div>
+                        </li>
+                        <li class="filters__item mb-2
+                                                  ">
+                            <div class="f-group --small --checkbox mb-0"><input type="checkbox"
+                                    class="f-control focused" id="filter_traits1335603892_1335603898"
+                                    data-id="filter_traits1335603892" value="1335603898"><label class="f-label"
+                                    for="filter_traits1335603892_1335603898"><span class="--name">Single /
+                                        Jednorodne</span><span class="--quantity">705</span></label></div>
+                        </li>
+                    </ul>
+                    <div class="filters__options"><button type="submit" class="--submit btn --solid --small">
+                            Filtruj
+                        </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
+                            Wyczyść filtry
+                        </button></div>
+                </div>
+            </div>
+            <div class="filter-element filters__block"><input type="hidden" class="__serialize"
+                    id="filter_traits1335603899_input" name="filter_traits[1335603899]" value=""><a class="filters__toggler
+                " data-id="filter_traits1335603899">
+                    <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
+                            old_text="Pochodzenie ziaren">Pochodzenie ziaren</span><span class="d-md-none">Pochodzenie
+                            ziaren</span></div>
+                </a>
+                <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603899_expand">
+                    <ul class="filters__content --list" id="filter_traits1335603899_content">
+                        <li class="filters__item mb-2
+                                                  ">
+                            <div class="f-group --small --checkbox mb-0"><input type="checkbox"
+                                    class="f-control focused" id="filter_traits1335603899_1335603972"
+                                    data-id="filter_traits1335603899" value="1335603972"><label class="f-label"
+                                    for="filter_traits1335603899_1335603972"><span class="--name">Afryka</span><span
+                                        class="--quantity">47</span></label></div>
+                        </li>
+
+                        <li class="filters__item mb-2
+                                                   --hidden">
+                            <div class="f-group --small --checkbox mb-0"><input type="checkbox"
+                                    class="f-control focused" id="filter_traits1335603899_1335607992"
+                                    data-id="filter_traits1335603899" value="1335607992"><label class="f-label"
+                                    for="filter_traits1335603899_1335607992"><span class="--name">Wybrzeże Kości
+                                        Słoniowej</span><span class="--quantity">2</span></label></div>
+                        </li>
+                    </ul>
+                    <div class="filters__options"><a class="--show-hidden btn py-0 pl-0 pr-0"
+                            data-id="filter_traits1335603899"><span class="--show">+
+                                Rozwiń</span><span class="--hide">- Ukryj</span></a><button type="submit"
+                            class="--submit btn --solid --small">
+                            Filtruj
+                        </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
+                            Wyczyść filtry
+                        </button></div>
+                </div>
+            </div>
+            <div class="filter-element filters__more"><a href="##" title="Więcej filtrów"><span
+                        class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
+                            old_text="Pochodzenie ziaren"> Więcej filtrów</span><span class="d-md-none">Więcej
+                            filtrów</span></a></div>
+            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
+                    id="filter_traits1335603539_input" name="filter_traits[1335603539]" value=""><a class="filters__toggler
+                " data-id="filter_traits1335603539">
+                    <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
+                            old_text="Opakowanie">Opakowanie</span><span class="d-md-none">Opakowanie</span></div>
+                </a>
+                <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603539_expand">
+                    <ul class="filters__content --list" id="filter_traits1335603539_content">
+                        <li class="filters__item mb-2
+                                                  ">
+                            <div class="f-group --small --checkbox mb-0"><input type="checkbox"
+                                    class="f-control focused" id="filter_traits1335603539_1335608736"
+                                    data-id="filter_traits1335603539" value="1335608736"><label class="f-label"
+                                    for="filter_traits1335603539_1335608736"><span class="--name">1000</span><span
+                                        class="--quantity">1</span></label></div>
+                        </li>
+
+
+                    </ul>
+                    <div class="filters__options"><a class="--show-hidden btn py-0 pl-0 pr-0"
+                            data-id="filter_traits1335603539"><span class="--show">+
+                                Rozwiń</span><span class="--hide">- Ukryj</span></a><button type="submit"
+                            class="--submit btn --solid --small">
+                            Filtruj
+                        </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
+                            Wyczyść filtry
+                        </button></div>
+                </div>
+            </div>
+            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
+                    id="filter_traits1335604645_input" name="filter_traits[1335604645]" value=""><a class="filters__toggler
+                " data-id="filter_traits1335604645">
+                    <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
+                            old_text="Gatunek kawy">Gatunek kawy</span><span class="d-md-none">Gatunek
+                            kawy</span></div>
+                </a>
+                <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335604645_expand">
+                    <ul class="filters__content --list" id="filter_traits1335604645_content">
+                        <li class="filters__item mb-2
+                                                  ">
+                            <div class="f-group --small --checkbox mb-0"><input type="checkbox"
+                                    class="f-control focused" id="filter_traits1335604645_1335604651"
+                                    data-id="filter_traits1335604645" value="1335604651"><label class="f-label"
+                                    for="filter_traits1335604645_1335604651"><span class="--name">Arabica</span><span
+                                        class="--quantity">26</span></label>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="filters__options"><button type="submit" class="--submit btn --solid --small">
+                            Filtruj
+                        </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
+                            Wyczyść filtry
+                        </button></div>
+                </div>
+            </div>
+            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
+                    id="filter_traits1335603421_input" name="filter_traits[1335603421]" value=""><a class="filters__toggler
+                " data-id="filter_traits1335603421">
+                    <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
+                            old_text="Skład">Skład</span><span class="d-md-none">Skład</span></div>
+                </a>
+                <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603421_expand">
+                    <ul class="filters__content --list" id="filter_traits1335603421_content">
+                        <li class="filters__item mb-2
+                                                  ">
+                            <div class="f-group --small --checkbox mb-0"><input type="checkbox"
+                                    class="f-control focused" id="filter_traits1335603421_1335603424"
+                                    data-id="filter_traits1335603421" value="1335603424"><label class="f-label"
+                                    for="filter_traits1335603421_1335603424"><span class="--name">100%
+                                        Arabika</span><span class="--quantity">1066</span></label></div>
+                        </li>
+
+                    </ul>
+                    <div class="filters__options"><button type="submit" class="--submit btn --solid --small">
+                            Filtruj
+                        </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
+                            Wyczyść filtry
+                        </button></div>
+                </div>
+            </div>
+            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
+                    id="filter_traits1335603491_input" name="filter_traits[1335603491]" value=""><a class="filters__toggler
+                " data-id="filter_traits1335603491">
+                    <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
+                            old_text="Zawartość kofeiny">Zawartość kofeiny</span><span class="d-md-none">Zawartość
+                            kofeiny</span></div>
+                </a>
+                <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603491_expand">
+                    <ul class="filters__content --list" id="filter_traits1335603491_content">
+                        <li class="filters__item mb-2
+                                                  ">
+                            <div class="f-group --small --checkbox mb-0"><input type="checkbox"
+                                    class="f-control focused" id="filter_traits1335603491_1335603495"
+                                    data-id="filter_traits1335603491" value="1335603495"><label class="f-label"
+                                    for="filter_traits1335603491_1335603495"><span
+                                        class="--name">Bezkofeinowa</span><span class="--quantity">37</span></label>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="filters__options"><button type="submit" class="--submit btn --solid --small">
+                            Filtruj
+                        </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
+                            Wyczyść filtry
+                        </button></div>
+                </div>
+            </div>
+            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
+                    id="filter_traits1335603574_input" name="filter_traits[1335603574]" value=""><a class="filters__toggler
+                " data-id="filter_traits1335603574">
+                    <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
+                            old_text="Rodzaj">Rodzaj</span><span class="d-md-none">Rodzaj</span>
+                    </div>
+                </a>
+                <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603574_expand">
+                    <ul class="filters__content --list" id="filter_traits1335603574_content">
+                        <li class="filters__item mb-2
+                                                  ">
+                            <div class="f-group --small --checkbox mb-0"><input type="checkbox"
+                                    class="f-control focused" id="filter_traits1335603574_1335603643"
+                                    data-id="filter_traits1335603574" value="1335603643"><label class="f-label"
+                                    for="filter_traits1335603574_1335603643"><span class="--name">Aeropress</span><span
+                                        class="--quantity">1</span></label>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="filters__options"><a class="--show-hidden btn py-0 pl-0 pr-0"
+                            data-id="filter_traits1335603574"><span class="--show">+
+                                Rozwiń</span><span class="--hide">- Ukryj</span></a><button type="submit"
+                            class="--submit btn --solid --small">
+                            Filtruj
+                        </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
+                            Wyczyść filtry
+                        </button></div>
+                </div>
+            </div>
+            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
+                    id="filter_traits1335603894_input" name="filter_traits[1335603894]" value=""><a class="filters__toggler
+                " data-id="filter_traits1335603894">
+                    <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
+                            old_text="Wyczuwalne smaki">Wyczuwalne smaki</span><span class="d-md-none">Wyczuwalne
+                            smaki</span></div>
+                </a>
+                <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603894_expand">
+                    <ul class="filters__content --list" id="filter_traits1335603894_content">
+                        <li class="filters__item mb-2
+                        ">
+                            <div class="f-group --small --checkbox mb-0"><input type="checkbox"
+                                    class="f-control focused" id="filter_traits1335603894_1335603979"
+                                    data-id="filter_traits1335603894" value="1335603979"><label class="f-label"
+                                    for="filter_traits1335603894_1335603979"><span class="--name">Agrest</span><span
+                                        class="--quantity">5</span></label></div>
+                        </li>
+                    </ul>
+                    <div class="filters__options"><a class="--show-hidden btn py-0 pl-0 pr-0"
+                            data-id="filter_traits1335603894"><span class="--show">+
+                                Rozwiń</span><span class="--hide">- Ukryj</span></a><button type="submit"
+                            class="--submit btn --solid --small">
+                            Filtruj
+                        </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
+                            Wyczyść filtry
+                        </button></div>
+                </div>
+            </div>
+            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
+                    id="filter_traits1335603533_input" name="filter_traits[1335603533]" value=""><a class="filters__toggler
+                " data-id="filter_traits1335603533">
+                    <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
+                            old_text="Przeznaczenie ">Przeznaczenie </span><span class="d-md-none">Przeznaczenie
+                        </span></div>
+                </a>
+                <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603533_expand">
+                    <ul class="filters__content --list" id="filter_traits1335603533_content">
+                        <li class="filters__item mb-2
+                                                  ">
+                            <div class="f-group --small --checkbox mb-0"><input type="checkbox"
+                                    class="f-control focused" id="filter_traits1335603533_1335603580"
+                                    data-id="filter_traits1335603533" value="1335603580"><label class="f-label"
+                                    for="filter_traits1335603533_1335603580"><span class="--name">Do
+                                        alternatyw</span><span class="--quantity">360</span></label></div>
+                        </li>
+                    </ul>
+                    <div class="filters__options"><a class="--show-hidden btn py-0 pl-0 pr-0"
+                            data-id="filter_traits1335603533"><span class="--show">+
+                                Rozwiń</span><span class="--hide">- Ukryj</span></a><button type="submit"
+                            class="--submit btn --solid --small">
+                            Filtruj
+                        </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
+                            Wyczyść filtry
+                        </button></div>
+                </div>
+            </div>
+            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
+                    id="filter_traits1335603586_input" name="filter_traits[1335603586]" value=""><a class="filters__toggler
+                " data-id="filter_traits1335603586">
+                    <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
+                            old_text="Palarnia">Palarnia</span><span class="d-md-none">Palarnia</span>
+                    </div>
+                </a>
+                <div class="filters__expand p-md-2 pt-md-3" id="filter_traits1335603586_expand">
+                    <ul class="filters__content --list" id="filter_traits1335603586_content">
+                        <li class="filters__item mb-2
+                                                  ">
+                            <div class="f-group --small --checkbox mb-0"><input type="checkbox"
+                                    class="f-control focused" id="filter_traits1335603586_1335603595"
+                                    data-id="filter_traits1335603586" value="1335603595"><label class="f-label"
+                                    for="filter_traits1335603586_1335603595"><span class="--name">Anglia</span><span
+                                        class="--quantity">30</span></label></div>
+                        </li>
+                    </ul>
+                    <div class="filters__options"><a class="--show-hidden btn py-0 pl-0 pr-0"
+                            data-id="filter_traits1335603586"><span class="--show">+
+                                Rozwiń</span><span class="--hide">- Ukryj</span></a><button type="submit"
+                            class="--submit btn --solid --small">
+                            Filtruj
+                        </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
+                            Wyczyść filtry
+                        </button></div>
+                </div>
+            </div>
+            <div class="filter-element filters__block --hide"><a class="filters__toggler
+                " data-id="filter_dual">
+                    <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block" old_text="Pokaż tylko">
+                            Pokaż tylko
+                        </span><span class="d-md-none">
+                            Pokaż tylko
+                        </span></div>
+                </a>
+                <div class="filters__expand p-md-2 pt-md-3" id="filter_dual_expand">
+                    <ul class="filters__content --list" id="filter_dual_content">
+                        <li class="filters__item mb-2">
+                            <div class="f-group --small --checkbox mb-0"><input type="checkbox"
+                                    class="f-control __serialize focused" id="filter_bestseller_y" value="y"
+                                    name="filter_bestseller"><label class="f-label" for="filter_bestseller_y"><span
+                                        class="--name">Bestseller</span><span class="--quantity">15</span></label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="filters__options"><button type="submit" class="--submit btn --solid --small">
+                            Filtruj
+                        </button><button type="submit" class="--remove btn" title="Wyczyść filtry">
+                            Wyczyść filtry
+                        </button></div>
+                </div>
+            </div>
+            <div class="filter-element filters__block --hide"><input type="hidden" class="__serialize"
+                    id="filter_price_input" name="filter_price" value=""><a class="filters__toggler
+                " data-id="filter_price">
+                    <div class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
+                            old_text="Cena">Cena</span><span class="d-md-none">Cena</span></div>
+                </a>
+                <div class="filters__expand p-md-2 pt-md-3" id="filter_price_expand">
+
+                </div>
+            </div>
+
+            <div class="f-group filters__buttons d-md-none"><button type="submit" class="btn --medium --solid"
+                    title="Kliknij aby zastosować wybrane filtry">
+
+                    Zastosuj wybrane filtry
+                </button></div>
+        </form>
+    </section>
+</div>

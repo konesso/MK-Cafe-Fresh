@@ -1,8 +1,17 @@
-<div class="product col-6 col-sm-4 col-md-3 pt-3 my-4 pb-md-3" data-product_id="16371" data-product_page="0"
+<div class="product col-12 col-sm-6 col-lg-4 pt-3 my-4 pb-md-3" data-product_id="16371" data-product_page="0"
     data-product_first="true"><a class="product__icon d-flex justify-content-center align-items-center"
         data-product-id="16371"
         href="https://www.konesso.pl/product-pol-16371-Kawa-ziarnista-Jesienna-Kawariatka-1kg.html"
         title="Kawa ziarnista Jesienna Kawariatka 1kg">
+        <div class="graph-background p-2">
+            <div class="graph-title">Najedź myszką by poznać włąściwości smaku</div>
+            <div>
+                <canvas class="radar-chart" width="100%" height="100%" style=""></canvas>
+
+
+
+            </div>
+        </div>
         <picture>
             <source media="(max-width: 420px)"
                 srcset="https://www.konesso.pl/pol_is_Kawa-ziarnista-Jesienna-Kawariatka-1kg-16371.jpg">

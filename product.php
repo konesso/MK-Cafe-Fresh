@@ -58,7 +58,7 @@
                     </div>
 
                 </section>
-                
+
                 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="pswp__bg"></div>
                     <div class="pswp__scroll-wrap">
@@ -93,8 +93,8 @@
                         </div>
                     </div>
                 </div>
-               
-                
+
+
                 <section id="projector_productname" class="product_name mb-4">
                     <div class="product_name__block --name mb-2 d-sm-flex justify-content-sm-between mb-sm-3">
                         <h1 class="product_name__name m-0">Kawa ziarnista Bazzara DODICIGRANCRU 1kg </h1>
@@ -124,210 +124,214 @@
                     </div>
                     <div class="product_name__block --description mt-3">
                         <ul>
-                            <li>Wysokiej jakości meksykańska Arabika, uprawiana w regionie górskim. Bujna roślinność, deszczowy klimat i duże wysokości dają tej kawie to co najlepsze z meksykańskiego charakteru. Słodycz czekolady, karmelu i migdałów przełamana owocowymi nutami pomarańczy - tak skomponowany smak działa na wyobraźnię i pozwala przenieść się do świata wyjątkowej natury, różnorodności i niezwykłego kolorytu tego regionu.  </li>
+                            <li>Wysokiej jakości meksykańska Arabika, uprawiana w regionie górskim. Bujna roślinność,
+                                deszczowy klimat i duże wysokości dają tej kawie to co najlepsze z meksykańskiego
+                                charakteru. Słodycz czekolady, karmelu i migdałów przełamana owocowymi nutami pomarańczy
+                                - tak skomponowany smak działa na wyobraźnię i pozwala przenieść się do świata
+                                wyjątkowej natury, różnorodności i niezwykłego kolorytu tego regionu. </li>
                         </ul>
                     </div>
                 </section>
                 <script class="ajaxLoad">
-                    cena_raty = 106.50;
+                cena_raty = 106.50;
 
-                    var client_login = 'true'
+                var client_login = 'true'
 
-                    var client_points = '0';
-                    var points_used = '';
-                    var shop_currency = 'zł';
-                    var product_data = {
-                        "product_id": '29',
+                var client_points = '0';
+                var points_used = '';
+                var shop_currency = 'zł';
+                var product_data = {
+                    "product_id": '29',
 
-                        "currency": "zł",
-                        "product_type": "product_item",
-                        "unit": "szt.",
-                        "unit_plural": "szt.",
+                    "currency": "zł",
+                    "product_type": "product_item",
+                    "unit": "szt.",
+                    "unit_plural": "szt.",
 
-                        "unit_sellby": "1",
-                        "unit_precision": "0",
+                    "unit_sellby": "1",
+                    "unit_precision": "0",
 
-                        "base_price": {
+                    "base_price": {
 
-                            "maxprice": "106.50",
+                        "maxprice": "106.50",
 
-                            "maxprice_formatted": "106,50 zł",
+                        "maxprice_formatted": "106,50 zł",
 
-                            "maxprice_net": "86.59",
+                        "maxprice_net": "86.59",
 
-                            "maxprice_net_formatted": "86,59 zł",
+                        "maxprice_net_formatted": "86,59 zł",
 
-                            "minprice": "106.50",
+                        "minprice": "106.50",
 
-                            "minprice_formatted": "106,50 zł",
+                        "minprice_formatted": "106,50 zł",
 
-                            "minprice_net": "86.59",
+                        "minprice_net": "86.59",
 
-                            "minprice_net_formatted": "86,59 zł",
+                        "minprice_net_formatted": "86,59 zł",
 
-                            "size_max_maxprice_net": "134.14",
+                        "size_max_maxprice_net": "134.14",
 
-                            "size_min_maxprice_net": "134.14",
+                        "size_min_maxprice_net": "134.14",
 
-                            "size_max_maxprice_net_formatted": "134,14 zł",
+                        "size_max_maxprice_net_formatted": "134,14 zł",
 
-                            "size_min_maxprice_net_formatted": "134,14 zł",
+                        "size_min_maxprice_net_formatted": "134,14 zł",
 
-                            "size_max_maxprice": "164.99",
+                        "size_max_maxprice": "164.99",
 
-                            "size_min_maxprice": "164.99",
+                        "size_min_maxprice": "164.99",
 
-                            "size_max_maxprice_formatted": "164,99 zł",
+                        "size_max_maxprice_formatted": "164,99 zł",
 
-                            "size_min_maxprice_formatted": "164,99 zł",
+                        "size_min_maxprice_formatted": "164,99 zł",
 
-                            "price_unit_sellby": "106.50",
+                        "price_unit_sellby": "106.50",
 
-                            "value": "106.50",
-                            "price_formatted": "106,50 zł",
-                            "price_net": "86.59",
-                            "price_net_formatted": "86,59 zł",
-                            "yousave_percent": "35",
-                            "beforerebate": "164.99",
-                            "beforerebate_formatted": "164,99 zł",
-                            "max_worth": "164.99",
-                            "max_worth_formatted": "164,99 zł",
-                            "beforerebate_net": "134.14",
-                            "beforerebate_net_formatted": "134,14 zł",
-                            "max_worth_net": "134.14",
-                            "max_worth_net_formatted": "134,14 zł",
-                            "vat": "23",
-                            "yousave": "58.49",
-                            "maxprice": "164.99",
-                            "yousave_formatted": "58,49 zł",
-                            "maxprice_formatted": "164,99 zł",
-                            "yousave_net": "47.55",
-                            "maxprice_net": "134.14",
-                            "yousave_net_formatted": "47,55 zł",
-                            "maxprice_net_formatted": "134,14 zł",
-                            "worth": "106.50",
-                            "worth_net": "86.59",
-                            "worth_formatted": "106,50 zł",
-                            "worth_net_formatted": "86,59 zł",
-                            "max_diff_gross": "58.49",
-                            "max_diff_gross_formatted": "58,49 zł",
-                            "max_diff_percent": "35",
-                            "max_diff_net": "47.55",
-                            "max_diff_net_formatted": "47,55 zł",
-                            "basket_enable": "y",
-                            "special_offer": "false",
-                            "rebate_code_active": "y",
-                            "priceformula_error": "false"
-                        },
+                        "value": "106.50",
+                        "price_formatted": "106,50 zł",
+                        "price_net": "86.59",
+                        "price_net_formatted": "86,59 zł",
+                        "yousave_percent": "35",
+                        "beforerebate": "164.99",
+                        "beforerebate_formatted": "164,99 zł",
+                        "max_worth": "164.99",
+                        "max_worth_formatted": "164,99 zł",
+                        "beforerebate_net": "134.14",
+                        "beforerebate_net_formatted": "134,14 zł",
+                        "max_worth_net": "134.14",
+                        "max_worth_net_formatted": "134,14 zł",
+                        "vat": "23",
+                        "yousave": "58.49",
+                        "maxprice": "164.99",
+                        "yousave_formatted": "58,49 zł",
+                        "maxprice_formatted": "164,99 zł",
+                        "yousave_net": "47.55",
+                        "maxprice_net": "134.14",
+                        "yousave_net_formatted": "47,55 zł",
+                        "maxprice_net_formatted": "134,14 zł",
+                        "worth": "106.50",
+                        "worth_net": "86.59",
+                        "worth_formatted": "106,50 zł",
+                        "worth_net_formatted": "86,59 zł",
+                        "max_diff_gross": "58.49",
+                        "max_diff_gross_formatted": "58,49 zł",
+                        "max_diff_percent": "35",
+                        "max_diff_net": "47.55",
+                        "max_diff_net_formatted": "47,55 zł",
+                        "basket_enable": "y",
+                        "special_offer": "false",
+                        "rebate_code_active": "y",
+                        "priceformula_error": "false"
+                    },
 
-                        "order_quantity_range": {
+                    "order_quantity_range": {
 
-                        },
+                    },
 
-                        "sizes": {
+                    "sizes": {
 
-                            "uniw": {
+                        "uniw": {
 
-                                "type": "uniw",
+                            "type": "uniw",
 
-                                "priority": "0",
+                            "priority": "0",
 
-                                "description": "uniwersalny",
+                            "description": "uniwersalny",
 
-                                "name": "uniw",
+                            "name": "uniw",
 
-                                "amount": 4941,
+                            "amount": 4941,
 
-                                "amount_mo": 0,
+                            "amount_mo": 0,
 
-                                "amount_mw": 4941,
+                            "amount_mw": 4941,
 
-                                "amount_mp": 0,
+                            "amount_mp": 0,
 
-                                "code_extern": "Baz-top12",
+                            "code_extern": "Baz-top12",
 
-                                "code_producer": "8026028001210",
+                            "code_producer": "8026028001210",
 
-                                "shipping_time": {
+                            "shipping_time": {
 
-                                    "days": "0",
-                                    "working_days": "0",
-                                    "hours": "0",
-                                    "minutes": "0",
-                                    "time": "2023-11-14 10:10",
-                                    "week_day": "2",
-                                    "week_amount": "0",
-                                    "today": "true",
-                                    "today_shipment_deadline": "15:00:00"
-                                },
+                                "days": "0",
+                                "working_days": "0",
+                                "hours": "0",
+                                "minutes": "0",
+                                "time": "2023-11-14 10:10",
+                                "week_day": "2",
+                                "week_amount": "0",
+                                "today": "true",
+                                "today_shipment_deadline": "15:00:00"
+                            },
 
-                                "delay_time": {
+                            "delay_time": {
 
-                                    "days": "0",
-                                    "hours": "0",
-                                    "minutes": "0",
-                                    "time": "2023-11-14 10:10:12",
-                                    "week_day": "2",
-                                    "week_amount": "0",
-                                    "unknown_delivery_time": "false"
-                                },
+                                "days": "0",
+                                "hours": "0",
+                                "minutes": "0",
+                                "time": "2023-11-14 10:10:12",
+                                "week_day": "2",
+                                "week_amount": "0",
+                                "unknown_delivery_time": "false"
+                            },
 
-                                "delivery": {
+                            "delivery": {
 
-                                    "undefined": "false",
-                                    "shipping": "0.00",
-                                    "shipping_formatted": "0,00 zł",
-                                    "limitfree": "0.00",
-                                    "limitfree_formatted": "0,00 zł"
-                                },
-                                "price": {
+                                "undefined": "false",
+                                "shipping": "0.00",
+                                "shipping_formatted": "0,00 zł",
+                                "limitfree": "0.00",
+                                "limitfree_formatted": "0,00 zł"
+                            },
+                            "price": {
 
-                                    "value": "106.50",
-                                    "price_formatted": "106,50 zł",
-                                    "price_net": "86.59",
-                                    "price_net_formatted": "86,59 zł",
-                                    "yousave_percent": "35",
-                                    "beforerebate": "164.99",
-                                    "beforerebate_formatted": "164,99 zł",
-                                    "max_worth": "164.99",
-                                    "max_worth_formatted": "164,99 zł",
-                                    "beforerebate_net": "134.14",
-                                    "beforerebate_net_formatted": "134,14 zł",
-                                    "max_worth_net": "134.14",
-                                    "max_worth_net_formatted": "134,14 zł",
-                                    "vat": "23",
-                                    "yousave": "58.49",
-                                    "maxprice": "164.99",
-                                    "yousave_formatted": "58,49 zł",
-                                    "maxprice_formatted": "164,99 zł",
-                                    "yousave_net": "47.55",
-                                    "maxprice_net": "134.14",
-                                    "yousave_net_formatted": "47,55 zł",
-                                    "maxprice_net_formatted": "134,14 zł",
-                                    "worth": "106.50",
-                                    "worth_net": "86.59",
-                                    "worth_formatted": "106,50 zł",
-                                    "worth_net_formatted": "86,59 zł",
-                                    "max_diff_gross": "58.49",
-                                    "max_diff_gross_formatted": "58,49 zł",
-                                    "max_diff_percent": "35",
-                                    "max_diff_net": "47.55",
-                                    "max_diff_net_formatted": "47,55 zł",
-                                    "basket_enable": "y",
-                                    "special_offer": "false",
-                                    "rebate_code_active": "y",
-                                    "priceformula_error": "false"
-                                },
-                                "weight": {
+                                "value": "106.50",
+                                "price_formatted": "106,50 zł",
+                                "price_net": "86.59",
+                                "price_net_formatted": "86,59 zł",
+                                "yousave_percent": "35",
+                                "beforerebate": "164.99",
+                                "beforerebate_formatted": "164,99 zł",
+                                "max_worth": "164.99",
+                                "max_worth_formatted": "164,99 zł",
+                                "beforerebate_net": "134.14",
+                                "beforerebate_net_formatted": "134,14 zł",
+                                "max_worth_net": "134.14",
+                                "max_worth_net_formatted": "134,14 zł",
+                                "vat": "23",
+                                "yousave": "58.49",
+                                "maxprice": "164.99",
+                                "yousave_formatted": "58,49 zł",
+                                "maxprice_formatted": "164,99 zł",
+                                "yousave_net": "47.55",
+                                "maxprice_net": "134.14",
+                                "yousave_net_formatted": "47,55 zł",
+                                "maxprice_net_formatted": "134,14 zł",
+                                "worth": "106.50",
+                                "worth_net": "86.59",
+                                "worth_formatted": "106,50 zł",
+                                "worth_net_formatted": "86,59 zł",
+                                "max_diff_gross": "58.49",
+                                "max_diff_gross_formatted": "58,49 zł",
+                                "max_diff_percent": "35",
+                                "max_diff_net": "47.55",
+                                "max_diff_net_formatted": "47,55 zł",
+                                "basket_enable": "y",
+                                "special_offer": "false",
+                                "rebate_code_active": "y",
+                                "priceformula_error": "false"
+                            },
+                            "weight": {
 
-                                    "g": "1000",
-                                    "kg": "1"
-                                }
+                                "g": "1000",
+                                "kg": "1"
                             }
                         }
-
                     }
-                    var trust_level = '1';
+
+                }
+                var trust_level = '1';
                 </script>
                 <form id="projector_form" class="projector_details is-validated enable"
                     action="https://www.konesso.pl/basketchange.php" method="post" data-product_id="29"
@@ -335,22 +339,22 @@
                         id="projector_product_hidden" type="hidden" name="product" value="29"><input
                         id="projector_size_hidden" type="hidden" name="size" autocomplete="off" value="onesize"><input
                         id="projector_mode_hidden" type="hidden" name="mode" value="1">
-                        <div id="versions" class="projector_details__versions projector_versions"><span
-                                class="projector_versions__label">Dostępne opakowania</span>
-                            <div class="projector_versions__sub"><a class="projector_versions__item --selected"
-                                    href="/product-pol-29-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html"
-                                    title="1000g"><span class="projector_versions__gfx"><img
-                                            src="https://mkfreshprod.azureedge.net/img/360/383/70/resize-contain/catalog/product/m/k/mk_fr_christmas_22_1880.jpg"
-                                            alt="1000g"></span><span class="projector_versions__name">1000g</span></a><a
-                                    class="projector_versions__item"
-                                    href="/product-pol-2016-Kawa-ziarnista-Bazzara-DODICIGRANCRU-250g.html"
-                                    title="250g"><span class="projector_versions__gfx"><img
-                                            src="https://mkfreshprod.azureedge.net/img/360/383/70/resize-contain/catalog/product/b/r/brazil-honey_1880x2000_1.jpg"
-                                            alt="250g"></span><span class="projector_versions__name">250g</span></a>
-                            </div>
+                    <div id="versions" class="projector_details__versions projector_versions"><span
+                            class="projector_versions__label">Dostępne opakowania</span>
+                        <div class="projector_versions__sub"><a class="projector_versions__item --selected"
+                                href="/product-pol-29-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html" title="1000g"><span
+                                    class="projector_versions__gfx"><img
+                                        src="https://mkfreshprod.azureedge.net/img/360/383/70/resize-contain/catalog/product/m/k/mk_fr_christmas_22_1880.jpg"
+                                        alt="1000g"></span><span class="projector_versions__name">1000g</span></a><a
+                                class="projector_versions__item"
+                                href="/product-pol-2016-Kawa-ziarnista-Bazzara-DODICIGRANCRU-250g.html"
+                                title="250g"><span class="projector_versions__gfx"><img
+                                        src="https://mkfreshprod.azureedge.net/img/360/383/70/resize-contain/catalog/product/b/r/brazil-honey_1880x2000_1.jpg"
+                                        alt="250g"></span><span class="projector_versions__name">250g</span></a>
                         </div>
+                    </div>
                     <div class="projector_details__wrapper">
-                        
+
                         <div id="projector_sizes_cont" class="projector_details__sizes projector_sizes"
                             data-onesize="true" style="display: none;"><span
                                 class="projector_sizes__label">Rozmiar</span>
@@ -375,10 +379,12 @@
                                         style="display:none">1</span><span class="projector_prices__unit"
                                         id="projector_price_unit">szt.</span></div>
                             </div>
-                            <div class="product__promo_omnibus omnibus_price mt-4"><span class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
-                                        </span><span class="omnibus_price__value">188,00 zł</span></div>
-                            <div class="product__promo_forkg omnibus_price"><span class="omnibus_price__text">Cena w przeliczeniu na 1 kg:
-                                        </span><span class="omnibus_price__value">255,00 zł</span></div>
+                            <div class="product__promo_omnibus omnibus_price mt-4"><span
+                                    class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
+                                </span><span class="omnibus_price__value">188,00 zł</span></div>
+                            <div class="product__promo_forkg omnibus_price"><span class="omnibus_price__text">Cena w
+                                    przeliczeniu na 1 kg:
+                                </span><span class="omnibus_price__value">255,00 zł</span></div>
                             <div class="projector_prices__srp_wrapper" id="projector_price_srp_wrapper"
                                 style="display:none;"><span class="projector_prices__srp_label">Cena
                                     katalogowa:</span><strong class="projector_prices__srp"
@@ -489,7 +495,7 @@
                             </div>
                         </div>
                         <div class="projector_details__info projector_info">
-                            
+
                             <div id="projector_status"
                                 class="projector_info__item --status projector_status --time-show ">
                                 <span class="icon-check projector_info__icon text-success"></span>
@@ -506,7 +512,8 @@
                                             class="projector_status__info_label" id="projector_delivery_label">Wysyłka
                                         </strong><strong class="projector_status__info_days"
                                             id="projector_delivery_days" style=""> dzisiaj</strong><span
-                                            class="projector_status__info_amount" id="projector_amount" style=""> </span></div>
+                                            class="projector_status__info_amount" id="projector_amount" style="">
+                                        </span></div>
                                 </div>
                             </div>
                             <div class="projector_info__item --shipping projector_shipping"
@@ -518,7 +525,7 @@
                                     class="projector_returns__icon projector_info__icon"></span><span
                                     class="projector_returns__info projector_info__link"><span
                                         class="projector_returns__days">14</span> dni na darmowy zwrot</span></div>
-                          
+
                             <div class="projector_info__item --safe projector_safe"><span
                                     class="projector_safe__icon projector_info__icon"></span><span
                                     class="projector_safe__info projector_info__link">Bezpieczne zakupy</span></div>
@@ -594,10 +601,11 @@
                 </script>
 
 
-<section id="product_extra_info">
+                <section id="product_extra_info">
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center">
-                            <img  src="https://mkfreshprod.azureedge.net/img/360/200/70/resize/catalog/product//m/k/mkcafe_1366_produkt_brazil_1.jpg" alt="" >
+                            <img src="https://mkfreshprod.azureedge.net/img/360/200/70/resize/catalog/product//m/k/mkcafe_1366_produkt_brazil_1.jpg"
+                                alt="">
                         </div>
                         <div class="col-md-2">
                             <ul class="mk_extra_info">
@@ -618,30 +626,33 @@
                                     <b>średni (medium)</b>
                                 </li>
                             </ul>
-  
+
                         </div>
                         <div class="col-md-4">
                             <canvas id="radar-chart" width="360" height="400" style=""></canvas>
 
                             <script src="assets/js/Chart.min.js"></script>
                             <script>
-                                var radarChart = new Chart($('#radar-chart'), {
+                            var radarChart = new Chart($('#radar-chart'), {
                                 type: 'radar',
                                 data: {
-                                    labels: ['Czekolada', 'Słodycz', 'Karmel', 'Gorycz', 'Nuty kwiatowe', 'Owoce', 'Orzech', 'Karmel', 'Gorycz', 'Nuty kwiatowe', 'Owoce', 'Orzech'],
+                                    labels: ['Czekolada', 'Słodycz', 'Karmel', 'Gorycz', 'Nuty kwiatowe',
+                                        'Owoce', 'Orzech', 'Karmel', 'Gorycz', 'Nuty kwiatowe', 'Owoce',
+                                        'Orzech'
+                                    ],
                                     datasets: [{
-                                    backgroundColor: "#b29370",
-                                    borderColor: "#b29370",
-                                    pointBackgroundColor: "transparent",
-                                    pointBorderColor: "transparent",
-                                    fill: "origin",                                    
-                                    data: [65, 59, 90, 81, 56, 55, 40, 0, 40, 10, 50]
+                                        backgroundColor: "#b29370",
+                                        borderColor: "#b29370",
+                                        pointBackgroundColor: "transparent",
+                                        pointBorderColor: "transparent",
+                                        fill: "origin",
+                                        data: [65, 59, 90, 81, 56, 55, 40, 0, 40, 10, 50]
                                     }]
                                 },
                                 options: {
                                     responsive: true,
                                     legend: {
-                                            display: false
+                                        display: false
                                     },
                                     scale: {
                                         ticks: {
@@ -649,18 +660,17 @@
                                         }
                                     }
                                 },
-                               
-                                
-
-                                
-                                }); 
 
 
-                                
+
+
+                            });
                             </script>
                         </div>
                         <div class="col-md-2">
-                            <span class="d-flex justify-content-around mb-3 text-center text-uppercase w-100">REKOMENDOWANY SPOSÓB PARZENIA</span>
+                            <span
+                                class="d-flex justify-content-around mb-3 text-center text-uppercase w-100">REKOMENDOWANY
+                                SPOSÓB PARZENIA</span>
                             <div class="align-items-center d-flex flex-md-column justify-content-around">
                                 <div class="cafe-method img-method313"></div>
                                 <div class="cafe-method img-method311"></div>
@@ -671,12 +681,13 @@
                 <section id="projector_producttraits" class="traits mt-5 ">
                     <div class="row">
                         <div class="col-md-6 mb-5">
-                          
-                           
+
+
                             <div class=" d-flex justify-content-between">
                                 <p class="text-uppercase">Profil aromatyczny</p>
                                 <div class="font-bold aroma-links">
-                                    <a href="#">orzech,</a> <a href="#">karmel,</a> <a href="#">miód,</a> <a href="#">mleczna czekolada</a>
+                                    <a href="#">orzech,</a> <a href="#">karmel,</a> <a href="#">miód,</a> <a
+                                        href="#">mleczna czekolada</a>
                                 </div>
                             </div>
 
@@ -709,47 +720,62 @@
                                 </b>
                             </div>
                             <!-- <div class="hrline mt-2 mb-2"></div> -->
-                          
+
                         </div>
                         <div class="col-md-6 mb-5">
-                                <div class="traits__wrapper">
+                            <div class="traits__wrapper">
                                 <div class="traits__item mb-2" data-hide="false"><span
                                         class="traits__label mr-2">Skład</span><span
                                         class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
                                             href="/tra-pol-1335603424-100-Arabika.html">100% Arabika</a></span></div>
-                                <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Stopień
+                                <div class="traits__item mb-2" data-hide="false"><span
+                                        class="traits__label mr-2">Stopień
                                         palenia</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603489-Sredni.html">Średni</a></span></div>
-                                <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Zawartość
+                                            class="traits__value"
+                                            href="/tra-pol-1335603489-Sredni.html">Średni</a></span></div>
+                                <div class="traits__item mb-2" data-hide="false"><span
+                                        class="traits__label mr-2">Zawartość
                                         kofeiny</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603492-Niska.html">Niska</a></span></div>
+                                            class="traits__value" href="/tra-pol-1335603492-Niska.html">Niska</a></span>
+                                </div>
                                 <div class="traits__item mb-2" data-hide="false"><span
                                         class="traits__label mr-2">Rodzaj</span><span
                                         class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603587-Kawa-ziarnista.html">Kawa ziarnista</a></span></div>
-                                <div class="traits__item mb-2" data-hide="false"><span class="traits__label mr-2">Przeznaczenie
+                                            href="/tra-pol-1335603587-Kawa-ziarnista.html">Kawa ziarnista</a></span>
+                                </div>
+                                <div class="traits__item mb-2" data-hide="false"><span
+                                        class="traits__label mr-2">Przeznaczenie
                                     </span><span class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
                                             href="/tra-pol-1335603592-Do-ekspresu-automatycznego.html">Do ekspresu
                                             automatycznego</a><a class="traits__value"
-                                            href="/tra-pol-1335603593-Do-ekspresu-kolbowego.html">Do ekspresu kolbowego</a><a
-                                            class="traits__value" href="/tra-pol-1335603581-Do-biura.html">Do biura</a><a
+                                            href="/tra-pol-1335603593-Do-ekspresu-kolbowego.html">Do ekspresu
+                                            kolbowego</a><a class="traits__value"
+                                            href="/tra-pol-1335603581-Do-biura.html">Do biura</a><a
                                             class="traits__value" href="/tra-pol-1335603579-Do-kawiarni.html">Do
                                             kawiarni</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Polecana
-                                        do</span><span class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603896-Espresso.html">Espresso</a><a class="traits__value"
-                                            href="/tra-pol-1335603897-Kawa-czarna.html">Kawa czarna</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Blend czy
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Polecana
+                                        do</span><span class="traits__values d-inline-flex flex-wrap"><a
+                                            class="traits__value"
+                                            href="/tra-pol-1335603896-Espresso.html">Espresso</a><a
+                                            class="traits__value" href="/tra-pol-1335603897-Kawa-czarna.html">Kawa
+                                            czarna</a></span></div>
+                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Blend
+                                        czy
                                         Single</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603893-Blend-Mieszanki.html">Blend /
+                                            class="traits__value" href="/tra-pol-1335603893-Blend-Mieszanki.html">Blend
+                                            /
                                             Mieszanki</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Pochodzenie
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Pochodzenie
                                         ziaren</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603921-Ameryka-Poludniowa.html">Ameryka
+                                            class="traits__value"
+                                            href="/tra-pol-1335603921-Ameryka-Poludniowa.html">Ameryka
                                             Południowa</a><a class="traits__value"
                                             href="/tra-pol-1335603906-Ameryka-Srodkowa.html">Ameryka Środkowa</a><a
                                             class="traits__value" href="/tra-pol-1335603904-Indie.html">Indie</a><a
-                                            class="traits__value" href="/tra-pol-1335603902-Etiopia.html">Etiopia</a></span>
+                                            class="traits__value"
+                                            href="/tra-pol-1335603902-Etiopia.html">Etiopia</a></span>
                                 </div>
                                 <div class="traits__item mb-2" data-hide="true"><span
                                         class="traits__label mr-2">Kwasowość</span><span
@@ -763,13 +789,17 @@
                                         class="traits__label mr-2">Słodycz</span><span
                                         class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
                                             href="/tra-pol-1335603923-Mocna.html">Mocna</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Intensywność
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Intensywność
                                         smaku</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603914-Srednia.html">Średnia</a></span>
+                                            class="traits__value"
+                                            href="/tra-pol-1335603914-Srednia.html">Średnia</a></span>
                                 </div>
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Wyczuwalne
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Wyczuwalne
                                         smaki</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603925-Czekolada.html">Czekolada</a><a
+                                            class="traits__value"
+                                            href="/tra-pol-1335603925-Czekolada.html">Czekolada</a><a
                                             class="traits__value" href="/tra-pol-1335603937-Kwiaty.html">Kwiaty</a><a
                                             class="traits__value" href="/tra-pol-1335603933-Lisc-tytoniu.html">Liść
                                             tytoniu</a><a class="traits__value"
@@ -780,14 +810,18 @@
                                             href="/tra-pol-1335603926-Gesta.html">Gęsta</a></span></div>
                                 <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Sposób
                                         przygotowania</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603886-Ekspres-automatyczny.html">Ekspres
+                                            class="traits__value"
+                                            href="/tra-pol-1335603886-Ekspres-automatyczny.html">Ekspres
                                             automatyczny</a><a class="traits__value"
                                             href="/tra-pol-1335603888-Ekspres-kolbowy.html">Ekspres kolbowy</a><a
                                             class="traits__value" href="/tra-pol-1335603883-French-Press.html">French
                                             Press</a><a class="traits__value"
-                                            href="/tra-pol-1335603880-Kawiarka.html">Kawiarka</a><a class="traits__value"
-                                            href="/tra-pol-1335603879-Tradycyjny.html">Tradycyjny</a><a class="traits__value"
-                                            href="/tra-pol-1335603887-Ekspres-przelewowy.html">Ekspres przelewowy</a></span>
+                                            href="/tra-pol-1335603880-Kawiarka.html">Kawiarka</a><a
+                                            class="traits__value"
+                                            href="/tra-pol-1335603879-Tradycyjny.html">Tradycyjny</a><a
+                                            class="traits__value"
+                                            href="/tra-pol-1335603887-Ekspres-przelewowy.html">Ekspres
+                                            przelewowy</a></span>
                                 </div>
                                 <div class="traits__item mb-2" data-hide="true"><span
                                         class="traits__label mr-2">Palarnia</span><span
@@ -797,23 +831,215 @@
                                         class="traits__label mr-2">Opakowanie</span><span
                                         class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
                                             href="/tra-pol-1335603658-1000g.html">1000g</a></span></div>
-                               
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Dostępne
+
+                                <div class="traits__item mb-2" data-hide="true"><span
+                                        class="traits__label mr-2">Dostępne
                                         opakowania</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335604276-1000g.html">1000g</a></span></div>
+                                            class="traits__value" href="/tra-pol-1335604276-1000g.html">1000g</a></span>
+                                </div>
                                 <div class="traits__item mb-2" data-hide="true"><span
                                         class="traits__label mr-2">Waga</span><span
                                         class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
                                             href="/tra-pol-1335604648-1000.html">1000</a></span></div>
-                            </div><a href="#showAllTraits" class="traits__all" style="text-decoration: none"><i class="icon-angle-down"></i>&nbsp;Pokaż wszystkie </a>
+                            </div><a href="#showAllTraits" class="traits__all" style="text-decoration: none"><i
+                                    class="icon-angle-down"></i>&nbsp;Pokaż wszystkie </a>
                         </div>
                     </div>
-                   
+
                 </section>
-                
+
                 <section id="projector_longdescription" class="longdescription cm mt-5  col-12" data-traits="true"
                     data-dictionary="true">
-                    <div class="base-html-renderer-wrap relative" style="overflow: hidden;"><div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center ml-auto mr-auto row" style="margin-bottom: 20px;"><div class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-0 col-lg-4 col-lg-push-1 text-center"><div style="position: relative; padding-bottom: 69%; height: 0;"><figure class="base-img-wrap inline-block mk2 loaded lazyload"><img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-1.jpg" alt="Brazil Mogiana" class="base-img-image inline w-full" style="position:absolute;top:0;left:0;width:100%;height:100%;"> <!----></figure></div></div> <div class="col-xs-12 col-md-6 col-lg-5 col-lg-push-1"><h2 class="subtitle1" style="margin: 10px 0 0;">Brazil Mogiana - cudowny smak, intensywny aromat</h2> <p class="boldLead">Urzekający smak, który cechuje wyjątkowa delikatność, będzie świetną propozycją na filiżankę kawy o dowolnej porze dnia. Właśnie ze względu na wspomniane wyżej właściwości <strong>Brazil</strong> <strong>Mogiana</strong> cieszy się przydomkiem „klasycznej”, gdyż będzie wyśmienicie smakować zarówno do śniadania, w trakcie lunchu, jak i popołudniowego czasu spędzonego w gronie bliskich, czy znajomych.<strong> Świeżo palona kawa</strong> swoją nazwę zaczerpnęła od regionu umiejscowionego na granicy stanów São Paulo i Minas Gerais, w których znajdują się jej plantacje.</p></div></div> <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center ml-auto mr-auto row"><div class="col-xs-12 col-md-7 col-md-push-1 col-lg-5 col-lg-push-2"><p>Warunki klimatyczne panujące we wspomnianym regionie sprawiają, że <strong>brazylijska</strong> <strong>kawa</strong> <strong>ziarnista</strong> cechuje się łagodnym smakiem o niskiej kwasowości, niewyczuwalnej goryczce i subtelnej słodyczy. Z kolei jej aromat to zdecydowanie nuty orzechowe, miodowe oraz czekoladowe.</p></div></div> <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center ml-auto mr-auto row" style="margin-top: 15px; margin-bottom: 15px;"><div class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-7 col-lg-4 col-lg-push-7 text-center"><div style="position: relative; padding-bottom: 69%; height: 0;"><figure class="base-img-wrap inline-block mk2 loaded lazyload"><img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-2.jpg" alt="Brazil Mogiana" class="base-img-image inline w-full" style="position:absolute;top:0;left:0;width:100%;height:100%;"> <!----></figure></div></div> <div class="col-xs-12 col-md-6 col-md-pull-4 col-lg-5 col-lg-pull-2"><h2 class="subtitle2" style="margin-top: 15px;">Brazylijska kawa ziarnista - owoc najlepszych plantacji w kraju</h2> <p><strong>Kawa ziarnista 250 g</strong> to wynik rzetelnie wykonywanej pracy w obszarze niemalże stworzonym do uprawy kawowca. Mowa tutaj o trzech regionach, do których należy zaliczyć Mogianę, Sul Minas i Cerrado. Wszystkie wyróżnia umiarkowany klimat - temperatura o każdej porze roku ulega bardzo nieznacznym wahaniom. To z kolei sprawia, że panujące na tym terenie warunki są idealne do uprawy Arabiki i Robusty na tutejszych plantacjach.</p></div></div> <div xmlns="http://www.w3.org/1999/xhtml" class="moreContent"><div class="d-flex justify-content-center ml-auto mr-auto row"><div class="col-xs-12 col-md-4 col-md-push-1 col-lg-3 col-lg-push-2"><p>Liczne Arabiki to niezwykle łagodne i delikatne odmiany o subtelnej, wyczuwalnej słodyczy. Efekt ten uzyskiwany jest dzięki tradycyjnej metodzie suchej, która opiera się na suszeniu ziaren razem z miąższem. Przebywają one na otwartym powietrzu przez około cztery tygodnie, czego efektem jest<strong> brazylijska kawa ziarnista</strong> o zrównoważonym smaku.</p> <p>Często zwane „kawowymi wiśniami” ziarna odznaczają się również słodkim aromatem, co przekłada się na delikatny balans znany wśród miłośników kawy jako „okrągły”.</p></div> <div class="hidden-xs hidden-sm col-md-6 col-md-push-1 col-lg-5 col-lg-push-2"><div style="position: relative; padding-bottom: 55%; height: 0;"><figure class="base-img-wrap inline-block mk2 loaded lazyload"><img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-txt-1.jpg" alt="Brazil Mogiana" class="base-img-image inline w-full" style="position:absolute;top:0;left:0;width:100%;height:100%;"> <!----></figure></div></div></div> <div class="d-flex justify-content-center ml-auto mr-auto row" style="margin-top: 15px; margin-bottom: 15px;"><div class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-7 col-lg-4 col-lg-push-7 text-center"><div style="position: relative; padding-bottom: 69%; height: 0;"><figure class="base-img-wrap inline-block mk2 loaded lazyload"><img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-3.jpg" alt="Brazil Mogiana" class="base-img-image inline w-full" style="position:absolute;top:0;left:0;width:100%;height:100%;"> <!----></figure></div></div> <div class="col-xs-12 col-md-6 col-md-pull-4 col-lg-5 col-lg-pull-2"><h2 class="subtitle2" style="margin-top: 15px;">Brazylia - kawowy gigant na rynku</h2> <p>Aż 30% światowych zbiorów kawy pochodzi z Brazylii, okrzykniętej mianem kawowego giganta. Pierwszą osobą, która założyła plantację na południu tego kraju był oficer Francisco de Pahletta. Jego plantacja powstała w połowie XVIII wieku z przemyconych sadzonek kawowca pozyskanych z Gujany Francuskiej i została uznana za pierwszą w całej Brazylii.</p> <p>Na przestrzeni stu lat Brazylia niebagatelnie szybko rozwinęła uprawę kawowców, których efekt w postaci ziaren na stałe wpisał się w codzienność i tradycję Brazylijczyków.</p> <div class="hidden-xs hidden-sm" style="position: relative; padding-bottom: 58%; height: 0;"><figure class="base-img-wrap inline-block mk2 loaded lazyload"><img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-txt-2.jpg" alt="Brazil Mogiana" class="base-img-image inline w-full" style="position:absolute;top:0;left:0;width:100%;height:100%;"> <!----></figure></div></div></div> <div class="d-flex justify-content-center ml-auto mr-auto row"><div class="col-xs-10 col-xs-push-1 hidden-md hidden-lg text-center"><div style="position: relative; padding-bottom: 69%; height: 0;"><figure class="base-img-wrap inline-block mk2 not-loaded w-full text-center lazyload"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAPDw8P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Brazil Mogiana" class="base-img-image inline w-full" style="position:absolute;top:0;left:0;width:100%;height:100%;"> <div class="inner"><div class="spinner-outer"><div class="spinner-wrapper absolute inset-0 bg-grey-light min-h-12"><div class="spinner absolute left-1/2 top-1/2 flex"><div class="inline-block bg-gold-dark w-2 h-10 mx-1/2"></div><div class="inline-block bg-gold-dark w-2 h-10 mx-1/2"></div><div class="inline-block bg-gold-dark w-2 h-10 mx-1/2"></div><div class="inline-block bg-gold-dark w-2 h-10 mx-1/2"></div><div class="inline-block bg-gold-dark w-2 h-10 mx-1/2"></div></div></div></div></div></figure></div></div> <div class="col-xs-12 col-md-6 col-md-push-5 col-lg-5 col-lg-push-6"><p><strong>Kawa ziarnista 250 g </strong>nie jest wyłącznie napojem dodającym energii. To również symbol brazylijskiego stylu życia, nieokiełznanej żywiołowości tutejszych mieszkańców, którzy sposoby uprawy, zbioru, suszenia, obróbki i zaparzania przekazują sobie z pokolenia na pokolenie jako nieodłączny element tradycji. Najczęściej w brazylijskich domach kawa serwowana jest w postaci mocnego słodzonego wywaru zbliżonego do espresso.</p> <p>Kawa przyczyniła się ponadto do szeroko pojętego rozwoju gospodarki i infrastruktury. Spółka Mogiana, która zaczerpnęła swoją nazwę od nazwy regionu, stworzyła pierwsze linie kolejowe, co zapewniło lepszą komunikację i transport pomiędzy plantacjami znajdującymi się na tym obszarze.</p></div> <div class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-0 col-md-pull-6 col-lg-4 col-lg-push-0 col-lg-pull-4 text-center"><div style="position: relative; padding-bottom: 69%; height: 0;"><figure class="base-img-wrap inline-block mk2 loaded lazyload"><img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-5.jpg" alt="Brazil Mogiana" class="base-img-image inline w-full" style="position:absolute;top:0;left:0;width:100%;height:100%;"> <!----></figure></div></div></div> <div class="d-flex justify-content-center ml-auto mr-auto row"><div class="hidden-xs hidden-sm col-md-12 col-lg-9 col-lg-push-1 text-center"><div style="position: relative; padding-bottom: 28%; height: 0;"><figure class="base-img-wrap inline-block mk2 loaded lazyload"><img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-6.jpg" alt="Brazil Mogiana" class="base-img-image inline w-full" style="margin:15px 0;position:absolute;top:0;left:0;width:100%;height:100%;"> <!----></figure></div></div></div></div><div class="more-button-wrap"></div></div>
+                    <div class="base-html-renderer-wrap relative" style="overflow: hidden;">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                            class="d-flex justify-content-center ml-auto mr-auto row" style="margin-bottom: 20px;">
+                            <div
+                                class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-0 col-lg-4 col-lg-push-1 text-center">
+                                <div style="position: relative; padding-bottom: 69%; height: 0;">
+                                    <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
+                                            src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-1.jpg"
+                                            alt="Brazil Mogiana" class="base-img-image inline w-full"
+                                            style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                        <!---->
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-lg-5 col-lg-push-1">
+                                <h2 class="subtitle1" style="margin: 10px 0 0;">Brazil Mogiana - cudowny smak,
+                                    intensywny aromat</h2>
+                                <p class="boldLead">Urzekający smak, który cechuje wyjątkowa delikatność, będzie świetną
+                                    propozycją na filiżankę kawy o dowolnej porze dnia. Właśnie ze względu na wspomniane
+                                    wyżej właściwości <strong>Brazil</strong> <strong>Mogiana</strong> cieszy się
+                                    przydomkiem „klasycznej”, gdyż będzie wyśmienicie smakować zarówno do śniadania, w
+                                    trakcie lunchu, jak i popołudniowego czasu spędzonego w gronie bliskich, czy
+                                    znajomych.<strong> Świeżo palona kawa</strong> swoją nazwę zaczerpnęła od regionu
+                                    umiejscowionego na granicy stanów São Paulo i Minas Gerais, w których znajdują się
+                                    jej plantacje.</p>
+                            </div>
+                        </div>
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                            class="d-flex justify-content-center ml-auto mr-auto row">
+                            <div class="col-xs-12 col-md-7 col-md-push-1 col-lg-5 col-lg-push-2">
+                                <p>Warunki klimatyczne panujące we wspomnianym regionie sprawiają, że
+                                    <strong>brazylijska</strong> <strong>kawa</strong> <strong>ziarnista</strong>
+                                    cechuje się łagodnym smakiem o niskiej kwasowości, niewyczuwalnej goryczce i
+                                    subtelnej słodyczy. Z kolei jej aromat to zdecydowanie nuty orzechowe, miodowe oraz
+                                    czekoladowe.
+                                </p>
+                            </div>
+                        </div>
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                            class="d-flex justify-content-center ml-auto mr-auto row"
+                            style="margin-top: 15px; margin-bottom: 15px;">
+                            <div
+                                class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-7 col-lg-4 col-lg-push-7 text-center">
+                                <div style="position: relative; padding-bottom: 69%; height: 0;">
+                                    <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
+                                            src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-2.jpg"
+                                            alt="Brazil Mogiana" class="base-img-image inline w-full"
+                                            style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                        <!---->
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-md-pull-4 col-lg-5 col-lg-pull-2">
+                                <h2 class="subtitle2" style="margin-top: 15px;">Brazylijska kawa ziarnista - owoc
+                                    najlepszych plantacji w kraju</h2>
+                                <p><strong>Kawa ziarnista 250 g</strong> to wynik rzetelnie wykonywanej pracy w obszarze
+                                    niemalże stworzonym do uprawy kawowca. Mowa tutaj o trzech regionach, do których
+                                    należy zaliczyć Mogianę, Sul Minas i Cerrado. Wszystkie wyróżnia umiarkowany klimat
+                                    - temperatura o każdej porze roku ulega bardzo nieznacznym wahaniom. To z kolei
+                                    sprawia, że panujące na tym terenie warunki są idealne do uprawy Arabiki i Robusty
+                                    na tutejszych plantacjach.</p>
+                            </div>
+                        </div>
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="moreContent">
+                            <div class="d-flex justify-content-center ml-auto mr-auto row">
+                                <div class="col-xs-12 col-md-4 col-md-push-1 col-lg-3 col-lg-push-2">
+                                    <p>Liczne Arabiki to niezwykle łagodne i delikatne odmiany o subtelnej, wyczuwalnej
+                                        słodyczy. Efekt ten uzyskiwany jest dzięki tradycyjnej metodzie suchej, która
+                                        opiera się na suszeniu ziaren razem z miąższem. Przebywają one na otwartym
+                                        powietrzu przez około cztery tygodnie, czego efektem jest<strong> brazylijska
+                                            kawa ziarnista</strong> o zrównoważonym smaku.</p>
+                                    <p>Często zwane „kawowymi wiśniami” ziarna odznaczają się również słodkim aromatem,
+                                        co przekłada się na delikatny balans znany wśród miłośników kawy jako „okrągły”.
+                                    </p>
+                                </div>
+                                <div class="hidden-xs hidden-sm col-md-6 col-md-push-1 col-lg-5 col-lg-push-2">
+                                    <div style="position: relative; padding-bottom: 55%; height: 0;">
+                                        <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
+                                                src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-txt-1.jpg"
+                                                alt="Brazil Mogiana" class="base-img-image inline w-full"
+                                                style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                            <!---->
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center ml-auto mr-auto row"
+                                style="margin-top: 15px; margin-bottom: 15px;">
+                                <div
+                                    class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-7 col-lg-4 col-lg-push-7 text-center">
+                                    <div style="position: relative; padding-bottom: 69%; height: 0;">
+                                        <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
+                                                src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-3.jpg"
+                                                alt="Brazil Mogiana" class="base-img-image inline w-full"
+                                                style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                            <!---->
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 col-md-pull-4 col-lg-5 col-lg-pull-2">
+                                    <h2 class="subtitle2" style="margin-top: 15px;">Brazylia - kawowy gigant na rynku
+                                    </h2>
+                                    <p>Aż 30% światowych zbiorów kawy pochodzi z Brazylii, okrzykniętej mianem kawowego
+                                        giganta. Pierwszą osobą, która założyła plantację na południu tego kraju był
+                                        oficer Francisco de Pahletta. Jego plantacja powstała w połowie XVIII wieku z
+                                        przemyconych sadzonek kawowca pozyskanych z Gujany Francuskiej i została uznana
+                                        za pierwszą w całej Brazylii.</p>
+                                    <p>Na przestrzeni stu lat Brazylia niebagatelnie szybko rozwinęła uprawę kawowców,
+                                        których efekt w postaci ziaren na stałe wpisał się w codzienność i tradycję
+                                        Brazylijczyków.</p>
+                                    <div class="hidden-xs hidden-sm"
+                                        style="position: relative; padding-bottom: 58%; height: 0;">
+                                        <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
+                                                src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-txt-2.jpg"
+                                                alt="Brazil Mogiana" class="base-img-image inline w-full"
+                                                style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                            <!---->
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center ml-auto mr-auto row">
+                                <div class="col-xs-10 col-xs-push-1 hidden-md hidden-lg text-center">
+                                    <div style="position: relative; padding-bottom: 69%; height: 0;">
+                                        <figure
+                                            class="base-img-wrap inline-block mk2 not-loaded w-full text-center lazyload">
+                                            <img src="data:image/gif;base64,R0lGODlhAQABAPAAAPDw8P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                                alt="Brazil Mogiana" class="base-img-image inline w-full"
+                                                style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                            <div class="inner">
+                                                <div class="spinner-outer">
+                                                    <div
+                                                        class="spinner-wrapper absolute inset-0 bg-grey-light min-h-12">
+                                                        <div class="spinner absolute left-1/2 top-1/2 flex">
+                                                            <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
+                                                            </div>
+                                                            <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
+                                                            </div>
+                                                            <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
+                                                            </div>
+                                                            <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
+                                                            </div>
+                                                            <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 col-md-push-5 col-lg-5 col-lg-push-6">
+                                    <p><strong>Kawa ziarnista 250 g </strong>nie jest wyłącznie napojem dodającym
+                                        energii. To również symbol brazylijskiego stylu życia, nieokiełznanej
+                                        żywiołowości tutejszych mieszkańców, którzy sposoby uprawy, zbioru, suszenia,
+                                        obróbki i zaparzania przekazują sobie z pokolenia na pokolenie jako nieodłączny
+                                        element tradycji. Najczęściej w brazylijskich domach kawa serwowana jest w
+                                        postaci mocnego słodzonego wywaru zbliżonego do espresso.</p>
+                                    <p>Kawa przyczyniła się ponadto do szeroko pojętego rozwoju gospodarki i
+                                        infrastruktury. Spółka Mogiana, która zaczerpnęła swoją nazwę od nazwy regionu,
+                                        stworzyła pierwsze linie kolejowe, co zapewniło lepszą komunikację i transport
+                                        pomiędzy plantacjami znajdującymi się na tym obszarze.</p>
+                                </div>
+                                <div
+                                    class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-0 col-md-pull-6 col-lg-4 col-lg-push-0 col-lg-pull-4 text-center">
+                                    <div style="position: relative; padding-bottom: 69%; height: 0;">
+                                        <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
+                                                src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-5.jpg"
+                                                alt="Brazil Mogiana" class="base-img-image inline w-full"
+                                                style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                            <!---->
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center ml-auto mr-auto row">
+                                <div class="hidden-xs hidden-sm col-md-12 col-lg-9 col-lg-push-1 text-center">
+                                    <div style="position: relative; padding-bottom: 28%; height: 0;">
+                                        <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
+                                                src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-6.jpg"
+                                                alt="Brazil Mogiana" class="base-img-image inline w-full"
+                                                style="margin:15px 0;position:absolute;top:0;left:0;width:100%;height:100%;">
+                                            <!---->
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-button-wrap"></div>
+                    </div>
                 </section>
 
                 <section id="projector_in_bundle" class="hotspot mb-5 --list col-12">
@@ -838,15 +1064,16 @@
                                     <div class="product__prices flex-md-row align-items-md-center">
                                         <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
                                                 class="price --max"><del>989,94 zł</del></span><span
-                                                class="product__promo_info d-none">(Taniej w zestawie o 32%)</span></div>
+                                                class="product__promo_info d-none">(Taniej w zestawie o 32%)</span>
+                                        </div>
                                         <div class="product__price_wrapper"><strong class="price">665,33 zł<span
                                                     class="price_vat"> brutto</span></strong></div>
-                                                    
+
                                     </div>
                                     <div class="product__promo_omnibus omnibus_price"><span
                                             class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
                                         </span><span class="omnibus_price__value">978,00 zł</span></div>
-                                    
+
                                 </div><a class="product__see d-none d-md-block"
                                     href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html">
                                     Zobacz zestaw
@@ -872,10 +1099,11 @@
                                     <div class="product__prices flex-md-row align-items-md-center">
                                         <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
                                                 class="price --max"><del>198,97 zł</del></span><span
-                                                class="product__promo_info d-none">(Taniej w zestawie o 36%)</span></div>
+                                                class="product__promo_info d-none">(Taniej w zestawie o 36%)</span>
+                                        </div>
                                         <div class="product__price_wrapper"><strong class="price">126,13 zł<span
                                                     class="price_vat"> brutto</span></strong></div>
-                                                    
+
                                     </div>
                                     <div class="product__promo_omnibus omnibus_price"><span
                                             class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
@@ -906,7 +1134,8 @@
                                         <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
                                                 class="price --max"><span class="omnibus_label">Cena regularna:
                                                 </span><del>377,97 zł</del></span><span
-                                                class="product__promo_info d-none">(Taniej w zestawie o 39%)</span></div>
+                                                class="product__promo_info d-none">(Taniej w zestawie o 39%)</span>
+                                        </div>
                                         <div class="product__price_wrapper"><strong class="price">229,14 zł<span
                                                     class="price_vat"> brutto</span></strong></div>
                                     </div>
@@ -922,7 +1151,7 @@
                     </div>
                 </section>
 
-             
+
                 <section id="products_associated_zone1" class="hotspot mb-5 --list col-12" data-ajaxload="true"
                     data-pagetype="projector">
                     <div class="hotspot mb-5 skeleton"><span class="headline"></span>
@@ -1239,8 +1468,7 @@
         <script src="./js/projector_cms_sizes.js.gzip?r=1692344836">
         </script>
         <script>
-          
-                app_shop.runApp();
+        app_shop.runApp();
         </script>
 </body>
 
