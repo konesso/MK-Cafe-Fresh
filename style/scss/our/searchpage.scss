@@ -29,7 +29,7 @@ div.px-2.py-1.d-flex.flex-row.justify-content-center.align-items-center {
     }
 
     input:checked + label {
-        background: #bada55;
+        background: #070707;
     }
 
     input:checked + label:after {
@@ -49,6 +49,13 @@ div.px-2.py-1.d-flex.flex-row.justify-content-center.align-items-center {
     display: none;
 }
 
-// .additional-info {
-//     text-wrap: balance;
-// }
+.fa .fa-chevron-down {
+    font-size: 1.5rem;
+    color: #b29370;
+    margin-left: 10px;
+}
+.fa .fa-chevron-up {
+    font-size: 1.5rem;
+    color: #b29370;
+    margin-left: 10px;
+}

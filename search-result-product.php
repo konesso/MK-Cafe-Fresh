@@ -3,7 +3,7 @@
         data-product-id="16371"
         href="https://www.konesso.pl/product-pol-16371-Kawa-ziarnista-Jesienna-Kawariatka-1kg.html"
         title="Kawa ziarnista Jesienna Kawariatka 1kg">
-        <div class="graph-background p-2">
+        <div class="graph-background p-2" data-graph="<?= htmlspecialchars($product['graphData']) ?>">
             <div class="graph-title">Najedź myszką by poznać włąściwości smaku</div>
             <div>
                 <canvas class="radar-chart" width="100%" height="100%" style=""></canvas>
@@ -13,20 +13,18 @@
             </div>
         </div>
         <picture>
-            <source media="(max-width: 420px)"
-                srcset="https://www.konesso.pl/pol_is_Kawa-ziarnista-Jesienna-Kawariatka-1kg-16371.jpg">
-            <img src="https://mkfreshprod.azureedge.net/img/360/383/70/resize-contain/catalog/product/e/s/espresso_1880x2000.jpg"
-                alt="Kawa ziarnista Jesienna Kawariatka 1kg">
+            <source media="(max-width: 420px)" srcset="<?= htmlspecialchars($product['img']) ?>">
+            <img src="<?= htmlspecialchars($product['img']) ?>" alt="Kawa ziarnista Jesienna Kawariatka 1kg">
         </picture><strong class="label_icons"><span class="label --promo">
                 W promocji
             </span></strong>
     </a>
     <h3><a class="product__name"
             href="https://www.konesso.pl/product-pol-16371-Kawa-ziarnista-Jesienna-Kawariatka-1kg.html"
-            title="Kawa ziarnista Jesienna Kawariatka 1kg">Kawa ziarnista
-            Jesienna Kawariatka 1kg</a></h3>
+            title="Kawa ziarnista Jesienna Kawariatka 1kg"><?= htmlspecialchars($product['name']) ?></a></h3>
 
-    <div class="product__prices"><strong class="price">109,99 zł<span class="price__unit"> /
+    <div class="product__prices"><strong class="price"><?= htmlspecialchars($product['price']) ?><span
+                class="price__unit"> /
                 szt.</span><span class="price_vat"> brutto</span></strong>
     </div>
     <a class="product__compare_item --add btn" rel="nofollow"

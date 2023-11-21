@@ -36,13 +36,13 @@
                     <div class="dropdown-wrapper  justify-content-around px-2 py-1 d-none d-md-flex flex-row">
                         <div class="filter float-left md:float-none">
                             <button class="filter-dropdown-trigger px-2 py-1">
-                                Filtrowanie
+                                Filtrowanie <i class="fa fa-chevron-down"></i>
                             </button>
 
                         </div>
                         <div class="sort ml-5">
                             <button class="sort-dropdown-trigger py-1">
-                                Sortowanie
+                                Sortowanie <i class="fa fa-chevron-down"></i>
                             </button>
 
                         </div>
@@ -4912,17 +4912,87 @@
                         </form>
                     </section>
                 </div>
+
                 <section id="search" class="search products d-flex flex-wrap mb-2 mb-sm-3">
-                    <?php include 'search-result-product.php' ?>
-                    <?php include 'search-result-product.php' ?>
-                    <?php include 'search-result-product.php' ?>
-                    <?php include 'search-result-product.php' ?>
-                    <?php include 'search-result-product.php' ?>
-                    <?php include 'search-result-product.php' ?>
-                    <?php include 'search-result-product.php' ?>
-                    <?php include 'search-result-product.php' ?>
+                    <?php
+                    function generateRandomData() {
+                        $data = [];
+                        for ($i = 0; $i < 12; $i++) {
+                            $data[] = rand(30, 100); 
+                        }
+                        return implode(', ', $data);
+                    }
+                    $products = [
+                        [
+                        'name'=> 'Kawa ziarnista',
+                        'price'=> '29.99',
+                        'img'=>
+                        'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Crema-1kg-10376_2.jpg',
+                        ],
+                        [
+                        'name'=> 'Kawa ziarnista 2',
+                        'price'=> '39.99',
+                        'img'=> ' https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Premium-1kg-10377_3.jpg',
+                        ],
+                        [
+                        'name'=> 'Kawa ziarnista 3',
+                        'price'=> '49.99',
+                        'img'=> 'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Crema-1kg-10376_2.jpg'
+                        ],
+                        [
+                        'name'=> 'Kawa ziarnista 4',
+                        'price'=> '19.99',
+                        'img'=> 'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Premium-1kg-10377_3.jpg'
+                        ],
+                        [
+                        'name'=> 'Kawa ziarnista 5',
+                        'price'=> '149.99',
+                        'img'=> ' https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Crema-1kg-10376_2.jpg'
+                        ],
+                        [
+                        'name'=> 'Kawa ziarnista 6',
+                        'price'=> '249.99',
+                        'img'=> 'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Premium-1kg-10377_3.jpg'
+                        ],
+                        [
+                        'name'=> 'Kawa ziarnista 7',
+                        'price'=> '29.99',
+                        'img'=>
+                        'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Crema-1kg-10376_2.jpg',
+                        ],
+                        [
+                        'name'=> 'Kawa ziarnista 8',
+                        'price'=> '39.99',
+                        'img'=> ' https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Premium-1kg-10377_3.jpg',
+                        ],
+                        [
+                        'name'=> 'Kawa ziarnista 9',
+                        'price'=> '49.99',
+                        'img'=> 'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Crema-1kg-10376_2.jpg'
+                        ],
+                        [
+                        'name'=> 'Kawa ziarnista 10',
+                        'price'=> '19.99',
+                        'img'=> 'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Premium-1kg-10377_3.jpg'
+                        ],
+                        [
+                        'name'=> 'Kawa ziarnista 11',
+                        'price'=> '149.99',
+                        'img'=> ' https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Crema-1kg-10376_2.jpg'
+                        ],
+                        [
+                        'name'=> 'Kawa ziarnista 12',
+                        'price'=> '249.99',
+                        'img'=> 'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Premium-1kg-10377_3.jpg'
+                        ]
+                        ];
+                    foreach ($products as $product) {
+                        $product['graphData'] = generateRandomData();
+                        include 'search-result-product.php';
+                    } 
 
 
+                   ?>
                 </section>
                 <div id="paging_setting_bottom" class="s_paging">
                     <form class="s_paging__item --sort d-none" action="https://www.konesso.pl/settings.php">
