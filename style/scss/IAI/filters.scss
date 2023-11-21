@@ -35,6 +35,11 @@
         margin: 1rem 0 0;
     }
 }
+@media (min-width: 979px) {
+    .filters__block > .filters__toggler.--not-expanded + .filters__expand {
+        display: block;
+    }
+}
 .filters {
     padding-right: env(safe-area-inset-right);
     .f-group {
@@ -113,6 +118,7 @@
 .filters__toggler {
     display: block;
     margin-bottom: 1.5rem;
+   
     &:not(.--not-expandable) {
         .btn.--icon-right {
             &:before {
@@ -137,6 +143,7 @@
         padding: 0.75rem 0;
         span {
             font-size: 1.3rem;
+            font-family: 'Futura';
         }
     }
 }
@@ -168,13 +175,14 @@
             padding: 0.75rem 0;
             span {
                 font-size: 1.3rem;
+                font-family: 'Futura';
             }
         }
     }
     a.--groupToggle {
         margin-top: 1.5rem;
     }
-    display: none;
+    display: block;
 }
 .filters__toggler.--groupToggle {
     margin-top: 1.5rem;

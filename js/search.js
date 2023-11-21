@@ -1,0 +1,1 @@
+app_shop.run((()=>{app_shop.fn.setHeight({selectors:["#search .product__prices","#search .product__name"],container:"#search"})}),[1,2,3,4],"#search",!0);
