@@ -4928,16 +4928,24 @@
                         'price'=> '29.99',
                         'img'=>
                         'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Crema-1kg-10376_2.jpg',
+                        'promotion'=> 'true',
+                        'promotionType'=> 'promocja',
+                        'lowerPrice'=> 'true'
                         ],
+                   
                         [
                         'name'=> 'Kawa ziarnista 2',
                         'price'=> '39.99',
                         'img'=> ' https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Premium-1kg-10377_3.jpg',
+                        'promotion'=> 'true',
+                        'promotionType'=> 'nowość',
                         ],
                         [
                         'name'=> 'Kawa ziarnista 3',
                         'price'=> '49.99',
-                        'img'=> 'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Crema-1kg-10376_2.jpg'
+                        'img'=> 'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Crema-1kg-10376_2.jpg',
+                        'promotion'=> 'true',
+                        'promotionType'=> 'bestseller',
                         ],
                         [
                         'name'=> 'Kawa ziarnista 4',
@@ -4952,7 +4960,9 @@
                         [
                         'name'=> 'Kawa ziarnista 6',
                         'price'=> '249.99',
-                        'img'=> 'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Premium-1kg-10377_3.jpg'
+                        'img'=> 'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Premium-1kg-10377_3.jpg',
+                        'promotion'=> 'true',
+                        'promotionType'=> 'kawa miesiąca',
                         ],
                         [
                         'name'=> 'Kawa ziarnista 7',
@@ -4973,7 +4983,10 @@
                         [
                         'name'=> 'Kawa ziarnista 10',
                         'price'=> '19.99',
-                        'img'=> 'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Premium-1kg-10377_3.jpg'
+                        'img'=> 'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Premium-1kg-10377_3.jpg',
+                        'promotion'=> 'true',
+                        'promotionType'=> 'promocja',
+                        'lowerPrice'=> 'true'
                         ],
                         [
                         'name'=> 'Kawa ziarnista 11',
@@ -4983,18 +4996,35 @@
                         [
                         'name'=> 'Kawa ziarnista 12',
                         'price'=> '249.99',
-                        'img'=> 'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Premium-1kg-10377_3.jpg'
+                        'img'=> 'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Premium-1kg-10377_3.jpg',
+                        'promotion'=> 'true',
+                        'promotionType'=> 'bestseller',
                         ]
                         ];
-                    foreach ($products as $product) {
-                        $product['graphData'] = generateRandomData();
-                        include 'search-result-product.php';
-                    } 
+                        foreach ($products as $product) {
+                            $product['graphData'] = generateRandomData();
+                        
+                            // Sprawdzenie czy istnieje promocja i dodanie 'promotionType' jeśli jest dostępne
+                            if (isset($product['promotion']) && $product['promotion'] === 'true' && isset($product['promotionType'])) {
+                                $product['displayPromotion'] = "<strong class=\"label_icons\"><span class=\"label --promo\">" . htmlspecialchars($product['promotionType']) . "</span></strong>";
+                            } else {
+                                $product['displayPromotion'] = "";
+                            }
 
+                            // Sprawdzanie czy produkt ma obniżoną cenę jeżeli jest 'lowerPrice'
+                            if (isset($product['lowerPrice']) && $product['lowerPrice'] === 'true') {
+                                $product['promoClass'] = ""; 
+                                $product['priceClass'] = "d-none";
+                            } else {
+                                $product['promoClass'] = "d-none";
+                                $product['priceClass'] = ""; 
+                            }
 
+                            include 'search-result-product.php';
+                        }
                    ?>
                 </section>
-                <div id="paging_setting_bottom" class="s_paging">
+                <div id="paging_setting_bottom" class="s_paging mt-5 mt-md-0">
                     <form class="s_paging__item --sort d-none" action="https://www.konesso.pl/settings.php">
                         <div class="f-dropdown f-group s_paging__select --order --small-md "><select
                                 class="s_paging__select-select --order-select --small-md-select" id="select_bottom_sort"

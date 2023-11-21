@@ -1,6 +1,6 @@
-<div class="product col-12 col-sm-6 col-lg-4 pt-3 my-4 pb-md-3" data-product_id="16371" data-product_page="0"
-    data-product_first="true"><a class="product__icon d-flex justify-content-center align-items-center"
-        data-product-id="16371"
+<div class="product position-relative col-12 col-sm-6 col-lg-4 pt-4 my-5 pb-md-5" data-product_id="16371"
+    data-product_page="0" data-product_first="true"><a
+        class="product__icon d-flex justify-content-center align-items-center" data-product-id="16371"
         href="https://www.konesso.pl/product-pol-16371-Kawa-ziarnista-Jesienna-Kawariatka-1kg.html"
         title="Kawa ziarnista Jesienna Kawariatka 1kg">
         <div class="graph-background p-2" data-graph="<?= htmlspecialchars($product['graphData']) ?>">
@@ -12,24 +12,39 @@
 
             </div>
         </div>
-        <picture>
+        <picture class="product-img">
             <source media="(max-width: 420px)" srcset="<?= htmlspecialchars($product['img']) ?>">
             <img src="<?= htmlspecialchars($product['img']) ?>" alt="Kawa ziarnista Jesienna Kawariatka 1kg">
-        </picture><strong class="label_icons"><span class="label --promo">
-                W promocji
-            </span></strong>
+        </picture><?= $product['displayPromotion'] ?>
     </a>
-    <h3><a class="product__name"
+    <h3><a class="product__name pt-2"
             href="https://www.konesso.pl/product-pol-16371-Kawa-ziarnista-Jesienna-Kawariatka-1kg.html"
             title="Kawa ziarnista Jesienna Kawariatka 1kg"><?= htmlspecialchars($product['name']) ?></a></h3>
 
-    <div class="product__prices"><strong class="price"><?= htmlspecialchars($product['price']) ?><span
-                class="price__unit"> /
-                szt.</span><span class="price_vat"> brutto</span></strong>
+    <div class="pt-2 pb-4">
+        <div class="product__prices <?=$product['priceClass']?>"><strong
+                class="price"><?= htmlspecialchars($product['price']) ?>zł<span class="price__unit"> /
+                    szt.</span><span class="price_vat"> brutto</span></strong>
+        </div>
+
+        <div class="promo-price <?= $product['promoClass'] ?>">
+            <div class="price-box"><span><span class="line-through">
+                        <?= htmlspecialchars($product['price']*1.4) ?> zł
+                    </span> <span class="pl-4" style="color:red;">
+                        <?= htmlspecialchars($product['price']) ?> zł
+                    </span> <span>
+                        <p>
+                            Najniższa cena z ostatnich 30 dni: <?= htmlspecialchars($product['price']*1.2) ?> zł/
+                            <?= htmlspecialchars($product['price']*2) ?> zł/kg
+                        </p>
+                    </span></span></div>
+        </div>
     </div>
-    <a class="product__compare_item --add btn" rel="nofollow"
+    <a class="position-absolute product__compare_item --add btn " rel="nofollow"
         href="https://www.konesso.pl/settings.php?comparers=add&amp;product=16371"
-        title="Kliknij, aby dodać produkt do porównania">
+        title="Kliknij, aby dodać produkt do porównania" style="
+    position: absolute;
+    transform: translate(-50%, 0%);">
         <div class="d-inline-flex justify-content-center align-items-center">Sprawdź <span
                 class="icon--right-arrow ml-2"></span></div>
     </a>

@@ -25,53 +25,58 @@ $(document).ready(function () {
     });
 
 
-    // Dodanie przycisku "Ukryj filtry" i ukrycie go
-    var hideFiltersBtn = $('<button/>', {
-        text: 'Ukryj filtry',
-        class: 'hide-filters-btn btn btn-secondary mt-2',
-        click: function () {
-            $('#Filters').addClass('d-md-none');
-            $(this).hide(); // Ukryj przycisk "Ukryj filtry" po kliknięciu
-        }
-    }).appendTo('#Filters').hide();
 
-    // Funkcja do przełączania ikon
-    function toggleIcon(button) {
-        var icon = button.find('i');
-        if (icon.hasClass('fa-chevron-down')) {
-            icon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
-        } else {
-            icon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
-        }
-    }
+    $(document).ready(function () {
+        var filterButton = $('.filter-dropdown-trigger');
+        var sortButton = $('.sort-dropdown-trigger');
+        var filterIcon = filterButton.find('i');
+        var sortIcon = sortButton.find('i');
 
-    // Przełączanie widoczności formularza filtrowania i sortowania
-    $('.filter-dropdown-trigger, .sort-dropdown-trigger').on("click", function () {
-        // Sprawdź czy filtry są już widoczne
-        var filtersVisible = !$('#Filters').hasClass('d-md-none');
+        // Obsługa kliknięcia przycisku Filtrowanie
+        filterButton.on("click", function () {
+            var filtersVisible = !$('#Filters').hasClass('d-md-none');
+            // Sprawdzanie czy kliknięto przycisk Sortowanie
+            var isSortVisible = sortIcon.hasClass('fa-chevron-up');
 
-        if (filtersVisible) {
-            // Jeśli filtry są widoczne, ukryj je
-            $('#Filters').addClass('d-md-none');
-            hideFiltersBtn.hide();
-        } else {
-            // Jeśli filtry są ukryte, pokaż je
-            $('#Filters').removeClass('d-md-none');
-            hideFiltersBtn.show();
-        }
+            // Jeśli filtr jest aktualnie widoczny lub jeśli kliknięto Sortowanie
+            if (filtersVisible || isSortVisible) {
+                $('#Filters').addClass('d-md-none');
+                $('.filter-element').hide();
+                $('.sort-element').hide();
+                filterIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+                sortIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            } else {
+                $('#Filters').removeClass('d-md-none');
+                $('.filter-element').show();
+                $('.sort-element').hide(); // Ukryj elementy sortowania
+                filterIcon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+                sortIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            }
+        });
 
-        // Przełączanie elementów filtrowania i sortowania
-        var isFilterButton = $(this).hasClass('filter-dropdown-trigger');
-        $('.sort-element').toggleClass('d-none', !isFilterButton);
-        $('.filter-element').toggleClass('d-none', isFilterButton);
+        // Obsługa kliknięcia przycisku Sortowanie
+        sortButton.on("click", function () {
+            var filtersVisible = !$('#Filters').hasClass('d-md-none');
+            // Sprawdzanie czy kliknięto przycisk Filtrowanie
+            var isFilterVisible = filterIcon.hasClass('fa-chevron-up');
 
-        var isSortButton = $(this).hasClass('sort-dropdown-trigger');
-        $('.sort-element').toggleClass('d-none', !isSortButton);
-        $('.filter-element').toggleClass('d-none', isSortButton);
-
-        // Przełącz ikonę
-        toggleIcon($(this));
+            // Jeśli sortowanie jest aktualnie widoczne lub jeśli kliknięto Filtrowanie
+            if (filtersVisible || isFilterVisible) {
+                $('#Filters').addClass('d-md-none');
+                $('.filter-element').hide();
+                $('.sort-element').hide();
+                sortIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+                filterIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            } else {
+                $('#Filters').removeClass('d-md-none');
+                $('.sort-element').show();
+                $('.filter-element').hide(); // Ukryj elementy filtrowania
+                sortIcon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+                filterIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            }
+        });
     });
+
 
     // Obsługa dropdownów w filtrach i sortowaniu
     $('.f-dropdown.f-group.s_paging__select.--order.--small-md, .f-dropdown.f-group.s_paging__select.--portions.--small-md').on("click", function () {
