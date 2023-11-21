@@ -22,7 +22,7 @@
                         <div class="pr-2 py-1"> Widok:</div>
                         <div class="cursor-pointer  d-flex flex-row justify-content-around align-bottom">
                             <div id="produkty" class="align-middle hover:text-gold transition-1 text-gold px-2 py-1"
-                                style="color: orange;">
+                                style="color: #b29370;">
                                 Produkty
                             </div>
                             <div class="px-2 py-1 d-flex flex-row justify-content-center align-items-center">
@@ -36,13 +36,13 @@
                     <div class="dropdown-wrapper  justify-content-around px-2 py-1 d-none d-md-flex flex-row">
                         <div class="filter float-left md:float-none">
                             <button class="filter-dropdown-trigger px-2 py-1">
-                                Filtrowanie <i class="fa fa-chevron-down"></i>
+                                <span class="mr-2"> Filtrowanie</span> <i class="fa fa-chevron-down"></i>
                             </button>
 
                         </div>
                         <div class="sort ml-5">
                             <button class="sort-dropdown-trigger py-1">
-                                Sortowanie <i class="fa fa-chevron-down"></i>
+                                <span class="mr-2"> Sortowanie</span> <i class="fa fa-chevron-down"></i>
                             </button>
 
                         </div>

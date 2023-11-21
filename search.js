@@ -8,7 +8,7 @@ $(document).ready(function () {
             // Gdy przełącznik jest w pozycji "on"
 
             $('#produkty').css('color', 'black');
-            $('#smaki').css('color', 'orange');
+            $('#smaki').css('color', 'b29370');
             $('.graph-background').show();
             $('picture').hide();
             $('.label_icons').hide();
@@ -16,7 +16,7 @@ $(document).ready(function () {
         } else {
             // Gdy przełącznik jest w pozycji "off"
             console.log("🚀 ~ file: search.js:15 ~ $(this).is(':!checked'):", $(this).is(':checked'))
-            $('#produkty').css('color', 'orange');
+            $('#produkty').css('color', 'b29370');
             $('#smaki').css('color', 'black');
             $('.graph-background').hide();
             $('picture').show();

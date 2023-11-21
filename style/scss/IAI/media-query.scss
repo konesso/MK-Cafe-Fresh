@@ -3494,14 +3494,14 @@
         display: grid;
         grid-template-columns: repeat(6, minmax(0, 1fr));
         grid-gap: 1.5rem;
-        font-family: 'Futura';
+        font-family: "Futura";
     }
 
-    #filter-wrapper{
-         display: grid;
+    #filter-wrapper {
+        display: grid;
         grid-template-columns: repeat(6, minmax(0, 1fr));
         grid-gap: 1.5rem;
-        font-family: 'Futura';
+        font-family: "Futura";
     }
     .filters__toggler {
         padding: 0 1rem;
@@ -8154,25 +8154,30 @@
         }
     }
 
-    .search-results-top-menu{
+    .search-results-top-menu {
         font-family: Futura;
         font-size: 14px;
         font-weight: 700;
         line-height: 20px;
     }
-    .sort-dropdown-trigger{
-           font-family: Futura;
+    .sort-dropdown-trigger {
+        font-family: Futura;
         font-size: 14px;
         font-weight: 700;
         line-height: 20px;
+        text-transform: uppercase;
     }
-    .filter-dropdown-trigger{
-           font-family: Futura;
+    .filter-dropdown-trigger {
+        font-family: Futura;
         font-size: 14px;
         font-weight: 700;
         line-height: 20px;
+        text-transform: uppercase;
     }
-    
+    .graph-wrapper {
+        text-transform: uppercase;
+    }
+
     .search_name {
         display: flex;
         align-items: center;
