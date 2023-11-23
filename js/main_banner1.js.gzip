@@ -1,0 +1,44 @@
+(MainSlider = function (i) {
+    (this.params = i || {}),
+        (this.defaults = {
+            autoplay: 1,
+            adaptiveHeight: 1,
+            prevArrow: '<a class="slick-prev" href=""><i class="icon-angle-left"></i></a>',
+            nextArrow: '<a class="slick-next" href=""><i class="icon-angle-right"></i></a>',
+            autoplaySpeed: 5e3,
+        }),
+        (this.reset = () => {
+            this.slider && this.slider.slick("unslick"), this.init(this.params);
+        }),
+        (this.destroy = () => {
+            this.slider && this.slider.slick("unslick");
+        }),
+        (this.init = () => {
+            const { selector: i, options: e, callbackBefore: s, callbackAfter: t } = this.params;
+            (this.settings = _objectSpread({}, this.defaults, {}, e)), (this.selector = i), (this.slider = $(i)), "function" == typeof s && s(this.slider), this.slider.slick(this.settings), "function" == typeof t && t(this.slider);
+        });
+}),
+    app_shop.run(
+        function () {
+            app_shop.fn.mainSlider = new MainSlider({
+                selector: ".main_slider:not(.slick-initialized)",
+                callbackBefore: (i) => {
+                    i.on("afterChange", () => {
+                        document.querySelector("#main_banner1 .slick-active img:not(.b-loaded)") && app_shop.vars.bLazy.revalidate();
+                    });
+                },
+            });
+            const i = document.querySelector("#main_banner1 .main_slider__item:first-child img.loaded"),
+                e = () => {
+                    const i = document.querySelector("#main_banner1.skeleton");
+                    i && (i.classList.remove("skeleton"), app_shop.fn.mainSlider.init());
+                };
+            i && i.complete ? e() : i ? i.addEventListener("load", e) : e();
+
+            setTimeout(function(){
+                $('#main_banner1 .main_slider').find('.slick-slide').height('auto')
+            }, 200)
+        },
+        "all",
+        "#main_banner1"
+    );

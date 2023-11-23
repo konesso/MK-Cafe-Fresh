@@ -1,0 +1,64 @@
+@media all and (min-width:976px){
+div#main_banner1 {
+    max-height: 650px;
+    picture img{
+        min-width: 100vw;
+    }
+    a.slick-prev.slick-arrow {
+        left: 15px;
+    }
+}
+
+
+.slick-next, .slick-prev{
+    &:hover{
+        text-decoration: none;
+    }
+}
+}
+.onasstepts{
+    span{
+        display: block;
+        padding: 5px;
+    }
+    @media all and (max-width:500px){
+        flex-wrap: wrap;
+       > div {
+            width: 50%;
+            flex: 50%;
+        }
+    }
+}
+
+.icon--product-trust-bean:before {
+    display: block;
+    content: " ";
+    width: 4.4rem;
+    height: 3.6rem;
+    background-position: -250px -50px;
+    background-image: url(../img/icons.png);
+}
+.icon--product-trust-truck:before {
+    display: block;
+    content: " ";
+    width: 7.2rem;
+    height: 6rem;
+    background-position: -300px -50px;
+    background-image: url(../img//icons.png);
+}
+.icon--48-hours:before {
+    display: block;
+    content: " ";
+    height: 48px;
+    background-position: -373px -50px;
+    background-image: url(../img//icons.png);
+    width: 66px;
+}
+.icon--product-trust-globe:before {
+    display: block;
+    content: " ";
+    width: 4.8rem;
+    height: 4.8rem;
+    background-position: -450px -50px;
+    background-image: url(../img/icons.png);
+}

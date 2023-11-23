@@ -10,7 +10,7 @@
         <div class="d-none d-md-flex col-md-4">
             <div id="contactInfo" class=""><span class="contact__info">Infolinia: 601 921 645 czynna pn-pt: 8-16</span></div>
         </div>
-        <div class="align-items-center col d-flex justify-content-end">
+        <div class="align-items-center col d-none d-md-flex justify-content-end">
             <form action="/search.php" method="get" id="menu_search" class="menu_search --active" ><a href="#showSearchForm" class="menu_search__mobile"></a>
                 <div class="menu_search__block">
                     <div class="menu_search__item --input"><input class="menu_search__input" type="text" name="text" autocomplete="off" placeholder="Wpisz czego szukasz"><button class="menu_search__submit" type="submit"></button></div>
@@ -51,7 +51,7 @@
 
     <div class="row align-items-center justify-content-around main-holder">
         <div class="col col-md-2">
-            <div id="logo" class=""><a href="https://www.konesso.pl" target="_self">
+            <div id="logo" class=""><a href="./index.php" target="_self">
                 <div class="large"></div>
                 <div class="small "></div>
             </a></div>
@@ -61,7 +61,7 @@
             <?php include 'megamenu.php'; ?>
         </div>
         <div class="col col-md-3">
-            <div id="menu_basket" class="topBasket"><a class="topBasket__sub" href="/basketedit.php"><span class="badge badge-info">61</span><strong class="topBasket__price">7 989,39 zł</strong></a>
+            <div id="menu_basket" class="topBasket"><a class="topBasket__sub" href="/basketedit.php"><span class="badge badge-info">7</span><strong class="topBasket__price">7 989,39 zł</strong></a>
             <div class="topBasket__details --products"><div class="topBasket__block --labels"><label class="topBasket__item --name">Produkt</label><label class="topBasket__item --sum">Ilość</label><label class="topBasket__item --prices">Cena</label></div><div class="topBasket__block --products">
                 <div class="topBasket__row">
                     <a class="topBasket__item --photo" href="/product-pol-7723-Kawa-mielona-Bazzara-AROMAMORE-Moka-250g.html">
@@ -108,21 +108,5 @@
 
 
 
-
-    <!-- <div class="shopping_list_top_mobile" data-empty="true"><a href="https://www.konesso.pl/pl/shoppinglist/"
-            class="sltm_link --empty"></a></div> -->
-
-
-
-    <!--     
-    <div class="order_process_security show_tip --super"
-        title="Stosujemy system IdoSell dający klientom kontrolę nad zamówieniem i procesem realizacji zamówienia. Dbamy też o Twoje prawa i wygodę. IdoSell regularnie weryfikuje nasz sklep i potwierdza, że wysyłamy przesyłki w deklarowanych terminach oraz stosujemy rozwiązania możliwie ułatwiające zakupy i zwiększające bezpieczeństwo klientów.">
-        <h5 class="order_process_security__label">
-            SuperBezpieczne<sup>TM</sup> zakupy
-        </h5>
-        <div class="order_process_security__img"><img
-                src="https://www.konesso.pl/gfx/standards/superfair_light.svg?r=1696937716" alt="SuperFair.Shop badge">
-        </div>
-    </div> -->
 
 </header>

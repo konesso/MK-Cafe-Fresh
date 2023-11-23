@@ -65,3 +65,10 @@ div.px-2.py-1.d-flex.flex-row.justify-content-center.align-items-center {
 .line-through {
     text-decoration: line-through;
 }
+
+.f-group label.f-label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    direction: ltr;
+}

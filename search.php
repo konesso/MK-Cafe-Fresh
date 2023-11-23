@@ -1586,7 +1586,7 @@
                                         </button></div>
                                 </div>
                             </div>
-                            <div class="filter-element filters__more"><a href="##" title="Więcej filtrów"><span
+                            <div class="filter-element filters__more d-none"><a href="##" title="Więcej filtrów"><span
                                         class="btn --icon-right d-block pr-4"><span class="d-none d-md-block"
                                             old_text="Pochodzenie ziaren"> Więcej filtrów</span><span
                                             class="d-md-none">Więcej
