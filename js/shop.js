@@ -2721,10 +2721,10 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
                         !0
                     );
                 };
-                const o = async e => {
-                    const t = await fetch(e);
-                    return await t.json();
-                };
+                // const o = async e => { //todo fix;
+                //     const t = await fetch(e);
+                //     return await t.json();
+                // };
                 product_data.sizes[t.currentSizeObj.type].availability
                     ? 'true' !== n || product_data.sizes[t.currentSizeObj.type].price_subscription
                         ? 'false' !== n || product_data.sizes[t.currentSizeObj.type].price_normal

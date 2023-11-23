@@ -165,7 +165,7 @@
                                 $product['priceClass'] = ""; 
                             }
 
-                            $product['mainClass'] = 'col-12 col-sm-6 col-lg-3 pt-0 my-5 pb-md-5';
+                            $product['mainClass'] = 'col-12 col-sm-6 col-lg-3 pt-1 my-5 pb-md-5';
 
                             include 'search-result-product.php';
                         }

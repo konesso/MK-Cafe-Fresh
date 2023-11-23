@@ -51,7 +51,7 @@
 
     <div class="row align-items-center justify-content-around main-holder">
         <div class="col col-md-2">
-            <div id="logo" class=""><a href="./main-page.php" target="_self">
+            <div id="logo" class=""><a href="./index.php" target="_self">
                 <div class="large"></div>
                 <div class="small "></div>
             </a></div>
