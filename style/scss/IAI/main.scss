@@ -262,6 +262,15 @@ a:hover {
     text-decoration: underline;
 }
 
+.full-width-row {
+    width: 100vw;
+    position: relative;
+    left: 49.5%;
+    right: 49.5%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
 .text-center {
     text-align: center;
 }

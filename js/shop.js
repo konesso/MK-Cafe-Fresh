@@ -12976,9 +12976,15 @@ app_shop.run(
                         setTimeout(() => {
                             $('#main_banner1 .main_slider').find('.slick-slide').height('auto'),
                                 $('#main_banner1 .main_slider').slick('setOption', '', '', !0);
-                        }, 100);
+                        }, 200);
                 },
             })),
+            // $('#main_banner1 .main_slider').length &&
+            //             setTimeout(() => {
+            //                 $('#main_banner1 .main_slider').find('.slick-slide').height('auto'),
+            //                     // $('#main_banner1 .main_slider').slick('setOption', '', '', !0);
+            //             }, 100);
+
             $('.form-group .form-control, .f-group .f-control').on(
                 'change input focus blur',
                 app_shop.fn.addFocused,
@@ -14569,6 +14575,8 @@ app_shop.fn.changeLiteral = (e, t, i) => {
 };
 const HotspotAjaxInit = function (e) {
     const t = this;
+    return; //todo;
+
     return (
         (this.params = e || {}),
         (this.vars = {

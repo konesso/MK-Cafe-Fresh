@@ -10,7 +10,7 @@
         <div class="d-none d-md-flex col-md-4">
             <div id="contactInfo" class=""><span class="contact__info">Infolinia: 601 921 645 czynna pn-pt: 8-16</span></div>
         </div>
-        <div class="align-items-center col d-flex justify-content-end">
+        <div class="align-items-center col d-none d-md-flex justify-content-end">
             <form action="/search.php" method="get" id="menu_search" class="menu_search --active" ><a href="#showSearchForm" class="menu_search__mobile"></a>
                 <div class="menu_search__block">
                     <div class="menu_search__item --input"><input class="menu_search__input" type="text" name="text" autocomplete="off" placeholder="Wpisz czego szukasz"><button class="menu_search__submit" type="submit"></button></div>
@@ -61,7 +61,7 @@
             <?php include 'megamenu.php'; ?>
         </div>
         <div class="col col-md-3">
-            <div id="menu_basket" class="topBasket"><a class="topBasket__sub" href="/basketedit.php"><span class="badge badge-info">61</span><strong class="topBasket__price">7 989,39 zł</strong></a>
+            <div id="menu_basket" class="topBasket"><a class="topBasket__sub" href="/basketedit.php"><span class="badge badge-info">7</span><strong class="topBasket__price">7 989,39 zł</strong></a>
             <div class="topBasket__details --products"><div class="topBasket__block --labels"><label class="topBasket__item --name">Produkt</label><label class="topBasket__item --sum">Ilość</label><label class="topBasket__item --prices">Cena</label></div><div class="topBasket__block --products">
                 <div class="topBasket__row">
                     <a class="topBasket__item --photo" href="/product-pol-7723-Kawa-mielona-Bazzara-AROMAMORE-Moka-250g.html">
