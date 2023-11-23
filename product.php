@@ -13,7 +13,7 @@
                 <section id="projector_photos" class="photos d-flex align-items-start mb-4" data-nav="true">
                     <div id="photos_nav" class="photos__nav d-none d-md-flex flex-md-column">
                         <figure class="photos__figure --nav"><a class="photos__link --nav"
-                                href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_3.jpg"
+                                href="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"
                                 data-slick-index="0" data-width="92" data-height="160"><img
                                     class="photos__photo b-lazy --nav" width="92" height="160"
                                     alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
@@ -24,20 +24,20 @@
                                 data-slick-index="1" data-width="75" data-height="75"><img
                                     class="photos__photo b-lazy --nav" width="75" height="75"
                                     alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                    data-src="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico1880x2000.png"></a>
+                                    data-src="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"></a>
                         </figure>
                         <figure class="photos__figure --nav"><a class="photos__link --nav"
                                 href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"
                                 data-slick-index="2" data-width="75" data-height="75"><img
                                     class="photos__photo b-lazy --nav" width="75" height="75"
                                     alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                    data-src="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"></a>
+                                    data-src="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"></a>
                         </figure>
                     </div>
                     <div id="photos_slider" class="photos__slider" data-skeleton="true" data-nav="true">
                         <div class="photos___slider_wrapper">
                             <figure class="photos__figure"><a class="photos__link"
-                                    href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_3.jpg"
+                                    href="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"
                                     data-width="450" data-height="780"><img class="photos__photo" width="450"
                                         height="780" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
                                         src="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"></a>
@@ -46,13 +46,13 @@
                                     href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"
                                     data-width="624" data-height="624"><img class="photos__photo slick-loading"
                                         width="624" height="624" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                        data-lazy="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico1880x2000.png"></a>
+                                        data-lazy="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"></a>
                             </figure>
                             <figure class="photos__figure"><a class="photos__link"
                                     href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"
                                     data-width="624" data-height="624"><img class="photos__photo slick-loading"
                                         width="624" height="624" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                        data-lazy="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"></a>
+                                        data-lazy="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"></a>
                             </figure>
                         </div>
                     </div>
