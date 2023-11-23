@@ -55,3 +55,13 @@ div.px-2.py-1.d-flex.flex-row.justify-content-center.align-items-center {
         color: #b29370 !important;
     }
 }
+
+.product-img {
+    img {
+        max-height: 340px;
+    }
+}
+
+.line-through {
+    text-decoration: line-through;
+}

@@ -4201,13 +4201,12 @@ img.b-loaded {
         background: none;
         &:hover {
             box-shadow: 0 0 0 2px #b29370 inset;
-              .product__compare_item.--add.btn {
-                   transition: box-shadow 0.3s ease-in-out;
-                 box-shadow: 0 0 0 2px #b29370 inset;           
+            .product__compare_item.--add.btn {
+                transition: box-shadow 0.3s ease-in-out;
+                box-shadow: 0 0 0 2px #b29370 inset;
             }
         }
 
-        
         .label_icons {
             position: absolute;
             top: 10;
@@ -4255,7 +4254,7 @@ img.b-loaded {
     .product__compare_item {
         z-index: 1;
         text-align: center;
-        position: relative;
+        // position: relative;
         font-size: 1.5rem;
         font-family: Futura;
         color: #333;
@@ -4266,25 +4265,23 @@ img.b-loaded {
         &:hover {
             color: white;
             border: 1px solid #b29370;
-            background-color:#b29370;
-            .icon--right-arrow:after{
+            background-color: #b29370;
+            .icon--right-arrow:after {
                 color: white;
             }
         }
     }
-    .icon--right-arrow:after{   
-                content: "\F105";
-                font-family: FontAwesome;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 2.5rem;
-                text-decoration: inherit;
-                padding: 0 5px;
-                color: #b29370;
-        
+    .icon--right-arrow:after {
+        content: "\F105";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-decoration: inherit;
+        padding: 0 5px;
+        color: #b29370;
     }
 
-    
     .product__traits {
         display: none !important;
     }
