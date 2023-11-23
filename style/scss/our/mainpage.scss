@@ -1,3 +1,4 @@
+@media all and (min-width:976px){
 div#main_banner1 {
     max-height: 650px;
     picture img{
@@ -8,16 +9,24 @@ div#main_banner1 {
     }
 }
 
+
 .slick-next, .slick-prev{
     &:hover{
         text-decoration: none;
     }
 }
-
+}
 .onasstepts{
     span{
         display: block;
         padding: 5px;
+    }
+    @media all and (max-width:500px){
+        flex-wrap: wrap;
+       > div {
+            width: 50%;
+            flex: 50%;
+        }
     }
 }
 

@@ -24,7 +24,7 @@
         }
     }
 }
-
+@media all and (min-width: 976px) {
 .largeLogo #Logo {
     align-items: flex-start;
     .small {
@@ -33,6 +33,7 @@
     .large {
         display: block;
     }
+}
 }
 
 header {

@@ -1,7 +1,7 @@
-<div class="product position-relative col-12 col-sm-6 col-lg-4 pt-4 my-5 pb-md-5" data-product_id="16371"
+<div class="product position-relative <?= isset($product['mainClass']) && $product['mainClass'] ? $product['mainClass'] : 'col-12 col-sm-6 col-lg-4 pt-4 my-5 pb-md-5' ?>" data-product_id="16371"
     data-product_page="0" data-product_first="true"><a
         class="product__icon d-flex justify-content-center align-items-center" data-product-id="16371"
-        href="https://www.konesso.pl/product-pol-16371-Kawa-ziarnista-Jesienna-Kawariatka-1kg.html"
+        href="./product.php"
         title="Kawa ziarnista Jesienna Kawariatka 1kg">
         <div class="graph-background p-2" data-graph="<?= htmlspecialchars($product['graphData']) ?>">
             <div class="graph-title">Najedź myszką by poznać włąściwości smaku</div>
@@ -29,22 +29,24 @@
 
         <div class="promo-price <?= $product['promoClass'] ?>">
             <div class="price-box"><span><span class="line-through">
-                        <?= htmlspecialchars($product['price']*1.4) ?> zł
+                        <?= round($product['price']*1.4, 2) ?> zł
                     </span> <span class="pl-4" style="color:red;">
                         <?= htmlspecialchars($product['price']) ?> zł
                     </span> <span>
-                        <p>
-                            Najniższa cena z ostatnich 30 dni: <?= htmlspecialchars($product['price']*1.2) ?> zł/
-                            <?= htmlspecialchars($product['price']*2) ?> zł/kg
+                        <p class="mt-2 small" style="color:#999">
+                            Najniższa cena z ostatnich 30 dni: <?= round($product['price']*1.2, 2) ?> zł</p>
+                        <p class="mt-1 small" style="color:#999">Cena w przeliczeniu na 1 kg: 
+                            <?= round($product['price']*2, 2) ?> zł
                         </p>
                     </span></span></div>
         </div>
     </div>
     <a class="position-absolute product__compare_item --add btn " rel="nofollow"
-        href="https://www.konesso.pl/settings.php?comparers=add&amp;product=16371"
+        href="#"
         title="Kliknij, aby dodać produkt do porównania" style="
-    position: absolute;
-    transform: translate(-50%, 0%);">
+   position: absolute;
+    transform: translate(-50%, 50%);
+    bottom: 0;">
         <div class="d-inline-flex justify-content-center align-items-center">Sprawdź <span
                 class="icon--right-arrow ml-2"></span></div>
     </a>

@@ -51,7 +51,7 @@
 
     <div class="row align-items-center justify-content-around main-holder">
         <div class="col col-md-2">
-            <div id="logo" class=""><a href="https://www.konesso.pl" target="_self">
+            <div id="logo" class=""><a href="./main-page.php" target="_self">
                 <div class="large"></div>
                 <div class="small "></div>
             </a></div>
@@ -108,21 +108,5 @@
 
 
 
-
-    <!-- <div class="shopping_list_top_mobile" data-empty="true"><a href="https://www.konesso.pl/pl/shoppinglist/"
-            class="sltm_link --empty"></a></div> -->
-
-
-
-    <!--     
-    <div class="order_process_security show_tip --super"
-        title="Stosujemy system IdoSell dający klientom kontrolę nad zamówieniem i procesem realizacji zamówienia. Dbamy też o Twoje prawa i wygodę. IdoSell regularnie weryfikuje nasz sklep i potwierdza, że wysyłamy przesyłki w deklarowanych terminach oraz stosujemy rozwiązania możliwie ułatwiające zakupy i zwiększające bezpieczeństwo klientów.">
-        <h5 class="order_process_security__label">
-            SuperBezpieczne<sup>TM</sup> zakupy
-        </h5>
-        <div class="order_process_security__img"><img
-                src="https://www.konesso.pl/gfx/standards/superfair_light.svg?r=1696937716" alt="SuperFair.Shop badge">
-        </div>
-    </div> -->
 
 </header>
