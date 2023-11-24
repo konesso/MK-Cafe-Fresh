@@ -20884,20 +20884,20 @@ app_shop.run(
         !0,
     ),
     app_shop.run(
-        function () {
-            (app_shop.fn.searchAjax = new SearchAjax({
-                onClickSelectors:
-                    '#search a.product__compare_item, #menu_compare_product a.--remove, .pagination a, #Filters .filters__buttons a, #filter_list a',
-                onSubmitSelectors: '#paging_setting_top form, .filters__form',
-                updateDomCallback: () => {
-                    app_shop.fn.infiniteScroll && app_shop.fn.infiniteScroll.reInit(),
-                        $('html, body').animate({ scrollTop: $('.search_name').offset().top - 20 }, 'fast');
-                },
-            })),
-                window._additional_ajax && app_shop.fn.searchAjax.init();
-        },
-        'all',
-        '#search',
+        // function () {
+        //     (app_shop.fn.searchAjax = new SearchAjax({
+        //         onClickSelectors:
+        //             '#search a.product__compare_item, #menu_compare_product a.--remove, .pagination a, #Filters .filters__buttons a, #filter_list a',
+        //         onSubmitSelectors: '#paging_setting_top form, .filters__form',
+        //         updateDomCallback: () => {
+        //             app_shop.fn.infiniteScroll && app_shop.fn.infiniteScroll.reInit(),
+        //                 $('html, body').animate({ scrollTop: $('.search_name').offset().top - 20 }, 'fast');
+        //         },
+        //     })),
+        //         window._additional_ajax && app_shop.fn.searchAjax.init();
+        // },
+        // 'all',
+        // '#search',
     ),
     app_shop.run(
         function () {
