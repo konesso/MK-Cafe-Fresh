@@ -1,8 +1,7 @@
 <section id="projector_blog" class="article mb-5 col-12">
     <h2><a href="/blog-list.php" class="headline" title="Kliknij, by zobaczyć wszystkie wpisy bloga"><span
-                class="headline__name">Z naszego
-                bloga</span></a></h2>
-            <!-- <script>
+                class="headline__name">Blog</span></a></h2>
+    <!-- <script>
                 
                 
                     $('.article__block').slick({
@@ -62,24 +61,27 @@
              
         ]), false); 
         ?>
-        
+
         <?php 
         shuffle($arr);
         foreach(array_slice(($arr), 0, 3) as $c): ?>
         <article class="article__item col-12 col-md-4">
-            
 
-            <a class="article__image_wrapper" href="#"><img src="<?php echo $c->img; ?>" class="article__image b-lazy b-loaded" width="900" height="470" alt="<?php echo $c->name; ?>"></a>
+
+            <a class="article__image_wrapper" href="#"><img src="<?php echo $c->img; ?>"
+                    class="article__image b-lazy b-loaded" width="900" height="470" alt="<?php echo $c->name; ?>"></a>
 
             <div class="article__date_name mt-2 mb-3">
-                <h3 class="article__name_wrapper"><a class="article__name" href="#" title="<?php echo $c->name; ?>"><?php echo $c->name; ?></a></h3>
+                <h3 class="article__name_wrapper"><a class="article__name" href="#"
+                        title="<?php echo $c->name; ?>"><?php echo $c->name; ?></a></h3>
             </div>
             <div class="article__text">
                 <div class="article__description">
                     <p><?php echo $c->desc; ?></p>
-                   
+
                 </div>
-                <div class="article__more"><a class="article__more_link" href="#" title="<?php echo $c->name; ?>">Czytaj więcej</a></div>
+                <div class="article__more"><a class="article__more_link" href="#" title="<?php echo $c->name; ?>">Czytaj
+                        więcej</a></div>
             </div>
 
         </article>

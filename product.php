@@ -852,7 +852,118 @@
 
                 </section>
 
-                <section id="projector_longdescription" class="longdescription cm mt-5  col-12" data-traits="true"
+                <section id="projector_in_bundle" class="hotspot mb-5 --list col-12">
+                    <h2><span class="headline"><span class="headline__name">Oszczędź kupując więcej</span></span></h2>
+                    <div class="products d-flex flex-wrap">
+                        <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
+                                class="product__icon d-flex justify-content-center align-items-center p-1 m-0"
+                                data-product-id="2453"
+                                href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html"
+                                title="ZESTAW 6x Kawa ziarnista Bazzara DODICIGRANCRU 1kg"><img
+                                    src="https://www.konesso.pl/pol_il_ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-2453.jpg"
+                                    class="b-lazy b-loaded"
+                                    alt="ZESTAW 6x Kawa ziarnista Bazzara DODICIGRANCRU 1kg"></a>
+                            <div
+                                class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
+                                <h3><a class="product__name mb-1 mb-md-0"
+                                        href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html"
+                                        title="ZESTAW 6x Kawa ziarnista Bazzara DODICIGRANCRU 1kg">ZESTAW 6x Kawa
+                                        ziarnista Bazzara DODICIGRANCRU 1kg</a></h3>
+                                <div
+                                    class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto">
+                                    <div class="product__prices flex-md-row align-items-md-center">
+                                        <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
+                                                class="price --max"><del>989,94 zł</del></span><span
+                                                class="product__promo_info d-none">(Taniej w zestawie o 32%)</span>
+                                        </div>
+                                        <div class="product__price_wrapper"><strong class="price">665,33 zł<span
+                                                    class="price_vat"> brutto</span></strong></div>
+
+                                    </div>
+                                    <div class="product__promo_omnibus omnibus_price"><span
+                                            class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
+                                        </span><span class="omnibus_price__value">978,00 zł</span></div>
+
+                                </div><a class="product__see d-none d-md-block"
+                                    href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html">
+                                    Zobacz zestaw
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
+                                class="product__icon d-flex justify-content-center align-items-center p-1 m-0"
+                                data-product-id="4551"
+                                href="/product-pol-4551-Bazzara-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html"
+                                title="Bazzara Dodicigrancru 1kg + 2x filiżanka do kawy espresso"><img
+                                    src="https://www.konesso.pl/pol_il_Bazzara-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso-4551.jpg"
+                                    class="b-lazy b-loaded"
+                                    alt="Bazzara Dodicigrancru 1kg + 2x filiżanka do kawy espresso"></a>
+                            <div
+                                class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
+                                <h3><a class="product__name mb-1 mb-md-0"
+                                        href="/product-pol-4551-Bazzara-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html"
+                                        title="Bazzara Dodicigrancru 1kg + 2x filiżanka do kawy espresso">Bazzara
+                                        Dodicigrancru 1kg + 2x filiżanka do kawy espresso</a></h3>
+                                <div
+                                    class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto">
+                                    <div class="product__prices flex-md-row align-items-md-center">
+                                        <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
+                                                class="price --max"><del>198,97 zł</del></span><span
+                                                class="product__promo_info d-none">(Taniej w zestawie o 36%)</span>
+                                        </div>
+                                        <div class="product__price_wrapper"><strong class="price">126,13 zł<span
+                                                    class="price_vat"> brutto</span></strong></div>
+
+                                    </div>
+                                    <div class="product__promo_omnibus omnibus_price"><span
+                                            class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
+                                        </span><span class="omnibus_price__value">178,00 zł</span></div>
+                                </div><a class="product__see d-none d-md-block"
+                                    href="/product-pol-4551-Bazzara-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html">
+                                    Zobacz zestaw
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
+                                class="product__icon d-flex justify-content-center align-items-center p-1 m-0 loading"
+                                data-product-id="5212"
+                                href="/product-pol-5212-ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html"
+                                title="ZESTAW - Kawa Bazzara Dodicigrancru 2x1kg + opakowanie 250g GRATIS"><img
+                                    src="https://www.konesso.pl/pol_il_ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS-5212.jpg"
+                                    class="b-lazy"
+                                    data-src="https://www.konesso.pl/pol_il_ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS-5212.jpg"
+                                    alt="ZESTAW - Kawa Bazzara Dodicigrancru 2x1kg + opakowanie 250g GRATIS"></a>
+                            <div
+                                class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
+                                <h3><a class="product__name mb-1 mb-md-0"
+                                        href="/product-pol-5212-ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html"
+                                        title="ZESTAW - Kawa Bazzara Dodicigrancru 2x1kg + opakowanie 250g GRATIS">ZESTAW
+                                        - Kawa Bazzara Dodicigrancru 2x1kg + opakowanie 250g GRATIS</a></h3>
+                                <div
+                                    class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto --omnibus">
+                                    <div class="product__prices flex-md-row align-items-md-center">
+                                        <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
+                                                class="price --max"><span class="omnibus_label">Cena regularna:
+                                                </span><del>377,97 zł</del></span><span
+                                                class="product__promo_info d-none">(Taniej w zestawie o 39%)</span>
+                                        </div>
+                                        <div class="product__price_wrapper"><strong class="price">229,14 zł<span
+                                                    class="price_vat"> brutto</span></strong></div>
+                                    </div>
+                                    <div class="product__promo_omnibus omnibus_price"><span
+                                            class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
+                                        </span><span class="omnibus_price__value">278,00 zł</span></div>
+                                </div><a class="product__see d-none d-md-block"
+                                    href="/product-pol-5212-ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html">
+                                    Zobacz zestaw
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="projector_longdescription" class="longdescription cm my-5  col-12" data-traits="true"
                     data-dictionary="true">
                     <div class="base-html-renderer-wrap relative" style="overflow: hidden;">
                         <div xmlns="http://www.w3.org/1999/xhtml"
@@ -1046,118 +1157,9 @@
                     </div>
                 </section>
 
-                <section id="projector_in_bundle" class="hotspot mb-5 --list col-12">
-                    <h2><span class="headline"><span class="headline__name">Oszczędź kupując więcej</span></span></h2>
-                    <div class="products d-flex flex-wrap">
-                        <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
-                                class="product__icon d-flex justify-content-center align-items-center p-1 m-0"
-                                data-product-id="2453"
-                                href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html"
-                                title="ZESTAW 6x Kawa ziarnista Bazzara DODICIGRANCRU 1kg"><img
-                                    src="https://www.konesso.pl/pol_il_ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-2453.jpg"
-                                    class="b-lazy b-loaded"
-                                    alt="ZESTAW 6x Kawa ziarnista Bazzara DODICIGRANCRU 1kg"></a>
-                            <div
-                                class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
-                                <h3><a class="product__name mb-1 mb-md-0"
-                                        href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html"
-                                        title="ZESTAW 6x Kawa ziarnista Bazzara DODICIGRANCRU 1kg">ZESTAW 6x Kawa
-                                        ziarnista Bazzara DODICIGRANCRU 1kg</a></h3>
-                                <div
-                                    class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto">
-                                    <div class="product__prices flex-md-row align-items-md-center">
-                                        <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
-                                                class="price --max"><del>989,94 zł</del></span><span
-                                                class="product__promo_info d-none">(Taniej w zestawie o 32%)</span>
-                                        </div>
-                                        <div class="product__price_wrapper"><strong class="price">665,33 zł<span
-                                                    class="price_vat"> brutto</span></strong></div>
-
-                                    </div>
-                                    <div class="product__promo_omnibus omnibus_price"><span
-                                            class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
-                                        </span><span class="omnibus_price__value">978,00 zł</span></div>
-
-                                </div><a class="product__see d-none d-md-block"
-                                    href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html">
-                                    Zobacz zestaw
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
-                                class="product__icon d-flex justify-content-center align-items-center p-1 m-0"
-                                data-product-id="4551"
-                                href="/product-pol-4551-Bazzara-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html"
-                                title="Bazzara Dodicigrancru 1kg + 2x filiżanka do kawy espresso"><img
-                                    src="https://www.konesso.pl/pol_il_Bazzara-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso-4551.jpg"
-                                    class="b-lazy b-loaded"
-                                    alt="Bazzara Dodicigrancru 1kg + 2x filiżanka do kawy espresso"></a>
-                            <div
-                                class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
-                                <h3><a class="product__name mb-1 mb-md-0"
-                                        href="/product-pol-4551-Bazzara-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html"
-                                        title="Bazzara Dodicigrancru 1kg + 2x filiżanka do kawy espresso">Bazzara
-                                        Dodicigrancru 1kg + 2x filiżanka do kawy espresso</a></h3>
-                                <div
-                                    class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto">
-                                    <div class="product__prices flex-md-row align-items-md-center">
-                                        <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
-                                                class="price --max"><del>198,97 zł</del></span><span
-                                                class="product__promo_info d-none">(Taniej w zestawie o 36%)</span>
-                                        </div>
-                                        <div class="product__price_wrapper"><strong class="price">126,13 zł<span
-                                                    class="price_vat"> brutto</span></strong></div>
-
-                                    </div>
-                                    <div class="product__promo_omnibus omnibus_price"><span
-                                            class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
-                                        </span><span class="omnibus_price__value">178,00 zł</span></div>
-                                </div><a class="product__see d-none d-md-block"
-                                    href="/product-pol-4551-Bazzara-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html">
-                                    Zobacz zestaw
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
-                                class="product__icon d-flex justify-content-center align-items-center p-1 m-0 loading"
-                                data-product-id="5212"
-                                href="/product-pol-5212-ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html"
-                                title="ZESTAW - Kawa Bazzara Dodicigrancru 2x1kg + opakowanie 250g GRATIS"><img
-                                    src="https://www.konesso.pl/pol_il_ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS-5212.jpg"
-                                    class="b-lazy"
-                                    data-src="https://www.konesso.pl/pol_il_ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS-5212.jpg"
-                                    alt="ZESTAW - Kawa Bazzara Dodicigrancru 2x1kg + opakowanie 250g GRATIS"></a>
-                            <div
-                                class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
-                                <h3><a class="product__name mb-1 mb-md-0"
-                                        href="/product-pol-5212-ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html"
-                                        title="ZESTAW - Kawa Bazzara Dodicigrancru 2x1kg + opakowanie 250g GRATIS">ZESTAW
-                                        - Kawa Bazzara Dodicigrancru 2x1kg + opakowanie 250g GRATIS</a></h3>
-                                <div
-                                    class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto --omnibus">
-                                    <div class="product__prices flex-md-row align-items-md-center">
-                                        <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
-                                                class="price --max"><span class="omnibus_label">Cena regularna:
-                                                </span><del>377,97 zł</del></span><span
-                                                class="product__promo_info d-none">(Taniej w zestawie o 39%)</span>
-                                        </div>
-                                        <div class="product__price_wrapper"><strong class="price">229,14 zł<span
-                                                    class="price_vat"> brutto</span></strong></div>
-                                    </div>
-                                    <div class="product__promo_omnibus omnibus_price"><span
-                                            class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
-                                        </span><span class="omnibus_price__value">278,00 zł</span></div>
-                                </div><a class="product__see d-none d-md-block"
-                                    href="/product-pol-5212-ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html">
-                                    Zobacz zestaw
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
 
-                <section id="products_associated_zone1" class="hotspot mb-5 --list col-12" data-ajaxload="true"
+                <section id="products_associated_zone1" class="hotspot my-5 py-5 --list col-12" data-ajaxload="true"
                     data-pagetype="projector">
                     <div class="hotspot mb-5 skeleton"><span class="headline"></span>
                         <div class="products d-flex flex-wrap">
@@ -1184,8 +1186,8 @@
                         </div>
                     </div>
                 </section>
-                <section id="products_associated_zone2" class="hotspot mb-5 --slider col-12 p-0" data-ajaxload="true"
-                    data-pagetype="projector">
+                <section id="products_associated_zone2" class="hotspot my-5 py-5 --slider col-12 p-0"
+                    data-ajaxload="true" data-pagetype="projector">
                     <div class="hotspot mb-5 skeleton"><span class="headline"></span>
                         <div class="products d-flex flex-wrap --adaptive slick-initialized slick-slider slick-dotted">
                             <div class="slick-list draggable" style="height: 303px;">
@@ -1230,7 +1232,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="product_questions_list" class="questions mb-5 col-12">
+                <section id="product_questions_list" class="questions my-5 py-5 col-12">
                     <div class="questions__wrapper row align-items-start">
                         <div class="questions__block --banner col-12 col-md-5 col-lg-4">
                             <div class="questions__banner"><strong class="questions__banner_item --label">Potrzebujesz

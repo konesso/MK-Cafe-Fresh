@@ -25,15 +25,15 @@
     }
 }
 @media all and (min-width: 976px) {
-.largeLogo #Logo {
-    align-items: flex-start;
-    .small {
-        display: none;
+    .largeLogo #Logo {
+        align-items: flex-start;
+        .small {
+            display: none;
+        }
+        .large {
+            display: block;
+        }
     }
-    .large {
-        display: block;
-    }
-}
 }
 
 header {
@@ -47,41 +47,40 @@ header {
         font-weight: 500;
         display: flex;
         align-items: center;
-        &:hover{
+        &:hover {
             color: #000;
             text-decoration: underline;
         }
     }
-    .shopping_list_top{
+    .shopping_list_top {
         border-left: 1px solid #b29370;
         padding: 10px 20px;
-        a{
+        a {
             text-decoration: none;
         }
     }
-    .account_link{
+    .account_link {
         // border-left: 1px solid #b29370;
         padding: 10px 20px;
         text-decoration: none;
     }
-    .contact__info{
-        font-size:12px;
-        
-    }   
-    .nav-link{
+    .contact__info {
+        font-size: 12px;
+    }
+    .nav-link {
         padding: 10px;
         font-weight: 400;
         text-decoration: none;
         text-transform: uppercase;
     }
-    @media all and (max-width:976px){
-        .main-holder{
-             > .col:nth-child(3),
-             > .col:nth-child(2){
+    @media all and (max-width: 976px) {
+        .main-holder {
+            > .col:nth-child(3),
+            > .col:nth-child(2) {
                 justify-content: end;
                 display: flex;
                 max-width: 50px;
-             }
+            }
         }
     }
 }
@@ -92,9 +91,18 @@ header {
 }
 .menu-item-underline {
     border-color: #b29370;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     width: 100%;
     transform: scaleX(0);
     border-top-width: 1px;
     border-bottom: 0;
+}
+
+.basket-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 253px;
+    @media screen and (max-width: 976px) {
+        margin-right: 10ox;
+    }
 }

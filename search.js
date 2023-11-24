@@ -153,3 +153,11 @@ $(document).ready(function () {
     });
 
 });
+
+
+$('toggleShowMore').on('click', function () {
+
+    $('#additionalContent').toggleClass('expanded');
+
+});
+

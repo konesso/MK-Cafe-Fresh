@@ -11,7 +11,7 @@
     <meta name="keywords" content="kawa ziarnista " />
     <meta name="description"
         content="Kawa ziarnista do ekspresu i nie tylko! Najlepsze kawy ziarniste ponad 100 palarni kawy w jednym miejscu Zamów ulubioną kawę ziarnistą na Konesso.pl " />
-    <link rel="shortcut icon" href="https://www.konesso.pl/gfx/pol/favicon.ico" />
+    <link rel="shortcut icon" href="https://mkfresh.pl/base-assets/images/favicon/smalltile.png" />
     <meta name="theme-color" content="#0090f6" />
     <meta name="msapplication-navbutton-color" content="#0090f6" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#0090f6" />
