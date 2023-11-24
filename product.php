@@ -13,7 +13,7 @@
                 <section id="projector_photos" class="photos d-flex align-items-start mb-4" data-nav="true">
                     <div id="photos_nav" class="photos__nav d-none d-md-flex flex-md-column">
                         <figure class="photos__figure --nav"><a class="photos__link --nav"
-                                href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_3.jpg"
+                                href="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"
                                 data-slick-index="0" data-width="92" data-height="160"><img
                                     class="photos__photo b-lazy --nav" width="92" height="160"
                                     alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
@@ -24,20 +24,20 @@
                                 data-slick-index="1" data-width="75" data-height="75"><img
                                     class="photos__photo b-lazy --nav" width="75" height="75"
                                     alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                    data-src="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico1880x2000.png"></a>
+                                    data-src="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"></a>
                         </figure>
                         <figure class="photos__figure --nav"><a class="photos__link --nav"
                                 href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"
                                 data-slick-index="2" data-width="75" data-height="75"><img
                                     class="photos__photo b-lazy --nav" width="75" height="75"
                                     alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                    data-src="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"></a>
+                                    data-src="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"></a>
                         </figure>
                     </div>
                     <div id="photos_slider" class="photos__slider" data-skeleton="true" data-nav="true">
                         <div class="photos___slider_wrapper">
                             <figure class="photos__figure"><a class="photos__link"
-                                    href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_3.jpg"
+                                    href="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"
                                     data-width="450" data-height="780"><img class="photos__photo" width="450"
                                         height="780" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
                                         src="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"></a>
@@ -46,13 +46,13 @@
                                     href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"
                                     data-width="624" data-height="624"><img class="photos__photo slick-loading"
                                         width="624" height="624" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                        data-lazy="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico1880x2000.png"></a>
+                                        data-lazy="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"></a>
                             </figure>
                             <figure class="photos__figure"><a class="photos__link"
                                     href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"
                                     data-width="624" data-height="624"><img class="photos__photo slick-loading"
                                         width="624" height="624" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                        data-lazy="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"></a>
+                                        data-lazy="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"></a>
                             </figure>
                         </div>
                     </div>
@@ -539,20 +539,16 @@
                                         onclick="event.stopPropagation(); calculate_instalments('100','50000.00','','',$(this).attr('data-window'),'','eRaty Santander Consumer Bank','',''); return false;"
                                         href="javascript:window.open('https://wniosek.eraty.pl/symulator/oblicz/numerSklepu/75952/wariantSklepu/1/typProduktu/0/wartoscTowarow/XXX',%20'',%20'height=750,width=850,location=no,resizable=yes,scrollbars=yes,status=0;')"
                                         data-window="window.open('https://wniosek.eraty.pl/symulator/oblicz/numerSklepu/75952/wariantSklepu/1/typProduktu/0/wartoscTowarow/XXX', '', 'height=750,width=850,location=no,resizable=yes,scrollbars=yes,status=0;')"><img
-                                            class="projector_instalments__item_icon b-lazy"
-                                            src="/gfx/standards/loader.gif?r=1692344742"
-                                            data-src="/panel/gfx/payforms/icon_InstallmentZagiel.png"
-                                            alt="eRaty Santander Consumer Bank"><span
+                                            class="projector_instalments__item_icon b-lazy" src="./img/e-raty.png"
+                                            data-src="./img/e-raty.png" alt="eRaty Santander Consumer Bank"><span
                                             class="projector_instalments__item_text">eRaty Santander Consumer
                                             Bank</span></a><a class="projector_instalments__item loading"
                                         data-instalments="LeaseLink"
                                         onclick="event.stopPropagation(); calculate_instalments('300.00','10000000.00','','',$(this).attr('data-window'),'','LeaseLink','',''); return false;"
                                         href="javascript:window.open('https://online.leaselink.pl/RateCalculator/calculate?tax=23&amp;isNet=false&amp;categoryLevel=KAWA%20ZIARNISTA&amp;productname=Kawa%20ziarnista%20Bazzara%20DODICIGRANCRU%201kg%20&amp;externalId=KON001&amp;value=XXX',%20'',%20'height=750,width=850,location=no,resizable=yes,scrollbars=yes,status=0;')"
                                         data-window="window.open('https://online.leaselink.pl/RateCalculator/calculate?tax=23&amp;isNet=false&amp;categoryLevel=KAWA ZIARNISTA&amp;productname=Kawa ziarnista Bazzara DODICIGRANCRU 1kg &amp;externalId=KON001&amp;value=XXX', '', 'height=750,width=850,location=no,resizable=yes,scrollbars=yes,status=0;')"><img
-                                            class="projector_instalments__item_icon b-lazy"
-                                            src="/gfx/standards/loader.gif?r=1692344742"
-                                            data-src="/panel/gfx/payforms/icon_InstallmentLeaselink.png"
-                                            alt="LeaseLink"><span
+                                            class="projector_instalments__item_icon b-lazy" src="./img/leaselink.png"
+                                            data-src="./img/leaselink.png" alt="LeaseLink"><span
                                             class="projector_instalments__item_text">LeaseLink</span></a></div>
                             </div>
                             <div class="projector_info__item --paypo projector_paypo"><span
@@ -565,9 +561,8 @@
                                     <div class="paypo_info__block">
                                         <div class="paypo_info__item --first"><span class="paypo_info__text">Przy
                                                 wyborze formy płatności, wybierz PayPo.</span><span
-                                                class="paypo_info__img"><img class="b-lazy"
-                                                    src="/gfx/standards/loader.gif?r=1692344742"
-                                                    data-src="/panel/gfx/payforms/paypo.png"
+                                                class="paypo_info__img"><img class="b-lazy" src="./img/paypo.png"
+                                                    data-src="/img/paypo.png"
                                                     alt="PayPo - kup teraz, zapłać za 30 dni"></span></div>
                                         <div class="paypo_info__item --second"><span class="paypo_info__text">PayPo
                                                 opłaci twój rachunek w sklepie.<br>Na stronie PayPo sprawdź swoje dane i
@@ -641,8 +636,8 @@
                                         'Orzech'
                                     ],
                                     datasets: [{
-                                        backgroundColor: "#b29370",
-                                        borderColor: "#b29370",
+                                        backgroundColor: "rgba(178, 147, 112, 0.5)",
+                                        borderColor: "rgba(178, 147, 112, 0.5)",
                                         pointBackgroundColor: "transparent",
                                         pointBorderColor: "transparent",
                                         fill: "origin",
@@ -655,10 +650,19 @@
                                         display: false
                                     },
                                     scale: {
+                                        angleLines: {
+                                            color: 'white'
+                                        },
                                         ticks: {
-                                            display: false,
+                                            display: false
+                                        },
+                                        gridLines: {
+                                            color: 'white'
+                                        },
+                                        pointLabels: {
+                                            fontColor: 'black'
                                         }
-                                    }
+                                    },
                                 },
 
 
@@ -1119,7 +1123,8 @@
                                 data-product-id="5212"
                                 href="/product-pol-5212-ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html"
                                 title="ZESTAW - Kawa Bazzara Dodicigrancru 2x1kg + opakowanie 250g GRATIS"><img
-                                    src="/gfx/standards/loader.gif?r=1692344742" class="b-lazy"
+                                    src="https://www.konesso.pl/pol_il_ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS-5212.jpg"
+                                    class="b-lazy"
                                     data-src="https://www.konesso.pl/pol_il_ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS-5212.jpg"
                                     alt="ZESTAW - Kawa Bazzara Dodicigrancru 2x1kg + opakowanie 250g GRATIS"></a>
                             <div
@@ -1289,9 +1294,10 @@
                             <div class="col-12 col-sm-6 col-md-12">
                                 <div class="average_opinions_box">
                                     <div class="comments">
-                                        <div class="note"><span><i class="icon-star active"></i><i
+                                        <div class="note"><span class="d-flex flex-nowrap"><i
                                                     class="icon-star active"></i><i class="icon-star active"></i><i
-                                                    class="icon-star active"></i><i class="icon-star active"></i></span>
+                                                    class="icon-star active"></i><i class="icon-star active"></i><i
+                                                    class="icon-star active"></i></span>
                                         </div>
                                     </div>
                                     <div class="average_opinions_score">4.96</div>
@@ -1437,7 +1443,8 @@
         </div>
 
         <?php include 'footer.php'; ?>
-
+        <script src="./js/product.js">
+        </script>
         <script src="./js/shop.js">
         </script>
 
@@ -1467,6 +1474,7 @@
         </script>
         <script src="./js/projector_cms_sizes.js.gzip?r=1692344836">
         </script>
+
         <script>
         app_shop.runApp();
         </script>

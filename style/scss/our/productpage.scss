@@ -70,3 +70,13 @@
         background-position: -200px -125px;
     }
 }
+
+@import "product/blog";
+
+#psp {
+    @media screen and (min-width: 1200px) {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+    }
+}

@@ -12856,6 +12856,7 @@ var google_map_style_array = [
     },
 ];
 app_shop.run(
+
     function () {
         $('[data-ajaxLoad]').length &&
             (app_shop.fn.hotspotAjaxInit = new HotspotAjaxInit({
@@ -12967,6 +12968,7 @@ app_shop.run(
         '.cm img.rwd-src',
     ),
     app_shop.run(function () {
+
         $('img.b-lazy').parents('a').addClass('loading'),
             (app_shop.vars.bLazy = new Blazy({
                 breakpoints: [{ width: 420, src: 'data-src-small' }],
@@ -13045,7 +13047,7 @@ app_shop.run(
                         });
             }),
             $('body').append($('#alert_cover')),
-            $('body').backTop({ txt: '<i class="icon-chevron-up"></i>' });
+            $('body').backTop({ txt: '<i class="icon-chevron-up mx-auto"></i>' });
         let e = 0.01 * window.innerHeight;
         document.documentElement.style.setProperty('--vh', `${e}px`),
             window.addEventListener('resize', () => {
@@ -14503,6 +14505,7 @@ const SelectToDropdown = function (e) {
         }),
         (this.openDropdown = e => {
             e.querySelector('button.f-dropdown-toggle').addEventListener('click', function (e) {
+
                 if ((e.preventDefault(), this.classList.contains('--disabled'))) return !1;
                 this.parentNode.classList.toggle('--open');
             });
@@ -17364,7 +17367,164 @@ app_shop.run(
         },
         'all',
         '.ordered_product',
-    ),
+    );
+var pickupl_animspeed = 500,
+    pickupl_alert = 'Nie wybrano punktu odbioru',
+    pickupl_alertPoczta = 'Nie wybrano urzÄdu pocztowego',
+    pickupl_linktxt = 'wiÄcej informacji',
+    pickupl_linktitle = 'Zobacz szczegĂłĹowe informacje',
+    pickupl_requires_client_number = 'Nie wprowadzono numeru klienta w systemie kuriera.',
+    pickupl_select_adress = 'Wpisz poprawny adres.',
+    pickupl_select_route = 'Wpisz nazwÄ miasta',
+    pickupl_nopoints = 'Wpisz inny adres, brak punktĂłw odbioru.',
+    pickupl_error = 'WystÄpiĹ bĹÄd. ProszÄ odĹwieĹźyÄ stronÄ i sprĂłbowaÄ ponownie',
+    pickupl_nopoints_in_area = 'Nie znaleziono punktĂłw odbioru na danym obszarze. ',
+    stocks_list_more_txt = '',
+    stocks_list_on_map_txt = '';
+if (void 0 === selected_pickup_point) var selected_pickup_point = {};
+app_shop.run(
+    function () {
+        void 0 !== app_shop.fn.fixedElement &&
+            ((app_shop.fn.fixedElement = new FixedElement(
+                '.pickupl_submit',
+                '--fixed',
+                'pickuplSpacer',
+                'bottom',
+            )),
+                app_shop.fn.fixedElement.init());
+    },
+    [1, 2],
+    '#pickup_site',
+);
+var txt_62619_label = 'WpĹaty ',
+    txt_62619_wybrales_curr = 'WybraĹeĹ',
+    txt_62619_wybrales = 'WybraĹeĹ, ale zrezygnowaĹeĹ z pĹatnoĹci',
+    txt_62619_nakwote = ' na kwotÄ ',
+    txt_62619_wybrales2_curr = '',
+    txt_62619_wybrales2 = 'Wybrano',
+    txt_62619_jako = ' jako formÄ pĹatnoĹci. ',
+    txt_62619_jako_zwrot = ' jako formÄ zwrotu.',
+    txt_62619_kwota = 'Kwota do wpĹaty to ',
+    txt_62619_kwota_zwrot = ' Kwota do zwrotu to ',
+    txt_62619_auto = '<br/>WpĹata zostanie zaksiÄgowana <b>automatycznie</b>.',
+    txt_62619_dokoncz = '',
+    txt_62619_title = 'JeĹźeli proces opĹacania zostaĹ przerwany, ponĂłw tÄ pĹatnoĹÄ.',
+    txt_62619_ponow = 'PonĂłw wpĹatÄ',
+    txt_62619_bedz = '',
+    txt_62619_bedz2 = '<br />MoĹźesz zmieniÄ sposĂłb zapĹaty.',
+    txt_62619_w_inny = '<br/>Dokonaj wpĹaty na poniĹźsze dane lub wybierz inny sposĂłb zapĹaty. ',
+    txt_62619_w_inny2 = 'ZmieĹ formÄ pĹatnoĹci',
+    txt_62619_rezygnacja = 'ZrezygnowaĹeĹ z tej formy pĹatnoĹci.',
+    txt_62619_przyj_wplata = 'Twoja wpĹata zostaĹa przyjÄta.',
+    txt_62619_przyj_zwrot = 'Zwrot zostaĹ wykonany.',
+    txt_62619_paymentError =
+        'WystÄpiĹ bĹÄd pĹatnoĹci. SprĂłbuj ponownie opĹaciÄ zamĂłwienie za chwilÄ lub  <a href="contact.php">skontaktuj siÄ z nami</a>.',
+    txt_62619_od_nazwa = 'Nazwa odbiorcy: ',
+    txt_62619_konto = 'Numer konta: ',
+    txt_62619_swit = 'SWIFT: ',
+    txt_62619_bank = 'Bank:  ',
+    txt_62619_tytulem = 'TytuĹ przelewu: ',
+    txt_62619_do_zaplaty = 'Kwota przelewu: ',
+    txt_62619_wplata_dane = '<br/>Dokonaj wpĹaty na poniĹźsze dane.',
+    txt_62619_close_window = 'Zamknij okno',
+    txt_62619_https_error =
+        'DokonaÄ pĹatnoĹci kartÄ kredytowÄ moĹźna tylko przy uĹźyciu szyfrowanego poĹÄczenia. SprawdĹş czy adres sklepu poprzedzony jest protokoĹem HTTPS lub skontaktuj siÄ z obsĹugÄ sklepu.',
+    txt_62619_voucher_error = 'WystÄpiĹy bĹÄdy pĹatnoĹci bonem. ',
+    txt_62619_voucher_error_v1 = 'W tym sklepie, ten bon jest niewaĹźny.',
+    txt_62619_voucher_error_v2 =
+        'Numer bonu jest niepoprawny. Nie istnieje bon o takim identyfikatorze. SprĂłbuj wpisaÄ identyfikator ponownie, upewniajÄc siÄ, Ĺźe jest on poprawny.',
+    txt_62619_giftcard_error_v2 = 'Dane karty podarunkowej sÄ niepoprawne.',
+    txt_62619_voucher_error_v3 = 'Ten bon jest zablokowany.',
+    txt_62619_voucher_error_v4 = 'Ten bon zostaĹ juĹź wykorzystany.',
+    txt_62619_voucher_error_v5 = 'Ten bon jest juĹź niewaĹźny - termin waĹźnoĹci minÄĹ.',
+    txt_62619_voucher_error_v6 = '',
+    txt_62619_voucher_error_v7 =
+        'Bon o podanym identyfikatorze nie istnieje. SprĂłbuj wpisaÄ identyfikator ponownie.',
+    txt_62619_voucher_error_v8 = 'Nie podano identyfikatora bonu.',
+    txt_62619_payment_title = 'Dokonaj pĹatnoĹci',
+    txt_62619_loader_message = 'Pobieram dane o pĹatnoĹci',
+    txt_62619_loader_message2 = 'DodajÄ pĹatnoĹÄ',
+    txt_62619_loader_message3 = 'Pobieram historiÄ pĹatnoĹci',
+    txt_62619_hhtransfer_error = 'WystÄpiĹy bĹÄdy pĹatnoĹci punktami.',
+    txt_62619_incorrect_paymentid = 'WystÄpiĹy bĹÄdy - wybierz innÄ formÄ pĹatnoĹci.',
+    txt_62619_newpayment_error =
+        'WystÄpiĹy bĹÄdy pĹatnoĹci. SprĂłbuj ponownie opĹaciÄ zamĂłwienie za chwilÄ.',
+    txt_62619_newpayment_points_error =
+        'Nie masz wystarczajÄcej iloĹci punktĂłw lojalnoĹciowych aby opĹaciÄ to zamĂłwienie- wybierz innÄ formÄ pĹatnoĹci.',
+    txt_62619_mozesz_row = ' MoĹźesz rĂłwnieĹź ',
+    txt_62619_anuluj_wplate = ' anulowaÄ tÄ wpĹatÄ',
+    txt_62619_paymentCancelError =
+        'WystÄpiĹ bĹÄd podczas anulowania pĹatnoĹci. SprĂłbuj ponownie  za chwilÄ lub  <a href="contact.php">skontaktuj siÄ z nami</a>.',
+    txt_62619_loader_message_4 = 'Trwa anulowanie pĹatnoĹci',
+    txt_62619_wypelnij_wniosek = 'WypeĹnij wniosek',
+    txt_62619_dokonaj_platnosci = 'ZapĹaÄ ',
+    txt_62619_paypo_dokonaj_platnosci = ' PrzejdĹş do pĹatnoĹci odroczonej',
+    txt_62619_do_oplacenia = 'Do opĹacenia zamĂłwienia pozostaĹo Ci ',
+    txt_62619_dodatkowa_opl = 'Dodatkowa opĹata ',
+    txt_62619_l_nawias = ' (',
+    txt_62619_r_nawias = ')',
+    txt_62619_payment_success = 'Dyspozycja dokonania pĹatnoĹci internetowej zostaĹa przyjÄta.',
+    txt_62619_select_payment_method = 'Wybierz sposĂłb zapĹaty',
+    txt_62619_select_firstData =
+        'Transakcja zostanie zrealizowana przez system pĹatnoĹci FirstData International',
+    txt_prepaid0011_kredyt = 'Kredyt Kupiecki',
+    txt_prepaid0011_saldo = 'saldo (nadpĹata na koncie klienta)',
+    txt_prepaid0019_upper = 'Wybierz innÄ formÄ pĹatnoĹci',
+    txt_blikCode = 'Podaj 6-cyfrowy kod BLIK:',
+    lukasnotconfirmed = 'ProszÄ zaznaczyÄ pole z wyraĹźeniem zgody.',
+    zagielnotconfirmed = 'Przed zatwierdzeniem pĹatnoĹci eRaty zapoznaj siÄ z regulaminem.',
+    next_voucher_text = '<span>+</span> UĹźyj kolejnego bonu',
+    blik_js_txt_confirm = 'PotwierdĹş transakcjÄ za pomocÄ aplikacji na swoim urzÄdzeniu mobilnym.',
+    blik_code_empty = '',
+    txt_terms_title = 'PĹatnoĹÄ jednorazowa IdoPay',
+    txt_terms_link = 'regulamin pĹatnoĹci jednorazowej IdoPay',
+    txt_terms_checkbox = 'OĹwiadczam, Ĺźe zapoznaĹam / zapoznaĹem siÄ i w peĹni akceptujÄ Regulamin.',
+    txt_terms_checkbox1 = 'ZapoznaĹem siÄ i akceptujÄ ',
+    txt_terms_checkbox2 = ', przez ktĂłrÄ bÄdzie realizowana pĹatnoĹÄ.',
+    txt_62619_restartPayment = 'PonĂłw pĹatnoĹÄ',
+    txt_62619_card_not_supported = 'Przepraszamy, ale nie obsĹugujemy tego rodzaju kart',
+    txt_62619_blik_length_error = 'Kod BLIK powinien zawieraÄ 6 cyfr',
+    orderdetails_payments = {
+        ajaxLoadSite: function (e, t = !1) {
+            const i = t ? '--loading-page-overlay' : '--loading-page';
+            if (e) document.querySelector('html').classList.add(i);
+            else {
+                document.querySelector('html').classList.remove('--loading-page'),
+                    document.querySelector('html').classList.remove('--loading-page-overlay');
+                const e = document.querySelector('.orderdetails_summary');
+                e && e.classList.remove('--pay_overlay');
+            }
+        },
+        ajaxLoadSiteMessage: function (e) { },
+    };
+app_shop.run(
+    function () {
+        $('#prepaid_order_products .ordered-files ul li a').on('click', function (e) {
+            e.preventDefault();
+            const t = $(this),
+                i = t.attr('href'),
+                n = t.parent().find('span').text();
+            let o = new Image();
+            return (
+                (o.src = i),
+                (o.onload = function () {
+                    Modal({
+                        html: `<div id="ui-dialogimg"><img alt="${n}" src="${i}" /></div>`,
+                        classList: '--medium',
+                    });
+                }),
+                (o.onerror = function () {
+                    window.open(i);
+                }),
+                !1
+            );
+        });
+    },
+    'all',
+    '#prepaid_order_products .ordered-files',
+);
+const prepaidTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni' };
+(prepaidTxtWeek = [prepaidTxt.week3, prepaidTxt.week1, prepaidTxt.week2]),
     app_shop.run(function () {
         'undefined' != typeof only_virtual &&
             'true' == only_virtual &&
@@ -18198,7 +18358,7 @@ var Projector_txt_maksymalnie = 'Maksymalnie moĹźesz zamĂłwiÄ: ',
     (app_shop.txt.txt_74629_5 = 'minut '),
     (app_shop.txt.txt_74629_6 = 'sekund '),
     (app_shop.txt.txt_74629_7 =
-        'Przepraszamy, ale nie zdefiniowaliĹmy standardowego kosztu dostawy, zostanie on ustalony indywidualnie przez naszÄ obsĹugÄ po przyjÄciu zamĂłwienia.');
+        'Przepraszamy, ale nie zdefiniowaliśmy standardowego kosztu dostawy, zostanie on ustalony indywidualnie przez naszą obsługę po przyjęciu zamówienia.');
 var txt_shipping_8 = ' dzisiaj',
     txt_shipping_9 = ' w poniedziaĹek ',
     txt_shipping_10 = ' we wtorek ',
@@ -18937,6 +19097,7 @@ $(document).on('click', '.step4a div.pickupl_return', function () {
     $('.step4a div.pickupl_return').removeClass('active'),
         $(this).addClass('active').find('input').prop('checked', !0);
 }),
+
     app_shop.run(
         function () {
             $(document).on('click', '.step4a #return_go_next', function () {
