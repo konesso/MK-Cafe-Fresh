@@ -9637,13 +9637,12 @@
         overflow: visible;
     }
     .pswp {
+        top: calc(50% - 335px);
         min-height: 670px;
-        max-height: 52%;
-        top: 50%;
-        left: 50%;
+        width: 100%;
         position: fixed;
-        transform: translate(25%, 10%);
         border-radius: 0;
+        transform: translateX(25vw);
     }
     .pswp__scroll-wrap {
         left: 140px;

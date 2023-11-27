@@ -16,22 +16,22 @@
                                 href="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"
                                 data-slick-index="0" data-width="92" data-height="160"><img
                                     class="photos__photo b-lazy --nav" width="92" height="160"
-                                    alt="Kawa ziarnista MkCafe 1 KG "
+                                    alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
                                     data-src="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"></a>
                         </figure>
                         <figure class="photos__figure --nav"><a class="photos__link --nav"
-                                href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_1.jpg"
+                                href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"
                                 data-slick-index="1" data-width="75" data-height="75"><img
                                     class="photos__photo b-lazy --nav" width="75" height="75"
-                                    alt="Kawa ziarnista MkCafe 1 KG "
-                                    data-src="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_1.jpg"></a>
+                                    alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
+                                    data-src="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"></a>
                         </figure>
                         <figure class="photos__figure --nav"><a class="photos__link --nav"
-                                href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_2.jpg"
+                                href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"
                                 data-slick-index="2" data-width="75" data-height="75"><img
                                     class="photos__photo b-lazy --nav" width="75" height="75"
-                                    alt="Kawa ziarnista MkCafe 1 KG "
-                                    data-src="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_2.jpg"></a>
+                                    alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
+                                    data-src="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"></a>
                         </figure>
                     </div>
                     <div id="photos_slider" class="photos__slider" data-skeleton="true" data-nav="true">
@@ -39,25 +39,26 @@
                             <figure class="photos__figure"><a class="photos__link"
                                     href="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"
                                     data-width="450" data-height="780"><img class="photos__photo" width="450"
-                                        height="780" alt="Kawa ziarnista MkCafe 1 KG "
+                                        height="780" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
                                         src="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"></a>
                             </figure>
                             <figure class="photos__figure"><a class="photos__link"
-                                    href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_1.jpg"
+                                    href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"
                                     data-width="624" data-height="624"><img class="photos__photo slick-loading"
-                                        width="624" height="624" alt="Kawa ziarnista MkCafe 1 KG "
-                                        data-lazy="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_1.jpg"></a>
+                                        width="624" height="624" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
+                                        data-lazy="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"></a>
                             </figure>
                             <figure class="photos__figure"><a class="photos__link"
-                                    href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_2.jpg"
+                                    href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"
                                     data-width="624" data-height="624"><img class="photos__photo slick-loading"
-                                        width="624" height="624" alt="Kawa ziarnista MkCafe 1 KG "
-                                        data-lazy="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_2.jpg"></a>
+                                        width="624" height="624" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
+                                        data-lazy="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"></a>
                             </figure>
                         </div>
                     </div>
 
                 </section>
+
 
                 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="pswp__bg"></div>
@@ -545,8 +546,8 @@
                                             Bank</span></a><a class="projector_instalments__item loading"
                                         data-instalments="LeaseLink"
                                         onclick="event.stopPropagation(); calculate_instalments('300.00','10000000.00','','',$(this).attr('data-window'),'','LeaseLink','',''); return false;"
-                                        href="javascript:window.open('https://online.leaselink.pl/RateCalculator/calculate?tax=23&amp;isNet=false&amp;categoryLevel=KAWA%20ZIARNISTA&amp;productname=Kawa%20ziarnista%20MkCafe%20DODICIGRANCRU%201kg%20&amp;externalId=KON001&amp;value=XXX',%20'',%20'height=750,width=850,location=no,resizable=yes,scrollbars=yes,status=0;')"
-                                        data-window="window.open('https://online.leaselink.pl/RateCalculator/calculate?tax=23&amp;isNet=false&amp;categoryLevel=KAWA ZIARNISTA&amp;productname=Kawa ziarnista MkCafe 1 KG &amp;externalId=KON001&amp;value=XXX', '', 'height=750,width=850,location=no,resizable=yes,scrollbars=yes,status=0;')"><img
+                                        href="javascript:window.open('https://online.leaselink.pl/RateCalculator/calculate?tax=23&amp;isNet=false&amp;categoryLevel=KAWA%20ZIARNISTA&amp;productname=Kawa%20ziarnista%20Bazzara%20DODICIGRANCRU%201kg%20&amp;externalId=KON001&amp;value=XXX',%20'',%20'height=750,width=850,location=no,resizable=yes,scrollbars=yes,status=0;')"
+                                        data-window="window.open('https://online.leaselink.pl/RateCalculator/calculate?tax=23&amp;isNet=false&amp;categoryLevel=KAWA ZIARNISTA&amp;productname=Kawa ziarnista Bazzara DODICIGRANCRU 1kg &amp;externalId=KON001&amp;value=XXX', '', 'height=750,width=850,location=no,resizable=yes,scrollbars=yes,status=0;')"><img
                                             class="projector_instalments__item_icon b-lazy" src="./img/leaselink.png"
                                             data-src="./img/leaselink.png" alt="LeaseLink"><span
                                             class="projector_instalments__item_text">LeaseLink</span></a></div>
@@ -1184,7 +1185,7 @@
                     data-ajaxload="true" data-pagetype="projector">
                     <div class="hotspot mb-5 skeleton"><span class="headline"></span>
                         <div class="products d-flex flex-wrap --adaptive slick-initialized slick-slider slick-dotted">
-                            <div class="slick-list draggable" style="height: 303px;">
+                            <div class="slick-list draggable" style="height: 100%">
                                 <div class="slick-track"
                                     style="opacity: 1; width: 780px; transform: translate3d(0px, 0px, 0px);">
                                     <div class="product col-6 col-sm-3 py-3 slick-slide slick-current slick-active"
@@ -1434,6 +1435,7 @@
                         </div>
                     </div>
                 </section>
+                <?php include 'hotSpot1.php' ?>
                 <?php include 'product-blog.php' ?>
             </div>
         </div>
