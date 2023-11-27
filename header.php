@@ -88,16 +88,16 @@
                     <div class="topBasket__block --products">
                         <div class="topBasket__row">
                             <a class="topBasket__item --photo"
-                                href="/product-pol-7723-Kawa-mielona-Bazzara-AROMAMORE-Moka-250g.html">
+                                href="/product-pol-7723-Kawa-mielona-MkCafe-AROMAMORE-Moka-250g.html">
                                 <picture>
                                     <source type="image/webp"
                                         srcset="https://www.konesso.pl/data/gfx/icons/small/3/2/7723.jpg">
-                                    <img src="null" alt="Kawa mielona Bazzara AROMAMORE Moka 250g">
+                                    <img src="null" alt="Kawa mielona MkCafe AROMAMORE Moka 250g">
                                 </picture>
                             </a>
                             <a class="topBasket__item --name"
-                                href="/product-pol-7723-Kawa-mielona-Bazzara-AROMAMORE-Moka-250g.html">
-                                <span class="topBasket__name">Kawa mielona Bazzara AROMAMORE Moka 250g</span>
+                                href="/product-pol-7723-Kawa-mielona-MkCafe-AROMAMORE-Moka-250g.html">
+                                <span class="topBasket__name">Kawa mielona MkCafe AROMAMORE Moka 250g</span>
 
 
                             </a>

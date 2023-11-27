@@ -15,44 +15,35 @@
         <?php $arr = json_decode(json_encode([
             [
                 'name' => 'Triest - włoska stolica kawy',
-                'img' => 'https://www.konesso.pl/data/include/img/news/1696850710.jpg',
+                'img' => './img/zestaw3a.png',
                 'desc' => 'Dlaczego i czy słusznie Triest jest nazywany <strong>włoską stolicą
                         kawy</strong>? Odkryj, jaką historię kryje to nadmorskie miasto i co ma z
-                    nim wspólnego rzemieślnicza palarnia <strong>Bazzara.</strong>',
+                    nim wspólnego rzemieślnicza palarnia <strong>MkCafe.</strong>',
             ],
             [
-                'name' => 'Jaką kawę Bazzara wybrać',
-                'img' => 'https://www.konesso.pl/data/include/img/news/1688122979.jpg',
-                'desc' => 'Kawy <strong>BAZZARA</strong> to jedne z najlepszych kaw ziarnistych do espresso!
-                Jeśli nie wiesz, <strong>jaką kawę z włoskiej palarni Bazzara wybrać</strong>,
+                'name' => 'Jaką kawę MkCafe wybrać',
+                'img' => './img/zestaw4.png',
+                'desc' => 'Kawy <strong>MkCafe</strong> to jedne z najlepszych kaw ziarnistych do espresso!
+                Jeśli nie wiesz, <strong>jaką kawę z włoskiej palarni MkCafe wybrać</strong>,
                 przygotowaliśmy dla Was małe podpowiedzi.</p>',
             ],
             [
                 'name' => 'Jak zaparzyć kawę',
-                'img' => 'https://www.konesso.pl/data/include/img/news/1681985447.jpg',
-                'desc' => '<strong>Bazzara Dodicigrancru to must have</strong> w menu każdego miłośnika
-                aromatycznego espresso. Jeśli zastanawiasz się nad zakupem kawy Bazzara
+                'img' => './img/zestaw5.png',
+                'desc' => '<strong>MkCafe Dodicigrancru to must have</strong> w menu każdego miłośnika
+                aromatycznego espresso. Jeśli zastanawiasz się nad zakupem kawy MkCafe
                 Dodicigrancru, to być może moje odczucia pomogą Ci dokonać właściwego wyboru.',
             ],
             [
                 'name' => 'Przepis na kawę - Truskawkowe macchiato',
-                'img' => 'https://www.konesso.pl/data/include/img/news/1556193742.jpg',
+                'img' => './img/zestaw3c.jpg',
                 'desc' => 'Szukając w sklepie Konesso.pl dobrej kawy dla siebie, warto kierować się
                 doświadczeniem innych klientów, którzy swoimi wielokrotnymi wyborami utarli
                 pewne ścieżki. Wykorzystując informacje dotyczące Waszych zakupów i pochlebnych
                 opinii w ubiegłym roku, stworzyliśmy <strong>ranking kawy ziarnistej do
                     espresso</strong>',
             ],
-            [
-                'name' => 'Kawa w Turcji - historia',
-                'img' => 'https://www.konesso.pl/data/include/img/news/1531989562.jpg',
-                'desc' => 'Turcja odegrała bardzo istotną rolę w historii kawy. To właśnie dzięki Turkom Europa poznała właściwości niepozornych zielonych ziaren kawy. To właśnie kawa po turecku jest najstarszą metodą parzenia. Poznaj niezwykle ciekawą historię, która łączy Turcję i kawę.',
-            ],
-            [
-                'name' => 'Jak przygotować kawę po szwedzku?',
-                'img' => 'https://www.konesso.pl/data/include/img/news/1526021095.jpg',
-                'desc' => 'Kawa przygotowana z dodatkiem świeżego jajka, czyli inaczej kawa po szwedzku, to bardzo ciekawa alternatywa dla tradycyjnie zalewanej wodą kawy. Delikatny w smaku napar jest pozbawiony fusów i bardzo prosty w przygotowaniu. Cały proces parzenia trwa tylko kilka minut..',
-            ],
+ 
             [
                 'name' => 'Flat white - co to jest?',
                 'img' => 'https://www.konesso.pl/data/include/img/news/1516174053.jpg',

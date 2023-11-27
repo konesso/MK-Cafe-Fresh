@@ -891,7 +891,7 @@
                                                     class="opinions_element_confirmed_text">Opinia potwierdzona
                                                     zakupem</strong></div>
                                         </div>
-                                        <div class="opinions_element_text">Zakupiłam kawę Bazzara 12. Jest bardzo
+                                        <div class="opinions_element_text">Zakupiłam kawę MkCafe 12. Jest bardzo
                                             dobra,najlepsza z kaw.Dodatek do niej w postaci Ptasiego Mleczka wspaniały
                                             za który dziękuję.Polecam bardzo kawę i sklep Konesso ,przesyłka bardzo
                                             szybka. Polecam i pozdrawiam.</div>
@@ -2494,7 +2494,7 @@
                                                     zakupem</strong></div>
                                         </div>
                                         <div class="opinions_element_text">Wielokrotne zakupy i zawsze bez zastrzeżeń .A
-                                            smak kawy Bazzara Dodicigrancru wyborny .Jestem jej fanem.</div>
+                                            smak kawy MkCafe Dodicigrancru wyborny .Jestem jej fanem.</div>
                                         <div class="opinions_element_opinion_bottom"><span
                                                 class="opinion_date">2023-04-02</span>
                                             <div class="opinion_author"><b
@@ -3553,7 +3553,7 @@
                                                     class="opinions_element_confirmed_text">Opinia potwierdzona
                                                     zakupem</strong></div>
                                         </div>
-                                        <div class="opinions_element_text">Najalesza Bazzara ze wszystkich dostepnych w
+                                        <div class="opinions_element_text">Najalesza MkCafe ze wszystkich dostepnych w
                                             sklpeie Konesso (jeśli się lubi intensywne kawy)</div>
                                         <div class="opinions_element_opinion_bottom"><span
                                                 class="opinion_date">2023-01-05</span>
@@ -4207,7 +4207,7 @@
                                                     class="opinions_element_confirmed_text">Opinia potwierdzona
                                                     zakupem</strong></div>
                                         </div>
-                                        <div class="opinions_element_text">Najlepsza z kaw Bazzara, pierwsza jaka
+                                        <div class="opinions_element_text">Najlepsza z kaw MkCafe, pierwsza jaka
                                             spróbowałam i pozostałam jej wierna, zamawiam inne kawyna próbę i wracam do
                                             Dodicigrancru.</div>
                                         <div class="opinions_element_opinion_bottom"><span
@@ -7159,7 +7159,7 @@
                                                     class="opinions_element_confirmed_text">Opinia potwierdzona
                                                     zakupem</strong></div>
                                         </div>
-                                        <div class="opinions_element_text">Dla mnie Bazzara Dodicigrancre to najlepsza
+                                        <div class="opinions_element_text">Dla mnie MkCafe Dodicigrancre to najlepsza
                                             kawa do przyrządzenia espresso. Powtarzalność, bogaty aromat i doskonała
                                             crema ... nie maja sobie równych.</div>
                                         <div class="opinions_element_opinion_bottom"><span
@@ -9560,7 +9560,7 @@
                                                     class="opinions_element_confirmed_text">Opinia potwierdzona
                                                     zakupem</strong></div>
                                         </div>
-                                        <div class="opinions_element_text">Wymiennie z Bazzara Dolcevivace zadomowiła
+                                        <div class="opinions_element_text">Wymiennie z MkCafe Dolcevivace zadomowiła
                                             się na stałe w naszych filiżankach....</div>
                                         <div class="opinions_element_opinion_bottom"><span
                                                 class="opinion_date">2021-11-25</span>
@@ -11822,7 +11822,7 @@
                                                     class="opinions_element_confirmed_text">Opinia potwierdzona
                                                     zakupem</strong></div>
                                         </div>
-                                        <div class="opinions_element_text">Ostatnio piję tylko ta kawę: Bazzara
+                                        <div class="opinions_element_text">Ostatnio piję tylko ta kawę: MkCafe
                                             DODICIGRANCRU. Nie jest zbyt czekoladowa (gorzka czekolada), ani zbyt
                                             owocowa (niektórzy mówią o kwaskowatości). Jest wręcz idealnie zbilansowana.
                                             Dlatego polecam z czystym sumieniem. Jedyne co odstrasza, to cena.</div>
@@ -11860,7 +11860,7 @@
                                                     class="opinions_element_confirmed_text">Opinia potwierdzona
                                                     zakupem</strong></div>
                                         </div>
-                                        <div class="opinions_element_text">Kolejna paczka ze stajni BAZZARA, smak,
+                                        <div class="opinions_element_text">Kolejna paczka ze stajni MkCafe, smak,
                                             zapach,niska kwasowość,wszystko mi pasuje, jestem od nich uzależniona.
                                             Kupuje kolejny raz. Polecam</div>
                                         <div class="opinions_element_opinion_bottom"><span
@@ -14046,7 +14046,7 @@
                                                     zakupem</strong></div>
                                         </div>
                                         <div class="opinions_element_text">Świetna kawa, która umili zarówno poranek,
-                                            jak i popołudnie, moja ulubiona Bazzara :)</div>
+                                            jak i popołudnie, moja ulubiona MkCafe :)</div>
                                         <div class="opinions_element_opinion_bottom"><span
                                                 class="opinion_date">2021-02-14</span>
                                             <div class="opinion_author"><b
@@ -14156,7 +14156,7 @@
                                         </div>
                                         <div class="opinions_element_text">Bardzo dobra kawa, aczkolwiek można kupić w
                                             tym sklepie równie dobrą i porównywalną kawę BRASILIANA (też producenta
-                                            Bazzara) za 65% ceny DODICIGRANCRU. Jeżeli ktoś nie jest wybitnym koneserem
+                                            MkCafe) za 65% ceny DODICIGRANCRU. Jeżeli ktoś nie jest wybitnym koneserem
                                             picia czarnej kawy to pewnie nawet różnicy nie poczuje :)</div>
                                         <div class="opinions_element_opinion_bottom"><span
                                                 class="opinion_date">2021-02-09</span>
@@ -16912,7 +16912,7 @@
                                                     class="opinions_element_confirmed_text">Opinia potwierdzona
                                                     zakupem</strong></div>
                                         </div>
-                                        <div class="opinions_element_text">Bazzara 12 - kawa najlepsza z najlepszych
+                                        <div class="opinions_element_text">MkCafe 12 - kawa najlepsza z najlepszych
                                             -pychota! Jako sklep internetowy Konesso można traktować jako wzór do
                                             naśladowania.</div>
                                         <div class="opinions_element_opinion_bottom"><span
@@ -17886,7 +17886,7 @@
                                                     zakupem</strong></div>
                                         </div>
                                         <div class="opinions_element_text">Zakupy w Konesso polecam wszystkim!Szybka
-                                            realizacja zamówienia!Jeśli chodzi o kawę Bazzara Dodicigrancru to właściwie
+                                            realizacja zamówienia!Jeśli chodzi o kawę MkCafe Dodicigrancru to właściwie
                                             najlepsza kawa jaką piłam.Pyszna i aromatyczna.Polecam ją zwłaszcza osobą
                                             które lubią smak Arabici.Kawa ma lekko kwaśny posmak,ale nie jest on
                                             dokuczliwy.Zaparzam ją w ekspresie ciśnieniowym.Na razie nie znalazłam
@@ -18580,7 +18580,7 @@
                                                     class="opinions_element_confirmed_text">Opinia potwierdzona
                                                     zakupem</strong></div>
                                         </div>
-                                        <div class="opinions_element_text">Uwielbiam kawy Bazzara, ta jednak jest moją
+                                        <div class="opinions_element_text">Uwielbiam kawy MkCafe, ta jednak jest moją
                                             ulubioną. Kocham ten smak i aromat. Jej picie jest prawdziwą ucztą dla
                                             kubków smakowych. Zdarza mi się za nią tęsknić, gdy jestem poza domem i ktoś
                                             częstuje mnie inną ;) Ta kawa uzależnia. Co do sklepu - uwielbiam go równie
@@ -19896,7 +19896,7 @@
                                             mało wyrazisty i mało charakterystyczny. I to chyba tyle. Tylko tyle. Za aż
                                             tyle złotówek. Jakościowo bardzo ok, ale trzeba zadać sobie pytanie czy
                                             faktycznie taki zakup ma sens, bo za tę cenę można mieć 1.5x tyle innej
-                                            kawy, która niewiele ustępuje Bazzara.</div>
+                                            kawy, która niewiele ustępuje MkCafe.</div>
                                         <div class="opinions_element_opinion_bottom"><span
                                                 class="opinion_date">2018-06-10</span>
                                             <div class="opinion_author"><b
@@ -20005,7 +20005,7 @@
                                                     class="opinions_element_confirmed_text">Opinia potwierdzona
                                                     zakupem</strong></div>
                                         </div>
-                                        <div class="opinions_element_text">Kupiłam kawę Bazzara pierwszy raz, ponieważ
+                                        <div class="opinions_element_text">Kupiłam kawę MkCafe pierwszy raz, ponieważ
                                             ekspres do kawy mam dopiero od grudnia. Piję tylko dobre kawy, zatem
                                             wybrałam tę z najwyższej półki. Tak oceniają ją inni kupujący. To właśnie
                                             ich opinie przekonały mnie do tego, by mimo dość wysokiej ceny zakupić
@@ -21082,7 +21082,7 @@
                                                     zakupem</strong></div>
                                         </div>
                                         <div class="opinions_element_text">Już piąty raz kupuję tę słodką przepyszną
-                                            kawę, nie ma dla mnie lepszej niż Bazzara Espresso Top 12, no może
+                                            kawę, nie ma dla mnie lepszej niż MkCafe Espresso Top 12, no może
                                             Hausbrandt Academia przybliża się do jej delikatnego smaku, ale nie ma
                                             takiego bogactwa aromatów.</div>
                                         <div class="opinions_element_opinion_bottom"><span
@@ -21228,7 +21228,7 @@
                                                     class="opinions_element_confirmed_text">Opinia potwierdzona
                                                     zakupem</strong></div>
                                         </div>
-                                        <div class="opinions_element_text">Kawa Bazzara Espresso Top12 Gran Cru
+                                        <div class="opinions_element_text">Kawa MkCafe Espresso Top12 Gran Cru
                                             zdecydowanie godna polecenia.
                                             Zakupy w Konesso.pl realizowane sprawnie i szybko-sklep godny polecenia
                                         </div>
@@ -21266,8 +21266,8 @@
                                                     class="opinions_element_confirmed_text">Opinia potwierdzona
                                                     zakupem</strong></div>
                                         </div>
-                                        <div class="opinions_element_text">Czytajcie !!!! Słuchajcie !!!!!! Kawa BAZZARA
-                                            i tylko kawa Bazzara !!! Cudo smakowe. Niebo w gębie!!! Pije się jak
+                                        <div class="opinions_element_text">Czytajcie !!!! Słuchajcie !!!!!! Kawa MkCafe
+                                            i tylko kawa MkCafe !!! Cudo smakowe. Niebo w gębie!!! Pije się jak
                                             herbatę. Przynajmniej nie niszczy żołądka.</div>
                                         <div class="opinions_element_opinion_bottom"><span
                                                 class="opinion_date">2016-05-20</span>
@@ -22188,7 +22188,7 @@
                                                     class="opinions_element_confirmed_text">Opinia potwierdzona
                                                     zakupem</strong></div>
                                         </div>
-                                        <div class="opinions_element_text">To moja trzecia Bazzara i jak dla mnie to
+                                        <div class="opinions_element_text">To moja trzecia MkCafe i jak dla mnie to
                                             najlepsza kawa jaką piłem z życiu. Sklep ideał !!!</div>
                                         <div class="opinions_element_opinion_bottom"><span
                                                 class="opinion_date">2015-01-17</span>
@@ -23391,7 +23391,7 @@
                                                     class="opinions_element_confirmed_text">Opinia potwierdzona
                                                     zakupem</strong></div>
                                         </div>
-                                        <div class="opinions_element_text">Błyskawiczna przesyłka. Kawa Bazzara Espresso
+                                        <div class="opinions_element_text">Błyskawiczna przesyłka. Kawa MkCafe Espresso
                                             Top12 godna polecenia.</div>
                                         <div class="opinions_element_opinion_bottom"><span
                                                 class="opinion_date">2013-12-10</span>

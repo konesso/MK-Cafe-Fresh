@@ -388,7 +388,7 @@
                                                     class="f-control focused" id="filter_producer_1320750793"
                                                     data-id="filter_producer" value="1320750793"><label class="f-label"
                                                     for="filter_producer_1320750793"><span
-                                                        class="--name">BAZZARA</span><span
+                                                        class="--name">MkCafe</span><span
                                                         class="--quantity">52</span></label></div>
                                         </li>
                                         <li class="filters__item mb-2

@@ -16,22 +16,22 @@
                                 href="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"
                                 data-slick-index="0" data-width="92" data-height="160"><img
                                     class="photos__photo b-lazy --nav" width="92" height="160"
-                                    alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
+                                    alt="Kawa ziarnista MkCafe 1 KG "
                                     data-src="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"></a>
                         </figure>
                         <figure class="photos__figure --nav"><a class="photos__link --nav"
-                                href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"
+                                href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_1.jpg"
                                 data-slick-index="1" data-width="75" data-height="75"><img
                                     class="photos__photo b-lazy --nav" width="75" height="75"
-                                    alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                    data-src="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"></a>
+                                    alt="Kawa ziarnista MkCafe 1 KG "
+                                    data-src="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_1.jpg"></a>
                         </figure>
                         <figure class="photos__figure --nav"><a class="photos__link --nav"
-                                href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"
+                                href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_2.jpg"
                                 data-slick-index="2" data-width="75" data-height="75"><img
                                     class="photos__photo b-lazy --nav" width="75" height="75"
-                                    alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                    data-src="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"></a>
+                                    alt="Kawa ziarnista MkCafe 1 KG "
+                                    data-src="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_2.jpg"></a>
                         </figure>
                     </div>
                     <div id="photos_slider" class="photos__slider" data-skeleton="true" data-nav="true">
@@ -39,20 +39,20 @@
                             <figure class="photos__figure"><a class="photos__link"
                                     href="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"
                                     data-width="450" data-height="780"><img class="photos__photo" width="450"
-                                        height="780" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
+                                        height="780" alt="Kawa ziarnista MkCafe 1 KG "
                                         src="https://mkfreshprod.azureedge.net/img/752/800/70/resize/catalog/product/m/k/mk_mexico-1880x2000.jpg"></a>
                             </figure>
                             <figure class="photos__figure"><a class="photos__link"
-                                    href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"
+                                    href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_1.jpg"
                                     data-width="624" data-height="624"><img class="photos__photo slick-loading"
-                                        width="624" height="624" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                        data-lazy="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_1.jpg"></a>
+                                        width="624" height="624" alt="Kawa ziarnista MkCafe 1 KG "
+                                        data-lazy="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_1.jpg"></a>
                             </figure>
                             <figure class="photos__figure"><a class="photos__link"
-                                    href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"
+                                    href="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_2.jpg"
                                     data-width="624" data-height="624"><img class="photos__photo slick-loading"
-                                        width="624" height="624" alt="Kawa ziarnista Bazzara DODICIGRANCRU 1kg "
-                                        data-lazy="https://www.konesso.pl/pol_pl_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29_2.jpg"></a>
+                                        width="624" height="624" alt="Kawa ziarnista MkCafe 1 KG "
+                                        data-lazy="https://www.konesso.pl/pol_pl_Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg-29_2.jpg"></a>
                             </figure>
                         </div>
                     </div>
@@ -97,12 +97,12 @@
 
                 <section id="projector_productname" class="product_name mb-4">
                     <div class="product_name__block --name mb-2 d-sm-flex justify-content-sm-between mb-sm-3">
-                        <h1 class="product_name__name m-0">Kawa ziarnista Bazzara DODICIGRANCRU 1kg </h1>
+                        <h1 class="product_name__name m-0">BRAZIL YELLOW BOURBON DONA NENEM 1KG ZIARNO</h1>
                         <!-- <div
                             class="product_name__firm_logo d-none d-sm-flex justify-content-sm-end align-items-sm-center ml-sm-2">
-                            <a class="firm_logo" href="/firm-pol-1320750793-BAZZARA.html"><img class="b-lazy b-loaded"
+                            <a class="firm_logo" href="/firm-pol-1320750793-MkCafe.html"><img class="b-lazy b-loaded"
                                     src="https://www.konesso.pl/pol/producers/gfx/projector/1320750793_1.jpg"
-                                    title="BAZZARA" alt="BAZZARA"></a>
+                                    title="MkCafe" alt="MkCafe"></a>
                         </div> -->
                     </div>
                     <div class="product_name__block --links d-lg-flex justify-content-lg-end align-items-lg-center">
@@ -342,12 +342,12 @@
                     <div id="versions" class="projector_details__versions projector_versions"><span
                             class="projector_versions__label">Dostępne opakowania</span>
                         <div class="projector_versions__sub"><a class="projector_versions__item --selected"
-                                href="/product-pol-29-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html" title="1000g"><span
+                                href="/product-pol-29-Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg.html" title="1000g"><span
                                     class="projector_versions__gfx"><img
                                         src="https://mkfreshprod.azureedge.net/img/360/383/70/resize-contain/catalog/product/m/k/mk_fr_christmas_22_1880.jpg"
                                         alt="1000g"></span><span class="projector_versions__name">1000g</span></a><a
                                 class="projector_versions__item"
-                                href="/product-pol-2016-Kawa-ziarnista-Bazzara-DODICIGRANCRU-250g.html"
+                                href="/product-pol-2016-Kawa-ziarnista-MkCafe-DODICIGRANCRU-250g.html"
                                 title="250g"><span class="projector_versions__gfx"><img
                                         src="https://mkfreshprod.azureedge.net/img/360/383/70/resize-contain/catalog/product/b/r/brazil-honey_1880x2000_1.jpg"
                                         alt="250g"></span><span class="projector_versions__name">250g</span></a>
@@ -359,7 +359,7 @@
                             data-onesize="true" style="display: none;"><span
                                 class="projector_sizes__label">Rozmiar</span>
                             <div class="projector_sizes__sub"><a class="projector_sizes__item --selected"
-                                    href="/product-pol-29-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html?selected_size=onesize"
+                                    href="/product-pol-29-Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg.html?selected_size=onesize"
                                     data-type="onesize"><span class="projector_sizes__name">uniwersalny</span></a></div>
                         </div>
                         <div id="projector_prices_wrapper" class="projector_details__prices projector_prices" style="">
@@ -545,8 +545,8 @@
                                             Bank</span></a><a class="projector_instalments__item loading"
                                         data-instalments="LeaseLink"
                                         onclick="event.stopPropagation(); calculate_instalments('300.00','10000000.00','','',$(this).attr('data-window'),'','LeaseLink','',''); return false;"
-                                        href="javascript:window.open('https://online.leaselink.pl/RateCalculator/calculate?tax=23&amp;isNet=false&amp;categoryLevel=KAWA%20ZIARNISTA&amp;productname=Kawa%20ziarnista%20Bazzara%20DODICIGRANCRU%201kg%20&amp;externalId=KON001&amp;value=XXX',%20'',%20'height=750,width=850,location=no,resizable=yes,scrollbars=yes,status=0;')"
-                                        data-window="window.open('https://online.leaselink.pl/RateCalculator/calculate?tax=23&amp;isNet=false&amp;categoryLevel=KAWA ZIARNISTA&amp;productname=Kawa ziarnista Bazzara DODICIGRANCRU 1kg &amp;externalId=KON001&amp;value=XXX', '', 'height=750,width=850,location=no,resizable=yes,scrollbars=yes,status=0;')"><img
+                                        href="javascript:window.open('https://online.leaselink.pl/RateCalculator/calculate?tax=23&amp;isNet=false&amp;categoryLevel=KAWA%20ZIARNISTA&amp;productname=Kawa%20ziarnista%20MkCafe%20DODICIGRANCRU%201kg%20&amp;externalId=KON001&amp;value=XXX',%20'',%20'height=750,width=850,location=no,resizable=yes,scrollbars=yes,status=0;')"
+                                        data-window="window.open('https://online.leaselink.pl/RateCalculator/calculate?tax=23&amp;isNet=false&amp;categoryLevel=KAWA ZIARNISTA&amp;productname=Kawa ziarnista MkCafe 1 KG &amp;externalId=KON001&amp;value=XXX', '', 'height=750,width=850,location=no,resizable=yes,scrollbars=yes,status=0;')"><img
                                             class="projector_instalments__item_icon b-lazy" src="./img/leaselink.png"
                                             data-src="./img/leaselink.png" alt="LeaseLink"><span
                                             class="projector_instalments__item_text">LeaseLink</span></a></div>
@@ -858,34 +858,32 @@
                         <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
                                 class="product__icon d-flex justify-content-center align-items-center p-1 m-0"
                                 data-product-id="2453"
-                                href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html"
-                                title="ZESTAW 6x Kawa ziarnista Bazzara DODICIGRANCRU 1kg"><img
-                                    src="https://www.konesso.pl/pol_il_ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-2453.jpg"
-                                    class="b-lazy b-loaded"
-                                    alt="ZESTAW 6x Kawa ziarnista Bazzara DODICIGRANCRU 1kg"></a>
+                                href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg.html"
+                                title="ZESTAW 6x Kawa ziarnista MkCafe 1 KG"><img src="./img/zestaw1.png"
+                                    class="b-lazy b-loaded" alt="ZESTAW 6x Kawa ziarnista MkCafe 1 KG"></a>
                             <div
                                 class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
                                 <h3><a class="product__name mb-1 mb-md-0"
-                                        href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html"
-                                        title="ZESTAW 6x Kawa ziarnista Bazzara DODICIGRANCRU 1kg">ZESTAW 6x Kawa
-                                        ziarnista Bazzara DODICIGRANCRU 1kg</a></h3>
+                                        href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg.html"
+                                        title="ZESTAW 6x Kawa ziarnista MkCafe 1 KG">ŚWIEŻO PALONA KAWA
+                                        ZIARNISTA MK FRESH BRAZIL I INDIA 2X1KG</a></h3>
                                 <div
                                     class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto">
                                     <div class="product__prices flex-md-row align-items-md-center">
                                         <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
-                                                class="price --max"><del>989,94 zł</del></span><span
+                                                class="price --max"><del>230,08 zł</del></span><span
                                                 class="product__promo_info d-none">(Taniej w zestawie o 32%)</span>
                                         </div>
-                                        <div class="product__price_wrapper"><strong class="price">665,33 zł<span
+                                        <div class="product__price_wrapper"><strong class="price">169,08 zł<span
                                                     class="price_vat"> brutto</span></strong></div>
 
                                     </div>
                                     <div class="product__promo_omnibus omnibus_price"><span
                                             class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
-                                        </span><span class="omnibus_price__value">978,00 zł</span></div>
+                                        </span><span class="omnibus_price__value">220 zł</span></div>
 
                                 </div><a class="product__see d-none d-md-block"
-                                    href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html">
+                                    href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg.html">
                                     Zobacz zestaw
                                 </a>
                             </div>
@@ -893,16 +891,14 @@
                         <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
                                 class="product__icon d-flex justify-content-center align-items-center p-1 m-0"
                                 data-product-id="4551"
-                                href="/product-pol-4551-Bazzara-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html"
-                                title="Bazzara Dodicigrancru 1kg + 2x filiżanka do kawy espresso"><img
-                                    src="https://www.konesso.pl/pol_il_Bazzara-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso-4551.jpg"
-                                    class="b-lazy b-loaded"
-                                    alt="Bazzara Dodicigrancru 1kg + 2x filiżanka do kawy espresso"></a>
+                                href="/product-pol-4551-MkCafe-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html"
+                                title="MkCafe 1 KG + 2x filiżanka do kawy espresso"><img src="./img/zestaw2.png"
+                                    class="b-lazy b-loaded" alt="MkCafe 1 KG + 2x filiżanka do kawy espresso"></a>
                             <div
                                 class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
                                 <h3><a class="product__name mb-1 mb-md-0"
-                                        href="/product-pol-4551-Bazzara-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html"
-                                        title="Bazzara Dodicigrancru 1kg + 2x filiżanka do kawy espresso">Bazzara
+                                        href="/product-pol-4551-MkCafe-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html"
+                                        title="MkCafe 1 KG + 2x filiżanka do kawy espresso">MkCafe
                                         Dodicigrancru 1kg + 2x filiżanka do kawy espresso</a></h3>
                                 <div
                                     class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto">
@@ -919,7 +915,7 @@
                                             class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
                                         </span><span class="omnibus_price__value">178,00 zł</span></div>
                                 </div><a class="product__see d-none d-md-block"
-                                    href="/product-pol-4551-Bazzara-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html">
+                                    href="/product-pol-4551-MkCafe-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html">
                                     Zobacz zestaw
                                 </a>
                             </div>
@@ -927,18 +923,16 @@
                         <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
                                 class="product__icon d-flex justify-content-center align-items-center p-1 m-0 loading"
                                 data-product-id="5212"
-                                href="/product-pol-5212-ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html"
-                                title="ZESTAW - Kawa Bazzara Dodicigrancru 2x1kg + opakowanie 250g GRATIS"><img
-                                    src="https://www.konesso.pl/pol_il_ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS-5212.jpg"
-                                    class="b-lazy"
-                                    data-src="https://www.konesso.pl/pol_il_ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS-5212.jpg"
-                                    alt="ZESTAW - Kawa Bazzara Dodicigrancru 2x1kg + opakowanie 250g GRATIS"></a>
+                                href="/product-pol-5212-ZESTAW-Kawa-MkCafe-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html"
+                                title="ZESTAW - Kawa MkCafe Dodicigrancru 2x1kg + opakowanie 250g GRATIS"><img
+                                    src="./img/zestaw3.png" class="b-lazy" data-src="./img/zestaw3.png"
+                                    alt="ZESTAW - Kawa MkCafe Dodicigrancru 2x1kg + opakowanie 250g GRATIS"></a>
                             <div
                                 class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
                                 <h3><a class="product__name mb-1 mb-md-0"
-                                        href="/product-pol-5212-ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html"
-                                        title="ZESTAW - Kawa Bazzara Dodicigrancru 2x1kg + opakowanie 250g GRATIS">ZESTAW
-                                        - Kawa Bazzara Dodicigrancru 2x1kg + opakowanie 250g GRATIS</a></h3>
+                                        href="/product-pol-5212-ZESTAW-Kawa-MkCafe-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html"
+                                        title="ZESTAW - Kawa MkCafe Dodicigrancru 2x1kg + opakowanie 250g GRATIS">ZESTAW
+                                        - Kawa MkCafe Dodicigrancru 2x1kg + opakowanie 250g GRATIS</a></h3>
                                 <div
                                     class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto --omnibus">
                                     <div class="product__prices flex-md-row align-items-md-center">
@@ -954,7 +948,7 @@
                                             class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
                                         </span><span class="omnibus_price__value">278,00 zł</span></div>
                                 </div><a class="product__see d-none d-md-block"
-                                    href="/product-pol-5212-ZESTAW-Kawa-Bazzara-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html">
+                                    href="/product-pol-5212-ZESTAW-Kawa-MkCafe-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html">
                                     Zobacz zestaw
                                 </a>
                             </div>
@@ -1288,7 +1282,7 @@
                 </section>
                 <section id="opinions_section" class="row mb-4 mx-n3">
                     <div class="col-12">
-                        <h2 class="headline"><span class="headline__name">Opinie o Kawa ziarnista Bazzara DODICIGRANCRU
+                        <h2 class="headline"><span class="headline__name">Opinie o Kawa ziarnista MkCafe DODICIGRANCRU
                                 1kg </span></h2>
                     </div>
                     <div class="average_opinions_container col-12 col-md-4 mb-4">

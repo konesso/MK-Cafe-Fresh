@@ -47,7 +47,7 @@ header {
     .navbar-collapse {
         display: none;
         position: relative;
-        padding-bottom: 1rem;
+        // padding-bottom: 1rem;
         ul {
             list-style: none;
         }
@@ -68,6 +68,7 @@ header {
             &:hover {
                 > ul {
                     display: flex;
+                    flex-direction: column;
                 }
             }
         }
@@ -79,7 +80,7 @@ header {
         font-size: 1.3rem;
         z-index: 100;
         position: fixed;
-        background:#f4f4f4;
+        background: #f4f4f4;
         // border: 1px solid #c4c7c8;
         left: 0 !important;
         right: 0 !important;
@@ -92,7 +93,7 @@ header {
         .mega-container {
             display: flex;
             justify-content: center;
-            align-items: center;
+            // align-items: center;
             max-width: 1200px;
             // background-color: white;
             padding: 2rem 0;
@@ -101,7 +102,6 @@ header {
             text-transform: none;
             font-size: 1.4rem;
             padding: 10px;
-
         }
         > .nav-item.--all {
             grid-column: span 5;
@@ -362,21 +362,20 @@ html.--scroll-down {
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         text-decoration: none;
         font-size: 1.8rem;
         opacity: 1;
         transition: 0.3s opacity;
         color: #b29370;
         &:hover {
-          
             color: #000;
         }
         &:before {
             content: "\F002";
             font-family: FontAwesome;
         }
-        @media all and (max-width:500px){
+        @media all and (max-width: 500px) {
             display: none;
         }
     }
@@ -827,12 +826,11 @@ span.menu_settings_currency {
 }
 .mega-menu-photo {
     max-width: 50%;
-    .p-name{
+    .p-name {
         font-size: 1.1em;
         font-weight: 400;
-
     }
-    .p-price{
+    .p-price {
         font-weight: 600;
     }
 }

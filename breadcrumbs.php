@@ -48,7 +48,7 @@
                 </ul>
             </li>
             <li class="category bc-item-3 bc-active"><span class="category">Kawa ziarnista</span></li>
-            <li class="bc-active bc-product-name"><span>Kawa ziarnista Bazzara DODICIGRANCRU 1kg </span></li>
+            <li class="bc-active bc-product-name"><span>Kawa ziarnista MkCafe 1 KG </span></li>
         </ol>
     </div>
 </div>
