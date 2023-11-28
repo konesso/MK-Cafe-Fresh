@@ -688,7 +688,7 @@
                         <div class="col-md-6 mb-5">
 
 
-                            <div class=" d-flex justify-content-between">
+                            <div class=" d-flex justify-content-md-between">
                                 <p class="text-uppercase">Profil aromatyczny</p>
                                 <div class="font-bold aroma-links">
                                     <a href="#">orzech,</a> <a href="#">karmel,</a> <a href="#">miód,</a> <a
@@ -698,7 +698,7 @@
 
                             <div class="hrline mt-4 mb-4"></div>
 
-                            <div class=" d-flex justify-content-between">
+                            <div class=" d-flex justify-content-md-between">
                                 <p class="text-uppercase">Intensywność</p>
                                 <b class="d-flex align-items-center">2.5
                                     <span class="stars-coffee ml-3">
@@ -712,7 +712,7 @@
                             </div>
                             <div class="hrline mt-4 mb-4"></div>
 
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-md-between">
                                 <p class="text-uppercase">Kwasowość</p>
                                 <b class="d-flex align-items-center">1.5
                                     <span class="stars-coffee ml-3">

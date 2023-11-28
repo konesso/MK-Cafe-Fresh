@@ -12,6 +12,14 @@
                         href="https://www.konesso.pl/pl/shoppinglist/"><span class="slm_lists__nav_name"
                             data-list_name="true">Lista zakupowa</span><span class="slm_lists__count"
                             data-list_count="true">0</span></a></li>
+                <li class="slm_lists__nav_item --empty"><a class="slm_lists__nav_link --empty"
+                        href="https://www.konesso.pl/pl/shoppinglist/"><span class="slm_lists__nav_name"
+                            data-list_name="true">Moje kawy</span><span class="slm_lists__count"
+                            data-list_count="true">10</span></a></li>
+                <li class="slm_lists__nav_item --empty"><a class="slm_lists__nav_link --empty"
+                        href="https://www.konesso.pl/pl/shoppinglist/"><span class="slm_lists__nav_name"
+                            data-list_name="true">Lista herbat</span><span class="slm_lists__count"
+                            data-list_count="true">7</span></a></li>
             </ul><a href="#manage" class="slm_lists__manage d-none align-items-center d-md-flex">Zarządzaj listami</a>
         </div>
         <div class="shopping_list_menu__block --bought slm_bought"><a class="slm_bought__link d-flex"
@@ -34,6 +42,20 @@
                 </li>
             </ul>
         </div>
+        <ul class="navbar-nav mx-md-n2">
+            <li class="nav-item --noBold"><a href="/search.php" target="_self" title="Konsole"
+                    class="nav-link">Herbaty</a></li>
+            <li class="nav-item --noBold"><a href="/search.php" target="_self" title="Elektronika"
+                    class="nav-link">Kawy</a>
+
+            </li>
+            <li class="nav-item --noBold"><a href="/search.php" target="_self" title="Nowości" class="nav-link">Produkty
+                    Spożywcze</a></li>
+            <li class="nav-item --noBold"><a href="/search.php" target="_self" title="Bestsellery"
+                    class="nav-link">Akcesoria</a></li>
+            <li class="nav-item --noBold"><a href="/search.php" target="_blank" title="Załóż sklep"
+                    class="nav-link">Promocje</a></li>
+        </ul>
     </section>
     <div id="mobileCategories" class="mobileCategories">
         <div class="mobileCategories__item --menu"><a class="mobileCategories__link --active" href="#"
@@ -45,9 +67,15 @@
                 Konto
             </a></div>
     </div>
-    <div class="setMobileGrid" data-item="#menu_navbar"></div>
-    <div class="setMobileGrid" data-item="#menu_navbar3" data-ismenu1="true"></div>
-    <div class="setMobileGrid" data-item="#menu_blog"></div>
+    <div class="setMobileGrid" data-item="#menu_navbar">
+
+    </div>
+    <div class="setMobileGrid" data-item="#menu_navbar3" data-ismenu1="true">
+
+    </div>
+    <div class="setMobileGrid" data-item="#menu_blog">
+
+    </div>
     <div class="login_menu_block d-lg-none" id="login_menu_block"><a class="your_account_link" href="/login.php"
             title=""><i class="icon-cog"></i><span>Twoje konto</span></a><a class="order_status_link"
             href="/order-open.php" title=""><i class="icon-globe"></i><span>Sprawdź status zamówienia</span></a><a
@@ -61,4 +89,5 @@
     <div class="setMobileGrid" data-item="#Filters">
 
     </div>
+
 </aside>

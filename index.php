@@ -105,7 +105,48 @@
                     </div>
                 </section>
                 <?php include 'footerParagraph.php'; ?>
-
+                <section id="product_askforproduct" class="askforproduct mb-5 col-12">
+                    <div class="askforproduct__label headline"><span
+                            class="askforproduct__label_txt headline__name">newsletter</span></div>
+                    <form action="/settings.php" class="askforproduct__form row flex-column align-items-center"
+                        method="post" novalidate="novalidate">
+                        <div class="askforproduct__description col-12 col-sm-7 mb-4">
+                            <!-- <span
+                                class="askforproduct__description_txt">Jeżeli powyższy opis jest dla Ciebie
+                                niewystarczający, prześlij nam swoje pytanie odnośnie tego produktu. Postaramy się
+                                odpowiedzieć tak szybko jak tylko będzie to możliwe.
+                            </span><span class="askforproduct__privacy">Dane są przetwarzane zgodnie z <a
+                                    href="https://www.konesso.pl/pol-privacy-and-cookie-notice.html">polityką
+                                    prywatności</a>. Przesyłając je,
+                                akceptujesz jej postanowienia. </span> -->
+                        </div><input type="hidden" name="question_product_id" value="29"><input type="hidden"
+                            name="question_action" value="add">
+                        <div class="askforproduct__inputs col-12 col-sm-7">
+                            <div class="f-group askforproduct__email">
+                                <div class="f-feedback askforproduct__feedback --email"><input
+                                        id="askforproduct__email_input" type="email"
+                                        class="f-control --validate --focused focused" name="question_email"
+                                        required="required" value="k.szuba@konesso.com"><label
+                                        for="askforproduct__email_input" class="f-label">
+                                        E-mail
+                                    </label><span class="f-control-feedback"></span></div>
+                            </div>
+                            <!-- <div class="f-group askforproduct__question">
+                                <div class="f-feedback askforproduct__feedback --question"><textarea
+                                        id="askforproduct__question_input" rows="6" cols="52" type="question"
+                                        class="f-control --validate" name="product_question" minlength="3"
+                                        required="required"></textarea><label for="askforproduct__question_input"
+                                        class="f-label">
+                                        Pytanie
+                                    </label><span class="f-control-feedback"></span></div>
+                            </div> -->
+                        </div>
+                        <div class="askforproduct__submit  col-12 col-sm-7"><button
+                                class="btn --solid --medium px-5 askforproduct__button">
+                                Zapisz się
+                            </button></div>
+                    </form>
+                </section>
             </div>
         </div>
     </div>

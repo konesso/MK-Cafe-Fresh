@@ -13,6 +13,20 @@ $(document).ready(function () {
         $('.f-dropdown.f-group.projector_buy__number.f-select').removeClass('--open');
         $('.projector_buy__more_input').focus(); // Przeniesienie focusu na input
     });
+
+    if (window.innerWidth < 768) {
+
+        setTimeout(() => {
+            console.log('timeout')
+            $('#photos_slider .slick-slider').slick('refresh');
+        }, 500);
+
+        setTimeout(() => {
+            console.log('timeout')
+            $('#photos_slider .slick-slider').slick('refresh');
+        }, 1500);
+    };
+
 });
 
 

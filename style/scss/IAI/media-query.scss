@@ -5224,9 +5224,17 @@
         // display: block;
     }
     .article__image_wrapper {
-        // float: left;
-        // max-width: 35%;
+        max-height: 175px;
+        overflow: hidden;
         margin: 0 10px 5px 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            object-fit: cover;
+        }
     }
     .article__text.--date {
         padding-left: 50px;

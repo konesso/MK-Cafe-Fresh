@@ -10,30 +10,26 @@
                     <hr class="menu-item-underline">
                 </a>
                 <ul class="navbar-subnav row">
-                    <div class="d-flex justify-center align-item-start">
-                        <h2>Kawy</h2>
-                    </div>
+
                     <div class="mega-container col-12">
                         <div class="col-3">
                             <li class="nav-item mega-menu-content-category">
                                 <strong>Pochodzenie ziaren</strong>
                             </li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/macbook-232.html"
-                                    target="_self" title="this is MacBook title" data-img-num="2" class="nav-link">
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    title="this is MacBook title" data-img-num="2" class="nav-link">
                                     Brazylia</a></li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/ipad-233.html"
-                                    target="_self" data-img-num="3" title="thi si iPad title"
-                                    class="nav-link">Meksyk</a>
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    data-img-num="3" title="thi si iPad title" class="nav-link">Meksyk</a>
                             </li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/imac-231.html"
-                                    target="_self" data-img-num="4" title="this is 4 title" class="nav-link">Etiopia</a>
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    data-img-num="4" title="this is 4 title" class="nav-link">Etiopia</a>
                             </li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/macbook-232.html"
-                                    target="_self" data-img-num="5" title="this is 5 title"
-                                    class="nav-link">Kolumbia</a>
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    data-img-num="5" title="this is 5 title" class="nav-link">Kolumbia</a>
                             </li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/imac-231.html"
-                                    target="_self" data-img-num="5" title="this is 6 title" class="nav-link">Indie</a>
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    data-img-num="5" title="this is 6 title" class="nav-link">Indie</a>
                             </li>
 
                         </div>
@@ -41,18 +37,16 @@
                             <li class="nav-item mega-menu-content-category">
                                 <strong>Przeznaczenie</strong>
                             </li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/macbook-232.html"
-                                    target="_self" title="this is MacBook title" data-img-num="2" class="nav-link">
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    title="this is MacBook title" data-img-num="2" class="nav-link">
                                     Ekspres ciśnieniowy</a></li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/ipad-233.html"
-                                    target="_self" data-img-num="3" title="thi si iPad title" class="nav-link">Drip</a>
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    data-img-num="3" title="thi si iPad title" class="nav-link">Drip</a>
                             </li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/imac-231.html"
-                                    target="_self" data-img-num="4" title="this is 4 title"
-                                    class="nav-link">Frenchpress</a></li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/macbook-232.html"
-                                    target="_self" data-img-num="5" title="this is 5 title"
-                                    class="nav-link">Kawiarka</a>
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    data-img-num="4" title="this is 4 title" class="nav-link">Frenchpress</a></li>
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    data-img-num="5" title="this is 5 title" class="nav-link">Kawiarka</a>
                             </li>
 
 
@@ -61,14 +55,14 @@
                             <li class="nav-item mega-menu-content-category">
                                 <strong>Wielkość Opakowania</strong>
                             </li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/macbook-232.html"
-                                    target="_self" title="this is MacBook title" data-img-num="2" class="nav-link">
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    title="this is MacBook title" data-img-num="2" class="nav-link">
                                     250 g</a></li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/ipad-233.html"
-                                    target="_self" data-img-num="3" title="thi si iPad title" class="nav-link">500 g</a>
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    data-img-num="3" title="thi si iPad title" class="nav-link">500 g</a>
                             </li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/imac-231.html"
-                                    target="_self" data-img-num="4" title="this is 4 title" class="nav-link">1 kg</a>
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    data-img-num="4" title="this is 4 title" class="nav-link">1 kg</a>
                             </li>
 
                         </div>
@@ -76,21 +70,19 @@
                             <li class="nav-item mega-menu-content-category">
                                 <strong>Gatunek Kawy</strong>
                             </li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/macbook-232.html"
-                                    target="_self" title="this is MacBook title" data-img-num="2" class="nav-link">
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    title="this is MacBook title" data-img-num="2" class="nav-link">
                                     title</a></li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/ipad-233.html"
-                                    target="_self" data-img-num="3" title="thi si iPad title"
-                                    class="nav-link">Arabica</a>
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    data-img-num="3" title="thi si iPad title" class="nav-link">Arabica</a>
                             </li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/imac-231.html"
-                                    target="_self" data-img-num="4" title="this is 4 title"
-                                    class="nav-link">Categorie</a></li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/macbook-232.html"
-                                    target="_self" data-img-num="5" title="this is 5 title" class="nav-link">Robusta</a>
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    data-img-num="4" title="this is 4 title" class="nav-link">Categorie</a></li>
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    data-img-num="5" title="this is 5 title" class="nav-link">Robusta</a>
                             </li>
-                            <li class="nav-item mega-menu-content-category"><a href="/pl/menu/imac-231.html"
-                                    target="_self" data-img-num="5" title="this is 6 title" class="nav-link">Blend</a>
+                            <li class="nav-item mega-menu-content-category"><a href="/search.php" target="_self"
+                                    data-img-num="5" title="this is 6 title" class="nav-link">Blend</a>
                             </li>
 
                         </div>

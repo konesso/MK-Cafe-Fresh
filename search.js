@@ -24,7 +24,14 @@ $(document).ready(function () {
         }
     });
 
+    if (window.innerWidth < 768) {
+        $('.setMobileGrid[data-item="#Filters"]').html($('#Filters').html())
+        setTimeout(() => {
+            console.log('timeout')
+            $('#photos_slider .slick-slider').slick('refresh');
 
+        }, 1500);
+    }
 
     $(document).ready(function () {
         var filterButton = $('.filter-dropdown-trigger');
