@@ -41,7 +41,7 @@ const filtersActionsCall = () => {
                 i.parentNode.classList.add("--active")
         }
         ))
-        console.log("🚀 ~ file: search_filters.js:44 ~ document.querySelectorAll ~ click:", click)
+        // console.log("🚀 ~ file: search_filters.js:44 ~ document.querySelectorAll ~ click:", click)
     }
     ));
     document.querySelectorAll(".filters__options .--remove").forEach((e => {
@@ -307,6 +307,7 @@ app_shop.run((function () {
     }
     ), [3, 4], "#Filters", !0),
     app_shop.run((() => {
+        filtersActionsCall()
         app_shop.vars.filtersRef = new Filters,
             app_shop.vars.filtersRef.init()
     }
