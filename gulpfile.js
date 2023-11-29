@@ -62,170 +62,37 @@ gulp.task('sass', [], function() {
     .pipe(livereload())
 });
 
-gulp.task('sass-live', [], function() {
-  return gulp.src(SASS_FILES)
-    // .pipe(sourcemaps.init())
-    .pipe(sass(
-      {
-        functions: export_sass('.')
-      }
-    ).on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
-    // .pipe(sourcemaps.write())
-    .pipe(gulp.dest('css/'))
-    // .pipe(livereload())
+
+
+gulp.task('live', ['shop-css', 'shop-js'], function(){
+    return gulp.src(['iai/**'])
+        .pipe(gulpIgnore.exclude('*.zip'))
+        .pipe(zip('ArchiveALL.zip'))
+        .pipe(gulp.dest('dist'))
+})
+
+gulp.task('shop-css', function() {
+    return gulp.src('css/index.css')
+      .pipe(stripCssComments('css/index.css'))
+      .pipe(rename('style.css'))
+      .pipe(cleanCSS({ compatibility: 'ie8', debug: true}, (details) => {
+        console.log(`${details.name}: ${details.stats.originalSize}`);
+        console.log(`${details.name}: ${details.stats.minifiedSize}`);
+        }))
+      .pipe(gulp.dest('iai/gfx/pol/'))
+      .pipe(gzip({ extension: 'gzip' }))
+      .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+      .pipe(gulp.dest('iai/gfx/pol/'));
 });
 
-
-gulp.task('minify-css', ['sass'], function() {
-  return gulp.src('css/style.css')
-    .pipe(cleanCSS({ compatibility: 'ie8', debug: true}, (details) => {
-      console.log(`${details.name}: ${details.stats.originalSize}`);
-      console.log(`${details.name}: ${details.stats.minifiedSize}`);
-    }))
-    .pipe(gzip({ extension: 'gzip' }))
-    .pipe(gulp.dest('css'))
-});
-
-gulp.task('minify-css-live', ['sass-live'], function() {
-  return gulp.src('css/style.css')
-    .pipe(stripCssComments('css/style.css'))
-    .pipe(cleanCSS({ compatibility: 'ie8', debug: true}, (details) => {
-      console.log(`${details.name}: ${details.stats.originalSize}`);
-      console.log(`${details.name}: ${details.stats.minifiedSize}`);
-    }))
-    .pipe(gzip({ extension: 'gzip' }))
-    .pipe(gulp.dest('css'))
-});
-
-gulp.task('compress-images', ['svgo'], function() {
-  return gulp.src(['images/**/*', '!images/**/*.svg'])
-    .pipe(imagemin())
-    .pipe(gulp.dest('images'))
-});
-
-
-gulp.task('svgo', function() {
-  return gulp.src('images/*.svg')
-    .pipe(svgo())
-    .pipe(gulp.dest('images/svgo'));
-});
-
-
-gulp.task('es6', function() {
-  return gulp.src('js/es6/entry.js')
-    .pipe(webpackStream({
-      entry: ['babel-polyfill','./js/es6/entry.js'],
-      output: {
-        filename: 'z_bundle.js'
-      },
-      compact: false,
-      devtool: 'eval', // 'source-map' in production !!
-      module: {
-        loaders: [
-          {
-            test: /\.js?$/,
-            exclude: /node_modules/,
-            loader: "babel-loader",
-            query:
-            {
-              presets:[['es2015', {cacheDirectory:true}]]
-            }
-          }
-        ]
-      }
-
-    }).on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); this.emit('end'); })
-  ).pipe(gulp.dest('js/lib/'))
-
-});
-
-gulp.task('es6-live', function() {
-  return gulp.src('js/es6/entry.js')
-    .pipe(webpackStream({
-      entry: ['babel-polyfill','./js/es6/entry.js'],
-      output: {
-        filename: 'z_bundle.js'
-      },
-      compact: false,
-      devtool: 'source-map', // 'source-map' in production !!
-      module: {
-        loaders: [
-          {
-            test: /\.js?$/,
-            exclude: /node_modules/,
-            loader: "babel-loader",
-            query:
-            {
-              presets:[['es2015', {cacheDirectory:true}]]
-            }
-          }
-        ]
-      },
-
-    }).on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); this.emit('end'); })
-  ).pipe(gulp.dest('js/lib/'))
-
-});
-
-gulp.task('compress-scripts', ['live-scripts'], function() {
-   return gulp.src('js/live/*.js')
-    .pipe(strip())
-    .pipe(uglify().on('error', function(e){
-            console.log(e);
-         }))
-    .pipe(gulp.dest('js/live'))
-    .pipe(gzip({ extension: 'gzip' }))
-    .pipe(gulp.dest('js/live'));
-});
-
-gulp.task('compress-scripts-live', ['live-scripts-live'], function() {
-   return gulp.src('js/live/*.js')
-    .pipe(uglify().on('error', function(e){
-            console.log(e);
-         }))
-    .pipe(gulp.dest('js/live'))
-    .pipe(gzip({ extension: 'gzip' }))
-    .pipe(gulp.dest('js/live'));
-});
-
-gulp.task('live-scripts', ['es6'], function() {
-  return gulp.src(JS_FILES)
-    .pipe(sort())
-    .pipe(dedupe())
-    .pipe(concat('compiled.js'))
-    .pipe(gulp.dest('js'))
-    .pipe(rename('shop.js'))
-    .pipe(uglify({
-        mangle: true,
-        output: {
-            beautify: false,
-            comments: false
-        }
-    }))
-    .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
-    .pipe(gulp.dest(JS_DEST));
-});
-
-gulp.task('live-scripts-live', ['es6-live'], function() {
-  return gulp.src(JS_FILES)
-    .pipe(sort())
-    .pipe(dedupe())
-    .pipe(concat('compiled.js'))
-    .pipe(gulp.dest('js'))
-    .pipe(rename('shop.js'))
-    .pipe(uglify({
-        mangle: true,
-        output: {
-          beautify: false,
-          comments: false
-        }
-    }))
-    .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
-    .pipe(gulp.dest(JS_DEST));
+gulp.task('shop-js', function() {
+    return gulp.src('js/shop.js')
+      .pipe(dedupe())
+      .pipe(gulp.dest('iai/gfx/pol/'))
+      .pipe(rename('shop.js'))
+      .pipe(gzip({ extension: 'gzip' }))
+      .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+      .pipe(gulp.dest('iai/gfx/pol/'));
 });
 
 gulp.task('zip-tpl', function() {
@@ -251,76 +118,7 @@ gulp.task('dev-watch', ['sass'], function() {
 });
 
 
-gulp.task('copy-live-tpl', function(){
-  gulp.src(['templates/*'])
-    .pipe(trimlines())
-    // .pipe(replace(/(\r\n)/gm, '')) //(\r\n|\n|\r)/gm
-    // .pipe(removeEmptyLines({
-    //   // removeSpaces: true,
-    //   // removeComments: true,
-    // }))
-    
-    .pipe(gulp.dest(LIVE_TPL_DEST))
-});
-
-gulp.task('copy-live', ['copy-live-tpl'], function () {
- 
-  gulp.src([
-    'js/live/*',
-    'css/*',
-    'images/*',
-    'other/*'
-    ])
-    .pipe(gulp.dest(LIVE_GFX_DEST))
-  
-    
-    return gulp.src([
-    'translation/*'
-    ])
-    .pipe(gulp.dest(LIVE_TPL_DEST))
-   
- 
-});
 
 // DEV TASK
 gulp.task('default', ['dev-watch']);
-
-// LIVE TASK
-gulp.task('deploy-live', [ 'minify-css-live',  'compress-scripts-live'], function(){
-  
-  gulp.start('copy-live');
-
-  gulp.src(['templates/*'])
-        .pipe(gulpIgnore.exclude('*.zip'))
-        .pipe(zip('Templates.zip'))
-        .pipe(gulp.dest('dist'))
-
-  return gulp.src(['live/**'])
-        .pipe(gulpIgnore.exclude('*.zip'))
-        .pipe(zip('ArchiveALL.zip'))
-        .pipe(gulp.dest('dist'))
-});
-
-// DEVELOP
-gulp.task('deploy-dev', ['minify-css', 'compress-scripts'], function(){
-  gulp.src(['templates/*'])
-        .pipe(gulpIgnore.exclude('*.zip'))
-        .pipe(zip('Templates.zip'))
-        .pipe(gulp.dest('dist'))
-
-  gulp.src(['js/live/*'])
-        .pipe(gulpIgnore.exclude('*.zip'))
-        .pipe(zip('JS.zip'))
-        .pipe(gulp.dest('dist'))
-
-  gulp.src(['css/*'])
-        .pipe(gulpIgnore.exclude('*.zip'))
-        .pipe(zip('CSS.zip'))
-        .pipe(gulp.dest('dist'))
-
-  return gulp.src(['css/*', 'js/live/*', 'templates/*', 'images/*','translation/*','other/*'])
-        .pipe(gulpIgnore.exclude('*.zip'))
-        .pipe(zip('ArchiveALL.zip'))
-        .pipe(gulp.dest('dist'))
-});
 
