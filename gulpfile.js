@@ -228,21 +228,16 @@ gulp.task('live-scripts-live', ['es6-live'], function() {
     .pipe(gulp.dest(JS_DEST));
 });
 
-gulp.task('zip-tpl', ['copy-live-tpl'], function() {
-  gulp.src([
-    'translation/*'
-    ])
-    .pipe(gulp.dest(LIVE_TPL_DEST))
+gulp.task('zip-tpl', function() {
+    return gulp.src(['iai/**', '!iai/gfx/**'])
+          .pipe(gulpIgnore.exclude('*.zip'))
+          .pipe(zip('tpl.zip'))
+          .pipe(gulp.dest('dist'))
+  });
 
-    return  gulp.src(['live/**', '!live/gfx/*'])
-        // .pipe(gulpIgnore.exclude('live/gfx'))
-        .pipe(zip('Templates.zip'))
-        .pipe(gulp.dest('dist'))
-
-});
 
 gulp.task('zip-all', function() {
-  return gulp.src(['css/*', 'js/live/*', 'templates/*', 'images/*','translation/*','other/*'])
+  return gulp.src(['iai/*'])
         .pipe(gulpIgnore.exclude('*.zip'))
         .pipe(zip('ArchiveALL.zip'))
         .pipe(gulp.dest('dist'))
