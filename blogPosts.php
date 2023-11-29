@@ -7,10 +7,8 @@
                         <img src="./img/blog-2.jpg" alt="Description">
                     </picture>
                     <div class="overlay"></div>
-
                     <span class="title-text text-uppercase">Unikatowa Manufaktura</span>
                     <span class="btn-like">Dowiedz się więcej <i class="icon-angle-right ml-2"></i></span></span>
-
                 </a>
             </div>
             <div class="col-lg-3 col-md-6 col-12 my-3">
@@ -46,3 +44,4 @@
         </div>
     </div>
 </section>
+

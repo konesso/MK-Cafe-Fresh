@@ -73,7 +73,9 @@
                             PRODUKTY</span></span></h2>
 
                 <?php include 'hotSpot1.php' ?>
-                <?php include 'product-blog.php' ?>
+                <!-- <?php include 'product-blog.php' ?> -->
+                <?php include 'product-blog-new.php' ?>
+
                 <?php include 'newsletter.php'; ?>
                 <?php include 'blogPosts.php'; ?>
                 <h2 class="mt-5 pt-5"><span class="headline"><span class="headline__name">ZOBACZ RÓWNIEŻ</span></span>

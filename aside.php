@@ -42,7 +42,7 @@
                 </li>
             </ul>
         </div>
-        <ul class="navbar-nav mx-md-n2">
+        <!-- <ul class="navbar-nav mx-md-n2">
             <li class="nav-item --noBold"><a href="/search.php" target="_self" title="Konsole"
                     class="nav-link">Herbaty</a></li>
             <li class="nav-item --noBold"><a href="/search.php" target="_self" title="Elektronika"
@@ -55,7 +55,7 @@
                     class="nav-link">Akcesoria</a></li>
             <li class="nav-item --noBold"><a href="/search.php" target="_blank" title="Załóż sklep"
                     class="nav-link">Promocje</a></li>
-        </ul>
+        </ul> -->
     </section>
     <div id="mobileCategories" class="mobileCategories">
         <div class="mobileCategories__item --menu"><a class="mobileCategories__link --active" href="#"

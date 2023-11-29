@@ -340,22 +340,50 @@
                         id="projector_product_hidden" type="hidden" name="product" value="29"><input
                         id="projector_size_hidden" type="hidden" name="size" autocomplete="off" value="onesize"><input
                         id="projector_mode_hidden" type="hidden" name="mode" value="1">
-                    <div id="versions" class="projector_details__versions projector_versions"><span
-                            class="projector_versions__label">Dostępne opakowania</span>
-                        <div class="projector_versions__sub"><a class="projector_versions__item --selected"
-                                href="/product-pol-29-Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg.html" title="1000g"><span
-                                    class="projector_versions__gfx"><img
-                                        src="https://mkfreshprod.azureedge.net/img/360/383/70/resize-contain/catalog/product/m/k/mk_fr_christmas_22_1880.jpg"
-                                        alt="1000g"></span><span class="projector_versions__name">1000g</span></a><a
-                                class="projector_versions__item"
-                                href="/product-pol-2016-Kawa-ziarnista-MkCafe-DODICIGRANCRU-250g.html"
-                                title="250g"><span class="projector_versions__gfx"><img
-                                        src="https://mkfreshprod.azureedge.net/img/360/383/70/resize-contain/catalog/product/b/r/brazil-honey_1880x2000_1.jpg"
-                                        alt="250g"></span><span class="projector_versions__name">250g</span></a>
-                        </div>
-                    </div>
-                    <div class="projector_details__wrapper">
 
+
+
+                    <div class="projector_details__wrapper">
+                        <section id="projector_producttraits" class="traits mt-5 ">
+                            <div class="pb-5">
+                                <div>
+                                    <div class="taste-details d-flex justify-content-md-between">
+                                        <p class="text-uppercase">Profil aromatyczny</p>
+                                        <div class="font-bold aroma-links">
+                                            <a href="#">orzech,</a> <a href="#">karmel,</a> <a href="#">miód,</a> <a
+                                                href="#">mleczna czekolada</a>
+                                        </div>
+                                    </div>
+                                    <div class="hrline mt-4 mb-4"></div>
+                                    <div class="taste-details d-flex justify-content-md-between">
+                                        <p class="text-uppercase">Intensywność</p>
+                                        <b class="d-flex align-items-center">2.5
+                                            <span class="stars-coffee ml-3">
+                                                <span class="full"></span>
+                                                <span class="full"></span>
+                                                <span class="half"></span>
+                                                <span class="empty"></span>
+                                                <span class="empty"></span>
+                                            </span>
+                                        </b>
+                                    </div>
+                                    <div class="hrline mt-4 mb-4"></div>
+                                    <div class="taste-details d-flex justify-content-md-between">
+                                        <p class="text-uppercase">Kwasowość</p>
+                                        <b class="d-flex align-items-center">1.5
+                                            <span class="stars-coffee ml-3">
+                                                <span class="full"></span>
+                                                <span class="half"></span>
+                                                <span class="empty"></span>
+                                                <span class="empty"></span>
+                                                <span class="empty"></span>
+                                            </span>
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="py-3"></div>
                         <div id="projector_sizes_cont" class="projector_details__sizes projector_sizes"
                             data-onesize="true" style="display: none;"><span
                                 class="projector_sizes__label">Rozmiar</span>
@@ -373,23 +401,26 @@
                             <div class="projector_prices__price_wrapper"><strong class="projector_prices__price"
                                     id="projector_price_value">106,50 zł</strong>
                                 <div class="projector_prices__info"><span class="projector_prices__vat"><span
-                                            class="price_vat"> brutto</span></span><span
-                                        class="projector_prices__unit_sep">
+                                            class="price_vat">
+                                            brutto</span></span><span class="projector_prices__unit_sep">
                                         /
                                     </span><span class="projector_prices__unit_sellby" id="projector_price_unit_sellby"
                                         style="display:none">1</span><span class="projector_prices__unit"
                                         id="projector_price_unit">szt.</span></div>
                             </div>
                             <div class="product__promo_omnibus omnibus_price mt-4"><span
-                                    class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
+                                    class="omnibus_price__text">Najniższa
+                                    cena z 30 dni przed obniżką:
                                 </span><span class="omnibus_price__value">188,00 zł</span></div>
                             <div class="product__promo_forkg omnibus_price"><span class="omnibus_price__text">Cena w
                                     przeliczeniu na 1 kg:
                                 </span><span class="omnibus_price__value">255,00 zł</span></div>
                             <div class="projector_prices__srp_wrapper" id="projector_price_srp_wrapper"
-                                style="display:none;"><span class="projector_prices__srp_label">Cena
+                                style="display:none;">
+                                <span class="projector_prices__srp_label">Cena
                                     katalogowa:</span><strong class="projector_prices__srp"
-                                    id="projector_price_srp"></strong></div>
+                                    id="projector_price_srp"></strong>
+                            </div>
                             <div class="projector_prices__points" id="projector_points_wrapper" style="display:none;">
                                 <div class="projector_prices__points_wrapper" id="projector_price_points_wrapper"
                                     style="display: none;"><button id="projector_button_points_basket" type="submit"
@@ -401,68 +432,72 @@
                                         title="Możesz zamienić zgromadzone punkty lojalnościowe na ten produkt. Obecnie masz 0 punktów."><i
                                             class="icon-question"></i></span></div>
                             </div>
-                        </div>
-                        <div class="projector_details__buy projector_buy" id="projector_buy_section">
-                            <div class="projector_buy__number_wrapper">
-                                <div class="projector_buy__number_inputs">
-                                    <div class="f-dropdown f-group projector_buy__number f-select"><select
-                                            class="projector_buy__number-select f-select-select">
-                                            <option value="1" selected="">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option data-more="true">
-                                                więcej
-                                            </option>
-                                        </select>
-                                        <button type="button" class="f-control f-dropdown-toggle" data-indexcurrent="0">
-
-                                            <span class="f-dropdown-button">1</span>
-                                        </button>
-                                        <ul class="f-dropdown-menu">
-
-                                            <li class="f-dropdown-li">
-                                                <a class="f-dropdown-item --selected" href="#1" data-index="0"
-                                                    data-value="1">1</a>
-                                            </li>
-
-                                            <li class="f-dropdown-li">
-                                                <a class="f-dropdown-item" href="#2" data-index="1" data-value="2">2</a>
-                                            </li>
-
-                                            <li class="f-dropdown-li">
-                                                <a class="f-dropdown-item" href="#3" data-index="2" data-value="3">3</a>
-                                            </li>
-
-                                            <li class="f-dropdown-li">
-                                                <a class="f-dropdown-item" href="#4" data-index="3" data-value="4">4</a>
-                                            </li>
-
-                                            <li class="f-dropdown-li">
-                                                <a class="f-dropdown-item" href="#5" data-index="4" data-value="5">5</a>
-                                            </li>
-
-                                            <li class="f-dropdown-li">
-                                                <a class="f-dropdown-item" href="#null" data-index="5" data-value="null"
-                                                    data-more="true">
+                            <div class="projector_details__buy projector_buy" id="projector_buy_section">
+                                <div class="projector_buy__number_wrapper">
+                                    <div class="projector_buy__number_inputs">
+                                        <div class="f-dropdown f-group projector_buy__number f-select"><select
+                                                class="projector_buy__number-select f-select-select">
+                                                <option value="1" selected="">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option data-more="true">
                                                     więcej
-                                                </a>
-                                            </li>
+                                                </option>
+                                            </select>
+                                            <button type="button" class="f-control f-dropdown-toggle"
+                                                data-indexcurrent="0">
 
-                                        </ul>
+                                                <span class="f-dropdown-button">1</span>
+                                            </button>
+                                            <ul class="f-dropdown-menu">
+
+                                                <li class="f-dropdown-li">
+                                                    <a class="f-dropdown-item --selected" href="#1" data-index="0"
+                                                        data-value="1">1</a>
+                                                </li>
+
+                                                <li class="f-dropdown-li">
+                                                    <a class="f-dropdown-item" href="#2" data-index="1"
+                                                        data-value="2">2</a>
+                                                </li>
+
+                                                <li class="f-dropdown-li">
+                                                    <a class="f-dropdown-item" href="#3" data-index="2"
+                                                        data-value="3">3</a>
+                                                </li>
+
+                                                <li class="f-dropdown-li">
+                                                    <a class="f-dropdown-item" href="#4" data-index="3"
+                                                        data-value="4">4</a>
+                                                </li>
+
+                                                <li class="f-dropdown-li">
+                                                    <a class="f-dropdown-item" href="#5" data-index="4"
+                                                        data-value="5">5</a>
+                                                </li>
+
+                                                <li class="f-dropdown-li">
+                                                    <a class="f-dropdown-item" href="#null" data-index="5"
+                                                        data-value="null" data-more="true">
+                                                        więcej
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="projector_buy__more --active"><input
+                                                class="projector_buy__more_input" type="number" name="number"
+                                                id="projector_number" data-prev="1" value="1" data-sellby="1" step="1">
+                                        </div>
                                     </div>
-                                    <div class="projector_buy__more --active"><input class="projector_buy__more_input"
-                                            type="number" name="number" id="projector_number" data-prev="1" value="1"
-                                            data-sellby="1" step="1"></div>
-                                </div>
-                                <div class="projector_buy__number_amounts"><span class="number_description">z
-                                    </span><span class="number_amount">4941 </span><span class="number_unit">szt.</span>
-                                </div>
-                            </div><button class="projector_buy__button btn --solid --large" id="projector_button_basket"
-                                type="submit">
-                                Dodaj do koszyka
-                            </button>
+
+                                </div><button class="projector_buy__button btn --solid --large"
+                                    id="projector_button_basket" type="submit">
+                                    Dodaj do koszyka
+                                </button>
+                            </div>
                         </div>
                         <div class="projector_details__tell_availability projector_tell_availability"
                             id="projector_tell_availability" style="display:none">
@@ -478,8 +513,8 @@
                                             name="email" data-validation-url="/ajax/client-new.php?validAjax=true"
                                             data-validation="client_email" required="required" disabled=""
                                             id="tellAvailabilityEmail"><label class="f-label"
-                                            for="tellAvailabilityEmail">Twój adres e-mail</label><span
-                                            class="f-control-feedback"></span></div>
+                                            for="tellAvailabilityEmail">Twój
+                                            adres e-mail</label><span class="f-control-feedback"></span></div>
                                 </div>
                                 <div class="projector_tell_availability__button_wrapper"><button type="submit"
                                         class="projector_tell_availability__button btn --solid --large">
@@ -501,10 +536,12 @@
                                 class="projector_info__item --status projector_status --time-show ">
                                 <span class="icon-check projector_info__icon text-success"></span>
                                 <div id="projector_shipping_unknown" class="projector_status__unknown"
-                                    style="display:none"><span class="projector_status__unknown_text"><a target="_blank"
+                                    style="display:none">
+                                    <span class="projector_status__unknown_text"><a target="_blank"
                                             href="/contact-pol.html">Skontaktuj się z obsługą sklepu</a>, aby oszacować
                                         czas przygotowania tego produktu do wysyłki.
-                                    </span></div>
+                                    </span>
+                                </div>
                                 <div id="projector_status_wrapper" class="projector_status__wrapper"
                                     style="min-height: 33.7812px;">
                                     <div class="projector_status__description" id="projector_status_description"
@@ -590,422 +627,295 @@
                                             class="icon-question"></i></span></span></div>
                         </div>
                     </div>
-                </form>
+            </div>
+            </form>
 
-                <script class="ajaxLoad">
-                app_shop.vars.contact_link = "/contact-pol.html";
-                </script>
+            <script class="ajaxLoad">
+            app_shop.vars.contact_link = "/contact-pol.html";
+            </script>
 
 
-                <section id="product_extra_info">
-                    <div class="row align-items-center">
-                        <div class="col-md-4 text-center">
-                            <img src="https://mkfreshprod.azureedge.net/img/360/200/70/resize/catalog/product//m/k/mkcafe_1366_produkt_brazil_1.jpg"
-                                alt="">
-                        </div>
-                        <div class="col-md-2">
-                            <ul class="mk_extra_info">
-                                <li>
-                                    <span class="text-upercase">REGION</span>
-                                    <b>Mogiana</b>
-                                </li>
-                                <li>
-                                    <span class="text-upercase">WYSOKOŚĆ UPRAW</span>
-                                    <b>800-1200 m n.p.m.</b>
-                                </li>
-                                <li>
-                                    <span class="text-upercase">METODA OBRÓBKI</span>
-                                    <b>Sucha</b>
-                                </li>
-                                <li>
-                                    <span class="text-upercase">STOPIEŃ PALENIA</span>
-                                    <b>średni (medium)</b>
-                                </li>
-                            </ul>
+            <section id="product_extra_info">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center">
+                        <img src="https://mkfreshprod.azureedge.net/img/360/200/70/resize/catalog/product//m/k/mkcafe_1366_produkt_brazil_1.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="mk_extra_info">
+                            <li>
+                                <span class="text-upercase">REGION</span>
+                                <b>Mogiana</b>
+                            </li>
+                            <li>
+                                <span class="text-upercase">WYSOKOŚĆ UPRAW</span>
+                                <b>800-1200 m n.p.m.</b>
+                            </li>
+                            <li>
+                                <span class="text-upercase">METODA OBRÓBKI</span>
+                                <b>Sucha</b>
+                            </li>
+                            <li>
+                                <span class="text-upercase">STOPIEŃ PALENIA</span>
+                                <b>średni (medium)</b>
+                            </li>
+                        </ul>
 
-                        </div>
-                        <div class="col-md-4">
-                            <canvas id="radar-chart" width="360" height="400" style=""></canvas>
+                    </div>
+                    <div class="col-md-4">
+                        <canvas id="radar-chart" width="360" height="400" style=""></canvas>
 
-                            <script src="assets/js/Chart.min.js"></script>
-                            <script>
-                            var radarChart = new Chart($('#radar-chart'), {
-                                type: 'radar',
-                                data: {
-                                    labels: ['Czekolada', 'Słodycz', 'Karmel', 'Gorycz', 'Nuty kwiatowe',
-                                        'Owoce', 'Orzech', 'Karmel', 'Gorycz', 'Nuty kwiatowe', 'Owoce',
-                                        'Orzech'
-                                    ],
-                                    datasets: [{
-                                        backgroundColor: "rgba(178, 147, 112, 0.5)",
-                                        borderColor: "rgba(178, 147, 112, 0.5)",
-                                        pointBackgroundColor: "transparent",
-                                        pointBorderColor: "transparent",
-                                        fill: "origin",
-                                        data: [65, 59, 90, 81, 56, 55, 40, 0, 40, 10, 50]
-                                    }]
+                        <script src="assets/js/Chart.min.js"></script>
+                        <script>
+                        var radarChart = new Chart($('#radar-chart'), {
+                            type: 'radar',
+                            data: {
+                                labels: ['Czekolada', 'Słodycz', 'Karmel', 'Gorycz', 'Nuty kwiatowe',
+                                    'Owoce', 'Orzech', 'Karmel', 'Gorycz', 'Nuty kwiatowe', 'Owoce',
+                                    'Orzech'
+                                ],
+                                datasets: [{
+                                    backgroundColor: "rgba(178, 147, 112, 0.5)",
+                                    borderColor: "rgba(178, 147, 112, 0.5)",
+                                    pointBackgroundColor: "transparent",
+                                    pointBorderColor: "transparent",
+                                    fill: "origin",
+                                    data: [65, 59, 90, 81, 56, 55, 40, 0, 40, 10, 50]
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                legend: {
+                                    display: false
                                 },
-                                options: {
-                                    responsive: true,
-                                    legend: {
+                                scale: {
+                                    angleLines: {
+                                        color: 'white'
+                                    },
+                                    ticks: {
                                         display: false
                                     },
-                                    scale: {
-                                        angleLines: {
-                                            color: 'white'
-                                        },
-                                        ticks: {
-                                            display: false
-                                        },
-                                        gridLines: {
-                                            color: 'white'
-                                        },
-                                        pointLabels: {
-                                            fontColor: 'black'
-                                        }
+                                    gridLines: {
+                                        color: 'white'
                                     },
+                                    pointLabels: {
+                                        fontColor: 'black'
+                                    }
                                 },
+                            },
 
 
 
 
-                            });
-                            </script>
-                        </div>
-                        <div class="col-md-2">
-                            <span
-                                class="d-flex justify-content-around mb-3 text-center text-uppercase w-100">REKOMENDOWANY
-                                SPOSÓB PARZENIA</span>
-                            <div class="align-items-center d-flex flex-md-column justify-content-around">
-                                <div class="cafe-method img-method313"></div>
-                                <div class="cafe-method img-method311"></div>
-                            </div>
+                        });
+                        </script>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="d-flex justify-content-around mb-3 text-center text-uppercase w-100">REKOMENDOWANY
+                            SPOSÓB PARZENIA</span>
+                        <div class="align-items-center d-flex flex-md-column justify-content-around">
+                            <div class="cafe-method img-method313"></div>
+                            <div class="cafe-method img-method311"></div>
                         </div>
                     </div>
-                </section>
-                <section id="projector_producttraits" class="traits mt-5 ">
-                    <div class="row">
-                        <div class="col-md-6 mb-5">
+                </div>
+            </section>
 
 
-                            <div class=" d-flex justify-content-md-between">
-                                <p class="text-uppercase">Profil aromatyczny</p>
-                                <div class="font-bold aroma-links">
-                                    <a href="#">orzech,</a> <a href="#">karmel,</a> <a href="#">miód,</a> <a
-                                        href="#">mleczna czekolada</a>
-                                </div>
-                            </div>
+            <section id="projector_in_bundle" class="hotspot my-5 --list col-12">
+                <h2><span class="headline"><span class="headline__name">Oszczędź kupując więcej</span></span></h2>
+                <div class="products d-flex flex-wrap">
+                    <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
+                            class="product__icon d-flex justify-content-center align-items-center p-1 m-0"
+                            data-product-id="2453"
+                            href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg.html"
+                            title="ZESTAW 6x Kawa ziarnista MkCafe 1 KG"><img src="./img/zestaw1.png"
+                                class="b-lazy b-loaded" alt="ZESTAW 6x Kawa ziarnista MkCafe 1 KG"></a>
+                        <div
+                            class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
+                            <h3><a class="product__name mb-1 mb-md-0"
+                                    href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg.html"
+                                    title="ZESTAW 6x Kawa ziarnista MkCafe 1 KG">ŚWIEŻO PALONA KAWA
+                                    ZIARNISTA MK FRESH BRAZIL I INDIA 2X1KG</a></h3>
+                            <div class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto">
+                                <div class="product__prices flex-md-row align-items-md-center">
+                                    <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
+                                            class="price --max"><del>230,08 zł</del></span><span
+                                            class="product__promo_info d-none">(Taniej w zestawie o 32%)</span>
+                                    </div>
+                                    <div class="product__price_wrapper"><strong class="price">169,08 zł<span
+                                                class="price_vat"> brutto</span></strong></div>
 
-                            <div class="hrline mt-4 mb-4"></div>
+                                </div>
+                                <div class="product__promo_omnibus omnibus_price"><span
+                                        class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
+                                    </span><span class="omnibus_price__value">220 zł</span></div>
 
-                            <div class=" d-flex justify-content-md-between">
-                                <p class="text-uppercase">Intensywność</p>
-                                <b class="d-flex align-items-center">2.5
-                                    <span class="stars-coffee ml-3">
-                                        <span class="full"></span>
-                                        <span class="full"></span>
-                                        <span class="half"></span>
-                                        <span class="empty"></span>
-                                        <span class="empty"></span>
-                                    </span>
-                                </b>
-                            </div>
-                            <div class="hrline mt-4 mb-4"></div>
-
-                            <div class="d-flex justify-content-md-between">
-                                <p class="text-uppercase">Kwasowość</p>
-                                <b class="d-flex align-items-center">1.5
-                                    <span class="stars-coffee ml-3">
-                                        <span class="full"></span>
-                                        <span class="half"></span>
-                                        <span class="empty"></span>
-                                        <span class="empty"></span>
-                                        <span class="empty"></span>
-                                    </span>
-                                </b>
-                            </div>
-                            <!-- <div class="hrline mt-2 mb-2"></div> -->
-
-                        </div>
-                        <div class="col-md-6 mb-5">
-                            <div class="traits__wrapper">
-                                <div class="traits__item mb-2" data-hide="false"><span
-                                        class="traits__label mr-2">Skład</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603424-100-Arabika.html">100% Arabika</a></span></div>
-                                <div class="traits__item mb-2" data-hide="false"><span
-                                        class="traits__label mr-2">Stopień
-                                        palenia</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value"
-                                            href="/tra-pol-1335603489-Sredni.html">Średni</a></span></div>
-                                <div class="traits__item mb-2" data-hide="false"><span
-                                        class="traits__label mr-2">Zawartość
-                                        kofeiny</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603492-Niska.html">Niska</a></span>
-                                </div>
-                                <div class="traits__item mb-2" data-hide="false"><span
-                                        class="traits__label mr-2">Rodzaj</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603587-Kawa-ziarnista.html">Kawa ziarnista</a></span>
-                                </div>
-                                <div class="traits__item mb-2" data-hide="false"><span
-                                        class="traits__label mr-2">Przeznaczenie
-                                    </span><span class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603592-Do-ekspresu-automatycznego.html">Do ekspresu
-                                            automatycznego</a><a class="traits__value"
-                                            href="/tra-pol-1335603593-Do-ekspresu-kolbowego.html">Do ekspresu
-                                            kolbowego</a><a class="traits__value"
-                                            href="/tra-pol-1335603581-Do-biura.html">Do biura</a><a
-                                            class="traits__value" href="/tra-pol-1335603579-Do-kawiarni.html">Do
-                                            kawiarni</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Polecana
-                                        do</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value"
-                                            href="/tra-pol-1335603896-Espresso.html">Espresso</a><a
-                                            class="traits__value" href="/tra-pol-1335603897-Kawa-czarna.html">Kawa
-                                            czarna</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Blend
-                                        czy
-                                        Single</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335603893-Blend-Mieszanki.html">Blend
-                                            /
-                                            Mieszanki</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Pochodzenie
-                                        ziaren</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value"
-                                            href="/tra-pol-1335603921-Ameryka-Poludniowa.html">Ameryka
-                                            Południowa</a><a class="traits__value"
-                                            href="/tra-pol-1335603906-Ameryka-Srodkowa.html">Ameryka Środkowa</a><a
-                                            class="traits__value" href="/tra-pol-1335603904-Indie.html">Indie</a><a
-                                            class="traits__value"
-                                            href="/tra-pol-1335603902-Etiopia.html">Etiopia</a></span>
-                                </div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Kwasowość</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603946-Mocna.html">Mocna</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Gorycz</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603918-Srednia.html">Średnia</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Słodycz</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603923-Mocna.html">Mocna</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Intensywność
-                                        smaku</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value"
-                                            href="/tra-pol-1335603914-Srednia.html">Średnia</a></span>
-                                </div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Wyczuwalne
-                                        smaki</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value"
-                                            href="/tra-pol-1335603925-Czekolada.html">Czekolada</a><a
-                                            class="traits__value" href="/tra-pol-1335603937-Kwiaty.html">Kwiaty</a><a
-                                            class="traits__value" href="/tra-pol-1335603933-Lisc-tytoniu.html">Liść
-                                            tytoniu</a><a class="traits__value"
-                                            href="/tra-pol-1335603932-Przyprawy.html">Przyprawy</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Crema</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603926-Gesta.html">Gęsta</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span class="traits__label mr-2">Sposób
-                                        przygotowania</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value"
-                                            href="/tra-pol-1335603886-Ekspres-automatyczny.html">Ekspres
-                                            automatyczny</a><a class="traits__value"
-                                            href="/tra-pol-1335603888-Ekspres-kolbowy.html">Ekspres kolbowy</a><a
-                                            class="traits__value" href="/tra-pol-1335603883-French-Press.html">French
-                                            Press</a><a class="traits__value"
-                                            href="/tra-pol-1335603880-Kawiarka.html">Kawiarka</a><a
-                                            class="traits__value"
-                                            href="/tra-pol-1335603879-Tradycyjny.html">Tradycyjny</a><a
-                                            class="traits__value"
-                                            href="/tra-pol-1335603887-Ekspres-przelewowy.html">Ekspres
-                                            przelewowy</a></span>
-                                </div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Palarnia</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603600-Wlochy.html">Włochy</a></span></div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Opakowanie</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335603658-1000g.html">1000g</a></span></div>
-
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Dostępne
-                                        opakowania</span><span class="traits__values d-inline-flex flex-wrap"><a
-                                            class="traits__value" href="/tra-pol-1335604276-1000g.html">1000g</a></span>
-                                </div>
-                                <div class="traits__item mb-2" data-hide="true"><span
-                                        class="traits__label mr-2">Waga</span><span
-                                        class="traits__values d-inline-flex flex-wrap"><a class="traits__value"
-                                            href="/tra-pol-1335604648-1000.html">1000</a></span></div>
-                            </div><a href="#showAllTraits" class="traits__all" style="text-decoration: none"><i
-                                    class="icon-angle-down"></i>&nbsp;Pokaż wszystkie </a>
+                            </div><a class="product__see d-none d-md-block"
+                                href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg.html">
+                                Zobacz zestaw
+                            </a>
                         </div>
                     </div>
-
-                </section>
-
-                <section id="projector_in_bundle" class="hotspot mb-5 --list col-12">
-                    <h2><span class="headline"><span class="headline__name">Oszczędź kupując więcej</span></span></h2>
-                    <div class="products d-flex flex-wrap">
-                        <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
-                                class="product__icon d-flex justify-content-center align-items-center p-1 m-0"
-                                data-product-id="2453"
-                                href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg.html"
-                                title="ZESTAW 6x Kawa ziarnista MkCafe 1 KG"><img src="./img/zestaw1.png"
-                                    class="b-lazy b-loaded" alt="ZESTAW 6x Kawa ziarnista MkCafe 1 KG"></a>
-                            <div
-                                class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
-                                <h3><a class="product__name mb-1 mb-md-0"
-                                        href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg.html"
-                                        title="ZESTAW 6x Kawa ziarnista MkCafe 1 KG">ŚWIEŻO PALONA KAWA
-                                        ZIARNISTA MK FRESH BRAZIL I INDIA 2X1KG</a></h3>
-                                <div
-                                    class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto">
-                                    <div class="product__prices flex-md-row align-items-md-center">
-                                        <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
-                                                class="price --max"><del>230,08 zł</del></span><span
-                                                class="product__promo_info d-none">(Taniej w zestawie o 32%)</span>
-                                        </div>
-                                        <div class="product__price_wrapper"><strong class="price">169,08 zł<span
-                                                    class="price_vat"> brutto</span></strong></div>
-
+                    <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
+                            class="product__icon d-flex justify-content-center align-items-center p-1 m-0"
+                            data-product-id="4551"
+                            href="/product-pol-4551-MkCafe-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html"
+                            title="MkCafe 1 KG + 2x filiżanka do kawy espresso"><img src="./img/zestaw2.png"
+                                class="b-lazy b-loaded" alt="MkCafe 1 KG + 2x filiżanka do kawy espresso"></a>
+                        <div
+                            class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
+                            <h3><a class="product__name mb-1 mb-md-0"
+                                    href="/product-pol-4551-MkCafe-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html"
+                                    title="MkCafe 1 KG + 2x filiżanka do kawy espresso">MkCafe
+                                    Dodicigrancru 1kg + 2x filiżanka do kawy espresso</a></h3>
+                            <div class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto">
+                                <div class="product__prices flex-md-row align-items-md-center">
+                                    <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
+                                            class="price --max"><del>198,97 zł</del></span><span
+                                            class="product__promo_info d-none">(Taniej w zestawie o 36%)</span>
                                     </div>
-                                    <div class="product__promo_omnibus omnibus_price"><span
-                                            class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
-                                        </span><span class="omnibus_price__value">220 zł</span></div>
+                                    <div class="product__price_wrapper"><strong class="price">126,13 zł<span
+                                                class="price_vat"> brutto</span></strong></div>
 
-                                </div><a class="product__see d-none d-md-block"
-                                    href="/product-pol-2453-ZESTAW-6x-Kawa-ziarnista-MkCafe-DODICIGRANCRU-1kg.html">
-                                    Zobacz zestaw
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
-                                class="product__icon d-flex justify-content-center align-items-center p-1 m-0"
-                                data-product-id="4551"
-                                href="/product-pol-4551-MkCafe-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html"
-                                title="MkCafe 1 KG + 2x filiżanka do kawy espresso"><img src="./img/zestaw2.png"
-                                    class="b-lazy b-loaded" alt="MkCafe 1 KG + 2x filiżanka do kawy espresso"></a>
-                            <div
-                                class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
-                                <h3><a class="product__name mb-1 mb-md-0"
-                                        href="/product-pol-4551-MkCafe-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html"
-                                        title="MkCafe 1 KG + 2x filiżanka do kawy espresso">MkCafe
-                                        Dodicigrancru 1kg + 2x filiżanka do kawy espresso</a></h3>
-                                <div
-                                    class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto">
-                                    <div class="product__prices flex-md-row align-items-md-center">
-                                        <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
-                                                class="price --max"><del>198,97 zł</del></span><span
-                                                class="product__promo_info d-none">(Taniej w zestawie o 36%)</span>
-                                        </div>
-                                        <div class="product__price_wrapper"><strong class="price">126,13 zł<span
-                                                    class="price_vat"> brutto</span></strong></div>
-
-                                    </div>
-                                    <div class="product__promo_omnibus omnibus_price"><span
-                                            class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
-                                        </span><span class="omnibus_price__value">178,00 zł</span></div>
-                                </div><a class="product__see d-none d-md-block"
-                                    href="/product-pol-4551-MkCafe-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html">
-                                    Zobacz zestaw
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
-                                class="product__icon d-flex justify-content-center align-items-center p-1 m-0 loading"
-                                data-product-id="5212"
-                                href="/product-pol-5212-ZESTAW-Kawa-MkCafe-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html"
-                                title="ZESTAW - Kawa MkCafe Dodicigrancru 2x1kg + opakowanie 250g GRATIS"><img
-                                    src="./img/zestaw3.png" class="b-lazy" data-src="./img/zestaw3.png"
-                                    alt="ZESTAW - Kawa MkCafe Dodicigrancru 2x1kg + opakowanie 250g GRATIS"></a>
-                            <div
-                                class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
-                                <h3><a class="product__name mb-1 mb-md-0"
-                                        href="/product-pol-5212-ZESTAW-Kawa-MkCafe-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html"
-                                        title="ZESTAW - Kawa MkCafe Dodicigrancru 2x1kg + opakowanie 250g GRATIS">ZESTAW
-                                        - Kawa MkCafe Dodicigrancru 2x1kg + opakowanie 250g GRATIS</a></h3>
-                                <div
-                                    class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto --omnibus">
-                                    <div class="product__prices flex-md-row align-items-md-center">
-                                        <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
-                                                class="price --max"><span class="omnibus_label">Cena regularna:
-                                                </span><del>377,97 zł</del></span><span
-                                                class="product__promo_info d-none">(Taniej w zestawie o 39%)</span>
-                                        </div>
-                                        <div class="product__price_wrapper"><strong class="price">229,14 zł<span
-                                                    class="price_vat"> brutto</span></strong></div>
-                                    </div>
-                                    <div class="product__promo_omnibus omnibus_price"><span
-                                            class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
-                                        </span><span class="omnibus_price__value">278,00 zł</span></div>
-                                </div><a class="product__see d-none d-md-block"
-                                    href="/product-pol-5212-ZESTAW-Kawa-MkCafe-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html">
-                                    Zobacz zestaw
-                                </a>
-                            </div>
+                                </div>
+                                <div class="product__promo_omnibus omnibus_price"><span
+                                        class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
+                                    </span><span class="omnibus_price__value">178,00 zł</span></div>
+                            </div><a class="product__see d-none d-md-block"
+                                href="/product-pol-4551-MkCafe-Dodicigrancru-1kg-2x-filizanka-do-kawy-espresso.html">
+                                Zobacz zestaw
+                            </a>
                         </div>
                     </div>
-                </section>
-
-
-                <section id="projector_longdescription" class="longdescription cm my-5  col-12" data-traits="true"
-                    data-dictionary="true">
-                    <div class="base-html-renderer-wrap relative" style="overflow: hidden;">
-                        <div xmlns="http://www.w3.org/1999/xhtml"
-                            class="d-flex justify-content-center ml-auto mr-auto row" style="margin-bottom: 20px;">
+                    <div class="product col-12 px-0 py-1 mb-2 mb-md-0 d-flex"><a
+                            class="product__icon d-flex justify-content-center align-items-center p-1 m-0 loading"
+                            data-product-id="5212"
+                            href="/product-pol-5212-ZESTAW-Kawa-MkCafe-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html"
+                            title="ZESTAW - Kawa MkCafe Dodicigrancru 2x1kg + opakowanie 250g GRATIS"><img
+                                src="./img/zestaw3.png" class="b-lazy" data-src="./img/zestaw3.png"
+                                alt="ZESTAW - Kawa MkCafe Dodicigrancru 2x1kg + opakowanie 250g GRATIS"></a>
+                        <div
+                            class="product__wrapper pl-2 d-flex flex-column justify-content-center flex-md-row align-items-md-center">
+                            <h3><a class="product__name mb-1 mb-md-0"
+                                    href="/product-pol-5212-ZESTAW-Kawa-MkCafe-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html"
+                                    title="ZESTAW - Kawa MkCafe Dodicigrancru 2x1kg + opakowanie 250g GRATIS">ZESTAW
+                                    - Kawa MkCafe Dodicigrancru 2x1kg + opakowanie 250g GRATIS</a></h3>
                             <div
-                                class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-0 col-lg-4 col-lg-push-1 text-center">
-                                <div style="position: relative; padding-bottom: 69%; height: 0;">
+                                class="product__prices_wrapper d-md-flex flex-md-column align-items-md-end ml-md-auto --omnibus">
+                                <div class="product__prices flex-md-row align-items-md-center">
+                                    <div class="product__promo d-flex flex-wrap justify-content-md-end"><span
+                                            class="price --max"><span class="omnibus_label">Cena regularna:
+                                            </span><del>377,97 zł</del></span><span
+                                            class="product__promo_info d-none">(Taniej w zestawie o 39%)</span>
+                                    </div>
+                                    <div class="product__price_wrapper"><strong class="price">229,14 zł<span
+                                                class="price_vat"> brutto</span></strong></div>
+                                </div>
+                                <div class="product__promo_omnibus omnibus_price"><span
+                                        class="omnibus_price__text">Najniższa cena z 30 dni przed obniżką:
+                                    </span><span class="omnibus_price__value">278,00 zł</span></div>
+                            </div><a class="product__see d-none d-md-block"
+                                href="/product-pol-5212-ZESTAW-Kawa-MkCafe-Dodicigrancru-2x1kg-opakowanie-250g-GRATIS.html">
+                                Zobacz zestaw
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="projector_longdescription" class="longdescription cm my-5  col-12" data-traits="true"
+                data-dictionary="true">
+                <div class="base-html-renderer-wrap relative" style="overflow: hidden;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center ml-auto mr-auto row"
+                        style="margin-bottom: 20px;">
+                        <div class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-0 col-lg-4 col-lg-push-1 text-center">
+                            <div style="position: relative; padding-bottom: 69%; height: 0;">
+                                <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
+                                        src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-1.jpg"
+                                        alt="Brazil Mogiana" class="base-img-image inline w-full"
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                    <!---->
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-5 col-lg-push-1">
+                            <h2 class="subtitle1" style="margin: 10px 0 0;">Brazil Mogiana - cudowny smak,
+                                intensywny aromat</h2>
+                            <p class="boldLead">Urzekający smak, który cechuje wyjątkowa delikatność, będzie świetną
+                                propozycją na filiżankę kawy o dowolnej porze dnia. Właśnie ze względu na wspomniane
+                                wyżej właściwości <strong>Brazil</strong> <strong>Mogiana</strong> cieszy się
+                                przydomkiem „klasycznej”, gdyż będzie wyśmienicie smakować zarówno do śniadania, w
+                                trakcie lunchu, jak i popołudniowego czasu spędzonego w gronie bliskich, czy
+                                znajomych.<strong> Świeżo palona kawa</strong> swoją nazwę zaczerpnęła od regionu
+                                umiejscowionego na granicy stanów São Paulo i Minas Gerais, w których znajdują się
+                                jej plantacje.</p>
+                        </div>
+                    </div>
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center ml-auto mr-auto row">
+                        <div class="col-xs-12 col-md-7 col-md-push-1 col-lg-5 col-lg-push-2">
+                            <p>Warunki klimatyczne panujące we wspomnianym regionie sprawiają, że
+                                <strong>brazylijska</strong> <strong>kawa</strong> <strong>ziarnista</strong>
+                                cechuje się łagodnym smakiem o niskiej kwasowości, niewyczuwalnej goryczce i
+                                subtelnej słodyczy. Z kolei jej aromat to zdecydowanie nuty orzechowe, miodowe oraz
+                                czekoladowe.
+                            </p>
+                        </div>
+                    </div>
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center ml-auto mr-auto row"
+                        style="margin-top: 15px; margin-bottom: 15px;">
+                        <div class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-7 col-lg-4 col-lg-push-7 text-center">
+                            <div style="position: relative; padding-bottom: 69%; height: 0;">
+                                <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
+                                        src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-2.jpg"
+                                        alt="Brazil Mogiana" class="base-img-image inline w-full"
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                    <!---->
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-md-pull-4 col-lg-5 col-lg-pull-2">
+                            <h2 class="subtitle2" style="margin-top: 15px;">Brazylijska kawa ziarnista - owoc
+                                najlepszych plantacji w kraju</h2>
+                            <p><strong>Kawa ziarnista 250 g</strong> to wynik rzetelnie wykonywanej pracy w obszarze
+                                niemalże stworzonym do uprawy kawowca. Mowa tutaj o trzech regionach, do których
+                                należy zaliczyć Mogianę, Sul Minas i Cerrado. Wszystkie wyróżnia umiarkowany klimat
+                                - temperatura o każdej porze roku ulega bardzo nieznacznym wahaniom. To z kolei
+                                sprawia, że panujące na tym terenie warunki są idealne do uprawy Arabiki i Robusty
+                                na tutejszych plantacjach.</p>
+                        </div>
+                    </div>
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="moreContent">
+                        <div class="d-flex justify-content-center ml-auto mr-auto row">
+                            <div class="col-xs-12 col-md-4 col-md-push-1 col-lg-3 col-lg-push-2">
+                                <p>Liczne Arabiki to niezwykle łagodne i delikatne odmiany o subtelnej, wyczuwalnej
+                                    słodyczy. Efekt ten uzyskiwany jest dzięki tradycyjnej metodzie suchej, która
+                                    opiera się na suszeniu ziaren razem z miąższem. Przebywają one na otwartym
+                                    powietrzu przez około cztery tygodnie, czego efektem jest<strong> brazylijska
+                                        kawa ziarnista</strong> o zrównoważonym smaku.</p>
+                                <p>Często zwane „kawowymi wiśniami” ziarna odznaczają się również słodkim aromatem,
+                                    co przekłada się na delikatny balans znany wśród miłośników kawy jako „okrągły”.
+                                </p>
+                            </div>
+                            <div class="hidden-xs hidden-sm col-md-6 col-md-push-1 col-lg-5 col-lg-push-2">
+                                <div style="position: relative; padding-bottom: 55%; height: 0;">
                                     <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
-                                            src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-1.jpg"
+                                            src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-txt-1.jpg"
                                             alt="Brazil Mogiana" class="base-img-image inline w-full"
                                             style="position:absolute;top:0;left:0;width:100%;height:100%;">
                                         <!---->
                                     </figure>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-md-6 col-lg-5 col-lg-push-1">
-                                <h2 class="subtitle1" style="margin: 10px 0 0;">Brazil Mogiana - cudowny smak,
-                                    intensywny aromat</h2>
-                                <p class="boldLead">Urzekający smak, który cechuje wyjątkowa delikatność, będzie świetną
-                                    propozycją na filiżankę kawy o dowolnej porze dnia. Właśnie ze względu na wspomniane
-                                    wyżej właściwości <strong>Brazil</strong> <strong>Mogiana</strong> cieszy się
-                                    przydomkiem „klasycznej”, gdyż będzie wyśmienicie smakować zarówno do śniadania, w
-                                    trakcie lunchu, jak i popołudniowego czasu spędzonego w gronie bliskich, czy
-                                    znajomych.<strong> Świeżo palona kawa</strong> swoją nazwę zaczerpnęła od regionu
-                                    umiejscowionego na granicy stanów São Paulo i Minas Gerais, w których znajdują się
-                                    jej plantacje.</p>
-                            </div>
                         </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml"
-                            class="d-flex justify-content-center ml-auto mr-auto row">
-                            <div class="col-xs-12 col-md-7 col-md-push-1 col-lg-5 col-lg-push-2">
-                                <p>Warunki klimatyczne panujące we wspomnianym regionie sprawiają, że
-                                    <strong>brazylijska</strong> <strong>kawa</strong> <strong>ziarnista</strong>
-                                    cechuje się łagodnym smakiem o niskiej kwasowości, niewyczuwalnej goryczce i
-                                    subtelnej słodyczy. Z kolei jej aromat to zdecydowanie nuty orzechowe, miodowe oraz
-                                    czekoladowe.
-                                </p>
-                            </div>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml"
-                            class="d-flex justify-content-center ml-auto mr-auto row"
+                        <div class="d-flex justify-content-center ml-auto mr-auto row"
                             style="margin-top: 15px; margin-bottom: 15px;">
                             <div
                                 class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-7 col-lg-4 col-lg-push-7 text-center">
                                 <div style="position: relative; padding-bottom: 69%; height: 0;">
                                     <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
-                                            src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-2.jpg"
+                                            src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-3.jpg"
                                             alt="Brazil Mogiana" class="base-img-image inline w-full"
                                             style="position:absolute;top:0;left:0;width:100%;height:100%;">
                                         <!---->
@@ -1013,469 +923,418 @@
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-6 col-md-pull-4 col-lg-5 col-lg-pull-2">
-                                <h2 class="subtitle2" style="margin-top: 15px;">Brazylijska kawa ziarnista - owoc
-                                    najlepszych plantacji w kraju</h2>
-                                <p><strong>Kawa ziarnista 250 g</strong> to wynik rzetelnie wykonywanej pracy w obszarze
-                                    niemalże stworzonym do uprawy kawowca. Mowa tutaj o trzech regionach, do których
-                                    należy zaliczyć Mogianę, Sul Minas i Cerrado. Wszystkie wyróżnia umiarkowany klimat
-                                    - temperatura o każdej porze roku ulega bardzo nieznacznym wahaniom. To z kolei
-                                    sprawia, że panujące na tym terenie warunki są idealne do uprawy Arabiki i Robusty
-                                    na tutejszych plantacjach.</p>
+                                <h2 class="subtitle2" style="margin-top: 15px;">Brazylia - kawowy gigant na rynku
+                                </h2>
+                                <p>Aż 30% światowych zbiorów kawy pochodzi z Brazylii, okrzykniętej mianem kawowego
+                                    giganta. Pierwszą osobą, która założyła plantację na południu tego kraju był
+                                    oficer Francisco de Pahletta. Jego plantacja powstała w połowie XVIII wieku z
+                                    przemyconych sadzonek kawowca pozyskanych z Gujany Francuskiej i została uznana
+                                    za pierwszą w całej Brazylii.</p>
+                                <p>Na przestrzeni stu lat Brazylia niebagatelnie szybko rozwinęła uprawę kawowców,
+                                    których efekt w postaci ziaren na stałe wpisał się w codzienność i tradycję
+                                    Brazylijczyków.</p>
+                                <div class="hidden-xs hidden-sm"
+                                    style="position: relative; padding-bottom: 58%; height: 0;">
+                                    <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
+                                            src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-txt-2.jpg"
+                                            alt="Brazil Mogiana" class="base-img-image inline w-full"
+                                            style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                        <!---->
+                                    </figure>
+                                </div>
                             </div>
                         </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="moreContent">
-                            <div class="d-flex justify-content-center ml-auto mr-auto row">
-                                <div class="col-xs-12 col-md-4 col-md-push-1 col-lg-3 col-lg-push-2">
-                                    <p>Liczne Arabiki to niezwykle łagodne i delikatne odmiany o subtelnej, wyczuwalnej
-                                        słodyczy. Efekt ten uzyskiwany jest dzięki tradycyjnej metodzie suchej, która
-                                        opiera się na suszeniu ziaren razem z miąższem. Przebywają one na otwartym
-                                        powietrzu przez około cztery tygodnie, czego efektem jest<strong> brazylijska
-                                            kawa ziarnista</strong> o zrównoważonym smaku.</p>
-                                    <p>Często zwane „kawowymi wiśniami” ziarna odznaczają się również słodkim aromatem,
-                                        co przekłada się na delikatny balans znany wśród miłośników kawy jako „okrągły”.
-                                    </p>
-                                </div>
-                                <div class="hidden-xs hidden-sm col-md-6 col-md-push-1 col-lg-5 col-lg-push-2">
-                                    <div style="position: relative; padding-bottom: 55%; height: 0;">
-                                        <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
-                                                src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-txt-1.jpg"
-                                                alt="Brazil Mogiana" class="base-img-image inline w-full"
-                                                style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                                            <!---->
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center ml-auto mr-auto row"
-                                style="margin-top: 15px; margin-bottom: 15px;">
-                                <div
-                                    class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-7 col-lg-4 col-lg-push-7 text-center">
-                                    <div style="position: relative; padding-bottom: 69%; height: 0;">
-                                        <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
-                                                src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-3.jpg"
-                                                alt="Brazil Mogiana" class="base-img-image inline w-full"
-                                                style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                                            <!---->
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-md-6 col-md-pull-4 col-lg-5 col-lg-pull-2">
-                                    <h2 class="subtitle2" style="margin-top: 15px;">Brazylia - kawowy gigant na rynku
-                                    </h2>
-                                    <p>Aż 30% światowych zbiorów kawy pochodzi z Brazylii, okrzykniętej mianem kawowego
-                                        giganta. Pierwszą osobą, która założyła plantację na południu tego kraju był
-                                        oficer Francisco de Pahletta. Jego plantacja powstała w połowie XVIII wieku z
-                                        przemyconych sadzonek kawowca pozyskanych z Gujany Francuskiej i została uznana
-                                        za pierwszą w całej Brazylii.</p>
-                                    <p>Na przestrzeni stu lat Brazylia niebagatelnie szybko rozwinęła uprawę kawowców,
-                                        których efekt w postaci ziaren na stałe wpisał się w codzienność i tradycję
-                                        Brazylijczyków.</p>
-                                    <div class="hidden-xs hidden-sm"
-                                        style="position: relative; padding-bottom: 58%; height: 0;">
-                                        <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
-                                                src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-txt-2.jpg"
-                                                alt="Brazil Mogiana" class="base-img-image inline w-full"
-                                                style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                                            <!---->
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center ml-auto mr-auto row">
-                                <div class="col-xs-10 col-xs-push-1 hidden-md hidden-lg text-center">
-                                    <div style="position: relative; padding-bottom: 69%; height: 0;">
-                                        <figure
-                                            class="base-img-wrap inline-block mk2 not-loaded w-full text-center lazyload">
-                                            <img src="data:image/gif;base64,R0lGODlhAQABAPAAAPDw8P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-                                                alt="Brazil Mogiana" class="base-img-image inline w-full"
-                                                style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                                            <div class="inner">
-                                                <div class="spinner-outer">
-                                                    <div
-                                                        class="spinner-wrapper absolute inset-0 bg-grey-light min-h-12">
-                                                        <div class="spinner absolute left-1/2 top-1/2 flex">
-                                                            <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
-                                                            </div>
-                                                            <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
-                                                            </div>
-                                                            <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
-                                                            </div>
-                                                            <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
-                                                            </div>
-                                                            <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
-                                                            </div>
+                        <div class="d-flex justify-content-center ml-auto mr-auto row">
+                            <div class="col-xs-10 col-xs-push-1 hidden-md hidden-lg text-center">
+                                <div style="position: relative; padding-bottom: 69%; height: 0;">
+                                    <figure
+                                        class="base-img-wrap inline-block mk2 not-loaded w-full text-center lazyload">
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAPAAAPDw8P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                            alt="Brazil Mogiana" class="base-img-image inline w-full"
+                                            style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                        <div class="inner">
+                                            <div class="spinner-outer">
+                                                <div class="spinner-wrapper absolute inset-0 bg-grey-light min-h-12">
+                                                    <div class="spinner absolute left-1/2 top-1/2 flex">
+                                                        <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
+                                                        </div>
+                                                        <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
+                                                        </div>
+                                                        <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
+                                                        </div>
+                                                        <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
+                                                        </div>
+                                                        <div class="inline-block bg-gold-dark w-2 h-10 mx-1/2">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-md-6 col-md-push-5 col-lg-5 col-lg-push-6">
-                                    <p><strong>Kawa ziarnista 250 g </strong>nie jest wyłącznie napojem dodającym
-                                        energii. To również symbol brazylijskiego stylu życia, nieokiełznanej
-                                        żywiołowości tutejszych mieszkańców, którzy sposoby uprawy, zbioru, suszenia,
-                                        obróbki i zaparzania przekazują sobie z pokolenia na pokolenie jako nieodłączny
-                                        element tradycji. Najczęściej w brazylijskich domach kawa serwowana jest w
-                                        postaci mocnego słodzonego wywaru zbliżonego do espresso.</p>
-                                    <p>Kawa przyczyniła się ponadto do szeroko pojętego rozwoju gospodarki i
-                                        infrastruktury. Spółka Mogiana, która zaczerpnęła swoją nazwę od nazwy regionu,
-                                        stworzyła pierwsze linie kolejowe, co zapewniło lepszą komunikację i transport
-                                        pomiędzy plantacjami znajdującymi się na tym obszarze.</p>
-                                </div>
-                                <div
-                                    class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-0 col-md-pull-6 col-lg-4 col-lg-push-0 col-lg-pull-4 text-center">
-                                    <div style="position: relative; padding-bottom: 69%; height: 0;">
-                                        <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
-                                                src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-5.jpg"
-                                                alt="Brazil Mogiana" class="base-img-image inline w-full"
-                                                style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                                            <!---->
-                                        </figure>
-                                    </div>
+                                        </div>
+                                    </figure>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-center ml-auto mr-auto row">
-                                <div class="hidden-xs hidden-sm col-md-12 col-lg-9 col-lg-push-1 text-center">
-                                    <div style="position: relative; padding-bottom: 28%; height: 0;">
-                                        <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
-                                                src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-6.jpg"
-                                                alt="Brazil Mogiana" class="base-img-image inline w-full"
-                                                style="margin:15px 0;position:absolute;top:0;left:0;width:100%;height:100%;">
-                                            <!---->
-                                        </figure>
-                                    </div>
+                            <div class="col-xs-12 col-md-6 col-md-push-5 col-lg-5 col-lg-push-6">
+                                <p><strong>Kawa ziarnista 250 g </strong>nie jest wyłącznie napojem dodającym
+                                    energii. To również symbol brazylijskiego stylu życia, nieokiełznanej
+                                    żywiołowości tutejszych mieszkańców, którzy sposoby uprawy, zbioru, suszenia,
+                                    obróbki i zaparzania przekazują sobie z pokolenia na pokolenie jako nieodłączny
+                                    element tradycji. Najczęściej w brazylijskich domach kawa serwowana jest w
+                                    postaci mocnego słodzonego wywaru zbliżonego do espresso.</p>
+                                <p>Kawa przyczyniła się ponadto do szeroko pojętego rozwoju gospodarki i
+                                    infrastruktury. Spółka Mogiana, która zaczerpnęła swoją nazwę od nazwy regionu,
+                                    stworzyła pierwsze linie kolejowe, co zapewniło lepszą komunikację i transport
+                                    pomiędzy plantacjami znajdującymi się na tym obszarze.</p>
+                            </div>
+                            <div
+                                class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-0 col-md-pull-6 col-lg-4 col-lg-push-0 col-lg-pull-4 text-center">
+                                <div style="position: relative; padding-bottom: 69%; height: 0;">
+                                    <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
+                                            src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-5.jpg"
+                                            alt="Brazil Mogiana" class="base-img-image inline w-full"
+                                            style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                        <!---->
+                                    </figure>
                                 </div>
                             </div>
                         </div>
-                        <div class="more-button-wrap"></div>
+                        <div class="d-flex justify-content-center ml-auto mr-auto row">
+                            <div class="hidden-xs hidden-sm col-md-12 col-lg-9 col-lg-push-1 text-center">
+                                <div style="position: relative; padding-bottom: 28%; height: 0;">
+                                    <figure class="base-img-wrap inline-block mk2 loaded lazyload"><img
+                                            src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/brazil-mogiana-6.jpg"
+                                            alt="Brazil Mogiana" class="base-img-image inline w-full"
+                                            style="margin:15px 0;position:absolute;top:0;left:0;width:100%;height:100%;">
+                                        <!---->
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section>
+                    <div class="more-button-wrap"></div>
+                </div>
+            </section>
 
 
 
-                <section id="products_associated_zone1" class="hotspot my-5 py-5 --list col-12" data-ajaxload="true"
-                    data-pagetype="projector">
-                    <div class="hotspot mb-5 skeleton"><span class="headline"></span>
-                        <div class="products d-flex flex-wrap">
-                            <div class="product col-12 px-0 py-3 d-sm-flex align-items-sm-center py-sm-1"><span
-                                    class="product__icon d-flex justify-content-center align-items-center p-1 m-0"></span><span
-                                    class="product__name mb-1 mb-md-0" style="min-height: 20px;"></span>
-                                <div class="product__prices" style="min-height: 20px;"></div>
-                            </div>
-                            <div class="product col-12 px-0 py-3 d-sm-flex align-items-sm-center py-sm-1"><span
-                                    class="product__icon d-flex justify-content-center align-items-center p-1 m-0"></span><span
-                                    class="product__name mb-1 mb-md-0" style="min-height: 20px;"></span>
-                                <div class="product__prices" style="min-height: 20px;"></div>
-                            </div>
-                            <div class="product col-12 px-0 py-3 d-sm-flex align-items-sm-center py-sm-1"><span
-                                    class="product__icon d-flex justify-content-center align-items-center p-1 m-0"></span><span
-                                    class="product__name mb-1 mb-md-0" style="min-height: 20px;"></span>
-                                <div class="product__prices" style="min-height: 20px;"></div>
-                            </div>
-                            <div class="product col-12 px-0 py-3 d-sm-flex align-items-sm-center py-sm-1"><span
-                                    class="product__icon d-flex justify-content-center align-items-center p-1 m-0"></span><span
-                                    class="product__name mb-1 mb-md-0" style="min-height: 20px;"></span>
-                                <div class="product__prices" style="min-height: 20px;"></div>
-                            </div>
+            <section id="products_associated_zone1" class="hotspot my-5 py-5 --list col-12" data-ajaxload="true"
+                data-pagetype="projector">
+                <div class="hotspot mb-5 skeleton"><span class="headline"></span>
+                    <div class="products d-flex flex-wrap">
+                        <div class="product col-12 px-0 py-3 d-sm-flex align-items-sm-center py-sm-1"><span
+                                class="product__icon d-flex justify-content-center align-items-center p-1 m-0"></span><span
+                                class="product__name mb-1 mb-md-0" style="min-height: 20px;"></span>
+                            <div class="product__prices" style="min-height: 20px;"></div>
+                        </div>
+                        <div class="product col-12 px-0 py-3 d-sm-flex align-items-sm-center py-sm-1"><span
+                                class="product__icon d-flex justify-content-center align-items-center p-1 m-0"></span><span
+                                class="product__name mb-1 mb-md-0" style="min-height: 20px;"></span>
+                            <div class="product__prices" style="min-height: 20px;"></div>
+                        </div>
+                        <div class="product col-12 px-0 py-3 d-sm-flex align-items-sm-center py-sm-1"><span
+                                class="product__icon d-flex justify-content-center align-items-center p-1 m-0"></span><span
+                                class="product__name mb-1 mb-md-0" style="min-height: 20px;"></span>
+                            <div class="product__prices" style="min-height: 20px;"></div>
+                        </div>
+                        <div class="product col-12 px-0 py-3 d-sm-flex align-items-sm-center py-sm-1"><span
+                                class="product__icon d-flex justify-content-center align-items-center p-1 m-0"></span><span
+                                class="product__name mb-1 mb-md-0" style="min-height: 20px;"></span>
+                            <div class="product__prices" style="min-height: 20px;"></div>
                         </div>
                     </div>
-                </section>
-                <section id="products_associated_zone2" class="hotspot my-5 py-5 --slider col-12 p-0"
-                    data-ajaxload="true" data-pagetype="projector">
-                    <div class="hotspot mb-5 skeleton"><span class="headline"></span>
-                        <div class="products d-flex flex-wrap --adaptive slick-initialized slick-slider slick-dotted">
-                            <div class="slick-list draggable" style="height: 100%">
-                                <div class="slick-track"
-                                    style="opacity: 1; width: 780px; transform: translate3d(0px, 0px, 0px);">
-                                    <div class="product col-6 col-sm-3 py-3 slick-slide slick-current slick-active"
-                                        style="width: 185px;" tabindex="0" data-slick-index="0" aria-hidden="false"
-                                        role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
-                                        <span
-                                            class="product__icon d-flex justify-content-center align-items-center"></span><span
-                                            class="product__name" style="min-height: 20px;"></span>
-                                        <div class="product__prices" style="min-height: 20px;"></div>
-                                    </div>
-                                    <div class="product col-6 col-sm-3 py-3 slick-slide slick-active"
-                                        style="width: 185px;" tabindex="0" data-slick-index="1" aria-hidden="false"
-                                        role="tabpanel" id="slick-slide01"><span
-                                            class="product__icon d-flex justify-content-center align-items-center"></span><span
-                                            class="product__name" style="min-height: 20px;"></span>
-                                        <div class="product__prices" style="min-height: 20px;"></div>
-                                    </div>
-                                    <div class="product col-6 col-sm-3 py-3 slick-slide slick-active"
-                                        style="width: 185px;" tabindex="0" data-slick-index="2" aria-hidden="false"
-                                        role="tabpanel" id="slick-slide02"><span
-                                            class="product__icon d-flex justify-content-center align-items-center"></span><span
-                                            class="product__name" style="min-height: 20px;"></span>
-                                        <div class="product__prices" style="min-height: 20px;"></div>
-                                    </div>
-                                    <div class="product col-6 col-sm-3 py-3 slick-slide slick-active"
-                                        style="width: 185px;" tabindex="0" data-slick-index="3" aria-hidden="false"
-                                        role="tabpanel" id="slick-slide03"><span
-                                            class="product__icon d-flex justify-content-center align-items-center"></span><span
-                                            class="product__name" style="min-height: 20px;"></span>
-                                        <div class="product__prices" style="min-height: 20px;"></div>
-                                    </div>
+                </div>
+            </section>
+            <section id="products_associated_zone2" class="hotspot my-5 py-5 --slider col-12 p-0" data-ajaxload="true"
+                data-pagetype="projector">
+                <div class="hotspot mb-5 skeleton"><span class="headline"></span>
+                    <div class="products d-flex flex-wrap --adaptive slick-initialized slick-slider slick-dotted">
+                        <div class="slick-list draggable" style="height: 100%">
+                            <div class="slick-track"
+                                style="opacity: 1; width: 780px; transform: translate3d(0px, 0px, 0px);">
+                                <div class="product col-6 col-sm-3 py-3 slick-slide slick-current slick-active"
+                                    style="width: 185px;" tabindex="0" data-slick-index="0" aria-hidden="false"
+                                    role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
+                                    <span
+                                        class="product__icon d-flex justify-content-center align-items-center"></span><span
+                                        class="product__name" style="min-height: 20px;"></span>
+                                    <div class="product__prices" style="min-height: 20px;"></div>
+                                </div>
+                                <div class="product col-6 col-sm-3 py-3 slick-slide slick-active" style="width: 185px;"
+                                    tabindex="0" data-slick-index="1" aria-hidden="false" role="tabpanel"
+                                    id="slick-slide01"><span
+                                        class="product__icon d-flex justify-content-center align-items-center"></span><span
+                                        class="product__name" style="min-height: 20px;"></span>
+                                    <div class="product__prices" style="min-height: 20px;"></div>
+                                </div>
+                                <div class="product col-6 col-sm-3 py-3 slick-slide slick-active" style="width: 185px;"
+                                    tabindex="0" data-slick-index="2" aria-hidden="false" role="tabpanel"
+                                    id="slick-slide02"><span
+                                        class="product__icon d-flex justify-content-center align-items-center"></span><span
+                                        class="product__name" style="min-height: 20px;"></span>
+                                    <div class="product__prices" style="min-height: 20px;"></div>
+                                </div>
+                                <div class="product col-6 col-sm-3 py-3 slick-slide slick-active" style="width: 185px;"
+                                    tabindex="0" data-slick-index="3" aria-hidden="false" role="tabpanel"
+                                    id="slick-slide03"><span
+                                        class="product__icon d-flex justify-content-center align-items-center"></span><span
+                                        class="product__name" style="min-height: 20px;"></span>
+                                    <div class="product__prices" style="min-height: 20px;"></div>
                                 </div>
                             </div>
-                            <ul class="hotspot__dots" role="tablist">
-                                <li class="slick-active" role="presentation"><button type="button" role="tab"
-                                        id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 1"
-                                        tabindex="0" aria-selected="true">1</button></li>
-                            </ul>
+                        </div>
+                        <ul class="hotspot__dots" role="tablist">
+                            <li class="slick-active" role="presentation"><button type="button" role="tab"
+                                    id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 1"
+                                    tabindex="0" aria-selected="true">1</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="product_questions_list" class="questions my-5 py-5 col-12">
+                <div class="questions__wrapper row align-items-start">
+                    <div class="questions__block --banner col-12 col-md-5 col-lg-4">
+                        <div class="questions__banner"><strong class="questions__banner_item --label">Potrzebujesz
+                                pomocy? Masz pytania?</strong><span class="questions__banner_item --text">Zadaj
+                                pytanie a my odpowiemy niezwłocznie, najciekawsze pytania i odpowiedzi publikując
+                                dla innych.</span>
+                            <div class="questions__banner_item --button"><a
+                                    class="btn --solid --medium questions__button">Zadaj pytanie</a></div>
                         </div>
                     </div>
-                </section>
-                <section id="product_questions_list" class="questions my-5 py-5 col-12">
-                    <div class="questions__wrapper row align-items-start">
-                        <div class="questions__block --banner col-12 col-md-5 col-lg-4">
-                            <div class="questions__banner"><strong class="questions__banner_item --label">Potrzebujesz
-                                    pomocy? Masz pytania?</strong><span class="questions__banner_item --text">Zadaj
-                                    pytanie a my odpowiemy niezwłocznie, najciekawsze pytania i odpowiedzi publikując
-                                    dla innych.</span>
-                                <div class="questions__banner_item --button"><a
-                                        class="btn --solid --medium questions__button">Zadaj pytanie</a></div>
+                </div>
+            </section>
+            <section id="product_askforproduct" class="askforproduct mb-5 col-12">
+                <div class="askforproduct__label headline"><span class="askforproduct__label_txt headline__name">Zapytaj
+                        o produkt</span></div>
+                <form action="/settings.php" class="askforproduct__form row flex-column align-items-center"
+                    method="post" novalidate="novalidate">
+                    <div class="askforproduct__description col-12 col-sm-7 mb-4"><span
+                            class="askforproduct__description_txt">Jeżeli powyższy opis jest dla Ciebie
+                            niewystarczający, prześlij nam swoje pytanie odnośnie tego produktu. Postaramy się
+                            odpowiedzieć tak szybko jak tylko będzie to możliwe.
+                        </span><span class="askforproduct__privacy">Dane są przetwarzane zgodnie z <a
+                                href="https://www.konesso.pl/pol-privacy-and-cookie-notice.html">polityką
+                                prywatności</a>. Przesyłając je,
+                            akceptujesz jej postanowienia. </span></div><input type="hidden" name="question_product_id"
+                        value="29"><input type="hidden" name="question_action" value="add">
+                    <div class="askforproduct__inputs col-12 col-sm-7">
+                        <div class="f-group askforproduct__email">
+                            <div class="f-feedback askforproduct__feedback --email"><input
+                                    id="askforproduct__email_input" type="email"
+                                    class="f-control --validate --focused focused" name="question_email"
+                                    required="required" value="k.szuba@konesso.com"><label
+                                    for="askforproduct__email_input" class="f-label">
+                                    E-mail
+                                </label><span class="f-control-feedback"></span></div>
+                        </div>
+                        <div class="f-group askforproduct__question">
+                            <div class="f-feedback askforproduct__feedback --question"><textarea
+                                    id="askforproduct__question_input" rows="6" cols="52" type="question"
+                                    class="f-control --validate" name="product_question" minlength="3"
+                                    required="required"></textarea><label for="askforproduct__question_input"
+                                    class="f-label">
+                                    Pytanie
+                                </label><span class="f-control-feedback"></span></div>
+                        </div>
+                    </div>
+                    <div class="askforproduct__submit  col-12 col-sm-7"><button
+                            class="btn --solid --medium px-5 askforproduct__button">
+                            Wyślij
+                        </button></div>
+                </form>
+            </section>
+            <section id="opinions_section" class="row mb-4 mx-n3">
+                <div class="col-12">
+                    <h2 class="headline"><span class="headline__name">Opinie o Kawa ziarnista MkCafe DODICIGRANCRU
+                            1kg </span></h2>
+                </div>
+                <div class="average_opinions_container col-12 col-md-4 mb-4">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-12">
+                            <div class="average_opinions_box">
+                                <div class="comments">
+                                    <div class="note"><span class="d-flex flex-nowrap"><i
+                                                class="icon-star active"></i><i class="icon-star active"></i><i
+                                                class="icon-star active"></i><i class="icon-star active"></i><i
+                                                class="icon-star active"></i></span>
+                                    </div>
+                                </div>
+                                <div class="average_opinions_score">4.96</div>
+                                <div class="average_opinions_desc">
+                                    Liczba wystawionych opinii: 688</div>
+                            </div>
+                            <div class="opinions_add"><a href="#showOpinionForm" id="show_opinion_form"
+                                    class="btn --solid --medium">
+                                    Napisz swoją opinię
+                                </a></div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-12">
+                            <div class="opinions_filter_confirmed f-group --checkbox"><input type="checkbox"
+                                    class="f-control focused" id="opinions_filter_confirmed"><label class="f-label"
+                                    for="opinions_filter_confirmed">Pokaż tylko opinie potwierdzone zakupem</label>
+                            </div>
+                            <div class="average_opinions_list">
+                                <div class="opinion_rate" id="shop-opinion_rate_5"><span
+                                        class="opinion_number">5</span><span class="opinion_number_star"><i
+                                            class="icon-star"></i></span>
+                                    <div class="opinions_bar_container">
+                                        <div class="opinions_bar_active" style="width: 97.2383720930232%"></div>
+                                    </div><span class="rate_count">669</span>
+                                </div>
+                                <div class="opinion_rate" id="shop-opinion_rate_4"><span
+                                        class="opinion_number">4</span><span class="opinion_number_star"><i
+                                            class="icon-star"></i></span>
+                                    <div class="opinions_bar_container">
+                                        <div class="opinions_bar_active" style="width: 1.88953488372093%"></div>
+                                    </div><span class="rate_count">13</span>
+                                </div>
+                                <div class="opinion_rate" id="shop-opinion_rate_3"><span
+                                        class="opinion_number">3</span><span class="opinion_number_star"><i
+                                            class="icon-star"></i></span>
+                                    <div class="opinions_bar_container">
+                                        <div class="opinions_bar_active" style="width: 0.581395348837209%"></div>
+                                    </div><span class="rate_count">4</span>
+                                </div>
+                                <div class="opinion_rate" id="shop-opinion_rate_2"><span
+                                        class="opinion_number">2</span><span class="opinion_number_star"><i
+                                            class="icon-star"></i></span>
+                                    <div class="opinions_bar_container">
+                                        <div class="opinions_bar_active" style="width: 0.290697674418605%"></div>
+                                    </div><span class="rate_count">2</span>
+                                </div>
+                                <div class="opinion_rate" id="shop-opinion_rate_1"><span
+                                        class="opinion_number">1</span><span class="opinion_number_star"><i
+                                            class="icon-star"></i></span>
+                                    <div class="opinions_bar_container">
+                                        <div class="opinions_bar_active" style="width: 0%"></div>
+                                    </div><span class="rate_count">0</span>
+                                </div>
+                            </div>
+                            <div class="opinions-shop_guide">
+                                Kliknij ocenę aby filtrować opinie
                             </div>
                         </div>
                     </div>
-                </section>
-                <section id="product_askforproduct" class="askforproduct mb-5 col-12">
-                    <div class="askforproduct__label headline"><span
-                            class="askforproduct__label_txt headline__name">Zapytaj o produkt</span></div>
-                    <form action="/settings.php" class="askforproduct__form row flex-column align-items-center"
-                        method="post" novalidate="novalidate">
-                        <div class="askforproduct__description col-12 col-sm-7 mb-4"><span
-                                class="askforproduct__description_txt">Jeżeli powyższy opis jest dla Ciebie
-                                niewystarczający, prześlij nam swoje pytanie odnośnie tego produktu. Postaramy się
-                                odpowiedzieć tak szybko jak tylko będzie to możliwe.
-                            </span><span class="askforproduct__privacy">Dane są przetwarzane zgodnie z <a
-                                    href="https://www.konesso.pl/pol-privacy-and-cookie-notice.html">polityką
-                                    prywatności</a>. Przesyłając je,
-                                akceptujesz jej postanowienia. </span></div><input type="hidden"
-                            name="question_product_id" value="29"><input type="hidden" name="question_action"
-                            value="add">
-                        <div class="askforproduct__inputs col-12 col-sm-7">
-                            <div class="f-group askforproduct__email">
-                                <div class="f-feedback askforproduct__feedback --email"><input
-                                        id="askforproduct__email_input" type="email"
-                                        class="f-control --validate --focused focused" name="question_email"
-                                        required="required" value="k.szuba@konesso.com"><label
-                                        for="askforproduct__email_input" class="f-label">
-                                        E-mail
-                                    </label><span class="f-control-feedback"></span></div>
+                </div>
+                <div class="opinions_list col-12 col-md-8 ml-md-auto">
+                    <?php include 'product-opinions.php'; ?>
+                    <div class="menu_messages_message d-none" id="no_opinions_of_type">
+                        Brak opinii z taką liczbą gwiazdek.
+                    </div>
+                    <div class="opinions__more"><a href="#more_opinions" class="opinions__more_txt">Zobacz
+                            więcej</a></div>
+                </div>
+                <div class="opinions_add_form d-none">
+                    <div class="big_label">
+                        Napisz swoją opinię
+                    </div>
+                    <form class="row flex-column align-items-center shop_opinion_form" enctype="multipart/form-data"
+                        id="shop_opinion_form" action="/settings.php" method="post"><input type="hidden" name="product"
+                            value="29">
+                        <div class="shop_opinions_notes col-12 col-sm-6">
+                            <div class="shop_opinions_name">
+                                Twoja ocena:
                             </div>
-                            <div class="f-group askforproduct__question">
-                                <div class="f-feedback askforproduct__feedback --question"><textarea
-                                        id="askforproduct__question_input" rows="6" cols="52" type="question"
-                                        class="f-control --validate" name="product_question" minlength="3"
-                                        required="required"></textarea><label for="askforproduct__question_input"
-                                        class="f-label">
-                                        Pytanie
-                                    </label><span class="f-control-feedback"></span></div>
+                            <div class="shop_opinions_note_items">
+                                <div class="opinion_note"><a href="#" class="opinion_star active" rel="1"
+                                        title="1/5"><span><i class="icon-star"></i></span></a><a href="#"
+                                        class="opinion_star active" rel="2" title="2/5"><span><i
+                                                class="icon-star"></i></span></a><a href="#" class="opinion_star active"
+                                        rel="3" title="3/5"><span><i class="icon-star"></i></span></a><a href="#"
+                                        class="opinion_star active" rel="4" title="4/5"><span><i
+                                                class="icon-star"></i></span></a><a href="#" class="opinion_star active"
+                                        rel="5" title="5/5"><span><i
+                                                class="icon-star"></i></span></a><strong>5/5</strong><input
+                                        type="hidden" name="note" value="5"></div>
                             </div>
                         </div>
-                        <div class="askforproduct__submit  col-12 col-sm-7"><button
-                                class="btn --solid --medium px-5 askforproduct__button">
-                                Wyślij
+                        <div class="form-group col-12 col-sm-7">
+                            <div class="has-feedback"><textarea id="addopp" class="form-control"
+                                    name="opinion"></textarea><label for="opinion" class="control-label">
+                                    Treść twojej opinii
+                                </label><span class="form-control-feedback"></span></div>
+                        </div>
+                        <div class="opinion_add_photos col-12 col-sm-7">
+                            <div class="opinion_add_photos_wrapper d-flex align-items-center"><span
+                                    class="opinion_add_photos_text"><i class="icon-file-image"></i> Dodaj własne
+                                    zdjęcie produktu:
+                                </span><input class="opinion_add_photo" type="file" name="opinion_photo"
+                                    data-max_filesize="10485760"></div>
+                        </div>
+                        <div class="shop_opinions_button col-12"><button type="submit"
+                                class="btn --solid --medium opinions-shop_opinions_button px-5" title="Dodaj opinię">
+                                Wyślij opinię
                             </button></div>
                     </form>
-                </section>
-                <section id="opinions_section" class="row mb-4 mx-n3">
-                    <div class="col-12">
-                        <h2 class="headline"><span class="headline__name">Opinie o Kawa ziarnista MkCafe DODICIGRANCRU
-                                1kg </span></h2>
-                    </div>
-                    <div class="average_opinions_container col-12 col-md-4 mb-4">
-                        <div class="row">
-                            <div class="col-12 col-sm-6 col-md-12">
-                                <div class="average_opinions_box">
-                                    <div class="comments">
-                                        <div class="note"><span class="d-flex flex-nowrap"><i
-                                                    class="icon-star active"></i><i class="icon-star active"></i><i
-                                                    class="icon-star active"></i><i class="icon-star active"></i><i
-                                                    class="icon-star active"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="average_opinions_score">4.96</div>
-                                    <div class="average_opinions_desc">
-                                        Liczba wystawionych opinii: 688</div>
-                                </div>
-                                <div class="opinions_add"><a href="#showOpinionForm" id="show_opinion_form"
-                                        class="btn --solid --medium">
-                                        Napisz swoją opinię
-                                    </a></div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-12">
-                                <div class="opinions_filter_confirmed f-group --checkbox"><input type="checkbox"
-                                        class="f-control focused" id="opinions_filter_confirmed"><label class="f-label"
-                                        for="opinions_filter_confirmed">Pokaż tylko opinie potwierdzone zakupem</label>
-                                </div>
-                                <div class="average_opinions_list">
-                                    <div class="opinion_rate" id="shop-opinion_rate_5"><span
-                                            class="opinion_number">5</span><span class="opinion_number_star"><i
-                                                class="icon-star"></i></span>
-                                        <div class="opinions_bar_container">
-                                            <div class="opinions_bar_active" style="width: 97.2383720930232%"></div>
-                                        </div><span class="rate_count">669</span>
-                                    </div>
-                                    <div class="opinion_rate" id="shop-opinion_rate_4"><span
-                                            class="opinion_number">4</span><span class="opinion_number_star"><i
-                                                class="icon-star"></i></span>
-                                        <div class="opinions_bar_container">
-                                            <div class="opinions_bar_active" style="width: 1.88953488372093%"></div>
-                                        </div><span class="rate_count">13</span>
-                                    </div>
-                                    <div class="opinion_rate" id="shop-opinion_rate_3"><span
-                                            class="opinion_number">3</span><span class="opinion_number_star"><i
-                                                class="icon-star"></i></span>
-                                        <div class="opinions_bar_container">
-                                            <div class="opinions_bar_active" style="width: 0.581395348837209%"></div>
-                                        </div><span class="rate_count">4</span>
-                                    </div>
-                                    <div class="opinion_rate" id="shop-opinion_rate_2"><span
-                                            class="opinion_number">2</span><span class="opinion_number_star"><i
-                                                class="icon-star"></i></span>
-                                        <div class="opinions_bar_container">
-                                            <div class="opinions_bar_active" style="width: 0.290697674418605%"></div>
-                                        </div><span class="rate_count">2</span>
-                                    </div>
-                                    <div class="opinion_rate" id="shop-opinion_rate_1"><span
-                                            class="opinion_number">1</span><span class="opinion_number_star"><i
-                                                class="icon-star"></i></span>
-                                        <div class="opinions_bar_container">
-                                            <div class="opinions_bar_active" style="width: 0%"></div>
-                                        </div><span class="rate_count">0</span>
-                                    </div>
-                                </div>
-                                <div class="opinions-shop_guide">
-                                    Kliknij ocenę aby filtrować opinie
-                                </div>
-                            </div>
+                </div>
+            </section>
+            <section id="products_associated_zone3" class="hotspot mb-5 col-12" data-ajaxload="true"
+                data-pagetype="projector">
+                <div class="hotspot mb-5 skeleton"><span class="headline"></span>
+                    <div class="products d-flex flex-wrap">
+                        <div class="product col-6 col-sm-3 col-xl-2 py-3"><span
+                                class="product__icon d-flex justify-content-center align-items-center"></span><span
+                                class="product__name" style="min-height: 20px;"></span>
+                            <div class="product__prices" style="min-height: 20px;"></div>
+                        </div>
+                        <div class="product col-6 col-sm-3 col-xl-2 py-3"><span
+                                class="product__icon d-flex justify-content-center align-items-center"></span><span
+                                class="product__name" style="min-height: 20px;"></span>
+                            <div class="product__prices" style="min-height: 20px;"></div>
+                        </div>
+                        <div class="product col-6 col-sm-3 col-xl-2 py-3"><span
+                                class="product__icon d-flex justify-content-center align-items-center"></span><span
+                                class="product__name" style="min-height: 20px;"></span>
+                            <div class="product__prices" style="min-height: 20px;"></div>
+                        </div>
+                        <div class="product col-6 col-sm-3 col-xl-2 py-3"><span
+                                class="product__icon d-flex justify-content-center align-items-center"></span><span
+                                class="product__name" style="min-height: 20px;"></span>
+                            <div class="product__prices" style="min-height: 20px;"></div>
                         </div>
                     </div>
-                    <div class="opinions_list col-12 col-md-8 ml-md-auto">
-                        <?php include 'product-opinions.php'; ?>
-                        <div class="menu_messages_message d-none" id="no_opinions_of_type">
-                            Brak opinii z taką liczbą gwiazdek.
-                        </div>
-                        <div class="opinions__more"><a href="#more_opinions" class="opinions__more_txt">Zobacz
-                                więcej</a></div>
-                    </div>
-                    <div class="opinions_add_form d-none">
-                        <div class="big_label">
-                            Napisz swoją opinię
-                        </div>
-                        <form class="row flex-column align-items-center shop_opinion_form" enctype="multipart/form-data"
-                            id="shop_opinion_form" action="/settings.php" method="post"><input type="hidden"
-                                name="product" value="29">
-                            <div class="shop_opinions_notes col-12 col-sm-6">
-                                <div class="shop_opinions_name">
-                                    Twoja ocena:
-                                </div>
-                                <div class="shop_opinions_note_items">
-                                    <div class="opinion_note"><a href="#" class="opinion_star active" rel="1"
-                                            title="1/5"><span><i class="icon-star"></i></span></a><a href="#"
-                                            class="opinion_star active" rel="2" title="2/5"><span><i
-                                                    class="icon-star"></i></span></a><a href="#"
-                                            class="opinion_star active" rel="3" title="3/5"><span><i
-                                                    class="icon-star"></i></span></a><a href="#"
-                                            class="opinion_star active" rel="4" title="4/5"><span><i
-                                                    class="icon-star"></i></span></a><a href="#"
-                                            class="opinion_star active" rel="5" title="5/5"><span><i
-                                                    class="icon-star"></i></span></a><strong>5/5</strong><input
-                                            type="hidden" name="note" value="5"></div>
-                                </div>
-                            </div>
-                            <div class="form-group col-12 col-sm-7">
-                                <div class="has-feedback"><textarea id="addopp" class="form-control"
-                                        name="opinion"></textarea><label for="opinion" class="control-label">
-                                        Treść twojej opinii
-                                    </label><span class="form-control-feedback"></span></div>
-                            </div>
-                            <div class="opinion_add_photos col-12 col-sm-7">
-                                <div class="opinion_add_photos_wrapper d-flex align-items-center"><span
-                                        class="opinion_add_photos_text"><i class="icon-file-image"></i> Dodaj własne
-                                        zdjęcie produktu:
-                                    </span><input class="opinion_add_photo" type="file" name="opinion_photo"
-                                        data-max_filesize="10485760"></div>
-                            </div>
-                            <div class="shop_opinions_button col-12"><button type="submit"
-                                    class="btn --solid --medium opinions-shop_opinions_button px-5"
-                                    title="Dodaj opinię">
-                                    Wyślij opinię
-                                </button></div>
-                        </form>
-                    </div>
-                </section>
-                <section id="products_associated_zone3" class="hotspot mb-5 col-12" data-ajaxload="true"
-                    data-pagetype="projector">
-                    <div class="hotspot mb-5 skeleton"><span class="headline"></span>
-                        <div class="products d-flex flex-wrap">
-                            <div class="product col-6 col-sm-3 col-xl-2 py-3"><span
-                                    class="product__icon d-flex justify-content-center align-items-center"></span><span
-                                    class="product__name" style="min-height: 20px;"></span>
-                                <div class="product__prices" style="min-height: 20px;"></div>
-                            </div>
-                            <div class="product col-6 col-sm-3 col-xl-2 py-3"><span
-                                    class="product__icon d-flex justify-content-center align-items-center"></span><span
-                                    class="product__name" style="min-height: 20px;"></span>
-                                <div class="product__prices" style="min-height: 20px;"></div>
-                            </div>
-                            <div class="product col-6 col-sm-3 col-xl-2 py-3"><span
-                                    class="product__icon d-flex justify-content-center align-items-center"></span><span
-                                    class="product__name" style="min-height: 20px;"></span>
-                                <div class="product__prices" style="min-height: 20px;"></div>
-                            </div>
-                            <div class="product col-6 col-sm-3 col-xl-2 py-3"><span
-                                    class="product__icon d-flex justify-content-center align-items-center"></span><span
-                                    class="product__name" style="min-height: 20px;"></span>
-                                <div class="product__prices" style="min-height: 20px;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <?php include 'hotSpot1.php' ?>
-                <?php include 'product-blog.php' ?>
-            </div>
+                </div>
+            </section>
+            <?php include 'hotSpot1.php' ?>
+            <?php include 'product-blog.php' ?>
         </div>
+    </div>
 
-        <?php include 'footer.php'; ?>
-        <script src="./js/product.js">
-        </script>
-        <script src="./js/shop.js">
-        </script>
+    <?php include 'footer.php'; ?>
+    <script src="./js/product.js">
+    </script>
+    <script src="./js/shop.js">
+    </script>
 
-        <script src="./js/envelope.js.gzip">
-        </script>
-        <script src="./js/menu_suggested_shop_for_language.js.gzip?r=1692344836">
-        </script>
-        <script src="./js/menu_alert.js.gzip?r=1692344836">
-        </script>
-        <script src="./js/menu_compare.js.gzip?r=1692344836">
-        </script>
-        <script src="./js/menu_additionalpayments.js.gzip?r=1692344836">
-        </script>
-        <script src="./js/menu_omnibus.js.gzip?r=1692344836">
-        </script>
-        <script src="./js/express_checkout.js.gzip?r=1692344836">
-        </script>
-        <script src="./js/projector_photos.js.gzip?r=1692344836">
-        </script>
-        <script src="./js/projector_details.js.gzip?r=1692344836">
-        </script>
-        <script src="./js/projector_configurator.js.gzip?r=1692344836">
-        </script>
-        <script src="./js/projector_bundle_zone.js.gzip?r=1692344836">
-        </script>
-        <script src="./js/projector_projector_opinons_form.js.gzip?r=1692344836">
-        </script>
-        <script src="./js/projector_cms_sizes.js.gzip?r=1692344836">
-        </script>
+    <script src="./js/envelope.js.gzip">
+    </script>
+    <script src="./js/menu_suggested_shop_for_language.js.gzip?r=1692344836">
+    </script>
+    <script src="./js/menu_alert.js.gzip?r=1692344836">
+    </script>
+    <script src="./js/menu_compare.js.gzip?r=1692344836">
+    </script>
+    <script src="./js/menu_additionalpayments.js.gzip?r=1692344836">
+    </script>
+    <script src="./js/menu_omnibus.js.gzip?r=1692344836">
+    </script>
+    <script src="./js/express_checkout.js.gzip?r=1692344836">
+    </script>
+    <script src="./js/projector_photos.js.gzip?r=1692344836">
+    </script>
+    <script src="./js/projector_details.js.gzip?r=1692344836">
+    </script>
+    <script src="./js/projector_configurator.js.gzip?r=1692344836">
+    </script>
+    <script src="./js/projector_bundle_zone.js.gzip?r=1692344836">
+    </script>
+    <script src="./js/projector_projector_opinons_form.js.gzip?r=1692344836">
+    </script>
+    <script src="./js/projector_cms_sizes.js.gzip?r=1692344836">
+    </script>
 
-        <script>
-        app_shop.runApp();
-        </script>
+    <script>
+    app_shop.runApp();
+    </script>
 </body>
 
 </html>

@@ -1,16 +1,7 @@
 <section id="projector_blog" class="article mb-5 col-12">
     <h2><a href="/blog-list.php" class="headline" title="Kliknij, by zobaczyć wszystkie wpisy bloga"><span
                 class="headline__name">Blog</span></a></h2>
-    <!-- <script>
-                
-                
-                    $('.article__block').slick({
-                        infinite: true,
-                        slidesToShow: 3,
-                        slidesToScroll: 3
-                    });
-                
-            </script> -->
+
     <div class="article__block row">
         <?php $arr = json_decode(json_encode([
             [

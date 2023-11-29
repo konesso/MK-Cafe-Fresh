@@ -5286,7 +5286,7 @@
         </script>
         <script src="./js/search_filters.js"></script>
         <script src="main.js"></script>
-        <script src="search.js"></script>
+        <script src="./search.js"></script>
         <script src="assets/js/Chart.min.js"></script>
         <script src="./js/shop.js"></script>
         <script>

@@ -1,4 +1,4 @@
-<div id="search" class="search products d-flex flex-wrap mb-5">
+<div class="search-product search products d-flex flex-wrap mb-5">
     <?php
                     $products1 = [
                         [

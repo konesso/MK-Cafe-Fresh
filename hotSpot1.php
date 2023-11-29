@@ -1,4 +1,4 @@
-<div id="search" class="search 1 d-flex flex-wrap mb-5">
+<div class="search-product search 1 d-flex flex-wrap mb-5">
     <?php
                     function generateRandomData() {
                         $data = [];

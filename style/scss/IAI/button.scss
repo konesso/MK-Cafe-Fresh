@@ -107,9 +107,9 @@
     padding: 0.9rem 1rem;
     font-weight: normal;
     transition:
-        background-color 0.2s,
-        color 0.2s,
-        border-color 0.2s;
+        background-color 0.3s,
+        color 0.3s,
+        border-color 0.3s;
     border-radius: 0;
     &:not(.--solid) {
         &:not(.--outline) {
@@ -118,7 +118,7 @@
                     text-decoration: underline;
                     color: #333;
                     &:hover {
-                        color: #b29370;
+                        color: #ffffff;
                     }
                 }
             }
