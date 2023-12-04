@@ -45,7 +45,7 @@ var FILES_TO_RELOAD = [ //only js in lib folder
  * 1. require('pixrem')(), // add fallbacks for rem units
  */
 
-gulp.task('sass', [], function() {
+gulp.task('sass', [], function () {
   return gulp.src(SASS_FILES)
     .pipe(sourcemaps.init())
     .pipe(sass(
@@ -63,58 +63,58 @@ gulp.task('sass', [], function() {
 });
 
 
-
-gulp.task('live', ['shop-css', 'shop-js'], function(){
-    return gulp.src(['iai/**'])
-        .pipe(gulpIgnore.exclude('*.zip'))
-        .pipe(zip('ArchiveALL.zip'))
-        .pipe(gulp.dest('dist'))
+// uruchamia wszystkie taski poniżej
+gulp.task('live', ['sass', 'shop-css', 'shop-js'], function () {
+  return gulp.src(['iai/**'])
+    .pipe(gulpIgnore.exclude('*.zip'))
+    .pipe(zip('ArchiveALL.zip'))
+    .pipe(gulp.dest('dist'))
 })
-
-gulp.task('shop-css', function() {
-    return gulp.src('css/index.css')
-      .pipe(stripCssComments('css/index.css'))
-      .pipe(rename('style.css'))
-      .pipe(cleanCSS({ compatibility: 'ie8', debug: true}, (details) => {
-        console.log(`${details.name}: ${details.stats.originalSize}`);
-        console.log(`${details.name}: ${details.stats.minifiedSize}`);
-        }))
-      .pipe(gulp.dest('iai/gfx/pol/'))
-      .pipe(gzip({ extension: 'gzip' }))
-      .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
-      .pipe(gulp.dest('iai/gfx/pol/'));
+// tworzy css gzip
+gulp.task('shop-css', function () {
+  return gulp.src('css/index.css')
+    .pipe(stripCssComments('css/index.css'))
+    .pipe(rename('style.css'))
+    .pipe(cleanCSS({ compatibility: 'ie8', debug: true }, (details) => {
+      console.log(`${details.name}: ${details.stats.originalSize}`);
+      console.log(`${details.name}: ${details.stats.minifiedSize}`);
+    }))
+    .pipe(gulp.dest('iai/gfx/pol/'))
+    .pipe(gzip({ extension: 'gzip' }))
+    .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+    .pipe(gulp.dest('iai/gfx/pol/'));
+});
+// tworzy plik shop.js i tworzy shop.js.gzip
+gulp.task('shop-js', function () {
+  return gulp.src('js/shop.js')
+    .pipe(dedupe())
+    .pipe(gulp.dest('iai/gfx/pol/'))
+    .pipe(rename('shop.js'))
+    .pipe(gzip({ extension: 'gzip' }))
+    .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+    .pipe(gulp.dest('iai/gfx/pol/'));
+});
+// pakuje tylko xlst
+gulp.task('zip-tpl', function () {
+  return gulp.src(['iai/**', '!iai/gfx/**'])
+    .pipe(gulpIgnore.exclude('*.zip'))
+    .pipe(zip('tpl.zip'))
+    .pipe(gulp.dest('dist'))
 });
 
-gulp.task('shop-js', function() {
-    return gulp.src('js/shop.js')
-      .pipe(dedupe())
-      .pipe(gulp.dest('iai/gfx/pol/'))
-      .pipe(rename('shop.js'))
-      .pipe(gzip({ extension: 'gzip' }))
-      .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
-      .pipe(gulp.dest('iai/gfx/pol/'));
-});
-
-gulp.task('zip-tpl', function() {
-    return gulp.src(['iai/**', '!iai/gfx/**'])
-          .pipe(gulpIgnore.exclude('*.zip'))
-          .pipe(zip('tpl.zip'))
-          .pipe(gulp.dest('dist'))
-  });
-
-
-gulp.task('zip-all', function() {
+// pakuje wszystko
+gulp.task('zip-all', function () {
   return gulp.src(['iai/*'])
-        .pipe(gulpIgnore.exclude('*.zip'))
-        .pipe(zip('ArchiveALL.zip'))
-        .pipe(gulp.dest('dist'))
+    .pipe(gulpIgnore.exclude('*.zip'))
+    .pipe(zip('ArchiveALL.zip'))
+    .pipe(gulp.dest('dist'))
 });
 
-gulp.task('dev-watch', ['sass'], function() {
+gulp.task('dev-watch', ['sass'], function () {
   livereload.listen();
   gulp.watch(['style/**/*.scss'], ['sass']);
   gulp.watch(JS_ES6_FILES, ['es6']);
-  gulp.watch(FILES_TO_RELOAD).on('change', function(e) { console.log(e); livereload.reload() });
+  gulp.watch(FILES_TO_RELOAD).on('change', function (e) { console.log(e); livereload.reload() });
 });
 
 

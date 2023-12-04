@@ -19,7 +19,7 @@
     <link rel="preload stylesheet" as="style" href="css/index.css?v=11" />
     <!-- <link rel="preload stylesheet" as="style" href="./style/index-old.css" /> -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
 
     <script>
     var app_shop = {
