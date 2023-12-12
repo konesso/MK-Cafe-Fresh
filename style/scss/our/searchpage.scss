@@ -19,7 +19,7 @@ div.px-2.py-1.d-flex.flex-row.justify-content-center.align-items-center {
     label:after {
         content: "";
         position: absolute;
-        top: -3;
+        top: -3px;
         left: 0;
         width: 20px;
         height: 20px;
@@ -75,4 +75,14 @@ div.px-2.py-1.d-flex.flex-row.justify-content-center.align-items-center {
 
 .filters__item {
     list-style: none;
+}
+
+#menu_settings > div.open_trigger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search > div:nth-child(3) > a.position-absolute.product__compare_item.--add.btn > div :hover {
+    color: white;
 }

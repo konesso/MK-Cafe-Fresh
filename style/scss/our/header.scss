@@ -85,7 +85,7 @@ header {
     }
 }
 
-*:hover .menu-item-underline {
+.nav-item:hover .menu-item-underline {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }

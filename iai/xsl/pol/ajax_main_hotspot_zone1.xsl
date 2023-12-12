@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <iaixsl:stylesheet xmlns:php="http://php.net/xsl" xmlns:iaixsl="http://www.w3.org/1999/XSL/Transform" xmlns:iaielement="http://iai-system.com/ddd" xmlns:fb="http://www.facebook.com/2008/fbml" version="1.0" exclude-result-prefixes="php iaielement fb"><iaixsl:output indent="no" method="html" doctype-system="about:legacy-compat" version="1.0" encoding="UTF-8"/><iaixsl:strip-space elements="table tr td img"/><iaixsl:decimal-format name="yen" NaN="" grouping-separator="," decimal-separator="."/><iaixsl:template match="shop">
 		<iaixsl:if test="page/hotspot/products_zone1">
-			<section id="main_hotspot_zone1" class="hotspot mb-5">
+			<section id="main_hotspot_zone1" class="hotspot mb-5 search-product">
 				
 				<iaixsl:variable name="headline_after_products_zone1">Zobacz wszystkie</iaixsl:variable>
 				
@@ -49,7 +49,7 @@
 							</iaixsl:choose>
 						</h2>
 
-						<div class="products d-flex flex-wrap">
+						<div class="products search-product d-flex flex-wrap">
 							<iaixsl:for-each select="page/hotspot/products_zone1/*">
 								
 								<iaixsl:variable name="var_name"><iaixsl:choose><iaixsl:when test="product"><iaixsl:value-of disable-output-escaping="yes" select="product/name/text()"/></iaixsl:when><iaixsl:otherwise><iaixsl:value-of disable-output-escaping="yes" select="name/text()"/></iaixsl:otherwise></iaixsl:choose></iaixsl:variable>

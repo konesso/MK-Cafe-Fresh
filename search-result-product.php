@@ -1,8 +1,7 @@
-<div class="product position-relative <?= isset($product['mainClass']) && $product['mainClass'] ? $product['mainClass'] : 'col-12 col-sm-6 col-lg-4 pt-4 my-5 pb-md-5' ?>" data-product_id="16371"
-    data-product_page="0" data-product_first="true"><a
+<div class="product position-relative <?= isset($product['mainClass']) && $product['mainClass'] ? $product['mainClass'] : 'col-12 col-sm-6 col-lg-4 pt-4 my-5 pb-md-5' ?>"
+    data-product_id="16371" data-product_page="0" data-product_first="true"><a
         class="product__icon d-flex justify-content-center align-items-center" data-product-id="16371"
-        href="./product.php"
-        title="Kawa ziarnista Jesienna Kawariatka 1kg">
+        href="./product.php" title="Kawa ziarnista Jesienna Kawariatka 1kg">
         <div class="graph-background p-2" data-graph="<?= htmlspecialchars($product['graphData']) ?>">
             <div class="graph-title">Najedź myszką by poznać włąściwości smaku</div>
             <div>
@@ -35,14 +34,13 @@
                     </span> <span>
                         <p class="mt-2 small" style="color:#999">
                             Najniższa cena z ostatnich 30 dni: <?= round($product['price']*1.2, 2) ?> zł</p>
-                        <p class="mt-1 small" style="color:#999">Cena w przeliczeniu na 1 kg: 
+                        <p class="mt-1 small" style="color:#999">Cena w przeliczeniu na 1 kg:
                             <?= round($product['price']*2, 2) ?> zł
                         </p>
                     </span></span></div>
         </div>
     </div>
-    <a class="position-absolute product__compare_item --add btn " rel="nofollow"
-        href="#"
+    <a class="position-absolute product__compare_item --add btn " rel="nofollow" href="#"
         title="Kliknij, aby dodać produkt do porównania" style="
    position: absolute;
     transform: translate(-50%, 50%);

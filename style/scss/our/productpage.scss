@@ -25,7 +25,7 @@
     }
 }
 
-#product_extra_info {
+#product_extra_info1 {
     background: #ede5da;
 }
 
@@ -56,18 +56,31 @@
     width: 70px;
     height: 70px;
     margin: 10px;
+    cursor: pointer;
     &:before {
         display: block;
         content: " ";
-        width: 3.4rem;
-        height: 5.1rem;
-        background-image: url(https://www.konesso.pl/data/designs/xsl/11_1/xsl/img/icons.png?v=1701432610277);
+        width: 5rem;
+        height: 4.9rem;
+        background-image: url(https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/icons.png);
     }
-    &.img-method313:before {
-        background-position: -250px -125px;
+    &.img-method-frenchpress:before {
+        background-position: -240px -125px;
     }
-    &.img-method311:before {
-        background-position: -200px -125px;
+    &.img-method-kawiarka:before {
+        background-position: -192px -125px;
+    }
+    &.img-method-ekspreskolbowy:before {
+        background-position: -350px -125px;
+    }
+    &.img-method-ekspresprzelewowy:before {
+        background-position: -296px -125px;
+    }
+    &.img-method-tradycyjny:before {
+        background-position: -492px -125px;
+    }
+    &.img-method-ekspresautomatyczny:before {
+        background-position: -146px -128px;
     }
 }
 
@@ -85,4 +98,17 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.mkdesc {
+    overflow-x: hidden;
+}
+
+.longdescription {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-x: hidden;
+    p {
+        margin-bottom: 10px;
+    }
 }

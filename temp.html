@@ -1,0 +1,405 @@
+<!-- dane do grapha -->
+<iaixsl:if test="(/shop/page/projector/product/traits/trait[(contains(@groupid, '1335603907'))])">
+    <iaixsl:for-each
+        select="/shop/page/projector/product/traits/trait[contains(@groupid, '1335603907') or contains(@groupid, '1335603911')]">
+        <iaixsl:choose>
+            <iaixsl:when test="@link">
+                <a>
+                    <iaixsl:attribute name="href">
+                        <iaixsl:value-of select="@link" />
+                    </iaixsl:attribute>
+                    <iaixsl:value-of select="@groupdescription" />
+                    (<iaixsl:value-of select="@traitlongdescription" />)
+                </a>
+            </iaixsl:when>
+            <iaixsl:otherwise>
+                0
+            </iaixsl:otherwise>
+        </iaixsl:choose>
+    </iaixsl:for-each>
+</iaixsl:if>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+
+<div class="row align-items-center">
+    <div class="col-md-6 text-center">
+        <img src="https://mkfreshprod.azureedge.net/img/360/200/70/resize/catalog/product//m/k/mkcafe_1366_produkt_brazil_1.jpg"
+            alt="" />
+    </div>
+    <div class="col-md-2">
+        <ul class="mk_extra_info">
+            <li>
+                <span class="text-upercase">REGION</span>
+                <b>Mogiana</b>
+            </li>
+            <li>
+                <span class="text-upercase">WYSOKOŚĆ UPRAW</span>
+                <b>800-1200 m n.p.m.</b>
+            </li>
+            <li>
+                <span class="text-upercase">METODA OBRÓBKI</span>
+                <b>Sucha</b>
+            </li>
+            <li>
+                <span class="text-upercase">STOPIEŃ PALENIA</span>
+                <b>średni (medium)</b>
+            </li>
+        </ul>
+
+    </div>
+    <div class="col-md-6">
+        <canvas id="radar-chart" width="360" height="400" style=""></canvas>
+
+    </div>
+    <div class="col-md-2">
+        <span class="d-flex justify-content-around mb-3 text-center text-uppercase w-100">REKOMENDOWANY
+            SPOSÓB PARZENIA</span>
+        <div class="align-items-center d-flex flex-md-column justify-content-around">
+            <div class="cafe-method img-kawiarka"></div>
+            <div class="cafe-method img-kolbowy"></div>
+            <div class="cafe-method img-frenchPress"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="mkdesc">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="row" style="line-height: 200%;">
+        <div class="col-xs-12  col-md-6   text-center">
+            <div style="position: relative; padding-bottom: 67%; height: 0px;">
+                <figure class=" inline-block  loaded lazyload">
+                    <img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/india-plantation-1.jpg"
+                        alt="India Plantation" class="base-img-image inline w-full"> <!---->
+                </figure>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6  ">
+            <h2 class="subtitle1" style="margin: 10px 0px 0px;">India Plantation - kawa ziarnista 1 kg</h2>
+            <p class="boldLead"><strong>India</strong> <strong>Plantation</strong> nie bez powodu cieszy się ogromną
+                popularnością i uznaniem, czego zwieńczeniem jest określenie jej mianem jednej z najlepszych indyjskich
+                kaw. To typowa kompozycja, która zawdzięcza swój aromat geograficznemu położeniu indyjskich plantacji,
+                gdzie dojrzewają ziarna stosowane do stworzenia wybornej kawy indyjskiej. Owocowy aromat w połączeniu z
+                wyrazistą korzenną nutą smakową nabiera wyjątkowej łagodności dzięki minimalnej kwasowości i pełnemu
+                body. Wyczuwalny zapach pieprzu w towarzystwie nuty papai i szlachetnego drewna dodatkowo zwiększa
+                doznania, zapewniając tym samym świetnie zbalansowaną kompozycję smaków dla każdego podniebienia.</p>
+        </div>
+    </div>
+    <div xmlns="http://www.w3.org/1999/xhtml" class="row" style="margin-top: 15px; margin-bottom: 15px;">
+        <div class="col-xs-12  col-md-6   text-center" style="margin-top: 45px;">
+            <div style="position: relative; padding-bottom: 67%; height: 0px;">
+                <figure class=" inline-block  loaded lazyload">
+                    <img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/india-plantation-2.jpg"
+                        alt="India Plantation" class="base-img-image inline w-full"> <!---->
+                </figure>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6   ">
+            <h2 class="subtitle2" style="margin-top: 15px;">Świeżo palona kawa indyjska - universum unikalnych smaków
+            </h2>
+            <p>
+                Zjawiskowość indyjskich plantacji opiera się na bogactwie różnorodnych odmian owoców i przypraw, takich
+                jak pomarańcze, banany, wanilia, czy kardamon. Rośliny te wzrastają w całkowitej symbiozie i harmonii
+                pośród drzewek kawowych, tworzących wspólnie z unikalnym otoczeniem niepowtarzalny i typowy dla tego
+                regionu ekosystem. Są to także drzewa kilkudziesięciu odmiennych gatunków, które zapewniają kawowcom
+                odpowiednie zacienienie, minimalizują erozję gleby, przyczyniają się do wzbogacenia jej o niezbędne
+                wartości odżywcze, minerały i stanowią nieodpartą ochronę drzewek kawowych przed ewentualnymi wahaniami
+                temperatur. „Baldachimy” drzew są zatem nieocenionym elementem tutejszej przyrody, charakterystycznym
+                wyłącznie dla Indii i wspierającym bioróżnorodność tego kraju.
+            </p>
+        </div>
+    </div>
+    <div xmlns="http://www.w3.org/1999/xhtml" class="moreContent">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-xs-12 col-md-6  ">
+                <p><strong>Świeżo palona kawa indyjska</strong> to ukoronowanie całego procesu jej produkcji, począwszy
+                    od dojrzewania ziaren na indyjskich plantacjach, skończywszy na ich obróbce, suszeniu i eksporcie do
+                    serca naszej Manufaktury, czyli palarni. Ziarna nasycone niebagatelnym melanżem aromatów i smaków
+                    różnorodnych przypraw i roślin wpływają na samą kawę, która charakteryzuje się niskim poziomem
+                    kwasowości, łagodnym posmakiem na podniebieniu i przyjemnymi dla zmysłu powonienia zapachami.</p>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-6  " style="margin-top: -47px;">
+                <div style="position: relative; padding-bottom: 55%; height: 0px;">
+                    <figure class=" inline-block  loaded lazyload">
+                        <img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/india-plantation-txt-1.jpg"
+                            alt="Dlatego indyjska kawa jest delikatna, niezbyt kwaskowa, posiada pełen, bogaty smak i niespotkany nigdzie łagodny aromat przypraw i owoców."
+                            class="base-img-image inline w-full"> <!---->
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12  col-md-6  text-center">
+                <div style="position: relative; padding-bottom: 67%; height: 0px;">
+                    <figure class=" inline-block  loaded lazyload">
+                        <img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/india-plantation-3.jpg"
+                            alt="India Plantation" class="base-img-image inline w-full"> <!---->
+                    </figure>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p><strong>Kawa ziarnista 1 kg</strong> to produkt wysokogatunkowy, który powstaje ze starannie
+                    selekcjonowanych ziaren - muszą one pasować do ideału pod względem proporcji i koloru. Uprawa kawy
+                    indyjskiej ze wszystkich regionów pod wspólnym szyldem o nazwie „Plantation” cechuje się unikalnymi
+                    właściwościami, które dodatkowo wzmacnia odpowiednia technika obróbki, tzw. metoda mokra.</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 15px; margin-bottom: 15px;">
+            <div class="col-xs-12  col-md-6   text-center">
+                <div style="position: relative; padding-bottom: 67%; height: 0px;">
+                    <figure class=" inline-block  loaded lazyload">
+                        <img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/india-plantation-4.jpg"
+                            alt="India Plantation" class="base-img-image inline w-full"> <!---->
+                    </figure>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <h2 class="subtitle2" style="margin-top: 15px;">Kawa z indyjskich plantacji - pełna historii i tradycji
+                </h2>
+                <p>
+                    Zdecydowana większość osób kojarzy Indie wyłącznie z licznymi odmianami herbaty. Czas to zmienić!
+                    Indie niepodważalnie zajmują się też eksportem kawy na dużą skalę już od ponad 150 lat, a początku
+                    tej historii należy dopatrywać się w czasach brytyjskiej kolonizacji, kiedy to obywatele Anglii
+                    sprowadzili na indyjskie ziemie pierwsze sadzonki kawowca i stworzyli z nich górskie plantacje w
+                    południowej części kraju.<strong> Świeżo palona kawa indyjska </strong>jest zatem nieodzownym
+                    efektem pracy tamtejszych producentów, którzy pod względem wielkości produkcji plasują się na piątym
+                    miejscu na świecie, zaraz po Brazylii, Kolumbii, Meksyku i Etiopii.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-8  col-lg-7 mx-auto">
+                <div class="d-none d-md-block" style="float: right; margin-right: -130px; margin-top: -45px;">
+                    <div style="position: relative; padding-bottom: 62%; height: 0px;">
+                        <figure class=" inline-block  loaded lazyload">
+                            <img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/india-plantation-txt-2.jpg"
+                                alt="Indie produkują i eksportują kawę na dużą skalę od ponad 150 lat, kiedy to Brytyjczycy założyli pierwsze górskie plantacje na południu kraju. "
+                                class="base-img-image inline w-full"> <!---->
+                        </figure>
+                    </div>
+                </div>
+                <p>
+                    Historyczne początki kawy w Indiach sięgają jednak jeszcze dalej, bo aż do około 400 lat przed
+                    brytyjską kolonizacją. Wedle pewnej znanej w tym kraju legendy jeden z muzułmańskich pielgrzymów o
+                    imieniu Baba Budan w drodze z pielgrzymki do Ziemi Świętej zabrał ze sobą siedem surowych nasion
+                    kawowca, które następnie posadził w okolicy jaskiń Chikmahlur w regionie Karnataka, w południowej
+                    części Indii. W taki sposób surowo strzeżona przez Arabów roślina kawowca stała się początkiem
+                    uprawy ziaren, a sam region Karnataka został uznany za pierwszy historyczny region Indii, w którym
+                    rozkwitła uprawa indyjskiej kawy.
+                </p>
+                <p>
+                    Zarówno Karnaka, jak i stan Kerala i Tamil Nadu noszą miano najstarszych regionów upraw kawy, które
+                    obecnie zajmują się aż 92% produkcji kawy w całym kraju. <strong>Kawa ziarnista 1 kg</strong>
+                    dostępna w naszej ofercie jest zatem efektem pracy przekładającej się wyraźnie na poprawę i rozwój
+                    gospodarki kraju oraz gwarantującej zatrudnienie uboższym warstwom społeczeństwa mieszkającym na tym
+                    terenie. Mowa tutaj również o takich obszarach jak Orissa, Andhara Pradesh, czy Maharastra.
+                </p>
+                <p>
+                    W każdym regionie panuje specyficzny, charakterystyczny dla danego terenu mikroklimat, dlatego w
+                    Indiach uprawia się zarówno wysokiej jakości ziarna Arabiki, w tym <strong>India</strong>
+                    <strong>Plantation</strong>, jak i również mniej cenione odmiany, jak Robusta, które charakteryzują
+                    się jednak znacznie większą odpornością na wilgotny i gorący klimat Indii.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-none d-md-block col-md-6 col-lg-12  text-center">
+                <div style="position: relative; padding-bottom: 30%; height: 0px;">
+                    <figure class=" inline-block  loaded lazyload">
+                        <img src="https://mkfreshprod.azureedge.net/img/1000/600/70/resize/wysiwyg/kawy/india-plantation-5.jpg"
+                            alt="India Plantation" class="base-img-image inline w-full"> <!---->
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+versions z search.xsl od linijki 6061
+<iaixsl:if
+    test="((/shop/page/projector/product/versions/version[@id = /shop/page/projector/product/@id]/size/price/@value != 0 or /shop/basket/@wholesaler = 'true') and $menu_structured_data_hurt != '') or not($menu_structured_data_hurt != '')">
+    ,
+    &quot;offers&quot;: [<iaixsl:variable name="isSizesPricesSet">
+        <iaixsl:choose>
+            <iaixsl:when
+                test="(not(count(/shop/page/projector/product/sizes/size) = count(/shop/page/projector/product/sizes/size/price[@value = /shop/page/projector/product/sizes/prices/@price_unit_sellby]))) and not(count(/shop/page/projector/product/sizes/size) = 1)">
+                true</iaixsl:when>
+            <iaixsl:otherwise>false</iaixsl:otherwise>
+        </iaixsl:choose>
+    </iaixsl:variable><iaixsl:for-each select="page/projector/product/sizes/size">
+        <iaixsl:if test="not(position() = 1)">,</iaixsl:if>
+        {
+        &quot;@type&quot;: &quot;Offer&quot;,
+        &quot;availability&quot;: &quot;<iaixsl:choose>
+            <iaixsl:when test="availability[(@status = 'enable') or (@status = 'order')]">http://schema.org/InStock
+            </iaixsl:when>
+            <iaixsl:otherwise>http://schema.org/OutOfStock</iaixsl:otherwise>
+        </iaixsl:choose>&quot;,
+        <iaixsl:choose>
+            <iaixsl:when test="price/@maxprice">
+                &quot;priceSpecification&quot;: [
+                <iaixsl:if test="price/@srp">
+                    {
+                    &quot;@type&quot;: &quot;PriceSpecification&quot;,
+                    &quot;priceType&quot;: &quot;https://schema.org/MSRP&quot;,
+                    &quot;price&quot;: &quot;<iaixsl:value-of select="price/@srp" />&quot;,
+                    &quot;priceCurrency&quot;: &quot;<iaixsl:value-of select="/shop/currency/@id" />&quot;
+                    },
+                </iaixsl:if>
+                {
+                &quot;@type&quot;: &quot;PriceSpecification&quot;,
+                &quot;priceType&quot;: &quot;https://schema.org/ListPrice&quot;,
+                &quot;price&quot;: &quot;<iaixsl:value-of select="price/@maxprice" />&quot;,
+                &quot;priceCurrency&quot;: &quot;<iaixsl:value-of select="/shop/currency/@id" />&quot;
+                },
+                {
+                &quot;@type&quot;: &quot;UnitPriceSpecification&quot;,
+                &quot;priceType&quot;: &quot;https://schema.org/SalePrice&quot;,
+                <iaixsl:if
+                    test="price/@promotiontilldate or price/@discounttilldate or price/@distinguishedtilldate or price/@specialtilldate">
+                    &quot;validThrough&quot;: &quot;<iaixsl:choose>
+                        <iaixsl:when test="price/@promotiontilldate"><iaixsl:value-of
+                                select="price/@promotiontilldate" /></iaixsl:when>
+                        <iaixsl:when test="price/@discounttilldate"><iaixsl:value-of select="price/@discounttilldate" />
+                        </iaixsl:when>
+                        <iaixsl:when test="price/@distinguishedtilldate"><iaixsl:value-of
+                                select="price/@distinguishedtilldate" /></iaixsl:when>
+                        <iaixsl:when test="price/@specialtilldate"><iaixsl:value-of select="price/@specialtilldate" />
+                        </iaixsl:when>
+                    </iaixsl:choose>&quot;,
+                </iaixsl:if>
+                &quot;price&quot;: &quot;<iaixsl:choose>
+                    <iaixsl:when test="($isSizesPricesSet = 'true') and price/@value"><iaixsl:value-of
+                            select="price/@value" /></iaixsl:when>
+                    <iaixsl:otherwise><iaixsl:value-of select="../prices/@price_unit_sellby" /></iaixsl:otherwise>
+                </iaixsl:choose>&quot;,
+                &quot;priceCurrency&quot;: &quot;<iaixsl:value-of select="/shop/currency/@id" />&quot;
+                }
+                ],
+
+            </iaixsl:when>
+            <iaixsl:otherwise>
+                &quot;price&quot;: &quot;<iaixsl:choose>
+                    <iaixsl:when test="($isSizesPricesSet = 'true') and price/@value"><iaixsl:value-of
+                            select="price/@value" /></iaixsl:when>
+                    <iaixsl:otherwise><iaixsl:value-of select="../prices/@price_unit_sellby" /></iaixsl:otherwise>
+                </iaixsl:choose>&quot;,
+                &quot;priceCurrency&quot;: &quot;<iaixsl:value-of select="/shop/currency/@id" />&quot;,
+            </iaixsl:otherwise>
+        </iaixsl:choose>
+        &quot;eligibleQuantity&quot;: {
+        &quot;value&quot;: &quot;<iaixsl:value-of select="/shop/page/projector/product/sizes/@unit_sellby" />&quot;,
+        &quot;unitCode&quot;: &quot;<iaixsl:value-of select="/shop/page/projector/product/sizes/@unit_single" />&quot;,
+        &quot;@type&quot;: [
+        &quot;QuantitativeValue&quot;
+        ]
+        },
+        &quot;url&quot;: &quot;<iaixsl:value-of select="substring($curr_url,1,($url_length - 1))" /><iaixsl:value-of
+            select="/shop/page/projector/product/@link" />
+        <iaixsl:if
+            test="/shop/page/projector/product/sizes/size/@type != 'onesize' and /shop/page/projector/product/sizes/size/@type != 'uniw'">
+            ?selected_size=<iaixsl:value-of select="@type" /></iaixsl:if>&quot;
+        }
+    </iaixsl:for-each>
+    ]</iaixsl:if>
+
+3493 pagination
+<iaixsl:if test="count(page/products/navigation/item) &gt; 1">
+    <ul class="s_paging__item pagination d-flex mb-2 mb-sm-3">
+
+        <iaixsl:if test="page/products/navigation/prev">
+            <li class="pagination__element --prev">
+                <iaixsl:if test="$prev_page">
+                    <iaixsl:attribute name="class">pagination__element --prev --button</iaixsl:attribute>
+                </iaixsl:if>
+                <a class="pagination__link">
+                    <iaixsl:attribute name="href"><iaixsl:value-of disable-output-escaping="yes"
+                            select="page/products/navigation/path/@value" /><iaixsl:value-of
+                            select="page/products/navigation/prev/@counter" /></iaixsl:attribute>
+                </a>
+                <iaixsl:if test="$prev_page">
+                    <a
+                        class="pagination__button --prev btn --secondary --solid --large --icon-left icon-angle-left d-sm-none">
+                        <iaixsl:attribute name="href"><iaixsl:value-of disable-output-escaping="yes"
+                                select="page/products/navigation/path/@value" /><iaixsl:value-of
+                                select="page/products/navigation/prev/@counter" /></iaixsl:attribute>
+                        <iaixsl:value-of disable-output-escaping="yes" select="$prev_page" />
+                    </a>
+                </iaixsl:if>
+            </li>
+        </iaixsl:if>
+
+        <iaixsl:if test="not(page/products/navigation/prev)">
+            <li class="pagination__element --prev --disabled">
+                <iaixsl:if test="$prev_page">
+                    <iaixsl:attribute name="class">pagination__element --prev --disabled --button</iaixsl:attribute>
+                </iaixsl:if>
+                <span class="pagination__link" />
+                <iaixsl:if test="$prev_page">
+                    <span
+                        class="pagination__button --prev btn --secondary --solid --icon-left icon-angle-left d-sm-none"><iaixsl:value-of
+                            disable-output-escaping="yes" select="$prev_page" /></span>
+                </iaixsl:if>
+            </li>
+        </iaixsl:if>
+
+        <iaixsl:for-each select="page/products/navigation/item">
+            <iaixsl:if test="@gap">
+                <li class="pagination__element --gap --disabled">
+                    <span class="pagination__link">...</span>
+                </li>
+            </iaixsl:if>
+            <iaixsl:if test="not(@type = 'current') and not(@gap)">
+                <li class="pagination__element --item">
+                    <a class="pagination__link">
+                        <iaixsl:attribute name="href"><iaixsl:value-of disable-output-escaping="yes"
+                                select="../path/@value" /><iaixsl:value-of select="@counter - 1" /></iaixsl:attribute>
+                        <iaixsl:value-of select="@counter" />
+                    </a>
+                </li>
+            </iaixsl:if>
+            <iaixsl:if test="@type = 'current'">
+                <li class="pagination__element --item --active">
+                    <span class="pagination__link"><iaixsl:value-of select="@counter" /></span>
+                </li>
+            </iaixsl:if>
+        </iaixsl:for-each>
+
+        <iaixsl:if test="page/products/navigation/next">
+            <li class="pagination__element --next">
+                <iaixsl:if test="$next_page">
+                    <iaixsl:attribute name="class">pagination__element --next --button</iaixsl:attribute>
+                </iaixsl:if>
+                <a class="pagination__link">
+                    <iaixsl:attribute name="href"><iaixsl:value-of disable-output-escaping="yes"
+                            select="page/products/navigation/path/@value" /><iaixsl:value-of
+                            select="page/products/navigation/next/@counter" /></iaixsl:attribute>
+                </a>
+                <iaixsl:if test="$next_page">
+                    <a
+                        class="pagination__button --next btn --secondary --solid --icon-right icon-angle-right d-md-none">
+                        <iaixsl:attribute name="href"><iaixsl:value-of disable-output-escaping="yes"
+                                select="page/products/navigation/path/@value" /><iaixsl:value-of
+                                select="page/products/navigation/next/@counter" /></iaixsl:attribute>
+                        <iaixsl:value-of disable-output-escaping="yes" select="$next_page" />
+                    </a>
+                </iaixsl:if>
+            </li>
+        </iaixsl:if>
+
+        <iaixsl:if test="not(page/products/navigation/next)">
+            <li class="pagination__element --next --disabled">
+                <iaixsl:if test="$next_page">
+                    <iaixsl:attribute name="class">pagination__element --next --disabled --button</iaixsl:attribute>
+                </iaixsl:if>
+                <span class="pagination__link" />
+                <iaixsl:if test="$next_page">
+                    <span
+                        class="pagination__button --next btn --secondary --solid --icon-right icon-angle-right d-md-none"><iaixsl:value-of
+                            disable-output-escaping="yes" select="$next_page" /></span>
+                </iaixsl:if>
+            </li>
+        </iaixsl:if>
+    </ul>
+</iaixsl:if>

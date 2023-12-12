@@ -915,7 +915,7 @@ function FormValidation(e) {
                 app_shop?.txt?.errorCode?.incorect_invoice_zipcode || 'Wpisz kod pocztowy klienta.',
             incorect_login:
                 app_shop?.txt?.errorCode?.incorect_login ||
-                'BĹÄdnie wpisany login. Login musi mieÄ minimum 3, a maksimum 40 znakĂłw. MoĹźesz uĹźyÄ liter i cyfr oraz symboli @ . - _.',
+                'BĹÄdnie wpisany login. Login musi mieÄ minimum 3, a maksimum 40 znakĂłw. możesz uĹźyÄ liter i cyfr oraz symboli @ . - _.',
             incorect_nip:
                 app_shop?.txt?.errorCode?.incorect_nip || 'Niepoprawny NIP dla wybranego kraju.',
             incorect_phone: app_shop?.txt?.errorCode?.incorect_phone || 'Wpisz swĂłj telefon.',
@@ -10062,16 +10062,16 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             (this.txt = []),
             (this.txt.oszczedzasz = 'OszczÄdzasz '),
             (this.txt.taniej = '%, czyli '),
-            (this.txt.wzestawie = ' kupujÄc w zestawie'),
-            (this.txt.niedostepny = 'Produkt niedostÄpny'),
-            (this.txt.tylkotel = 'Cena na telefon. Skontaktuj siÄ ze sprzedawcÄ'),
-            (this.txt.tylko_punkty = 'Towar dostÄpny tylko w programie lojalnoĹciowym.'),
+            (this.txt.wzestawie = ' kupując w zestawie'),
+            (this.txt.niedostepny = 'Produkt niedostępny'),
+            (this.txt.tylkotel = 'Cena na telefon. Skontaktuj się ze sprzedawcą'),
+            (this.txt.tylko_punkty = 'Towar dostępny tylko w programie lojalnościowym.'),
             (this.txt.gratis = 'Dostawa gratis!'),
             (this.txt.gratis_produkt = 'Gratis!'),
-            (this.txt.niemastanu = 'Produkt niedostÄpny'),
+            (this.txt.niemastanu = 'Produkt niedostępny'),
             (this.txt.status_24 = '24 godz.'),
             (this.txt.status_48 = '48 godz.'),
-            (this.txt.status_natychmiast = 'w ciÄgu 24h'),
+            (this.txt.status_natychmiast = 'w ciągu 24h'),
             (this.txt.day = ' dzieĹ '),
             (this.txt.days = ' dni '),
             (this.txt.hour = ' godz. '),
@@ -10081,21 +10081,21 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             (this.txt.za = ' za '),
             (this.txt.proc = '%'),
             (this.txt.wybrany_rozmiar = 'Rozmiar'),
-            (this.txt.wysylka = 'WysyĹka '),
-            (this.txt.wysylka_za = 'WysyĹka w ciÄgu '),
+            (this.txt.wysylka = 'Wysyłka '),
+            (this.txt.wysylka_za = 'Wysyłka w ciągu '),
             (this.txt.dostepny = 'Dostawa '),
             (this.txt.dostepny_za = 'Dostawa za '),
             (this.txt.pkt = 'pkt.'),
-            (this.txt.status_full = 'wiÄksza iloĹÄ'),
+            (this.txt.status_full = 'większa ilość'),
             (this.txt.status_amount_null = 'brak w magazynie'),
-            (this.txt.forpointsonly = 'Produkt moĹźesz kupiÄ za punkty'),
-            (this.txt.disable_desc = 'Skontaktuj siÄ z nami'),
+            (this.txt.forpointsonly = 'Produkt możesz kupić za punkty'),
+            (this.txt.disable_desc = 'Skontaktuj się z nami'),
             (this.txt.choiceSize = 'Wybierz rozmiar'),
-            (this.txt.maksymalnie = 'Maksymalnie moĹźesz zamĂłwiÄ'),
-            (this.txt.minimalnie = 'Minimalnie moĹźesz zamĂłwiÄ'),
+            (this.txt.maksymalnie = 'Maksymalnie możesz zamówić'),
+            (this.txt.minimalnie = 'Minimalnie możesz zamówić'),
             (this.txt.brak_magazyn = 'Brak na magazynie'),
-            (this.txt.dodano_produkt = 'Produkt zostaĹ dodany.'),
-            (this.txt.dodano_produkt_blad = 'WystÄpiĹ bĹÄd podczas dodawania produktu.'),
+            (this.txt.dodano_produkt = 'Produkt został dodany.'),
+            (this.txt.dodano_produkt_blad = 'Wystąpił błąd podczas dodawania produktu.'),
             (this.txt.ilosc_mm = ''),
             (this.txt.ilosc_mo = ''),
             (this.txt.ilosc_mo_inf = ''),
@@ -10105,8 +10105,8 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             (this.txt.wysylka_total_end = ')'),
             (this.txt.nawias_end = ''),
             (this.txt.amount = ''),
-            (this.txt.order_by = 'ZamĂłw do '),
-            (this.txt.it_will_ship_today = ' to wyĹlemy dzisiaj');
+            (this.txt.order_by = 'Zamów do '),
+            (this.txt.it_will_ship_today = ' to wyślemy dzisiaj');
         var e = !0;
         (this.isset = function (e) {
             return void 0 !== window[e];
@@ -15161,7 +15161,7 @@ function Bars() {
     (app_shop.txt.errorCode.incorect_invoice_phone = 'Wpisz telefon klienta.'),
     (app_shop.txt.errorCode.incorect_invoice_zipcode = 'Wpisz kod pocztowy klienta.'),
     (app_shop.txt.errorCode.incorect_login =
-        'BĹÄdnie wpisany login. Login musi mieÄ minimum 3, a maksimum 40 znakĂłw. MoĹźesz uĹźyÄ liter i cyfr oraz symboli @ . - _.'),
+        'BĹÄdnie wpisany login. Login musi mieÄ minimum 3, a maksimum 40 znakĂłw. możesz uĹźyÄ liter i cyfr oraz symboli @ . - _.'),
     (app_shop.txt.errorCode.incorect_nip = 'BĹÄdnie wpisany NIP.'),
     (app_shop.txt.errorCode.incorect_phone = 'Wpisz swĂłj telefon.'),
     (app_shop.txt.errorCode.incorect_shops = 'Wybierz sklep z listy.'),
@@ -16408,27 +16408,27 @@ function calculate_instalments(params) {
     (app_shop.txt.instalmentMultiProduct = 'Oblicz raty produktĂłw w koszyku'),
     (app_shop.txt.instalmentBasketProduct = 'Oblicz raty ĹÄcznie z wartoĹciÄ koszyka'),
     (app_shop.txt.instalmentNoTall =
-        'Nie wszystkie umieszczone w koszyku produkty umoĹźliwiÄ zakup tym systemem ratalnym. PrzejdĹş do szczegĂłĹĂłw kaĹźdego z produktĂłw aby dowiedzieÄ siÄ ktĂłre z nich umoĹźliwiajÄ taki zakup. JeĹźeli zdecydujesz siÄ na zakup na raty, opĹata za te produkty bÄdzie musiaĹa byÄ wniesiona odrÄbnie pozostaĹymi sposobami pĹatnoĹci.'),
+        'Nie wszystkie umieszczone w koszyku produkty umoĹźliwiÄ zakup tym systemem ratalnym. PrzejdĹş do szczegĂłĹĂłw kaĹźdego z produktĂłw aby dowiedzieÄ się ktĂłre z nich umoĹźliwiajÄ taki zakup. JeĹźeli zdecydujesz się na zakup na raty, opĹata za te produkty bÄdzie musiaĹa byÄ wniesiona odrÄbnie pozostałymi sposobami pĹatnoĹci.'),
     (app_shop.txt.instalmentTooMany =
-        'W koszyku znajduje siÄ zbyt duĹźa iloĹÄ produktĂłw aby mĂłc opĹaciÄ zamĂłwienie tym systemem ratalnym. Zmniejsz iloĹÄ produktĂłw do '),
+        'W koszyku znajduje się zbyt duĹźa ilość produktĂłw aby mĂłc opĹaciÄ Zamówienie tym systemem ratalnym. Zmniejsz ilość produktĂłw do '),
     (app_shop.txt.instalmentTooMany2 =
-        ' aby mĂłc skorzystaÄ z systemu rat. IloĹÄ sztuk jednego produktu nie jest limitowana.'),
+        ' aby mĂłc skorzystaÄ z systemu rat. ilość sztuk jednego produktu nie jest limitowana.'),
     (app_shop.txt.instalmentLabelTo = ' to '),
     (app_shop.txt.instalmentLabelMinBasket =
-        'Nie moĹźesz uruchomiÄ symulacji rat dla caĹego koszyka, poniewaĹź minimalna kwota umoĹźliwiajÄca zakupy przez '),
-    (app_shop.txt.instalmentTextMin = 'ZwiÄksz iloĹÄ sztuk produktu, aby uruchomiÄ kalkulator rat.'),
+        'Nie możesz uruchomiÄ symulacji rat dla caĹego koszyka, poniewaĹź minimalna kwota umoĹźliwiajÄca zakupy przez '),
+    (app_shop.txt.instalmentTextMin = 'ZwiÄksz ilość sztuk produktu, aby uruchomiÄ kalkulator rat.'),
     (app_shop.txt.instalmentTextMinBasket =
-        'ZwiÄksz iloĹÄ sztuk tego produktu, lub wrzuÄ do koszyka dodatkowe produkty.'),
+        'ZwiÄksz ilość sztuk tego produktu, lub wrzuÄ do koszyka dodatkowe produkty.'),
     (app_shop.txt.instalmentTextMinB =
-        'ZwiÄksz iloĹÄ produktĂłw w koszyku, aby uruchomiÄ kalkulator rat.'),
+        'ZwiÄksz ilość produktĂłw w koszyku, aby uruchomiÄ kalkulator rat.'),
     (app_shop.txt.instalmentLabelMax = 'Maksymalna kwota umoĹźliwiajÄca zakupy przez '),
     (app_shop.txt.instalmentLabelMaxBasket =
-        'Nie moĹźesz uruchomiÄ symulacji rat dla caĹego koszyka, poniewaĹź maksymalna kwota umoĹźliwiajÄca zakupy przez '),
-    (app_shop.txt.instalmentTextMax = 'Zmniejsz iloĹÄ sztuk produktu, aby uruchomiÄ kalkulator rat.'),
+        'Nie możesz uruchomiÄ symulacji rat dla caĹego koszyka, poniewaĹź maksymalna kwota umoĹźliwiajÄca zakupy przez '),
+    (app_shop.txt.instalmentTextMax = 'Zmniejsz ilość sztuk produktu, aby uruchomiÄ kalkulator rat.'),
     (app_shop.txt.instalmentTextMaxBasket =
-        'Zmniejsz iloĹÄ sztuk tego produktu, lub usuĹ z koszyka niektĂłre produkty.'),
+        'Zmniejsz ilość sztuk tego produktu, lub usuĹ z koszyka niektĂłre produkty.'),
     (app_shop.txt.instalmentTextMaxB =
-        'Zmniejsz iloĹÄ produktĂłw w koszyku, aby uruchomiÄ kalkulator rat.'),
+        'Zmniejsz ilość produktĂłw w koszyku, aby uruchomiÄ kalkulator rat.'),
     (app_shop.txt.instalmentLabelMin = 'Minimalna kwota umoĹźliwiajÄca zakupy przez '),
     (app_shop.txt.instalmentButtonClassDialog = 'btn --solid --medium'),
     (app_shop.txt.instalmentButtonDisableClassDialog = 'btn --solid --secondary --medium --disabled'),
@@ -16800,7 +16800,7 @@ var productslist_03a_txt = 'Uwagi mogÄ mieÄ maksymalnie ',
     productslist_03b_txt = ' znakĂłw. ',
     productslist_maxvalue_04_txt = '255',
     productslist_maxvalue_05_txt =
-        "<b>Wybrany przez Ciebie wczeĹniej produkt gratisowy nie jest dostÄpny dla takiej wartoĹci koszyka. </b><br/><span style='font-weight:normal;'>Prosimy wybierz inny produkt gratisowy lub zmieĹ wartoĹÄ swojego zamĂłwienie.</span>",
+        "<b>Wybrany przez Ciebie wczeĹniej produkt gratisowy nie jest dostępny dla takiej wartoĹci koszyka. </b><br/><span style='font-weight:normal;'>Prosimy wybierz inny produkt gratisowy lub zmieĹ wartoĹÄ swojego Zamówienie.</span>",
     txt_order_wrappers_1 = 'Do koszyka',
     txt_order_wrappers_2 = 'Gratis !',
     txt_order_wrappers_4 = 'Wybierz opakowanie',
@@ -17077,7 +17077,7 @@ app_shop.run(
         !0,
     );
 var client_new_social_info_js_txt_1 =
-    'Zaloguj siÄ na ktĂłrÄĹ z wyĹźej wymienionych formy logowania aby dokoĹczyÄ rejestracjÄ.';
+    'Zaloguj się na ktĂłrÄĹ z wyĹźej wymienionych formy logowania aby dokoĹczyÄ rejestracjÄ.';
 app_shop.run(
     function () {
         Modal({
@@ -17148,9 +17148,9 @@ const clientFormTxt = {
     txt03: 'WyĹlij e-mail pozwalajÄcy na automatyczne zalogowanie',
     txt06: 'WyĹlij wiadomoĹÄ na adres',
     txt07: 'z danymi potrzebnymi do logowania .',
-    txt08: '<br/>ZaĹoĹźone wczeĹniej konto zostaĹo poĹÄczone z kontem',
+    txt08: '<br/>ZaĹoĹźone wczeĹniej konto zostało poĹÄczone z kontem',
     txt13:
-        'Proponujemy Ci uĹźycie tego konta, co pozwoli Ci korzystaÄ z przywilejĂłw zarezerwowanych dla wielokrotnych klientĂłw. Aby siÄ zalogowaÄ na wczeĹniej zaĹoĹźone konto, wystarczy klikniÄcie na link, ktĂłry moĹźemy Ci wysĹaÄ w e-mailu.',
+        'Proponujemy Ci uĹźycie tego konta, co pozwoli Ci korzystaÄ z przywilejĂłw zarezerwowanych dla wielokrotnych klientĂłw. Aby się zalogowaÄ na wczeĹniej zaĹoĹźone konto, wystarczy klikniÄcie na link, ktĂłry moĹźemy Ci wysĹaÄ w e-mailu.',
     txt14: 'Poprawne formaty kodu pocztowego dla wybranego kraju to [X - cyfra; Y - litera]:',
     txt15: 'znakĂłw).',
     txt16: 'ProszÄ wypeĹniÄ to pole.',
@@ -17162,7 +17162,7 @@ const clientFormTxt = {
 var clientNewErrorCode = [];
 (clientNewErrorCode.no_login = 'Wpisz w to pole swĂłj login.'),
     (clientNewErrorCode.incorect_login =
-        'BĹÄdnie wpisany login. Login musi mieÄ minimum 3, a maksimum 40 znakĂłw. MoĹźesz uĹźyÄ liter i cyfr oraz symboli @ . - _.'),
+        'BĹÄdnie wpisany login. Login musi mieÄ minimum 3, a maksimum 40 znakĂłw. możesz uĹźyÄ liter i cyfr oraz symboli @ . - _.'),
     (clientNewErrorCode.no_password = 'Wpisz w to pole swoje hasĹo.'),
     (clientNewErrorCode.password_to_short =
         'Zbyt krĂłtkie hasĹo. Wpisz dĹuĹźsze hasĹo (minimum 6 znakĂłw).'),
@@ -17488,9 +17488,9 @@ app_shop.run(
     'form.newsletter_form',
 ),
     (app_shop.vars.opinion_send =
-        "Twoja opinia o zamĂłwieniu zostaĹa wysĹana, dziÄkujemy. JeĹźeli chcesz jÄ zmieniÄ kliknij <a href='#edit' class='opinion_edit'>tutaj</a>."),
-    (app_shop.vars.opinion_send2 = 'Twoja opinia o produkcie zostaĹa wysĹana, dziÄkujemy.'),
-    (app_shop.vars.opinion_error = 'Twoja opinia nie zostaĹa wysĹana.'),
+        "Twoja opinia o Zamówieniu została wysĹana, dziÄkujemy. JeĹźeli chcesz jÄ zmieniÄ kliknij <a href='#edit' class='opinion_edit'>tutaj</a>."),
+    (app_shop.vars.opinion_send2 = 'Twoja opinia o produkcie została wysĹana, dziÄkujemy.'),
+    (app_shop.vars.opinion_error = 'Twoja opinia nie została wysĹana.'),
     (app_shop.vars.opinion_empty = 'Podaj treĹÄ opinii.'),
     (app_shop.vars.opinion_file_size = 'Max. rozmiar zdjÄcia to: 2048x1536px.'),
     (app_shop.vars.opinion_file_type = 'Dopuszczalne formaty zdjÄÄ: jpg.'),
@@ -17524,7 +17524,7 @@ app_shop.run(
         'all',
         '#opinions_wrapper',
     ),
-    (app_shop.txt.more = 'wiÄcej'),
+    (app_shop.txt.more = 'więcej'),
     app_shop.run(
         function () {
             new OpinionsShop({});
@@ -17559,11 +17559,11 @@ const orderTxt = {
     minutes: ' min',
     time_pick1: 'Przewidywana dostawa ',
     time_pick2: 'Przewidywana dostawa ',
-    time_pick3: 'Odbierz zamĂłwienie za ',
-    time_pick4: 'Odbierz zamĂłwienie - ',
+    time_pick3: 'Odbierz Zamówienie za ',
+    time_pick4: 'Odbierz Zamówienie - ',
     time_pick5: 'Przewidywana dostawa - ',
     time_pick5de: '',
-    time_pick6: 'ZamĂłwienie bÄdzie gotowe do odbioru natychmiast po przyjÄciu zamĂłwienia',
+    time_pick6: 'Zamówienie bÄdzie gotowe do odbioru natychmiast po przyjÄciu Zamówienia',
     shipping0: 'Dzisiaj',
     shipping1: 'PoniedziaĹek',
     shipping2: 'Wtorek',
@@ -17572,7 +17572,7 @@ const orderTxt = {
     shipping5: 'PiÄtek',
     shipping6: 'Sobota',
     shipping7: 'Niedziela',
-    servicesError: 'WystÄpiĹ problem z poĹÄczeniem. Za chwilÄ nastÄpi ponowna prĂłba poĹÄczenia.',
+    servicesError: 'Wystąpił problem z poĹÄczeniem. Za chwilÄ nastÄpi ponowna prĂłba poĹÄczenia.',
 },
     orderTxtShipping = [
         orderTxt.shipping0,
@@ -17618,7 +17618,7 @@ function order2_terms_valid() {
 (orderTxt.xpress1 = 'Musisz podaÄ szczegĂłĹy dotyczÄce sposobu dostawy'),
     (orderTxt.xpress2 = 'Kurier ekspresowy nie obsĹuguje Twojej okolicy '),
     (orderTxt.xpress3 =
-        'WystÄpiĹ bĹÄd zewnÄtrznego serwisu firmy kurierskiej. ProszÄ skontaktowaÄ siÄ z obsĹugÄ sklepu lub zmieniÄ formÄ dostawy. '),
+        'Wystąpił błąd zewnÄtrznego serwisu firmy kurierskiej. ProszÄ skontaktowaÄ się z obsĹugÄ sklepu lub zmieniÄ formÄ dostawy. '),
     (orderTxt.week1 = ' tydzieĹ'),
     (orderTxt.week2 = ' tygodnie'),
     (orderTxt.week3 = ' tygodni'),
@@ -17686,13 +17686,13 @@ function order2_terms_valid() {
         !0,
     );
 var confirmmessage =
-    'Twoje zamĂłwienie nie zostaĹo jeszcze zĹoĹźone. Opuszczenie tej strony oznacza porzucenie zamĂłwienia. PamiÄtaj, Ĺźe wracajÄc do zamĂłwienia za jakiĹ czas niektĂłre z produktĂłw lub cen mogÄ byÄ juĹź nieaktualne.',
+    'Twoje Zamówienie nie zostało jeszcze zĹoĹźone. Opuszczenie tej strony oznacza porzucenie Zamówienia. PamiÄtaj, Ĺźe wracajÄc do Zamówienia za jakiĹ czas niektĂłre z produktĂłw lub cen mogÄ byÄ juĹź nieaktualne.',
     confirmmessage2 =
-        'Twoje zamĂłwienie nie zostaĹo jeszcze zĹoĹźone. Dopiero przejĹcie do kolejnego etapu zamĂłwienia oznacza wysĹanie go do realizacji. PamiÄtaj, Ĺźe wracajÄc do zamĂłwienia za jakiĹ czas niektĂłre z produktĂłw lub cen mogÄ byÄ juĹź nieaktualne.',
+        'Twoje Zamówienie nie zostało jeszcze zĹoĹźone. Dopiero przejĹcie do kolejnego etapu Zamówienia oznacza wysĹanie go do realizacji. PamiÄtaj, Ĺźe wracajÄc do Zamówienia za jakiĹ czas niektĂłre z produktĂłw lub cen mogÄ byÄ juĹź nieaktualne.',
     confirmwarning = 'OstrzeĹźenie',
-    order_send_preloadertxt = 'Trwa skĹadanie zamĂłwienia',
-    stop_order_button = 'Przerwij skĹadanie zamĂłwienia ',
-    continue_order_button = 'Kontynuuj skĹadanie zamĂłwienia ';
+    order_send_preloadertxt = 'Trwa skĹadanie Zamówienia',
+    stop_order_button = 'Przerwij skĹadanie Zamówienia ',
+    continue_order_button = 'Kontynuuj skĹadanie Zamówienia ';
 const order2Txt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni' };
 order2TxtWeek = [orderTxt.week3, orderTxt.week1, orderTxt.week2];
 var eInvoice_dialog = function () {
@@ -17796,13 +17796,13 @@ app_shop.run(
 var pickupl_animspeed = 500,
     pickupl_alert = 'Nie wybrano punktu odbioru',
     pickupl_alertPoczta = 'Nie wybrano urzÄdu pocztowego',
-    pickupl_linktxt = 'wiÄcej informacji',
+    pickupl_linktxt = 'więcej informacji',
     pickupl_linktitle = 'Zobacz szczegĂłĹowe informacje',
     pickupl_requires_client_number = 'Nie wprowadzono numeru klienta w systemie kuriera.',
     pickupl_select_adress = 'Wpisz poprawny adres.',
     pickupl_select_route = 'Wpisz nazwÄ miasta',
     pickupl_nopoints = 'Wpisz inny adres, brak punktĂłw odbioru.',
-    pickupl_error = 'WystÄpiĹ bĹÄd. ProszÄ odĹwieĹźyÄ stronÄ i sprĂłbowaÄ ponownie',
+    pickupl_error = 'Wystąpił błąd. ProszÄ odĹwieĹźyÄ stronÄ i sprĂłbowaÄ ponownie',
     pickupl_nopoints_in_area = 'Nie znaleziono punktĂłw odbioru na danym obszarze. ',
     stocks_list_more_txt = '',
     stocks_list_on_map_txt = '';
@@ -18733,13 +18733,13 @@ var projectorv3_disable_ajax = '1';
     (projectorObj.txt.za = ' za '),
     (projectorObj.txt.taniej = '% ('),
     (projectorObj.txt.oszczedzasz = '(ZniĹźka '),
-    (projectorObj.txt.wzestawie = '), kupujÄc w zestawie. '),
-    (projectorObj.txt.niedostepny = 'Produkt niedostÄpny'),
-    (projectorObj.txt.tylkotel = 'Cena na telefon. Skontaktuj siÄ ze sprzedawcÄ.'),
-    (projectorObj.txt.tylko_punkty = 'Produkt dostÄpny tylko w programie lojalnoĹciowym.'),
+    (projectorObj.txt.wzestawie = '), kupując w zestawie. '),
+    (projectorObj.txt.niedostepny = 'Produkt niedostępny'),
+    (projectorObj.txt.tylkotel = 'Cena na telefon. Skontaktuj się ze sprzedawcą.'),
+    (projectorObj.txt.tylko_punkty = 'Produkt dostępny tylko w programie lojalnościowym.'),
     (projectorObj.txt.za_malo_punktow = 'Nie masz wystarczajÄcej iloĹci punktĂłw'),
-    (projectorObj.txt.gratis = 'WysyĹka gratis!'),
-    (projectorObj.txt.niemastanu = 'Produkt niedostÄpny'),
+    (projectorObj.txt.gratis = 'Wysyłka gratis!'),
+    (projectorObj.txt.niemastanu = 'Produkt niedostępny'),
     (projectorObj.txt.status_24 = '24 godz.'),
     (projectorObj.txt.status_48 = '48 godz.'),
     (projectorObj.txt.status_natychmiast = 'Natychmiast'),
@@ -18751,61 +18751,61 @@ var projectorv3_disable_ajax = '1';
     (projectorObj.txt.mins = ' min. '),
     (projectorObj.txt.proc = '%'),
     (projectorObj.txt.wybrany_rozmiar = 'Rozmiar:'),
-    (projectorObj.txt.wysylka = 'WysyĹka '),
-    (projectorObj.txt.wysylka_za = 'WysyĹka w ciÄgu '),
-    (projectorObj.txt.shipmentIn = 'WysyĹka za '),
+    (projectorObj.txt.wysylka = 'Wysyłka '),
+    (projectorObj.txt.wysylka_za = 'Wysyłka w ciągu '),
+    (projectorObj.txt.shipmentIn = 'Wysyłka za '),
     (projectorObj.txt.tomorrow = ' jutro'),
     (projectorObj.txt.dostepny = ''),
     (projectorObj.txt.dostepny_za = ' za '),
     (projectorObj.txt.pkt = ' pkt.'),
-    (projectorObj.txt.status_amount_full = 'wiÄksza iloĹÄ'),
+    (projectorObj.txt.status_amount_full = 'większa ilość'),
     (projectorObj.txt.status_amount_null = 'brak w magazynie'),
-    (projectorObj.txt.forpointsonly = 'Produkt moĹźesz kupiÄ za punkty.'),
-    (projectorObj.txt.disable_desc = 'Skontaktuj siÄ z nami.'),
+    (projectorObj.txt.forpointsonly = 'Produkt możesz kupić za punkty.'),
+    (projectorObj.txt.disable_desc = 'Skontaktuj się z nami.'),
     (projectorObj.txt.choiceSize = 'Wybierz rozmiar'),
-    (projectorObj.txt.maksymalnie = 'Maksymalnie moĹźesz dodaÄ'),
-    (projectorObj.txt.minimalnie = 'Minimalnie musisz zamĂłwiÄ '),
+    (projectorObj.txt.maksymalnie = 'Maksymalnie możesz dodaÄ'),
+    (projectorObj.txt.minimalnie = 'Minimalnie musisz zamówić '),
     (projectorObj.txt.brak_magazyn = 'Brak na magazynie'),
     (projectorObj.txt.koszt_od = 'Koszt od '),
     (projectorObj.txt.wysylka_total_begin = '<br/>(z tow. z koszyka '),
     (projectorObj.txt.wysylka_total_end = ')'),
-    (projectorObj.txt.nawias_end_collection = '% kupujÄc w kolekcji)'),
-    (projectorObj.txt.nawias_end_bundle = '% kupujÄc w zestawie)'),
+    (projectorObj.txt.nawias_end_collection = '% kupując w kolekcji)'),
+    (projectorObj.txt.nawias_end_bundle = '% kupując w zestawie)'),
     (projectorObj.txt.nawias_end = '%)'),
     (projectorObj.txt.gratis_produkt = 'Gratis!'),
-    (projectorObj.txt.virtual_inbasket = 'Produkt znajduje siÄ juĹź w koszyku'),
+    (projectorObj.txt.virtual_inbasket = 'Produkt znajduje się juĹź w koszyku'),
     (projectorObj.txt.infinity = ''),
     (projectorObj.txt.ilosc_mm = 'Aktualnie w naszym magazynie mamy <b>%d</b>.'),
-    (projectorObj.txt.ilosc_mo = 'Kolejne <b>%d</b> moĹźemy sprowadziÄ na zamĂłwienie.'),
-    (projectorObj.txt.ilosc_mo_inf = 'DowolnÄ iloĹÄ moĹźemy sprawadziÄ na zamĂłwienie.'),
+    (projectorObj.txt.ilosc_mo = 'Kolejne <b>%d</b> moĹźemy sprowadziÄ na Zamówienie.'),
+    (projectorObj.txt.ilosc_mo_inf = 'DowolnÄ ilość moĹźemy sprawadziÄ na Zamówienie.'),
     (projectorObj.txt.size_select_functionality = '0'),
     (projectorObj.txt.sizes_projector_functionality = '1'),
     (projectorObj.txt.size_select_label = 'Rozmiar:'),
     (projectorObj.txt.size_select_tell_availability = 'Powiadom o dostÄpnoĹci'),
     (projectorObj.txt.size_select_last_unit = 'Ostatnia sztuka!'),
     (projectorObj.txt.size_select_few_last_units = 'Ostatnie sztuki!'),
-    (projectorObj.txt.order_by = 'ZamĂłw do '),
-    (projectorObj.txt.it_will_ship_today = ' to wyĹlemy dzisiaj'),
+    (projectorObj.txt.order_by = 'Zamów do '),
+    (projectorObj.txt.it_will_ship_today = ' to wyślemy dzisiaj'),
     (projectorObj.txt['Produkt o wybranej konfiguracji nie istnieje. Wybierz inny wariant.'] =
         'Produkt o wybranej konfiguracji nie istnieje. Wybierz inny wariant.');
-var Projector_txt_maksymalnie = 'Maksymalnie moĹźesz zamĂłwiÄ: ',
+var Projector_txt_maksymalnie = 'Maksymalnie możesz zamówić: ',
     Projector_txt_minimalnie = projectorObj.txt.minimalnie,
     Projector_txt_brak_magazyn = 'Brak na magazynie',
-    Projector_txt_produkt_niedostepny = 'Produkt niedostÄpny',
-    Projector_txt_podajilosc = 'Podaj iloĹÄ dla wybranego rozmiaru',
-    Projector_txt_zalogujsie = 'Zaloguj siÄ',
+    Projector_txt_produkt_niedostepny = 'Produkt niedostępny',
+    Projector_txt_podajilosc = 'Podaj ilość dla wybranego rozmiaru',
+    Projector_txt_zalogujsie = 'Zaloguj się',
     Projector_txt_closedialog = '',
     txt_raty_button1 = 'Oblicz raty wybranego produktu',
     txt_raty_button2 = 'Oblicz raty wraz z kwotÄ z koszyka ',
     txt_62619_cms_table = 'Tabela rozmiarĂłw',
     txt_toltip_1 =
-        'Cena najtaĹszej z dostÄpnych form wysyĹki z uwzglÄdnieniem twojego koszyka. PeĹnÄ listÄ cen i kurierĂłw otrzymasz podczas skĹadania zamĂłwienia.',
-    txt_toltip_2 = 'Program lojalnoĹciowy dostÄpny jest tylko dla zalogowanych klientĂłw.',
+        'Cena najtaĹszej z dostępnych form wysyĹki z uwzglÄdnieniem twojego koszyka. PeĹnÄ listÄ cen i kurierĂłw otrzymasz podczas skĹadania Zamówienia.',
+    txt_toltip_2 = 'Program lojalnoĹciowy dostępny jest tylko dla zalogowanych klientĂłw.',
     txt_toltip_2a =
-        'MoĹźesz zamieniÄ zgromadzone punkty lojalnoĹciowe na ten produkt. Obecnie masz [xxx] punktĂłw.',
+        'możesz zamieniÄ zgromadzone punkty lojalnoĹciowe na ten produkt. Obecnie masz [xxx] punktĂłw.',
     txt_toltip_3 =
-        'Po opĹaceniu zamĂłwienia przyznamy ci takÄ iloĹÄ punktĂłw lojalnoĹciowych. Ĺťeby zbieraÄ punkty musisz byÄ zarejestrowanym klientem.',
-    txt_toltip_3a = 'Po opĹaceniu zamĂłwienia przyznamy ci takÄ iloĹÄ punktĂłw lojalnoĹciowych.',
+        'Po opĹaceniu Zamówienia przyznamy ci takÄ ilość punktĂłw lojalnoĹciowych. Ĺťeby zbieraÄ punkty musisz byÄ zarejestrowanym klientem.',
+    txt_toltip_3a = 'Po opĹaceniu Zamówienia przyznamy ci takÄ ilość punktĂłw lojalnoĹciowych.',
     txt_toltip_4 = '',
     prepaid = 'PĹatnoĹÄ przed wysyĹkÄ',
     dvp = 'PĹatnoĹÄ przy odbiorze',
@@ -18868,11 +18868,11 @@ var txt_shipping_8 = ' dzisiaj',
         'WybĂłr tej pozycji spowoduje koniecznoĹÄ dostosowania innych opcji. '),
     (app_shop.txt.txt_sold_out = 'wyprzedane');
 var txt_62619_nieprawidlowy_email = 'Niepoprawny adres email.',
-    txt_62619_przekroczono_liczbe = 'Przekroczono liczbÄ dodanych powiadomieĹ w ciÄgu dnia.',
+    txt_62619_przekroczono_liczbe = 'Przekroczono liczbÄ dodanych powiadomieĹ w ciągu dnia.',
     txt_62619_podczas_dodawania =
-        'Podczas dodawania produktu wystÄpiĹ bĹÄd. SprawdĹş poprawnoĹÄ wprowadzonych danych',
-    txt_62619_produkt_dodany = 'Produkt zostaĹ poprawnie dodany do powiadomieĹ.',
-    txt_62619_blad_pobrania = 'WystÄpiĹ problem z poĹÄczeniem. Wykonaj czynnoĹÄ ponownie.',
+        'Podczas dodawania produktu Wystąpił błąd. SprawdĹş poprawnoĹÄ wprowadzonych danych',
+    txt_62619_produkt_dodany = 'Produkt został poprawnie dodany do powiadomieĹ.',
+    txt_62619_blad_pobrania = 'Wystąpił problem z poĹÄczeniem. Wykonaj czynnoĹÄ ponownie.',
     txt_62619_bledny_email =
         'BĹÄdnie wpisany e-mail. Wpisz peĹny adres e-mail, np. jan@kowalski.com ',
     txt_62619_wpisz_telefon = 'Wpisz swĂłj telefon. ',
@@ -19562,7 +19562,7 @@ app_shop.run(
 var txt_1_69260_1 = 'Wybierz produkty do zwrotu',
     txt_1_odznacz_w_p = 'Odznacz wszystkie produkty ',
     txt_1_zaznacz_w_p = 'Zaznacz wszystkie produkty',
-    txt_1_max_ret_amount = 'Maksymalnie moĹźesz zwrĂłciÄ ',
+    txt_1_max_ret_amount = 'Maksymalnie możesz zwrĂłciÄ ',
     txt_1_new_button = 'true';
 app_shop.run(
     function () {
@@ -20599,8 +20599,8 @@ var txt_1_69378 = 'Wybierz formÄ zwrotu naleĹźnoĹci',
         '.search_description',
         !0,
     ),
-    (app_shop.vars.show_description = 'Czytaj wiÄcej'),
-    (app_shop.vars.hide_description = 'ZwiĹ'),
+    (app_shop.vars.show_description = 'Czytaj więcej'),
+    (app_shop.vars.hide_description = 'Zwiń'),
     (app_shop.fn.categoryDivider = function (e) {
         var t = e || '.search_categoriesdescription_sub',
             i = $(t).children(),
@@ -20748,28 +20748,28 @@ var txt_1_69378 = 'Wybierz formÄ zwrotu naleĹźnoĹci',
 //                 'false' === e.attr('data-localized') &&
 //                 Modal({ html: $('#xpress_toplayer').html(), classList: 'xpress_zipcode_verification' });
 //         });
-//     document.querySelector('.filters__form').addEventListener('submit', function (e) {
-//         const t = document.querySelector('#PriceRangeFrom'),
-//             i = document.querySelector('#PriceRangeTo');
-//         if (parseFloat(t?.value) > parseFloat(i?.value))
-//             return (
-//                 e.preventDefault(),
-//                 document.querySelector('.filters__price').classList.add('has-error'),
-//                 !1
-//             );
-//     });
+// document.querySelector('.filters__form').addEventListener('submit', function (e) {
+//     const t = document.querySelector('#PriceRangeFrom'),
+//         i = document.querySelector('#PriceRangeTo');
+//     if (parseFloat(t?.value) > parseFloat(i?.value))
+//         return (
+//             e.preventDefault(),
+//             document.querySelector('.filters__price').classList.add('has-error'),
+//             !1
+//         );
+// });
 // },
-//     showHiddenFiltersFromRight = () => {
-//         $('.filters__block').each(function () {
-//             const e = $(this).find('> .filters__toggler'),
-//                 t = $(this).find('.filters__expand');
-//             t.removeClass('right'),
-//                 $(this).removeClass('right'),
-//                 e.offset().left + 450 > $(window).width() &&
-//                 app_shop.vars.view >= 3 &&
-//                 (t.addClass('right'), $(this).addClass('right'));
-//         });
-//     };
+showHiddenFiltersFromRight = () => {
+    $('.filters__block').each(function () {
+        const e = $(this).find('> .filters__toggler'),
+            t = $(this).find('.filters__expand');
+        t.removeClass('right'),
+            $(this).removeClass('right'),
+            e.offset().left + 450 > $(window).width() &&
+            app_shop.vars.view >= 3 &&
+            (t.addClass('right'), $(this).addClass('right'));
+    });
+};
 app_shop.run(
     function () {
         showHiddenFiltersFromRight();
@@ -20886,20 +20886,20 @@ app_shop.run(
         !0,
     ),
     app_shop.run(
-        // function () {
-        //     (app_shop.fn.searchAjax = new SearchAjax({
-        //         onClickSelectors:
-        //             '#search a.product__compare_item, #menu_compare_product a.--remove, .pagination a, #Filters .filters__buttons a, #filter_list a',
-        //         onSubmitSelectors: '#paging_setting_top form, .filters__form',
-        //         updateDomCallback: () => {
-        //             app_shop.fn.infiniteScroll && app_shop.fn.infiniteScroll.reInit(),
-        //                 $('html, body').animate({ scrollTop: $('.search_name').offset().top - 20 }, 'fast');
-        //         },
-        //     })),
-        //         window._additional_ajax && app_shop.fn.searchAjax.init();
-        // },
-        // 'all',
-        // '#search',
+        function () {
+            (app_shop.fn.searchAjax = new SearchAjax({
+                onClickSelectors:
+                    '#search a.product__compare_item, #menu_compare_product a.--remove, .pagination a, #Filters .filters__buttons a, #filter_list a',
+                onSubmitSelectors: '#paging_setting_top form, .filters__form',
+                updateDomCallback: () => {
+                    app_shop.fn.infiniteScroll && app_shop.fn.infiniteScroll.reInit(),
+                        $('html, body').animate({ scrollTop: $('.search_name').offset().top - 20 }, 'fast');
+                },
+            })),
+                window._additional_ajax && app_shop.fn.searchAjax.init();
+        },
+        'all',
+        '#search',
     ),
     app_shop.run(
         function () {
@@ -21016,7 +21016,7 @@ app_shop.run(
         '.stocks_list_wrapper',
         !0,
     );
-var stocks_list_more_txt = 'wiÄcej informacji',
+var stocks_list_more_txt = 'więcej informacji',
     stocks_list_on_map_txt = 'PokaĹź na mapie';
 
 if (window.innerWidth > 979) {
@@ -21026,6 +21026,26 @@ if (window.innerWidth > 979) {
 // search page 
 function search() {
     console.log("🚀 ~ file: shop.js:19537 ~ 'searchPage from shop.js':", 'searchPage from shop.js')
+
+    // dodawanie outline na hover elementu: 
+    $('.product__compare_item.--add.btn').mouseenter(function () {
+        $(this).addClass('--outline');
+    });
+
+    // Usunięcie klasy --outline, gdy myszka opuszcza element
+    $('.product__compare_item.--add.btn').mouseleave(function () {
+        $(this).removeClass('--outline');
+    });
+
+    // Obsługa dropdownów w filtrach i sortowaniu
+    $('.s_paging__item .--sort').on("click", function () {
+
+        $('.f-dropdown .f-group .s_paging__select .--order .--small-md ').toggleClass('--open');
+    });
+    $('.s_paging__item .--portions').on("click", function () {
+
+        $('.f-dropdown .f-group .s_paging__select .--portions .--small-md ').toggleClass('--open');
+    });
 
     // Przełączanie widoczności zdjęć o wyksów smaku
     $('#switch').on('change', function () {
@@ -21068,12 +21088,14 @@ function search() {
 
     // Obsługa kliknięcia przycisku Filtrowanie
     filterButton.on("click", function () {
+        console.log("🚀 ~ file: shop.js:21065 ~ search ~ filterButton:", filterButton)
 
         var filtersVisible = !$('#Filters').hasClass('d-md-none');
+        console.log("🚀 ~ file: shop.js:21074 ~ filtersVisible:", filtersVisible)
         // Sprawdzanie czy kliknięto przycisk Sortowanie
         var isSortVisible = sortIcon.hasClass('fa-chevron-up');
+        console.log("🚀 ~ file: shop.js:21077 ~ isSortVisible:", isSortVisible)
 
-        console.log("🚀 ~ file: shop.js:19581 ~ Filters:")
         // Jeśli filtr jest aktualnie widoczny lub jeśli kliknięto Sortowanie
         if (filtersVisible || isSortVisible) {
             $('#Filters').addClass('d-md-none');
@@ -21089,7 +21111,7 @@ function search() {
             sortIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
         }
     });
-    filtersActionsCall()
+    // filtersActionsCall()
 
     // Obsługa kliknięcia przycisku Sortowanie
     sortButton.on("click", function () {
@@ -21117,11 +21139,7 @@ function search() {
 
 
 
-    // Obsługa dropdownów w filtrach i sortowaniu
-    $('.f-dropdown.f-group.s_paging__select.--order.--small-md, .f-dropdown.f-group.s_paging__select.--portions.--small-md').on("click", function () {
-        console.log("🚀 ~ file: shop.js:19629 ~ f-dropdown:")
-        $(this).toggleClass('--open');
-    });
+
 
 
     // radar-chart - wykresy w miejscu zjęcia
@@ -21149,7 +21167,7 @@ function search() {
                         fill: "origin",
 
 
-                        data: graphData // Użyj przekształconych danych
+                        data: graphData
 
                     }]
                 },
@@ -21192,21 +21210,264 @@ function search() {
         }
     });
 
-    $('toggleShowMore').on('click', function () {
 
-        $('#additionalContent').toggleClass('expanded');
-
-    });
 
 }
 //end search page script
+
+function showMore() {
+    $('#showMore').text('Czytaj więcej');
+
+    $('#showMore').on('click', function () {
+        var additionalContent = $('#additionalContent');
+        additionalContent.toggleClass('expanded');
+
+        // Sprawdzenie, czy content jest rozwinięty i zmiana tekstu odpowiednio
+        if (additionalContent.hasClass('expanded')) {
+            $(this).text('Czytaj mniej');
+        } else {
+            $(this).text('Czytaj więcej');
+        }
+    });
+}
+
+app_shop.run(
+    function () {
+        showStarsSection();
+
+        updateProductInfo();
+    },
+    'all',
+    '#container.projector_page'
+)
+
+
+function showStarsSection() {
+
+
+    var nutyKwiatoweExist = $('#projector_dictionary .dictionary__param').filter(function () {
+        return $(this).find('.dictionary__name_txt').text().trim() === 'Nuty kwiatowe';
+    }).length > 0;
+
+    if (nutyKwiatoweExist) {
+        var intensywnosc = parseFloat($('#projector_dictionary .dictionary__param').filter(function () {
+            return $(this).find('.dictionary__name_txt').text().trim() === 'Intensywność smaku';
+        }).find('.dictionary__value_txt').text().trim());
+
+        var kwasowosc = parseFloat($('#projector_dictionary .dictionary__param').filter(function () {
+            return $(this).find('.dictionary__name_txt').text().trim() === 'Kwasowość';
+        }).find('.dictionary__value_txt').text().trim());
+
+        var smakiHtml = '';
+        $('#projector_dictionary .dictionary__param').filter(function () {
+            return $(this).find('.dictionary__name_txt').text().trim() === 'Wyczuwalne smaki';
+        }).find('.dictionary__value_txt').each(function () {
+            var smak = $(this).text().trim();
+            smakiHtml += '<span>' + smak + '</span>, ';
+        });
+        smakiHtml = smakiHtml.slice(0, -2); // Usuwanie ostatniego przecinka i spacji
+
+        var sectionHtml = `
+            <section id="projector_producttraits" class="traits mt-5">
+                <div class="pb-5">
+                    <div>
+                        <div class="taste-details d-flex justify-content-md-between">
+                            <p class="text-uppercase">Profil aromatyczny</p>
+                            <div class="font-bold aroma-links">${smakiHtml}</div>
+                        </div>
+                        <div class="hrline mt-4 mb-4"></div>
+                        <div class="taste-details d-flex justify-content-md-between" id="intensywnosc">
+                            <p class="text-uppercase">Intensywność</p>
+                            <b class="d-flex align-items-center"><span class="stars-coffee ml-3"></span></b>
+                        </div>
+                        <div class="hrline mt-4 mb-4"></div>
+                        <div class="taste-details d-flex justify-content-md-between" id="kwasowosc">
+                            <p class="text-uppercase">Kwasowość</p>
+                            <b class="d-flex align-items-center"><span class="stars-coffee ml-3"></span></b>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        `;
+
+        $('#projector_producttraits').html(sectionHtml);
+
+        updateStars('intensywnosc', intensywnosc);
+        updateStars('kwasowosc', kwasowosc);
+    }
+
+    function updateStars(type, value) {
+        var fullStars = Math.floor(value);
+        var halfStar = (value % 1) >= 0.5 ? 1 : 0;
+        var emptyStars = 5 - fullStars - halfStar;
+
+        var starsHtml = '';
+        for (var i = 0; i < fullStars; i++) {
+            starsHtml += '<span class="full"></span>';
+        }
+        if (halfStar) {
+            starsHtml += '<span class="half"></span>';
+        }
+        for (var i = 0; i < emptyStars; i++) {
+            starsHtml += '<span class="empty"></span>';
+        }
+
+        $('#' + type + ' .stars-coffee').html(starsHtml);
+    }
+}
+
+
 
 
 app_shop.run(
     function () {
         search();
+
     },
     'all',
     '#container.search_page',
     true,
 )
+
+app_shop.run(
+    function () {
+        showMore();
+    },
+    'all',
+    '#container.main_page'
+)
+
+
+
+
+function updateProductInfo() {
+    var nutyKwiatoweExist = $('#projector_dictionary .dictionary__param').filter(function () {
+        return $(this).find('.dictionary__name_txt').text().trim() === 'Nuty kwiatowe';
+    }).length > 0;
+
+    if (nutyKwiatoweExist) {
+        $('#product_extra_info1').removeClass('d-none');
+        // Pobranie wartości lub użycie wartości domyślnych
+        var region = getValueOrDefault('REGION', '');
+        var wysokoscUpraw = getValueOrDefault('WYSOKOŚĆ UPRAW', '');
+        var metodaObróbki = getValueOrDefault('METODA OBRÓBKI', '');
+        var stopienPalenia = getValueOrDefault('STOPIEŃ PALENIA', '');
+
+        var labels = ['Intensywność smaku', 'Słodycz', 'Kwasowość', 'Gorycz', 'Nuty kwiatowe', 'Owoce cytrusowe', 'Owoce pestkowe', 'Owoce leśne', 'Nuty przypraw', 'Orzech', 'Czekolada', 'Karmel'];
+        var values = [];
+
+        // Zmiana źródła obrazka w zależności od regionu
+        var imgSrc = region !== '' ? `https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/map-${region.toLowerCase()}.png` : 'https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/map-brazylia.jpg';
+
+        // Tworzenie HTML dla sposobów przygotowania
+        var sposobyPrzygotowaniaHtml = getSposobyPrzygotowaniaHtml();
+
+        function createListItemHtml(label, value) {
+            if (value) {
+                return `<li><span class="text-uppercase">${label}</span><b>${value}</b></li>`;
+            }
+            return '';
+        }
+
+        // Tworzenie całego HTML sekcji
+        var sectionHtml = `
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="${imgSrc}" alt="${region}" />
+            </div>
+            <div class="col-md-2">
+                <ul class="mk_extra_info">
+                    ${createListItemHtml('Region', region)}
+                    ${createListItemHtml('Wysokość upraw', wysokoscUpraw)}
+                    ${createListItemHtml('Metoda obróbki', metodaObróbki)}
+                    ${createListItemHtml('Stopień palenia', stopienPalenia)}
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <canvas id="radar-chart" width="360" height="400" style=""></canvas>
+            </div>
+            <div class="col-md-2">
+                <span class="d-flex justify-content-around mb-3 text-center text-uppercase w-100">Rekomendowany sposób parzenia</span>
+                <div class="align-items-center d-flex flex-md-column justify-content-around">
+                    ${sposobyPrzygotowaniaHtml}
+                </div>
+            </div>
+        </div>
+    `;
+
+
+
+
+        function getSposobyPrzygotowaniaHtml() {
+            var html = '';
+            $('#projector_dictionary .dictionary__param').filter(function () {
+                return $(this).find('.dictionary__name_txt').text().trim().toUpperCase() === 'SPOSÓB PRZYGOTOWANIA';
+            }).find('.dictionary__value_txt').each(function () {
+                var sposob = $(this).text().trim();
+                var sposobClass = sposob.toLowerCase().replace(/\s+/g, '');
+                // Dodawanie tooltipa z nazwą metody parzenia z zachowaniem spacji
+                html += `<div class="cafe-method img-method-${sposobClass}" data-toggle="tooltip" title="${sposob}"></div>`;
+            });
+            return html;
+        }
+
+        // Wstawienie gotowego HTML do sekcji 'product_extra_info'
+        $('#product_extra_info1').html(sectionHtml);
+
+
+
+        function getValueOrDefault(labelText, defaultValue) {
+            var item = $('#projector_dictionary .dictionary__param').filter(function () {
+                return $(this).find('.dictionary__name_txt').text().trim().toUpperCase() === labelText;
+            });
+            return item.length ? item.find('.dictionary__value_txt').text().trim() : defaultValue;
+        }
+
+        labels.forEach(function (label) {
+            var value = $('#projector_dictionary .dictionary__param').filter(function () {
+                return $(this).find('.dictionary__name_txt').text().trim() === label;
+            }).find('.dictionary__value_txt').text().trim();
+
+            // Konwersja wartości na liczbę (zakładając, że są to liczby)
+            values.push(parseFloat(value) || 0);
+        });
+
+
+        $('#chart').html('<canvas id="radar-chart" width="360" height="400" style=""></canvas>');
+
+
+        $.getScript("https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/Chart.min.js", function () {
+            var radarChart = new Chart($('#radar-chart'), {
+                type: 'radar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        backgroundColor: "rgba(178, 147, 112, 0.5)",
+                        borderColor: "rgba(178, 147, 112, 0.5)",
+                        pointBackgroundColor: "transparent",
+                        pointBorderColor: "transparent",
+                        fill: "origin",
+                        data: values
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    legend: { display: false },
+                    scale: {
+                        angleLines: { color: 'white' },
+                        ticks: { display: false },
+                        gridLines: { color: 'white' },
+                        pointLabels: { fontColor: 'black' },
+                        beginAtZero: false,
+                        min: 20,
+
+                    },
+                }
+            });
+        });
+    }
+
+}
+
+
+
