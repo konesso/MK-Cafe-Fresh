@@ -21049,20 +21049,17 @@ function search() {
 
     // Przełączanie widoczności zdjęć o wyksów smaku
     $('#switch').on('change', function () {
-
         if ($(this).is(':checked')) {
-            console.log("🚀 ~ file: search.js:6 ~ $(this).is(':checked'):", $(this).is(':checked'))
-            // Gdy przełącznik jest w pozycji "on"
-
             $('#produkty').css('color', 'black');
             $('#smaki').css('color', 'b29370');
             $('.graph-background').show();
             $('picture').hide();
             $('.label_icons').hide();
 
+            // Inicjalizacja wykresów radarowych
+            initializeRadarCharts();
+
         } else {
-            // Gdy przełącznik jest w pozycji "off"
-            console.log("🚀 ~ file: search.js:15 ~ $(this).is(':!checked'):", $(this).is(':checked'))
             $('#produkty').css('color', 'b29370');
             $('#smaki').css('color', 'black');
             $('.graph-background').hide();
@@ -21070,6 +21067,7 @@ function search() {
             $('.label_icons').show();
         }
     });
+
 
     if (window.innerWidth < 768) {
         $('.setMobileGrid[data-item="#Filters"]').html($('#Filters').html())
@@ -21138,80 +21136,75 @@ function search() {
 
 
 
+    function initializeRadarCharts() {
+        $('.product').each(function () {
+            var product = $(this);
 
+            // Sprawdzenie, czy istnieje atrybut 'data-product_id'
+            if (product.data('product_id') !== undefined) {
+                var productId = product.data('product_id');
 
+                var canvas = product.find('.radar-chart').get(0);
 
+                // Sprawdzenie, czy element canvas istnieje
+                if (canvas) {
+                    // Nadanie unikalnego ID dla elementu canvas
+                    var canvasId = 'radar-chart-' + productId;
+                    $(canvas).attr('id', canvasId);
 
-    // radar-chart - wykresy w miejscu zjęcia
-    $('.radar-chart').each(function (index, element) {
-        // Pobierz dane z atrybutu data-graph
-        var graphDataAttr = $(element).closest('.graph-background').attr('data-graph');
+                    var productTraits = product.find('.product__traits');
 
-        // Sprawdź czy atrybut data-graph istnieje
-        if (graphDataAttr) {
-            // Jeśli atrybut data-graph istnieje, przekształć dane w tablicę liczb
-            var graphData = graphDataAttr.split(', ').map(Number);
+                    var dataPoints = [];
+                    var labels = ['Intensywność smaku', 'Słodycz', 'Kwasowość', 'Gorycz', 'Nuty kwiatowe', 'Owoce cytrusowe', 'Owoce pestkowe', 'Owoce leśne', 'Nuty przypraw', 'Orzech', 'Czekolada', 'Karmel'];
 
-            var radarChart = new Chart(element, {
-                type: 'radar',
-                data: {
-                    labels: ['Czekolada', 'Słodycz', 'Karmel', 'Gorycz', 'Nuty kwiatowe',
-                        'Owoce', 'Orzech', 'Karmel', 'Gorycz', 'Nuty kwiatowe', 'Owoce',
-                        'Orzech'
-                    ],
-                    datasets: [{
-                        backgroundColor: "rgba(178, 147, 112, 0.5)",
-                        borderColor: "rgba(178, 147, 112, 0.5)",
-                        pointBackgroundColor: "transparent",
-                        pointBorderColor: "transparent",
-                        fill: "origin",
-
-
-                        data: graphData
-
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    legend: {
-                        display: false
-                    },
-                    animation: {
-                        duration: 3000,
-                    },
-                    scale: {
-                        angleLines: {
-                            color: 'white'
-                        },
-                        ticks: {
-                            beginAtZero: false,
-                            min: 20,
-                            display: false
-                        },
-                        gridLines: {
-                            color: 'white'
-                        },
-                        pointLabels: {
-                            fontColor: 'black'
+                    labels.forEach(function (label) {
+                        var traitElement = productTraits.find(`.trait:contains(${label}) .trait__value`);
+                        // Sprawdzenie, czy element trait istnieje
+                        if (traitElement.length) {
+                            var value = traitElement.text().trim();
+                            dataPoints.push(value ? parseFloat(value) : 0);
                         }
-                    },
-                    tooltips: {
-                        enabled: true,
+                    });
+
+                    var nutyKwiatoweExist = productTraits.find(`.trait:contains('Nuty kwiatowe')`).length > 0;
+
+                    if (nutyKwiatoweExist) {
+                        $('.graph-background').removeClass('d-none');
+
+                        var radarChart = new Chart($('#' + canvasId), {
+                            type: 'radar',
+                            data: {
+                                labels: labels,
+                                datasets: [{
+                                    backgroundColor: "rgba(178, 147, 112, 0.5)",
+                                    borderColor: "rgba(178, 147, 112, 0.5)",
+                                    pointBackgroundColor: "transparent",
+                                    pointBorderColor: "transparent",
+                                    fill: "origin",
+                                    data: dataPoints,
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                legend: { display: false },
+                                scale: {
+                                    angleLines: { color: 'white' },
+                                    ticks: { display: false },
+                                    gridLines: { color: 'white' },
+                                    pointLabels: { fontColor: 'black' },
+                                    beginAtZero: false,
+                                    min: 20,
+
+                                },
+                            }
+                        });
+                    } else {
+                        $('#' + canvasId).parent().html('<div style="text-align: center; height: 100%; width: 100%; display: flex; justify-content: center; align-items: center; "><span>Brak danych</span></div>');
                     }
-                },
-            }); // Koniec radarChart
-        } else {
-            // Jeśli atrybut data-graph nie istnieje, wyświetl komunikat "Brak Danych"
-            var ctx = element.getContext('2d');
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'middle';
-            ctx.font = '16px Futura';
-            ctx.fillText('Brak Danych', element.width / 2, element.height / 2);
-        }
-    });
-
-
-
+                }
+            }
+        });
+    }
 }
 //end search page script
 

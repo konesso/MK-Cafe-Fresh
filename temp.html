@@ -403,3 +403,62 @@ versions z search.xsl od linijki 6061
         </iaixsl:if>
     </ul>
 </iaixsl:if>
+
+
+
+traits
+<iaixsl:if test="not($param_search)">
+    <iaixsl:if test="traits/trait[not(@gfx)] and traits/trait[not(contains(@groupdescription, 'gs1:'))]">
+        <div class="product__traits d-none d-md-block mt-2">
+            <ul>
+                <iaixsl:for-each select="traits/trait[not(@gfx)]">
+                    <iaixsl:if
+                        test="not(@groupid = preceding-sibling::trait/@groupid) and not(contains(@groupdescription, 'gs1:'))">
+                        <li class="trait">
+                            <span class="trait__name"><iaixsl:value-of select="@groupdescription" />: </span>
+                            <div class="trait__values">
+                                <a class="trait__value">
+                                    <iaixsl:attribute name="href"><iaixsl:value-of select="@link" /></iaixsl:attribute>
+                                    <iaixsl:value-of select="@traitdescription" />
+                                </a>
+                                <iaixsl:if test="@groupid = following-sibling::trait/@groupid">
+                                    <iaixsl:variable name="temporaryGroup"><iaixsl:value-of select="@groupid" />
+                                    </iaixsl:variable><iaixsl:for-each
+                                        select="following-sibling::trait[(@groupid = $temporaryGroup)]">, <a
+                                            class="trait__value">
+                                            <iaixsl:attribute name="href"><iaixsl:value-of select="@link" />
+                                            </iaixsl:attribute><iaixsl:value-of select="@traitdescription" />
+                                        </a></iaixsl:for-each>
+                                </iaixsl:if>
+                            </div>
+                        </li>
+                    </iaixsl:if>
+                </iaixsl:for-each>
+            </ul>
+        </div>
+    </iaixsl:if>
+</iaixsl:if>
+
+<iaixsl:if test="not($param_search_gfx)">
+    <iaixsl:if test="traits/trait[@gfx2]">
+        <div class="product__traits --gfx my-2 mb-md-0">
+            <ul>
+                <iaixsl:for-each select="traits/trait[@gfx2]">
+                    <li class="trait">
+                        <a class="trait__gfx">
+                            <iaixsl:attribute name="title"><iaixsl:value-of select="@groupdescription" />
+                                <iaixsl:text> </iaixsl:text><iaixsl:value-of select="@traitdescription" />
+                            </iaixsl:attribute>
+                            <iaixsl:attribute name="href"><iaixsl:value-of select="@link" /></iaixsl:attribute>
+                            <img class="trait__img">
+                            <iaixsl:attribute name="src"><iaixsl:value-of select="@gfx2" /></iaixsl:attribute>
+                            <iaixsl:attribute name="alt"><iaixsl:value-of select="@traitdescription" />
+                            </iaixsl:attribute>
+                            </img>
+                        </a>
+                    </li>
+                </iaixsl:for-each>
+            </ul>
+        </div>
+    </iaixsl:if>
+</iaixsl:if>

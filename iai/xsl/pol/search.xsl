@@ -91,6 +91,7 @@
 			
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 			<link rel="shortcut icon" href="https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/favicon.ico" />
+			<script src="https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/Chart.min.js"></script>
 			<iaixsl:choose>
 				<iaixsl:when test="/shop/mask/@scheme_color">
 					<meta name="theme-color"><iaixsl:attribute name="content"><iaixsl:value-of select="/shop/mask/@scheme_color"/></iaixsl:attribute></meta>
@@ -3718,7 +3719,12 @@
 						</div>
 					</iaixsl:if>
 
-					
+					<div class="graph-background p-2 d-none">
+							<div class="graph-title">Najedź myszką by poznać włąściwości smaku</div>
+						<div>
+							<canvas class="radar-chart" width="100%" height="100%" style=""></canvas>
+						</div>
+						</div>
 					<a class="product__icon d-flex justify-content-center align-items-center">
 						<iaixsl:attribute name="data-product-id"><iaixsl:value-of select="@id"/></iaixsl:attribute>
 						<iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute>
@@ -4302,49 +4308,42 @@
 					
 
 					
-					<iaixsl:if test="not($param_search)">
-						<iaixsl:if test="traits/trait[not(@gfx)] and traits/trait[not(contains(@groupdescription, 'gs1:'))]">
-							<div class="product__traits d-none d-md-block mt-2">
-								<ul>
-									<iaixsl:for-each select="traits/trait[not(@gfx)]">
-										<iaixsl:if test="not(@groupid = preceding-sibling::trait/@groupid) and not(contains(@groupdescription, 'gs1:'))">
-											<li class="trait">
-												<span class="trait__name"><iaixsl:value-of select="@groupdescription"/>: </span>
-												<div class="trait__values">
-													<a class="trait__value"><iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute><iaixsl:value-of select="@traitdescription"/></a>
-													<iaixsl:if test="@groupid = following-sibling::trait/@groupid">
-														<iaixsl:variable name="temporaryGroup"><iaixsl:value-of select="@groupid"/></iaixsl:variable><iaixsl:for-each select="following-sibling::trait[(@groupid = $temporaryGroup)]">, <a class="trait__value"><iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute><iaixsl:value-of select="@traitdescription"/></a></iaixsl:for-each>
-													</iaixsl:if>
-												</div>
-											</li>
-										</iaixsl:if>
-									</iaixsl:for-each>
-								</ul>
-							</div>
-						</iaixsl:if>
+					<iaixsl:if test="true()">
+						<div class="product__traits d-none d-md-block mt-2">
+							<ul>
+								<iaixsl:for-each select="traits/trait[not(@gfx)]">
+									<iaixsl:if test="not(@groupid = preceding-sibling::trait/@groupid)">
+										<li class="trait">
+											<span class="trait__name"><iaixsl:value-of select="@groupdescription"/>: </span>
+											<div class="trait__values">
+												<a class="trait__value"><iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute><iaixsl:value-of select="@traitdescription"/></a>
+											</div>
+										</li>
+									</iaixsl:if>
+								</iaixsl:for-each>
+							</ul>
+						</div>
 					</iaixsl:if>
 
-					
-					<iaixsl:if test="not($param_search_gfx)">
-						<iaixsl:if test="traits/trait[@gfx2]">
-							<div class="product__traits --gfx my-2 mb-md-0">
-								<ul>
-									<iaixsl:for-each select="traits/trait[@gfx2]">
-										<li class="trait">
-											<a class="trait__gfx">
-												<iaixsl:attribute name="title"><iaixsl:value-of select="@groupdescription"/><iaixsl:text> </iaixsl:text><iaixsl:value-of select="@traitdescription"/></iaixsl:attribute>
-												<iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute>
-												<img class="trait__img">
-													<iaixsl:attribute name="src"><iaixsl:value-of select="@gfx2"/></iaixsl:attribute>
-													<iaixsl:attribute name="alt"><iaixsl:value-of select="@traitdescription"/></iaixsl:attribute>
-												</img>
-											</a>
-										</li>
-									</iaixsl:for-each>
-								</ul>
-							</div>
-						</iaixsl:if>
+					<iaixsl:if test="true()"> 
+						<div class="product__traits --gfx my-2 mb-md-0">
+							<ul>
+								<iaixsl:for-each select="traits/trait[@gfx2]">
+									<li class="trait">
+										<a class="trait__gfx">
+											<iaixsl:attribute name="title"><iaixsl:value-of select="@groupdescription"/><iaixsl:text> </iaixsl:text><iaixsl:value-of select="@traitdescription"/></iaixsl:attribute>
+											<iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute>
+											<img class="trait__img">
+												<iaixsl:attribute name="src"><iaixsl:value-of select="@gfx2"/></iaixsl:attribute>
+												<iaixsl:attribute name="alt"><iaixsl:value-of select="@traitdescription"/></iaixsl:attribute>
+											</img>
+										</a>
+									</li>
+								</iaixsl:for-each>
+							</ul>
+						</div>
 					</iaixsl:if>
+
 					<a class="position-absolute product__compare_item --add btn " rel="nofollow" title="Kliknij, aby dodać produkt do porównania" style="position: absolute; transform: translate(-50%, 50%); bottom: 0;">
 					<iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute>
 						<div class="d-inline-flex justify-content-center align-items-center"><span class="checkProduct">Sprawdź</span> <span class="icon--right-arrow ml-2"></span></div>

@@ -7021,35 +7021,35 @@
 										<iaixsl:attribute name="href"><iaixsl:value-of select="$var_link"/></iaixsl:attribute>
 										<iaixsl:attribute name="title"><iaixsl:value-of select="$var_name"/></iaixsl:attribute>
 
-                    <iaixsl:choose>
-                      <iaixsl:when test="$var_icon_second and not($var_icon_second = '/' or $var_icon_second = '') and $var_icon_small_second and not($var_icon_small_second = '/' or $var_icon_small_second = '')">
-                        <picture>
-                          <source media="(min-width: 421px)" type="image/webp">
-                            <iaixsl:attribute name="srcset"><iaixsl:value-of select="$var_icon"/></iaixsl:attribute>
-                          </source>
-                          <source media="(min-width: 421px)" type="image/jpeg">
-                            <iaixsl:attribute name="srcset"><iaixsl:value-of select="$var_icon_second"/></iaixsl:attribute>
-                          </source>
-                          <source media="(max-width: 420px)" type="image/webp">
-                            <iaixsl:attribute name="srcset"><iaixsl:value-of select="$var_icon_small"/></iaixsl:attribute>
-                          </source>
+									<iaixsl:choose>
+									<iaixsl:when test="$var_icon_second and not($var_icon_second = '/' or $var_icon_second = '') and $var_icon_small_second and not($var_icon_small_second = '/' or $var_icon_small_second = '')">
+										<picture>
+										<source media="(min-width: 421px)" type="image/webp">
+											<iaixsl:attribute name="srcset"><iaixsl:value-of select="$var_icon"/></iaixsl:attribute>
+										</source>
+										<source media="(min-width: 421px)" type="image/jpeg">
+											<iaixsl:attribute name="srcset"><iaixsl:value-of select="$var_icon_second"/></iaixsl:attribute>
+										</source>
+										<source media="(max-width: 420px)" type="image/webp">
+											<iaixsl:attribute name="srcset"><iaixsl:value-of select="$var_icon_small"/></iaixsl:attribute>
+										</source>
 
-                          <img src="/gfx/standards/loader.gif?r=1696937716" class="b-lazy">
-                            <iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_small_second"/></iaixsl:attribute>
-                            <iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_second"/></iaixsl:attribute>
-                            <iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="$var_name"/></iaixsl:attribute>
-                          </img>
+										<img src="/gfx/standards/loader.gif?r=1696937716" class="b-lazy">
+											<iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_small_second"/></iaixsl:attribute>
+											<iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_second"/></iaixsl:attribute>
+											<iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="$var_name"/></iaixsl:attribute>
+										</img>
 
-                        </picture>
-                      </iaixsl:when>
-                      <iaixsl:otherwise>
-                        <img src="/gfx/standards/loader.gif?r=1696937716" class="b-lazy">
-                          <iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_small"/></iaixsl:attribute>
-                          <iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon"/></iaixsl:attribute>
-                          <iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="$var_name"/></iaixsl:attribute>
-                        </img>
-                      </iaixsl:otherwise>
-                    </iaixsl:choose>
+										</picture>
+									</iaixsl:when>
+									<iaixsl:otherwise>
+										<img src="/gfx/standards/loader.gif?r=1696937716" class="b-lazy">
+										<iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_small"/></iaixsl:attribute>
+										<iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon"/></iaixsl:attribute>
+										<iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="$var_name"/></iaixsl:attribute>
+										</img>
+									</iaixsl:otherwise>
+									</iaixsl:choose>
 									</a>
 
 									
@@ -7624,10 +7624,10 @@
 										</div>
 									</iaixsl:if>
 									<a class="position-absolute product__compare_item --add btn " rel="nofollow" title="Kliknij, aby dodać produkt do porównania" style="position: absolute; transform: translate(-50%, 50%); bottom: 0;">
-					<iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute>
-						<div class="d-inline-flex justify-content-center align-items-center"><span class="checkProduct">Sprawdź</span> <span class="icon--right-arrow ml-2"></span></div>
-					</a>
-								</div>
+								<iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute>
+									<div class="d-inline-flex justify-content-center align-items-center"><span class="checkProduct">Sprawdź</span> <span class="icon--right-arrow ml-2"></span></div>
+								</a>
+							</div>
 							</iaixsl:for-each>
 						</div>
 					</iaixsl:when>
@@ -12228,6 +12228,7 @@
 
 	
 	<script src="/gfx/pol/envelope.js.gzip?r=1696937760"></script><script src="/gfx/pol/menu_suggested_shop_for_language.js.gzip?r=1696937760"></script><script src="/gfx/pol/menu_alert.js.gzip?r=1696937760"></script><script src="/gfx/pol/menu_compare.js.gzip?r=1696937760"></script><script src="/gfx/pol/menu_shoppinglist.js.gzip?r=1696937760"></script><script src="/gfx/pol/menu_additionalpayments.js.gzip?r=1696937760"></script><script src="/gfx/pol/menu_omnibus.js.gzip?r=1696937760"></script><script src="/gfx/pol/express_checkout.js.gzip?r=1696937760"></script><script src="/gfx/pol/projector_photos.js.gzip?r=1696937760"></script><script src="/gfx/pol/projector_productname.js.gzip?r=1696937760"></script><script src="/gfx/pol/projector_details.js.gzip?r=1696937760"></script><script src="/gfx/pol/projector_configurator.js.gzip?r=1696937760"></script><script src="/gfx/pol/projector_bundle_zone.js.gzip?r=1696937760"></script><script src="/gfx/pol/projector_components_hiding.js.gzip?r=1696937760"></script><script src="/gfx/pol/projector_projector_opinons_form.js.gzip?r=1696937760"></script><script src="/gfx/pol/projector_cms_sizes.js.gzip?r=1696937760"></script>
+	
 
 	
 	<iaixsl:value-of disable-output-escaping="yes" select="php:functionString('additionalContent', 'additional_body_scripts')"/>
