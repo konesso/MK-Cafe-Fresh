@@ -25,6 +25,11 @@
     }
 }
 
+.sl_choose.--active {
+    display: flex;
+    animation: none;
+}
+
 #product_extra_info1 {
     background: #ede5da;
 }
@@ -103,6 +108,31 @@
 .mkdesc {
     overflow-x: hidden;
 }
+.mkdesc .row {
+    justify-content: center;
+}
+
+#projector_longdescription > .mkdesc {
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 .longdescription {
     margin-top: 10px;
@@ -111,4 +141,8 @@
     p {
         margin-bottom: 10px;
     }
+}
+
+.modal__content .sl_choose {
+    display: block;
 }

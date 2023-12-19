@@ -90,8 +90,9 @@
 			</iaixsl:choose>
 			
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-			<link rel="shortcut icon" href="https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/favicon.ico" />
-			<script src="https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/Chart.min.js"></script>
+			<link rel="shortcut icon" href="/gfx/assets/favicon.ico" />
+			<script src="https://www.konesso.pl/data/designs/xsl/11_2/gfx/assets/Chart.min.js"></script>
+			
 			<iaixsl:choose>
 				<iaixsl:when test="/shop/mask/@scheme_color">
 					<meta name="theme-color"><iaixsl:attribute name="content"><iaixsl:value-of select="/shop/mask/@scheme_color"/></iaixsl:attribute></meta>
@@ -112,7 +113,7 @@
 				<iaixsl:when test="$asyncJS">
 					<iaixsl:choose>
 						<iaixsl:when test="/shop/@preview &gt; 0">
-							<link rel="preload stylesheet" as="style"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/style.css</iaixsl:attribute></link>
+							<link rel="preload stylesheet" as="style"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css</iaixsl:attribute></link>
 						</iaixsl:when>
 						<iaixsl:otherwise>
 							<link rel="preload stylesheet" as="style"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css.gzip?r=1696937761</iaixsl:attribute></link>
@@ -122,10 +123,10 @@
 				<iaixsl:otherwise>
 					<iaixsl:choose>
 						<iaixsl:when test="/shop/@preview &gt; 0">
-							<link rel="preload stylesheet" as="style"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/style.css</iaixsl:attribute></link>
+							<link rel="preload stylesheet" as="style"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css</iaixsl:attribute></link>
 						</iaixsl:when>
 						<iaixsl:otherwise>
-							<link rel="preload stylesheet" as="style"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css.gzip?r=1696937761</iaixsl:attribute></link>
+							<link rel="preload stylesheet" as="style"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css</iaixsl:attribute></link>
 						</iaixsl:otherwise>
 					</iaixsl:choose>
 				</iaixsl:otherwise>
@@ -135,7 +136,7 @@
 			<iaixsl:if test="not(/shop/page/@type = 'main') and not(/shop/page/@type = 'search') and not(/shop/page/@type = 'place-order') and not(/shop/page/@type = 'noproduct') and not($projector_script_bottom and /shop/page/@type = 'projector')">
 				<iaixsl:choose>
 					<iaixsl:when test="/shop/@preview &gt; 0">
-						<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/shop.js</iaixsl:attribute></script>
+						<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js</iaixsl:attribute></script>
 					</iaixsl:when>
 					<iaixsl:otherwise>
 						<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1696937761</iaixsl:attribute></script>
@@ -144,6 +145,7 @@
 				
 				
 			</iaixsl:if>
+			
 			
 			
 			<iaixsl:text disable-output-escaping="yes"></iaixsl:text>
@@ -483,8 +485,8 @@
 					<iaixsl:variable name="account_title"/>
 					<iaixsl:variable name="list_title"/>
 					<div id="menu_settings">
-						<a href="#" class="text-l">Porady i przepisy</a>
-						<a href="#" class="text-l">Blog</a>
+						<a href="https://mkcafe.iai-shop.com/Porady-i-przepisy-bloglist-pol-40.html" class="text-l">Porady i przepisy</a>
+						<a href="https://mkcafe.iai-shop.com/Blog-bloglist-pol-37.html" class="text-l">Blog</a>
 						<iaixsl:if test="(count(/shop/currency/option) &gt; 1) or (count(/shop/language/option) &gt; 1) or (count(/shop/countries/country) &gt; 1)">
 							<div class="open_trigger">
 								<span>
@@ -2835,23 +2837,27 @@
 				</iaixsl:if>
 
 				
-				<div class="f-group filters__buttons mt-3">
+				<div class="f-group filters__buttons mt-3 row">
 					
-					<button type="submit" class="btn --large --solid d-block">
-						<iaixsl:attribute name="title">Kliknij aby zastosować wybrane filtry</iaixsl:attribute>
-						Zastosuj wybrane filtry
-					</button>
+					
+						<button type="submit" class="btn --large --solid d-block">
+							<iaixsl:attribute name="title">Kliknij aby zastosować wybrane filtry</iaixsl:attribute>
+							Zastosuj wybrane filtry
+						</button>
+					
 
 					
-					<iaixsl:if test="(/shop/page/products/navigation/filtering/filter/item/@selected='selected') or count(/shop/page/products/navigation/filtering/filter/@selected)">
-						<a class="btn d-block" href="/settings.php?filter_remove=all">
-							<iaixsl:if test="/shop/page/products/navigation/search_link/@value">
-								<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/page/products/navigation/search_link/@value "/></iaixsl:attribute>
-							</iaixsl:if>
-							<iaixsl:attribute name="title">Kliknij aby wyczyścić listę aktywnych filtrów</iaixsl:attribute>
-							Usuń wszystkie filtry
-						</a>
-					</iaixsl:if>
+					
+						<iaixsl:if test="(/shop/page/products/navigation/filtering/filter/item/@selected='selected') or count(/shop/page/products/navigation/filtering/filter/@selected)">
+							<a class="btn d-block" href="/settings.php?filter_remove=all">
+								<iaixsl:if test="/shop/page/products/navigation/search_link/@value">
+									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/page/products/navigation/search_link/@value "/></iaixsl:attribute>
+								</iaixsl:if>
+								<iaixsl:attribute name="title">Kliknij aby wyczyścić listę aktywnych filtrów</iaixsl:attribute>
+								Usuń wszystkie filtry
+							</a>
+						</iaixsl:if>
+				
 				</div>
 			</form>
 		</section>
@@ -3677,7 +3683,7 @@
 	<iaixsl:variable name="var_gross_prices_search"><iaixsl:if test="/shop/page/@price_type = 'gross'"><iaixsl:value-of select="$priceTypeText"/></iaixsl:if></iaixsl:variable>
 	<iaixsl:variable name="var_b2b_search"/>
 	
-	<iaixsl:variable name="addcompare_txt"/>
+	<iaixsl:variable name="addcompare_txt"><i class="fa fa-plus"></i> porównaj</iaixsl:variable>
 
 	<iaixsl:if test="/shop/page/products/display_mode/@active = 'normal'">
 		<section id="search" class="search-product search products d-flex flex-wrap mb-2 mb-sm-3">
@@ -4274,37 +4280,6 @@
 					</iaixsl:choose>
 
 					
-					<div class="product__compare">
-						<iaixsl:if test="/shop/compare/@active = 'y' and $addcompare_txt">
-							<iaixsl:attribute name="class">product__compare --has-child</iaixsl:attribute>
-
-							<iaixsl:choose>
-								<iaixsl:when test="@id = /shop/compare/product/@id">
-									<a class="product__compare_item --remove btn" rel="nofollow">
-										<iaixsl:attribute name="href">
-										<iaixsl:choose>
-										<iaixsl:when test="/shop/action/settings/@url">
-										<iaixsl:value-of select="/shop/action/settings/@url"/>
-										</iaixsl:when>
-										<iaixsl:otherwise>settings.php</iaixsl:otherwise>
-										</iaixsl:choose>?comparers=remove&amp;product=<iaixsl:value-of select="@id"/>
-										</iaixsl:attribute>
-										<iaixsl:attribute name="title">Kliknij, aby usunąć produkt z porównywarki</iaixsl:attribute>
-										- Usuń z porównania
-									</a>
-								</iaixsl:when>
-								<iaixsl:otherwise>
-									<a class="product__compare_item --add btn" rel="nofollow">
-										<iaixsl:attribute name="href"><iaixsl:choose><iaixsl:when test="/shop/action/settings/@url"><iaixsl:value-of select="/shop/action/settings/@url"/></iaixsl:when><iaixsl:otherwise>settings.php</iaixsl:otherwise></iaixsl:choose>?comparers=add&amp;product=<iaixsl:value-of select="@id"/></iaixsl:attribute>
-										<iaixsl:attribute name="title">Kliknij, aby dodać produkt do porównania</iaixsl:attribute>
-										<iaixsl:value-of select="$addcompare_txt"/>
-									</a>
-								</iaixsl:otherwise>
-							</iaixsl:choose>
-						</iaixsl:if>
-					</div>
-
-					
 					
 
 					
@@ -4344,10 +4319,40 @@
 						</div>
 					</iaixsl:if>
 
-					<a class="position-absolute product__compare_item --add btn " rel="nofollow" title="Kliknij, aby dodać produkt do porównania" style="position: absolute; transform: translate(-50%, 50%); bottom: 0;">
-					<iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute>
-						<div class="d-inline-flex justify-content-center align-items-center"><span class="checkProduct">Sprawdź</span> <span class="icon--right-arrow ml-2"></span></div>
-					</a>
+					<div class="d-flex justify-content-around align-items-center checkBtns">
+						<iaixsl:if test="/shop/compare/@active = 'y' and $addcompare_txt">
+								
+
+								<iaixsl:choose>
+									<iaixsl:when test="@id = /shop/compare/product/@id">
+										<a class="product__compare_item --remove btn" rel="nofollow">
+											<iaixsl:attribute name="href">
+											<iaixsl:choose>
+											<iaixsl:when test="/shop/action/settings/@url">
+											<iaixsl:value-of select="/shop/action/settings/@url"/>
+											</iaixsl:when>
+											<iaixsl:otherwise>settings.php</iaixsl:otherwise>
+											</iaixsl:choose>?comparers=remove&amp;product=<iaixsl:value-of select="@id"/>
+											</iaixsl:attribute>
+											<iaixsl:attribute name="title">Kliknij, aby usunąć produkt z porównywarki</iaixsl:attribute>
+											<i class="fa fa-minus mr-2"></i> Usuń z porównania
+										</a>
+									</iaixsl:when>
+									<iaixsl:otherwise>
+										<a class="product__compare_item --add btn" rel="nofollow">
+											<iaixsl:attribute name="href"><iaixsl:choose><iaixsl:when test="/shop/action/settings/@url"><iaixsl:value-of select="/shop/action/settings/@url"/></iaixsl:when><iaixsl:otherwise>settings.php</iaixsl:otherwise></iaixsl:choose>?comparers=add&amp;product=<iaixsl:value-of select="@id"/></iaixsl:attribute>
+											<iaixsl:attribute name="title">Kliknij, aby dodać produkt do porównania</iaixsl:attribute>
+											<i class="fa fa-plus mr-2"></i> Porównaj
+										</a>
+									</iaixsl:otherwise>
+								</iaixsl:choose>
+							</iaixsl:if>
+							<a class=" product__check_item --add btn " rel="nofollow" title="Kliknij, aby zobaczyć produkt " >
+							<iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute>
+								<div class="d-inline-flex justify-content-center align-items-center"><span class="checkProduct">Sprawdź</span> <span class="fa fa-angle-right ml-2"></span></div>
+							</a>
+					</div>
+					
 				</div>
 			</iaixsl:for-each>
 		</section>
@@ -4481,7 +4486,109 @@
 								</iaixsl:if>
 						</div>
 				</iaixsl:if>
-				<!-- (search_hotspot_zone1, 60dd8e786dac63.37616518.2)-->
+			       <!-- (search_filters, 60dd8e79c0ea13.64200683.5)-->
+            <iaixsl:if test="(count(/shop/page/products/navigation/filtering/filter/@selected) &gt; 0) or count(/shop/page/products/navigation/filtering/filter/item/@selected) &gt; 0">
+                <iaixsl:variable name="show_remove_button">true</iaixsl:variable>
+                <div id="filter_list">
+                    <div class="filter_list_content">
+                        <iaixsl:if test="$show_remove_button">
+                            <a class="remove_all_list_filters btn --solid --secondary mr-2 mr-sm-3" href="/settings.php?filter_remove=all">
+                                <iaixsl:if test="/shop/page/products/navigation/search_link/@value">
+                                    <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/page/products/navigation/search_link/@value "/></iaixsl:attribute>
+                                </iaixsl:if>
+                                <iaixsl:attribute name="title">Usuń wszystkie filtry</iaixsl:attribute>
+                                Usuń filtry
+                            </a>
+                        </iaixsl:if>
+                        <iaixsl:for-each select="/shop/page/products/navigation/filtering/filter[(@type='list') or (@type='text')]">
+                            <iaixsl:if test="(@selected != '') or count(item/@selected) &gt; 0">
+                                <iaixsl:choose>
+                                    
+                                    <iaixsl:when test="(@id = 'filter_price') and (@selected) and not(@selected = '')">
+                                        <iaixsl:choose>
+                                            <iaixsl:when test="item[@selected = 'selected']">
+                                                <iaixsl:for-each select="item[@selected = 'selected']">
+                                                    <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                                                        <iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove"/></iaixsl:attribute>
+                                                        <span><iaixsl:value-of select="@name_formatted"/></span>
+                                                    </a>
+                                                </iaixsl:for-each>
+                                            </iaixsl:when>
+                                            <iaixsl:otherwise>
+                                                <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                                                    <iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove"/></iaixsl:attribute>
+                                                    <span>
+                                                        <iaixsl:if test="substring-before(@selected, '-') != ''">
+                                                            <iaixsl:value-of select="substring-before(@selected, '-')"/> <iaixsl:value-of select="/shop/currency/@name"/>
+                                                        </iaixsl:if>
+                                                         - 
+                                                        <iaixsl:if test="substring-after(@selected, '-') != ''">
+                                                            <iaixsl:value-of select="substring-after(@selected, '-')"/> <iaixsl:value-of select="/shop/currency/@name"/>
+                                                        </iaixsl:if>
+                                                    </span>
+                                                </a>		
+                                            </iaixsl:otherwise>
+                                        </iaixsl:choose>
+                                    </iaixsl:when>
+                                    
+                                    <iaixsl:when test="(@id = 'filter_date') and (@selected) and not(@selected = '')">
+                                        <iaixsl:choose>
+                                            <iaixsl:when test="item[@selected = 'selected']">
+                                                <iaixsl:for-each select="item[@selected = 'selected']">
+                                                    <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                                                        <iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove"/></iaixsl:attribute>
+                                                        <span>
+                                                            <iaixsl:choose>
+                                                                <iaixsl:when test="@desc = '1week'">Ostatni tydzień</iaixsl:when>
+                                                                <iaixsl:when test="@desc = '1month'">Ostatni miesiąc</iaixsl:when>
+                                                                <iaixsl:when test="@desc = '3months'">Ostatnie 3 miesiące</iaixsl:when>
+                                                                <iaixsl:when test="@desc = '6months'">Ostatnie pół roku</iaixsl:when>
+                                                                <iaixsl:when test="@desc = '1year'">Ostatni rok</iaixsl:when>
+                                                            </iaixsl:choose>
+                                                        </span>
+                                                    </a>
+                                                </iaixsl:for-each>
+                                            </iaixsl:when>
+                                            <iaixsl:otherwise>
+                                                <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                                                    <iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove"/></iaixsl:attribute>
+                                                    <span><iaixsl:value-of select="@selected"/></span>
+                                                </a>
+                                            </iaixsl:otherwise>
+                                        </iaixsl:choose>
+                                    </iaixsl:when>
+                                    <iaixsl:when test="(@id = 'filter_text') and (@selected) and not(@selected = '')">
+                                        <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                                            <iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove"/></iaixsl:attribute>
+                                            <span><iaixsl:value-of select="@selected"/></span>
+                                        </a>
+                                    </iaixsl:when>
+                                    <iaixsl:otherwise>
+                                        <iaixsl:for-each select="item[@selected = 'selected']">
+                                            <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                                                <iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove"/></iaixsl:attribute>
+                                                <span><iaixsl:value-of select="@name"/></span>
+                                            </a>
+                                        </iaixsl:for-each>
+                                    </iaixsl:otherwise>
+                                </iaixsl:choose>
+                            </iaixsl:if>
+                        </iaixsl:for-each>
+                        <iaixsl:for-each select="/shop/page/products/navigation/filtering/filter[@type='dual']/item[@selected = 'selected']">
+                            <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                                <iaixsl:attribute name="href"><iaixsl:value-of select="../@link_remove"/></iaixsl:attribute>
+                                <span><iaixsl:value-of select="../@name"/></span>
+                            </a>
+                        </iaixsl:for-each>
+                        <iaixsl:for-each select="/shop/page/products/navigation/filtering/filter[@selected != '' or count(item/@selected) &gt; 0]/group/item[@selected = 'selected']">
+                            <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                                <iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove"/></iaixsl:attribute>
+                                <span><iaixsl:value-of select="@name"/></span>
+                            </a>
+                        </iaixsl:for-each>
+                    </div>
+                </div>
+            </iaixsl:if>
 
         <iaixsl:if test="/shop/page/products/additional/hotspot/products_zone1/@iairs_ajax"> </iaixsl:if>
         <iaixsl:if test="/shop/page/products/additional/hotspot/products_zone1/@hotspot_ajax"> </iaixsl:if>
@@ -6131,7 +6238,7 @@
 	<iaixsl:if test="/shop/page/@type = 'main' or /shop/page/@type = 'search' or /shop/page/@type = 'place-order' or /shop/page/@type = 'noproduct' or ($projector_script_bottom and /shop/page/@type = 'projector')">
 		<iaixsl:choose>
 			<iaixsl:when test="/shop/@preview &gt; 0">
-				<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/shop.js</iaixsl:attribute></script>
+				<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js</iaixsl:attribute></script>
 			</iaixsl:when>
 			<iaixsl:otherwise>
 				<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1696937761</iaixsl:attribute></script>
@@ -6141,12 +6248,15 @@
 		
 		
 	</iaixsl:if>
-  
+  <!-- <script src="https://www.konesso.pl/data/designs/xsl/11_2/gfx/assets/search_filters.js"></script> -->
   
   
 
 	
-	<script src="/gfx/pol/envelope.js.gzip?r=1696937760"></script><script src="/gfx/pol/menu_suggested_shop_for_language.js.gzip?r=1696937760"></script><script src="/gfx/pol/menu_filter.js.gzip?r=1696937760"></script><script src="/gfx/pol/menu_compare.js.gzip?r=1696937760"></script><script src="/gfx/pol/menu_omnibus.js.gzip?r=1696937760"></script><script src="/gfx/pol/search_promo_products.js.gzip?r=1696937760"></script>
+	<script src="/gfx/pol/envelope.js.gzip?r=1696937760"></script><script src="/gfx/pol/menu_suggested_shop_for_language.js.gzip?r=1696937760"></script><script src="/gfx/pol/menu_compare.js.gzip?r=1696937760"></script><script src="/gfx/pol/menu_omnibus.js.gzip?r=1696937760"></script><script src="/gfx/pol/search_promo_products.js?r=1696937760"></script>
+	<!-- <script src="/gfx/pol/menu_filter.js.gzip?r=1696937760"></script> -->
+
+	
 
 	
 	<iaixsl:value-of disable-output-escaping="yes" select="php:functionString('additionalContent', 'additional_body_scripts')"/>

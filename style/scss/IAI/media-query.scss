@@ -3492,12 +3492,27 @@
         max-width: 50%;
         float: left;
     }
+    // .filters__form {
+    //     display: grid;
+    //     grid-template-columns: repeat(6, minmax(0, 1fr));
+    //     grid-gap: 1.5rem;
+    //     font-family: "Futura";
+    //     direction: rtl;
+    // }
     .filters__form {
         display: grid;
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, 1fr) auto; /* Tworzy 4 kolumny o równej szerokości */
         grid-gap: 1.5rem;
-        font-family: "Futura";
-        direction: rtl;
+        font-family: Futura;
+    }
+
+    .filters__block {
+        grid-column: span 1;
+    }
+
+    .filters__form .btn.--large.--solid {
+        grid-column: 5 / 6;
+        grid-row: inherit;
     }
 
     #filter-wrapper {
@@ -5226,7 +5241,7 @@
         // display: block;
     }
     .article__image_wrapper {
-        max-height: 175px;
+        // max-height: 175px;
         overflow: hidden;
         margin: 0 10px 5px 0;
 

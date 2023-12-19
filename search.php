@@ -4966,7 +4966,7 @@
                         ],
                         [
                         'name'=> 'Kawa ziarnista 7',
-                        'price'=> '29.99',
+                        'price'=> '29.99',  
                         'img'=>
                         'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Crema-1kg-10376_2.jpg',
                         ],

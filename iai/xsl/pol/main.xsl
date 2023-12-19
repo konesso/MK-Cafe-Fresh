@@ -288,8 +288,8 @@
 	<iaixsl:variable name="showcomparelink">1</iaixsl:variable>
 
 	<!-- (layout, 60dd8eb774ca31.02018519.14)-->
-	<div id="container" class="main_page container max-width-1200 largeLogo">
-		<iaixsl:attribute name="class"><iaixsl:value-of select="page/@type"/>_page <iaixsl:if test="/shop/page/login/@shop_registration = 'true'">registration_page </iaixsl:if>container max-width-1200</iaixsl:attribute>
+	<div id="container" class="main_page container  max-width-1200 ">
+		<iaixsl:attribute name="class"><iaixsl:value-of select="page/@type"/>_page largeLogo <iaixsl:if test="/shop/page/login/@shop_registration = 'true'">registration_page </iaixsl:if>container max-width-1200</iaixsl:attribute>
 
 		<iaixsl:if test="not(action/set_render/item) or (action/set_render/item/@name = 'head')">
 	<header>
@@ -486,8 +486,8 @@
 					<iaixsl:variable name="account_title"/>
 					<iaixsl:variable name="list_title"/>
 					<div id="menu_settings">
-						<a href="#" class="text-l">Porady i przepisy</a>
-						<a href="#" class="text-l">Blog</a>
+						<a href="https://mkcafe.iai-shop.com/Porady-i-przepisy-bloglist-pol-40.html" class="text-l">Porady i przepisy</a>
+						<a href="https://mkcafe.iai-shop.com/Blog-bloglist-pol-37.html" class="text-l">Blog</a>
 						<iaixsl:if test="(count(/shop/currency/option) &gt; 1) or (count(/shop/language/option) &gt; 1) or (count(/shop/countries/country) &gt; 1)">
 							<div class="open_trigger">
 								<span>
@@ -5219,12 +5219,15 @@
 					<iaixsl:for-each select="page/mainpage2/item">
 						<div class="col-lg-4 col-md-6 col-12 my-3">
 	
-							<a href="#" class="image-block text-left large">
+							<a href="" class="image-block text-left large">
 								
+								<iaixsl:if test="(link/@href) != ''">
+									<iaixsl:attribute name="href"><iaixsl:value-of select="link/@href"/></iaixsl:attribute>
+								</iaixsl:if>
 								<iaixsl:if test="image/@src and image/@src!=''">
 									<iaixsl:choose>
 										<iaixsl:when test="(link/@href) != ''">
-											<iaixsl:text disable-output-escaping="yes">&lt;a class=&quot;article__image_wrapper&quot; href=&quot;</iaixsl:text>
+											<iaixsl:text disable-output-escaping="yes">&lt;span class=&quot;article__image_wrapper&quot; href=&quot;</iaixsl:text>
 											<iaixsl:value-of select="link/@href"/><iaixsl:text disable-output-escaping="yes">&quot; </iaixsl:text>
 										</iaixsl:when>
 										<iaixsl:otherwise>
@@ -5243,7 +5246,7 @@
 		
 									<iaixsl:choose>
 										<iaixsl:when test="(link/@href) != ''">
-											<iaixsl:text disable-output-escaping="yes">&lt;/a&gt;</iaixsl:text>
+											<iaixsl:text disable-output-escaping="yes">&lt;/span&gt;</iaixsl:text>
 										</iaixsl:when>
 										<iaixsl:otherwise>
 											<iaixsl:text disable-output-escaping="yes">&lt;/span&gt;</iaixsl:text>
@@ -5252,19 +5255,14 @@
 								</iaixsl:if>
 		
 								<div class="overlay"></div>
-								<div class="article__date_name">
-									<iaixsl:if test="$main_blog_date">
-										<div class="article__date datasquare"><iaixsl:value-of disable-output-escaping="yes" select="date"/></div>
-									</iaixsl:if>
-		
-									<iaixsl:choose>
+								<iaixsl:choose>
 										<iaixsl:when test="(link/@href) != ''">
 											<h3 class="article__name_wrapper">
-												<a class="article__name">
+												<span class="article__name">
 													<iaixsl:attribute name="href"><iaixsl:value-of select="link/@href"/></iaixsl:attribute>
 													<iaixsl:attribute name="title"><iaixsl:value-of disable-output-escaping="yes" select="title"/></iaixsl:attribute>
 													<iaixsl:value-of disable-output-escaping="yes" select="title"/>
-												</a>
+												</span>
 											</h3>
 										</iaixsl:when>
 										<iaixsl:otherwise>
@@ -5275,6 +5273,12 @@
 											</iaixsl:if>
 										</iaixsl:otherwise>
 									</iaixsl:choose>
+								<div class="article__date_name">
+									<iaixsl:if test="$main_blog_date">
+										<div class="article__date datasquare"><iaixsl:value-of disable-output-escaping="yes" select="date"/></div>
+									</iaixsl:if>
+		
+									
 								</div>
 		
 								
@@ -5284,15 +5288,15 @@
 									</iaixsl:if>
 									<div class="d-flex flex-column justify-center align-start">
 										<div class="mb-4"><iaixsl:value-of disable-output-escaping="yes" select="description"/></div>
-										<div class="btn-like"><iaixsl:value-of select="$main_blog_see_more"/><i class="icon-angle-right ml-2"/></div>
+										
 									</div>
 									<iaixsl:if test="more/@href and $main_blog_see_more">
 										<div class="article__more">
-											<a class="article__more_link" style="z-index:1;">
+											<span class="article__more_link" style="z-index:1;">
 												<iaixsl:attribute name="href"><iaixsl:value-of select="more/@href"/></iaixsl:attribute>
 												<iaixsl:attribute name="title"><iaixsl:value-of disable-output-escaping="yes" select="title"/></iaixsl:attribute>
 												<span class="btn-like"><iaixsl:value-of select="$main_blog_see_more"/><i class="icon-angle-right ml-2"/></span>
-											</a>
+											</span>
 										</div>
 									</iaixsl:if>
 								</div>

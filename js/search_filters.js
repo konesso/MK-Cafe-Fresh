@@ -403,6 +403,21 @@ app_shop.fn.xpressCouriersInit = () => {
     ))
 }
     ,
+
+    app_shop.run((() => {
+        if (window.innerWidth < 976) return;
+
+        $t = $('#Filters').clone(true, true);
+        $('#Filters').remove()
+        $('#paging_setting_top').after($t)
+        filtersActionsCall()
+
+        app_shop.vars.filtersRef.init()
+
+        $(document).on('click', '.filters__toggler', (e) => $(e.currentTarget).toggleClass('--not-expanded'))
+
+
+    }), "all", "#Filters", !0),
     app_shop.run((() => {
         app_shop.fn.xpressCouriersInit()
     }

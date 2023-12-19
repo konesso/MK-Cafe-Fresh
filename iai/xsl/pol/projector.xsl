@@ -112,7 +112,7 @@
 				<iaixsl:when test="$asyncJS">
 					<iaixsl:choose>
 						<iaixsl:when test="/shop/@preview &gt; 0">
-							<link rel="preload stylesheet" as="style"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/style.css</iaixsl:attribute></link>
+							<link rel="preload stylesheet" as="style"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css</iaixsl:attribute></link>
 						</iaixsl:when>
 						<iaixsl:otherwise>
 							<link rel="preload stylesheet" as="style"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css.gzip?r=1696937761</iaixsl:attribute></link>
@@ -122,7 +122,7 @@
 				<iaixsl:otherwise>
 					<iaixsl:choose>
 						<iaixsl:when test="/shop/@preview &gt; 0">
-							<link rel="preload stylesheet" as="style"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/style.css</iaixsl:attribute></link>
+							<link rel="preload stylesheet" as="style"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css</iaixsl:attribute></link>
 						</iaixsl:when>
 						<iaixsl:otherwise>
 							<link rel="preload stylesheet" as="style"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css.gzip?r=1696937761</iaixsl:attribute></link>
@@ -135,7 +135,7 @@
 			<iaixsl:if test="not(/shop/page/@type = 'main') and not(/shop/page/@type = 'search') and not(/shop/page/@type = 'place-order') and not(/shop/page/@type = 'noproduct') and not($projector_script_bottom and /shop/page/@type = 'projector')">
 				<iaixsl:choose>
 					<iaixsl:when test="/shop/@preview &gt; 0">
-						<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/shop.js</iaixsl:attribute></script>
+						<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js</iaixsl:attribute></script>
 					</iaixsl:when>
 					<iaixsl:otherwise>
 						<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1696937761</iaixsl:attribute></script>
@@ -485,8 +485,8 @@
 					<iaixsl:variable name="account_title"/>
 					<iaixsl:variable name="list_title"/>
 					<div id="menu_settings">
-						<a href="#" class="text-l">Porady i przepisy</a>
-						<a href="#" class="text-l">Blog</a>
+						<a href="https://mkcafe.iai-shop.com/Porady-i-przepisy-bloglist-pol-40.html" class="text-l">Porady i przepisy</a>
+						<a href="https://mkcafe.iai-shop.com/Blog-bloglist-pol-37.html" class="text-l">Blog</a>
 						<iaixsl:if test="(count(/shop/currency/option) &gt; 1) or (count(/shop/language/option) &gt; 1) or (count(/shop/countries/country) &gt; 1)">
 							<div class="open_trigger">
 								<span>
@@ -2938,10 +2938,9 @@
 <!-- (projector_productname, 614c5d31745b05.37327639.4)-->
 	<section id="projector_productname" class="product_name">
 		<iaixsl:if test="(/shop/page/projector/product/@promotion or /shop/page/projector/product/@new or /shop/page/projector/product/@bestseller or /shop/page/projector/product/@discount or (/shop/page/projector/product/@distinguished and not(/shop/page/projector/product/@bestseller and /shop/page/projector/product/@discount)) or /shop/page/projector/product/subscriptions/subscription) or /shop/page/projector/comments/@avg &gt; 0 or (/shop/page/projector/product/firm/@icon and not(/shop/page/projector/product/firm/@icon = ''))">
-			<div class="product_name__block --info d-flex mb-2">
-				
-				<iaixsl:if test="/shop/page/projector/product/@promotion or /shop/page/projector/product/@new or /shop/page/projector/product/@bestseller or /shop/page/projector/product/@discount or (/shop/page/projector/product/@distinguished and not(/shop/page/projector/product/@bestseller and /shop/page/projector/product/@discount)) or /shop/page/projector/product/subscriptions/subscription">
-					<div class="product_name__sub --label mr-3">
+		<iaixsl:if test="/shop/page/projector/product/@promotion or /shop/page/projector/product/@new or /shop/page/projector/product/@bestseller or /shop/page/projector/product/@discount or (/shop/page/projector/product/@distinguished and not(/shop/page/projector/product/@bestseller and /shop/page/projector/product/@discount)) or /shop/page/projector/product/subscriptions/subscription">
+				<!-- labelki -->
+					<div class="product_name__sub --label mr-3 mb-2">
 						<strong class="label_icons">
     					<iaixsl:if test="/shop/page/projector/product/subscriptions/subscription">
     						<span class="label --subscription">
@@ -3001,7 +3000,9 @@
 						</strong>
 					</div>
 				</iaixsl:if>
-
+			<div class="product_name__block justify-content-between --info d-flex mb-2">
+				
+				
 				
 				<iaixsl:if test="/shop/page/projector/comments/@avg &gt; 0">
 					<div class="product_name__sub --notes d-flex">
@@ -3027,9 +3028,33 @@
 					</div>
 				</iaixsl:if>
 
-				
+				<iaixsl:variable name="addcompare_txt"><i class="fa fa-plus"></i> Dodaj do porównania</iaixsl:variable>
 
-			</div>
+
+				<iaixsl:if test="/shop/compare/@active = 'y' and $addcompare_txt">
+					<iaixsl:choose>
+						<iaixsl:when test="/shop/page/projector/product/@id = /shop/compare/product/@id">
+							<a class="product_name__action --compare --remove px-1 d-flex align-items-center">
+								<iaixsl:attribute name="href"><iaixsl:choose><iaixsl:when test="/shop/action/settings/@url"><iaixsl:value-of select="/shop/action/settings/@url"/></iaixsl:when><iaixsl:otherwise>settings.php</iaixsl:otherwise></iaixsl:choose>?comparers=remove&amp;product=<iaixsl:value-of select="/shop/page/projector/product/@id"/></iaixsl:attribute>
+								<iaixsl:attribute name="title">Kliknij, aby usunąć produkt z porównywarki</iaixsl:attribute>
+								<i class="fa fa-minus"></i> Usuń z porównania
+							</a>
+						</iaixsl:when>
+						<iaixsl:otherwise>
+							<a class="product_name__action --compare --add px-1 d-flex align-items-center">
+								<iaixsl:attribute name="href"><iaixsl:choose><iaixsl:when test="/shop/action/settings/@url"><iaixsl:value-of select="/shop/action/settings/@url"/></iaixsl:when><iaixsl:otherwise>settings.php</iaixsl:otherwise></iaixsl:choose>?comparers=add&amp;product=<iaixsl:value-of select="/shop/page/projector/product/@id"/></iaixsl:attribute>
+								<iaixsl:attribute name="title">Kliknij, aby dodać produkt do porównania</iaixsl:attribute>
+								<span><iaixsl:value-of select="$addcompare_txt"/></span>
+							</a>
+						</iaixsl:otherwise>
+					</iaixsl:choose>
+				</iaixsl:if>
+
+			<a class="product_name__action --shopping-list px-1 d-flex align-items-center" href="#addToShoppingList">
+					<iaixsl:attribute name="title">Kliknij, aby dodać produkt do listy zakupowej</iaixsl:attribute>
+					<span>Dodaj do listy zakupowej</span>
+				</a>
+			</div>	
 		</iaixsl:if>
 
 		
@@ -3046,6 +3071,7 @@
 				<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/projector/product/description/text()"/>
 			</div>
 		</iaixsl:if>
+		<div id="projector_producttraits2"></div>
 	</section>
 	
 
@@ -3297,9 +3323,7 @@
 
 		<div class="projector_details__wrapper">
 			<!-- walory smakowe -->
-			<section id="projector_producttraits" class="traits mt-5">
-									
-			</section>
+		
 			<div class="py-3"></div>
 			<iaixsl:if test="/shop/page/projector/subscriptions_rebates/rebate[@renewals_number_from != '1'] and /shop/page/projector/product/subscriptions/subscription">
 				<div class="projector_details__subscription_rebates projector_subscription_rebates">
@@ -4012,7 +4036,7 @@
 
 			
 			<iaixsl:if test="(/shop/page/projector/product/versions/@count &gt; 0) and not(count(/shop/page/projector/product/multiversions/multi_version) &gt; 1)">
-				<div id="versions" class="projector_details__versions projector_versions">
+				<div id="versions" class="projector_details__versions projector_versions d-none">
 					<iaixsl:if test="(not($selectForVersions = '') and /shop/page/projector/product/versions/@count &gt; $selectForVersions) or count(/shop/page/projector/product/versions/version[not(@gfx)]) &gt; 0">
 						<iaixsl:attribute name="data-select">true</iaixsl:attribute>
 					</iaixsl:if>
@@ -4215,7 +4239,7 @@
 			<div class="projector_details__buy projector_buy" id="projector_buy_section">
         <div class="projector_buy__wrapper">
           <iaixsl:if test="not((/shop/page/projector/product/@product_type = 'product_virtual') or (/shop/page/projector/product/@product_type = 'product_bundle' and not(count(/shop/page/projector/bundled/product[@product_type = 'product_virtual']) = 0)))">
-						<div class="projector_buy__number_wrapper">
+						<div class="projector_buy__number_wrapper" style="max-width:180px">
 							<select class="projector_buy__number f-select">
 								<iaixsl:if test="page/projector/product/exchange/@exchange_id">
 									<iaixsl:attribute name="disabled">disabled</iaixsl:attribute>
@@ -4425,22 +4449,19 @@
 						</iaixsl:when>
 					</iaixsl:choose>
 					<span id="projector_status_gfx_wrapper" class="projector_status__gfx_wrapper projector_info__icon">
-						<img id="projector_status_gfx" class="projector_status__gfx">
+						<i class="icon-check">
 							<iaixsl:choose>
-								<iaixsl:when test="/shop/page/projector/product/sizes/size[not(@amount_mw = 0)]/availability/@status_gfx">
-									<iaixsl:attribute name="src"><iaixsl:value-of select="/shop/page/projector/product/sizes/size[not(@amount_mw = 0)]/availability/@status_gfx"/></iaixsl:attribute>
-									<iaixsl:attribute name="alt"><iaixsl:value-of select="/shop/page/projector/product/sizes/size[not(@amount_mw = 0)]/availability/@status_description"/></iaixsl:attribute>
+								<iaixsl:when test="/shop/page/projector/product/sizes/size[not(@amount_mw = 0)]">
+									<iaixsl:attribute name="class">icon-check text-success</iaixsl:attribute>
 								</iaixsl:when>
-								<iaixsl:when test="/shop/page/projector/product/sizes/size[not(@amount = 0)]/availability/@status_gfx">
-									<iaixsl:attribute name="src"><iaixsl:value-of select="/shop/page/projector/product/sizes/size[not(@amount = 0)]/availability/@status_gfx"/></iaixsl:attribute>
-									<iaixsl:attribute name="alt"><iaixsl:value-of select="/shop/page/projector/product/sizes/size[not(@amount = 0)]/availability/@status_description"/></iaixsl:attribute>
+								<iaixsl:when test="/shop/page/projector/product/sizes/size[not(@amount = 0)]">
+									<iaixsl:attribute name="class">icon-check text-success</iaixsl:attribute>
 								</iaixsl:when>
 								<iaixsl:otherwise>
-									<iaixsl:attribute name="src"><iaixsl:value-of select="/shop/page/projector/product/sizes/size/availability/@status_gfx"/></iaixsl:attribute>
-									<iaixsl:attribute name="alt"><iaixsl:value-of select="/shop/page/projector/product/sizes/size/availability/@status_description"/></iaixsl:attribute>
+									<iaixsl:attribute name="class">icon-attention text-danger</iaixsl:attribute>
 								</iaixsl:otherwise>
 							</iaixsl:choose>
-						</img>
+						</i>
 					</span>
 
 					
@@ -11052,6 +11073,68 @@
             <iaixsl:if test="/shop/@menu_dynamically_added_content"> </iaixsl:if>
         <!-- (menu_compare, 6374c9a3a9b958.90333095.2)--><!-- (menu_shoppinglist, 6374c7c8e99458.25728203.3)--><!-- (menu_additionalpayments, 6362560c0363e8.68758784.2)--><!-- (menu_maps, 63764495e0cb08.91568922.2)--><!-- (menu_omnibus, 6458e0851cf079.14035433.4)-->
 
+!-- (menu_shoppinglist, 6374c7c8e99458.25728203.4)-->
+	<div class="sl_choose sl_dialog">
+		<div class="sl_choose__wrapper sl_dialog__wrapper">
+			<div class="sl_choose__item --top sl_dialog_close mb-2">
+				<strong class="sl_choose__label">Zapisz na liście zakupowej</strong>
+			</div>
+			<div class="sl_choose__item --lists" data-empty="false">
+				<iaixsl:if test="not(/shop/shopping_lists/list)">
+					<iaixsl:attribute name="data-empty">true</iaixsl:attribute>
+				</iaixsl:if>
+				<div class="sl_choose__list f-group --radio m-0 d-md-flex align-items-md-center justify-content-md-between" data-list_skeleton="true" data-list_id="true" data-shared="true">
+					<input type="radio" name="add" class="sl_choose__input f-control" id="slChooseRadioSelect" data-list_position="true"/>
+					<label for="slChooseRadioSelect" class="sl_choose__group_label f-label py-4" data-list_position="true">
+						<span class="sl_choose__sub d-flex align-items-center">
+							<span class="sl_choose__name" data-list_name="true"/>
+							<span class="sl_choose__count" data-list_count="true">0</span>
+						</span>
+					</label>
+					<button type="button" class="sl_choose__button --desktop btn --solid">Zapisz</button>
+				</div>
+				<iaixsl:for-each select="/shop/shopping_lists/list">
+					<div class="sl_choose__list f-group --radio m-0 d-md-flex align-items-md-center justify-content-md-between">
+						<iaixsl:attribute name="data-list_id"><iaixsl:value-of select="@id"/></iaixsl:attribute>
+						<iaixsl:if test="@shared = 'true'">
+							<iaixsl:attribute name="data-shared">true</iaixsl:attribute>
+						</iaixsl:if>
+						<iaixsl:if test="@id = /shop/page/list/@id">
+							<iaixsl:attribute name="data-current">true</iaixsl:attribute>
+						</iaixsl:if>
+						<input type="radio" name="add" class="sl_choose__input f-control">
+							<iaixsl:attribute name="id">slChooseRadioSelect<iaixsl:value-of select="position()"/></iaixsl:attribute>
+							<iaixsl:if test="position() = 1">
+								<iaixsl:attribute name="checked">checked</iaixsl:attribute>
+							</iaixsl:if>
+						</input>
+						<label class="sl_choose__group_label f-label py-4">
+							<iaixsl:attribute name="for">slChooseRadioSelect<iaixsl:value-of select="position()"/></iaixsl:attribute>
+							<span class="sl_choose__sub d-flex align-items-center">
+								<span class="sl_choose__name" data-list_name="true"><iaixsl:value-of disable-output-escaping="yes" select="@name"/></span>
+								<span class="sl_choose__count" data-list_count="true"><iaixsl:value-of select="@count"/></span>
+							</span>
+						</label>
+						<button type="button" class="sl_choose__button --desktop btn --solid">Zapisz</button>
+					</div>
+				</iaixsl:for-each>
+			</div>
+			<div class="sl_choose__item --create sl_create mt-4">
+				<a href="#new" class="sl_create__link  align-items-center">Stwórz nową listę zakupową</a>
+				<form class="sl_create__form align-items-center">
+					<div class="sl_create__group f-group --small mb-0">
+						<input type="text" class="sl_create__input f-control" required="required"/>
+						<label class="sl_create__label f-label">Nazwa nowej listy</label>
+					</div>
+					<button type="submit" class="sl_create__button btn --solid ml-2 ml-md-3">Utwórz listę</button>
+				</form>
+			</div>
+			<div class="sl_choose__item --mobile mt-4 d-flex justify-content-center d-md-none">
+				<button class="sl_choose__button --mobile btn --solid --large">Zapisz</button>
+			</div>
+		</div>
+	</div>
+
 <!-- (express_checkout, 646cd9487a5c03.20619453.13)-->
   <template id="expchck_header">
     <div class="expchck_header">
@@ -12212,7 +12295,7 @@
 	<iaixsl:if test="/shop/page/@type = 'main' or /shop/page/@type = 'search' or /shop/page/@type = 'place-order' or /shop/page/@type = 'noproduct' or ($projector_script_bottom and /shop/page/@type = 'projector')">
 		<iaixsl:choose>
 			<iaixsl:when test="/shop/@preview &gt; 0">
-				<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/shop.js</iaixsl:attribute></script>
+				<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js</iaixsl:attribute></script>
 			</iaixsl:when>
 			<iaixsl:otherwise>
 				<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1696937761</iaixsl:attribute></script>

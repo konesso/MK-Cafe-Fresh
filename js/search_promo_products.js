@@ -57,6 +57,9 @@ const infiniteScrollTxt = { loadMore: 'Wczytaj wiÄcej produktĂłw' };
             return !0;
         }),
         (this.onSubmitEvent = () => {
+            if (window.innerWidth > 976) {
+                return;
+            }
             document.querySelectorAll(this.onSubmitSelectors).forEach(t => {
                 t.onsubmit = function (o) {
                     o.preventDefault(), o.stopPropagation();

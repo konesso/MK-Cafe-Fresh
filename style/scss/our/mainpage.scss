@@ -227,5 +227,13 @@ $overlay-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-subnav {
-    transform: translateY(10px);
+    transform: translateY(1px);
+}
+
+#main_blog .article__name_wrapper {
+    z-index: 1;
+    padding: 1rem 2rem;
+    .article__name {
+        color: #fff;
+    }
 }
