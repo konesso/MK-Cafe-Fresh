@@ -5161,7 +5161,6 @@ div.loginedit_cms {
             content: "\F1A0";
             font-size: 2rem;
             color: #ff3939;
-            display: block;
             height: 2rem;
         }
     }
@@ -9504,14 +9503,10 @@ div.signin_inputs {
     .service_item[data-name="service_Google"] {
         &:before {
             font-family: FontAwesome;
-            color: #4285f4;
             content: "\F1A0";
             font-size: 2rem;
-            color: #4285f4;
-            content: "\F1A0";
-            display: block;
+            color: #ff3939;
             height: 2rem;
-            content: url("/gfx/standards/google.svg?r=1698404668");
         }
     }
     .service_item[data-name="service_Facebook"] {
