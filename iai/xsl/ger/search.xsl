@@ -3592,7 +3592,7 @@
 
                 <div class="compare__sub">
                     <iaixsl:for-each select="compare/product">
-                        <a class="compare__item btn --solid --icon-right icon-x">
+                        <a class="compare__item --solid --icon-right icon-x">
                             <iaixsl:attribute name="href"><iaixsl:value-of select="@removelink"/></iaixsl:attribute>
                             <iaixsl:attribute name="data-remove_link"><iaixsl:value-of select="@removelink"/></iaixsl:attribute>
                             <iaixsl:attribute name="data-link"><iaixsl:value-of select="@link"/></iaixsl:attribute>

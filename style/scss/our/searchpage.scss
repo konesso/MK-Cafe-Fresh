@@ -44,9 +44,13 @@ div.px-2.py-1.d-flex.flex-row.justify-content-center.align-items-center {
 
 .graph-background {
     background-color: #ede5da;
-    width: 360px;
-    height: 383px;
+    // width: 360px;
+    min-height: 300px;
     display: none;
+
+    @media screen and (min-width: 768px) {
+        min-height: 360px;
+    }
 }
 
 .sort-dropdown-trigger,
@@ -98,16 +102,10 @@ div.px-2.py-1.d-flex.flex-row.justify-content-center.align-items-center {
     }
 }
 
-.noContentInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
 .noContent {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
 }

@@ -21214,7 +21214,7 @@ app_shop.fn.xpressCouriersInit = () => {
     ,
 
     app_shop.run((() => {
-        console.log('aaa')
+
         if (window.innerWidth < 976) return;
 
         $t = $('#Filters').clone(true, true);
@@ -21342,6 +21342,36 @@ app_shop.run(
         '#search',
         !0,
     ),
+
+    app_shop.run(
+        function () {
+            if ($('.poradymk').length) {
+                $('.poradymk > .steps').prepend($('.blogTopWrapper').removeClass('full-width-row'));
+            }
+            if ($('.przepismk').length) {
+                $('.przepismk > .steps').prepend($('.blogTopWrapper').removeClass('full-width-row'));
+            }
+
+        },
+        'all',
+        '.poradymk, .przepismk',
+        true,
+    ),
+    app_shop.run(
+        function () {
+            $('.mobileCategories__item.--settings').remove()
+            $('#menu_settings .open_trigger').addClass('d-none')
+            if (window.innerWidth < 765) {
+                $('#menu_navbar').append($('#menu_settings > a').addClass('nav-link'))
+            }
+            // nav - link?
+        },
+        'all',
+        'body',
+        true,
+    ),
+
+
     app_shop.run(
         function () {
             app_shop.fn.categoryDivider('.search_description.--bottom .search_description__wrapper');
@@ -21637,13 +21667,13 @@ function search() {
                                     gridLines: { color: 'white' },
                                     pointLabels: { fontColor: 'black' },
                                     beginAtZero: false,
-                                    min: 20,
+                                    min: 10,
 
                                 },
                             }
                         });
                     } else {
-                        $('#' + canvasId).parent().html('<div class="noContent"><div class="noContentInfo">Brak danych</div></div>');
+                        $('#' + canvasId).parent().parent().html('<div class="noContent"><div class="noContentInfo">Brak danych</div></div>');
                     }
                 }
             }
@@ -21796,7 +21826,7 @@ function updateProductInfo() {
         var values = [];
 
         // Zmiana źródła obrazka w zależności od regionu
-        var imgSrc = region !== '' ? `https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/map-${region.toLowerCase()}.png` : 'https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/map-brazylia.jpg';
+        var imgSrc = region !== '' ? `${mainAssetsUrl}map-${region.toLowerCase()}.png` : '';
 
         // Tworzenie HTML dla sposobów przygotowania
         var sposobyPrzygotowaniaHtml = getSposobyPrzygotowaniaHtml();
@@ -21812,7 +21842,7 @@ function updateProductInfo() {
         var sectionHtml = `
         <div class="row align-items-center">
             <div class="col-md-4 text-center">
-                <img src="${imgSrc}" alt="${region}" />
+               ${imgSrc ? `<img src="${imgSrc}" alt="${region}" />` : ''}
             </div>
             <div class="col-md-2">
                 <ul class="mk_extra_info">
@@ -21875,7 +21905,7 @@ function updateProductInfo() {
         $('#chart').html('<canvas id="radar-chart" width="360" height="400" style=""></canvas>');
 
 
-        $.getScript("https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/Chart.min.js", function () {
+        $.getScript(mainAssetsUrl + "/Chart.min.js", function () {
             var radarChart = new Chart($('#radar-chart'), {
                 type: 'radar',
                 data: {
@@ -21909,4 +21939,37 @@ function updateProductInfo() {
 }
 
 
+app_shop.run(
+    function () {
+        $('*[class*="icon-"]').not('i').get().forEach((x) => {
+            let $t = $(x);
+            let cls = $t.attr('class').split(' ').find(v => v.indexOf('icon-') >= 0 && v.indexOf('--') < 0)
+            let check = $t.hasClass('--icon-right')
+            $t.removeClass(cls + ' --icon-right --icon-left');
+
+            let html = '<i class="' + cls + ' ' + (check ? ' ml-1' : ' ml-1') + '"></i>';
+            if (check) {
+                $t.append(html)
+            } else {
+                $t.prepend(html)
+            }
+        })
+    },
+    'all',
+    'body',
+    true,
+)
+app_shop.run(
+    function () {
+        const url = '/?set_render=content'
+        const $divId = $('#content')
+        $.get(url, function (data) {
+            $t = $(data).find('#main_blog')
+            $divId.append($t);
+        });
+    },
+    'all',
+    '.projector_page',
+    true,
+)
 

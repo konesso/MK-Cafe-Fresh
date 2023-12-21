@@ -90,7 +90,7 @@
 			</iaixsl:choose>
 			
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-			<link rel="shortcut icon" href="https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/favicon.ico" />
+			<link rel="shortcut icon" href="/gfx/pol/favicon.ico" />
 	
 			<iaixsl:choose>
 				<iaixsl:when test="/shop/mask/@scheme_color">
@@ -132,18 +132,28 @@
 			</iaixsl:choose>
 			<script>var app_shop={urls:{prefix:&apos;data=&quot;/gfx/&apos;.replace(&apos;data=&quot;&apos;, &apos;&apos;)+&apos;<iaixsl:value-of select="language/@id"/>/&apos;,graphql:&apos;/graphql/v1/&apos;},vars:{priceType:&apos;<iaixsl:choose><iaixsl:when test="/shop/page/@price_type = 'hidden'">gross</iaixsl:when><iaixsl:otherwise><iaixsl:value-of select="/shop/page/@price_type"/></iaixsl:otherwise></iaixsl:choose>&apos;,priceTypeVat:<iaixsl:choose><iaixsl:when test="not($priceTypeVat = '')">true</iaixsl:when><iaixsl:otherwise>false</iaixsl:otherwise></iaixsl:choose>,productDeliveryTimeAndAvailabilityWithBasket:false,geoipCountryCode:&apos;<iaixsl:value-of select="/shop/@geoip_country_code"/>&apos;,currency:{id:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@id"/>&apos;,symbol:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@symbol"/>&apos;,country:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@country"/>&apos;,format:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_format"/>&apos;,beforeValue:<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_before_value"/>,space:<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_space"/>,decimalSeparator:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_decimal_separator"/>&apos;,groupingSeparator:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_grouping_separator"/>&apos;},language:{id:&apos;<iaixsl:value-of select="/shop/language/option[@selected='true']/@id"/>&apos;,symbol:&apos;<iaixsl:value-of select="/shop/language/option[@selected='true']/@name"/>&apos;,name:&apos;<iaixsl:value-of select="/shop/language/@name"/>&apos;},},txt:{priceTypeText:&apos;<iaixsl:value-of select="$priceTypeText"/>&apos;,},fn:{},fnrun:{},files:[],graphql:{}};const getCookieByName=(name)=&gt;{const value=`; ${document.cookie}`;const parts = value.split(`; ${name}=`);if(parts.length === 2) return parts.pop().split(&apos;;&apos;).shift();return false;};if(getCookieByName(&apos;freeeshipping_clicked&apos;)){document.documentElement.classList.remove(&apos;--freeShipping&apos;);}if(getCookieByName(&apos;rabateCode_clicked&apos;)){document.documentElement.classList.remove(&apos;--rabateCode&apos;);}function hideClosedBars(){const closedBarsArray=JSON.parse(localStorage.getItem(&apos;closedBars&apos;))||[];if(closedBarsArray.length){const styleElement=document.createElement(&apos;style&apos;);styleElement.textContent=`${closedBarsArray.map((el)=&gt;`#${el}`).join(&apos;,&apos;)}{display:none !important;}`;document.head.appendChild(styleElement);}}hideClosedBars();</script>
 			<iaixsl:variable name="projector_script_bottom">true</iaixsl:variable>
-			<iaixsl:if test="not(/shop/page/@type = 'main') and not(/shop/page/@type = 'search') and not(/shop/page/@type = 'place-order') and not(/shop/page/@type = 'noproduct') and not($projector_script_bottom and /shop/page/@type = 'projector')">
-				<iaixsl:choose>
-					<iaixsl:when test="/shop/@preview &gt; 0">
-						<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js</iaixsl:attribute></script>
-					</iaixsl:when>
-					<iaixsl:otherwise>
-						<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1696937761</iaixsl:attribute></script>
-					</iaixsl:otherwise>
-				</iaixsl:choose>
-				
-				
-			</iaixsl:if>
+			<iaixsl:if test="/shop/page/@type = 'main' or /shop/page/@type = 'search' or /shop/page/@type = 'place-order' or /shop/page/@type = 'noproduct' or ($projector_script_bottom and /shop/page/@type = 'projector')">
+		<iaixsl:choose>
+			<iaixsl:when test="/shop/@preview &gt; 0">
+				<script id="scriptmain"><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/shop.js</iaixsl:attribute></script>
+			</iaixsl:when>
+			<iaixsl:otherwise>
+				<script id="scriptmain"><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1696937761</iaixsl:attribute></script>
+			</iaixsl:otherwise>
+		</iaixsl:choose>
+
+		
+		
+	</iaixsl:if>
+
+	
+			<script>
+		 let a = document.querySelector('#scriptmain').src.split('/');
+		 a.splice(-1)
+		 const mainGfxUrl = a.join('/') + '/gfx/'
+		 a.splice(-1)
+		 const mainAssetsUrl = a.join('/') + '/assets/'
+			</script>
 			
 			
 			<iaixsl:text disable-output-escaping="yes"></iaixsl:text>
@@ -485,8 +495,8 @@
 					<iaixsl:variable name="account_title"/>
 					<iaixsl:variable name="list_title"/>
 					<div id="menu_settings">
-						<a href="https://mkcafe.iai-shop.com/Porady-i-przepisy-bloglist-pol-40.html" class="text-l">Porady i przepisy</a>
-						<a href="https://mkcafe.iai-shop.com/Blog-bloglist-pol-37.html" class="text-l">Blog</a>
+						<a href="/Porady-i-przepisy-bloglist-pol-40.html" class="text-l">Porady i przepisy</a>
+						<a href="/Blog-bloglist-pol-37.html" class="text-l">Blog</a>
 						<iaixsl:if test="(count(/shop/currency/option) &gt; 1) or (count(/shop/language/option) &gt; 1) or (count(/shop/countries/country) &gt; 1)">
 							<div class="open_trigger">
 								<span>
@@ -2546,7 +2556,7 @@
 
                 <div class="compare__sub">
                     <iaixsl:for-each select="compare/product">
-                        <a class="compare__item btn --solid --icon-right icon-x">
+                        <a class="compare__item --solid --icon-right icon-x">
                             <iaixsl:attribute name="href"><iaixsl:value-of select="@removelink"/></iaixsl:attribute>
                             <iaixsl:attribute name="data-remove_link"><iaixsl:value-of select="@removelink"/></iaixsl:attribute>
                             <iaixsl:attribute name="data-link"><iaixsl:value-of select="@link"/></iaixsl:attribute>
@@ -3000,7 +3010,7 @@
 						</strong>
 					</div>
 				</iaixsl:if>
-			<div class="product_name__block justify-content-between --info d-flex mb-2">
+			<div class="product_name__block topoceny justify-content-between flex-column flex-md-row --info d-flex mb-2">
 				
 				
 				
@@ -3028,7 +3038,7 @@
 					</div>
 				</iaixsl:if>
 
-				<iaixsl:variable name="addcompare_txt"><i class="fa fa-plus"></i> Dodaj do porównania</iaixsl:variable>
+				<iaixsl:variable name="addcompare_txt"> Dodaj do porównania</iaixsl:variable>
 
 
 				<iaixsl:if test="/shop/compare/@active = 'y' and $addcompare_txt">
@@ -3044,7 +3054,7 @@
 							<a class="product_name__action --compare --add px-1 d-flex align-items-center">
 								<iaixsl:attribute name="href"><iaixsl:choose><iaixsl:when test="/shop/action/settings/@url"><iaixsl:value-of select="/shop/action/settings/@url"/></iaixsl:when><iaixsl:otherwise>settings.php</iaixsl:otherwise></iaixsl:choose>?comparers=add&amp;product=<iaixsl:value-of select="/shop/page/projector/product/@id"/></iaixsl:attribute>
 								<iaixsl:attribute name="title">Kliknij, aby dodać produkt do porównania</iaixsl:attribute>
-								<span><iaixsl:value-of select="$addcompare_txt"/></span>
+								<span><i class="fa fa-plus"></i><iaixsl:value-of select="$addcompare_txt"/></span>
 							</a>
 						</iaixsl:otherwise>
 					</iaixsl:choose>
@@ -3060,7 +3070,7 @@
 		
 		<div class="product_name__block --name mb-2">
 			
-			<h1 class="product_name__name m-0">
+			<h1 class="product_name__name my-3">
 				<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/projector/product/name"/>
 			</h1>
 		</div>
@@ -7026,7 +7036,7 @@
 								<iaixsl:variable name="var_icon_small_second"><iaixsl:choose><iaixsl:when test="product"><iaixsl:value-of select="product/icon_small_second"/></iaixsl:when><iaixsl:otherwise><iaixsl:value-of select="icon_small_second"/></iaixsl:otherwise></iaixsl:choose></iaixsl:variable>
 								<iaixsl:variable name="var_b2b"/>
 
-								<div class="product position-relative col-12 col-sm-6 col-lg-4 pt-4 my-5 pb-md-5">
+								<div class="product position-relative col-12 col-sm-6 col-lg-4 pt-4  my-md-5 pb-md-5">
 
 									
 									<iaixsl:if test="$var_yousave and not($var_yousave = '') and price/@yousave_formatted != ''">
@@ -12295,16 +12305,26 @@
 	<iaixsl:if test="/shop/page/@type = 'main' or /shop/page/@type = 'search' or /shop/page/@type = 'place-order' or /shop/page/@type = 'noproduct' or ($projector_script_bottom and /shop/page/@type = 'projector')">
 		<iaixsl:choose>
 			<iaixsl:when test="/shop/@preview &gt; 0">
-				<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js</iaixsl:attribute></script>
+				<script id="scriptmain"><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/shop.js</iaixsl:attribute></script>
 			</iaixsl:when>
 			<iaixsl:otherwise>
-				<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1696937761</iaixsl:attribute></script>
+				<script id="scriptmain"><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1696937761</iaixsl:attribute></script>
 			</iaixsl:otherwise>
 		</iaixsl:choose>
 
 		
 		
 	</iaixsl:if>
+
+	
+			<script>
+		 let a = document.querySelector('#scriptmain').src.split('/');
+		 a.splice(-1)
+		 const mainGfxUrl = a.join('/') + '/gfx/'
+		 a.splice(-1)
+		 const mainAssetsUrl = a.join('/') + '/assets/'
+			</script>
+  
   
   
   

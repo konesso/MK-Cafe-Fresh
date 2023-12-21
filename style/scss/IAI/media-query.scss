@@ -1044,13 +1044,13 @@
             margin-left: 2.5rem;
         }
     }
-    .article__item {
-        &:nth-last-child(2) {
-            &:not(:nth-child(even)) {
-                margin-bottom: 0;
-            }
-        }
-    }
+    // .article__item {
+    //     &:nth-last-child(2) {
+    //         &:not(:nth-child(even)) {
+    //             margin-bottom: 0;
+    //         }
+    //     }
+    // }
     .f-dropdown.--small-md {
         .f-control {
             &:after {
@@ -1174,6 +1174,7 @@
         }
         .breadcrumbs {
             display: block;
+            width: 100%;
         }
         .navbar-collapse {
             display: block;
@@ -1775,7 +1776,7 @@
     }
     .compare {
         .compare__item {
-            margin-right: 1.5rem;
+            margin: 1.5rem;
         }
     }
     .sl_choose.--active {
@@ -2411,7 +2412,7 @@
     }
     #blog-item {
         img.blog_image {
-            margin: 0 15px 10px 0;
+            // margin: 0 15px 10px 0;
         }
     }
     div.n68137_files_description {
@@ -5240,11 +5241,13 @@
     .article__item {
         // display: block;
     }
+    .blog-list_page {
+        .article__image_wrapper {
+            position: relative;
+        }
+    }
     .article__image_wrapper {
-        // max-height: 175px;
         overflow: hidden;
-        margin: 0 10px 5px 0;
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -5650,9 +5653,8 @@
         .compare__item {
             padding: 5px;
             background: #fff;
-            border: 1px solid #c4c7c8;
-            width: 35px;
-            height: 35px;
+            width: 60px;
+            height: 40px;
             min-width: 35px;
             display: flex;
             align-items: center;
@@ -5661,7 +5663,6 @@
                 display: none;
             }
             &:hover {
-                border: 1px solid #333;
                 background: #fff;
             }
             img {
@@ -5673,7 +5674,7 @@
         order: 0;
         scrollbar-color: #b29370 transparent;
         scrollbar-width: thin;
-        overflow: auto;
+        // overflow: auto;
         display: flex;
         margin-right: 1.5rem;
         border-radius: 0;
@@ -9423,7 +9424,7 @@
             width: calc(25% - 2rem);
         }
         .navbar-subnav.--cols2 {
-            width: calc(40% - 2rem);
+            // width: calc(40% - 2rem);
         }
         .navbar-subnav.--cols3 {
             width: calc(60% - 2rem);

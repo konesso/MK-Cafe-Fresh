@@ -1,5 +1,7 @@
 .aroma-links {
     font-weight: bold;
+    max-width: 60%;
+    text-align: right;
 }
 
 .stars-coffee {
@@ -14,7 +16,7 @@
             width: 1.75rem;
             height: 1.75rem;
             background-position: -250px -100px;
-            background-image: url(https://www.konesso.pl/data/designs/xsl/11_1/xsl/img/icons.png?v=1701432610277);
+            background-image: url(../assets/icons.png);
         }
         &.half:before {
             background-position: -450px -100px;
@@ -67,7 +69,7 @@
         content: " ";
         width: 5rem;
         height: 4.9rem;
-        background-image: url(https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/icons.png);
+        background-image: url(../assets/icons.png);
     }
     &.img-method-frenchpress:before {
         background-position: -240px -125px;
@@ -145,4 +147,12 @@
 
 .modal__content .sl_choose {
     display: block;
+}
+
+@media screen and (max-width: 760px) {
+    .topoceny {
+        > * {
+            margin-bottom: 15px;
+        }
+    }
 }

@@ -36,7 +36,7 @@
     width: 4.4rem;
     height: 3.6rem;
     background-position: -250px -50px;
-    background-image: url(https://www.konesso.pl/data/designs/xsl/11_1/xsl/img/icons.png?v=1701432610277);
+    background-image: url(../assets/icons.png);
 }
 .icon--product-trust-truck:before {
     display: block;
@@ -44,14 +44,14 @@
     width: 7.2rem;
     height: 6rem;
     background-position: -300px -50px;
-    background-image: url(https://www.konesso.pl/data/designs/xsl/11_1/xsl/img/icons.png?v=1701432610277);
+    background-image: url(../assets/icons.png);
 }
 .icon--48-hours:before {
     display: block;
     content: " ";
     height: 48px;
     background-position: -373px -50px;
-    background-image: url(https://www.konesso.pl/data/designs/xsl/11_1/xsl/img/icons.png?v=1701432610277);
+    background-image: url(../assets/icons.png);
     width: 66px;
 }
 .icon--product-trust-globe:before {
@@ -60,7 +60,7 @@
     width: 4.8rem;
     height: 4.8rem;
     background-position: -450px -50px;
-    background-image: url(https://www.konesso.pl/data/designs/xsl/11_1/xsl/img/icons.png?v=1701432610277);
+    background-image: url(../assets/icons.png);
 }
 
 $overlay-color: rgba(0, 0, 0, 0.5);
@@ -235,5 +235,27 @@ $overlay-color: rgba(0, 0, 0, 0.5);
     padding: 1rem 2rem;
     .article__name {
         color: #fff;
+    }
+}
+
+#menu_settings {
+    form {
+        display: none;
+    }
+}
+
+.hotspot {
+    .checkBtns {
+        display: none !important;
+    }
+}
+@media all and (min-width: 976px) {
+    .hotspot {
+        a.product__icon img {
+            min-height: 280px;
+        }
+        .checkBtns {
+            display: flex !important;
+        }
     }
 }

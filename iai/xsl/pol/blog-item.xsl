@@ -90,7 +90,7 @@
 			</iaixsl:choose>
 			
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-			<link rel="shortcut icon" href="https://www.konesso.pl/data/designs/xsl/11_2/gfx/assets/favicon.ico" />
+			<link rel="shortcut icon" href="/gfx/pol/favicon.ico" />
 			<iaixsl:choose>
 				<iaixsl:when test="/shop/mask/@scheme_color">
 					<meta name="theme-color"><iaixsl:attribute name="content"><iaixsl:value-of select="/shop/mask/@scheme_color"/></iaixsl:attribute></meta>
@@ -484,8 +484,8 @@
 					<iaixsl:variable name="account_title"/>
 					<iaixsl:variable name="list_title"/>
 					<div id="menu_settings">
-						<a href="https://mkcafe.iai-shop.com/Porady-i-przepisy-bloglist-pol-40.html" class="text-l">Porady i przepisy</a>
-						<a href="https://mkcafe.iai-shop.com/Blog-bloglist-pol-37.html" class="text-l">Blog</a>
+						<a href="/Porady-i-przepisy-bloglist-pol-40.html" class="text-l">Porady i przepisy</a>
+						<a href="/Blog-bloglist-pol-37.html" class="text-l">Blog</a>
 						<iaixsl:if test="(count(/shop/currency/option) &gt; 1) or (count(/shop/language/option) &gt; 1) or (count(/shop/countries/country) &gt; 1)">
 							<div class="open_trigger">
 								<span>
@@ -2268,10 +2268,10 @@
 							<iaixsl:attribute name="class">col-12</iaixsl:attribute>
 						</iaixsl:when>
 						<iaixsl:when test="page/@type = 'blog-list'">
-							<iaixsl:attribute name="class">col-xl-10 col-md-9 col-12</iaixsl:attribute>
+							<iaixsl:attribute name="class">col-12</iaixsl:attribute>
 						</iaixsl:when>
 						<iaixsl:when test="page/@type = 'blog-item'">
-							<iaixsl:attribute name="class">col-xl-10 col-md-9 col-12</iaixsl:attribute>
+							<iaixsl:attribute name="class">col-12</iaixsl:attribute>
 						</iaixsl:when>
 						<iaixsl:otherwise>
 							<iaixsl:attribute name="class">col-12</iaixsl:attribute>
@@ -2656,21 +2656,34 @@
         <!-- (blog_item_content, 60dd8e7b495619.39387378.3)-->
             <iaixsl:if test="/shop/page/blogitem/long_description">
                 <div id="blog-item">
-                    <h1 class="big_label"><iaixsl:value-of disable-output-escaping="yes" select="/shop/page/blogitem/title/text()"/></h1>
-                 
                     
-                    <iaixsl:if test="/shop/page/blogitem/date/text() != ''">
-                        <div class="blog_date">
-                            <iaixsl:value-of select="/shop/page/blogitem/date/text()"/>
-                        </div>
-                    </iaixsl:if>
                     <div class="blog-item_sub cm">
-                        <iaixsl:if test="/shop/page/blogitem/image/@src != ''">
-                            <img class="blog_image">
-                                <iaixsl:attribute name="src"><iaixsl:value-of select="/shop/page/blogitem/image/@src"/></iaixsl:attribute>
-                                <iaixsl:attribute name="alt"><iaixsl:value-of select="/shop/page/blogitem/title/text()"/></iaixsl:attribute>
-                            </img>
-                        </iaixsl:if>
+                        <iaixsl:choose>
+                        	<iaixsl:when test="/shop/page/blogitem/image/@src != ''">
+								<div class="blogTopWrapper full-width-row">
+									<img class="blog_image">
+										<iaixsl:attribute name="src"><iaixsl:value-of select="/shop/page/blogitem/image/@src"/></iaixsl:attribute>
+										<iaixsl:attribute name="alt"><iaixsl:value-of select="/shop/page/blogitem/title/text()"/></iaixsl:attribute>
+									</img>
+									<iaixsl:if test="/shop/page/blogitem/date/text() != ''">
+										<div class="blog_date">
+											<iaixsl:value-of select="/shop/page/blogitem/date/text()"/>
+										</div>
+									</iaixsl:if>
+									<h1 class="big_label"><span><iaixsl:value-of disable-output-escaping="yes" select="/shop/page/blogitem/title/text()"/></span></h1>
+								</div>
+	                        </iaixsl:when>
+							<iaixsl:otherwise>
+								<div>
+									<iaixsl:if test="/shop/page/blogitem/date/text() != ''">
+										<div class="blog_date">
+											<iaixsl:value-of select="/shop/page/blogitem/date/text()"/>
+										</div>
+									</iaixsl:if>
+									<h1 class="big_label"><iaixsl:value-of disable-output-escaping="yes" select="/shop/page/blogitem/title/text()"/></h1>
+								</div>
+							</iaixsl:otherwise>
+                        </iaixsl:choose>
                         
                         <iaixsl:value-of disable-output-escaping="yes" select="/shop/page/blogitem/long_description/text()"/>
                     </div>

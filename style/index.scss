@@ -56,3 +56,7 @@
 @import "./scss/our/searchpage.scss";
 @import "./scss/our/mainpage.scss";
 @import "./scss/our/blog-list.scss";
+
+.setMobileGrid #menu_settings .open_trigger {
+    display: none;
+}

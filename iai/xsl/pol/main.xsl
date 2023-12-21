@@ -89,9 +89,8 @@
 				</iaixsl:otherwise>
 			</iaixsl:choose>
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-			<link rel="shortcut icon" href="https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/favicon.ico" />
-			<script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+			<link rel="shortcut icon" href="/data/designs/xsl/11_1/gfx/assets/favi con.ico" />
+			<!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> -->
 
 			<iaixsl:choose>
 				<iaixsl:when test="/shop/mask/@scheme_color">
@@ -131,22 +130,25 @@
 					</iaixsl:choose>
 				</iaixsl:otherwise>
 			</iaixsl:choose>
-			<script>var app_shop={urls:{prefix:&apos;data=&quot;/gfx/&apos;.replace(&apos;data=&quot;&apos;, &apos;&apos;)+&apos;<iaixsl:value-of select="language/@id"/>/&apos;,graphql:&apos;/graphql/v1/&apos;},vars:{priceType:&apos;<iaixsl:choose><iaixsl:when test="/shop/page/@price_type = 'hidden'">gross</iaixsl:when><iaixsl:otherwise><iaixsl:value-of select="/shop/page/@price_type"/></iaixsl:otherwise></iaixsl:choose>&apos;,priceTypeVat:<iaixsl:choose><iaixsl:when test="not($priceTypeVat = '')">true</iaixsl:when><iaixsl:otherwise>false</iaixsl:otherwise></iaixsl:choose>,productDeliveryTimeAndAvailabilityWithBasket:false,geoipCountryCode:&apos;<iaixsl:value-of select="/shop/@geoip_country_code"/>&apos;,currency:{id:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@id"/>&apos;,symbol:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@symbol"/>&apos;,country:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@country"/>&apos;,format:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_format"/>&apos;,beforeValue:<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_before_value"/>,space:<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_space"/>,decimalSeparator:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_decimal_separator"/>&apos;,groupingSeparator:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_grouping_separator"/>&apos;},language:{id:&apos;<iaixsl:value-of select="/shop/language/option[@selected='true']/@id"/>&apos;,symbol:&apos;<iaixsl:value-of select="/shop/language/option[@selected='true']/@name"/>&apos;,name:&apos;<iaixsl:value-of select="/shop/language/@name"/>&apos;},},txt:{priceTypeText:&apos;<iaixsl:value-of select="$priceTypeText"/>&apos;,},fn:{},fnrun:{},files:[],graphql:{}};const getCookieByName=(name)=&gt;{const value=`; ${document.cookie}`;const parts = value.split(`; ${name}=`);if(parts.length === 2) return parts.pop().split(&apos;;&apos;).shift();return false;};if(getCookieByName(&apos;freeeshipping_clicked&apos;)){document.documentElement.classList.remove(&apos;--freeShipping&apos;);}if(getCookieByName(&apos;rabateCode_clicked&apos;)){document.documentElement.classList.remove(&apos;--rabateCode&apos;);}function hideClosedBars(){const closedBarsArray=JSON.parse(localStorage.getItem(&apos;closedBars&apos;))||[];if(closedBarsArray.length){const styleElement=document.createElement(&apos;style&apos;);styleElement.textContent=`${closedBarsArray.map((el)=&gt;`#${el}`).join(&apos;,&apos;)}{display:none !important;}`;document.head.appendChild(styleElement);}}hideClosedBars();</script>
+			<script>var app_shop={urls:{prefix:&apos;data=&quot;/gfx/&apos;.replace(&apos;data=&quot;&apos;, &apos;&apos;)+&apos;<iaixsl:value-of select="language/@id"/>/&apos;,graphql:&apos;/graphql/v1/&apos;},vars:{priceType:&apos;<iaixsl:choose><iaixsl:when test="/shop/page/@price_type = 'hidden'">gross</iaixsl:when><iaixsl:otherwise><iaixsl:value-of select="/shop/page/@price_type"/></iaixsl:otherwise></iaixsl:choose>&apos;,priceTypeVat:<iaixsl:choose><iaixsl:when test="not($priceTypeVat = '')">true</iaixsl:when><iaixsl:otherwise>false</iaixsl:otherwise></iaixsl:choose>,productDeliveryTimeAndAvailabilityWithBasket:false,geoipCountryCode:&apos;<iaixsl:value-of select="/shop/@geoip_country_code"/>&apos;,currency:{id:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@id"/>&apos;,symbol:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@symbol"/>&apos;,country:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@country"/>&apos;,format:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_format"/>&apos;,beforeValue:<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_before_value"/>,space:<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_space"/>,decimalSeparator:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_decimal_separator"/>&apos;,groupingSeparator:&apos;<iaixsl:value-of select="/shop/currency/option[@selected='true']/@currency_grouping_separator"/>&apos;},language:{id:&apos;<iaixsl:value-of select="/shop/language/option[@selected='true']/@id"/>&apos;,symbol:&apos;<iaixsl:value-of select="/shop/language/option[@selected='true']/@name"/>&apos;,name:&apos;<iaixsl:value-of select="/shop/language/@name"/>&apos;},},txt:{priceTypeText:&apos;<iaixsl:value-of select="$priceTypeText"/>&apos;,},fn:{},fnrun:{},files:[],graphql:{}};const getCookieByName=(name)=&gt;{const value=`; ${document.cookie}`;const parts = value.split(`; ${name}=`);if(parts.length === 2) return parts.pop().split(&apos;;&apos;).shift();return false;};if(getCookieByName(&apos;freeeshipping_clicked&apos;)){document.documentElement.classList.remove(&apos;--freeShipping&apos;);}if(getCookieByName(&apos;rabateCode_clicked&apos;)){document.documentElement.classList.remove(&apos;--rabateCode&apos;);}function hideClosedBars(){const closedBarsArray=JSON.parse(localStorage.getItem(&apos;closedBars&apos;))||[];if(closedBarsArray.length){const styleElement=document.createElement(&apos;style&apos;);styleElement.textContent=`${closedBarsArray.map((el)=&gt;`#${el}`).join(&apos;,&apos;)}{display:none !important;}`;document.head.appendChild(styleElement);}}hideClosedBars();
+			
+			
+				
+			</script>
 			<iaixsl:variable name="projector_script_bottom">true</iaixsl:variable>
 			<iaixsl:if test="not(/shop/page/@type = 'main') and not(/shop/page/@type = 'search') and not(/shop/page/@type = 'place-order') and not(/shop/page/@type = 'noproduct') and not($projector_script_bottom and /shop/page/@type = 'projector')">
 				<iaixsl:choose>
 					<iaixsl:when test="/shop/@preview &gt; 0">
-						<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/shop.js</iaixsl:attribute></script>
+						<script id="scriptmain"><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/shop.js</iaixsl:attribute></script>
 					</iaixsl:when>
 					<iaixsl:otherwise>
-						<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1696937761</iaixsl:attribute></script>
+						<script id="scriptmain"><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1696937761</iaixsl:attribute></script>
 					</iaixsl:otherwise>
 				</iaixsl:choose>
 				
 				
 			</iaixsl:if>
-			
-			
+
 			<iaixsl:text disable-output-escaping="yes"></iaixsl:text>
 			<iaixsl:variable name="meta_variable_expires">never</iaixsl:variable>
 			<iaixsl:variable name="meta_variable_distribution">global</iaixsl:variable>
@@ -486,8 +488,8 @@
 					<iaixsl:variable name="account_title"/>
 					<iaixsl:variable name="list_title"/>
 					<div id="menu_settings">
-						<a href="https://mkcafe.iai-shop.com/Porady-i-przepisy-bloglist-pol-40.html" class="text-l">Porady i przepisy</a>
-						<a href="https://mkcafe.iai-shop.com/Blog-bloglist-pol-37.html" class="text-l">Blog</a>
+						<a href="/Porady-i-przepisy-bloglist-pol-40.html" class="text-l">Porady i przepisy</a>
+						<a href="/Blog-bloglist-pol-37.html" class="text-l">Blog</a>
 						<iaixsl:if test="(count(/shop/currency/option) &gt; 1) or (count(/shop/language/option) &gt; 1) or (count(/shop/countries/country) &gt; 1)">
 							<div class="open_trigger">
 								<span>
@@ -2137,12 +2139,7 @@
 					<iaixsl:attribute name="data-ajaxLoad">true</iaixsl:attribute>
 					<iaixsl:attribute name="data-pageType">main</iaixsl:attribute>
 				</iaixsl:if>
-
-        
-				
-        <iaixsl:variable name="var_omnibus_enabled"><iaixsl:if test="/shop/@omnibus = 1">true</iaixsl:if></iaixsl:variable>
-				
-
+        		<iaixsl:variable name="var_omnibus_enabled"><iaixsl:if test="/shop/@omnibus = 1">true</iaixsl:if></iaixsl:variable>
 				<iaixsl:choose>
 					<iaixsl:when test="page/hotspot/products_zone1/product or page/hotspot/products_zone1/opinion">
 						
@@ -2191,7 +2188,7 @@
 								<iaixsl:variable name="var_icon_small_second"><iaixsl:choose><iaixsl:when test="product"><iaixsl:value-of select="product/icon_small_second"/></iaixsl:when><iaixsl:otherwise><iaixsl:value-of select="icon_small_second"/></iaixsl:otherwise></iaixsl:choose></iaixsl:variable>
 								<iaixsl:variable name="var_b2b"/>
 
-								<div class="product position-relative col-12 col-sm-6 col-lg-4 pt-4 my-5 pb-md-5">
+								<div class="product position-relative col-12 col-sm-6 col-lg-4 pt-4  my-md-5 pb-md-5">
 									
 									<iaixsl:if test="$var_yousave and not($var_yousave = '') and price/@yousave_formatted != ''">
 										<div class="product__yousave">
@@ -2815,22 +2812,22 @@
 						<div class="hotspot mb-5 skeleton">
 							<span class="headline"/>
 							<div class="products search-product search d-flex flex-wrap">
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product position-relative col-12 col-sm-6 col-lg-4 pt-4  my-md-5 pb-md-5">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product position-relative col-12 col-sm-6 col-lg-4 pt-4  my-md-5 pb-md-5">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product position-relative col-12 col-sm-6 col-lg-4 pt-4  my-md-5 pb-md-5">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product position-relative col-12 col-sm-6 col-lg-4 pt-4  my-md-5 pb-md-5">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
@@ -5217,6 +5214,7 @@
 			<div class="container my-3">
 				<div class="row">
 					<iaixsl:for-each select="page/mainpage2/item">
+					<iaixsl:if test="(position() &lt;4)">
 						<div class="col-lg-4 col-md-6 col-12 my-3">
 	
 							<a href="" class="image-block text-left large">
@@ -5302,6 +5300,7 @@
 								</div>
 							</a>
 						</div>
+					</iaixsl:if>
 					</iaixsl:for-each>
 				</div>
 	
@@ -5382,9 +5381,9 @@
 		<div class="container mb-5">
 			<div class="row">
 				<div class="col-lg-3 col-md-6 col-12 my-3">
-					<a href="#" class="image-block text-left">
+					<a href="/O-firmie-cabout-pol-3.html" class="image-block text-left">
 						<picture>
-							<img src="https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/blog-1.jpg" alt="Description"/>
+							<img src="/data/designs/xsl/11_1/gfx/assets/blog-1.jpg" alt="Description"/>
 						</picture>
 						<div class="overlay"></div>
 						<span class="title-text text-uppercase">Unikatowa Manufaktura</span>
@@ -5392,9 +5391,9 @@
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6 col-12 my-3">
-					<a href="#" class="image-block text-left">
+					<a href="/data/include/cms/MkFresh/MK_EFOLDER_2021_last.pdf?v=1703082120124" class="image-block text-left">
 						<picture>
-							<img src="https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/blog-2.jpg" alt="Description"/>
+							<img src="/data/designs/xsl/11_1/gfx/assets/blog-2.jpg" alt="Description"/>
 						</picture>
 						<div class="overlay"></div>
 						<span class="title-text text-uppercase">Oferta prezentowa</span>
@@ -5402,9 +5401,9 @@
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6 col-12 my-3">
-					<a href="#" class="image-block text-left">
+					<a href="/pol_m_KAWY-8811.html" class="image-block text-left">
 						<picture>
-							<img src="https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/blog-3.jpg" alt="Description"/>
+							<img src="/data/designs/xsl/11_1/gfx/assets/blog-3.jpg" alt="Description"/>
 						</picture>
 						<div class="overlay"></div>
 						<span class="title-text text-uppercase">znajdź kawę dla siebie</span>
@@ -5412,9 +5411,9 @@
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6 col-12 my-3">
-					<a href="#" class="image-block text-left">
+					<a href="/Porady-i-przepisy-bloglist-pol-40.html" class="image-block text-left">
 						<picture>
-							<img src="https://www.konesso.pl/data/designs/xsl/11_1/gfx/assets/blog-4.jpg" alt="Description"/>
+							<img src="/data/designs/xsl/11_1/gfx/assets/blog-4.jpg" alt="Description"/>
 						</picture>
 						<div class="overlay"></div>
 						<span class="title-text text-uppercase">Porady Baristy</span>
@@ -5427,31 +5426,125 @@
 	<!-- end blogPosts -->
 
 
-	<section>
-    <div class="banners container mb-5">
-        <div class="row">
-            <div class="col-md-6 col-12 px-2 my-2 my-md-0">
-                <a href="#" class="image-block  text-left">
-                    <picture>
-                        <img src="https://public.konesso.pl/gfx/m/banners/caffe-del-faro-785x450-8825.webp"
-                            alt="Description"/>
-                    </picture>
 
-                </a>
-            </div>
-            <div class="col-md-6 col-12 my-2 my-md-0">
-                <a href="#" class="image-block  text-left">
-                    <picture>
-                        <img src="https://public.konesso.pl/gfx/m/banners/zapisz-sie-na-newsletter-7944.webp"
-                            alt="Description"/>
-                    </picture>
+		<iaixsl:if test="count(commercial_button3/link)">
+			<div id="menu_buttons3" class="mb-4 row">
+				<iaixsl:for-each select="commercial_button3/link">
+					<div class="menu_button_wrapper col-md-6">
+						<iaixsl:choose>
+							<iaixsl:when test="not(html)">
+								<iaixsl:choose>
+									<iaixsl:when test="@href">
+										<a target="_self">
+											<iaixsl:if test="@target"><iaixsl:attribute name="target"><iaixsl:value-of select="@target"/></iaixsl:attribute></iaixsl:if>
+											<iaixsl:attribute name="href"><iaixsl:value-of select="@href"/></iaixsl:attribute>
+											<iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
+											<iaixsl:choose>
+												<iaixsl:when test="image">
+													<iaixsl:if test="image/@src">
+														<img class="b-lazy" src="/gfx/standards/loader.gif?r=1696937716">
+															<iaixsl:attribute name="width"><iaixsl:value-of select="image/@width"/></iaixsl:attribute>
+															<iaixsl:attribute name="height"><iaixsl:value-of select="image/@height"/></iaixsl:attribute>
+															<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
+															<iaixsl:attribute name="data-src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
+														</img>
+													</iaixsl:if>
+												</iaixsl:when>
+												<iaixsl:when test="image_desktop or image_tablet or image_mobile">
+													<picture>
+														<iaixsl:if test="image_desktop/@src">
+															<source>
+																<iaixsl:attribute name="width"><iaixsl:value-of select="image_desktop/@width"/></iaixsl:attribute>
+																<iaixsl:attribute name="height"><iaixsl:value-of select="image_desktop/@height"/></iaixsl:attribute>
+																<iaixsl:attribute name="media">(min-width:979px)</iaixsl:attribute>
+																<iaixsl:attribute name="data-srcset"><iaixsl:value-of select="image_desktop/@src"/></iaixsl:attribute>
+															</source>
+														</iaixsl:if>
 
-                </a>
-            </div>
+														<iaixsl:if test="image_tablet/@src">
+															<source>
+																<iaixsl:attribute name="width"><iaixsl:value-of select="image_tablet/@width"/></iaixsl:attribute>
+																<iaixsl:attribute name="height"><iaixsl:value-of select="image_tablet/@height"/></iaixsl:attribute>
+																<iaixsl:attribute name="media">(min-width:757px)</iaixsl:attribute>
+																<iaixsl:attribute name="data-srcset"><iaixsl:value-of select="image_tablet/@src"/></iaixsl:attribute>
+															</source>
+														</iaixsl:if>
 
-        </div>
-    </div>
-</section>
+														<iaixsl:if test="image_mobile/@src">
+															<img class="b-lazy" src="/gfx/standards/loader.gif?r=1696937716">
+																<iaixsl:attribute name="width"><iaixsl:value-of select="image_mobile/@width"/></iaixsl:attribute>
+																<iaixsl:attribute name="height"><iaixsl:value-of select="image_mobile/@height"/></iaixsl:attribute>
+																<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
+																<iaixsl:attribute name="data-src"><iaixsl:value-of select="image_mobile/@src"/></iaixsl:attribute>
+															</img>
+														</iaixsl:if>
+													</picture>
+												</iaixsl:when>
+												<iaixsl:otherwise>
+													<iaixsl:value-of disable-output-escaping="yes" select="text"/>
+												</iaixsl:otherwise>
+											</iaixsl:choose>
+										</a>
+									</iaixsl:when>
+									<iaixsl:otherwise>
+										<iaixsl:choose>
+											<iaixsl:when test="image">
+												<iaixsl:if test="image/@src">
+													<img class="b-lazy" src="/gfx/standards/loader.gif?r=1696937716">
+														<iaixsl:attribute name="width"><iaixsl:value-of select="image/@width"/></iaixsl:attribute>
+														<iaixsl:attribute name="height"><iaixsl:value-of select="image/@height"/></iaixsl:attribute>
+														<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
+														<iaixsl:attribute name="data-src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
+													</img>
+												</iaixsl:if>
+											</iaixsl:when>
+											<iaixsl:when test="image_desktop or image_tablet or image_mobile">
+												<picture>
+													<iaixsl:if test="image_desktop/@src">
+														<source>
+															<iaixsl:attribute name="width"><iaixsl:value-of select="image_desktop/@width"/></iaixsl:attribute>
+															<iaixsl:attribute name="height"><iaixsl:value-of select="image_desktop/@height"/></iaixsl:attribute>
+															<iaixsl:attribute name="media">(min-width:979px)</iaixsl:attribute>
+															<iaixsl:attribute name="data-srcset"><iaixsl:value-of select="image_desktop/@src"/></iaixsl:attribute>
+														</source>
+													</iaixsl:if>
+
+													<iaixsl:if test="image_tablet/@src">
+														<source>
+															<iaixsl:attribute name="width"><iaixsl:value-of select="image_tablet/@width"/></iaixsl:attribute>
+															<iaixsl:attribute name="height"><iaixsl:value-of select="image_tablet/@height"/></iaixsl:attribute>
+															<iaixsl:attribute name="media">(min-width:757px)</iaixsl:attribute>
+															<iaixsl:attribute name="data-srcset"><iaixsl:value-of select="image_tablet/@src"/></iaixsl:attribute>
+														</source>
+													</iaixsl:if>
+
+													<iaixsl:if test="image_mobile/@src">
+														<img class="b-lazy" src="/gfx/standards/loader.gif?r=1696937716">
+															<iaixsl:attribute name="width"><iaixsl:value-of select="image_mobile/@width"/></iaixsl:attribute>
+															<iaixsl:attribute name="height"><iaixsl:value-of select="image_mobile/@height"/></iaixsl:attribute>
+															<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
+															<iaixsl:attribute name="data-src"><iaixsl:value-of select="image_mobile/@src"/></iaixsl:attribute>
+														</img>
+													</iaixsl:if>
+												</picture>
+											</iaixsl:when>
+											<iaixsl:otherwise>
+												<iaixsl:value-of disable-output-escaping="yes" select="text"/>
+											</iaixsl:otherwise>
+										</iaixsl:choose>
+									</iaixsl:otherwise>
+								</iaixsl:choose>
+							</iaixsl:when>
+							<iaixsl:otherwise>
+								<iaixsl:value-of disable-output-escaping="yes" select="html"/>
+							</iaixsl:otherwise>
+						</iaixsl:choose>
+					</div>
+				</iaixsl:for-each>
+			</div>
+		</iaixsl:if>
+	
+
 
 	<!-- dodatkowe info strona główna id13 Lista stron generowanych automatycznie -->
             <iaixsl:if test="page/text[@id='13']">
@@ -6735,16 +6828,25 @@
 	<iaixsl:if test="/shop/page/@type = 'main' or /shop/page/@type = 'search' or /shop/page/@type = 'place-order' or /shop/page/@type = 'noproduct' or ($projector_script_bottom and /shop/page/@type = 'projector')">
 		<iaixsl:choose>
 			<iaixsl:when test="/shop/@preview &gt; 0">
-				<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/shop.js</iaixsl:attribute></script>
+				<script id="scriptmain"><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/shop.js</iaixsl:attribute></script>
 			</iaixsl:when>
 			<iaixsl:otherwise>
-				<script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1696937761</iaixsl:attribute></script>
+				<script id="scriptmain"><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1696937761</iaixsl:attribute></script>
 			</iaixsl:otherwise>
 		</iaixsl:choose>
 
 		
 		
 	</iaixsl:if>
+
+	
+			<script>
+		 let a = document.querySelector('#scriptmain').src.split('/');
+		 a.splice(-1)
+		 const mainGfxUrl = a.join('/') + '/gfx/'
+		 a.splice(-1)
+		 const mainAssetsUrl = a.join('/') + '/assets/'
+			</script>
   
   
   

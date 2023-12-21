@@ -90,7 +90,7 @@
 			</iaixsl:choose>
 			
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-			<link rel="shortcut icon" href="https://www.konesso.pl/data/designs/xsl/11_2/gfx/assets/favicon.ico" />
+			<link rel="shortcut icon" href="/gfx/pol/favicon.ico" />
 			<iaixsl:choose>
 				<iaixsl:when test="/shop/mask/@scheme_color">
 					<meta name="theme-color"><iaixsl:attribute name="content"><iaixsl:value-of select="/shop/mask/@scheme_color"/></iaixsl:attribute></meta>
@@ -484,8 +484,8 @@
 					<iaixsl:variable name="account_title"/>
 					<iaixsl:variable name="list_title"/>
 					<div id="menu_settings">
-						<a href="https://mkcafe.iai-shop.com/Porady-i-przepisy-bloglist-pol-40.html" class="text-l">Porady i przepisy</a>
-						<a href="https://mkcafe.iai-shop.com/Blog-bloglist-pol-37.html" class="text-l">Blog</a>
+						<a href="/Porady-i-przepisy-bloglist-pol-40.html" class="text-l">Porady i przepisy</a>
+						<a href="/Blog-bloglist-pol-37.html" class="text-l">Blog</a>
 						<iaixsl:if test="(count(/shop/currency/option) &gt; 1) or (count(/shop/language/option) &gt; 1) or (count(/shop/countries/country) &gt; 1)">
 							<div class="open_trigger">
 								<span>
@@ -4655,9 +4655,9 @@
 										
 										<iaixsl:if test="/shop/basket/@product_comment_active = 'y' and count(/shop/page/basket-details/product/price[not(@special_offer='true')]) &gt; 0">
 											<div class="basket__action --comment">
-												<a href="#addComment" class="basket__comment btn --icon-left icon-link --click">
+												<a href="#addComment" class="basket__comment btn  --click">
 													<iaixsl:attribute name="title">kliknij aby, dodać komentarz</iaixsl:attribute>
-													dodaj opis lub załącznik
+													<i class="--icon-left icon-link mr-2"></i>dodaj opis lub załącznik
 												</a>
 											</div>
 											<div class="basket__action --add-comment">
@@ -5581,9 +5581,9 @@
 										
 										<iaixsl:if test="/shop/basket/@product_comment_active = 'y' and count(/shop/page/basket-details/product/price[not(@special_offer='true')]) &gt; 0">
 											<div class="basket__action --comment">
-												<a href="#addComment" class="basket__comment btn --icon-left icon-link --click">
+												<a href="#addComment" class="basket__comment btn  --click">
 													<iaixsl:attribute name="title">kliknij aby, dodać komentarz</iaixsl:attribute>
-													dodaj opis lub załącznik
+													 <i class="--icon-left icon-link mr-2"></i>dodaj opis lub załącznik
 												</a>
 											</div>
 											<div class="basket__action --add-comment">
@@ -6506,9 +6506,9 @@
 										
 										<iaixsl:if test="/shop/basket/@product_comment_active = 'y' and count(/shop/page/basket-details/product/price[not(@special_offer='true')]) &gt; 0">
 											<div class="basket__action --comment">
-												<a href="#addComment" class="basket__comment btn --icon-left icon-link --click">
+												<a href="#addComment" class="basket__comment btn --click">
 													<iaixsl:attribute name="title">kliknij aby, dodać komentarz</iaixsl:attribute>
-													dodaj opis lub załącznik
+													<i class="--icon-left icon-link mr-2"></i>dodaj opis lub załącznik
 												</a>
 											</div>
 											<div class="basket__action --add-comment">
@@ -6596,7 +6596,8 @@
 								<span>Wybierz wszystkie</span>
 							</label>
 						</div>
-						<a href="#removeSelected" class="tool__button --remove-selected btn --icon-left icon-remove --click">
+						<a href="#removeSelected" class="tool__button --remove-selected btn  --click">
+						<i class=" icon-remove mr-2"></i>
 							<iaixsl:choose>
 								<iaixsl:when test="count(/shop/page/basket-details/product) = 1">
 									Usuń
@@ -6611,9 +6612,9 @@
 
 				
 				<div class="basket__tools">
-					<a href="#removeAll" class="tool__button --remove-all btn --icon-left icon-trash --click">Opróżnij koszyk </a>
-					<a href="#addToFavorite" class="tool__button --add-to-favorite btn --icon-left icon-file-empty --click">Zapisz cały koszyk w liście zakupowej</a>
-					<a href="#addWrapper" class="tool__button --add-wrapper btn --icon-left icon-gift --click">Wybierz opakowanie</a>
+					<a href="#removeAll" class="tool__button --remove-all btn  --click"><i class="--icon-left icon-trash mr-2"></i>Opróżnij koszyk </a>
+					<a href="#addToFavorite" class="tool__button --add-to-favorite btn  --click"><i class="--icon-left icon-file-empty mr-2"></i>Zapisz cały koszyk w liście zakupowej</a>
+					<a href="#addWrapper" class="tool__button --add-wrapper btn --click"><i class="--icon-left icon-gift mr-2"></i>Wybierz opakowanie</a>
 				</div>
 
 				
@@ -7804,10 +7805,10 @@
 					</h2>
 					<div class="securityPolicy__sub">
 						<div class="securityPolicy__img">
-							<img src="/gfx/standards/superfair_light.svg?r=1696937716" alt="SuperFair.Shop badge"/>
+							
 						</div>
 						<div class="securityPolicy__text">
-							<p>Stosujemy system IdoSell dający klientom kontrolę nad zamówieniem i procesem realizacji zamówienia. <b>Dbamy też o Twoje prawa</b> i wygodę. IdoSell regularnie weryfikuje nasz sklep i potwierdza, że wysyłamy przesyłki w deklarowanych terminach oraz stosujemy rozwiązania możliwie ułatwiające zakupy i zwiększające bezpieczeństwo klientów.</p>
+							<p><b>Dbamy o Twoje prawa</b> i wygodę.</p>
 							<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' or /shop/action/shipping_cost/@order_link_active='y' or /shop/action/payment_methods/@order_link_active='y' or /shop/action/terms/@order_link_active='y' or /shop/action/private_policy/@order_link_active='y' or /shop/action/order_cancel/@order_link_active='y'">
 								<p>
 									<b>Zapoznaj się z </b>
@@ -7830,10 +7831,10 @@
 					</h2>
 					<div class="securityPolicy__sub">
 						<div class="securityPolicy__img">
-							<img src="/gfx/standards/safe_light.svg?r=1696937716" alt="Idosell security badge"/>
+							
 						</div>
 						<div class="securityPolicy__text">
-							<p>Stosujemy system <b>IdoSell</b> dający klientom kontrolę nad zamówieniem i procesem realizacji zamówienia. <b>Dbamy też o Twoje prawa</b>.</p>
+							<p><b>Dbamy o Twoje prawa</b>.</p>
 							<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' or /shop/action/shipping_cost/@order_link_active='y' or /shop/action/payment_methods/@order_link_active='y' or /shop/action/terms/@order_link_active='y' or /shop/action/private_policy/@order_link_active='y' or /shop/action/order_cancel/@order_link_active='y'">
 								<p>
 									<b>Zapoznaj się z </b>

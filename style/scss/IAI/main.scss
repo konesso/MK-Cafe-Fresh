@@ -428,7 +428,7 @@ aside[class*="col-"] {
     }
     .filters__buttons {
         transition: right 200ms ease 200ms;
-        right: 0;
+        right: 15px;
     }
     .setMobileGrid {
         display: none;
@@ -532,7 +532,7 @@ body#trusted_shops_fix {
         max-height: 35px;
         width: auto;
         background: #f1f1f1;
-        border: 1px solid #f1f1f1;
+
         color: #333;
         vertical-align: top;
         border-radius: 0;
@@ -541,17 +541,23 @@ body#trusted_shops_fix {
         }
         &:hover {
             background: #b29370;
-            border: 1px solid #b29370;
-            color: #fff;
+
+            color: #070707;
         }
         img {
-            max-height: 25px;
+            // max-height: 25px;
             display: block;
         }
     }
 }
 .compare__sub {
     order: 1;
+}
+
+#menu_compare_product {
+    .icon-x.ml-1 {
+        margin-left: 1.5rem;
+    }
 }
 .compare__buttons {
     &:not(.--one) {

@@ -15561,7 +15561,7 @@ header #menu_settings {
     width: 4rem;
     height: 4rem;
     background-position: -100px -75px;
-    background-image: url(https://www.konesso.pl/data/designs/xsl/11_1/xsl/img/icons.png?v=1701432610277);
+    background-image: url(../assets/icons.png);
 }
 
 @media (min-width: 979px) {

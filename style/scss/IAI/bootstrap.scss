@@ -1253,7 +1253,7 @@
     line-height: 1.5;
     margin-bottom: 20px;
     max-width: 100%;
-    overflow: auto;
+    // overflow: auto;
     h1 {
         margin: 15px 0;
         color: inherit;
@@ -1606,7 +1606,7 @@ button.btn.--large {
     color: #fff;
 }
 .badge-info {
-    background-color: #ca3710;
+    background-color: #a11530;
     color: #fff;
 }
 .badge-success {
@@ -1636,51 +1636,51 @@ button.btn.--large {
 }
 .promo {
     color: #fff;
-    background: #e35c5c;
+    background: #a11530;
 }
 .label.--promo {
     color: #fff;
-    background: #e35c5c;
+    background: #a11530;
 }
 .newproducts {
     color: #fff;
-    background: #10ac82;
+    background: #a11530;
 }
 .label.--new {
     color: #fff;
-    background: #10ac82;
+    background: #a11530;
 }
 .bestseller {
     color: #fff;
-    background: #b29370;
+    background: #a11530;
 }
 .label.--bestseller {
     color: #fff;
-    background: #b29370;
+    background: #a11530;
 }
 .discount {
     color: #fff;
-    background: #893f97;
+    background: #a11530;
 }
 .label.--discount {
     color: #fff;
-    background: #893f97;
+    background: #a11530;
 }
 .distinguished {
     color: #fff;
-    background: #bc7700;
+    background: #a11530;
 }
 .label.--distinguished {
     color: #fff;
-    background: #bc7700;
+    background: #a11530;
 }
 .special {
     color: #fff;
-    background: #008b8b;
+    background: #a11530;
 }
 .label.--special {
     color: #fff;
-    background: #008b8b;
+    background: #a11530;
 }
 .label.--disable {
     color: #e35c5c;
@@ -1704,7 +1704,6 @@ button.btn.--large {
     background: #333;
 }
 .big_label {
-    font-family: "Arial", "Helvetica", sans-serif, "Arial", sans-serif;
     color: #333;
     display: flex;
     align-items: center;
@@ -1716,7 +1715,7 @@ button.btn.--large {
     text-decoration: none;
     text-align: left;
     line-height: 1;
-    margin-bottom: 3rem;
+    // margin-bottom: 3rem;
     text-transform: uppercase;
     small {
         display: none;
@@ -1740,6 +1739,7 @@ button.btn.--large {
     line-height: 1;
     margin-bottom: 3rem;
     text-transform: uppercase;
+    text-align: center;
     small {
         display: none;
         i {
@@ -4210,7 +4210,7 @@ img.b-loaded {
 
         .label_icons {
             position: absolute;
-            top: 10px;
+            top: 0;
             left: 0;
             text-align: left;
         }
@@ -4255,6 +4255,10 @@ img.b-loaded {
     .checkBtns {
         transform: translateY(85%);
         overflow: hidden;
+        display: none !important;
+        @media all and (min-width: 768px) {
+            display: flex !important;
+        }
     }
     .product__check_item,
     .product__compare_item {
@@ -4335,7 +4339,7 @@ img.b-loaded {
     font-weight: bold;
     font-family: Futura;
     color: #333;
-    font-size: 0.7rem;
+    font-size: 1.4rem;
     overflow: hidden;
     text-overflow: ellipsis;
     text-decoration: none;
