@@ -21945,9 +21945,11 @@ app_shop.run(
             let $t = $(x);
             let cls = $t.attr('class').split(' ').find(v => v.indexOf('icon-') >= 0 && v.indexOf('--') < 0)
             let check = $t.hasClass('--icon-right')
+            if(!cls) return;
+
             $t.removeClass(cls + ' --icon-right --icon-left');
 
-            let html = '<i class="' + cls + ' ' + (check ? ' ml-1' : ' ml-1') + '"></i>';
+            let html = '<i class="' + cls + ' ' + (check ? ' ml-1' : ' mr-1') + '"></i>';
             if (check) {
                 $t.append(html)
             } else {
