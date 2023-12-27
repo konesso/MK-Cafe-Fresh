@@ -5653,8 +5653,8 @@
         .compare__item {
             padding: 5px;
             background: #fff;
-            width: 60px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
             min-width: 35px;
             display: flex;
             align-items: center;
@@ -5668,13 +5668,17 @@
             img {
                 display: inline;
             }
+            @media all and (min-width: 767px) {
+                width: 60px;
+                height: 40px;
+            }
         }
     }
     .compare__sub {
         order: 0;
         scrollbar-color: #b29370 transparent;
         scrollbar-width: thin;
-        // overflow: auto;
+        max-width: 180px;
         display: flex;
         margin-right: 1.5rem;
         border-radius: 0;

@@ -90,7 +90,8 @@
 			</iaixsl:choose>
 			
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-			<link rel="shortcut icon" href="/gfx/pol/favicon.ico" />
+			<link rel="shortcut icon" href="/gfx/eng/favicon.ico" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 			<iaixsl:choose>
 				<iaixsl:when test="/shop/mask/@scheme_color">
 					<meta name="theme-color"><iaixsl:attribute name="content"><iaixsl:value-of select="/shop/mask/@scheme_color"/></iaixsl:attribute></meta>
@@ -3545,42 +3546,42 @@
 				<a id="menu_orders_header" class=" footer_links_label">
 					<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/clientOrders/@url"/></iaixsl:attribute>
 					<iaixsl:attribute name="title"/>
-					Zamówienia
+					ORDERS
 				</a>
 				<ul class="footer_links_sub">
 					<li id="order_status" class="menu_orders_item">
 						<i class="icon-battery"/>
 						<a>
 							<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/orderOpen/@url"/></iaixsl:attribute>
-							Status zamówienia
+							Order status
 						</a>
 					</li>
 					<li id="order_status2" class="menu_orders_item">
 						<i class="icon-truck"/>
 						<a>
 							<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/orderOpen/@url"/></iaixsl:attribute>
-							Śledzenie przesyłki
+							Package tracking
 						</a>
 					</li>
 					<li id="order_rma" class="menu_orders_item">
 						<i class="icon-sad-face"/>
 						<a>
 							<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/addRma/@url"/></iaixsl:attribute>
-							Chcę zareklamować produkt
+							I want to make a complaint about the product
 						</a>
 					</li>
 					<li id="order_returns" class="menu_orders_item">
 						<i class="icon-refresh-dollar"/>
 						<a>
 							<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/addReturn/@url"/></iaixsl:attribute>
-							Chcę zwrócić produkt
+							I want to return the product
 						</a>
 					</li>
 					<li id="order_exchange" class="menu_orders_item">
 						<i class="icon-return-box"/>
 						<a>
 							<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/returnExchangeLink/@url"/></iaixsl:attribute>
-							Chcę wymienić produkt
+							I want to exchange the product
 						</a>
 					</li>
 					<iaixsl:variable name="order_contact_literal">true</iaixsl:variable>
@@ -3589,7 +3590,7 @@
 							<i class="icon-phone"/>
 							<a>
 								<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/contact/link/@url"/></iaixsl:attribute>
-								Kontakt
+								Contact
 							</a>
 						</li>
 					</iaixsl:if>
@@ -3602,7 +3603,7 @@
 				<a id="menu_account_header" class=" footer_links_label">
 					<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/login/@url"/></iaixsl:attribute>
 					<iaixsl:attribute name="title"/>
-					Konto
+					Account
 				</a>
 				<ul class="footer_links_sub">
 					<iaixsl:choose>
@@ -3611,7 +3612,7 @@
 								<i class="icon-user"/>
 								<a>
 									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/loginEdit/@url"/></iaixsl:attribute>
-									Twoje dane
+									Billing and shipping information
 								</a>
 							</li>
 						</iaixsl:when>
@@ -3621,7 +3622,7 @@
 									<i class="icon-wholesaler-register"/>
 									<a>
 										<iaixsl:attribute name="href"><iaixsl:value-of select="@registration_url"/></iaixsl:attribute>
-										Zarejestruj się jako hurtownik
+										Register as a wholesaler
 									</a>
 								</li>
 							</iaixsl:for-each>
@@ -3630,7 +3631,7 @@
 									<i class="icon-register-card"/>
 									<a>
 										<iaixsl:attribute name="href"><iaixsl:value-of select="@registration_url"/></iaixsl:attribute>
-										Zarejestruj się
+										Register
 									</a>
 								</li>
 							</iaixsl:for-each>
@@ -3640,35 +3641,35 @@
 						<i class="icon-basket"/>
 						<a>
 							<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/basket/@url"/></iaixsl:attribute>
-							Koszyk
+							Your basket
 						</a>
 					</li>
 					<li id="account_observed" class="menu_orders_item">
 						<i class="icon-heart-empty"/>
 						<a>
 							<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shoppinglist/@url"/></iaixsl:attribute>
-							Listy zakupowe
+							Shopping lists
 						</a>
 					</li>
 												<li id="account_boughts" class="menu_orders_item">
 						<i class="icon-menu-lines"/>
 						<a>
 							<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/productsBought/@url"/></iaixsl:attribute>
-							Lista zakupionych produktów
+							List of purchased products
 						</a>
 					</li>
 					<li id="account_history" class="menu_orders_item">
 						<i class="icon-clock"/>
 						<a>
 							<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/clientOrders/@url"/></iaixsl:attribute>
-							Historia transakcji
+							Transaction history
 						</a>
 					</li>
 					<li id="account_rebates" class="menu_orders_item">
 						<i class="icon-scissors-cut"/>
 						<a>
 							<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/clientRebate/@url"/></iaixsl:attribute>
-							Moje rabaty
+							Granted discounts
 						</a>
 					</li>
 					<li id="account_newsletter" class="menu_orders_item">
@@ -3686,13 +3687,13 @@
 		<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' or /shop/action/shipping_cost/@order_link_active='y' or /shop/action/payment_methods/@order_link_active='y' or /shop/action/terms/@order_link_active='y' or /shop/action/private_policy/@order_link_active='y' or /shop/action/order_cancel/@order_link_active='y'">
 
 			<ul id="menu_regulations" class="footer_links col-md-4 col-sm-6 col-12">
-				<li><span class="footer_links_label">Regulaminy</span>
+				<li><span class="footer_links_label">Information</span>
 					<ul class="footer_links_sub">
 						<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' and not(/shop/action/shop_information/@url = '')">
 							<li>
 								<a>
 									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shop_information/@url"/></iaixsl:attribute>
-									Informacje o sklepie
+									Shop information
 								</a>
 							</li>
 						</iaixsl:if>
@@ -3700,7 +3701,7 @@
 							<li>
 								<a>
 									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shipping_cost/@url"/></iaixsl:attribute>
-									Wysyłka
+									Shipment
 								</a>
 							</li>
 						</iaixsl:if>
@@ -3708,7 +3709,7 @@
 							<li>
 								<a>
 									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/payment_methods/@url"/></iaixsl:attribute>
-									Sposoby płatności i prowizje
+									Payment information and commissions
 								</a>
 							</li>
 						</iaixsl:if>
@@ -3716,7 +3717,7 @@
 							<li>
 								<a>
 									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/terms/@url"/></iaixsl:attribute>
-									Regulamin
+									Terms and Conditions
 								</a>
 							</li>
 						</iaixsl:if>
@@ -3724,7 +3725,7 @@
 							<li>
 								<a>
 									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/private_policy/@url"/></iaixsl:attribute>
-									Polityka prywatności
+									Privacy and Cookies policy
 								</a>
 							</li>
 						</iaixsl:if>
@@ -3732,7 +3733,7 @@
 							<li>
 								<a>
 									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/order_cancel/@url"/></iaixsl:attribute>
-									Odstąpienie od umowy
+									Withdrawal from the agreement
 								</a>
 							</li>
 						</iaixsl:if>
