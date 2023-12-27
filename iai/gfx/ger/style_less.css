@@ -216,7 +216,7 @@ table {
 @less_iaicolorscheme_background_mask_link_color_hover: #000000;
 @less_iaicolorscheme_background_mask_border_color: #c4c7c8;
 @less_iaicolorscheme_background_mask_active_color: #000000;
-@less_iaicolorscheme_info_color: #0090f6;
+@less_iaicolorscheme_info_color: #b29370;
 @less_iaicolorscheme_info_color_text: #ffffff;
 @less_iaicolorscheme_success_color_text: #ffffff;
 @less_iaicolorscheme_danger_color_text: #ffffff;
@@ -48436,7 +48436,7 @@ form.return_delivery_form {
 	}
 
 	.status-o i {
-		background: #0090f6;
+		background: #b29370;
 	}
 
 	.status-p i {
@@ -48460,7 +48460,7 @@ form.return_delivery_form {
 	}
 
 	.status-a i {
-		background: #0090f6;
+		background: #b29370;
 	}
 
 	a.show_status_explanation {
