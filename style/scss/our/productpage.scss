@@ -16,7 +16,7 @@
             width: 1.75rem;
             height: 1.75rem;
             background-position: -250px -100px;
-            background-image: url(../assets/icons.png);
+            background-image: url(/data/include/cms/MkFresh/theme/icons.png);
         }
         &.half:before {
             background-position: -450px -100px;
@@ -69,7 +69,7 @@
         content: " ";
         width: 5rem;
         height: 4.9rem;
-        background-image: url(../assets/icons.png);
+        background-image: url(/data/include/cms/MkFresh/theme/icons.png);
     }
     &.img-method-frenchpress:before {
         background-position: -240px -125px;

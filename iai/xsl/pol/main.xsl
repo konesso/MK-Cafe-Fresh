@@ -6841,11 +6841,11 @@
 
 	
 			<script>
-		 let a = document.querySelector('#scriptmain').src.split('/');
-		 a.splice(-1)
+		 let scriptmain = document.querySelector('#scriptmain').src.split('/');
+		 scriptmain.splice(-1)
 		 const mainGfxUrl = a.join('/') + '/gfx/'
-		 a.splice(-1)
-		 const mainAssetsUrl = a.join('/') + '/assets/'
+		 scriptmain.splice(-1)
+		 const mainAssetsUrl = '/data/include/cms/MkFresh/theme/'; //scriptmain.join('/') + '/assets/'
 			</script>
   
   

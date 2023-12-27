@@ -6148,7 +6148,7 @@
 		 a.splice(-1)
 		 const mainGfxUrl = a.join('/') + '/gfx/'
 		 a.splice(-1)
-		 const mainAssetsUrl = a.join('/') + '/assets/'
+		 const mainAssetsUrl = '/data/include/cms/MkFresh/theme/'; //a.join('/') + '/assets/'
 			</script>
   
   

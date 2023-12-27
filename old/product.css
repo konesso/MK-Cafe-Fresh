@@ -72,7 +72,7 @@ samp {
     content: " ";
     height: 65px;
     width: 75px;
-    background-image: url(../assets/icons.png);
+    background-image: url(/data/include/cms/MkFresh/theme/icons.png);
     background-position: -296px -52px;
 }
 
@@ -16909,7 +16909,7 @@ div.ui-helper-hidden-accessible {
     width: 4rem;
     height: 4rem;
     background-position: -100px -75px;
-    background-image: url(../assets/icons.png);
+    background-image: url(/data/include/cms/MkFresh/theme/icons.png);
 }
 
 @media (min-width: 979px) {
