@@ -109,31 +109,7 @@
 
 .mkdesc {
     overflow-x: hidden;
-}
-.mkdesc .row {
-    justify-content: center;
-}
-
-#projector_longdescription > .mkdesc {
-    .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    div {
-        width: 100%;
-        max-width: 1200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    figure {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    text-align: center;
 }
 
 .longdescription {

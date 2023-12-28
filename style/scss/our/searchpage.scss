@@ -91,14 +91,25 @@ div.px-2.py-1.d-flex.flex-row.justify-content-center.align-items-center {
     justify-content: center;
     align-items: center;
 }
-
+#search .checkBtns {
+    a {
+        text-decoration: none !important;
+        &:hover {
+            color: white;
+            text-decoration: none !important;
+        }
+    }
+}
 #search > div:nth-child(3) > a.position-absolute.product__compare_item.--add.btn > div :hover {
     color: white;
 }
 .search_page {
+    .s_paging__item .--sort {
+        max-width: 350px;
+    }
     .f-dropdown {
         position: relative;
-        max-width: 50%;
+        // max-width: 50%;
     }
 }
 
@@ -107,5 +118,5 @@ div.px-2.py-1.d-flex.flex-row.justify-content-center.align-items-center {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 300px;
 }

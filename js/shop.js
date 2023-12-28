@@ -21574,38 +21574,48 @@ function search() {
 
     if (window.innerWidth > 976) {
 
+        if ($('#Filters').length === 0) {
+            // d-none dla filter-trigger
+            $('<div/>', {
+                id: 'Filters',
+                text: 'Brak filtrów dla tej strony',
+                'class': 'filters mb-4 d-md-none'
+            }).insertBefore('#search');
+
+
+        }
+
         var filterButton = $('.filter-dropdown-trigger');
         var sortButton = $('.sort-dropdown-trigger');
 
+        var $sortHolder = $('#paging_setting_top');
+        var $filterHolder = $('#Filters');
 
-        $sortHolder = $('#paging_setting_top')
-        $filterHolder = $('#Filters')
+        var $t = $filterHolder.addClass('d-md-none').find('.btn.--large').clone(true, true);
+        $filterHolder.children().append($t);
+        $sortHolder.addClass('d-md-none');
 
-        $t = $filterHolder.addClass('d-md-none').find('.btn.--large').clone(true, true)
-        $filterHolder.children().append($t)
-        $sortHolder.addClass('d-md-none')
+
 
         $(document).on("click", '.filter-dropdown-trigger', function () {
+            $filterHolder.toggleClass('d-md-none');
+            $sortHolder.addClass('d-md-none');
 
-            $filterHolder.toggleClass('d-md-none')
-            $sortHolder.addClass('d-md-none')
-
-            filterButton.toggleClass('active')
-            sortButton.removeClass('active')
-
-        })
+            filterButton.toggleClass('active');
+            sortButton.removeClass('active');
+        });
 
         $(document).on("click", '.sort-dropdown-trigger', function () {
 
-            $sortHolder.toggleClass('d-md-none')
-            $filterHolder.addClass('d-md-none')
+            $sortHolder.toggleClass('d-md-none');
+            $filterHolder.addClass('d-md-none');
 
-            sortButton.toggleClass('active')
-            filterButton.removeClass('active')
-
-        })
-
+            sortButton.toggleClass('active');
+            filterButton.removeClass('active');
+        });
     }
+
+
 
 
 
@@ -21703,6 +21713,8 @@ app_shop.run(
         showStarsSection();
 
         updateProductInfo();
+        removeAndUpdateClasses();
+
     },
     'all',
     '#container.projector_page'
@@ -21806,7 +21818,40 @@ app_shop.run(
     '#container.main_page'
 )
 
+function removeAndUpdateClasses() {
 
+    if ($('.mkdesc').length > 0) {
+        $('.mkdesc div').each(function () {
+
+
+            var classAttr = $(this).attr('class');
+
+            if (classAttr) {
+
+                if (classAttr.includes('-push') || classAttr.includes('-pull')) {
+
+                    $(this).addClass('offset-lg-1');
+                }
+                if (classAttr.includes('col-lg-3')) {
+
+                    $(this).removeClass('col-lg-3').addClass('col-lg-5');
+                }
+                if (classAttr.includes('col-lg-7')) {
+
+                    $(this).removeClass('col-lg-7').addClass('col-lg-9');
+                }
+                if (classAttr.includes('col-lg-9')) {
+
+                    $(this).removeClass('col-lg-9').addClass('col-lg-11');
+                }
+            }
+
+
+        });
+    }
+
+
+}
 
 
 function updateProductInfo() {
@@ -21867,6 +21912,35 @@ function updateProductInfo() {
 
 
 
+        function pricePerGram() {
+
+            var packageWeightValue = $('#projector_dictionary .dictionary__param').filter(function () {
+                return $(this).find('.dictionary__name_txt').text().trim() === 'Opakowanie';
+            }).find('.dictionary__value_txt').text();
+
+            if (!packageWeightValue) return;
+            var itemPriceValue = $('#projector_price_value').text().trim()
+
+            var numericWeightValue = packageWeightValue.replace(/\D/g, '');
+            var numericPriceValue = itemPriceValue.replace(/[^\d,]/g, '');
+            var numericWeightValue = parseInt(packageWeightValue, 10);
+            var numericPriceValue = parseFloat(itemPriceValue.replace(',', '.'));
+
+            // Obliczanie ceny za 100 gram
+            var pricePerHundredGrams = (numericPriceValue / numericWeightValue) * 100;
+
+            var resultElement = $('<div/>', {
+                'class': 'projector_prices__info',
+                'text': 'Cena za 100g: ' + pricePerHundredGrams.toFixed(2) + ' zł'
+            });
+
+            // Dodanie wyniku do diva 'projector_prices_wrapper'
+            $('#projector_prices_wrapper').append(resultElement);
+
+
+        }
+        pricePerGram();
+
         function getSposobyPrzygotowaniaHtml() {
             var html = '';
             $('#projector_dictionary .dictionary__param').filter(function () {
@@ -21883,6 +21957,40 @@ function updateProductInfo() {
         // Wstawienie gotowego HTML do sekcji 'product_extra_info'
         $('#product_extra_info1').html(sectionHtml);
 
+        function getProductionAndExpireDate() {
+            var url = window.location.href;
+            var productIdMatch = url.match(/product-pol-(\d+)/);
+            var productId = productIdMatch ? productIdMatch[1] : null;
+
+            if (!productId) {
+                console.error('Nie znaleziono ID produktu w URL');
+                return;
+            }
+
+            $.ajax({
+                url: `https://public.konesso.pl/?json=true&module=productInfo&id=${productId}`,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    if (data && data.Dates) {
+                        var productionDate = data.Dates.productionDate;
+                        var expirationDate = data.Dates.expirationDate;
+
+                        var productionDateHtml = `<li><span class="text-uppercase">Data Palenia</span><b>${productionDate}</b></li>`;
+                        var expirationDateHtml = `<li><span class="text-uppercase">Data Ważności</span><b>${expirationDate}</b></li>`;
+
+                        // Dodawanie do elementu z klasą 'mk_extra_info'
+                        $('.mk_extra_info').append(productionDateHtml);
+                        $('.mk_extra_info').append(expirationDateHtml);
+                    }
+                },
+                error: function () {
+                    console.error('Błąd pobierania danych produktu');
+                }
+            });
+        }
+
+        getProductionAndExpireDate()
 
 
         function getValueOrDefault(labelText, defaultValue) {
@@ -21936,6 +22044,8 @@ function updateProductInfo() {
         });
     }
 
+
+
 }
 
 
@@ -21945,7 +22055,7 @@ app_shop.run(
             let $t = $(x);
             let cls = $t.attr('class').split(' ').find(v => v.indexOf('icon-') >= 0 && v.indexOf('--') < 0)
             let check = $t.hasClass('--icon-right')
-            if(!cls) return;
+            if (!cls) return;
 
             $t.removeClass(cls + ' --icon-right --icon-left');
 

@@ -6184,13 +6184,13 @@
 		<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' or /shop/action/shipping_cost/@order_link_active='y' or /shop/action/payment_methods/@order_link_active='y' or /shop/action/terms/@order_link_active='y' or /shop/action/private_policy/@order_link_active='y' or /shop/action/order_cancel/@order_link_active='y'">
 
 			<ul id="menu_regulations" class="footer_links col-md-4 col-sm-6 col-12">
-				<li><span class="footer_links_label">Regulaminy</span>
+				<li><span class="footer_links_label">Informacje</span>
 					<ul class="footer_links_sub">
 						<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' and not(/shop/action/shop_information/@url = '')">
 							<li>
 								<a>
 									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shop_information/@url"/></iaixsl:attribute>
-									Informacje o sklepie
+									O Nas
 								</a>
 							</li>
 						</iaixsl:if>
@@ -6206,7 +6206,7 @@
 							<li>
 								<a>
 									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/payment_methods/@url"/></iaixsl:attribute>
-									Sposoby płatności i prowizje
+									Płatności
 								</a>
 							</li>
 						</iaixsl:if>
@@ -6229,8 +6229,7 @@
 						<iaixsl:if test="/shop/action/order_cancel/@order_link_active='y' and not(/shop/action/order_cancel/@url = '')">
 							<li>
 								<a>
-									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/order_cancel/@url"/></iaixsl:attribute>
-									Odstąpienie od umowy
+									 
 								</a>
 							</li>
 						</iaixsl:if>
