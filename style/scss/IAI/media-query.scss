@@ -1079,6 +1079,7 @@
         #content {
             position: relative;
             width: 100%;
+            display: flex;
             padding-right: 15px;
             padding-left: 15px;
             flex: 0 0 75%;
@@ -3305,6 +3306,7 @@
         #content {
             position: relative;
             width: 100%;
+            display: flex;
             padding-right: 15px;
             padding-left: 15px;
             flex: 0 0 75%;
@@ -9689,7 +9691,7 @@
         width: 100%;
         position: fixed;
         border-radius: 0;
-        transform: translateX(25vw);
+        transform: translateX(20vw);
     }
     .pswp__scroll-wrap {
         left: 140px;

@@ -4160,7 +4160,7 @@ img.b-loaded {
 }
 .omnibus_price {
     font-size: 1.2rem;
-    margin-top: 5px;
+    margin-top: 10px;
     line-height: 1.1;
 }
 .omnibus_price__value {
@@ -4195,8 +4195,9 @@ img.b-loaded {
     }
 }
 .search-product {
+    transition: all 0.3s ease-in;
     .product {
-        transition: box-shadow 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         box-shadow: 0 0 0 0px transparent inset;
         background: none;
         &:hover {
@@ -4271,6 +4272,7 @@ img.b-loaded {
         background-color: white;
         padding: 1.5rem 2.5rem;
         text-decoration: none;
+        transition: all 0.3s ease-in-out;
         &:hover {
             color: white !important;
             text-decoration: none !important;
@@ -4282,7 +4284,7 @@ img.b-loaded {
         }
     }
     .product__compare_item {
-        visibility: hidden;
+        transition: all 0.3s ease-in-out;
         margin-left: -100%;
     }
     .product {
@@ -4292,6 +4294,7 @@ img.b-loaded {
                 box-shadow: 0 0 0 2px #b29370 inset;
             }
             .product__compare_item {
+                transition: all 0.3s ease-in-out;
                 visibility: visible;
                 margin-left: 0%;
             }

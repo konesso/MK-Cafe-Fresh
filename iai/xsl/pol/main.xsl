@@ -841,7 +841,7 @@
 			<div class="row align-items-center justify-content-around main-holder">
 				
 				<div class="col col-md-2">
-					<div id="logo" class=""><a href="./index.php" target="_self">
+					<div id="logo" class=""><a href="https://mkcafe.iai-shop.com" target="_self">
 							<div class="large"></div>
 							<div class="small "></div>
 						</a></div>
@@ -5381,7 +5381,7 @@
 		<div class="container mb-5">
 			<div class="row">
 				<div class="col-lg-3 col-md-6 col-12 my-3">
-					<a href="/O-firmie-cabout-pol-3.html" class="image-block text-left">
+					<a href="/UNIKATOWA-PALARNIA-KAWY-cabout-pol-251.html" class="image-block text-left">
 						<picture>
 							<img src="/data/designs/xsl/11_1/gfx/assets/blog-1.jpg" alt="Description"/>
 						</picture>
@@ -6145,7 +6145,7 @@
 						<i class="icon-heart-empty"/>
 						<a>
 							<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shoppinglist/@url"/></iaixsl:attribute>
-							Listy zakupowe 4
+							Listy zakupowe
 						</a>
 					</li>
 												<li id="account_boughts" class="menu_orders_item">
@@ -6188,8 +6188,8 @@
 					<ul class="footer_links_sub">
 						<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' and not(/shop/action/shop_information/@url = '')">
 							<li>
-								<a>
-									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shop_information/@url"/></iaixsl:attribute>
+								<a href="https://mkcafe.iai-shop.com/O-nas-cabout-pol-250.html">
+									<!-- <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shop_information/@url"/></iaixsl:attribute> -->
 									O Nas
 								</a>
 							</li>

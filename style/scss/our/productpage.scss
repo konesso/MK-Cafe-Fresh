@@ -48,6 +48,7 @@
     @media all and (max-width: 976px) {
         display: flex;
         padding: 10px;
+        flex-wrap: wrap;
         li {
             width: 50%;
         }

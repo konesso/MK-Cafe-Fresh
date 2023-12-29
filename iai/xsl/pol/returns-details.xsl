@@ -3723,7 +3723,7 @@
 						<i class="icon-heart-empty"/>
 						<a>
 							<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shoppinglist/@url"/></iaixsl:attribute>
-							Listy zakupowe 4
+							Listy zakupowe
 						</a>
 					</li>
 												<li id="account_boughts" class="menu_orders_item">
@@ -3766,8 +3766,8 @@
 					<ul class="footer_links_sub">
 						<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' and not(/shop/action/shop_information/@url = '')">
 							<li>
-								<a>
-									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shop_information/@url"/></iaixsl:attribute>
+								<a href="https://mkcafe.iai-shop.com/O-nas-cabout-pol-250.html">
+									<!-- <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shop_information/@url"/></iaixsl:attribute> -->
 									O Nas
 								</a>
 							</li>

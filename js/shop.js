@@ -21521,15 +21521,7 @@ if (window.innerWidth > 979) {
 // search page 
 function search() {
 
-    // dodawanie outline na hover elementu: 
-    // $('.product__compare_item.--add.btn').mouseenter(function () {
-    //     $(this).addClass('--outline');
-    // });
 
-    // // Usunięcie klasy --outline, gdy myszka opuszcza element
-    // $('.product__compare_item.--add.btn').mouseleave(function () {
-    //     $(this).removeClass('--outline');
-    // });
 
     // Obsługa dropdownów w filtrach i sortowaniu
     $('.s_paging__item .--sort').on("click", function () {
@@ -21646,7 +21638,7 @@ function search() {
                         // Sprawdzenie, czy element trait istnieje
                         if (traitElement.length) {
                             var value = traitElement.text().trim();
-                            dataPoints.push(value ? parseFloat(value) : 0);
+                            dataPoints.push(value ? parseFloat(value) : 1);
                         }
                     });
 
@@ -21673,11 +21665,14 @@ function search() {
                                 legend: { display: false },
                                 scale: {
                                     angleLines: { color: 'white' },
-                                    ticks: { display: false },
+                                    ticks: {
+                                        display: false,
+                                        min: 0.5,
+                                    },
                                     gridLines: { color: 'white' },
                                     pointLabels: { fontColor: 'black' },
-                                    beginAtZero: false,
-                                    min: 10,
+
+
 
                                 },
                             }
@@ -21711,9 +21706,8 @@ function showMore() {
 app_shop.run(
     function () {
         showStarsSection();
-
         updateProductInfo();
-        removeAndUpdateClasses();
+        removeAndUpdateClassesInProductDescription();
 
     },
     'all',
@@ -21724,7 +21718,6 @@ app_shop.run((() => { document.querySelector(".product_name__action.--shopping-l
 
 
 function showStarsSection() {
-
 
     var nutyKwiatoweExist = $('#projector_dictionary .dictionary__param').filter(function () {
         return $(this).find('.dictionary__name_txt').text().trim() === 'Nuty kwiatowe';
@@ -21797,13 +21790,9 @@ function showStarsSection() {
     }
 }
 
-
-
-
 app_shop.run(
     function () {
         search();
-
     },
     'all',
     '#container.search_page',
@@ -21818,7 +21807,7 @@ app_shop.run(
     '#container.main_page'
 )
 
-function removeAndUpdateClasses() {
+function removeAndUpdateClassesInProductDescription() {
 
     if ($('.mkdesc').length > 0) {
         $('.mkdesc div').each(function () {
@@ -21863,6 +21852,7 @@ function updateProductInfo() {
         $('#product_extra_info1').removeClass('d-none');
         // Pobranie wartości lub użycie wartości domyślnych
         var region = getValueOrDefault('REGION', '');
+        var regionImg = getValueOrDefaultRegion('REGION', '');
         var wysokoscUpraw = getValueOrDefault('WYSOKOŚĆ UPRAW', '');
         var metodaObróbki = getValueOrDefault('METODA OBRÓBKI', '');
         var stopienPalenia = getValueOrDefault('STOPIEŃ PALENIA', '');
@@ -21871,7 +21861,7 @@ function updateProductInfo() {
         var values = [];
 
         // Zmiana źródła obrazka w zależności od regionu
-        var imgSrc = region !== '' ? `${mainAssetsUrl}map-${region.toLowerCase()}.png` : '';
+        var imgSrc = region !== '' ? `${mainAssetsUrl}map-${regionImg.toLowerCase()}.png` : '';
 
         // Tworzenie HTML dla sposobów przygotowania
         var sposobyPrzygotowaniaHtml = getSposobyPrzygotowaniaHtml();
@@ -21887,7 +21877,7 @@ function updateProductInfo() {
         var sectionHtml = `
         <div class="row align-items-center">
             <div class="col-md-4 text-center">
-               ${imgSrc ? `<img src="${imgSrc}" alt="${region}" />` : ''}
+               ${imgSrc ? `<img src="${imgSrc}" alt="${regionImg}" />` : ''}
             </div>
             <div class="col-md-2">
                 <ul class="mk_extra_info">
@@ -21976,12 +21966,14 @@ function updateProductInfo() {
                         var productionDate = data.Dates.productionDate;
                         var expirationDate = data.Dates.expirationDate;
 
-                        var productionDateHtml = `<li><span class="text-uppercase">Data Palenia</span><b>${productionDate}</b></li>`;
-                        var expirationDateHtml = `<li><span class="text-uppercase">Data Ważności</span><b>${expirationDate}</b></li>`;
-
-                        // Dodawanie do elementu z klasą 'mk_extra_info'
-                        $('.mk_extra_info').append(productionDateHtml);
-                        $('.mk_extra_info').append(expirationDateHtml);
+                        if (productionDate) {
+                            var productionDateHtml = `<li><span class="text-uppercase">Data Palenia</span><b>${productionDate}</b></li>`;
+                            $('.mk_extra_info').append(productionDateHtml);
+                        }
+                        if (expirationDate) {
+                            var expirationDateHtml = `<li><span class="text-uppercase">Data Ważności</span><b>${expirationDate}</b></li>`;
+                            $('.mk_extra_info').append(expirationDateHtml);
+                        }
                     }
                 },
                 error: function () {
@@ -21990,14 +21982,28 @@ function updateProductInfo() {
             });
         }
 
-        getProductionAndExpireDate()
+        getProductionAndExpireDate();
+
+
+
 
 
         function getValueOrDefault(labelText, defaultValue) {
             var item = $('#projector_dictionary .dictionary__param').filter(function () {
                 return $(this).find('.dictionary__name_txt').text().trim().toUpperCase() === labelText;
             });
-            return item.length ? item.find('.dictionary__value_txt').text().trim() : defaultValue;
+            var text = item.length ? item.find('.dictionary__value_txt').text() : defaultValue;
+            // Dodawanie spacji przed każdą wielką literą oprócz pierwszej
+            return text.replace(/([A-Z])/g, ' $1').trim();
+        }
+
+        function getValueOrDefaultRegion(labelText, defaultValue) {
+            var item = $('#projector_dictionary .dictionary__param').filter(function () {
+                return $(this).find('.dictionary__name_txt').text().trim().toUpperCase() === labelText;
+            });
+            var text = item.length ? item.find('.dictionary__value_txt').text().trim() : defaultValue;
+            // Usunięcie wszystkich spacji
+            return text.replace(/\s+/g, '');
         }
 
         labels.forEach(function (label) {
@@ -22032,11 +22038,12 @@ function updateProductInfo() {
                     legend: { display: false },
                     scale: {
                         angleLines: { color: 'white' },
-                        ticks: { display: false },
+                        ticks: {
+                            display: false,
+                            min: 0.5,
+                        },
                         gridLines: { color: 'white' },
                         pointLabels: { fontColor: 'black' },
-                        beginAtZero: false,
-                        min: 20,
 
                     },
                 }

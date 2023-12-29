@@ -943,9 +943,9 @@
         }
     }
     .projector_prices__info {
-        line-height: 1.4;
-        margin-left: 0.5rem;
         display: inline;
+        font-size: 1.1rem;
+        margin: -15px 0 0;
     }
     .projector_prices__period {
         display: none;
@@ -1556,9 +1556,10 @@
         }
     }
     .omnibus_price {
+        margin-top: 10px;
         font-size: 1.1rem;
         margin-bottom: 10px;
-        margin: -15px 0 20px;
+        margin: -15px 0 0;
     }
     .omnibus_price.--hide {
         display: none;
