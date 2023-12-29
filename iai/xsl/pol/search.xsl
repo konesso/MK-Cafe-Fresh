@@ -91,7 +91,7 @@
 			
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-			<link rel="shortcut icon" href="/gfx/assets/favicon.ico" />
+			<link rel="shortcut icon" href="/data/designs/xsl/11_1/gfx/assets/favicon.ico" />
 		
 			
 			<iaixsl:choose>
@@ -851,7 +851,7 @@
 			<div class="row align-items-center justify-content-around main-holder">
 				
 				<div class="col col-md-2">
-					<div id="logo" class=""><a href="./index.php" target="_self">
+					<div id="logo" class=""><a href="https://mkcafe.iai-shop.com/" target="_self">
 							<div class="large"></div>
 							<div class="small "></div>
 						</a></div>
@@ -3589,7 +3589,7 @@
     	
 
 			<iaixsl:for-each select="/shop/page/products/product">
-				<div class="product position-relative col-12 col-sm-6 col-lg-4 pt-4  my-md-5 pb-md-5">
+				<div class="product position-relative col-12 col-sm-6 col-lg-4 pt-4  my-md-5 ">
 					<iaixsl:attribute name="data-product_id"><iaixsl:value-of select="@id"/></iaixsl:attribute>
 					<iaixsl:attribute name="data-product_page"><iaixsl:value-of select="/shop/page/products/navigation/item[@type = 'current']/@counter - 1"/></iaixsl:attribute>
 					<iaixsl:if test="position() = 1">
@@ -4581,7 +4581,7 @@
 								<iaixsl:variable name="var_icon_small_second"><iaixsl:choose><iaixsl:when test="product"><iaixsl:value-of select="product/icon_small_second"/></iaixsl:when><iaixsl:otherwise><iaixsl:value-of select="icon_small_second"/></iaixsl:otherwise></iaixsl:choose></iaixsl:variable>
 								<iaixsl:variable name="var_b2b"/>
 
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
 									
 									<iaixsl:if test="$var_yousave and not($var_yousave = '') and price/@yousave_formatted != ''">
 										<div class="product__yousave">
@@ -5205,22 +5205,22 @@
 						<div class="hotspot mb-5 skeleton">
 							<span class="headline"/>
 							<div class="products d-flex flex-wrap">
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>

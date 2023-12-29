@@ -65,7 +65,7 @@
 								<iaixsl:variable name="var_icon_small_second"><iaixsl:choose><iaixsl:when test="product"><iaixsl:value-of select="product/icon_small_second"/></iaixsl:when><iaixsl:otherwise><iaixsl:value-of select="icon_small_second"/></iaixsl:otherwise></iaixsl:choose></iaixsl:variable>
 								<iaixsl:variable name="var_b2b"/>
 
-								<div class="product col-6 col-sm-3 col-xl-2 pt-4 my-md-5 pb-md-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3">
 
 									
 									<iaixsl:if test="$var_yousave and not($var_yousave = '') and price/@yousave_formatted != ''">
@@ -683,7 +683,7 @@
 											</iaixsl:if>
 										</div>
 									</iaixsl:if>
-										<div class="d-flex justify-content-around align-items-center checkBtns">
+										<div class="d-none justify-content-around align-items-center checkBtns">
 												<a class=" product__check_item --add btn " rel="nofollow" title="Kliknij, aby zobaczyć produkt " >
 													<iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute>
 														<div class="d-inline-flex justify-content-center align-items-center"><span class="checkProduct">Sprawdź</span> <span class="fa fa-angle-right ml-2"></span></div>
@@ -698,22 +698,22 @@
 						<div class="hotspot mb-5 skeleton">
 							<span class="headline"/>
 							<div class="products d-flex flex-wrap">
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>

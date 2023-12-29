@@ -89,7 +89,7 @@
 				</iaixsl:otherwise>
 			</iaixsl:choose>
 			
-			<link rel="shortcut icon" href="/gfx/eng/favicon.ico" />
+			<link rel="shortcut icon" href="/data/include/cms/MkFresh/theme/favicon.ico" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 			<iaixsl:choose>
 				<iaixsl:when test="/shop/mask/@scheme_color">
@@ -2839,22 +2839,22 @@
 					<div class="hotspot mb-5 skeleton">
 						<span class="headline"/>
 						<div class="products d-flex flex-wrap">
-							<div class="product col-6 col-sm-3 col-xl-2 py-3">
+							<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
 								<span class="product__icon d-flex justify-content-center align-items-center"/>
 								<span class="product__name"/>
 								<div class="product__prices"/>
 							</div>
-							<div class="product col-6 col-sm-3 col-xl-2 py-3">
+							<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
 								<span class="product__icon d-flex justify-content-center align-items-center"/>
 								<span class="product__name"/>
 								<div class="product__prices"/>
 							</div>
-							<div class="product col-6 col-sm-3 col-xl-2 py-3">
+							<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
 								<span class="product__icon d-flex justify-content-center align-items-center"/>
 								<span class="product__name"/>
 								<div class="product__prices"/>
 							</div>
-							<div class="product col-6 col-sm-3 col-xl-2 py-3">
+							<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
 								<span class="product__icon d-flex justify-content-center align-items-center"/>
 								<span class="product__name"/>
 								<div class="product__prices"/>

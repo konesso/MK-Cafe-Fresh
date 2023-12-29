@@ -89,7 +89,7 @@
 				</iaixsl:otherwise>
 			</iaixsl:choose>
 			
-			<link rel="shortcut icon" href="/gfx/eng/favicon.ico" />
+			<link rel="shortcut icon" href="/data/include/cms/MkFresh/theme/favicon.ico" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 			<iaixsl:choose>
 				<iaixsl:when test="/shop/mask/@scheme_color">

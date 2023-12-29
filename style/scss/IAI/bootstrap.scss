@@ -63,7 +63,7 @@
     max-width: 1170px;
 }
 .max-width-1200 {
-    max-width: 1170px;
+    max-width: 1350px;
 }
 .max-width-1400 {
     max-width: 1400px;
@@ -1649,6 +1649,7 @@ button.btn.--large {
 .label.--new {
     color: #fff;
     background: #a11530;
+    display: none !important;
 }
 .bestseller {
     color: #fff;
@@ -4254,7 +4255,7 @@ img.b-loaded {
         margin-top: 1rem;
     }
     .checkBtns {
-        transform: translateY(85%);
+        transform: translateY(30%);
         overflow: hidden;
         display: none !important;
         @media all and (min-width: 768px) {
