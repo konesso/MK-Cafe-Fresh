@@ -3803,6 +3803,12 @@
                     Logowanie
                 </h2>
 
+
+				<div class="badge-important p-5 text-center"><p>Drogi kliencie, jeżeli utworzyłeś konto w naszym sklepie przed 02.01.2024 i chcesz złożyć ponownie zamówienie konieczne będzie utworzenie nowego konta. <br/>W trosce o Twój komfort oraz najwyższą jakość świadczonych usług sklep został przeniesiony na nową infrastrukturę.<br/><br/>
+
+				Za utrudnienia przepraszamy i życzymy udanych zakupów.</p></div>
+
+
                 <iaixsl:choose>
                     <iaixsl:when test="not(/shop/client_data/@signin = 'cookie') and /shop/client_data/@iai_accounts = 'consent' and (not(/shop/client_data/@last_login_option = 'shop'))">
 
