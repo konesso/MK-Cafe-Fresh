@@ -2778,9 +2778,82 @@
         
 				</div>
 			</iaixsl:if>
+			<!-- formularz kontaktowy -->
 			
-		</section>
-
+			<section>
+			<div class="row">
+			<div class="col-12 col-lg-6">
+			<section id="product_askforproduct" class="mb-5 col-12">
+				<div class="askforproduct__label headline"><span class="askforproduct__label_txt headline__name">Skontaktuj się z
+						nami</span></div>
+				<form action="/settings.php" class="askforproduct__form row flex-column align-items-center" method="post"
+					novalidate="novalidate">
+					<div class="askforproduct__description col-12 col-sm-7 mb-4"><span class="askforproduct__description_txt">
+						</span><span class="askforproduct__privacy">Dane są przetwarzane zgodnie z <a
+								href="/pol-privacy-and-cookie-notice.html">polityką prywatności</a>. Przesyłając je, akceptujesz jej
+							postanowienia. </span></div><input type="hidden" name="question_product_id" value="8988"/><input
+						type="hidden" name="question_action" value="add"/>
+					<div class="askforproduct__inputs col-12 col-sm-7">
+						<div class="f-group askforproduct__email">
+							<div class="f-feedback askforproduct__feedback --email"><input id="askforproduct__email_input"
+									type="email" class="f-control --validate" name="question_email" required="required" /><label
+									for="askforproduct__email_input" class="f-label">
+									E-mail
+								</label><span class="f-control-feedback"></span></div>
+						</div>
+						<div class="f-group askforproduct__question">
+							<div class="f-feedback askforproduct__feedback --question"><textarea id="askforproduct__question_input"
+									rows="6" cols="52" type="question" class="f-control --validate" name="product_question"
+									minlength="3" required="required"></textarea><label for="askforproduct__question_input"
+									class="f-label">
+									Pytanie
+								</label><span class="f-control-feedback"></span></div>
+						</div>
+					</div>
+					<div class="askforproduct__submit  col-12 col-sm-7"><button
+							class="btn --solid --medium px-5 mb-2 askforproduct__button">
+							Wyślij
+						</button></div>
+				</form>
+			</section>
+			</div>
+			<div class="col-12 col-lg-6">
+			<section id="product_askforproduct" class="mb-5 col-12">
+				<div class="askforproduct__label headline"><span style="color: #a11530;" class="askforproduct__label_txt headline__name">Skontaktuj się z
+						producentem</span></div>
+				<form action="/settings.php" class="askforproduct__form row flex-column align-items-center" method="post"
+					novalidate="novalidate">
+					<div class="askforproduct__description col-12 col-sm-7 mb-4"><span class="askforproduct__description_txt">
+						</span><span class="askforproduct__privacy">Dane są przetwarzane zgodnie z <a
+								href="/pol-privacy-and-cookie-notice.html">polityką prywatności</a>. Przesyłając je, akceptujesz jej
+							postanowienia. </span></div><input type="hidden" name="question_product_id" value="8988"/><input
+						type="hidden" name="question_action" value="add"/>
+					<div class="askforproduct__inputs col-12 col-sm-7">
+						<div class="f-group askforproduct__email">
+							<div class="f-feedback askforproduct__feedback --email"><input id="askforproduct__email_input"
+									type="email" class="f-control --validate" name="question_email" required="required" /><label
+									for="askforproduct__email_input" class="f-label">
+									E-mail
+								</label><span class="f-control-feedback"></span></div>
+						</div>
+						<div class="f-group askforproduct__question">
+							<div class="f-feedback askforproduct__feedback --question"><textarea id="askforproduct__question_input"
+									rows="6" cols="52" type="question" class="f-control --validate" name="product_question"
+									minlength="3" required="required"></textarea><label for="askforproduct__question_input"
+									class="f-label">
+									Pytanie
+								</label><span class="f-control-feedback"></span></div>
+						</div>
+					</div>
+					<div class="askforproduct__submit  col-12 col-sm-7"><button style="background-color: #a11530;"
+							class="btn --solid --medium px-5 mb-2 askforproduct__button">
+							Wyślij
+						</button></div>
+				</form>
+			</section>
+			</div>
+			</div>
+			</section>
 		</div>
 	</div>
 
