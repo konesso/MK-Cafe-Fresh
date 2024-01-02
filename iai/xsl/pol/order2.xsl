@@ -4099,17 +4099,8 @@
 									<label class="order2__invoice_label f-label">
 										<iaixsl:attribute name="for">order2_document_<iaixsl:value-of select="@type"/></iaixsl:attribute>
 										<iaixsl:choose>
-											<iaixsl:when test="@type = 'confirmation'">
-												Potwierdzenie zakupu
-											</iaixsl:when>
-											<iaixsl:when test="@type = 'invoice'">
-												Fakturę drukowaną
-											</iaixsl:when>
 											<iaixsl:when test="@type = 'e-invoice'">
 												Fakturę w formie elektronicznej
-											</iaixsl:when>
-											<iaixsl:when test="@type = 'receipt'">
-												Rachunek
 											</iaixsl:when>
 										</iaixsl:choose>
 									</label>

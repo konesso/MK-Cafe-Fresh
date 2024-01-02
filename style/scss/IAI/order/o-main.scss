@@ -2220,6 +2220,7 @@ div.login_menu#points_login {
         border: none;
         padding: 0;
         margin: 0;
+        justify-content: start;
         &:after {
             display: none;
         }

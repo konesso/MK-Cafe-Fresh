@@ -21635,12 +21635,30 @@ function search() {
 
                     labels.forEach(function (label) {
                         var traitElement = productTraits.find(`.trait:contains(${label}) .trait__value`);
-                        // Sprawdzenie, czy element trait istnieje
-                        if (traitElement.length) {
-                            var value = traitElement.text().trim();
-                            dataPoints.push(value ? parseFloat(value) : 1);
+                        var text = traitElement.text().trim();
+                        var value;
+
+                        // Sprawdzenie, czy tekst jest liczbą
+                        var isNumber = /^[\d.]+$/.test(text);
+
+                        if (label === "Karmel" && !isNumber) {
+                            console.log("🚀 ~ file: shop.js:21645 ~ label:", label)
+                            // Dla "Karmel" bez wartości liczbowej, użyj 4
+                            value = 4;
+                        } else if (isNumber) {
+                            // Jeśli tekst jest liczbą, użyj tej wartości
+                            value = parseFloat(text);
+                        } else {
+                            // Domyślna wartość
+                            value = 1;
                         }
+
+                        dataPoints.push(value);
                     });
+
+
+
+
 
                     var nutyKwiatoweExist = productTraits.find(`.trait:contains('Nuty kwiatowe')`).length > 0;
 
