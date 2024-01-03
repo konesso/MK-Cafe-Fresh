@@ -6820,7 +6820,7 @@
 								<iaixsl:variable name="var_icon_small_second"><iaixsl:choose><iaixsl:when test="product"><iaixsl:value-of select="product/icon_small_second"/></iaixsl:when><iaixsl:otherwise><iaixsl:value-of select="icon_small_second"/></iaixsl:otherwise></iaixsl:choose></iaixsl:variable>
 								<iaixsl:variable name="var_b2b"/>
 
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 
 									
 									<iaixsl:if test="$var_yousave and not($var_yousave = '') and price/@yousave_formatted != ''">
@@ -7446,22 +7446,22 @@
 						<div class="hotspot mb-5 skeleton">
 							<span class="headline"/>
 							<div class="products d-flex flex-wrap">
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
@@ -7544,7 +7544,7 @@
 								<iaixsl:variable name="var_icon_small_second"><iaixsl:choose><iaixsl:when test="product"><iaixsl:value-of select="product/icon_small_second"/></iaixsl:when><iaixsl:otherwise><iaixsl:value-of select="icon_small_second"/></iaixsl:otherwise></iaixsl:choose></iaixsl:variable>
 								<iaixsl:variable name="var_b2b"/>
 
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 
 									
 									<iaixsl:if test="$var_yousave and not($var_yousave = '') and price/@yousave_formatted != ''">
@@ -8170,22 +8170,22 @@
 						<div class="hotspot mb-5 skeleton">
 							<span class="headline"/>
 							<div class="products d-flex flex-wrap">
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
@@ -8268,7 +8268,7 @@
 								<iaixsl:variable name="var_icon_small_second"><iaixsl:choose><iaixsl:when test="product"><iaixsl:value-of select="product/icon_small_second"/></iaixsl:when><iaixsl:otherwise><iaixsl:value-of select="icon_small_second"/></iaixsl:otherwise></iaixsl:choose></iaixsl:variable>
 								<iaixsl:variable name="var_b2b"/>
 
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 
 									
 									<iaixsl:if test="$var_yousave and not($var_yousave = '') and price/@yousave_formatted != ''">
@@ -8895,22 +8895,22 @@
 						<div class="hotspot mb-5 skeleton">
 							<span class="headline"/>
 							<div class="products d-flex flex-wrap">
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>

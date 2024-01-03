@@ -2,7 +2,7 @@
 <iaixsl:stylesheet xmlns:php="http://php.net/xsl" xmlns:iaixsl="http://www.w3.org/1999/XSL/Transform" xmlns:iaielement="http://iai-system.com/ddd" xmlns:fb="http://www.facebook.com/2008/fbml" version="1.0" exclude-result-prefixes="php iaielement fb"><iaixsl:output indent="no" method="html" doctype-system="about:legacy-compat" version="1.0" encoding="UTF-8"/><iaixsl:strip-space elements="table tr td img"/><iaixsl:decimal-format name="yen" NaN="" grouping-separator="," decimal-separator="."/><iaixsl:template match="shop">
 		<iaixsl:if test="page/projector/products_associated_zone2">
 
-			<section id="products_associated_zone2" class="hotspot mb-5 col-12">
+			<section id="products_associated_zone2" class="hotspot mb-5 col-12 search-product">
 				
 				<iaixsl:variable name="headline_after_products_associated_zone2"/>
 				
@@ -697,23 +697,23 @@
 					<iaixsl:otherwise>
 						<div class="hotspot mb-5 skeleton">
 							<span class="headline"/>
-							<div class="products d-flex flex-wrap">
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+							<div class="products search-product d-flex flex-wrap">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
