@@ -21816,6 +21816,10 @@ app_shop.run(
 
 function removeAndUpdateClassesInProductDescription() {
 
+    if ($('#projector_longdescription .container').length > 0) {
+        $('.container').addClass('mw80')
+    }
+
     if ($('.mkdesc').length > 0) {
         $('.mkdesc div').each(function () {
 

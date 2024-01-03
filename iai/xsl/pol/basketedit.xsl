@@ -7261,8 +7261,8 @@
 					
 					<iaixsl:if test="/shop/page/rebates/code_details/@active = 'y'">
 						<div class="basketedit_rebatecode_title">
-							<div>
-								<div>
+							<div class="d-flex flex-column">
+								<div class="my-1">
 									<span class="basketedit_rebatecode_title">
 										Aktywny kod rabatowy: 
 									</span>
@@ -7270,7 +7270,7 @@
 										<iaixsl:value-of select="/shop/page/rebates/code_details/@number"/>
 									</span>
 								</div>
-								<div class="basketedit_rebatecode_action">
+								<div class="basketedit_rebatecode_action my-1">
 									<a id="a_remove_code" href="#">[usuń kod]</a>
 									<a id="a_change_code" href="#">[użyj innego kodu]</a>
 								</div>

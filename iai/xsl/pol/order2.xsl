@@ -4086,12 +4086,26 @@
 					</div>
 					<div class="order2_info1" id="order2_box_4">
 						<div class="order2_info1_sub">
-							<input type="hidden" name="checkinvoice" value="true"/>
-								<div class="order2__invoice_group f-group --radio">							
-									<span class="order2__invoice_label">
+							<input type="hidden" checked="true" name="checkinvoice" value="true"/>
+								<iaixsl:for-each select="/shop/page/order2/orderinvoice/option">
+								<div class="order2__invoice_group f-group --radio">
+									<input type="radio" class="order2__invoice_input f-control" name="invoice">
+										<iaixsl:attribute name="value"><iaixsl:value-of select="@value"/></iaixsl:attribute>
+										<iaixsl:attribute name="id">order2_document_<iaixsl:value-of select="@type"/></iaixsl:attribute>
+										<!-- <iaixsl:if test="@checked"> -->
+											<iaixsl:attribute name="checked">checked</iaixsl:attribute>
+										<!-- </iaixsl:if> -->
+									</input>
+									<label class="order2__invoice_label">
+										<iaixsl:attribute name="for">order2_document_<iaixsl:value-of select="@type"/></iaixsl:attribute>
+										<iaixsl:choose>
+											<iaixsl:when test="@type = 'e-invoice'">
 												Fakturę w formie elektronicznej
-									</span>
+											</iaixsl:when>
+										</iaixsl:choose>
+									</label>
 								</div>
+							</iaixsl:for-each>
 							<iaixsl:if test="/shop/page/order2/orderinvoice/option/@type = 'e-invoice'">
 								<div id="e-invoice_dialog">
 									<span class="big_label">Elektroniczne dostarczanie faktur</span>
