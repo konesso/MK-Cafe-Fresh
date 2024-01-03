@@ -3202,7 +3202,7 @@
 					<ul class="footer_links_sub">
 						<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' and not(/shop/action/shop_information/@url = '')">
 							<li>
-								<a href="https://mkcafe.iai-shop.com/O-nas-cabout-pol-250.html">
+								<a href="https://mkfresh.pl/O-nas-cabout-pol-250.html">
 									<!-- <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shop_information/@url"/></iaixsl:attribute> -->
 									O Nas
 								</a>

@@ -5377,7 +5377,8 @@
         }
     }
     #menu_security_policy {
-        padding-top: 0px;
+        margin-top: 50px;
+        padding-top: 1rem;
     }
     .securityPolicy {
         &:not(.supershop) {
@@ -5398,6 +5399,7 @@
     }
     .securityPolicy__sub {
         flex-wrap: nowrap;
+        width: 100%;
     }
     .securityPolicy__img {
         margin-bottom: 0;
@@ -5938,7 +5940,12 @@
         margin-top: 0;
     }
     div.basketedit_rebatecode_title {
-        width: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f1f1f1;
+        padding: 1rem;
     }
     div.basketedit_rebatecode_r {
         float: right;
@@ -6788,6 +6795,8 @@
     #order2_info_sub4 {
         display: flex;
         margin-bottom: 0;
+        justify-content: flex-start;
+        align-items: center;
         div.order2_info1_sub {
             margin-bottom: 0;
             display: flex;

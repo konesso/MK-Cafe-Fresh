@@ -839,7 +839,7 @@
 			<div class="row align-items-center justify-content-around main-holder">
 				
 				<div class="col col-md-2">
-					<div id="logo" class=""><a href="https://mkcafe.iai-shop.com/" target="_self">
+					<div id="logo" class=""><a href="https://mkfresh.pl/" target="_self">
 							<div class="large"></div>
 							<div class="small "></div>
 						</a></div>
@@ -7261,49 +7261,57 @@
 					
 					<iaixsl:if test="/shop/page/rebates/code_details/@active = 'y'">
 						<div class="basketedit_rebatecode_title">
-							<span class="basketedit_rebatecode_title">
-								Aktywny kod rabatowy: 
-							</span>
-							<span class="basketedit_rebatecode_value">
-								<iaixsl:value-of select="/shop/page/rebates/code_details/@number"/>
-							</span>
-							<div class="basketedit_rebatecode_action">
-								<a id="a_remove_code" href="#">[usuń kod]</a>
-								<a id="a_change_code" href="#">[użyj innego kodu]</a>
+							<div>
+								<div>
+									<span class="basketedit_rebatecode_title">
+										Aktywny kod rabatowy: 
+									</span>
+									<span class="basketedit_rebatecode_value">
+										<iaixsl:value-of select="/shop/page/rebates/code_details/@number"/>
+									</span>
+								</div>
+								<div class="basketedit_rebatecode_action">
+									<a id="a_remove_code" href="#">[usuń kod]</a>
+									<a id="a_change_code" href="#">[użyj innego kodu]</a>
+								</div>
 							</div>
+							<div class="basketedit_rebatecode_r">
+								<iaixsl:if test="/shop/page/rebates/code_details/@min_order &gt; 0">
+									<div class="basketedit_rebatecode_title_out">
+										<span class="basketedit_rebatecode_title">
+											Wymagana wartość produktów w koszyku: 
+										</span>
+										<span class="basketedit_rebatecode_value">
+											<iaixsl:value-of select="/shop/page/rebates/code_details/@min_order"/><iaixsl:value-of select="$signbetweenpricecurrency"/><iaixsl:value-of select="/shop/currency/@name"/>
+										</span>
+									</div>
+								</iaixsl:if>
+								<iaixsl:if test="/shop/page/rebates/code_details/@expires">
+									<div class="basketedit_rebatecode_title_out">
+										<span class="basketedit_rebatecode_title">
+											Kod rabatowy ważny do dnia: 
+										</span>
+										<span class="basketedit_rebatecode_value">
+											<iaixsl:value-of select="/shop/page/rebates/code_details/@expires"/>
+										</span>
+									</div>
+								</iaixsl:if>
+								<div>
+									<a href="/client-rebate.php" class="btn --solid basketedit_client_rebate" id="basketedit_client_rebate">
+										<iaixsl:attribute name="title">Szczegółowy wykaz rabatów</iaixsl:attribute>
+										Więcej informacji o przyznanych rabatach
+									</a>
+								</div>
+							</div>
+							
 							<form action="/settings.php?from=basket" method="post" id="change_code">
 								<input class="basketedit_rebatecode_input" name="rebates_codes" type="text" value=""/>
 								<input id="global_rebates_codes" name="global_rebates_codes" value="add" type="hidden"/>
 								<input class="btn --solid basketedit_change_code" type="submit" value="">
 									<iaixsl:attribute name="value">Użyj innego kodu</iaixsl:attribute>
 								</input>
+							
 							</form>
-						</div>
-						<div class="basketedit_rebatecode_r">
-							<iaixsl:if test="/shop/page/rebates/code_details/@min_order &gt; 0">
-								<div class="basketedit_rebatecode_title_out">
-									<span class="basketedit_rebatecode_title">
-										Wymagana wartość produktów w koszyku: 
-									</span>
-									<span class="basketedit_rebatecode_value">
-										<iaixsl:value-of select="/shop/page/rebates/code_details/@min_order"/><iaixsl:value-of select="$signbetweenpricecurrency"/><iaixsl:value-of select="/shop/currency/@name"/>
-									</span>
-								</div>
-							</iaixsl:if>
-							<iaixsl:if test="/shop/page/rebates/code_details/@expires">
-								<div class="basketedit_rebatecode_title_out">
-									<span class="basketedit_rebatecode_title">
-										Kod rabatowy ważny do dnia: 
-									</span>
-									<span class="basketedit_rebatecode_value">
-										<iaixsl:value-of select="/shop/page/rebates/code_details/@expires"/>
-									</span>
-								</div>
-							</iaixsl:if>
-							<a href="/client-rebate.php" class="btn --solid basketedit_client_rebate" id="basketedit_client_rebate">
-								<iaixsl:attribute name="title">Szczegółowy wykaz rabatów</iaixsl:attribute>
-								Więcej informacji o przyznanych rabatach
-							</a>
 						</div>
 					</iaixsl:if>
 					
@@ -7314,20 +7322,26 @@
 							</div>
 						</iaixsl:if>
 
-						<span class="basketedit_rebatecode_activate_txt">Posiadasz kod rabatowy? </span>
-
-						<form action="/settings.php?from=basket" method="post">
-							
-							<input onclick="$('#basketedit_rebatecode_activate_info').fadeIn('slow');" class="basketedit_rebatecode_input" name="rebates_codes" type="text" value=""/>
-							<input id="global_rebates_codes" name="global_rebates_codes" value="add" type="hidden"/>
-							<input class="btn --solid basketedit_submit_code" type="submit" value="">
-								<iaixsl:attribute name="value">Zatwierdź kod</iaixsl:attribute>
-							</input>
-						</form>
-						<a href="/client-rebate.php" class="btn --solid basketedit_client_rebate">
-							<iaixsl:attribute name="title">Szczegółowy wykaz rabatów</iaixsl:attribute>
-							Więcej informacji o rabatach
-						</a>
+						<div class="p-2">
+							<span class="basketedit_rebatecode_activate_txt">Posiadasz kod rabatowy? </span>
+	
+							<form action="/settings.php?from=basket" method="post">
+								
+								<div>
+									<input onclick="$('#basketedit_rebatecode_activate_info').fadeIn('slow');" class="basketedit_rebatecode_input" name="rebates_codes" type="text" value=""/>
+									<input id="global_rebates_codes" name="global_rebates_codes" value="add" type="hidden"/>
+									<input class="btn --solid basketedit_submit_code" type="submit" value="">
+										<iaixsl:attribute name="value">Zatwierdź kod</iaixsl:attribute>
+									</input>
+								</div>
+								<div>
+									<a href="/client-rebate.php" class="btn --solid basketedit_client_rebate">
+										<iaixsl:attribute name="title">Szczegółowy wykaz rabatów</iaixsl:attribute>
+										Więcej informacji o rabatach
+									</a>
+								</div>
+							</form>
+						</div>
 					</iaixsl:if>
 
 				</div>
@@ -7795,7 +7809,42 @@
 		</iaixsl:if>
 		<!-- (basketedit_hotspot_zone1, 614c5cee4dc0d1.39044150.5)-->
 	
-<!-- (menu_security_policy, 60dd8e83485025.35067229.6)-->
+
+<!-- (menu_basketedit_hotspot_zone1, 60dd8e8201f6d5.58537120.1)-->
+        <iaixsl:if test="page/hotspot/products_zone1 or page/hotspot/products_zone1">
+
+            <div class="hotspot mb-5 skeleton" id="basketedit_hotspot_zone1" data-ajaxLoad="true" data-pageType="basket">
+                <span class="headline"/>
+                <div class="products d-flex flex-wrap">
+                    <div class="product col-6 col-sm-3 py-3">
+                        <span class="product__icon d-flex justify-content-center align-items-center"/>
+                        <span class="product__name"/>
+                        <div class="product__prices"/>
+                    </div>
+                    <div class="product col-6 col-sm-3 py-3">
+                        <span class="product__icon d-flex justify-content-center align-items-center"/>
+                        <span class="product__name"/>
+                        <div class="product__prices"/>
+                    </div>
+                    <div class="product col-6 col-sm-3 py-3">
+                        <span class="product__icon d-flex justify-content-center align-items-center"/>
+                        <span class="product__name"/>
+                        <div class="product__prices"/>
+                    </div>
+                    <div class="product col-6 col-sm-3 py-3">
+                        <span class="product__icon d-flex justify-content-center align-items-center"/>
+                        <span class="product__name"/>
+                        <div class="product__prices"/>
+                    </div>
+                </div>
+            </div>
+
+        </iaixsl:if>
+        
+				
+				</div>
+				<div class="col-12">
+				<!-- (menu_security_policy, 60dd8e83485025.35067229.6)-->
 	<iaixsl:if test="/shop/iai/@button_src">
 		<div id="menu_security_policy" class="menu_box securityPolicy">
 			<iaixsl:choose>
@@ -7855,37 +7904,6 @@
 			</iaixsl:choose>
 		</div>
 	</iaixsl:if>
-<!-- (menu_basketedit_hotspot_zone1, 60dd8e8201f6d5.58537120.1)-->
-        <iaixsl:if test="page/hotspot/products_zone1 or page/hotspot/products_zone1">
-
-            <div class="hotspot mb-5 skeleton" id="basketedit_hotspot_zone1" data-ajaxLoad="true" data-pageType="basket">
-                <span class="headline"/>
-                <div class="products d-flex flex-wrap">
-                    <div class="product col-6 col-sm-3 py-3">
-                        <span class="product__icon d-flex justify-content-center align-items-center"/>
-                        <span class="product__name"/>
-                        <div class="product__prices"/>
-                    </div>
-                    <div class="product col-6 col-sm-3 py-3">
-                        <span class="product__icon d-flex justify-content-center align-items-center"/>
-                        <span class="product__name"/>
-                        <div class="product__prices"/>
-                    </div>
-                    <div class="product col-6 col-sm-3 py-3">
-                        <span class="product__icon d-flex justify-content-center align-items-center"/>
-                        <span class="product__name"/>
-                        <div class="product__prices"/>
-                    </div>
-                    <div class="product col-6 col-sm-3 py-3">
-                        <span class="product__icon d-flex justify-content-center align-items-center"/>
-                        <span class="product__name"/>
-                        <div class="product__prices"/>
-                    </div>
-                </div>
-            </div>
-
-        </iaixsl:if>
-        
 				</div>
 			</iaixsl:if>
 		</div>
@@ -8206,7 +8224,7 @@
 					<ul class="footer_links_sub">
 						<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' and not(/shop/action/shop_information/@url = '')">
 							<li>
-								<a href="https://mkcafe.iai-shop.com/O-nas-cabout-pol-250.html">
+								<a href="https://mkfresh.pl/O-nas-cabout-pol-250.html">
 									<!-- <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shop_information/@url"/></iaixsl:attribute> -->
 									O Nas
 								</a>

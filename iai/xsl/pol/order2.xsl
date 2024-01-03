@@ -838,7 +838,7 @@
 			<div class="row align-items-center justify-content-around main-holder">
 				
 				<div class="col col-md-2">
-					<div id="logo" class=""><a href="https://mkcafe.iai-shop.com/" target="_self">
+					<div id="logo" class=""><a href="https://mkfresh.pl/" target="_self">
 							<div class="large"></div>
 							<div class="small "></div>
 						</a></div>
@@ -4087,25 +4087,11 @@
 					<div class="order2_info1" id="order2_box_4">
 						<div class="order2_info1_sub">
 							<input type="hidden" name="checkinvoice" value="true"/>
-							<iaixsl:for-each select="/shop/page/order2/orderinvoice/option">
-								<div class="order2__invoice_group f-group --radio">
-									<input type="radio" class="order2__invoice_input f-control" name="invoice">
-										<iaixsl:attribute name="value"><iaixsl:value-of select="@value"/></iaixsl:attribute>
-										<iaixsl:attribute name="id">order2_document_<iaixsl:value-of select="@type"/></iaixsl:attribute>
-										<iaixsl:if test="@checked">
-											<iaixsl:attribute name="checked">checked</iaixsl:attribute>
-										</iaixsl:if>
-									</input>
-									<label class="order2__invoice_label f-label">
-										<iaixsl:attribute name="for">order2_document_<iaixsl:value-of select="@type"/></iaixsl:attribute>
-										<iaixsl:choose>
-											<iaixsl:when test="@type = 'e-invoice'">
+								<div class="order2__invoice_group f-group --radio">							
+									<span class="order2__invoice_label">
 												Fakturę w formie elektronicznej
-											</iaixsl:when>
-										</iaixsl:choose>
-									</label>
+									</span>
 								</div>
-							</iaixsl:for-each>
 							<iaixsl:if test="/shop/page/order2/orderinvoice/option/@type = 'e-invoice'">
 								<div id="e-invoice_dialog">
 									<span class="big_label">Elektroniczne dostarczanie faktur</span>
@@ -5414,7 +5400,7 @@
 					<ul class="footer_links_sub">
 						<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' and not(/shop/action/shop_information/@url = '')">
 							<li>
-								<a href="https://mkcafe.iai-shop.com/O-nas-cabout-pol-250.html">
+								<a href="https://mkfresh.pl/O-nas-cabout-pol-250.html">
 									<!-- <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shop_information/@url"/></iaixsl:attribute> -->
 									O Nas
 								</a>

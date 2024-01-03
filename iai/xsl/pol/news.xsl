@@ -837,7 +837,7 @@
 			<div class="row align-items-center justify-content-around main-holder">
 				
 				<div class="col col-md-2">
-					<div id="logo" class=""><a href="https://mkcafe.iai-shop.com/" target="_self">
+					<div id="logo" class=""><a href="https://mkfresh.pl/" target="_self">
 							<div class="large"></div>
 							<div class="small "></div>
 						</a></div>
@@ -2557,6 +2557,7 @@
 		
 		<iaixsl:when test="/shop/page/newslist">
 			<section id="news_list" class="article mb-4">
+			
 				<h1 class="headline">
 					<span class="headline__name">Aktualności</span>
 				</h1>
@@ -3778,7 +3779,7 @@
 					<ul class="footer_links_sub">
 						<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' and not(/shop/action/shop_information/@url = '')">
 							<li>
-								<a href="https://mkcafe.iai-shop.com/O-nas-cabout-pol-250.html">
+								<a href="https://mkfresh.pl/O-nas-cabout-pol-250.html">
 									<!-- <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shop_information/@url"/></iaixsl:attribute> -->
 									O Nas
 								</a>
@@ -4421,17 +4422,17 @@
 		{
 		&quot;@context&quot;: &quot;http://schema.org&quot;,
 		&quot;@type&quot;: &quot;NewsArticle&quot;,
-		&quot;headline&quot;: &quot;<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/blogitem/title/text()"/>&quot;,
-		&quot;mainEntityOfPage&quot;: &quot;<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/blogitem/link/@href"/>&quot;,
-		&quot;datePublished&quot;: &quot;<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/blogitem/date/text()"/>&quot;,
-		&quot;dateModified&quot;: &quot;<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/blogitem/date/text()"/>&quot;,
+		&quot;headline&quot;: &quot;<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/newslist/title/text()"/>&quot;,
+		&quot;mainEntityOfPage&quot;: &quot;<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/newslist/link/@href"/>&quot;,
+		&quot;datePublished&quot;: &quot;<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/newslist/date/text()"/>&quot;,
+		&quot;dateModified&quot;: &quot;<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/newslist/date/text()"/>&quot;,
 		&quot;image&quot;: {
 		&quot;@type&quot;:&quot;ImageObject&quot;,
-		&quot;url&quot;:&quot;<iaixsl:value-of select="substring($curr_url,1,($url_length - 1))"/><iaixsl:value-of disable-output-escaping="yes" select="/shop/page/blogitem/image/@src"/>&quot;,
-		&quot;width&quot;:&quot;<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/blogitem/image/@width"/>&quot;,
-		&quot;height&quot;:&quot;<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/blogitem/image/@height"/>&quot;
+		&quot;url&quot;:&quot;<iaixsl:value-of select="substring($curr_url,1,($url_length - 1))"/><iaixsl:value-of disable-output-escaping="yes" select="/shop/page/newslist/image/@src"/>&quot;,
+		&quot;width&quot;:&quot;<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/newslist/image/@width"/>&quot;,
+		&quot;height&quot;:&quot;<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/newslist/image/@height"/>&quot;
 		},
-		&quot;description&quot;: &quot;<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/blogitem/description/text()"/>&quot;,
+		&quot;description&quot;: &quot;<iaixsl:value-of disable-output-escaping="yes" select="/shop/page/newslist/description/text()"/>&quot;,
 		&quot;author&quot;:{
 		&quot;@type&quot;: &quot;Organization&quot;,
 		&quot;name&quot;:&quot;<iaixsl:value-of select="/shop/contact/owner/@shopshortname"/>&quot;

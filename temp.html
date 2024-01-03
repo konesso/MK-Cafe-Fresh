@@ -1,32 +1,330 @@
-<!-- formularz kontaktowy -->
-<section id="product_askforproduct" class="askforproduct mb-5 col-12">
-    <div class="askforproduct__label headline"><span class="askforproduct__label_txt headline__name">Skontaktuj się z
-            nami</span></div>
-    <form action="/settings.php" class="askforproduct__form row flex-column align-items-center" method="post"
-        novalidate="novalidate">
-        <div class="askforproduct__description col-12 col-sm-7 mb-4"><span class="askforproduct__description_txt">
-            </span><span class="askforproduct__privacy">Dane są przetwarzane zgodnie z <a
-                    href="/pol-privacy-and-cookie-notice.html">polityką prywatności</a>. Przesyłając je, akceptujesz jej
-                postanowienia. </span></div><input type="hidden" name="question_product_id" value="8988" /><input
-            type="hidden" name="question_action" value="add" />
-        <div class="askforproduct__inputs col-12 col-sm-7">
-            <div class="f-group askforproduct__email">
-                <div class="f-feedback askforproduct__feedback --email"><input id="askforproduct__email_input"
-                        type="email" class="f-control --validate" name="question_email" required="required" /><label
-                        for="askforproduct__email_input" class="f-label">
-                        E-mail
-                    </label><span class="f-control-feedback"></span></div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 4.6 Test Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="row flex-lg-row-reverse" style="margin-bottom: 20px;">
+            <div class="col-xs-12 col-sm-5 col-md-4  col-lg-6 text-center " style="margin-bottom:15px;">
+                <div>
+                    <figure class="base-img-wrap inline-block mk2 loaded lazyload">
+                        <img src="https://mkfresh.pl/data/include/cms/MkFresh/Opisy/Brazil-Yellow-Bourbon/brazil-yellow-bourbon-1.jpg"
+                            alt="Brazil Yellow Bourbon" class="img-fluid"> 
+                    </figure>
+                </div>
             </div>
-            <div class="f-group askforproduct__question">
-                <div class="f-feedback askforproduct__feedback --question"><textarea id="askforproduct__question_input"
-                        rows="6" cols="52" type="question" class="f-control --validate" name="product_question"
-                        minlength="3" required="required"></textarea><label for="askforproduct__question_input"
-                        class="f-label">
-                        Pytanie
-                    </label><span class="f-control-feedback"></span></div>
+            <div class="col-xs-12 col-sm-7 col-md-6  col-lg-6 " style="padding-top: 2%">
+                <p class="boldLead">Brazylijska kawa ziarnista od dawna jest jedną z najbardziej cenionych kaw na
+                    świecie, ale wszystko to, co jest w niej najlepsze, znajdziesz w rzadkiej i pożądanej odmianie
+                    Yellow Bourbon. Jej naturalna słodycz wynika z wyjątkowo niskiej kwasowości oraz kremowej
+                    konsystencji, która rozpływa się w ustach. Świeżo palona kawa uwalnia niezwykłe aromaty kwiatowe,
+                    orzechowe, czekoladowe i wiśniowe z dodatkiem kardamonu, które nadają tej odmianie głębi i
+                    sprawiają, że jest jedyna w swoim rodzaju.</p>
             </div>
         </div>
-        <div class="askforproduct__submit  col-12 col-sm-7">
-            <button class="btn --solid --medium px-5 mb-2 askforproduct__button">Wyślij</button>
+        <div xmlns="http://www.w3.org/1999/xhtml" class="row flex-lg-row-reverse" style="margin-bottom: 15px;">
+            <div class="col-xs-12 col-sm-7 col-md-6  col-lg-6  " style="margin-bottom:20px;">
+                <p class="subtitle2" style="margin-top: 15px;">ODMIANA BOURBON</p>
+                <p>Kawa Brazil Yellow Bourbon swoją nazwę zawdzięcza wyjątkowemu pochodzeniu i historii upraw. Wywodzi
+                    się ona z czasów podbojów kolonialnych, czyli początku XVIII wieku, kiedy to Francuzi usiłowali
+                    zapoczątkować uprawę kawy na wyspie Bourbon na Oceanie Indyjskim. Owoce kawowca uległy tam mutacji,
+                    przez co zmieniły swój kolor z naturalnego czerwonego na niespotykany - żółty. Tę wyjątkową odmianę
+                    brazylijskiej Arabiki wyróżnia jednak nie tylko barwa.</p>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4  col-lg-6  text-center " style="margin-bottom:10px;">
+                <div>
+                    <figure class="base-img-wrap inline-block mk2 loaded lazyload">
+                        <img src="https://mkfresh.pl/data/include/cms/MkFresh/Opisy/Brazil-Yellow-Bourbon/brazil-yellow-bourbon-2.jpg"
+                            alt="Brazil Yellow Bourbon" class="img-fluid"> 
+                    </figure>
+                </div>
+            </div>
         </div>
-    </form>
+        <div data-gtmevent="{" event":="" "productdescriptionshow" }"="" xmlns="http://www.w3.org/1999/xhtml"
+            class="moreContent">
+            <div class="row" style="margin-bottom: 20px;">
+                <div class="col-xs-12 col-sm-7  col-md-6  col-lg-6  " style="padding-bottom: 15px; padding-top:2%;">
+                    <p>Uprawa odmiany Bourbon jest bardziej wymagająca niż w przypadku innych rodzajów Arabiki. Jej
+                        żółte owoce są mniejsze i bardziej zwarte niż w odmianie Typica, ale też dają średnio o 20-30%
+                        więcej zbiorów. Krzewy rosną jednak tylko w trudno dostępnych miejscach, na stromych zboczach
+                        górskich. Ze względu na tamtejszą topografię i warunki klimatyczne, owoce odmiany Bourbon
+                        wymagają w przeważającej większości działań ręcznych - ziarnko po ziarnku.</p>
+                </div>
+                <div class="col-xs-12 col-sm-5  col-md-4  col-lg-6  text-center ">
+                    <div>
+                        <figure class="base-img-wrap inline-block mk2 loaded lazyload">
+                            <img src="https://mkfresh.pl/data/include/cms/MkFresh/Opisy/Brazil-Yellow-Bourbon/brazil-yellow-bourbon-3.jpg"
+                                alt="Brazil Yellow Bourbon" class="img-fluid"> 
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-lg-row-reverse" style="margin-bottom: 15px;">
+                <div class="col-xs-12 col-sm-7 col-md-6  col-lg-6  " style="margin-bottom:15px; padding-top: 4%">
+                    <p>Metoda obróbki kawy Yellow Bourbon także nadaje jej charakterystycznego smaku i aromatu. Pulped
+                        natural, bo tak nazywamy tę metodę, polega na pozbawieniu owoców skórki kawowej i suszeniu ich
+                        na słońcu. Dzięki temu naturalna słodycz nie ulatnia się, ale zostaje wchłonięta przez ziarna,
+                        które następnie uwalniają wyjątkowy aromat w Twojej filiżance. </p>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-4  col-lg-6  text-center ">
+                    <div>
+                        <figure class="base-img-wrap inline-block mk2 loaded lazyload">
+                            <img src="https://mkfresh.pl/data/include/cms/MkFresh/Opisy/Brazil-Yellow-Bourbon/brazil-yellow-bourbon-4.jpg"
+                                alt="Brazil Yellow Bourbon" class="img-fluid"> 
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 20px;">
+                <div class="col-xs-12 col-sm-7  col-md-6  col-lg-6  " style="padding-bottom: 15px">
+                    <h2 class="subtitle2" style="margin-top: 15px;">KAWA Z JEDNEJ PLANTACJI</h2>
+                    <p>Nasza kawa ziarnista 1kg Yellow Bourbon uprawiana jest przez Eduardo Campos, który otrzymał
+                        ziemię poprzez dziedzictwo od rodziny swojego ojca a farmę "Fazenda Dona Nenem" nazwał po swojej
+                        matce. Pracę jako plantator kawy rozpoczął w 1977 roku, będąc pierwszym w regionie Patos de
+                        Minas do sadzenia kawy, zgodnie z własnymi oświadczeniami. Szczególną uwagę poświęcono
+                        przyrodzie jeszcze zanim koncepcje certyfikacji dotarły do Brazylii. W praktyce konserwacja
+                        wykracza daleko poza sztywne brazylijskie przepisy dotyczące ochrony środowiska. Drzewa rodzime
+                        i krzewy są przesadzane, a wpływ hodowli bydła jest kompensowany przez ochronę wody wzdłuż rzek
+                        i potoków - zachowało się to, podczas gdy z drugiej strony praktykowane są nowoczesne techniki
+                        rolnicze. Farma posiada certyfikat UTZ jak również certyfikat Rainforest Alliance. Każdą kupioną
+                        torebką Brazil Yellow Bourbon Dona Nenem wspierasz projekt społeczny Casa da Criança w Brazylii.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-5  col-md-4  col-lg-6  text-center ">
+                    <div>
+                        <figure class="base-img-wrap inline-block mk2 loaded lazyload">
+                            <img src="https://mkfresh.pl/data/include/cms/MkFresh/Opisy/Brazil-Yellow-Bourbon/brazil-yellow-bourbon-5.jpg"
+                                alt="Brazil Yellow Bourbon" class="img-fluid"> 
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-lg-row-reverse" style="margin-bottom: 15px;">
+                <div class="col-xs-12 col-sm-7 col-md-6  col-lg-6  " style="margin-bottom: 15px;">
+                    <p>Ze względu na to, że ta brazylijska kawa ziarnista uprawiana jest w tak wyjątkowych warunkach na
+                        jednej plantacji, jej ziarna są wysoce pożądane na całym świecie. Fazenda Dona Nenen stworzyła w
+                        związku z tym unikatową technologię obróbki i przechowywania tej rzadkiej, żółtej odmiany
+                        Arabiki.</p>
+                    <p>System Grain PRO pozwala na pakowanie ziaren w sposób przedłużający ich świeżość i intensywność
+                        aromatu. Przechowywane są one w specjalnie stworzonych, podwójnych workach, które wytwarzają
+                        wewnątrz środowisko najbardziej przyjazne kawie. Dzięki takiej technologii kawa ziarnista 1kg
+                        prosto z Brazylii może trafić do palarni i kawiarni na całym świecie z głębią smaku i aromatu.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-4   text-center  col-lg-6" style="margin-bottom: 15px;">
+                    <div>
+                        <figure class="base-img-wrap inline-block mk2 loaded lazyload">
+                            <img src="https://mkfresh.pl/data/include/cms/MkFresh/Opisy/Brazil-Yellow-Bourbon/brazil-yellow-bourbon-6.jpg"
+                                alt="Brazil Yellow Bourbon" class="img-fluid"> 
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+    <div class="container">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="row">
+            <div class="col-xs-12 col-md-6  col-lg-6  ">
+                <div>
+                    <figure class="base-img-wrap inline-block mk2 loaded">
+                        <img src="/data/include/cms/MkFresh/Opisy/Intenso/MK_przecierka_Intenso_2.jpg" alt=""
+                            class="img-fluid"> <!---->
+                    </figure>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6  col-lg-6  ">
+                <p class="boldLead" style="text-align: justify;text-justify: inter-word;">Skomponowanie kawy o
+                    intensywnym profilu, a równocześnie satysfakcjonującym smaku to prawdziwa sztuka. Kawy, która jest
+                    zdolna nie tylko pobudzić, ale też sprawić przyjemność, wywołać emocje, stanowić ważny element
+                    codziennej aktywności. Podjęliśmy się takiego wyzwania i stworzyliśmy kawę Intenso. Jej bazę
+                    stanowią wyraziste ziarna Robusty
+                    o aksamitnym body i charakterystycznym smaku gorzkiej czekolady oraz przypraw korzennych. Bukiet
+                    uzupełniają zalety szlachetnej Arabiki, która jest wyczuwalna w postaci lekkich owocowych nut i
+                    słodyczy papai.
+                </p>
+            </div>
+        </div>
+        <div xmlns="http://www.w3.org/1999/xhtml" class="row" style="margin-top: 15px; margin-bottom: 15px;">
+            <div class="col-xs-10  col-md-6  col-lg-6  ">
+                <br>
+                <p style="font-size:medium;text-align: justify;text-justify: inter-word;">Tak skomponowana mieszanka
+                    posiada wszystko, co potrzebne do przygotowania wyrazistej czarnej kawy i mocnego americano. Równie
+                    dobrze sprawdza się w kawach mlecznych, nie tracąc swojego charakteru i dając możliwość delektowania
+                    się energicznym smakiem w nieco łagodniejszej odsłonie. Jeśli lubisz czuć smak i konsystencję mocnej
+                    kawy na podniebieniu, doceniasz jej intensywne oblicze – mieszanka Intenso jest stworzona dla
+                    Ciebie. </p>
+            </div>
+            <div class="col-xs-12 col-md-6  col-lg-6  ">
+                <div>
+                    <figure class="base-img-wrap inline-block mk2 loaded">
+                        <img src="/data/include/cms/MkFresh/Opisy/Intenso/MK_przecierka_Intenso_1.jpg" alt=""
+                            class="img-fluid"> <!---->
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div xmlns="http://www.w3.org/1999/xhtml" class="moreContent">
+            <div class="row" style="margin-top: 15px; margin-bottom: 15px;">
+                <div class="col-xs-12 col-md-12  col-lg-6  ">
+                    <p class="subtitle2" style="margin-top: 15px;">Esencja intensywnej kawy</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 15px; margin-bottom: 15px;">
+                <div class="col-xs-6  col-md-3    col-lg-6">
+                    <figure class="base-img-wrap inline-block mk2 loaded">
+                        <img src="/data/include/cms/MkFresh/Opisy/Intenso/MK_przecierka_Intenso_3.jpg" alt=""
+                            class="img-fluid"> <!---->
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-md-7  col-lg-6  ">
+                    <p style="font-size:medium;text-align: justify;text-justify: inter-word;">Intenso to kompozycja w
+                        70% składająca się z wyrazistej Robusty i 30% z aromatycznej Arabiki opracowana dla mocnej kawy
+                        w typie włoskiego espresso. Tworząc tę mieszankę, specjaliści MK Cafe Fresh starali się osiągnąć
+                        zdecydowany bukiet, nie pozbawiony jednak wyrafinowanych aromatów i przyjemności. Dobre
+                        zbalansowanie zalet Robusty i Arabiki pozwoliło uzyskać kawe idealną na rozpoczęcie dnia, która
+                        Cię pobudzi, a równocześnie dostarczy zmysłowej satysfakcji. Charakterystyczne nuty czekolady i
+                        przypraw korzennych, słodkie aromaty papai są dodatkowo wzmocnione przez świeże palenie, dzięki
+                        czemu będą wyczuwalne nawet w kawach takich jak latte, które składają się w znacznej części z
+                        mleka. Intenso to mieszanka, która może stanowić niezawodną bazę do kaw czarnych
+                        przygotowywanych w domu, americano wymagającej większej ilości wody oraz wszystkich kompozycji o
+                        dużej intensywności i głębi. </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Opcjonalne JavaScript -->
+    <!-- jQuery, Popper.js i Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <form action="/contact.php" method="post" class="contact_mail">
+                <div class="contact_mailform" id="contact_mailform">
+                    <h3 class="contact_mailform_sub text-center">
+                        Skontaktuj się z obsługą sklepu
+                    </h3>
+                </div>
+                <div class="contact_mailform ">
+                    <div class="form-group row ">
+                        <label for="from" class="control-label col-md-3 col-xs-12">
+                            Twój mail:
+                        </label>
+                        <div class="has-feedback has-required col-md-9 col-xs-12">
+                            <input type="email" name="from" id="from" class="form-control validate"
+                                required="required" />
+                            <span class="form-control-feedback"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row ">
+                        <label for="subject" class="control-label col-md-3 col-xs-12">
+                            Temat:
+                        </label>
+                        <div class="has-feedback has-required col-md-9 col-xs-12">
+                            <input type="text" name="subject" id="subject" class="form-control validate" minlength="3"
+                                required="required" />
+                            <span class="form-control-feedback"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row ">
+                        <label for="body" class="control-label col-md-3 col-xs-12">
+                            Treść wiadomości:
+                        </label>
+                        <div class="has-feedback has-required col-md-9 col-xs-12">
+                            <textarea name="body" cols="60" rows="7" id="body" class="form-control validate"
+                                minlength="3" required="required"></textarea>
+                            <span class="form-control-feedback"></span>
+                        </div>
+                    </div>
+                    <div class="n61389_submit row">
+                        <div class="col-12 control-label text-center">
+                            <div class="button_legend">
+                                <i class="fa fa-need"></i> Pola oznaczone gwiazdką są wymagane
+                            </div>
+                            <button id="submit_contact_form" type="submit" class="btn --solid --medium px-5 mb-2"><span
+                                    class="wrapped">
+                                    Wyślij
+                                </span></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-12 col-lg-6">
+            <form action="/contact.php" method="post" class="contact_mail">
+                <div class="contact_mailform" id="contact_mailform">
+                    <h3 class="contact_mailform_sub text-center" style="color: #a11530;">
+                        Skontaktuj się z
+                        producentem
+                    </h3>
+                </div>
+                <div class="contact_mailform ">
+                    <div class="form-group row ">
+                        <label for="from" class="control-label col-md-3 col-xs-12">
+                            Twój mail:
+                        </label>
+                        <div class="has-feedback has-required col-md-9 col-xs-12">
+                            <input type="email" name="from" id="from" class="form-control validate"
+                                required="required" />
+                            <span class="form-control-feedback"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row ">
+                        <label for="subject" class="control-label col-md-3 col-xs-12">
+                            Temat:
+                        </label>
+                        <div class="has-feedback has-required col-md-9 col-xs-12">
+                            <input type="text" name="subject" id="subject" class="form-control validate" minlength="3"
+                                required="required" />
+                            <span class="form-control-feedback"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row ">
+                        <label for="body" class="control-label col-md-3 col-xs-12">
+                            Treść wiadomości:
+                        </label>
+                        <div class="has-feedback has-required col-md-9 col-xs-12">
+                            <textarea name="body" cols="60" rows="7" id="body" class="form-control validate"
+                                minlength="3" required="required"></textarea>
+                            <span class="form-control-feedback"></span>
+                        </div>
+                    </div>
+                    <div class="n61389_submit row">
+                        <div class="col-12 control-label text-center">
+                            <div class="button_legend">
+                                <i class="fa fa-need"></i> Pola oznaczone gwiazdką są wymagane
+                            </div>
+                            <button id="submit_contact_form" type="submit" style="background-color: #a11530;"
+                                class="btn --solid --medium px-5 mb-2"><span class="wrapped">
+                                    Wyślij
+                                </span></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -839,7 +839,7 @@
 			<div class="row align-items-center justify-content-around main-holder">
 				
 				<div class="col col-md-2">
-					<div id="logo" class=""><a href="https://mkcafe.iai-shop.com/" target="_self">
+					<div id="logo" class=""><a href="https://mkfresh.pl/" target="_self">
 							<div class="large"></div>
 							<div class="small "></div>
 						</a></div>
@@ -2136,32 +2136,32 @@
 
 			
 			<iaixsl:if test="not(action/set_render/item) or (action/set_render/item/@name = 'content')">
-				<div id="content" class="span9">
-					<iaixsl:choose>
-						<iaixsl:when test="page/@type = 'projector'">
-							<iaixsl:attribute name="class">col-12</iaixsl:attribute>
-						</iaixsl:when>
-						<iaixsl:when test="page/@type = 'search'">
-							<iaixsl:attribute name="class">col-xl-10 col-md-9 col-12</iaixsl:attribute>
-						</iaixsl:when>
-						<iaixsl:when test="page/@type = 'main'">
-							<iaixsl:attribute name="class">col-12</iaixsl:attribute>
-						</iaixsl:when>
-						<iaixsl:when test="page/@type = 'navigation'">
-							<iaixsl:attribute name="class">col-12</iaixsl:attribute>
-						</iaixsl:when>
-						<iaixsl:when test="page/@type = 'blog-list'">
-							<iaixsl:attribute name="class">col-xl-10 col-md-9 col-12</iaixsl:attribute>
-						</iaixsl:when>
-						<iaixsl:when test="page/@type = 'blog-item'">
-							<iaixsl:attribute name="class">col-xl-10 col-md-9 col-12</iaixsl:attribute>
-						</iaixsl:when>
-						<iaixsl:otherwise>
-							<iaixsl:attribute name="class">col-12</iaixsl:attribute>
-						</iaixsl:otherwise>
-					</iaixsl:choose>
+	<div id="content" class="span9">
+		<iaixsl:choose>
+			<iaixsl:when test="page/@type = 'projector'">
+				<iaixsl:attribute name="class">col-12</iaixsl:attribute>
+			</iaixsl:when>
+			<iaixsl:when test="page/@type = 'search'">
+				<iaixsl:attribute name="class">col-xl-10 col-md-9 col-12</iaixsl:attribute>
+			</iaixsl:when>
+			<iaixsl:when test="page/@type = 'main'">
+				<iaixsl:attribute name="class">col-12</iaixsl:attribute>
+			</iaixsl:when>
+			<iaixsl:when test="page/@type = 'navigation'">
+				<iaixsl:attribute name="class">col-12</iaixsl:attribute>
+			</iaixsl:when>
+			<iaixsl:when test="page/@type = 'blog-list'">
+				<iaixsl:attribute name="class">col-xl-10 col-md-9 col-12</iaixsl:attribute>
+			</iaixsl:when>
+			<iaixsl:when test="page/@type = 'blog-item'">
+				<iaixsl:attribute name="class">col-xl-10 col-md-9 col-12</iaixsl:attribute>
+			</iaixsl:when>
+			<iaixsl:otherwise>
+				<iaixsl:attribute name="class">col-12</iaixsl:attribute>
+			</iaixsl:otherwise>
+		</iaixsl:choose>
 
-					<!-- (menu_messages, 60dd8eb71231d1.14665052.7)-->
+		<!-- (menu_messages, 60dd8eb71231d1.14665052.7)-->
 
         <iaixsl:variable name="rebates_code_used">Podany kod rabatowy został już wykorzystany.</iaixsl:variable>
 
@@ -2758,7 +2758,7 @@
             </iaixsl:if>
             
             <iaixsl:if test="not(/shop/page/contact/google_api_key/@value) and (/shop/page/contact/shop_data/@street or /shop/page/contact/shop_data/@zipcode or /shop/page/contact/shop_data/@city)">
-                <section class="row">
+                <section class="row d-none">
                         <div id="mymap">
                         </div>
                 </section>
@@ -2775,85 +2775,113 @@
                     <a href="/stocks.php" class="btn --solid --medium">Zobacz nasze sklepy</a>
                 </div>
             </div>
-        
+        	<section>
+			<div class="row">
+				<div class="col-12 col-md-6 text-center">
+					<form action="/contact.php" method="post" class="contact_mail">
+						<div class="contact_mailform my-4" id="contact_mailform">
+							<h3 class="contact_mailform_sub text-center">
+								Skontaktuj się z obsługą sklepu
+							</h3>
+						</div>
+						<div class="contact_mailform ">
+							<div class="form-group row ">
+								<label for="from" class="control-label col-md-3 col-xs-12">
+									Twój mail:
+								</label>
+								<div class="has-feedback has-required col-md-9 col-xs-12">
+									<input type="email" name="from" id="from" class="form-control validate"
+										required="required" />
+									<span class="form-control-feedback"></span>
+								</div>
+							</div>
+							<div class="form-group row ">
+								<label for="subject" class="control-label col-md-3 col-xs-12">
+									Temat:
+								</label>
+								<div class="has-feedback has-required col-md-9 col-xs-12">
+									<input type="text" name="subject" id="subject" class="form-control validate" minlength="3"
+										required="required" />
+									<span class="form-control-feedback"></span>
+								</div>
+							</div>
+							<div class="form-group row ">
+								<label for="body" class="control-label col-md-3 col-xs-12">
+									Treść wiadomości:
+								</label>
+								<div class="has-feedback has-required col-md-9 col-xs-12">
+									<textarea name="body" cols="60" rows="7" id="body" class="form-control validate"
+										minlength="3" required="required"></textarea>
+									<span class="form-control-feedback"></span>
+								</div>
+							</div>
+							<div class="n61389_submit row">
+								<div class="col-12 control-label text-center">
+									
+									<button id="submit_contact_form" type="submit" class="btn --solid --medium px-5 mb-2"><span
+											class="wrapped">
+											Wyślij
+										</span></button>
+								</div>
+							</div>
+						</div>
+					</form>
 				</div>
+				<div class="col-12 col-md-6 text-center">
+					<section id="contactManufactor">
+						<form action="/contact.php" method="post" class="contact_mail">
+								<div class="contact_mailform my-4" id="contact_mailform">
+									<h3 class="contact_mailform_sub text-center" style="color: #a11530;">
+										Skontaktuj się z
+										producentem
+									</h3>
+								</div>
+								<div class="contact_mailform ">
+									<div class="form-group row ">
+										<label for="from" class="control-label col-md-3 col-xs-12">
+											Twój mail:
+										</label>
+										<div class="has-feedback has-required col-md-9 col-xs-12">
+											<input type="email" name="from" id="from" class="form-control validate"
+												required="required" />
+											<span class="form-control-feedback"></span>
+										</div>
+									</div>
+									<div>
+										<div class="">
+											<input type="hidden" name="subject" value="kontakt z producentem" id="subject"/>
+										</div>
+									</div>
+									<div class="form-group row ">
+										<label for="body" class="control-label col-md-3 col-xs-12">
+											Treść wiadomości:
+										</label>
+										<div class="has-feedback has-required col-md-9 col-xs-12">
+											<textarea name="body" cols="60" rows="7" id="body" class="form-control validate"
+												minlength="3" required="required"></textarea>
+											<span class="form-control-feedback"></span>
+										</div>
+									</div>
+									<div class="n61389_submit row">
+										<div class="col-12 control-label text-center">
+										
+											<button id="submit_contact_form" type="submit" style="background-color: #a11530;"
+												class="btn --solid --medium px-5 mb-2"><span class="wrapped">
+													Wyślij
+												</span></button>
+										</div>
+									</div>
+								</div>
+							</form>
+					</section>
+				</div>
+			</div>
+			</section>
+	</div>
 			</iaixsl:if>
 			<!-- formularz kontaktowy -->
 			
-			<section>
-			<div class="row">
-			<div class="col-12 col-lg-6">
-			<section id="product_askforproduct" class="mb-5 col-12">
-				<div class="askforproduct__label headline"><span class="askforproduct__label_txt headline__name">Skontaktuj się z
-						nami</span></div>
-				<form action="/settings.php" class="askforproduct__form row flex-column align-items-center" method="post"
-					novalidate="novalidate">
-					<div class="askforproduct__description col-12 col-sm-7 mb-4"><span class="askforproduct__description_txt">
-						</span><span class="askforproduct__privacy">Dane są przetwarzane zgodnie z <a
-								href="/pol-privacy-and-cookie-notice.html">polityką prywatności</a>. Przesyłając je, akceptujesz jej
-							postanowienia. </span></div><input type="hidden" name="question_product_id" value="8988"/><input
-						type="hidden" name="question_action" value="add"/>
-					<div class="askforproduct__inputs col-12 col-sm-7">
-						<div class="f-group askforproduct__email">
-							<div class="f-feedback askforproduct__feedback --email"><input id="askforproduct__email_input"
-									type="email" class="f-control --validate" name="question_email" required="required" /><label
-									for="askforproduct__email_input" class="f-label">
-									E-mail
-								</label><span class="f-control-feedback"></span></div>
-						</div>
-						<div class="f-group askforproduct__question">
-							<div class="f-feedback askforproduct__feedback --question"><textarea id="askforproduct__question_input"
-									rows="6" cols="52" type="question" class="f-control --validate" name="product_question"
-									minlength="3" required="required"></textarea><label for="askforproduct__question_input"
-									class="f-label">
-									Pytanie
-								</label><span class="f-control-feedback"></span></div>
-						</div>
-					</div>
-					<div class="askforproduct__submit  col-12 col-sm-7"><button
-							class="btn --solid --medium px-5 mb-2 askforproduct__button">
-							Wyślij
-						</button></div>
-				</form>
-			</section>
-			</div>
-			<div class="col-12 col-lg-6">
-			<section id="product_askforproduct" class="mb-5 col-12">
-				<div class="askforproduct__label headline"><span style="color: #a11530;" class="askforproduct__label_txt headline__name">Skontaktuj się z
-						producentem</span></div>
-				<form action="/settings.php" class="askforproduct__form row flex-column align-items-center" method="post"
-					novalidate="novalidate">
-					<div class="askforproduct__description col-12 col-sm-7 mb-4"><span class="askforproduct__description_txt">
-						</span><span class="askforproduct__privacy">Dane są przetwarzane zgodnie z <a
-								href="/pol-privacy-and-cookie-notice.html">polityką prywatności</a>. Przesyłając je, akceptujesz jej
-							postanowienia. </span></div><input type="hidden" name="question_product_id" value="8988"/><input
-						type="hidden" name="question_action" value="add"/>
-					<div class="askforproduct__inputs col-12 col-sm-7">
-						<div class="f-group askforproduct__email">
-							<div class="f-feedback askforproduct__feedback --email"><input id="askforproduct__email_input"
-									type="email" class="f-control --validate" name="question_email" required="required" /><label
-									for="askforproduct__email_input" class="f-label">
-									E-mail
-								</label><span class="f-control-feedback"></span></div>
-						</div>
-						<div class="f-group askforproduct__question">
-							<div class="f-feedback askforproduct__feedback --question"><textarea id="askforproduct__question_input"
-									rows="6" cols="52" type="question" class="f-control --validate" name="product_question"
-									minlength="3" required="required"></textarea><label for="askforproduct__question_input"
-									class="f-label">
-									Pytanie
-								</label><span class="f-control-feedback"></span></div>
-						</div>
-					</div>
-					<div class="askforproduct__submit  col-12 col-sm-7"><button style="background-color: #a11530;"
-							class="btn --solid --medium px-5 mb-2 askforproduct__button">
-							Wyślij
-						</button></div>
-				</form>
-			</section>
-			</div>
-			</div>
-			</section>
+		
 		</div>
 	</div>
 
@@ -3172,7 +3200,7 @@
 					<ul class="footer_links_sub">
 						<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' and not(/shop/action/shop_information/@url = '')">
 							<li>
-								<a href="https://mkcafe.iai-shop.com/O-nas-cabout-pol-250.html">
+								<a href="https://mkfresh.pl/O-nas-cabout-pol-250.html">
 									<!-- <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shop_information/@url"/></iaixsl:attribute> -->
 									O Nas
 								</a>

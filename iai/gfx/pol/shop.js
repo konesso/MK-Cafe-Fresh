@@ -21633,32 +21633,21 @@ function search() {
                     var dataPoints = [];
                     var labels = ['Intensywność smaku', 'Słodycz', 'Kwasowość', 'Gorycz', 'Nuty kwiatowe', 'Owoce cytrusowe', 'Owoce pestkowe', 'Owoce leśne', 'Nuty przypraw', 'Orzech', 'Czekolada', 'Karmel'];
 
+
+
                     labels.forEach(function (label) {
-                        var traitElement = productTraits.find(`.trait:contains(${label}) .trait__value`);
-                        var text = traitElement.text().trim();
-                        var value;
+                        // Znajdź wszystkie elementy .trait i użyj funkcji filter() do porównania tekstów
+                        var matchedTrait = productTraits.find('.trait').filter(function () {
+                            var traitName = $(this).find('.trait__name').text().trim();
+                            return traitName.indexOf(label) > -1;
+                        });
 
-                        // Sprawdzenie, czy tekst jest liczbą
-                        var isNumber = /^[\d.]+$/.test(text);
-
-                        if (label === "Karmel" && !isNumber) {
-                            console.log("🚀 ~ file: shop.js:21645 ~ label:", label)
-                            // Dla "Karmel" bez wartości liczbowej, użyj 4
-                            value = 4;
-                        } else if (isNumber) {
-                            // Jeśli tekst jest liczbą, użyj tej wartości
-                            value = parseFloat(text);
-                        } else {
-                            // Domyślna wartość
-                            value = 1;
+                        // Jeśli znaleziono pasujący trait, pobierz jego wartość
+                        if (matchedTrait.length) {
+                            var value = matchedTrait.find('.trait__value').text().trim();
+                            dataPoints.push(value ? parseFloat(value) : 1);
                         }
-
-                        dataPoints.push(value);
                     });
-
-
-
-
 
                     var nutyKwiatoweExist = productTraits.find(`.trait:contains('Nuty kwiatowe')`).length > 0;
 
