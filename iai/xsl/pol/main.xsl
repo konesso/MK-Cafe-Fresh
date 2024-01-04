@@ -841,7 +841,7 @@
 			<div class="row align-items-center justify-content-around main-holder">
 				
 				<div class="col col-md-2">
-					<div id="logo" class=""><a href="https://mkcafe.iai-shop.com" target="_self">
+					<div id="logo" class=""><a href="https://mkfresh.pl" target="_self">
 							<div class="large"></div>
 							<div class="small "></div>
 						</a></div>

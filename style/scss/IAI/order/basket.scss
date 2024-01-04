@@ -993,12 +993,13 @@ input.basketedit_submit_code {
 a.basketedit_client_rebate {
     float: right;
     font-size: 1.1em;
-    height: 41px;
+    // height: 41px;
     padding: 0 1.3em;
     vertical-align: middle;
     background: none repeat scroll 0 0 #333;
     border: 1px solid rgba(0, 0, 0, 0);
     line-height: 40px;
+    width: 100%;
     &:hover {
         background-color: #b29370;
         border: 1px solid rgba(0, 0, 0, 0);

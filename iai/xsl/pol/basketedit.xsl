@@ -7322,26 +7322,28 @@
 							</div>
 						</iaixsl:if>
 
-						<div class="p-2">
+						<div class="p-0 p-sm-2">
 							<span class="basketedit_rebatecode_activate_txt">Posiadasz kod rabatowy? </span>
-	
 							<form action="/settings.php?from=basket" method="post">
-								
-								<div>
-									<input onclick="$('#basketedit_rebatecode_activate_info').fadeIn('slow');" class="basketedit_rebatecode_input" name="rebates_codes" type="text" value=""/>
-									<input id="global_rebates_codes" name="global_rebates_codes" value="add" type="hidden"/>
-									<input class="btn --solid basketedit_submit_code" type="submit" value="">
-										<iaixsl:attribute name="value">Zatwierdź kod</iaixsl:attribute>
-									</input>
-								</div>
-								<div>
-									<a href="/client-rebate.php" class="btn --solid basketedit_client_rebate">
-										<iaixsl:attribute name="title">Szczegółowy wykaz rabatów</iaixsl:attribute>
-										Więcej informacji o rabatach
-									</a>
+								<div class="row rabatCode">
+									<div class="col-12 col-sm-8">
+										<input onclick="$('#basketedit_rebatecode_activate_info').fadeIn('slow');" class="basketedit_rebatecode_input" name="rebates_codes" type="text" value=""/>
+										<input id="global_rebates_codes" name="global_rebates_codes" value="add" type="hidden"/>
+										<input class="btn --solid basketedit_submit_code my-4 my-sm-0" type="submit" value="">
+											<iaixsl:attribute name="value">Zatwierdź kod</iaixsl:attribute>
+										</input>
+									</div>
+									<div class="col-12 col-sm-4 py-4 py-sm-0">
+										<a href="/client-rebate.php" class="btn --solid basketedit_client_rebate">
+											<iaixsl:attribute name="title">Szczegółowy wykaz rabatów</iaixsl:attribute>
+											Więcej informacji o rabatach
+										</a>
+									</div>
 								</div>
 							</form>
 						</div>
+						
+						
 					</iaixsl:if>
 
 				</div>
