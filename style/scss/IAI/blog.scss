@@ -15,9 +15,8 @@ div.blog_viewalso {
 }
 #blog-item {
     img.blog_image {
-        float: left;
-        margin: 0 12px 4px 0;
-        max-width: 33%;
+        // margin: 0 12px 4px 0;
+        width: 100%;
         display: inline-block;
     }
 }
@@ -26,5 +25,100 @@ div.blog_categoriesdescription_sub {
         &:first-child {
             margin: 0;
         }
+    }
+}
+
+.mkblog1 {
+    font-size: 1.7rem;
+    p {
+        line-height: 2.5rem;
+    }
+}
+
+.blog_viewalso {
+    display: none;
+}
+@media screen and (min-width: 976px) {
+    .mkblog1 {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+
+.blogTopWrapper {
+    .blog_date {
+        position: absolute;
+        top: 25%;
+        text-align: center;
+        width: 100%;
+        font-size: 26px;
+        color: #fff;
+    }
+    @media all and (max-width: 760px) {
+        .blog_image {
+            min-height: 50vh;
+            object-fit: cover;
+        }
+    }
+    h1.big_label {
+        position: absolute;
+        top: 30%;
+        text-align: center;
+        width: 100%;
+        color: #fff;
+        span {
+            max-width: 700px;
+        }
+        @media all and (min-width: 760px) {
+            font-size: 50px;
+        }
+    }
+}
+
+.przepismk,
+.poradymk {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 1.7rem;
+    .blogTopWrapper {
+        .blog_date,
+        .big_label {
+            display: none;
+        }
+    }
+    @media all and (min-width: 976px) {
+        flex-direction: row;
+        .przepis {
+            width: 45%;
+            margin-left: 20px;
+        }
+    }
+
+    .poradymk {
+        position: relative;
+    }
+
+    .przepis > div {
+        position: sticky;
+        top: 0;
+        background-color: #b29370;
+        color: white;
+        padding: 2rem;
+    }
+    .steps {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+    .base-img-wrap {
+        margin: 20px 0;
+    }
+    .sidebar-bottom {
+        display: flex;
+
+        display: flex;
+        flex-wrap: wrap;
     }
 }

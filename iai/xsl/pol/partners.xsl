@@ -5,7 +5,7 @@
 	<iaixsl:variable name="meta_langcode_iso639">pl</iaixsl:variable>
 	<iaixsl:variable name="html5_layout">1</iaixsl:variable>
 	<iaixsl:variable name="asyncJS"/>
-	<iaixsl:variable name="themeColor">#0090f6</iaixsl:variable>
+	<iaixsl:variable name="themeColor">#b29370</iaixsl:variable>
 	<iaixsl:if test="(action/set_render/item/@name = 'popup') or not(action/set_render/item)">
 		<iaixsl:text disable-output-escaping="yes">&lt;html lang=&quot;</iaixsl:text><iaixsl:value-of select="/shop/language/option[@selected = 'true']/@name"/><iaixsl:text disable-output-escaping="yes">&quot;</iaixsl:text><iaixsl:text disable-output-escaping="yes"> class=&quot;</iaixsl:text><iaixsl:if test="(/shop/page/@type = 'prepaid' and /shop/page/prepaid/details/@msg = 'order') or /shop/page/@type = 'order-nonstandardized' or /shop/page/@type = 'order1' or /shop/page/@type = 'order2' or /shop/page/@type = 'pickup-sites' or /shop/page/@type = 'place-order' or (/shop/page/@type = 'login' and /shop/page/login/response/@type = 'no login') or /shop/page/@type = 'client-new'"><iaixsl:text disable-output-escaping="yes">order_process </iaixsl:text></iaixsl:if><iaixsl:if test="/shop/page/@type = 'place-order'"> --place-order-page </iaixsl:if><iaixsl:if test="/shop/page/@type = 'return'"><iaixsl:value-of select="/shop/page/return/@type"/><iaixsl:text disable-output-escaping="yes"> </iaixsl:text></iaixsl:if><iaixsl:if test="/shop/basket/@toshippingfree != ''"><iaixsl:text disable-output-escaping="yes">--freeShipping </iaixsl:text></iaixsl:if><iaixsl:if test="/shop/rebatecode/@code"><iaixsl:text disable-output-escaping="yes">--rabateCode </iaixsl:text></iaixsl:if><iaixsl:if test="not($priceTypeVat = '')"><iaixsl:text disable-output-escaping="yes">--vat --</iaixsl:text><iaixsl:value-of select="/shop/page/@price_type"/><iaixsl:text disable-output-escaping="yes"> </iaixsl:text></iaixsl:if><iaixsl:text disable-output-escaping="yes">&quot;</iaixsl:text><iaixsl:text disable-output-escaping="yes"> &gt;</iaixsl:text>
 		<iaixsl:if test="$meta_langcode_iso639"><iaixsl:attribute name="lang"><iaixsl:value-of select="$meta_langcode_iso639"/></iaixsl:attribute></iaixsl:if>
@@ -89,7 +89,8 @@
 				</iaixsl:otherwise>
 			</iaixsl:choose>
 			
-			<link rel="shortcut icon" href="/gfx/pol/favicon.ico" />
+			<link rel="shortcut icon" href="/data/include/cms/MkFresh/theme/favicon.ico" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 			<iaixsl:choose>
 				<iaixsl:when test="/shop/mask/@scheme_color">
 					<meta name="theme-color"><iaixsl:attribute name="content"><iaixsl:value-of select="/shop/mask/@scheme_color"/></iaixsl:attribute></meta>
@@ -3197,13 +3198,13 @@
 		<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' or /shop/action/shipping_cost/@order_link_active='y' or /shop/action/payment_methods/@order_link_active='y' or /shop/action/terms/@order_link_active='y' or /shop/action/private_policy/@order_link_active='y' or /shop/action/order_cancel/@order_link_active='y'">
 
 			<ul id="menu_regulations" class="footer_links col-md-4 col-sm-6 col-12">
-				<li><span class="footer_links_label">Regulaminy</span>
+				<li><span class="footer_links_label">Informacje</span>
 					<ul class="footer_links_sub">
 						<iaixsl:if test="/shop/action/shop_information/@order_link_active='y' and not(/shop/action/shop_information/@url = '')">
 							<li>
-								<a>
-									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shop_information/@url"/></iaixsl:attribute>
-									Informacje o sklepie
+								<a href="https://mkfresh.pl/O-nas-cabout-pol-250.html">
+									<!-- <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/shop_information/@url"/></iaixsl:attribute> -->
+									O Nas
 								</a>
 							</li>
 						</iaixsl:if>
@@ -3219,7 +3220,7 @@
 							<li>
 								<a>
 									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/payment_methods/@url"/></iaixsl:attribute>
-									Sposoby płatności i prowizje
+									Płatności
 								</a>
 							</li>
 						</iaixsl:if>
@@ -3242,8 +3243,7 @@
 						<iaixsl:if test="/shop/action/order_cancel/@order_link_active='y' and not(/shop/action/order_cancel/@url = '')">
 							<li>
 								<a>
-									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/order_cancel/@url"/></iaixsl:attribute>
-									Odstąpienie od umowy
+									 
 								</a>
 							</li>
 						</iaixsl:if>

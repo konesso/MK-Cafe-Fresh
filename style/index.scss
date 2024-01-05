@@ -55,4 +55,38 @@
 @import "./scss/our/productpage.scss";
 @import "./scss/our/searchpage.scss";
 @import "./scss/our/mainpage.scss";
+@import "./scss/our/blog-list.scss";
 
+.setMobileGrid #menu_settings .open_trigger {
+    display: none;
+}
+
+.ck_dsclr__btn_v2 {
+    background: #b29370 !important;
+}
+.ck_dsclr_v2 a {
+    color: #b29370 !important;
+}
+
+table td {
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.news_page {
+    .headline {
+        justify-content: start;
+    }
+}
+
+.row.rabatCode {
+    width: 100%;
+}
+
+.mw80 {
+    @media screen and (min-width: 768px) {
+        max-width: 70% !important;
+    }
+}

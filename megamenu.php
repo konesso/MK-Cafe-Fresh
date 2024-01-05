@@ -1,4 +1,5 @@
-<nav id="menu_categories" class="wide"><button type="button" class="navbar-toggler">
+<nav id="menu_categories" class="wide">
+    <button type="button" class="navbar-toggler">
         <i class="icon-reorder"></i>
     </button>
     <div class="d-md-flex d-none justify-content-around navbar-collapse" id="menu_navbar">
@@ -10,7 +11,6 @@
                     <hr class="menu-item-underline">
                 </a>
                 <ul class="navbar-subnav row">
-
                     <div class="mega-container col-12">
                         <div class="col-3">
                             <li class="nav-item mega-menu-content-category">

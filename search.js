@@ -33,56 +33,60 @@ $(document).ready(function () {
         }, 1500);
     }
 
-    $(document).ready(function () {
-        var filterButton = $('.filter-dropdown-trigger');
-        var sortButton = $('.sort-dropdown-trigger');
-        var filterIcon = filterButton.find('i');
-        var sortIcon = sortButton.find('i');
 
-        // Obsługa kliknięcia przycisku Filtrowanie
-        filterButton.on("click", function () {
-            var filtersVisible = !$('#Filters').hasClass('d-md-none');
-            // Sprawdzanie czy kliknięto przycisk Sortowanie
-            var isSortVisible = sortIcon.hasClass('fa-chevron-up');
+    var filterButton = $('.filter-dropdown-trigger');
+    var sortButton = $('.sort-dropdown-trigger');
+    var filterIcon = filterButton.find('i');
+    var sortIcon = sortButton.find('i');
 
-            // Jeśli filtr jest aktualnie widoczny lub jeśli kliknięto Sortowanie
-            if (filtersVisible || isSortVisible) {
-                $('#Filters').addClass('d-md-none');
-                $('.filter-element').hide();
-                $('.sort-element').hide();
-                filterIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
-                sortIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
-            } else {
-                $('#Filters').removeClass('d-md-none');
-                $('.filter-element').show();
-                $('.sort-element').hide(); // Ukryj elementy sortowania
-                filterIcon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
-                sortIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
-            }
-        });
+    // Obsługa kliknięcia przycisku Filtrowanie
+    filterButton.on("click", function () {
+        console.log("🚀 ~ file: search.js:63 ~ click:")
+        var filtersVisible = !$('#Filters').hasClass('d-md-none');
+        // Sprawdzanie czy kliknięto przycisk Sortowanie
+        var isSortVisible = sortIcon.hasClass('fa-chevron-up');
 
-        // Obsługa kliknięcia przycisku Sortowanie
-        sortButton.on("click", function () {
-            var filtersVisible = !$('#Filters').hasClass('d-md-none');
-            // Sprawdzanie czy kliknięto przycisk Filtrowanie
-            var isFilterVisible = filterIcon.hasClass('fa-chevron-up');
-
-            // Jeśli sortowanie jest aktualnie widoczne lub jeśli kliknięto Filtrowanie
-            if (filtersVisible || isFilterVisible) {
-                $('#Filters').addClass('d-md-none');
-                $('.filter-element').hide();
-                $('.sort-element').hide();
-                sortIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
-                filterIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
-            } else {
-                $('#Filters').removeClass('d-md-none');
-                $('.sort-element').show();
-                $('.filter-element').hide(); // Ukryj elementy filtrowania
-                sortIcon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
-                filterIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
-            }
-        });
+        // Jeśli filtr jest aktualnie widoczny lub jeśli kliknięto Sortowanie
+        if (filtersVisible || isSortVisible) {
+            $('#Filters').addClass('d-md-none');
+            $('.filter-element').hide();
+            $('.sort-element').hide();
+            filterIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            sortIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        } else {
+            $('#Filters').removeClass('d-md-none');
+            $('.filter-element').show();
+            $('.sort-element').hide(); // Ukryj elementy sortowania
+            filterIcon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+            sortIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        }
     });
+
+
+    // Obsługa kliknięcia przycisku Sortowanie
+    sortButton.on("click", function () {
+        console.log("🚀 ~ file: search.js:87 ~ sortButton:")
+        var filtersVisible = !$('#Filters').hasClass('d-md-none');
+        // Sprawdzanie czy kliknięto przycisk Filtrowanie
+        var isFilterVisible = filterIcon.hasClass('fa-chevron-up');
+
+        // Jeśli sortowanie jest aktualnie widoczne lub jeśli kliknięto Filtrowanie
+        if (filtersVisible || isFilterVisible) {
+            $('#Filters').addClass('d-md-none');
+            $('.filter-element').hide();
+            $('.sort-element').hide();
+            sortIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            filterIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        } else {
+            $('#Filters').removeClass('d-md-none');
+            $('.sort-element').show();
+            $('.filter-element').hide(); // Ukryj elementy filtrowania
+            sortIcon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+            filterIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        }
+    });
+
+
 
 
     // Obsługa dropdownów w filtrach i sortowaniu

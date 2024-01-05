@@ -9,7 +9,7 @@
             width: 190px;
             height: 175px;
             background-position: 0 -193px;
-            background-image: url(../img/icons.png);
+            background-image: url(/data/include/cms/MkFresh/theme/icons.png);
         }
     }
     .small {
@@ -20,12 +20,12 @@
             width: 165px;
             height: 49px;
             background-position: -500px -50px;
-            background-image: url(../img/icons.png);
+            background-image: url(/data/include/cms/MkFresh/theme/icons.png);
         }
     }
 }
 @media all and (min-width: 976px) {
-    .largeLogo #Logo {
+    .largeLogo #logo {
         align-items: flex-start;
         .small {
             display: none;
@@ -85,7 +85,7 @@ header {
     }
 }
 
-*:hover .menu-item-underline {
+.nav-item:hover .menu-item-underline {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
@@ -104,5 +104,27 @@ header {
     max-width: 253px;
     @media screen and (max-width: 976px) {
         margin-right: 10ox;
+    }
+}
+
+.order_process {
+    .main-holder > .col-md-2 {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        #logo {
+            justify-content: inherit;
+        }
+    }
+
+    .infoWrapper {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        flex: 0 0 100%;
+        text-align: center;
+        margin-bottom: 1rem;
     }
 }

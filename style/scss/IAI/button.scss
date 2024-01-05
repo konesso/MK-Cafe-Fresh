@@ -114,11 +114,13 @@
     &:not(.--solid) {
         &:not(.--outline) {
             &:not(.--secondary) {
-                &:not(.--icon) {
-                    text-decoration: underline;
-                    color: #333;
-                    &:hover {
-                        color: #ffffff;
+                &:not(.--add) {
+                    &:not(.--icon) {
+                        text-decoration: underline;
+                        color: #333;
+                        &:hover {
+                            color: #b29370;
+                        }
                     }
                 }
             }
@@ -129,7 +131,7 @@
     }
 }
 .back_button {
-    display: inline-block;
+    display: none;
     vertical-align: middle;
     width: 85px;
     font-size: 1em;

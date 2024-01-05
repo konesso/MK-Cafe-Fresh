@@ -67,29 +67,30 @@ header {
         > li {
             &:hover {
                 > ul {
-                    display: flex;
-                    flex-direction: column;
+                    display: grid;
                 }
             }
         }
     }
     .navbar-subnav {
         display: none;
-        width: 100vw;
-        height: auto;
+        width: 100%;
+
         font-size: 1.3rem;
         z-index: 100;
-        position: fixed;
+        position: absolute;
         background: #f4f4f4;
-        // border: 1px solid #c4c7c8;
-        left: 0 !important;
-        right: 0 !important;
+        border: 1px solid #c4c7c8;
+        right: 0;
+        left: -1.5rem;
+        width: calc(100% + 3rem);
         box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.2);
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
+        align-items: start;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         border-radius: 0;
-        padding: 2rem;
+        padding: 10px;
         .mega-container {
             display: flex;
             justify-content: center;
@@ -99,7 +100,8 @@ header {
             padding: 2rem 0;
         }
         .nav-link {
-            text-transform: none;
+            text-transform: uppercase;
+            font-weight: bold;
             font-size: 1.4rem;
             padding: 10px;
         }
@@ -114,7 +116,7 @@ header {
         grid-template-columns: 1fr;
     }
     .navbar-subnav.--cols2 {
-        width: calc(50% - 2rem);
+        // width: calc(50% - 2rem);
         grid-template-columns: 1fr 1fr;
     }
     .navbar-subnav.--cols3 {
@@ -717,8 +719,8 @@ span.menu_settings_currency {
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
         border-radius: 0;
         padding: 5rem 2.5rem 1.5rem;
-        top: 0rem;
-        right: -1rem;
+        top: 100%;
+        right: 0;
         z-index: -1;
         min-width: 230px;
         max-width: 300px;
@@ -790,6 +792,10 @@ span.menu_settings_currency {
     .slt_lists__nav_item.--empty {
         display: none;
     }
+}
+
+.open_trigger {
+    color: #b29370;
 }
 
 #menu_categories {

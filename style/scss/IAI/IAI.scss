@@ -612,7 +612,7 @@ div.list_wrapper {
     display: inline-block;
     vertical-align: middle;
     padding-left: 10px;
-    width: calc(100% - 85px);
+    // width: calc(100% - 85px);
     overflow: auto;
     border-left: 1px solid #c4c7c8;
 }
@@ -5158,24 +5158,19 @@ div.loginedit_cms {
     .service_item[data-name="service_Google"] {
         &:before {
             font-family: FontAwesome;
-            color: #4285f4;
             content: "\F1A0";
-            font-size: 2rem;
-            color: #4285f4;
-            content: "\F1A0";
-            display: block;
-            height: 2rem;
-            content: url("/gfx/standards/google.svg?r=1698404668");
+            // font-size: 2rem;
+            color: #ff3939;
+            // height: 2rem;
         }
     }
+
     .service_item[data-name="service_Facebook"] {
         &:before {
             font-family: FontAwesome;
             color: #3b5998;
             content: "\F09A";
             font-size: 2rem;
-            color: #3b5998;
-            content: "\F09A";
         }
     }
     .service_item[data-name="service_OpenId"] {
@@ -5184,8 +5179,6 @@ div.loginedit_cms {
             color: #ed8710;
             content: "\F19B";
             font-size: 2rem;
-            color: #ed8710;
-            content: "\F19B";
         }
     }
     .service_item[data-name="service_PayPal"] {
@@ -5194,8 +5187,6 @@ div.loginedit_cms {
             color: #053385;
             content: "\F1ED";
             font-size: 2rem;
-            color: #053385;
-            content: "\F1ED";
         }
     }
     .service_item[data-name="service_LinkedIn"] {
@@ -5204,8 +5195,6 @@ div.loginedit_cms {
             color: #0a66c2;
             content: "\f0e1";
             font-size: 2rem;
-            color: #0a66c2;
-            content: "\f0e1";
         }
     }
 }
@@ -9514,14 +9503,10 @@ div.signin_inputs {
     .service_item[data-name="service_Google"] {
         &:before {
             font-family: FontAwesome;
-            color: #4285f4;
             content: "\F1A0";
-            font-size: 2rem;
-            color: #4285f4;
-            content: "\F1A0";
-            display: block;
-            height: 2rem;
-            content: url("/gfx/standards/google.svg?r=1698404668");
+            // font-size: 2rem;
+            color: #ff3939;
+            // height: 2rem;
         }
     }
     .service_item[data-name="service_Facebook"] {
@@ -11180,7 +11165,7 @@ div.btn_wrapper.backlink {
     }
     .status-o {
         i {
-            background: #0090f6;
+            background: #b29370;
         }
     }
     .status-p {
@@ -11210,7 +11195,7 @@ div.btn_wrapper.backlink {
     }
     .status-a {
         i {
-            background: #0090f6;
+            background: #b29370;
         }
     }
     a.show_status_explanation {

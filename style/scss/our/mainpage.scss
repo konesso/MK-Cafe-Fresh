@@ -36,7 +36,7 @@
     width: 4.4rem;
     height: 3.6rem;
     background-position: -250px -50px;
-    background-image: url(../img/icons.png);
+    background-image: url(/data/include/cms/MkFresh/theme/icons.png);
 }
 .icon--product-trust-truck:before {
     display: block;
@@ -44,14 +44,14 @@
     width: 7.2rem;
     height: 6rem;
     background-position: -300px -50px;
-    background-image: url(../img//icons.png);
+    background-image: url(/data/include/cms/MkFresh/theme/icons.png);
 }
 .icon--48-hours:before {
     display: block;
     content: " ";
     height: 48px;
     background-position: -373px -50px;
-    background-image: url(../img//icons.png);
+    background-image: url(/data/include/cms/MkFresh/theme/icons.png);
     width: 66px;
 }
 .icon--product-trust-globe:before {
@@ -60,7 +60,7 @@
     width: 4.8rem;
     height: 4.8rem;
     background-position: -450px -50px;
-    background-image: url(../img/icons.png);
+    background-image: url(/data/include/cms/MkFresh/theme/icons.png);
 }
 
 $overlay-color: rgba(0, 0, 0, 0.5);
@@ -96,6 +96,7 @@ $overlay-color: rgba(0, 0, 0, 0.5);
         font-weight: bold;
         z-index: 1;
         margin-left: 2rem;
+        color: white;
         top: 0;
     }
 
@@ -103,6 +104,7 @@ $overlay-color: rgba(0, 0, 0, 0.5);
         font-size: 1.5rem;
         z-index: 1;
         margin-left: 2rem;
+        margin-bottom: 2rem;
     }
 
     .btn-like {
@@ -111,7 +113,7 @@ $overlay-color: rgba(0, 0, 0, 0.5);
         padding: 1rem 2rem;
         border-radius: 0.25rem;
         z-index: 1;
-        margin-left: 2rem;
+
         margin-bottom: 2rem;
 
         &:hover {
@@ -222,4 +224,38 @@ $overlay-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 1rem;
     margin-top: 1rem;
     padding: 0 1rem;
+}
+
+.navbar-subnav {
+    transform: translateY(1px);
+}
+
+#main_blog .article__name_wrapper {
+    z-index: 1;
+    padding: 1rem 2rem;
+    .article__name {
+        color: #fff;
+    }
+}
+
+#menu_settings {
+    form {
+        display: none;
+    }
+}
+
+.hotspot {
+    .checkBtns {
+        display: none !important;
+    }
+}
+@media all and (min-width: 976px) {
+    .hotspot {
+        a.product__icon img {
+            min-height: 280px;
+        }
+        .checkBtns {
+            display: none !important;
+        }
+    }
 }

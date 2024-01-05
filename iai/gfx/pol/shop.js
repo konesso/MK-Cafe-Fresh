@@ -858,135 +858,135 @@ function FormValidation(e) {
         (this.errorCode = {
             birth_date:
                 app_shop?.txt?.errorCode?.birth_date ||
-                'Wpisz poprawnÄ datÄ urodzenia w formacie RRRR-MM-DD',
+                'Wpisz poprawną datę urodzenia w formacie RRRR-MM-DD',
             illegal_characters_client_city:
                 app_shop?.txt?.errorCode?.illegal_characters_client_city ||
-                'Jeden z uĹźytych znakĂłw jest niedozwolony.',
+                'Jeden z użytych znaków jest niedozwolony.',
             illegal_characters_client_firm:
                 app_shop?.txt?.errorCode?.illegal_characters_client_firm ||
-                'Jeden z uĹźytych znakĂłw jest niedozwolony.',
+                'Jeden z użytych znaków jest niedozwolony.',
             illegal_characters_client_firstname:
                 app_shop?.txt?.errorCode?.illegal_characters_client_firstname ||
-                'Jeden z uĹźytych znakĂłw jest niedozwolony.',
+                'Jeden z użytych znaków jest niedozwolony.',
             illegal_characters_client_lastname:
                 app_shop?.txt?.errorCode?.illegal_characters_client_lastname ||
-                'Jeden z uĹźytych znakĂłw jest niedozwolony.',
+                'Jeden z użytych znaków jest niedozwolony.',
             illegal_characters_client_nip:
                 app_shop?.txt?.errorCode?.illegal_characters_client_nip ||
-                'Jeden z uĹźytych znakĂłw jest niedozwolony.',
+                'Jeden z użytych znaków jest niedozwolony.',
             illegal_characters_client_phone:
                 app_shop?.txt?.errorCode?.illegal_characters_client_phone ||
-                'Jeden z uĹźytych znakĂłw jest niedozwolony.',
+                'Jeden z użytych znaków jest niedozwolony.',
             illegal_characters_client_phone2:
                 app_shop?.txt?.errorCode?.illegal_characters_client_phone2 ||
-                'Jeden z uĹźytych znakĂłw jest niedozwolony.',
+                'Jeden z użytych znaków jest niedozwolony.',
             illegal_characters_client_street:
                 app_shop?.txt?.errorCode?.illegal_characters_client_street ||
-                'Jeden z uĹźytych znakĂłw jest niedozwolony.',
+                'Jeden z użytych znaków jest niedozwolony.',
             illegal_characters_delivery_additional:
                 app_shop?.txt?.errorCode?.illegal_characters_delivery_additional ||
-                'Jeden z uĹźytych znakĂłw jest niedozwolony.',
+                'Jeden z użytych znaków jest niedozwolony.',
             illegal_characters_delivery_city:
                 app_shop?.txt?.errorCode?.illegal_characters_delivery_city ||
-                'Jeden z uĹźytych znakĂłw jest niedozwolony.',
+                'Jeden z użytych znaków jest niedozwolony.',
             illegal_characters_delivery_firstname:
                 app_shop?.txt?.errorCode?.illegal_characters_delivery_firstname ||
-                'Jeden z uĹźytych znakĂłw jest niedozwolony.',
+                'Jeden z użytych znaków jest niedozwolony.',
             illegal_characters_delivery_lastname:
                 app_shop?.txt?.errorCode?.illegal_characters_delivery_lastname ||
-                'Jeden z uĹźytych znakĂłw jest niedozwolony.',
+                'Jeden z użytych znaków jest niedozwolony.',
             illegal_characters_delivery_phone:
                 app_shop?.txt?.errorCode?.illegal_characters_delivery_phone ||
-                'Jeden z uĹźytych znakĂłw jest niedozwolony.',
+                'Jeden z użytych znaków jest niedozwolony.',
             illegal_characters_delivery_street:
                 app_shop?.txt?.errorCode?.illegal_characters_delivery_street ||
-                'Jeden z uĹźytych znakĂłw jest niedozwolony.',
+                'Jeden z użytych znaków jest niedozwolony.',
             incorect_delivery_region:
-                app_shop?.txt?.errorCode?.incorect_delivery_region || 'Wybierz kraj odbiorcy przesyĹki.',
+                app_shop?.txt?.errorCode?.incorect_delivery_region || 'Wybierz kraj odbiorcy przesyłki.',
             incorect_delivery_zipcode:
                 app_shop?.txt?.errorCode?.incorect_delivery_zipcode ||
-                'Wpisz kod pocztowy odbiorcy przesyĹki.',
+                'Wpisz kod pocztowy odbiorcy przesyłki.',
             incorect_email:
                 app_shop?.txt?.errorCode?.incorect_email ||
-                'BĹÄdnie wpisany e-mail. Wpisz peĹny adres e-mail, np. jan@kowalski.com',
+                'Błędnie wpisany e-mail. Wpisz pełny adres e-mail, np. jan@kowalski.com',
             incorect_invoice_phone:
                 app_shop?.txt?.errorCode?.incorect_invoice_phone || 'Wpisz telefon klienta.',
             incorect_invoice_zipcode:
                 app_shop?.txt?.errorCode?.incorect_invoice_zipcode || 'Wpisz kod pocztowy klienta.',
             incorect_login:
                 app_shop?.txt?.errorCode?.incorect_login ||
-                'BĹÄdnie wpisany login. Login musi mieÄ minimum 3, a maksimum 40 znakĂłw. MoĹźesz uĹźyÄ liter i cyfr oraz symboli @ . - _.',
+                'Błędnie wpisany login. Login musi mieć minimum 3, a maksimum 40 znaków. możesz użyć liter i cyfr oraz symboli @ . - _.',
             incorect_nip:
                 app_shop?.txt?.errorCode?.incorect_nip || 'Niepoprawny NIP dla wybranego kraju.',
-            incorect_phone: app_shop?.txt?.errorCode?.incorect_phone || 'Wpisz swĂłj telefon.',
+            incorect_phone: app_shop?.txt?.errorCode?.incorect_phone || 'Wpisz swój telefon.',
             incorect_shops: app_shop?.txt?.errorCode?.incorect_shops || 'Wybierz sklep z listy.',
             incorect_zipcode:
-                app_shop?.txt?.errorCode?.incorect_zipcode || 'BĹÄdnie wpisany kod pocztowy.',
-            incorrect_region: app_shop?.txt?.errorCode?.incorrect_region || 'BĹÄdnie wybrany region.',
+                app_shop?.txt?.errorCode?.incorect_zipcode || 'Błędnie wpisany kod pocztowy.',
+            incorrect_region: app_shop?.txt?.errorCode?.incorrect_region || 'Błędnie wybrany region.',
             invalid_format:
                 app_shop?.txt?.errorCode?.invalid_format ||
-                'NieprawidĹowy format. Pole musi zawieraÄ przynajmniej jednÄ literÄ.',
+                'Nieprawidłowy format. Pole musi zawierać przynajmniej jedną literę.',
             login_equals_password:
                 app_shop?.txt?.errorCode?.login_equals_password ||
-                'HasĹo jest takie samo jak login. Wpisz inne hasĹo.',
-            login_taken: app_shop?.txt?.errorCode?.login_taken || 'Podany login jest juĹź zajÄty',
+                'Hasło jest takie samo jak login. Wpisz inne hasło.',
+            login_taken: app_shop?.txt?.errorCode?.login_taken || 'Podany login jest już zajęty',
             login_taken_login_propose:
                 app_shop?.txt?.errorCode?.login_taken_login_propose ||
-                'Podany login jest juĹź zajÄty.<br/><br/>Proponowany login: ',
-            no_city: app_shop?.txt?.errorCode?.no_city || 'Wpisz w to pole nazwÄ miasta.',
+                'Podany login jest już zajęty.<br/><br/>Proponowany login: ',
+            no_city: app_shop?.txt?.errorCode?.no_city || 'Wpisz w to pole nazwę miasta.',
             no_delivery_city:
-                app_shop?.txt?.errorCode?.no_delivery_city || 'Wpisz miejscowoĹÄ odbiorcy przesyĹki.',
+                app_shop?.txt?.errorCode?.no_delivery_city || 'Wpisz miejscowość odbiorcy przesyłki.',
             no_delivery_firstname:
-                app_shop?.txt?.errorCode?.no_delivery_firstname || 'Wpisz imiÄ odbiorcy przesyĹki.',
+                app_shop?.txt?.errorCode?.no_delivery_firstname || 'Wpisz imię odbiorcy przesyłki.',
             no_delivery_lastname:
-                app_shop?.txt?.errorCode?.no_delivery_lastname || 'Wpisz nazwisko odbiorcy przesyĹki.',
+                app_shop?.txt?.errorCode?.no_delivery_lastname || 'Wpisz nazwisko odbiorcy przesyłki.',
             no_delivery_street:
                 app_shop?.txt?.errorCode?.no_delivery_street ||
-                'Wpisz ulicÄ i numer domu odbiorcy przesyĹki.',
-            no_firmname: app_shop?.txt?.errorCode?.no_firmname || 'BĹÄdnie wpisana nazwa firmy.',
-            no_firstname: app_shop?.txt?.errorCode?.no_firstname || 'Wpisz w to pole swoje imiÄ.',
-            no_invoice_city: app_shop?.txt?.errorCode?.no_invoice_city || 'Wpisz miejscowoĹÄ klienta.',
+                'Wpisz ulicę i numer domu odbiorcy przesyłki.',
+            no_firmname: app_shop?.txt?.errorCode?.no_firmname || 'Błędnie wpisana nazwa firmy.',
+            no_firstname: app_shop?.txt?.errorCode?.no_firstname || 'Wpisz w to pole swoje imię.',
+            no_invoice_city: app_shop?.txt?.errorCode?.no_invoice_city || 'Wpisz miejscowość klienta.',
             no_invoice_firmname:
-                app_shop?.txt?.errorCode?.no_invoice_firmname || 'Wpisz nazwÄ firmy klienta.',
-            no_invoice_firstname: app_shop?.txt?.errorCode?.no_invoice_firstname || 'Wpisz imiÄ klienta.',
+                app_shop?.txt?.errorCode?.no_invoice_firmname || 'Wpisz nazwę firmy klienta.',
+            no_invoice_firstname: app_shop?.txt?.errorCode?.no_invoice_firstname || 'Wpisz imię klienta.',
             no_invoice_lastname:
                 app_shop?.txt?.errorCode?.no_invoice_lastname || 'Wpisz nazwisko klienta.',
             no_invoice_street:
-                app_shop?.txt?.errorCode?.no_invoice_street || 'Wpisz ulicÄ i numer domu klienta.',
+                app_shop?.txt?.errorCode?.no_invoice_street || 'Wpisz ulicę i numer domu klienta.',
             no_invoice_street_number:
-                app_shop?.txt?.errorCode?.no_invoice_street_number || 'Wpisz ulicÄ i numer domu klienta.',
-            no_login: app_shop?.txt?.errorCode?.no_login || 'Wpisz w to pole swĂłj login.',
+                app_shop?.txt?.errorCode?.no_invoice_street_number || 'Wpisz ulicę i numer domu klienta.',
+            no_login: app_shop?.txt?.errorCode?.no_login || 'Wpisz w to pole swój login.',
             no_name: app_shop?.txt?.errorCode?.no_name || 'Wpisz w to pole swoje nazwisko.',
-            no_password: app_shop?.txt?.errorCode?.no_password || 'Wpisz w to pole swoje hasĹo.',
-            no_street: app_shop?.txt?.errorCode?.no_street || 'Wpisz nazwÄ ulicy lub miejscowoĹci.',
+            no_password: app_shop?.txt?.errorCode?.no_password || 'Wpisz w to pole swoje hasło.',
+            no_street: app_shop?.txt?.errorCode?.no_street || 'Wpisz nazwę ulicy lub miejscowości.',
             no_street_number: app_shop?.txt?.errorCode?.no_street_number || 'Podaj nr domu.',
             no_street_number_uk: app_shop?.txt?.errorCode?.no_street_number_uk || 'Brakuje numeru domu.',
             not_equal_passwords:
                 app_shop?.txt?.errorCode?.not_equal_passwords ||
-                'Wpisane hasĹa nie sÄ takie same. Wpisz ponownie hasĹo i potwierdzenie.',
+                'Wpisane hasła nie są takie same. Wpisz ponownie hasło i potwierdzenie.',
             password_to_long:
                 app_shop?.txt?.errorCode?.password_to_long ||
-                'Za dĹugie hasĹo. Wpisz krĂłtsze hasĹo (maksimum',
+                'Za długie hasło. Wpisz krótsze hasło (maksimum',
             password_to_short:
                 app_shop?.txt?.errorCode?.password_to_short ||
-                'Zbyt krĂłtkie hasĹo. Wpisz dĹuĹźsze hasĹo (minimum',
-            used_login: app_shop?.txt?.errorCode?.used_login || 'Podany login jest juĹź zajÄty',
+                'Zbyt krótkie hasło. Wpisz dłuższe hasło (minimum',
+            used_login: app_shop?.txt?.errorCode?.used_login || 'Podany login jest już zajęty',
         }),
         (this.txt = {
-            mandatoryField: app_shop?.txt?.formValidation?.mandatoryField || 'ProszÄ wypeĹniÄ to pole.',
+            mandatoryField: app_shop?.txt?.formValidation?.mandatoryField || 'Proszę wypełnić to pole.',
             zipcodeFormat:
                 app_shop?.txt?.formValidation?.zipcodeFormat ||
                 'Poprawne formaty kodu pocztowego dla wybranego kraju to [X - cyfra; Y - litera]:',
-            characters: app_shop?.txt?.formValidation?.characters || 'znakĂłw).',
-            noOptionSelected: app_shop?.txt?.formValidation?.noOptionSelected || 'ProszÄ wybraÄ opcjÄ.',
+            characters: app_shop?.txt?.formValidation?.characters || 'znaków).',
+            noOptionSelected: app_shop?.txt?.formValidation?.noOptionSelected || 'Proszę wybrać opcję.',
             minimalCharacters:
                 app_shop?.txt?.formValidation?.minimalCharacters ||
                 app_shop.txt.txt_validation1 ||
-                'Minimalna liczba znakĂłw dla tego pola to ',
+                'Minimalna liczba znaków dla tego pola to ',
             maximumCharacters:
                 app_shop?.txt?.formValidation?.maximumCharacters ||
                 app_shop.txt.txt_validation2 ||
-                'Maksymalna liczba znakĂłw dla tego pola to ',
+                'Maksymalna liczba znaków dla tego pola to ',
         }),
         (this.queries = {
             VALIDATE_FIRSTNAME_QUERY: e =>
@@ -10060,19 +10060,19 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             (this.prefix = this.options.contenersPrefix),
             (this.actions = {}),
             (this.txt = []),
-            (this.txt.oszczedzasz = 'OszczÄdzasz '),
+            (this.txt.oszczedzasz = 'Oszczędzasz '),
             (this.txt.taniej = '%, czyli '),
-            (this.txt.wzestawie = ' kupujÄc w zestawie'),
-            (this.txt.niedostepny = 'Produkt niedostÄpny'),
-            (this.txt.tylkotel = 'Cena na telefon. Skontaktuj siÄ ze sprzedawcÄ'),
-            (this.txt.tylko_punkty = 'Towar dostÄpny tylko w programie lojalnoĹciowym.'),
+            (this.txt.wzestawie = ' kupując w zestawie'),
+            (this.txt.niedostepny = 'Produkt niedostępny'),
+            (this.txt.tylkotel = 'Cena na telefon. Skontaktuj się ze sprzedawcą'),
+            (this.txt.tylko_punkty = 'Towar dostępny tylko w programie lojalnościowym.'),
             (this.txt.gratis = 'Dostawa gratis!'),
             (this.txt.gratis_produkt = 'Gratis!'),
-            (this.txt.niemastanu = 'Produkt niedostÄpny'),
+            (this.txt.niemastanu = 'Produkt niedostępny'),
             (this.txt.status_24 = '24 godz.'),
             (this.txt.status_48 = '48 godz.'),
-            (this.txt.status_natychmiast = 'w ciÄgu 24h'),
-            (this.txt.day = ' dzieĹ '),
+            (this.txt.status_natychmiast = 'w ciągu 24h'),
+            (this.txt.day = ' dzień '),
             (this.txt.days = ' dni '),
             (this.txt.hour = ' godz. '),
             (this.txt.hours = ' godz. '),
@@ -10081,21 +10081,21 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             (this.txt.za = ' za '),
             (this.txt.proc = '%'),
             (this.txt.wybrany_rozmiar = 'Rozmiar'),
-            (this.txt.wysylka = 'WysyĹka '),
-            (this.txt.wysylka_za = 'WysyĹka w ciÄgu '),
+            (this.txt.wysylka = 'Wysyłka '),
+            (this.txt.wysylka_za = 'Wysyłka w ciągu '),
             (this.txt.dostepny = 'Dostawa '),
             (this.txt.dostepny_za = 'Dostawa za '),
             (this.txt.pkt = 'pkt.'),
-            (this.txt.status_full = 'wiÄksza iloĹÄ'),
+            (this.txt.status_full = 'większa ilość'),
             (this.txt.status_amount_null = 'brak w magazynie'),
-            (this.txt.forpointsonly = 'Produkt moĹźesz kupiÄ za punkty'),
-            (this.txt.disable_desc = 'Skontaktuj siÄ z nami'),
+            (this.txt.forpointsonly = 'Produkt możesz kupić za punkty'),
+            (this.txt.disable_desc = 'Skontaktuj się z nami'),
             (this.txt.choiceSize = 'Wybierz rozmiar'),
-            (this.txt.maksymalnie = 'Maksymalnie moĹźesz zamĂłwiÄ'),
-            (this.txt.minimalnie = 'Minimalnie moĹźesz zamĂłwiÄ'),
+            (this.txt.maksymalnie = 'Maksymalnie możesz zamówić'),
+            (this.txt.minimalnie = 'Minimalnie możesz zamówić'),
             (this.txt.brak_magazyn = 'Brak na magazynie'),
-            (this.txt.dodano_produkt = 'Produkt zostaĹ dodany.'),
-            (this.txt.dodano_produkt_blad = 'WystÄpiĹ bĹÄd podczas dodawania produktu.'),
+            (this.txt.dodano_produkt = 'Produkt został dodany.'),
+            (this.txt.dodano_produkt_blad = 'Wystąpił błąd podczas dodawania produktu.'),
             (this.txt.ilosc_mm = ''),
             (this.txt.ilosc_mo = ''),
             (this.txt.ilosc_mo_inf = ''),
@@ -10105,8 +10105,8 @@ var projectorv3_disable_ajax = projectorv3_disable_ajax || 1,
             (this.txt.wysylka_total_end = ')'),
             (this.txt.nawias_end = ''),
             (this.txt.amount = ''),
-            (this.txt.order_by = 'ZamĂłw do '),
-            (this.txt.it_will_ship_today = ' to wyĹlemy dzisiaj');
+            (this.txt.order_by = 'Zamów do '),
+            (this.txt.it_will_ship_today = ' to wyślemy dzisiaj');
         var e = !0;
         (this.isset = function (e) {
             return void 0 !== window[e];
@@ -13122,11 +13122,11 @@ app_shop.run(
         '.moreInfo__show',
     ),
     (app_shop.txt.txt_77752_1 =
-        'Nie moĹźna wgraÄ pliku %s, poniewaĹź przekracza maksymalny dozwolony rozmiar %dMB.'),
+        'Nie można wgrać pliku %s, ponieważ przekracza maksymalny dozwolony rozmiar %dMB.'),
     (app_shop.txt.txt_77752_2 =
-        'Nie moĹźna wgraÄ pliku %s, poniewaĹź zaĹÄczanie plikĂłw tego typu jest niedozwolone.'),
-    (app_shop.txt.txt_77752_3 = 'Dopuszczalne formaty zdjÄÄ: .jpg.'),
-    (app_shop.txt.txt_77752_4 = 'Maksymalny rozmiar zdjÄcia to: %spx.');
+        'Nie można wgrać pliku %s, ponieważ załączanie plików tego typu jest niedozwolone.'),
+    (app_shop.txt.txt_77752_3 = 'Dopuszczalne formaty zdjęć: .jpg.'),
+    (app_shop.txt.txt_77752_4 = 'Maksymalny rozmiar zdjęcia to: %spx.');
 var hotspotAjaxWrapType = '';
 function ownKeys(e, t) {
     var i = Object.keys(e);
@@ -13163,15 +13163,15 @@ function _defineProperty(e, t, i) {
         e
     );
 }
-(app_shop.txt.txt_validation1 = 'Minimalna liczba znakĂłw dla tego pola to '),
-    (app_shop.txt.txt_validation2 = 'Maksymalna liczba znakĂłw dla tego pola to '),
+(app_shop.txt.txt_validation1 = 'Minimalna liczba znaków dla tego pola to '),
+    (app_shop.txt.txt_validation2 = 'Maksymalna liczba znaków dla tego pola to '),
     (app_shop.txt.txt_validation3 =
-        'BĹÄdnie wpisany e-mail. Wpisz peĹny adres e-mail, np. jan@kowalski.com.'),
-    (app_shop.txt.txt_validation4 = 'Te pole jest obowiÄzkowe.'),
+        'Błędnie wpisany e-mail. Wpisz pełny adres e-mail, np. jan@kowalski.com.'),
+    (app_shop.txt.txt_validation4 = 'Te pole jest obowiązkowe.'),
     (app_shop.txt.txt_validation5 = 'Format numeru konta bankowego jest niepoprawny '),
-    (app_shop.txt.txt_validation6 = 'Numer telefonu powinien zawieraÄ minimum 9 znakĂłw '),
+    (app_shop.txt.txt_validation6 = 'Numer telefonu powinien zawierać minimum 9 znaków '),
     (app_shop.txt.hotspot_prev = 'Poprzedni z tej kategorii'),
-    (app_shop.txt.hotspot_next = 'NastÄpny z tej kategorii');
+    (app_shop.txt.hotspot_next = 'Następny z tej kategorii');
 const Alertek = {
     alert_cover: '',
     cloudID: '',
@@ -14925,7 +14925,7 @@ function Bars() {
         function () {
             document.querySelectorAll('[data-change-literal-days]').forEach(e => {
                 const t = +e.getAttribute('data-change-literal-days');
-                e.textContent = app_shop.fn.changeLiteral(t, ['dni', 'dzieĹ', 'dni'], !1);
+                e.textContent = app_shop.fn.changeLiteral(t, ['dni', 'dzień', 'dni'], !1);
             });
         },
         'all',
@@ -14960,15 +14960,15 @@ function Bars() {
     (RegionForced = function (e) {
         (this.params = e || {}),
             (this.txt = {
-                label: 'TwĂłj wybrany kraj dostawy to ',
-                labelZipcode: 'TwĂłj wybrany region dostawy to ',
-                currency: 'Ceny wyĹwietlane w walucie: ',
-                timeAndCosts: 'Czasy i koszty dostawy wyĹwietlane dla kraju: ',
-                timeAndCostsZipcode: 'Czasy i koszty dostawy wyĹwietlane dla regionu: ',
+                label: 'Twój wybrany kraj dostawy to ',
+                labelZipcode: 'Twój wybrany region dostawy to ',
+                currency: 'Ceny wyświetlane w walucie: ',
+                timeAndCosts: 'Czasy i koszty dostawy wyświetlane dla kraju: ',
+                timeAndCostsZipcode: 'Czasy i koszty dostawy wyświetlane dla regionu: ',
                 andRegion: ' i regionu: ',
                 continue: 'Kontynuuj',
-                restoreDefault: 'PrzywrĂłÄ domyĹlny kraj dostawy: ',
-                restoreDefaultZipcode: 'PrzywrĂłÄ domyĹlny region dostawy: ',
+                restoreDefault: 'Przywróć domyślny kraj dostawy: ',
+                restoreDefaultZipcode: 'Przywróć domyślny region dostawy: ',
             }),
             (this.events = {
                 unsetRegion: e => (e.preventDefault(), this.unsetTemporaryRegion(), !1),
@@ -15125,85 +15125,85 @@ function Bars() {
     ),
     app_shop.txt || (app_shop.txt = {}),
     app_shop.txt.errorCode || (app_shop.txt.errorCode = {}),
-    (app_shop.txt.errorCode.birth_date = 'Wpisz poprawnÄ datÄ urodzenia w formacie RRRR-MM-DD'),
+    (app_shop.txt.errorCode.birth_date = 'Wpisz poprawną datę urodzenia w formacie RRRR-MM-DD'),
     (app_shop.txt.errorCode.illegal_characters_client_city =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (app_shop.txt.errorCode.illegal_characters_client_firm =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (app_shop.txt.errorCode.illegal_characters_client_firstname =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (app_shop.txt.errorCode.illegal_characters_client_lastname =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (app_shop.txt.errorCode.illegal_characters_client_nip =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (app_shop.txt.errorCode.illegal_characters_client_phone =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (app_shop.txt.errorCode.illegal_characters_client_phone2 =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (app_shop.txt.errorCode.illegal_characters_client_street =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (app_shop.txt.errorCode.illegal_characters_delivery_additional =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (app_shop.txt.errorCode.illegal_characters_delivery_city =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (app_shop.txt.errorCode.illegal_characters_delivery_firstname =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (app_shop.txt.errorCode.illegal_characters_delivery_lastname =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (app_shop.txt.errorCode.illegal_characters_delivery_phone =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (app_shop.txt.errorCode.illegal_characters_delivery_street =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
-    (app_shop.txt.errorCode.incorect_delivery_region = 'Wybierz kraj odbiorcy przesyĹki.'),
-    (app_shop.txt.errorCode.incorect_delivery_zipcode = 'Wpisz kod pocztowy odbiorcy przesyĹki.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
+    (app_shop.txt.errorCode.incorect_delivery_region = 'Wybierz kraj odbiorcy przesyłki.'),
+    (app_shop.txt.errorCode.incorect_delivery_zipcode = 'Wpisz kod pocztowy odbiorcy przesyłki.'),
     (app_shop.txt.errorCode.incorect_email =
-        'BĹÄdnie wpisany e-mail. Wpisz peĹny adres e-mail, np. jan@kowalski.com'),
+        'Błędnie wpisany e-mail. Wpisz pełny adres e-mail, np. jan@kowalski.com'),
     (app_shop.txt.errorCode.incorect_invoice_phone = 'Wpisz telefon klienta.'),
     (app_shop.txt.errorCode.incorect_invoice_zipcode = 'Wpisz kod pocztowy klienta.'),
     (app_shop.txt.errorCode.incorect_login =
-        'BĹÄdnie wpisany login. Login musi mieÄ minimum 3, a maksimum 40 znakĂłw. MoĹźesz uĹźyÄ liter i cyfr oraz symboli @ . - _.'),
-    (app_shop.txt.errorCode.incorect_nip = 'BĹÄdnie wpisany NIP.'),
-    (app_shop.txt.errorCode.incorect_phone = 'Wpisz swĂłj telefon.'),
+        'Błędnie wpisany login. Login musi mieć minimum 3, a maksimum 40 znaków. możesz użyć liter i cyfr oraz symboli @ . - _.'),
+    (app_shop.txt.errorCode.incorect_nip = 'Błędnie wpisany NIP.'),
+    (app_shop.txt.errorCode.incorect_phone = 'Wpisz swój telefon.'),
     (app_shop.txt.errorCode.incorect_shops = 'Wybierz sklep z listy.'),
-    (app_shop.txt.errorCode.incorect_zipcode = 'BĹÄdnie wpisany kod pocztowy.'),
-    (app_shop.txt.errorCode.incorrect_region = 'BĹÄdnie wybrany region.'),
+    (app_shop.txt.errorCode.incorect_zipcode = 'Błędnie wpisany kod pocztowy.'),
+    (app_shop.txt.errorCode.incorrect_region = 'Błędnie wybrany region.'),
     (app_shop.txt.errorCode.invalid_format =
-        'NieprawidĹowy format. Pole musi zawieraÄ przynajmniej jednÄ literÄ.'),
+        'Nieprawidłowy format. Pole musi zawierać przynajmniej jedną literę.'),
     (app_shop.txt.errorCode.login_equals_password =
-        'HasĹo jest takie samo jak login. Wpisz inne hasĹo.'),
-    (app_shop.txt.errorCode.login_taken = 'Podany login jest juĹź zajÄty.'),
+        'Hasło jest takie samo jak login. Wpisz inne hasło.'),
+    (app_shop.txt.errorCode.login_taken = 'Podany login jest już zajęty.'),
     (app_shop.txt.errorCode.login_taken_login_propose =
-        'Podany login jest juĹź zajÄty.<br/><br/>Proponowany login: '),
-    (app_shop.txt.errorCode.no_city = 'Wpisz w to pole nazwÄ miasta.'),
-    (app_shop.txt.errorCode.no_delivery_city = 'Wpisz miejscowoĹÄ odbiorcy przesyĹki.'),
-    (app_shop.txt.errorCode.no_delivery_firstname = 'Wpisz imiÄ odbiorcy przesyĹki.'),
-    (app_shop.txt.errorCode.no_delivery_lastname = 'Wpisz nazwisko odbiorcy przesyĹki.'),
-    (app_shop.txt.errorCode.no_delivery_street = 'Wpisz ulicÄ i numer domu odbiorcy przesyĹki.'),
-    (app_shop.txt.errorCode.no_firmname = 'BĹÄdnie wpisana nazwa firmy.'),
-    (app_shop.txt.errorCode.no_firstname = 'Wpisz w to pole swoje imiÄ.'),
-    (app_shop.txt.errorCode.no_invoice_city = 'Wpisz miejscowoĹÄ klienta.'),
-    (app_shop.txt.errorCode.no_invoice_firmname = 'Wpisz nazwÄ firmy klienta.'),
-    (app_shop.txt.errorCode.no_invoice_firstname = 'Wpisz imiÄ klienta.'),
+        'Podany login jest już zajęty.<br/><br/>Proponowany login: '),
+    (app_shop.txt.errorCode.no_city = 'Wpisz w to pole nazwę miasta.'),
+    (app_shop.txt.errorCode.no_delivery_city = 'Wpisz miejscowość odbiorcy przesyłki.'),
+    (app_shop.txt.errorCode.no_delivery_firstname = 'Wpisz imię odbiorcy przesyłki.'),
+    (app_shop.txt.errorCode.no_delivery_lastname = 'Wpisz nazwisko odbiorcy przesyłki.'),
+    (app_shop.txt.errorCode.no_delivery_street = 'Wpisz ulicę i numer domu odbiorcy przesyłki.'),
+    (app_shop.txt.errorCode.no_firmname = 'Błędnie wpisana nazwa firmy.'),
+    (app_shop.txt.errorCode.no_firstname = 'Wpisz w to pole swoje imię.'),
+    (app_shop.txt.errorCode.no_invoice_city = 'Wpisz miejscowość klienta.'),
+    (app_shop.txt.errorCode.no_invoice_firmname = 'Wpisz nazwę firmy klienta.'),
+    (app_shop.txt.errorCode.no_invoice_firstname = 'Wpisz imię klienta.'),
     (app_shop.txt.errorCode.no_invoice_lastname = 'Wpisz nazwisko klienta.'),
-    (app_shop.txt.errorCode.no_invoice_street = 'Wpisz ulicÄ i numer domu klienta.'),
-    (app_shop.txt.errorCode.no_invoice_street_number = 'Wpisz ulicÄ i numer domu klienta.'),
-    (app_shop.txt.errorCode.no_login = 'Wpisz w to pole swĂłj login.'),
+    (app_shop.txt.errorCode.no_invoice_street = 'Wpisz ulicę i numer domu klienta.'),
+    (app_shop.txt.errorCode.no_invoice_street_number = 'Wpisz ulicę i numer domu klienta.'),
+    (app_shop.txt.errorCode.no_login = 'Wpisz w to pole swój login.'),
     (app_shop.txt.errorCode.no_name = 'Wpisz w to pole swoje nazwisko.'),
-    (app_shop.txt.errorCode.no_password = 'Wpisz w to pole swoje hasĹo.'),
-    (app_shop.txt.errorCode.no_street = 'Wpisz nazwÄ ulicy lub miejscowoĹci.'),
+    (app_shop.txt.errorCode.no_password = 'Wpisz w to pole swoje hasło.'),
+    (app_shop.txt.errorCode.no_street = 'Wpisz nazwę ulicy lub miejscowości.'),
     (app_shop.txt.errorCode.no_street_number = 'Podaj nr domu.'),
     (app_shop.txt.errorCode.no_street_number_uk = 'Brakuje numeru domu.'),
     (app_shop.txt.errorCode.not_equal_passwords =
-        'Wpisane hasĹa nie sÄ takie same. Wpisz ponownie hasĹo i potwierdzenie.'),
-    (app_shop.txt.errorCode.password_to_long = 'Za dĹugie hasĹo. Wpisz krĂłtsze hasĹo (maksimum.'),
+        'Wpisane hasła nie są takie same. Wpisz ponownie hasło i potwierdzenie.'),
+    (app_shop.txt.errorCode.password_to_long = 'Za długie hasło. Wpisz krótsze hasło (maksimum.'),
     (app_shop.txt.errorCode.password_to_short =
-        'Zbyt krĂłtkie hasĹo. Wpisz dĹuĹźsze hasĹo (minimum.'),
-    (app_shop.txt.errorCode.used_login = 'Podany login jest juĹź zajÄty.'),
+        'Zbyt krótkie hasło. Wpisz dłuższe hasło (minimum.'),
+    (app_shop.txt.errorCode.used_login = 'Podany login jest już zajęty.'),
     app_shop.txt.formValidation || (app_shop.txt.formValidation = {}),
-    (app_shop.txt.formValidation.mandatoryField = 'ProszÄ wypeĹniÄ to pole.'),
+    (app_shop.txt.formValidation.mandatoryField = 'Proszę wypełnić to pole.'),
     (app_shop.txt.formValidation.zipcodeFormat =
         'Poprawne formaty kodu pocztowego dla wybranego kraju to [X - cyfra; Y - litera]:'),
-    (app_shop.txt.formValidation.characters = 'znakĂłw).'),
+    (app_shop.txt.formValidation.characters = 'znaków).'),
     app_shop.run(
         function () {
             (app_shop.fn.bars = new Bars()), app_shop.fn.bars.init();
@@ -15275,7 +15275,7 @@ const searchTxt = {
     beforeProducer: 'Producent: ',
     beforeSeries: 'Seria: ',
     separator: ' / ',
-    buttonAllText: 'PokaĹź wszystkie',
+    buttonAllText: 'Pokaż wszystkie',
     telPrice: 'Cena na telefon',
 };
 (SearchResults = function (e) {
@@ -16405,31 +16405,31 @@ function calculate_instalments(params) {
     }, 'all'),
     (app_shop.txt.instalmentLabel = ''),
     (app_shop.txt.instalmentSingleProduct = 'Oblicz raty tylko dla tego produktu'),
-    (app_shop.txt.instalmentMultiProduct = 'Oblicz raty produktĂłw w koszyku'),
-    (app_shop.txt.instalmentBasketProduct = 'Oblicz raty ĹÄcznie z wartoĹciÄ koszyka'),
+    (app_shop.txt.instalmentMultiProduct = 'Oblicz raty produktów w koszyku'),
+    (app_shop.txt.instalmentBasketProduct = 'Oblicz raty łącznie z wartością koszyka'),
     (app_shop.txt.instalmentNoTall =
-        'Nie wszystkie umieszczone w koszyku produkty umoĹźliwiÄ zakup tym systemem ratalnym. PrzejdĹş do szczegĂłĹĂłw kaĹźdego z produktĂłw aby dowiedzieÄ siÄ ktĂłre z nich umoĹźliwiajÄ taki zakup. JeĹźeli zdecydujesz siÄ na zakup na raty, opĹata za te produkty bÄdzie musiaĹa byÄ wniesiona odrÄbnie pozostaĹymi sposobami pĹatnoĹci.'),
+        'Nie wszystkie umieszczone w koszyku produkty umożliwią zakup tym systemem ratalnym. PrzejdĹş do szczegółów każdego z produktów aby dowiedzieć się które z nich umożliwiają taki zakup. Jeżeli zdecydujesz się na zakup na raty, opłata za te produkty będzie musiała być wniesiona odrębnie pozostałymi sposobami płatności.'),
     (app_shop.txt.instalmentTooMany =
-        'W koszyku znajduje siÄ zbyt duĹźa iloĹÄ produktĂłw aby mĂłc opĹaciÄ zamĂłwienie tym systemem ratalnym. Zmniejsz iloĹÄ produktĂłw do '),
+        'W koszyku znajduje się zbyt duża ilość produktów aby móc opłacić Zamówienie tym systemem ratalnym. Zmniejsz ilość produktów do '),
     (app_shop.txt.instalmentTooMany2 =
-        ' aby mĂłc skorzystaÄ z systemu rat. IloĹÄ sztuk jednego produktu nie jest limitowana.'),
+        ' aby móc skorzystać z systemu rat. ilość sztuk jednego produktu nie jest limitowana.'),
     (app_shop.txt.instalmentLabelTo = ' to '),
     (app_shop.txt.instalmentLabelMinBasket =
-        'Nie moĹźesz uruchomiÄ symulacji rat dla caĹego koszyka, poniewaĹź minimalna kwota umoĹźliwiajÄca zakupy przez '),
-    (app_shop.txt.instalmentTextMin = 'ZwiÄksz iloĹÄ sztuk produktu, aby uruchomiÄ kalkulator rat.'),
+        'Nie możesz uruchomić symulacji rat dla całego koszyka, ponieważ minimalna kwota umożliwiająca zakupy przez '),
+    (app_shop.txt.instalmentTextMin = 'Zwiększ ilość sztuk produktu, aby uruchomić kalkulator rat.'),
     (app_shop.txt.instalmentTextMinBasket =
-        'ZwiÄksz iloĹÄ sztuk tego produktu, lub wrzuÄ do koszyka dodatkowe produkty.'),
+        'Zwiększ ilość sztuk tego produktu, lub wrzuć do koszyka dodatkowe produkty.'),
     (app_shop.txt.instalmentTextMinB =
-        'ZwiÄksz iloĹÄ produktĂłw w koszyku, aby uruchomiÄ kalkulator rat.'),
-    (app_shop.txt.instalmentLabelMax = 'Maksymalna kwota umoĹźliwiajÄca zakupy przez '),
+        'Zwiększ ilość produktów w koszyku, aby uruchomić kalkulator rat.'),
+    (app_shop.txt.instalmentLabelMax = 'Maksymalna kwota umożliwiająca zakupy przez '),
     (app_shop.txt.instalmentLabelMaxBasket =
-        'Nie moĹźesz uruchomiÄ symulacji rat dla caĹego koszyka, poniewaĹź maksymalna kwota umoĹźliwiajÄca zakupy przez '),
-    (app_shop.txt.instalmentTextMax = 'Zmniejsz iloĹÄ sztuk produktu, aby uruchomiÄ kalkulator rat.'),
+        'Nie możesz uruchomić symulacji rat dla całego koszyka, ponieważ maksymalna kwota umożliwiająca zakupy przez '),
+    (app_shop.txt.instalmentTextMax = 'Zmniejsz ilość sztuk produktu, aby uruchomić kalkulator rat.'),
     (app_shop.txt.instalmentTextMaxBasket =
-        'Zmniejsz iloĹÄ sztuk tego produktu, lub usuĹ z koszyka niektĂłre produkty.'),
+        'Zmniejsz ilość sztuk tego produktu, lub usuń z koszyka niektóre produkty.'),
     (app_shop.txt.instalmentTextMaxB =
-        'Zmniejsz iloĹÄ produktĂłw w koszyku, aby uruchomiÄ kalkulator rat.'),
-    (app_shop.txt.instalmentLabelMin = 'Minimalna kwota umoĹźliwiajÄca zakupy przez '),
+        'Zmniejsz ilość produktów w koszyku, aby uruchomić kalkulator rat.'),
+    (app_shop.txt.instalmentLabelMin = 'Minimalna kwota umożliwiająca zakupy przez '),
     (app_shop.txt.instalmentButtonClassDialog = 'btn --solid --medium'),
     (app_shop.txt.instalmentButtonDisableClassDialog = 'btn --solid --secondary --medium --disabled'),
     (app_shop.txt.instalmentNet = ' netto');
@@ -16438,22 +16438,22 @@ var iaical_dateFormat = 'yy-mm-dd',
 (days_01_txt = 'n'),
     (days_02_txt = 'pn'),
     (days_03_txt = 'wt'),
-    (days_04_txt = 'Ĺr'),
+    (days_04_txt = 'śr'),
     (days_05_txt = 'czw'),
     (days_06_txt = 'pt'),
     (days_07_txt = 'so'),
-    (month_01_txt = 'StyczeĹ'),
+    (month_01_txt = 'Styczeń'),
     (month_02_txt = 'Luty'),
     (month_03_txt = 'Marzec'),
-    (month_04_txt = 'KwiecieĹ'),
+    (month_04_txt = 'Kwiecień'),
     (month_05_txt = 'Maj'),
     (month_06_txt = 'Czerwiec'),
     (month_07_txt = 'Lipiec'),
-    (month_08_txt = 'SierpieĹ'),
-    (month_09_txt = 'WrzesieĹ'),
+    (month_08_txt = 'Sierpień'),
+    (month_09_txt = 'Wrzesień'),
     (month_10_txt = 'PaĹşdziernik'),
     (month_11_txt = 'Listopad'),
-    (month_12_txt = 'GrudzieĹ'),
+    (month_12_txt = 'Grudzień'),
     (month_2_01_txt = 'Stycznia'),
     (month_2_02_txt = 'Lutego'),
     (month_2_03_txt = 'Marca'),
@@ -16462,7 +16462,7 @@ var iaical_dateFormat = 'yy-mm-dd',
     (month_2_06_txt = 'Czerwca'),
     (month_2_07_txt = 'Lipca'),
     (month_2_08_txt = 'Sierpnia'),
-    (month_2_09_txt = 'WrzeĹnia'),
+    (month_2_09_txt = 'Września'),
     (month_2_10_txt = 'PaĹşdziernika'),
     (month_2_11_txt = 'Listopada'),
     (month_2_12_txt = 'Grudnia'),
@@ -16478,8 +16478,8 @@ var iaical_dateFormat = 'yy-mm-dd',
     (month_3_10_txt = 'PAĹš'),
     (month_3_11_txt = 'LIS'),
     (month_3_12_txt = 'GRU'),
-    (iaical_monthNext = 'NastÄpny miesiÄc'),
-    (iaical_monthPrev = 'Poprzedni miesiÄc');
+    (iaical_monthNext = 'Następny miesiąc'),
+    (iaical_monthPrev = 'Poprzedni miesiąc');
 var iaical_daysShort = [
     days_01_txt,
     days_02_txt,
@@ -16796,17 +16796,17 @@ app_shop.run(
         [1, 2, 3, 4],
         '#Basket',
     );
-var productslist_03a_txt = 'Uwagi mogÄ mieÄ maksymalnie ',
-    productslist_03b_txt = ' znakĂłw. ',
+var productslist_03a_txt = 'Uwagi mogą mieć maksymalnie ',
+    productslist_03b_txt = ' znaków. ',
     productslist_maxvalue_04_txt = '255',
     productslist_maxvalue_05_txt =
-        "<b>Wybrany przez Ciebie wczeĹniej produkt gratisowy nie jest dostÄpny dla takiej wartoĹci koszyka. </b><br/><span style='font-weight:normal;'>Prosimy wybierz inny produkt gratisowy lub zmieĹ wartoĹÄ swojego zamĂłwienie.</span>",
+        "<b>Wybrany przez Ciebie wcześniej produkt gratisowy nie jest dostępny dla takiej wartości koszyka. </b><br/><span style='font-weight:normal;'>Prosimy wybierz inny produkt gratisowy lub zmień wartość swojego Zamówienie.</span>",
     txt_order_wrappers_1 = 'Do koszyka',
     txt_order_wrappers_2 = 'Gratis !',
     txt_order_wrappers_4 = 'Wybierz opakowanie',
     txt_order_wrappers_8 = 'Zamknij',
     product_buttons_basket_class = 'btn --solid';
-const basketeditTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni' };
+const basketeditTxt = { week1: ' tydzień', week2: ' tygodnie', week3: ' tygodni' };
 (basketeditTxtWeek = [basketeditTxt.week3, basketeditTxt.week1, basketeditTxt.week2]),
     app_shop.run(
         function () {
@@ -17077,7 +17077,7 @@ app_shop.run(
         !0,
     );
 var client_new_social_info_js_txt_1 =
-    'Zaloguj siÄ na ktĂłrÄĹ z wyĹźej wymienionych formy logowania aby dokoĹczyÄ rejestracjÄ.';
+    'Zaloguj się na którąś z wyżej wymienionych formy logowania aby dokończyć rejestrację.';
 app_shop.run(
     function () {
         Modal({
@@ -17142,99 +17142,99 @@ app_shop.run(
         '.client-new_page',
     );
 const clientFormTxt = {
-    txt00: 'Mamy juĹź zarejestrowane konto dla podanego adresu e-mail: ',
-    txt01: 'PamiÄtam swĂłj login i hasĹo i mogÄ je podaÄ.',
-    txt02: 'ChcÄ stworzyÄ nowe konto przy uĹźyciu tego adresu (niezalecane).',
-    txt03: 'WyĹlij e-mail pozwalajÄcy na automatyczne zalogowanie',
-    txt06: 'WyĹlij wiadomoĹÄ na adres',
+    txt00: 'Mamy już zarejestrowane konto dla podanego adresu e-mail: ',
+    txt01: 'Pamiętam swój login i hasło i mogę je podać.',
+    txt02: 'Chcę stworzyć nowe konto przy użyciu tego adresu (niezalecane).',
+    txt03: 'Wyślij e-mail pozwalający na automatyczne zalogowanie',
+    txt06: 'Wyślij wiadomość na adres',
     txt07: 'z danymi potrzebnymi do logowania .',
-    txt08: '<br/>ZaĹoĹźone wczeĹniej konto zostaĹo poĹÄczone z kontem',
+    txt08: '<br/>Założone wcześniej konto zostało połączone z kontem',
     txt13:
-        'Proponujemy Ci uĹźycie tego konta, co pozwoli Ci korzystaÄ z przywilejĂłw zarezerwowanych dla wielokrotnych klientĂłw. Aby siÄ zalogowaÄ na wczeĹniej zaĹoĹźone konto, wystarczy klikniÄcie na link, ktĂłry moĹźemy Ci wysĹaÄ w e-mailu.',
+        'Proponujemy Ci użycie tego konta, co pozwoli Ci korzystać z przywilejów zarezerwowanych dla wielokrotnych klientów. Aby się zalogować na wcześniej założone konto, wystarczy kliknięcie na link, który możemy Ci wysłać w e-mailu.',
     txt14: 'Poprawne formaty kodu pocztowego dla wybranego kraju to [X - cyfra; Y - litera]:',
-    txt15: 'znakĂłw).',
-    txt16: 'ProszÄ wypeĹniÄ to pole.',
-    txt16a: '<i class="icon-visibility"></i> PokaĹź hasĹo',
-    txt16b: '<i class="icon-novisibility"></i> Ukryj hasĹo',
-    txt17: 'Wpisz nazwÄ ulicy lub miejscowoĹci.',
-    txt18: 'NieprawidĹowy format. Pole musi zawieraÄ przynajmniej jednÄ literÄ.',
+    txt15: 'znaków).',
+    txt16: 'Proszę wypełnić to pole.',
+    txt16a: '<i class="icon-visibility"></i> Pokaż hasło',
+    txt16b: '<i class="icon-novisibility"></i> Ukryj hasło',
+    txt17: 'Wpisz nazwę ulicy lub miejscowości.',
+    txt18: 'Nieprawidłowy format. Pole musi zawierać przynajmniej jedną literę.',
 };
 var clientNewErrorCode = [];
-(clientNewErrorCode.no_login = 'Wpisz w to pole swĂłj login.'),
+(clientNewErrorCode.no_login = 'Wpisz w to pole swój login.'),
     (clientNewErrorCode.incorect_login =
-        'BĹÄdnie wpisany login. Login musi mieÄ minimum 3, a maksimum 40 znakĂłw. MoĹźesz uĹźyÄ liter i cyfr oraz symboli @ . - _.'),
-    (clientNewErrorCode.no_password = 'Wpisz w to pole swoje hasĹo.'),
+        'Błędnie wpisany login. Login musi mieć minimum 3, a maksimum 40 znaków. możesz użyć liter i cyfr oraz symboli @ . - _.'),
+    (clientNewErrorCode.no_password = 'Wpisz w to pole swoje hasło.'),
     (clientNewErrorCode.password_to_short =
-        'Zbyt krĂłtkie hasĹo. Wpisz dĹuĹźsze hasĹo (minimum 6 znakĂłw).'),
+        'Zbyt krótkie hasło. Wpisz dłuższe hasło (minimum 6 znaków).'),
     (clientNewErrorCode.password_to_long =
-        'Za dĹugie hasĹo. Wpisz krĂłtsze hasĹo (maksimum 15 znakĂłw).'),
-    (clientNewErrorCode.login_equals_password = 'HasĹo jest takie samo jak login. Wpisz inne hasĹo.'),
+        'Za długie hasło. Wpisz krótsze hasło (maksimum 15 znaków).'),
+    (clientNewErrorCode.login_equals_password = 'Hasło jest takie samo jak login. Wpisz inne hasło.'),
     (clientNewErrorCode.not_equal_passwords =
-        'Wpisane hasĹa nie sÄ takie same. Wpisz ponownie hasĹo i potwierdzenie.'),
-    (clientNewErrorCode.no_firstname = 'Wpisz w to pole swoje imiÄ.'),
+        'Wpisane hasła nie są takie same. Wpisz ponownie hasło i potwierdzenie.'),
+    (clientNewErrorCode.no_firstname = 'Wpisz w to pole swoje imię.'),
     (clientNewErrorCode.no_name = 'Wpisz w to pole swoje nazwisko.'),
     (clientNewErrorCode.incorect_email =
-        'BĹÄdnie wpisany e-mail. Wpisz peĹny adres e-mail, np. jan@kowalski.com'),
+        'Błędnie wpisany e-mail. Wpisz pełny adres e-mail, np. jan@kowalski.com'),
     (clientNewErrorCode.incorect_shops = 'Wybierz sklep z listy.'),
-    (clientNewErrorCode.incorect_nip = 'BĹÄdnie wpisany NIP.'),
-    (clientNewErrorCode.no_firmname = 'BĹÄdnie wpisana nazwa firmy.'),
-    (clientNewErrorCode.incorrect_region = 'BĹÄdnie wybrany region.'),
-    (clientNewErrorCode.no_city = 'Wpisz w to pole nazwÄ miasta.'),
-    (clientNewErrorCode.birth_date = 'Wpisz poprawnÄ datÄ urodzenia w formacie RRRR-MM-DD'),
-    (clientNewErrorCode.no_street = 'Wpisz nazwÄ ulicy lub miejscowoĹci.'),
-    (clientNewErrorCode.no_street_number = 'Wpisz nazwÄ ulicy lub miejscowoĹci.'),
-    (clientNewErrorCode.incorect_phone = 'Wpisz swĂłj telefon.'),
-    (clientNewErrorCode.incorect_zipcode = 'BĹÄdnie wpisany kod pocztowy.'),
-    (clientNewErrorCode.no_delivery_firstname = 'Wpisz imiÄ odbiorcy przesyĹki.'),
-    (clientNewErrorCode.no_delivery_lastname = 'Wpisz nazwisko odbiorcy przesyĹki.'),
-    (clientNewErrorCode.no_delivery_city = 'Wpisz miejscowoĹÄ odbiorcy przesyĹki.'),
-    (clientNewErrorCode.no_delivery_street = 'Wpisz ulicÄ i numer domu odbiorcy przesyĹki.'),
-    (clientNewErrorCode.incorect_delivery_region = 'Wybierz kraj odbiorcy przesyĹki.'),
-    (clientNewErrorCode.incorect_delivery_zipcode = 'Wpisz kod pocztowy odbiorcy przesyĹki.'),
-    (clientNewErrorCode.login_taken = 'Podany login jest juĹź zajÄty'),
-    (clientNewErrorCode.used_login = 'Podany login jest juĹź zajÄty'),
+    (clientNewErrorCode.incorect_nip = 'Błędnie wpisany NIP.'),
+    (clientNewErrorCode.no_firmname = 'Błędnie wpisana nazwa firmy.'),
+    (clientNewErrorCode.incorrect_region = 'Błędnie wybrany region.'),
+    (clientNewErrorCode.no_city = 'Wpisz w to pole nazwę miasta.'),
+    (clientNewErrorCode.birth_date = 'Wpisz poprawną datę urodzenia w formacie RRRR-MM-DD'),
+    (clientNewErrorCode.no_street = 'Wpisz nazwę ulicy lub miejscowości.'),
+    (clientNewErrorCode.no_street_number = 'Wpisz nazwę ulicy lub miejscowości.'),
+    (clientNewErrorCode.incorect_phone = 'Wpisz swój telefon.'),
+    (clientNewErrorCode.incorect_zipcode = 'Błędnie wpisany kod pocztowy.'),
+    (clientNewErrorCode.no_delivery_firstname = 'Wpisz imię odbiorcy przesyłki.'),
+    (clientNewErrorCode.no_delivery_lastname = 'Wpisz nazwisko odbiorcy przesyłki.'),
+    (clientNewErrorCode.no_delivery_city = 'Wpisz miejscowość odbiorcy przesyłki.'),
+    (clientNewErrorCode.no_delivery_street = 'Wpisz ulicę i numer domu odbiorcy przesyłki.'),
+    (clientNewErrorCode.incorect_delivery_region = 'Wybierz kraj odbiorcy przesyłki.'),
+    (clientNewErrorCode.incorect_delivery_zipcode = 'Wpisz kod pocztowy odbiorcy przesyłki.'),
+    (clientNewErrorCode.login_taken = 'Podany login jest już zajęty'),
+    (clientNewErrorCode.used_login = 'Podany login jest już zajęty'),
     (clientNewErrorCode.login_taken_login_propose =
-        'Podany login jest juĹź zajÄty.<br/><br/>Proponowany login: '),
+        'Podany login jest już zajęty.<br/><br/>Proponowany login: '),
     (clientNewErrorCode.illegal_characters_client_firstname =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (clientNewErrorCode.illegal_characters_client_lastname =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (clientNewErrorCode.illegal_characters_client_street =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (clientNewErrorCode.illegal_characters_client_city =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (clientNewErrorCode.illegal_characters_client_phone =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (clientNewErrorCode.illegal_characters_client_phone2 =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (clientNewErrorCode.illegal_characters_client_firm =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (clientNewErrorCode.illegal_characters_delivery_firstname =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (clientNewErrorCode.illegal_characters_delivery_lastname =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (clientNewErrorCode.illegal_characters_delivery_city =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (clientNewErrorCode.illegal_characters_delivery_additional =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (clientNewErrorCode.illegal_characters_delivery_street =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (clientNewErrorCode.illegal_characters_delivery_phone =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
     (clientNewErrorCode.illegal_characters_client_nip =
-        'Jeden z uĹźytych znakĂłw jest niedozwolony.'),
-    (clientNewErrorCode.password_to_short = 'Zbyt krĂłtkie hasĹo. Wpisz dĹuĹźsze hasĹo (minimum'),
-    (clientNewErrorCode.password_to_long = 'Za dĹugie hasĹo. Wpisz krĂłtsze hasĹo (maksimum'),
-    (clientNewErrorCode.no_invoice_firstname = 'Wpisz imiÄ klienta.'),
+        'Jeden z użytych znaków jest niedozwolony.'),
+    (clientNewErrorCode.password_to_short = 'Zbyt krótkie hasło. Wpisz dłuższe hasło (minimum'),
+    (clientNewErrorCode.password_to_long = 'Za długie hasło. Wpisz krótsze hasło (maksimum'),
+    (clientNewErrorCode.no_invoice_firstname = 'Wpisz imię klienta.'),
     (clientNewErrorCode.no_invoice_lastname = 'Wpisz nazwisko klienta.'),
-    (clientNewErrorCode.no_invoice_firmname = 'Wpisz nazwÄ firmy klienta.'),
+    (clientNewErrorCode.no_invoice_firmname = 'Wpisz nazwę firmy klienta.'),
     (clientNewErrorCode.incorect_invoice_phone = 'Wpisz telefon klienta.'),
-    (clientNewErrorCode.no_invoice_city = 'Wpisz miejscowoĹÄ klienta.'),
-    (clientNewErrorCode.no_invoice_street = 'Wpisz ulicÄ i numer domu klienta.'),
-    (clientNewErrorCode.no_invoice_street_number = 'Wpisz ulicÄ i numer domu klienta.'),
+    (clientNewErrorCode.no_invoice_city = 'Wpisz miejscowość klienta.'),
+    (clientNewErrorCode.no_invoice_street = 'Wpisz ulicę i numer domu klienta.'),
+    (clientNewErrorCode.no_invoice_street_number = 'Wpisz ulicę i numer domu klienta.'),
     (clientNewErrorCode.incorect_invoice_zipcode = 'Wpisz kod pocztowy klienta.'),
     (clientNewErrorCode.invalid_format =
-        'NieprawidĹowy format. Pole musi zawieraÄ przynajmniej jednÄ literÄ.'),
+        'Nieprawidłowy format. Pole musi zawierać przynajmniej jedną literę.'),
     (clientNewErrorCode.no_street_number_uk = 'Brakuje numeru domu.'),
     (clientNewErrorCode.no_street_number = 'Podaj nr domu.'),
     (clientFormOptions = { streetnumber: '"1"' }),
@@ -17488,12 +17488,12 @@ app_shop.run(
     'form.newsletter_form',
 ),
     (app_shop.vars.opinion_send =
-        "Twoja opinia o zamĂłwieniu zostaĹa wysĹana, dziÄkujemy. JeĹźeli chcesz jÄ zmieniÄ kliknij <a href='#edit' class='opinion_edit'>tutaj</a>."),
-    (app_shop.vars.opinion_send2 = 'Twoja opinia o produkcie zostaĹa wysĹana, dziÄkujemy.'),
-    (app_shop.vars.opinion_error = 'Twoja opinia nie zostaĹa wysĹana.'),
-    (app_shop.vars.opinion_empty = 'Podaj treĹÄ opinii.'),
-    (app_shop.vars.opinion_file_size = 'Max. rozmiar zdjÄcia to: 2048x1536px.'),
-    (app_shop.vars.opinion_file_type = 'Dopuszczalne formaty zdjÄÄ: jpg.'),
+        "Twoja opinia o Zamówieniu została wysłana, dziękujemy. Jeżeli chcesz ją zmienić kliknij <a href='#edit' class='opinion_edit'>tutaj</a>."),
+    (app_shop.vars.opinion_send2 = 'Twoja opinia o produkcie została wysłana, dziękujemy.'),
+    (app_shop.vars.opinion_error = 'Twoja opinia nie została wysłana.'),
+    (app_shop.vars.opinion_empty = 'Podaj treść opinii.'),
+    (app_shop.vars.opinion_file_size = 'Max. rozmiar zdjęcia to: 2048x1536px.'),
+    (app_shop.vars.opinion_file_type = 'Dopuszczalne formaty zdjęć: jpg.'),
     (app_shop.vars.magicGridOptions = {
         container: '.opinions_wrapper',
         static: !0,
@@ -17524,7 +17524,7 @@ app_shop.run(
         'all',
         '#opinions_wrapper',
     ),
-    (app_shop.txt.more = 'wiÄcej'),
+    (app_shop.txt.more = 'więcej'),
     app_shop.run(
         function () {
             new OpinionsShop({});
@@ -17552,27 +17552,27 @@ const orderTxt = {
     gratis: 'Gratis!',
     pkt: ' pkt.',
     gross: ' brutto',
-    day: ' dzieĹ ',
+    day: ' dzień ',
     days: ' dni ',
     hour: ' godz. ',
     hours: ' godz. ',
     minutes: ' min',
     time_pick1: 'Przewidywana dostawa ',
     time_pick2: 'Przewidywana dostawa ',
-    time_pick3: 'Odbierz zamĂłwienie za ',
-    time_pick4: 'Odbierz zamĂłwienie - ',
+    time_pick3: 'Odbierz Zamówienie za ',
+    time_pick4: 'Odbierz Zamówienie - ',
     time_pick5: 'Przewidywana dostawa - ',
     time_pick5de: '',
-    time_pick6: 'ZamĂłwienie bÄdzie gotowe do odbioru natychmiast po przyjÄciu zamĂłwienia',
+    time_pick6: 'Zamówienie będzie gotowe do odbioru natychmiast po przyjęciu Zamówienia',
     shipping0: 'Dzisiaj',
-    shipping1: 'PoniedziaĹek',
+    shipping1: 'Poniedziałek',
     shipping2: 'Wtorek',
     shipping3: 'Ĺroda',
     shipping4: 'Czwartek',
-    shipping5: 'PiÄtek',
+    shipping5: 'Piątek',
     shipping6: 'Sobota',
     shipping7: 'Niedziela',
-    servicesError: 'WystÄpiĹ problem z poĹÄczeniem. Za chwilÄ nastÄpi ponowna prĂłba poĹÄczenia.',
+    servicesError: 'Wystąpił problem z połączeniem. Za chwilę nastąpi ponowna próba połączenia.',
 },
     orderTxtShipping = [
         orderTxt.shipping0,
@@ -17615,11 +17615,11 @@ function order2_terms_valid() {
                 $('#ajaxLoadSite,#ajaxLoadSite_cover').show(),
                 $('form.order2_form').submit());
 }
-(orderTxt.xpress1 = 'Musisz podaÄ szczegĂłĹy dotyczÄce sposobu dostawy'),
-    (orderTxt.xpress2 = 'Kurier ekspresowy nie obsĹuguje Twojej okolicy '),
+(orderTxt.xpress1 = 'Musisz podać szczegóły dotyczące sposobu dostawy'),
+    (orderTxt.xpress2 = 'Kurier ekspresowy nie obsługuje Twojej okolicy '),
     (orderTxt.xpress3 =
-        'WystÄpiĹ bĹÄd zewnÄtrznego serwisu firmy kurierskiej. ProszÄ skontaktowaÄ siÄ z obsĹugÄ sklepu lub zmieniÄ formÄ dostawy. '),
-    (orderTxt.week1 = ' tydzieĹ'),
+        'Wystąpił błąd zewnętrznego serwisu firmy kurierskiej. Proszę skontaktować się z obsługą sklepu lub zmienić formę dostawy. '),
+    (orderTxt.week1 = ' tydzień'),
     (orderTxt.week2 = ' tygodnie'),
     (orderTxt.week3 = ' tygodni'),
     (orderTxtWeek = [orderTxt.week3, orderTxt.week1, orderTxt.week2]),
@@ -17686,14 +17686,14 @@ function order2_terms_valid() {
         !0,
     );
 var confirmmessage =
-    'Twoje zamĂłwienie nie zostaĹo jeszcze zĹoĹźone. Opuszczenie tej strony oznacza porzucenie zamĂłwienia. PamiÄtaj, Ĺźe wracajÄc do zamĂłwienia za jakiĹ czas niektĂłre z produktĂłw lub cen mogÄ byÄ juĹź nieaktualne.',
+    'Twoje Zamówienie nie zostało jeszcze złożone. Opuszczenie tej strony oznacza porzucenie Zamówienia. Pamiętaj, że wracając do Zamówienia za jakiś czas niektóre z produktów lub cen mogą być już nieaktualne.',
     confirmmessage2 =
-        'Twoje zamĂłwienie nie zostaĹo jeszcze zĹoĹźone. Dopiero przejĹcie do kolejnego etapu zamĂłwienia oznacza wysĹanie go do realizacji. PamiÄtaj, Ĺźe wracajÄc do zamĂłwienia za jakiĹ czas niektĂłre z produktĂłw lub cen mogÄ byÄ juĹź nieaktualne.',
-    confirmwarning = 'OstrzeĹźenie',
-    order_send_preloadertxt = 'Trwa skĹadanie zamĂłwienia',
-    stop_order_button = 'Przerwij skĹadanie zamĂłwienia ',
-    continue_order_button = 'Kontynuuj skĹadanie zamĂłwienia ';
-const order2Txt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni' };
+        'Twoje Zamówienie nie zostało jeszcze złożone. Dopiero przejście do kolejnego etapu Zamówienia oznacza wysłanie go do realizacji. Pamiętaj, że wracając do Zamówienia za jakiś czas niektóre z produktów lub cen mogą być już nieaktualne.',
+    confirmwarning = 'Ostrzeżenie',
+    order_send_preloadertxt = 'Trwa składanie Zamówienia',
+    stop_order_button = 'Przerwij składanie Zamówienia ',
+    continue_order_button = 'Kontynuuj składanie Zamówienia ';
+const order2Txt = { week1: ' tydzień', week2: ' tygodnie', week3: ' tygodni' };
 order2TxtWeek = [orderTxt.week3, orderTxt.week1, orderTxt.week2];
 var eInvoice_dialog = function () {
     if (!$('#e-invoice_dialog').length) return !1;
@@ -17795,15 +17795,15 @@ app_shop.run(
     );
 var pickupl_animspeed = 500,
     pickupl_alert = 'Nie wybrano punktu odbioru',
-    pickupl_alertPoczta = 'Nie wybrano urzÄdu pocztowego',
-    pickupl_linktxt = 'wiÄcej informacji',
-    pickupl_linktitle = 'Zobacz szczegĂłĹowe informacje',
+    pickupl_alertPoczta = 'Nie wybrano urzędu pocztowego',
+    pickupl_linktxt = 'więcej informacji',
+    pickupl_linktitle = 'Zobacz szczegółowe informacje',
     pickupl_requires_client_number = 'Nie wprowadzono numeru klienta w systemie kuriera.',
     pickupl_select_adress = 'Wpisz poprawny adres.',
-    pickupl_select_route = 'Wpisz nazwÄ miasta',
-    pickupl_nopoints = 'Wpisz inny adres, brak punktĂłw odbioru.',
-    pickupl_error = 'WystÄpiĹ bĹÄd. ProszÄ odĹwieĹźyÄ stronÄ i sprĂłbowaÄ ponownie',
-    pickupl_nopoints_in_area = 'Nie znaleziono punktĂłw odbioru na danym obszarze. ',
+    pickupl_select_route = 'Wpisz nazwę miasta',
+    pickupl_nopoints = 'Wpisz inny adres, brak punktów odbioru.',
+    pickupl_error = 'Wystąpił błąd. Proszę odświeżyć stronę i spróbować ponownie',
+    pickupl_nopoints_in_area = 'Nie znaleziono punktów odbioru na danym obszarze. ',
     stocks_list_more_txt = '',
     stocks_list_on_map_txt = '';
 if (void 0 === selected_pickup_point) var selected_pickup_point = {};
@@ -17949,7 +17949,7 @@ app_shop.run(
     'all',
     '#prepaid_order_products .ordered-files',
 );
-const prepaidTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni' };
+const prepaidTxt = { week1: ' tydzień', week2: ' tygodnie', week3: ' tygodni' };
 (prepaidTxtWeek = [prepaidTxt.week3, prepaidTxt.week1, prepaidTxt.week2]),
     app_shop.run(function () {
         'undefined' != typeof only_virtual &&
@@ -18265,8 +18265,8 @@ const prepaidTxt = { week1: ' tydzieĹ', week2: ' tygodnie', week3: ' tygodni'
         '#photos_slider',
         !0,
     ),
-    (app_shop.txt.txt_111709_1 = 'UdostÄpnij na Facebooku'),
-    (app_shop.txt.txt_111709_2 = 'Pobierz zdjÄcie'),
+    (app_shop.txt.txt_111709_1 = 'Udostępnij na Facebooku'),
+    (app_shop.txt.txt_111709_2 = 'Pobierz zdjęcie'),
     (ProjectorPhotoSwipe = function (e) {
         (this.params = e),
             (this.defaults = {
@@ -18732,18 +18732,18 @@ var projectorv3_disable_ajax = '1';
     (projectorObj.txt.additional_texts = ''),
     (projectorObj.txt.za = ' za '),
     (projectorObj.txt.taniej = '% ('),
-    (projectorObj.txt.oszczedzasz = '(ZniĹźka '),
-    (projectorObj.txt.wzestawie = '), kupujÄc w zestawie. '),
-    (projectorObj.txt.niedostepny = 'Produkt niedostÄpny'),
-    (projectorObj.txt.tylkotel = 'Cena na telefon. Skontaktuj siÄ ze sprzedawcÄ.'),
-    (projectorObj.txt.tylko_punkty = 'Produkt dostÄpny tylko w programie lojalnoĹciowym.'),
-    (projectorObj.txt.za_malo_punktow = 'Nie masz wystarczajÄcej iloĹci punktĂłw'),
-    (projectorObj.txt.gratis = 'WysyĹka gratis!'),
-    (projectorObj.txt.niemastanu = 'Produkt niedostÄpny'),
+    (projectorObj.txt.oszczedzasz = '(Zniżka '),
+    (projectorObj.txt.wzestawie = '), kupując w zestawie. '),
+    (projectorObj.txt.niedostepny = 'Produkt niedostępny'),
+    (projectorObj.txt.tylkotel = 'Cena na telefon. Skontaktuj się ze sprzedawcą.'),
+    (projectorObj.txt.tylko_punkty = 'Produkt dostępny tylko w programie lojalnościowym.'),
+    (projectorObj.txt.za_malo_punktow = 'Nie masz wystarczającej ilości punktów'),
+    (projectorObj.txt.gratis = 'Wysyłka gratis!'),
+    (projectorObj.txt.niemastanu = 'Produkt niedostępny'),
     (projectorObj.txt.status_24 = '24 godz.'),
     (projectorObj.txt.status_48 = '48 godz.'),
     (projectorObj.txt.status_natychmiast = 'Natychmiast'),
-    (projectorObj.txt.day = ' dzieĹ '),
+    (projectorObj.txt.day = ' dzień '),
     (projectorObj.txt.days = ' dni  '),
     (projectorObj.txt.hour = ' godz.'),
     (projectorObj.txt.hours = ' godz. '),
@@ -18751,65 +18751,65 @@ var projectorv3_disable_ajax = '1';
     (projectorObj.txt.mins = ' min. '),
     (projectorObj.txt.proc = '%'),
     (projectorObj.txt.wybrany_rozmiar = 'Rozmiar:'),
-    (projectorObj.txt.wysylka = 'WysyĹka '),
-    (projectorObj.txt.wysylka_za = 'WysyĹka w ciÄgu '),
-    (projectorObj.txt.shipmentIn = 'WysyĹka za '),
+    (projectorObj.txt.wysylka = 'Wysyłka '),
+    (projectorObj.txt.wysylka_za = 'Wysyłka w ciągu '),
+    (projectorObj.txt.shipmentIn = 'Wysyłka za '),
     (projectorObj.txt.tomorrow = ' jutro'),
     (projectorObj.txt.dostepny = ''),
     (projectorObj.txt.dostepny_za = ' za '),
     (projectorObj.txt.pkt = ' pkt.'),
-    (projectorObj.txt.status_amount_full = 'wiÄksza iloĹÄ'),
+    (projectorObj.txt.status_amount_full = 'większa ilość'),
     (projectorObj.txt.status_amount_null = 'brak w magazynie'),
-    (projectorObj.txt.forpointsonly = 'Produkt moĹźesz kupiÄ za punkty.'),
-    (projectorObj.txt.disable_desc = 'Skontaktuj siÄ z nami.'),
+    (projectorObj.txt.forpointsonly = 'Produkt możesz kupić za punkty.'),
+    (projectorObj.txt.disable_desc = 'Skontaktuj się z nami.'),
     (projectorObj.txt.choiceSize = 'Wybierz rozmiar'),
-    (projectorObj.txt.maksymalnie = 'Maksymalnie moĹźesz dodaÄ'),
-    (projectorObj.txt.minimalnie = 'Minimalnie musisz zamĂłwiÄ '),
+    (projectorObj.txt.maksymalnie = 'Maksymalnie możesz dodać'),
+    (projectorObj.txt.minimalnie = 'Minimalnie musisz zamówić '),
     (projectorObj.txt.brak_magazyn = 'Brak na magazynie'),
     (projectorObj.txt.koszt_od = 'Koszt od '),
     (projectorObj.txt.wysylka_total_begin = '<br/>(z tow. z koszyka '),
     (projectorObj.txt.wysylka_total_end = ')'),
-    (projectorObj.txt.nawias_end_collection = '% kupujÄc w kolekcji)'),
-    (projectorObj.txt.nawias_end_bundle = '% kupujÄc w zestawie)'),
+    (projectorObj.txt.nawias_end_collection = '% kupując w kolekcji)'),
+    (projectorObj.txt.nawias_end_bundle = '% kupując w zestawie)'),
     (projectorObj.txt.nawias_end = '%)'),
     (projectorObj.txt.gratis_produkt = 'Gratis!'),
-    (projectorObj.txt.virtual_inbasket = 'Produkt znajduje siÄ juĹź w koszyku'),
+    (projectorObj.txt.virtual_inbasket = 'Produkt znajduje się już w koszyku'),
     (projectorObj.txt.infinity = ''),
     (projectorObj.txt.ilosc_mm = 'Aktualnie w naszym magazynie mamy <b>%d</b>.'),
-    (projectorObj.txt.ilosc_mo = 'Kolejne <b>%d</b> moĹźemy sprowadziÄ na zamĂłwienie.'),
-    (projectorObj.txt.ilosc_mo_inf = 'DowolnÄ iloĹÄ moĹźemy sprawadziÄ na zamĂłwienie.'),
+    (projectorObj.txt.ilosc_mo = 'Kolejne <b>%d</b> możemy sprowadzić na Zamówienie.'),
+    (projectorObj.txt.ilosc_mo_inf = 'Dowolną ilość możemy sprawadzić na Zamówienie.'),
     (projectorObj.txt.size_select_functionality = '0'),
     (projectorObj.txt.sizes_projector_functionality = '1'),
     (projectorObj.txt.size_select_label = 'Rozmiar:'),
-    (projectorObj.txt.size_select_tell_availability = 'Powiadom o dostÄpnoĹci'),
+    (projectorObj.txt.size_select_tell_availability = 'Powiadom o dostępności'),
     (projectorObj.txt.size_select_last_unit = 'Ostatnia sztuka!'),
     (projectorObj.txt.size_select_few_last_units = 'Ostatnie sztuki!'),
-    (projectorObj.txt.order_by = 'ZamĂłw do '),
-    (projectorObj.txt.it_will_ship_today = ' to wyĹlemy dzisiaj'),
+    (projectorObj.txt.order_by = 'Zamów do '),
+    (projectorObj.txt.it_will_ship_today = ' to wyślemy dzisiaj'),
     (projectorObj.txt['Produkt o wybranej konfiguracji nie istnieje. Wybierz inny wariant.'] =
         'Produkt o wybranej konfiguracji nie istnieje. Wybierz inny wariant.');
-var Projector_txt_maksymalnie = 'Maksymalnie moĹźesz zamĂłwiÄ: ',
+var Projector_txt_maksymalnie = 'Maksymalnie możesz zamówić: ',
     Projector_txt_minimalnie = projectorObj.txt.minimalnie,
     Projector_txt_brak_magazyn = 'Brak na magazynie',
-    Projector_txt_produkt_niedostepny = 'Produkt niedostÄpny',
-    Projector_txt_podajilosc = 'Podaj iloĹÄ dla wybranego rozmiaru',
-    Projector_txt_zalogujsie = 'Zaloguj siÄ',
+    Projector_txt_produkt_niedostepny = 'Produkt niedostępny',
+    Projector_txt_podajilosc = 'Podaj ilość dla wybranego rozmiaru',
+    Projector_txt_zalogujsie = 'Zaloguj się',
     Projector_txt_closedialog = '',
     txt_raty_button1 = 'Oblicz raty wybranego produktu',
-    txt_raty_button2 = 'Oblicz raty wraz z kwotÄ z koszyka ',
-    txt_62619_cms_table = 'Tabela rozmiarĂłw',
+    txt_raty_button2 = 'Oblicz raty wraz z kwotą z koszyka ',
+    txt_62619_cms_table = 'Tabela rozmiarów',
     txt_toltip_1 =
-        'Cena najtaĹszej z dostÄpnych form wysyĹki z uwzglÄdnieniem twojego koszyka. PeĹnÄ listÄ cen i kurierĂłw otrzymasz podczas skĹadania zamĂłwienia.',
-    txt_toltip_2 = 'Program lojalnoĹciowy dostÄpny jest tylko dla zalogowanych klientĂłw.',
+        'Cena najtańszej z dostępnych form wysyłki z uwzględnieniem twojego koszyka. Pełną listę cen i kurierów otrzymasz podczas składania Zamówienia.',
+    txt_toltip_2 = 'Program lojalnościowy dostępny jest tylko dla zalogowanych klientów.',
     txt_toltip_2a =
-        'MoĹźesz zamieniÄ zgromadzone punkty lojalnoĹciowe na ten produkt. Obecnie masz [xxx] punktĂłw.',
+        'możesz zamienić zgromadzone punkty lojalnościowe na ten produkt. Obecnie masz [xxx] punktów.',
     txt_toltip_3 =
-        'Po opĹaceniu zamĂłwienia przyznamy ci takÄ iloĹÄ punktĂłw lojalnoĹciowych. Ĺťeby zbieraÄ punkty musisz byÄ zarejestrowanym klientem.',
-    txt_toltip_3a = 'Po opĹaceniu zamĂłwienia przyznamy ci takÄ iloĹÄ punktĂłw lojalnoĹciowych.',
+        'Po opłaceniu Zamówienia przyznamy ci taką ilość punktów lojalnościowych. Żeby zbierać punkty musisz być zarejestrowanym klientem.',
+    txt_toltip_3a = 'Po opłaceniu Zamówienia przyznamy ci taką ilość punktów lojalnościowych.',
     txt_toltip_4 = '',
-    prepaid = 'PĹatnoĹÄ przed wysyĹkÄ',
-    dvp = 'PĹatnoĹÄ przy odbiorze',
-    day_txt = ' dzieĹ ',
+    prepaid = 'Płatność przed wysyłką',
+    dvp = 'Płatność przy odbiorze',
+    day_txt = ' dzień ',
     days_txt = ' dni ',
     hour_txt = ' godz. ',
     hours_txt = ' godz. ',
@@ -18818,10 +18818,10 @@ var Projector_txt_maksymalnie = 'Maksymalnie moĹźesz zamĂłwiÄ: ',
     txt_do_24h = 'do 24h',
     delivery_txt = 'Sam transport zajmie ',
     delivery_txt2 = 'Przygotowanie do odbioru osobistego zajmie ',
-    delivery_txt3 = 'Forma dostawy dostÄpna od ',
+    delivery_txt3 = 'Forma dostawy dostępna od ',
     gratis_txt = 'Gratis!';
-(app_shop.txt.txt_74629_1 = 'Do koĹca promocji: '),
-    (app_shop.txt.txt_74629_2 = 'Wybierz innÄ opcjÄ.'),
+(app_shop.txt.txt_74629_1 = 'Do końca promocji: '),
+    (app_shop.txt.txt_74629_2 = 'Wybierz inną opcję.'),
     (app_shop.txt.txt_74629_3 = 'dni'),
     (app_shop.txt.txt_74629_4 = 'godzin '),
     (app_shop.txt.txt_74629_5 = 'minut '),
@@ -18829,15 +18829,15 @@ var Projector_txt_maksymalnie = 'Maksymalnie moĹźesz zamĂłwiÄ: ',
     (app_shop.txt.txt_74629_7 =
         'Przepraszamy, ale nie zdefiniowaliśmy standardowego kosztu dostawy, zostanie on ustalony indywidualnie przez naszą obsługę po przyjęciu zamówienia.');
 var txt_shipping_8 = ' dzisiaj',
-    txt_shipping_9 = ' w poniedziaĹek ',
+    txt_shipping_9 = ' w poniedziałek ',
     txt_shipping_10 = ' we wtorek ',
-    txt_shipping_11 = ' w ĹrodÄ ',
+    txt_shipping_11 = ' w środę ',
     txt_shipping_12 = ' w czwartek ',
-    txt_shipping_13 = ' w piÄtek ',
-    txt_shipping_14 = ' w sobotÄ ',
-    txt_shipping_15 = ' w niedzielÄ ',
+    txt_shipping_13 = ' w piątek ',
+    txt_shipping_14 = ' w sobotę ',
+    txt_shipping_15 = ' w niedzielę ',
     txt_shipping_16 = 'jutro!';
-(app_shop.txt.txt_74629_8 = 'ProszÄ wybraÄ rozmiar'),
+(app_shop.txt.txt_74629_8 = 'Proszę wybrać rozmiar'),
     (projectorObj.options.friendly_shipping_format = [
         txt_shipping_8,
         txt_shipping_9,
@@ -18848,61 +18848,61 @@ var txt_shipping_8 = ' dzisiaj',
         txt_shipping_14,
         txt_shipping_15,
     ]),
-    (app_shop.txt.txt_74629_9 = 'TwĂłj produkt jest gotowy do wysyĹki'),
+    (app_shop.txt.txt_74629_9 = 'Twój produkt jest gotowy do wysyłki'),
     (app_shop.txt.txt_74629_10 =
-        'TwĂłj produkt jest juĹź spakowany i gotowy do odebrania przez kuriera'),
-    (app_shop.txt.txt_74629_11 = 'Czas przygotowania produktu do wysyĹki'),
-    (app_shop.txt.txt_74629_11a = 'Gotowy do wysyĹki'),
-    (app_shop.txt.txt_74629_11b = 'Produkt jest spakowany i moĹźliwy do odebrania przez kuriera'),
+        'Twój produkt jest już spakowany i gotowy do odebrania przez kuriera'),
+    (app_shop.txt.txt_74629_11 = 'Czas przygotowania produktu do wysyłki'),
+    (app_shop.txt.txt_74629_11a = 'Gotowy do wysyłki'),
+    (app_shop.txt.txt_74629_11b = 'Produkt jest spakowany i możliwy do odebrania przez kuriera'),
     (app_shop.txt.txt_74629_12 =
-        'Jest to czas, w ktĂłrym produkt jest pakowany i przygotowywany do odebrania przez kuriera'),
+        'Jest to czas, w którym produkt jest pakowany i przygotowywany do odebrania przez kuriera'),
     (app_shop.txt.txt_74629_13 = ''),
     (app_shop.txt.txt_74629_14 = 'Przygotowanie do odbioru osobistego zajmie do 24h'),
     (app_shop.txt.txt_74629_15 = 'Przygotowanie do odbioru osobistego zajmie 24h'),
     (app_shop.txt.txt_74629_16 = 'Przygotowanie do odbioru osobistego zajmie '),
-    (app_shop.txt.txt_74629_17 = 'PrzesyĹka bÄdzie u Ciebie dzisiaj! '),
-    (app_shop.txt.txt_74629_18 = 'PrzesyĹka bÄdzie u Ciebie jutro!'),
-    (app_shop.txt.txt_74629_19 = 'PrzesyĹka bÄdzie u Ciebie za '),
+    (app_shop.txt.txt_74629_17 = 'Przesyłka będzie u Ciebie dzisiaj! '),
+    (app_shop.txt.txt_74629_18 = 'Przesyłka będzie u Ciebie jutro!'),
+    (app_shop.txt.txt_74629_19 = 'Przesyłka będzie u Ciebie za '),
     (app_shop.txt.txt_74629_16467 = 'Zamknij okno'),
     (app_shop.txt.txt_74629_conflict =
-        'WybĂłr tej pozycji spowoduje koniecznoĹÄ dostosowania innych opcji. '),
+        'Wybór tej pozycji spowoduje konieczność dostosowania innych opcji. '),
     (app_shop.txt.txt_sold_out = 'wyprzedane');
 var txt_62619_nieprawidlowy_email = 'Niepoprawny adres email.',
-    txt_62619_przekroczono_liczbe = 'Przekroczono liczbÄ dodanych powiadomieĹ w ciÄgu dnia.',
+    txt_62619_przekroczono_liczbe = 'Przekroczono liczbę dodanych powiadomień w ciągu dnia.',
     txt_62619_podczas_dodawania =
-        'Podczas dodawania produktu wystÄpiĹ bĹÄd. SprawdĹş poprawnoĹÄ wprowadzonych danych',
-    txt_62619_produkt_dodany = 'Produkt zostaĹ poprawnie dodany do powiadomieĹ.',
-    txt_62619_blad_pobrania = 'WystÄpiĹ problem z poĹÄczeniem. Wykonaj czynnoĹÄ ponownie.',
+        'Podczas dodawania produktu Wystąpił błąd. SprawdĹş poprawność wprowadzonych danych',
+    txt_62619_produkt_dodany = 'Produkt został poprawnie dodany do powiadomień.',
+    txt_62619_blad_pobrania = 'Wystąpił problem z połączeniem. Wykonaj czynność ponownie.',
     txt_62619_bledny_email =
-        'BĹÄdnie wpisany e-mail. Wpisz peĹny adres e-mail, np. jan@kowalski.com ',
-    txt_62619_wpisz_telefon = 'Wpisz swĂłj telefon. ',
+        'Błędnie wpisany e-mail. Wpisz pełny adres e-mail, np. jan@kowalski.com ',
+    txt_62619_wpisz_telefon = 'Wpisz swój telefon. ',
     fashionGallery_new = '';
 function CountdownTimer(e, t) {
     this.initialize.apply(this, arguments);
 }
 (app_shop.txt.daysOfWeek = [
     'Dzisiaj',
-    'PoniedziaĹek',
+    'Poniedziałek',
     'Wtorek',
     'Ĺroda',
     'Czwartek',
-    'PiÄtek',
+    'Piątek',
     'Sobota',
     'Niedziela',
 ]),
     (app_shop.txt.shippingInfoVat = '* Cena brutto (z VAT)'),
-    (app_shop.txt.shippingInfoPrepaid = 'PĹatnoĹÄ przed wysyĹkÄ'),
-    (app_shop.txt.shippingInfoDvp = 'PĹatnoĹÄ przy odbiorze'),
+    (app_shop.txt.shippingInfoPrepaid = 'Płatność przed wysyłką'),
+    (app_shop.txt.shippingInfoDvp = 'Płatność przy odbiorze'),
     (app_shop.txt.shippingInfoHeaderName = 'Forma dostawy'),
     (app_shop.txt.shippingInfoHeaderDelivery = 'Przewidywana dostawa'),
     (app_shop.txt.shippingInfoHeaderCost = 'Cena *'),
     (app_shop.txt.shippingInfoCurrentRegion =
-        'Przedstawione czasy i koszty wysyĹki dotyczÄ wybranego kraju dostawy: '),
+        'Przedstawione czasy i koszty wysyłki dotyczą wybranego kraju dostawy: '),
     (app_shop.txt.shippingInfoCurrentZipcode =
-        'Przedstawione czasy i koszty wysyĹki dotyczÄ wybranego regionu dostawy: '),
+        'Przedstawione czasy i koszty wysyłki dotyczą wybranego regionu dostawy: '),
     (app_shop.txt.shippingInfoAndRegion = ' i regionu: '),
-    (app_shop.txt.shippingInfoDefaultRegion = 'PrzywrĂłÄ domyĹlny kraj dostawy: '),
-    (app_shop.txt.shippingInfoDefaultZipcode = 'PrzywrĂłÄ domyĹlny region dostawy: '),
+    (app_shop.txt.shippingInfoDefaultRegion = 'Przywróć domyślny kraj dostawy: '),
+    (app_shop.txt.shippingInfoDefaultZipcode = 'Przywróć domyślny region dostawy: '),
     (CountdownTimer.prototype = {
         initialize: function (e, t) {
             (this.elem = e), (this.tl = t), (this.tid = '');
@@ -19423,7 +19423,7 @@ function CountdownTimer(e, t) {
         '#opinions_filter_confirmed',
         !0,
     ),
-    (app_shop.vars.opinions_empty_input = 'ProszÄ wypeĹniÄ to pole.'),
+    (app_shop.vars.opinions_empty_input = 'Proszę wypełnić to pole.'),
     (app_shop.vars.opinions_not_email = 'Podano niepoprawny adres email.'),
     (app_shop.fn.validateEmail = function (e) {
         return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
@@ -19458,7 +19458,7 @@ function CountdownTimer(e, t) {
             !e.find('.has-error').length
         );
     });
-var txt_1_69363 = 'Wybierz najwygodniejszy dla ciebie sposĂłb wysyĹki zwrotu';
+var txt_1_69363 = 'Wybierz najwygodniejszy dla ciebie sposób wysyłki zwrotu';
 $(document).on('click', '.step3d #return_go_next', function () {
     if (
         $('.step3d .order1_delitem_radio input').size() &&
@@ -19470,12 +19470,12 @@ $(document).on('click', '.step3d #return_go_next', function () {
         $('.step3d div.return_delitem.active').removeClass('active'),
             $(this).addClass('active').find('input.order1_delitem_radio').prop('checked', !0);
     });
-var txt_1_69372 = 'Wybierz sposĂłb zwrotu produktĂłw',
-    txt_1_69372_param = 'Wybierz parametr sposobu zwrotu produktĂłw',
+var txt_1_69372 = 'Wybierz sposób zwrotu produktów',
+    txt_1_69372_param = 'Wybierz parametr sposobu zwrotu produktów',
     txt_1_69372_tak = 'Potwierdzam',
     txt_1_69372_confirm_header = 'Czy potwierdzasz ...?',
     txt_1_fill_phone =
-        'Aby wybraÄ tÄ metodÄ zwrotu musisz uzupeĹniÄ numer telefonu w ustawieniach swojego konta';
+        'Aby wybrać tę metodę zwrotu musisz uzupełnić numer telefonu w ustawieniach swojego konta';
 $(document).on('click', 'div.return_type.disabled_inpost', function () {
     Alertek.show_alert(txt_1_fill_phone);
 }),
@@ -19531,6 +19531,8 @@ function confirmReturnParam(e) {
         },
     });
 }
+
+
 function unsetMethodParam() {
     $('.active .return_methods_param > input').prop('checked', !1);
 }
@@ -19560,7 +19562,7 @@ app_shop.run(
 var txt_1_69260_1 = 'Wybierz produkty do zwrotu',
     txt_1_odznacz_w_p = 'Odznacz wszystkie produkty ',
     txt_1_zaznacz_w_p = 'Zaznacz wszystkie produkty',
-    txt_1_max_ret_amount = 'Maksymalnie moĹźesz zwrĂłciÄ ',
+    txt_1_max_ret_amount = 'Maksymalnie możesz zwrócić ',
     txt_1_new_button = 'true';
 app_shop.run(
     function () {
@@ -19682,10 +19684,10 @@ app_shop.run(
     'all',
     '.returns_productslist',
 );
-var txt_1_69378 = 'Wybierz formÄ zwrotu naleĹźnoĹci',
+var txt_1_69378 = 'Wybierz formę zwrotu należności',
     validationTextErrors = [];
 (validationTextErrors.invalid_bank_acccount =
-    'Wprowadzony numer konta bankowego jest nieprawidĹowy.'),
+    'Wprowadzony numer konta bankowego jest nieprawidłowy.'),
     app_shop.run(
         function () {
             $('.step5 [data-validation="bank_account"]').keyup();
@@ -19719,13 +19721,13 @@ $(document).on('click', '.step4a div.pickupl_return', function () {
         'all',
         '.pickup_return_list_form .pickupl_return',
     );
-var rma_add_alert = 'WypeĹnij wszystkie pola formularza.',
-    rma_add_msg1 = 'Podaj nazwÄ produktu',
+var rma_add_alert = 'Wypełnij wszystkie pola formularza.',
+    rma_add_msg1 = 'Podaj nazwę produktu',
     rma_add_msg2 = 'Podaj numer seryjny produktu',
-    rma_add_msg3 = 'Podaj datÄ zakupu produktu',
-    rma_add_msg4 = 'Opisz usterkÄ',
+    rma_add_msg3 = 'Podaj datę zakupu produktu',
+    rma_add_msg4 = 'Opisz usterkę',
     rma_add_msg5 = 'Opisz miejsce zakupu produktu',
-    rma_add_msg6 = 'Podaj adres, na ktĂłry chcesz otrzymaÄ zwrot pieniÄdzy',
+    rma_add_msg6 = 'Podaj adres, na który chcesz otrzymać zwrot pieniędzy',
     rma_add_msg7 = 'Podaj numer konta bankowego',
     rma_add_msg8 = 'Podaj dane do czeku';
 if (void 0 === typeof rma_add_paymentTrigger) var rma_add_paymentTrigger = 1;
@@ -19984,7 +19986,7 @@ const rmaTxt = {
     complain: 'Reklamuj',
     product: ' towar',
     products: ' towary',
-    noDetailsOnComplain: 'ProszÄ o podanie opisu usterki i powodu reklamacji',
+    noDetailsOnComplain: 'Proszę o podanie opisu usterki i powodu reklamacji',
     noFileSelected: 'Nie wybrano pliku',
     mobile_complain: 'Reklamuj towar',
     cancel_complain: 'Zrezygnuj z reklamacji',
@@ -20220,8 +20222,8 @@ app_shop.run(
             });
     });
 var txt_1_69260 = 'Wybierz produkty do reklamacji';
-(productslist_03a_txt = 'Uwagi mogÄ mieÄ maksymalnie '),
-    (productslist_03b_txt = ' znakĂłw. '),
+(productslist_03a_txt = 'Uwagi mogą mieć maksymalnie '),
+    (productslist_03b_txt = ' znaków. '),
     (productslist_maxvalue_04_txt = '255');
 var Basketedit = {
     getValues: function (e) {
@@ -20529,10 +20531,10 @@ app_shop.run(
     'all',
     '.basketedit_productslist',
 );
-var txt_1_69378 = 'Wybierz formÄ zwrotu naleĹźnoĹci',
+var txt_1_69378 = 'Wybierz formę zwrotu należności',
     validationTextErrors = [];
 (validationTextErrors.invalid_bank_acccount =
-    'Wprowadzony numer konta bankowego jest nieprawidĹowy.'),
+    'Wprowadzony numer konta bankowego jest nieprawidłowy.'),
     app_shop.run(
         function () {
             $('.return_form')
@@ -20597,8 +20599,8 @@ var txt_1_69378 = 'Wybierz formÄ zwrotu naleĹźnoĹci',
         '.search_description',
         !0,
     ),
-    (app_shop.vars.show_description = 'Czytaj wiÄcej'),
-    (app_shop.vars.hide_description = 'ZwiĹ'),
+    (app_shop.vars.show_description = 'Czytaj więcej'),
+    (app_shop.vars.hide_description = 'Zwiń'),
     (app_shop.fn.categoryDivider = function (e) {
         var t = e || '.search_categoriesdescription_sub',
             i = $(t).children(),
@@ -20630,144 +20632,144 @@ var txt_1_69378 = 'Wybierz formÄ zwrotu naleĹźnoĹci',
             !1
         );
     });
-const filtersActionsCall = () => {
-    $('.filters__options .--show-hidden').on('click', function () {
-        const e = $(this).data('id');
-        return $(`#${e}_content`).toggleClass('--shown'), $(this).toggleClass('--shown'), !1;
-    }),
-        $('.filters__more').on('click', function () {
-            return (
-                $('.filters__block').each(function () {
-                    $(this).removeClass('--hide');
-                }),
-                $(this).remove(),
-                !1
-            );
-        }),
-        $('.filters__block > .filters__toggler:not(.--not-expandable)').on('click', function () {
-            const e = `#${$(this).data('id')}_expand`;
-            return (
-                app_shop.vars.view > 2
-                    ? ($(this).hasClass('--not-expanded') ||
-                        ($('.filters__toggler.--not-expanded').removeClass('--not-expanded'),
-                            $('.filters__expand.d-block').removeClass('d-block'),
-                            $(this)
-                                .parent()
-                                .find('.filters__expanded-group .filters__expand-group')
-                                .addClass('--hidden'),
-                            $(this)
-                                .parent()
-                                .find('.filters__expanded-group .filters__expand-group')
-                                .first()
-                                .removeClass('--hidden'),
-                            $(this)
-                                .parent()
-                                .find('.filters__toggle-group .filters__toggler')
-                                .first()
-                                .addClass('--active'),
-                            $(this)
-                                .parent()
-                                .find('.filters__toggle-group .filters__content.d-md-none')
-                                .remove()),
-                        $(e).toggleClass('d-block'),
-                        $(this).toggleClass('--not-expanded'))
-                    : ($(e).slideToggle('fast'), $(this).toggleClass('--not-expanded')),
-                !1
-            );
-        }),
-        $('.filters__content.--group .filters__toggler').on('click', function () {
-            if (app_shop.vars.view > 2)
-                $('.--group .filters__toggler.--active').not($(this)).removeClass('--active'),
-                    $(this).addClass('--active'),
-                    $(this)
-                        .parents('.filters__content')
-                        .find('.filters__expanded-group > .filters__expand-group')
-                        .addClass('--hidden'),
-                    $(`#${$(this).attr('data-toggle')}`)
-                        .parent()
-                        .removeClass('--hidden');
-            else {
-                const e = $(this).next();
-                $(e).slideToggle('fast'), $(this).toggleClass('--active');
-            }
-            return !1;
-        }),
-        $('.filters__options .--remove').on('click', function (e) {
-            e.preventDefault();
-            const t = $(this);
-            return (
-                t.parents('.filters__block').find('.__serialize').val(''),
-                t
-                    .parents('.filters__block')
-                    .find('input')
-                    .each(function () {
-                        $(this).prop('checked', !1);
-                    }),
-                t.parents('form').submit(),
-                !1
-            );
-        }),
-        $('.filters__item .f-control[type=checkbox]').on('change', function () {
-            const e = $(this),
-                t = e.parents('.filters__content:not(.--group)').siblings().find('.--submit.d-none'),
-                i = e.parents('.filters__block'),
-                n = i.find(' > .filters__toggler');
-            if (i.find('input:checked').length > 0 && 0 == i.find('.--gfx').length) {
-                let e = '';
-                if (i.find('#filter_sizes_uniw:checked').length > 0) {
-                    let t = `<span>${$('#filter_sizes_uniw')
-                        .parent()
-                        .find('.--name')
-                        .text()}</span><span>,Â </span>`;
-                    e += t;
-                }
-                i.find('input:checked:not(#filter_sizes_uniw)').each(function () {
-                    let t = `<span>${$(this).parent().find('.--name').text()}</span><span>,Â </span>`;
-                    e += t;
-                }),
-                    n.find('.btn > span[old_text]').html(e),
-                    n.addClass('--selected');
-            } else 0 == i.find('input:checked').length && 0 == i.find('.--gfx').length && (n.find('.btn > span[old_text]').html(n.find('.btn > span[old_text]').attr('old_text')), n.removeClass('--selected'));
-            t.length && app_shop.vars.view > 2 && t.removeClass('d-none');
-        }),
-        $('#PriceRangeFrom, #PriceRangeTo').on('keyup', function () {
-            const e = $(this),
-                t = $(this).parent(),
-                i = e.val();
-            e.val(e.val().replace(/[^0-9]/g, ''));
-            const n = $.fn.textWidth(i, '14px Arial');
-            n > t.width() - 30 ? e.width(t.width() - 30) : e.width(n + 10);
-        }),
-        $('#PriceRangeFrom, #PriceRangeTo').keyup(),
-        $('#filter_xpress_expand input').on('change', function () {
-            const e = $(this);
-            (app_shop.vars.clickedXPRESS = e.attr('name').split('_')[1]),
-                e.is(':checked') &&
-                'false' === e.attr('data-localized') &&
-                Modal({ html: $('#xpress_toplayer').html(), classList: 'xpress_zipcode_verification' });
-        });
-    document.querySelector('.filters__form').addEventListener('submit', function (e) {
-        const t = document.querySelector('#PriceRangeFrom'),
-            i = document.querySelector('#PriceRangeTo');
-        if (parseFloat(t?.value) > parseFloat(i?.value))
-            return (
-                e.preventDefault(),
-                document.querySelector('.filters__price').classList.add('has-error'),
-                !1
-            );
+// const filtersActionsCall = () => {
+//     $('.filters__options .--show-hidden').on('click', function () {
+//         const e = $(this).data('id');
+//         return $(`#${e}_content`).toggleClass('--shown'), $(this).toggleClass('--shown'), !1;
+//     }),
+//         $('.filters__more').on('click', function () {
+//             return (
+//                 $('.filters__block').each(function () {
+//                     $(this).removeClass('--hide');
+//                 }),
+//                 $(this).remove(),
+//                 !1
+//             );
+//         }),
+//         $('.filters__block > .filters__toggler:not(.--not-expandable)').on('click', function () {
+//             const e = `#${$(this).data('id')}_expand`;
+//             return (
+//                 app_shop.vars.view > 2
+//                     ? ($(this).hasClass('--not-expanded') ||
+//                         ($('.filters__toggler.--not-expanded').removeClass('--not-expanded'),
+//                             $('.filters__expand.d-block').removeClass('d-block'),
+//                             $(this)
+//                                 .parent()
+//                                 .find('.filters__expanded-group .filters__expand-group')
+//                                 .addClass('--hidden'),
+//                             $(this)
+//                                 .parent()
+//                                 .find('.filters__expanded-group .filters__expand-group')
+//                                 .first()
+//                                 .removeClass('--hidden'),
+//                             $(this)
+//                                 .parent()
+//                                 .find('.filters__toggle-group .filters__toggler')
+//                                 .first()
+//                                 .addClass('--active'),
+//                             $(this)
+//                                 .parent()
+//                                 .find('.filters__toggle-group .filters__content.d-md-none')
+//                                 .remove()),
+//                         $(e).toggleClass('d-block'),
+//                         $(this).toggleClass('--not-expanded'))
+//                     : ($(e).slideToggle('fast'), $(this).toggleClass('--not-expanded')),
+//                 !1
+//             );
+//         }),
+//         $('.filters__content.--group .filters__toggler').on('click', function () {
+//             if (app_shop.vars.view > 2)
+//                 $('.--group .filters__toggler.--active').not($(this)).removeClass('--active'),
+//                     $(this).addClass('--active'),
+//                     $(this)
+//                         .parents('.filters__content')
+//                         .find('.filters__expanded-group > .filters__expand-group')
+//                         .addClass('--hidden'),
+//                     $(`#${$(this).attr('data-toggle')}`)
+//                         .parent()
+//                         .removeClass('--hidden');
+//             else {
+//                 const e = $(this).next();
+//                 $(e).slideToggle('fast'), $(this).toggleClass('--active');
+//             }
+//             return !1;
+//         }),
+//         $('.filters__options .--remove').on('click', function (e) {
+//             e.preventDefault();
+//             const t = $(this);
+//             return (
+//                 t.parents('.filters__block').find('.__serialize').val(''),
+//                 t
+//                     .parents('.filters__block')
+//                     .find('input')
+//                     .each(function () {
+//                         $(this).prop('checked', !1);
+//                     }),
+//                 t.parents('form').submit(),
+//                 !1
+//             );
+//         }),
+//         $('.filters__item .f-control[type=checkbox]').on('change', function () {
+//             const e = $(this),
+//                 t = e.parents('.filters__content:not(.--group)').siblings().find('.--submit.d-none'),
+//                 i = e.parents('.filters__block'),
+//                 n = i.find(' > .filters__toggler');
+//             if (i.find('input:checked').length > 0 && 0 == i.find('.--gfx').length) {
+//                 let e = '';
+//                 if (i.find('#filter_sizes_uniw:checked').length > 0) {
+//                     let t = `<span>${$('#filter_sizes_uniw')
+//                         .parent()
+//                         .find('.--name')
+//                         .text()}</span><span>,Â </span>`;
+//                     e += t;
+//                 }
+//                 i.find('input:checked:not(#filter_sizes_uniw)').each(function () {
+//                     let t = `<span>${$(this).parent().find('.--name').text()}</span><span>,Â </span>`;
+//                     e += t;
+//                 }),
+//                     n.find('.btn > span[old_text]').html(e),
+//                     n.addClass('--selected');
+//             } else 0 == i.find('input:checked').length && 0 == i.find('.--gfx').length && (n.find('.btn > span[old_text]').html(n.find('.btn > span[old_text]').attr('old_text')), n.removeClass('--selected'));
+//             t.length && app_shop.vars.view > 2 && t.removeClass('d-none');
+//         }),
+//         $('#PriceRangeFrom, #PriceRangeTo').on('keyup', function () {
+//             const e = $(this),
+//                 t = $(this).parent(),
+//                 i = e.val();
+//             e.val(e.val().replace(/[^0-9]/g, ''));
+//             const n = $.fn.textWidth(i, '14px Arial');
+//             n > t.width() - 30 ? e.width(t.width() - 30) : e.width(n + 10);
+//         }),
+//         $('#PriceRangeFrom, #PriceRangeTo').keyup(),
+//         $('#filter_xpress_expand input').on('change', function () {
+//             const e = $(this);
+//             (app_shop.vars.clickedXPRESS = e.attr('name').split('_')[1]),
+//                 e.is(':checked') &&
+//                 'false' === e.attr('data-localized') &&
+//                 Modal({ html: $('#xpress_toplayer').html(), classList: 'xpress_zipcode_verification' });
+//         });
+// document.querySelector('.filters__form').addEventListener('submit', function (e) {
+//     const t = document.querySelector('#PriceRangeFrom'),
+//         i = document.querySelector('#PriceRangeTo');
+//     if (parseFloat(t?.value) > parseFloat(i?.value))
+//         return (
+//             e.preventDefault(),
+//             document.querySelector('.filters__price').classList.add('has-error'),
+//             !1
+//         );
+// });
+// },
+showHiddenFiltersFromRight = () => {
+    $('.filters__block').each(function () {
+        const e = $(this).find('> .filters__toggler'),
+            t = $(this).find('.filters__expand');
+        t.removeClass('right'),
+            $(this).removeClass('right'),
+            e.offset().left + 450 > $(window).width() &&
+            app_shop.vars.view >= 3 &&
+            (t.addClass('right'), $(this).addClass('right'));
     });
-},
-    showHiddenFiltersFromRight = () => {
-        $('.filters__block').each(function () {
-            const e = $(this).find('> .filters__toggler'),
-                t = $(this).find('.filters__expand');
-            t.removeClass('right'),
-                $(this).removeClass('right'),
-                e.offset().left + 450 > $(window).width() &&
-                app_shop.vars.view >= 3 &&
-                (t.addClass('right'), $(this).addClass('right'));
-        });
-    };
+};
 app_shop.run(
     function () {
         showHiddenFiltersFromRight();
@@ -20789,26 +20791,491 @@ app_shop.run(
         'all',
         '.filters__block > .filters__toggler',
     ),
-    app_shop.run(
-        function () {
-            app_shop.vars.filtersRef = new Filters({
-                funcActionCall: filtersActionsCall,
-                getQuantity: app_shop.vars.getQuantity || !0,
-                disableFiltersExpandCookie: !0,
-            });
-        },
-        'all',
-        '#Filters',
-        !0,
-    ),
-    app_shop.run(
-        function () {
-            app_shop.fn.xpressCouriersInit();
-        },
-        'all',
-        '#xpress_toplayer',
-        !0,
-    ),
+    // app_shop.run(
+    //     function () {
+    //         app_shop.vars.filtersRef = new Filters({
+    //             funcActionCall: filtersActionsCall,
+    //             getQuantity: app_shop.vars.getQuantity || !0,
+    //             disableFiltersExpandCookie: !0,
+    //         });
+    //     },
+    //     'all',
+    //     '#Filters',
+    //     !0,
+    // ),
+
+
+
+
+    filtersActionsCall = () => {
+        document.querySelectorAll(".filters__options .--show-hidden").forEach((e => {
+            e.addEventListener("click", (e => {
+                e.preventDefault();
+                const t = e.target.closest(".--show-hidden")
+                    , { id: r } = t.dataset;
+                document.querySelector(`#${r}_content`)?.classList.toggle("--shown"),
+                    t.classList.toggle("--shown")
+            }
+            ))
+        }
+        ));
+        document.querySelectorAll(".filters__more").forEach((e => {
+            e.addEventListener("click", (t => {
+                document.querySelectorAll(".filters__block").forEach((e => {
+                    e.classList.remove("--hide")
+                }
+                )),
+                    e.remove()
+            }
+            ))
+        }
+        ));
+        document.querySelectorAll(".filters__toggler:not(.--not-expandable)").forEach((e => {
+            e.addEventListener("click", (e => {
+                e.preventDefault();
+                const t = e.target.closest(".filters__toggler:not(.--not-expandable)");
+                t.classList.toggle("--not-expanded");
+                const r = t.closest(".filters__content.--group");
+                if (!r)
+                    return;
+                const { toggle: o } = t.dataset
+                    , i = r.querySelector(`#${o}`);
+                if (!i)
+                    return;
+                r.querySelectorAll(".filters__toggler.--active, .filters__expand-group.--active").forEach((e => {
+                    e.classList.remove("--active")
+                }
+                )),
+                    t.classList.add("--active"),
+                    i.parentNode.classList.add("--active")
+            }
+            ))
+            // console.log("🚀 ~ file: search_filters.js:44 ~ document.querySelectorAll ~ click:", click)
+        }
+        ));
+        document.querySelectorAll(".filters__options .--remove").forEach((e => {
+            e.addEventListener("click", (e => {
+                e.preventDefault();
+                const { target: t } = e
+                    , r = t.closest(".filters__block");
+                if (!r)
+                    return;
+                r.querySelectorAll(".__serialize").forEach((e => {
+                    e.value = ""
+                }
+                ));
+                r.querySelectorAll("input").forEach((e => {
+                    e.checked = !1
+                }
+                ));
+                const o = r.closest("form");
+                o && o.submit()
+            }
+            ))
+        }
+        ));
+        function e(e) {
+            const t = e.parentNode;
+            e.value = e.value.replace(/[^0-9]/g, "");
+            const r = function (e, t) {
+                const r = document.createElement("canvas").getContext("2d");
+                return r.font = t,
+                    r.measureText(e).width
+            }(e.value, "14px Arial");
+            r > t.offsetWidth - 30 ? e.style.width = t.offsetWidth - 30 + "px" : e.style.width = `${r + 10}px`
+        }
+        document.querySelectorAll(".filters__item .f-control[type=checkbox]").forEach((e => {
+            e.addEventListener("change", (e => {
+                if (app_shop.vars.view < 3)
+                    return;
+                const { target: t } = e
+                    , r = t.closest(".filters__block");
+                if (!r)
+                    return;
+                const o = r.querySelector(".filters__toggler");
+                if (!o)
+                    return;
+                const i = o.querySelector(".btn > span[old_text]");
+                if (!i)
+                    return;
+                const s = r.querySelectorAll("input:checked:not(.--not-serialize)");
+                if (!s.length)
+                    return o.classList.remove("--selected"),
+                        void (i.innerHTML = i.getAttribute("old_text"));
+                const l = [...s].map((e => {
+                    const t = e.closest(".filters__item").querySelector(".--name");
+                    return t ? t.innerText : ""
+                }
+                )).join(", ");
+                o.classList.add("--selected"),
+                    i.innerHTML = l
+            }
+            ))
+        }
+        ));
+        document.querySelectorAll("#PriceRangeFrom, #PriceRangeTo").forEach((t => {
+            t.addEventListener("input", (t => {
+                e(t.target)
+            }
+            )),
+                e(t)
+        }
+        ));
+        document.querySelectorAll("#filter_xpress_expand input").forEach((e => {
+            e.addEventListener("change", (e => {
+                const { checked: t } = e.target;
+                if (!t)
+                    return;
+                const { localized: r } = e.target.dataset;
+                if (!r || "true" === r)
+                    return;
+                const o = document.querySelector("#xpress_modal");
+                o && (app_shop.vars.xpressClicked = e.target.id,
+                    Modal({
+                        element: o,
+                        classList: "--xpress"
+                    }))
+            }
+            ))
+        }
+        ));
+        document.querySelector(".filters__form").addEventListener("submit", (function (e) {
+            const t = document.querySelector("#PriceRangeFrom")
+                , r = document.querySelector("#PriceRangeTo");
+            if (parseFloat(t?.value) > parseFloat(r?.value))
+                return e.preventDefault(),
+                    void document.querySelector(".filters__price").classList.add("has-error");
+            document.querySelector(".filters__price").classList.remove("has-error")
+        }
+        ))
+    }
+    , showHiddenFiltersFromRight = () => {
+        document.querySelectorAll(".filters__block").forEach((e => {
+            const t = e.querySelector(".filters__toggler");
+            if (!t)
+                return;
+            const r = e.querySelector(".filters__expand");
+            if (!r)
+                return;
+            r.classList.remove("right"),
+                e.classList.remove("right");
+            t.getBoundingClientRect().left + 450 > window.innerWidth && app_shop.vars.view >= 3 && (r.classList.add("right"),
+                e.classList.add("right"))
+        }
+        ))
+    }
+    ;
+app_shop.run((function () {
+    showHiddenFiltersFromRight()
+}
+), "all", ".filters__block > .filters__toggler", !0),
+    app_shop.run((function () {
+        let e = null;
+        window.addEventListener("resize", (function () {
+            clearTimeout(e),
+                e = setTimeout((() => {
+                    showHiddenFiltersFromRight()
+                }
+                ), 50)
+        }
+        ))
+    }
+    ), "all", ".filters__block > .filters__toggler");
+const Filters = function (e) {
+    this.params = e,
+        this.setInputValue = e => {
+            const { id: t } = e.dataset
+                , r = [...document.querySelectorAll(`input[data-id="${t}"]:checked`)].map((e => e.value)).join(",");
+            document.querySelector(`#${t}_input`).value = r
+        }
+        ,
+        this.setLabeLsQuantity = async () => {
+            const e = await fetch(`/search.php?${this.serialize()}&getProductXML=true&xmlType=filtering`)
+                , t = await e.text();
+            [...(new DOMParser).parseFromString(t, "text/xml").querySelectorAll("filter")].forEach((e => {
+                const { type: t } = e.attributes;
+                let r = e.id.replace(/\[(.*?)\]/g, "$1")
+                    , o = document.querySelector(`#${r}_expand`);
+                if ("dual" === t.value && (r = "filter_dual",
+                    o = document.querySelector("#filter_dual_expand")),
+                    o && "filter_text" !== r) {
+                    const t = e.querySelectorAll("item");
+                    t.length && [...t].forEach((e => {
+                        const { value: t, quantity: i } = e.attributes
+                            , s = 'label[for="' + r + "_" + t.value + '"] .--quantity'
+                            , l = o.querySelector(s);
+                        l && (i ? (l.classList.remove("d-none"),
+                            l.innerHTML = i.value) : (l.classList.add("d-none"),
+                                l.innerHTML = 0))
+                    }
+                    ))
+                }
+            }
+            ))
+        }
+        ,
+        this.getPriceRange = (e = "#PriceRangeFrom", t = "#PriceRangeTo") => {
+            const r = document.querySelector(e)
+                , o = document.querySelector(t);
+            return `${r.value}-${o.value}`
+        }
+        ,
+        this.serialize = (e = ".__serialize") => [...this.filtersForm.querySelectorAll(e)].filter((e => "checkbox" === e.type ? e.checked : e.value)).map((e => `${e.name}=${e.value}`)).join("&"),
+        this.setVisibleExpand = () => {
+            const e = document.querySelectorAll(".--not-expanded");
+            if (!e.length)
+                return app_shop.fn.cookie.set("filterHidden", "", 355),
+                    !1;
+            const t = [...e].map((e => e.nextSibling.id));
+            app_shop.fn.cookie.set("filterHidden", t, 355)
+        }
+        ,
+        this.getVisibleExpand = () => {
+            const e = app_shop.fn.cookie.get("filterHidden");
+            e && e.split(",").forEach((e => {
+                const t = document.querySelector(`.filters__expand#${e}`);
+                if (null !== t) {
+                    t.previousSibling.classList.add("--not-expanded")
+                }
+            }
+            ))
+        }
+        ,
+        this.start = () => {
+            this.filtersForm.querySelectorAll('input[type="checkbox"]').forEach((e => {
+                e.addEventListener("change", (e => {
+                    const { target: t } = e
+                        , { id: r } = t.dataset;
+                    r && this.setInputValue(t),
+                        this.getQuantity && this.setLabeLsQuantity()
+                }
+                ))
+            }
+            ));
+            document.querySelectorAll("#PriceRangeFrom, #PriceRangeTo").forEach((e => {
+                e.addEventListener("change", (e => {
+                    const t = document.querySelector("#filter_price_input");
+                    t && (t.value = this.getPriceRange())
+                }
+                ))
+            }
+            )),
+                this.actionsCall && this.actionsCall();
+            document.querySelectorAll(".filters__toggler:not(.--not-expandable)").forEach((e => {
+                e.addEventListener("click", (() => {
+                    this.setVisibleExpand()
+                }
+                ))
+            }
+            )),
+                this.disableFiltersExpandCookie || this.getVisibleExpand()
+        }
+        ,
+        this.init = () => {
+            this.filtersForm = document.querySelector(".filters__form"),
+                this.filtersForm && (this.actionsCall = filtersActionsCall || null,
+                    this.getQuantity = !0,
+                    this.disableFiltersExpandCookie = !0,
+                    this.start())
+        }
+};
+app_shop.run((function () {
+    document.querySelectorAll(".filters__expanded-group").forEach((e => {
+        e.querySelectorAll("input").forEach((e => {
+            e.setAttribute("data-id", `${e.getAttribute("data-id")}_not_serialize`),
+                e.id = `${e.id}_not_serialize`,
+                e.classList.add("--not-serialize")
+        }
+        ));
+        e.closest(".filters__block").querySelectorAll('.filters__toggle-group input:not([value="uniw"])').forEach((e => {
+            e.setAttribute("data-id", e.getAttribute("data-id").replace("_not_serialize", "")),
+                e.id = e.id.replace("_not_serialize", ""),
+                e.classList.remove("--not-serialize")
+        }
+        ))
+    }
+    ))
+}
+), [1, 2], "#Filters", !0),
+    app_shop.run((function () {
+        document.querySelectorAll(".filters__expanded-group").forEach((e => {
+            e.querySelectorAll("input").forEach((e => {
+                e.setAttribute("data-id", e.getAttribute("data-id").replace("_not_serialize", "")),
+                    e.id = e.id.replace("_not_serialize", ""),
+                    e.classList.remove("--not-serialize")
+            }
+            ));
+            e.closest(".filters__block").querySelectorAll('.filters__toggle-group input:not([value="uniw"])').forEach((e => {
+                e.setAttribute("data-id", `${e.getAttribute("data-id")}_not_serialize`),
+                    e.id = `${e.id}_not_serialize`,
+                    e.classList.add("--not-serialize")
+            }
+            ))
+        }
+        ))
+    }
+    ), [3, 4], "#Filters", !0),
+    app_shop.run((() => {
+        filtersActionsCall()
+        app_shop.vars.filtersRef = new Filters,
+            app_shop.vars.filtersRef.init()
+    }
+    ), "all", "#Filters", !0);
+const xpressText = {
+    geolocationError: "Wystąpił błąd poczas sprawdzania kodu pocztowego. Proszę spróbować ponownie",
+    zipcodeError: "Nie można pobrać kodu pocztowego"
+};
+app_shop.fn.xpressCouriersInit = () => {
+    const e = document.querySelector("#xpress_modal");
+    if (!e)
+        return;
+    const t = new FormValidation({
+        form: e
+    });
+    t.init();
+    const r = () => {
+        const e = document.querySelector(".modal");
+        e && e.classList.add("--loading")
+    }
+        , o = () => {
+            const e = document.querySelector(".modal");
+            e && e.classList.remove("--loading")
+        }
+        , i = () => {
+            const e = document.querySelector("#xpress_error_modal");
+            e && Modal({
+                element: e,
+                classList: "--xpress-error"
+            })
+        }
+        ;
+    if (!navigator.geolocation) {
+        const e = document.querySelector(".xpress__geolocation");
+        if (!e)
+            return;
+        e.remove()
+    }
+    e.addEventListener("click", (e => {
+        const { target: s } = e;
+        s.closest(".xpress_submit") && (e.preventDefault(),
+            (async () => {
+                const e = document.querySelector("#xpress_zipcode_input");
+                if (!e)
+                    return;
+                if (r(),
+                    !await t.validateForm())
+                    return void o();
+                const { value: s } = e;
+                if (!(await fetch(`/ajax/client-new.php?setClientSamedayLocation=1&zipcode=${s}`, {
+                    method: "POST"
+                })).ok)
+                    return void i();
+                const l = await fetch("/search.php?&getProductXML=true&xmlType=filtering");
+                if (!l.ok)
+                    return void i();
+                const n = await l.text()
+                    , a = (new DOMParser).parseFromString(n, "text/xml")
+                    , c = a.querySelector("sameday") || a.querySelector("nextday");
+                if (!c)
+                    return void i();
+                const d = c.getAttribute("client_localized")
+                    , u = c.getAttribute("service_available_for_current_location");
+                if ("false" === d || "false" === u)
+                    return void i();
+                const p = document.querySelector("#Filters form");
+                p && p.submit()
+            }
+            )()),
+            s.closest(".xpress__get_geo") && (e.preventDefault(),
+                navigator.geolocation && (r(),
+                    navigator.geolocation.getCurrentPosition((async e => {
+                        const { latitude: r, longitude: i } = e.coords || {}
+                            , s = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${r}&lon=${i}`
+                            , l = await fetch(s)
+                            , n = await l.json()
+                            , { address: { postcode: a } = {} } = n || {};
+                        if (!a)
+                            return o(),
+                                void Alertek.show_alert(xpressText.zipcodeError);
+                        o();
+                        const c = document.querySelector("#xpress_zipcode_input");
+                        c && (c.value = a,
+                            c.classList.add("focused"),
+                            t.validateForm())
+                    }
+                    ), (() => {
+                        o(),
+                            Alertek.show_alert(xpressText.geolocationError)
+                    }
+                    ))))
+    }
+    ))
+}
+    ,
+
+    app_shop.run((() => {
+
+        if (window.innerWidth < 976) return;
+
+        $t = $('#Filters').clone(true, true);
+        $('#Filters').remove()
+        $('#paging_setting_top').after($t)
+        filtersActionsCall()
+
+        app_shop.vars.filtersRef.init()
+
+        $(document).on('click', '.filters__toggler', (e) => $(e.currentTarget).toggleClass('--not-expanded'))
+
+
+    }), "all", "#Filters", !0),
+    app_shop.run((() => {
+        app_shop.fn.xpressCouriersInit()
+    }
+    ), "all", "#xpress_modal", !0),
+    app_shop.run((() => {
+        app_shop.fn.selectPaging = new SelectToDropdown({
+            selector: ".s_paging__select:not(.f-dropdown)",
+            afterClickDropdownCallback: e => {
+                const t = e.querySelector(".f-dropdown-item");
+                if (!t)
+                    return;
+                const { index: r } = t.dataset
+                    , o = e.closest(".s_paging__item.--sort")
+                    , i = document.querySelector("#paging_setting_top form.s_paging__item.--sort select");
+                if (o && i) {
+                    i.selectedIndex = r;
+                    return void document.querySelector("#paging_setting_top form.s_paging__item.--sort").submit()
+                }
+                const s = e.closest(".s_paging__item.--portions")
+                    , l = document.querySelector("#paging_setting_top form.s_paging__item.--portions select");
+                if (s && l) {
+                    l.selectedIndex = r;
+                    document.querySelector("#paging_setting_top form.s_paging__item.--portions").submit()
+                } else
+                    e.closest("form").submit()
+            }
+        });
+        const e = document.querySelector(".s_paging__item.--filters a");
+        e && e.addEventListener("click", (e => {
+            e.preventDefault(),
+                e.stopPropagation(),
+                document.documentElement.classList.add("filters_open")
+        }
+        ))
+    }
+    ), "all", ".s_paging", !0);
+
+
+
+
+app_shop.run(
+    function () {
+        app_shop.fn.xpressCouriersInit();
+    },
+    'all',
+    '#xpress_toplayer',
+    !0,
+),
     app_shop.run(
         function () {
             $('.--group .filters__toggler.--active').removeClass('--active');
@@ -20875,6 +21342,36 @@ app_shop.run(
         '#search',
         !0,
     ),
+
+    app_shop.run(
+        function () {
+            if ($('.poradymk').length) {
+                $('.poradymk > .steps').prepend($('.blogTopWrapper').removeClass('full-width-row'));
+            }
+            if ($('.przepismk').length) {
+                $('.przepismk > .steps').prepend($('.blogTopWrapper').removeClass('full-width-row'));
+            }
+
+        },
+        'all',
+        '.poradymk, .przepismk',
+        true,
+    ),
+    app_shop.run(
+        function () {
+            $('.mobileCategories__item.--settings').remove()
+            $('#menu_settings .open_trigger').addClass('d-none')
+            if (window.innerWidth < 765) {
+                $('#menu_navbar').append($('#menu_settings > a').addClass('nav-link'))
+            }
+            // nav - link?
+        },
+        'all',
+        'body',
+        true,
+    ),
+
+
     app_shop.run(
         function () {
             app_shop.fn.categoryDivider('.search_description.--bottom .search_description__wrapper');
@@ -20884,20 +21381,20 @@ app_shop.run(
         !0,
     ),
     app_shop.run(
-        // function () {
-        //     (app_shop.fn.searchAjax = new SearchAjax({
-        //         onClickSelectors:
-        //             '#search a.product__compare_item, #menu_compare_product a.--remove, .pagination a, #Filters .filters__buttons a, #filter_list a',
-        //         onSubmitSelectors: '#paging_setting_top form, .filters__form',
-        //         updateDomCallback: () => {
-        //             app_shop.fn.infiniteScroll && app_shop.fn.infiniteScroll.reInit(),
-        //                 $('html, body').animate({ scrollTop: $('.search_name').offset().top - 20 }, 'fast');
-        //         },
-        //     })),
-        //         window._additional_ajax && app_shop.fn.searchAjax.init();
-        // },
-        // 'all',
-        // '#search',
+        function () {
+            (app_shop.fn.searchAjax = new SearchAjax({
+                onClickSelectors:
+                    '#search a.product__compare_item, #menu_compare_product a.--remove, .pagination a, #Filters .filters__buttons a, #filter_list a',
+                onSubmitSelectors: '#paging_setting_top form, .filters__form',
+                updateDomCallback: () => {
+                    app_shop.fn.infiniteScroll && app_shop.fn.infiniteScroll.reInit(),
+                        $('html, body').animate({ scrollTop: $('.search_name').offset().top - 20 }, 'fast');
+                },
+            })),
+                window._additional_ajax && app_shop.fn.searchAjax.init();
+        },
+        'all',
+        '#search',
     ),
     app_shop.run(
         function () {
@@ -20910,8 +21407,8 @@ app_shop.run(
                         'function' == typeof runOmnibusFallback &&
                         runOmnibusFallback();
                 },
-            })),
-                app_shop.fn.infiniteScroll.init();
+            }))
+            // app_shop.fn.infiniteScroll.init(); todo;;
         },
         'all',
         '.search_page #paging_setting_bottom .pagination',
@@ -21014,9 +21511,596 @@ app_shop.run(
         '.stocks_list_wrapper',
         !0,
     );
-var stocks_list_more_txt = 'wiÄcej informacji',
-    stocks_list_on_map_txt = 'PokaĹź na mapie';
+var stocks_list_more_txt = 'więcej informacji',
+    stocks_list_on_map_txt = 'Pokaż na mapie';
 
 if (window.innerWidth > 979) {
     $(document).on('click', '.menu_search__mobile', (e) => { $t = $(e.currentTarget); $('#menu_search').addClass("--ready") })
 }
+
+// search page 
+function search() {
+
+
+
+    // Obsługa dropdownów w filtrach i sortowaniu
+    $('.s_paging__item .--sort').on("click", function () {
+
+        $('.f-dropdown .f-group .s_paging__select .--order .--small-md ').toggleClass('--open');
+    });
+    $('.s_paging__item .--portions').on("click", function () {
+
+        $('.f-dropdown .f-group .s_paging__select .--portions .--small-md ').toggleClass('--open');
+    });
+
+    // Przełączanie widoczności zdjęć o wyksów smaku
+    $('#switch').on('change', function () {
+        if ($(this).is(':checked')) {
+            $('#produkty').css('color', 'black');
+            $('#smaki').css('color', '#b29370');
+            $('.graph-background').show();
+            $('.product picture').hide();
+            $('.label_icons').hide();
+
+            // Inicjalizacja wykresów radarowych
+            initializeRadarCharts();
+
+        } else {
+            $('#produkty').css('color', '#b29370');
+            $('#smaki').css('color', 'black');
+            $('.graph-background').hide();
+            $('.product picture').show();
+            $('.label_icons').show();
+        }
+    });
+
+
+    if (window.innerWidth < 976) {
+        // $('.setMobileGrid[data-item="#Filters"]').html($('#Filters').html())
+        setTimeout(() => {
+            // console.log('timeout')
+            $('#photos_slider .slick-slider').slick('refresh');
+
+        }, 1500);
+    }
+
+    if (window.innerWidth > 976) {
+
+        if ($('#Filters').length === 0) {
+            // d-none dla filter-trigger
+            $('<div/>', {
+                id: 'Filters',
+                text: 'Brak filtrów dla tej strony',
+                'class': 'filters mb-4 d-md-none'
+            }).insertBefore('#search');
+
+
+        }
+
+        var filterButton = $('.filter-dropdown-trigger');
+        var sortButton = $('.sort-dropdown-trigger');
+
+        var $sortHolder = $('#paging_setting_top');
+        var $filterHolder = $('#Filters');
+
+        var $t = $filterHolder.addClass('d-md-none').find('.btn.--large').clone(true, true);
+        $filterHolder.children().append($t);
+        $sortHolder.addClass('d-md-none');
+
+
+
+        $(document).on("click", '.filter-dropdown-trigger', function () {
+            $filterHolder.toggleClass('d-md-none');
+            $sortHolder.addClass('d-md-none');
+
+            filterButton.toggleClass('active');
+            sortButton.removeClass('active');
+        });
+
+        $(document).on("click", '.sort-dropdown-trigger', function () {
+
+            $sortHolder.toggleClass('d-md-none');
+            $filterHolder.addClass('d-md-none');
+
+            sortButton.toggleClass('active');
+            filterButton.removeClass('active');
+        });
+    }
+
+
+
+
+
+
+    function initializeRadarCharts() {
+        $('.product').each(function () {
+            var product = $(this);
+
+            // Sprawdzenie, czy istnieje atrybut 'data-product_id'
+            if (product.data('product_id') !== undefined) {
+                var productId = product.data('product_id');
+
+                var canvas = product.find('.radar-chart').get(0);
+
+                // Sprawdzenie, czy element canvas istnieje
+                if (canvas) {
+                    // Nadanie unikalnego ID dla elementu canvas
+                    var canvasId = 'radar-chart-' + productId;
+                    $(canvas).attr('id', canvasId);
+
+                    var productTraits = product.find('.product__traits');
+
+                    var dataPoints = [];
+                    var labels = ['Intensywność smaku', 'Słodycz', 'Kwasowość', 'Gorycz', 'Nuty kwiatowe', 'Owoce cytrusowe', 'Owoce pestkowe', 'Owoce leśne', 'Nuty przypraw', 'Orzech', 'Czekolada', 'Karmel'];
+
+
+
+                    labels.forEach(function (label) {
+                        // Znajdź wszystkie elementy .trait i użyj funkcji filter() do porównania tekstów
+                        var matchedTrait = productTraits.find('.trait').filter(function () {
+                            var traitName = $(this).find('.trait__name').text().trim();
+                            return traitName.indexOf(label) > -1;
+                        });
+
+                        // Jeśli znaleziono pasujący trait, pobierz jego wartość
+                        if (matchedTrait.length) {
+                            var value = matchedTrait.find('.trait__value').text().trim();
+                            dataPoints.push(value ? parseFloat(value) : 1);
+                        }
+                    });
+
+                    var nutyKwiatoweExist = productTraits.find(`.trait:contains('Nuty kwiatowe')`).length > 0;
+
+                    if (nutyKwiatoweExist) {
+                        $('.graph-background').removeClass('d-none');
+
+                        var radarChart = new Chart($('#' + canvasId), {
+                            type: 'radar',
+                            data: {
+                                labels: labels,
+                                datasets: [{
+                                    backgroundColor: "rgba(178, 147, 112, 0.5)",
+                                    borderColor: "rgba(178, 147, 112, 0.5)",
+                                    pointBackgroundColor: "transparent",
+                                    pointBorderColor: "transparent",
+                                    fill: "origin",
+                                    data: dataPoints,
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                legend: { display: false },
+                                scale: {
+                                    angleLines: { color: 'white' },
+                                    ticks: {
+                                        display: false,
+                                        min: 0.5,
+                                    },
+                                    gridLines: { color: 'white' },
+                                    pointLabels: { fontColor: 'black' },
+
+
+
+                                },
+                            }
+                        });
+                    } else {
+                        $('#' + canvasId).parent().parent().html('<div class="noContent"><div class="noContentInfo">Brak danych</div></div>');
+                    }
+                }
+            }
+        });
+    }
+}
+//end search page script
+
+function showMore() {
+    $('#showMore').text('Czytaj więcej');
+
+    $('#showMore').on('click', function () {
+        var additionalContent = $('#additionalContent');
+        additionalContent.toggleClass('expanded');
+
+        // Sprawdzenie, czy content jest rozwinięty i zmiana tekstu odpowiednio
+        if (additionalContent.hasClass('expanded')) {
+            $(this).text('Czytaj mniej');
+        } else {
+            $(this).text('Czytaj więcej');
+        }
+    });
+}
+
+app_shop.run(
+    function () {
+        showStarsSection();
+        updateProductInfo();
+        removeAndUpdateClassesInProductDescription();
+
+    },
+    'all',
+    '#container.projector_page'
+)
+
+app_shop.run((() => { document.querySelector(".product_name__action.--shopping-list").addEventListener("click", (e => { e.preventDefault(), app_shop.fn.projectorForm.sizeSelected() ? ("function" != typeof app_shop.fn.bundleSizeSelected || app_shop.fn.bundleSizeSelected()) && app_shop.fn.shoppingList.addProductToList([[document.getElementById("projector_product_hidden").value, document.getElementById("projector_size_hidden").value]]) : app_shop.fn.projectorForm.alertProjector() })) }), "all", ".product_name__action.--shopping-list", !0);
+
+
+function showStarsSection() {
+
+    var nutyKwiatoweExist = $('#projector_dictionary .dictionary__param').filter(function () {
+        return $(this).find('.dictionary__name_txt').text().trim() === 'Nuty kwiatowe';
+    }).length > 0;
+
+    if (nutyKwiatoweExist) {
+        var intensywnosc = parseFloat($('#projector_dictionary .dictionary__param').filter(function () {
+            return $(this).find('.dictionary__name_txt').text().trim() === 'Intensywność smaku';
+        }).find('.dictionary__value_txt').text().trim());
+
+        var kwasowosc = parseFloat($('#projector_dictionary .dictionary__param').filter(function () {
+            return $(this).find('.dictionary__name_txt').text().trim() === 'Kwasowość';
+        }).find('.dictionary__value_txt').text().trim());
+
+        var smakiHtml = '';
+        $('#projector_dictionary .dictionary__param').filter(function () {
+            return $(this).find('.dictionary__name_txt').text().trim() === 'Wyczuwalne smaki';
+        }).find('.dictionary__value_txt').each(function () {
+            var smak = $(this).text().trim();
+            smakiHtml += '<span>' + smak + '</span>, ';
+        });
+        smakiHtml = smakiHtml.slice(0, -2); // Usuwanie ostatniego przecinka i spacji
+
+        var sectionHtml = `
+           
+                <div class="py-5">
+                    <div>
+                        <div class="taste-details d-flex justify-content-md-between">
+                            <p class="text-uppercase">Profil aromatyczny</p>
+                            <div class="font-bold aroma-links">${smakiHtml}</div>
+                        </div>
+                        <div class="hrline mt-4 mb-4"></div>
+                        <div class="taste-details d-flex justify-content-md-between" id="intensywnosc">
+                            <p class="text-uppercase">Intensywność</p>
+                            <b class="d-flex align-items-center"><span class="stars-coffee ml-3"></span></b>
+                        </div>
+                        <div class="hrline mt-4 mb-4"></div>
+                        <div class="taste-details d-flex justify-content-md-between" id="kwasowosc">
+                            <p class="text-uppercase">Kwasowość</p>
+                            <b class="d-flex align-items-center"><span class="stars-coffee ml-3"></span></b>
+                        </div>
+                    </div>
+                </div>
+           
+        `;
+
+        $('#projector_producttraits2').html(sectionHtml);
+
+        updateStars('intensywnosc', intensywnosc);
+        updateStars('kwasowosc', kwasowosc);
+    }
+
+    function updateStars(type, value) {
+        var fullStars = Math.floor(value);
+        var halfStar = (value % 1) >= 0.5 ? 1 : 0;
+        var emptyStars = 5 - fullStars - halfStar;
+
+        var starsHtml = '';
+        for (var i = 0; i < fullStars; i++) {
+            starsHtml += '<span class="full"></span>';
+        }
+        if (halfStar) {
+            starsHtml += '<span class="half"></span>';
+        }
+        for (var i = 0; i < emptyStars; i++) {
+            starsHtml += '<span class="empty"></span>';
+        }
+
+        $('#' + type + ' .stars-coffee').html(starsHtml);
+    }
+}
+
+app_shop.run(
+    function () {
+        search();
+    },
+    'all',
+    '#container.search_page',
+    true,
+)
+
+app_shop.run(
+    function () {
+        showMore();
+    },
+    'all',
+    '#container.main_page'
+)
+
+function removeAndUpdateClassesInProductDescription() {
+
+    if ($('#projector_longdescription.longdescription.cm .container').length > 0) {
+        $('#projector_longdescription.longdescription.cm .container').addClass('mw80');
+    }
+
+
+    if ($('.mkdesc').length > 0) {
+        $('.mkdesc div').each(function () {
+
+
+            var classAttr = $(this).attr('class');
+
+            if (classAttr) {
+
+                if (classAttr.includes('-push') || classAttr.includes('-pull')) {
+
+                    $(this).addClass('offset-lg-1');
+                }
+                if (classAttr.includes('col-lg-3')) {
+
+                    $(this).removeClass('col-lg-3').addClass('col-lg-5');
+                }
+                if (classAttr.includes('col-lg-7')) {
+
+                    $(this).removeClass('col-lg-7').addClass('col-lg-9');
+                }
+                if (classAttr.includes('col-lg-9')) {
+
+                    $(this).removeClass('col-lg-9').addClass('col-lg-11');
+                }
+            }
+
+
+        });
+    }
+
+
+}
+
+
+function updateProductInfo() {
+    var nutyKwiatoweExist = $('#projector_dictionary .dictionary__param').filter(function () {
+        return $(this).find('.dictionary__name_txt').text().trim() === 'Nuty kwiatowe';
+    }).length > 0;
+
+    if (nutyKwiatoweExist) {
+        $('#product_extra_info1').removeClass('d-none');
+        // Pobranie wartości lub użycie wartości domyślnych
+        var region = getValueOrDefault('REGION', '');
+        var regionImg = getValueOrDefaultRegion('REGION', '');
+        var wysokoscUpraw = getValueOrDefault('WYSOKOŚĆ UPRAW', '');
+        var metodaObróbki = getValueOrDefault('METODA OBRÓBKI', '');
+        var stopienPalenia = getValueOrDefault('STOPIEŃ PALENIA', '');
+
+        var labels = ['Intensywność smaku', 'Słodycz', 'Kwasowość', 'Gorycz', 'Nuty kwiatowe', 'Owoce cytrusowe', 'Owoce pestkowe', 'Owoce leśne', 'Nuty przypraw', 'Orzech', 'Czekolada', 'Karmel'];
+        var values = [];
+
+        // Zmiana źródła obrazka w zależności od regionu
+        var imgSrc = region !== '' ? `${mainAssetsUrl}map-${regionImg.toLowerCase()}.png` : '';
+
+        // Tworzenie HTML dla sposobów przygotowania
+        var sposobyPrzygotowaniaHtml = getSposobyPrzygotowaniaHtml();
+
+        function createListItemHtml(label, value) {
+            if (value) {
+                return `<li><span class="text-uppercase">${label}</span><b>${value}</b></li>`;
+            }
+            return '';
+        }
+
+        // Tworzenie całego HTML sekcji
+        var sectionHtml = `
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+               ${imgSrc ? `<img src="${imgSrc}" alt="${regionImg}" />` : ''}
+            </div>
+            <div class="col-md-2">
+                <ul class="mk_extra_info">
+                    ${createListItemHtml('Region', region)}
+                    ${createListItemHtml('Wysokość upraw', wysokoscUpraw)}
+                    ${createListItemHtml('Metoda obróbki', metodaObróbki)}
+                    ${createListItemHtml('Stopień palenia', stopienPalenia)}
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <canvas id="radar-chart" width="360" height="400" style=""></canvas>
+            </div>
+            <div class="col-md-2">
+                <span class="d-flex justify-content-around mb-3 text-center text-uppercase w-100">Rekomendowany sposób parzenia</span>
+                <div class="align-items-center d-flex flex-md-column justify-content-around">
+                    ${sposobyPrzygotowaniaHtml}
+                </div>
+            </div>
+        </div>
+    `;
+
+
+
+
+        function pricePerGram() {
+
+            var packageWeightValue = $('#projector_dictionary .dictionary__param').filter(function () {
+                return $(this).find('.dictionary__name_txt').text().trim() === 'Opakowanie';
+            }).find('.dictionary__value_txt').text();
+
+            if (!packageWeightValue) return;
+            var itemPriceValue = $('#projector_price_value').text().trim()
+
+            var numericWeightValue = packageWeightValue.replace(/\D/g, '');
+            var numericPriceValue = itemPriceValue.replace(/[^\d,]/g, '');
+            var numericWeightValue = parseInt(packageWeightValue, 10);
+            var numericPriceValue = parseFloat(itemPriceValue.replace(',', '.'));
+
+            // Obliczanie ceny za 100 gram
+            var pricePerHundredGrams = (numericPriceValue / numericWeightValue) * 100;
+
+            var resultElement = $('<div/>', {
+                'class': 'projector_prices__info',
+                'text': 'Cena za 100g: ' + pricePerHundredGrams.toFixed(2) + ' zł'
+            });
+
+            // Dodanie wyniku do diva 'projector_prices_wrapper'
+            $('#projector_prices_wrapper').append(resultElement);
+
+
+        }
+        pricePerGram();
+
+        function getSposobyPrzygotowaniaHtml() {
+            var html = '';
+            $('#projector_dictionary .dictionary__param').filter(function () {
+                return $(this).find('.dictionary__name_txt').text().trim().toUpperCase() === 'SPOSÓB PRZYGOTOWANIA';
+            }).find('.dictionary__value_txt').each(function () {
+                var sposob = $(this).text().trim();
+                var sposobClass = sposob.toLowerCase().replace(/\s+/g, '');
+                // Dodawanie tooltipa z nazwą metody parzenia z zachowaniem spacji
+                html += `<div class="cafe-method img-method-${sposobClass}" data-toggle="tooltip" title="${sposob}"></div>`;
+            });
+            return html;
+        }
+
+        // Wstawienie gotowego HTML do sekcji 'product_extra_info'
+        $('#product_extra_info1').html(sectionHtml);
+
+        function getProductionAndExpireDate() {
+            var url = window.location.href;
+            var productIdMatch = url.match(/product-pol-(\d+)/);
+            var productId = productIdMatch ? productIdMatch[1] : null;
+
+            if (!productId) {
+                console.error('Nie znaleziono ID produktu w URL');
+                return;
+            }
+
+            $.ajax({
+                url: `https://public.konesso.pl/?json=true&module=productInfo&id=${productId}`,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    if (data && data.Dates) {
+                        var productionDate = data.Dates.productionDate;
+                        var expirationDate = data.Dates.expirationDate;
+
+                        if (productionDate) {
+                            var productionDateHtml = `<li><span class="text-uppercase">Data Palenia</span><b>${productionDate}</b></li>`;
+                            $('.mk_extra_info').append(productionDateHtml);
+                        }
+                        if (expirationDate) {
+                            var expirationDateHtml = `<li><span class="text-uppercase">Data Ważności</span><b>${expirationDate}</b></li>`;
+                            $('.mk_extra_info').append(expirationDateHtml);
+                        }
+                    }
+                },
+                error: function () {
+                    console.error('Błąd pobierania danych produktu');
+                }
+            });
+        }
+
+        getProductionAndExpireDate();
+
+
+
+
+
+        function getValueOrDefault(labelText, defaultValue) {
+            var item = $('#projector_dictionary .dictionary__param').filter(function () {
+                return $(this).find('.dictionary__name_txt').text().trim().toUpperCase() === labelText;
+            });
+            var text = item.length ? item.find('.dictionary__value_txt').text() : defaultValue;
+            // Dodawanie spacji przed każdą wielką literą oprócz pierwszej
+            return text.replace(/([A-Z])/g, ' $1').trim();
+        }
+
+        function getValueOrDefaultRegion(labelText, defaultValue) {
+            var item = $('#projector_dictionary .dictionary__param').filter(function () {
+                return $(this).find('.dictionary__name_txt').text().trim().toUpperCase() === labelText;
+            });
+            var text = item.length ? item.find('.dictionary__value_txt').text().trim() : defaultValue;
+            // Usunięcie wszystkich spacji
+            return text.replace(/\s+/g, '');
+        }
+
+        labels.forEach(function (label) {
+            var value = $('#projector_dictionary .dictionary__param').filter(function () {
+                return $(this).find('.dictionary__name_txt').text().trim() === label;
+            }).find('.dictionary__value_txt').text().trim();
+
+            // Konwersja wartości na liczbę (zakładając, że są to liczby)
+            values.push(parseFloat(value) || 0);
+        });
+
+
+        $('#chart').html('<canvas id="radar-chart" width="360" height="400" style=""></canvas>');
+
+
+        $.getScript(mainAssetsUrl + "/Chart.min.js", function () {
+            var radarChart = new Chart($('#radar-chart'), {
+                type: 'radar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        backgroundColor: "rgba(178, 147, 112, 0.5)",
+                        borderColor: "rgba(178, 147, 112, 0.5)",
+                        pointBackgroundColor: "transparent",
+                        pointBorderColor: "transparent",
+                        fill: "origin",
+                        data: values
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    legend: { display: false },
+                    scale: {
+                        angleLines: { color: 'white' },
+                        ticks: {
+                            display: false,
+                            min: 0.5,
+                        },
+                        gridLines: { color: 'white' },
+                        pointLabels: { fontColor: 'black' },
+
+                    },
+                }
+            });
+        });
+    }
+
+
+
+}
+
+
+app_shop.run(
+    function () {
+        $('*[class*="icon-"]').not('i').get().forEach((x) => {
+            let $t = $(x);
+            let cls = $t.attr('class').split(' ').find(v => v.indexOf('icon-') >= 0 && v.indexOf('--') < 0)
+            let check = $t.hasClass('--icon-right')
+            if (!cls) return;
+
+            $t.removeClass(cls + ' --icon-right --icon-left');
+
+            let html = '<i class="' + cls + ' ' + (check ? ' ml-1' : ' mr-1') + '"></i>';
+            if (check) {
+                $t.append(html)
+            } else {
+                $t.prepend(html)
+            }
+        })
+    },
+    'all',
+    'body',
+    true,
+)
+app_shop.run(
+    function () {
+        const url = '/?set_render=content'
+        const $divId = $('#content')
+        $.get(url, function (data) {
+            $t = $(data).find('#main_blog')
+            $divId.append($t);
+        });
+    },
+    'all',
+    '.projector_page',
+    true,
+)
+

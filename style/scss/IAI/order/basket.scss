@@ -867,10 +867,14 @@ body.--basket-actions {
     }
 }
 div.basketedit_rebatecodes_outline {
-    display: none;
+    // display: none;
+    background-color: #f1f1f1;
     form {
-        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         vertical-align: middle;
+        padding: 1rem;
         width: 100%;
     }
     #change_code {
@@ -891,6 +895,9 @@ div.basketedit_rebatecode_action {
 div.basketedit_rebatecode_r {
     float: left;
     margin-top: 20px;
+    @media screen and (min-width: 767px) {
+        margin-top: 0;
+    }
 }
 div.basketedit_rebatecode_title_out {
     clear: both;
@@ -952,15 +959,14 @@ span.basketedit_rebatecode_activate_txt {
     font-weight: bold;
     text-transform: uppercase;
     vertical-align: middle;
-    margin-right: 20px;
+    padding: 1rem;
     display: block;
-    margin-bottom: 10px;
 }
 input.basketedit_rebatecode_input {
-    height: 30px !important;
+    // height: 30px !important;
     vertical-align: top;
     width: 100%;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     margin-right: 10px;
 }
 input.basketedit_change_code {
@@ -973,7 +979,7 @@ input.basketedit_submit_code {
     vertical-align: middle;
     background: none;
     box-shadow: none;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     &::-moz-focus-inner {
         border: 0;
     }
@@ -987,12 +993,13 @@ input.basketedit_submit_code {
 a.basketedit_client_rebate {
     float: right;
     font-size: 1.1em;
-    height: 41px;
+    // height: 41px;
     padding: 0 1.3em;
     vertical-align: middle;
     background: none repeat scroll 0 0 #333;
     border: 1px solid rgba(0, 0, 0, 0);
     line-height: 40px;
+    width: 100%;
     &:hover {
         background-color: #b29370;
         border: 1px solid rgba(0, 0, 0, 0);

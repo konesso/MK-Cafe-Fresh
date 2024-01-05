@@ -4913,7 +4913,7 @@
                     </section>
                 </div>
 
-                <section id="search" class="search products d-flex flex-wrap mb-2 mb-sm-3">
+                <section class="search-product search products d-flex flex-wrap mb-2 mb-sm-3">
                     <?php
                     function generateRandomData() {
                         $data = [];
@@ -4966,7 +4966,7 @@
                         ],
                         [
                         'name'=> 'Kawa ziarnista 7',
-                        'price'=> '29.99',
+                        'price'=> '29.99',  
                         'img'=>
                         'https://www.konesso.pl/pol_pm_Kawa-ziarnista-MK-Cafe-Crema-1kg-10376_2.jpg',
                         ],
@@ -5252,13 +5252,9 @@
         </div>
 
         <?php include 'footer.php'; ?>
-
-
-
-
-
-
-        <script src="https://www.konesso.pl/data/designs/60dd8e70dc8481.63628788_3/gfx/pol/shop.js.gzip?r=1699540674">
+        <script src="./js/Chart.min.js"></script>
+        <script src="./js/shop.js"></script>
+        <script src="./js/search_filters.js?r=1699540673">
         </script>
         <script src="./js/envelope.js.gzip">
         </script>
@@ -5272,23 +5268,11 @@
         </script>
         <script src="./js/menu_omnibus.js.gzip">
         </script>
-
-        <script
-            src="https://www.konesso.pl/data/designs/60dd8e70dc8481.63628788_3/gfx/pol/search_filters.js.gzip?r=1699540673">
-        </script>
-        <script src="https://www.konesso.pl/data/designs/60dd8e70dc8481.63628788_3/gfx/pol/search.js.gzip?r=1699540673">
-        </script>
-        <script
-            src="https://www.konesso.pl/data/designs/60dd8e70dc8481.63628788_3/gfx/pol/search_promo_products.js.gzip?r=1699540673">
-        </script>
-        <script src="./js/search.js"></script>
         <script src="./js/search_promo_products.js">
         </script>
-        <script src="./js/search_filters.js"></script>
-        <script src="main.js"></script>
-        <script src="./search.js"></script>
-        <script src="assets/js/Chart.min.js"></script>
-        <script src="./js/shop.js"></script>
+
+
+
         <script>
         app_shop.runApp();
         </script>

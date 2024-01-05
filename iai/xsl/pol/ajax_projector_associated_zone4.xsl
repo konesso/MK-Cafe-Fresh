@@ -50,7 +50,7 @@
 								</iaixsl:choose>
 							</h2>
 
-							<div class="products d-flex flex-wrap align-items-start mx-n3">
+							<div class="products search-product d-flex flex-wrap align-items-start mx-n3">
 								<iaixsl:for-each select="/shop/page/projector/products_associated_zone4/*">
 									
 									<iaixsl:variable name="var_name"><iaixsl:choose><iaixsl:when test="product"><iaixsl:value-of disable-output-escaping="yes" select="product/name/text()"/></iaixsl:when><iaixsl:otherwise><iaixsl:value-of disable-output-escaping="yes" select="name/text()"/></iaixsl:otherwise></iaixsl:choose></iaixsl:variable>

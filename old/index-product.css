@@ -15151,7 +15151,7 @@ header #menu_settings {
     width: 4rem;
     height: 4rem;
     background-position: -100px -75px;
-    background-image: url(./icons.png)
+    background-image: url(/data/include/cms/MkFresh/theme/icons.png)
 }
 
 @media (min-width: 979px) {
@@ -47040,7 +47040,7 @@ form.return_delivery_form {
 }
 
 .rma_products_page .status-o i {
-    background: #0090f6
+    background: #b29370
 }
 
 .rma_products_page .status-p i {
@@ -47058,7 +47058,7 @@ form.return_delivery_form {
 }
 
 .rma_products_page .status-a i {
-    background: #0090f6
+    background: #b29370
 }
 
 .rma_products_page a.show_status_explanation {

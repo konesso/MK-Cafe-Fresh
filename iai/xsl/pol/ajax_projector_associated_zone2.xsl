@@ -2,7 +2,7 @@
 <iaixsl:stylesheet xmlns:php="http://php.net/xsl" xmlns:iaixsl="http://www.w3.org/1999/XSL/Transform" xmlns:iaielement="http://iai-system.com/ddd" xmlns:fb="http://www.facebook.com/2008/fbml" version="1.0" exclude-result-prefixes="php iaielement fb"><iaixsl:output indent="no" method="html" doctype-system="about:legacy-compat" version="1.0" encoding="UTF-8"/><iaixsl:strip-space elements="table tr td img"/><iaixsl:decimal-format name="yen" NaN="" grouping-separator="," decimal-separator="."/><iaixsl:template match="shop">
 		<iaixsl:if test="page/projector/products_associated_zone2">
 
-			<section id="products_associated_zone2" class="hotspot mb-5 col-12">
+			<section id="products_associated_zone2" class="hotspot mb-5 col-12 search-product">
 				
 				<iaixsl:variable name="headline_after_products_associated_zone2"/>
 				
@@ -51,7 +51,7 @@
 							</iaixsl:choose>
 						</h2>
 
-						<div class="products d-flex flex-wrap">
+						<div class="products search-product d-flex flex-wrap">
 							<iaixsl:for-each select="page/projector/products_associated_zone2/*">
 								
 								<iaixsl:variable name="var_name"><iaixsl:choose><iaixsl:when test="product"><iaixsl:value-of disable-output-escaping="yes" select="product/name/text()"/></iaixsl:when><iaixsl:otherwise><iaixsl:value-of disable-output-escaping="yes" select="name/text()"/></iaixsl:otherwise></iaixsl:choose></iaixsl:variable>
@@ -81,35 +81,35 @@
 										<iaixsl:attribute name="href"><iaixsl:value-of select="$var_link"/></iaixsl:attribute>
 										<iaixsl:attribute name="title"><iaixsl:value-of select="$var_name"/></iaixsl:attribute>
 
-                    <iaixsl:choose>
-                      <iaixsl:when test="$var_icon_second and not($var_icon_second = '/' or $var_icon_second = '') and $var_icon_small_second and not($var_icon_small_second = '/' or $var_icon_small_second = '')">
-                        <picture>
-                          <source media="(min-width: 421px)" type="image/webp">
-                            <iaixsl:attribute name="srcset"><iaixsl:value-of select="$var_icon"/></iaixsl:attribute>
-                          </source>
-                          <source media="(min-width: 421px)" type="image/jpeg">
-                            <iaixsl:attribute name="srcset"><iaixsl:value-of select="$var_icon_second"/></iaixsl:attribute>
-                          </source>
-                          <source media="(max-width: 420px)" type="image/webp">
-                            <iaixsl:attribute name="srcset"><iaixsl:value-of select="$var_icon_small"/></iaixsl:attribute>
-                          </source>
+									<iaixsl:choose>
+									<iaixsl:when test="$var_icon_second and not($var_icon_second = '/' or $var_icon_second = '') and $var_icon_small_second and not($var_icon_small_second = '/' or $var_icon_small_second = '')">
+										<picture>
+										<source media="(min-width: 421px)" type="image/webp">
+											<iaixsl:attribute name="srcset"><iaixsl:value-of select="$var_icon"/></iaixsl:attribute>
+										</source>
+										<source media="(min-width: 421px)" type="image/jpeg">
+											<iaixsl:attribute name="srcset"><iaixsl:value-of select="$var_icon_second"/></iaixsl:attribute>
+										</source>
+										<source media="(max-width: 420px)" type="image/webp">
+											<iaixsl:attribute name="srcset"><iaixsl:value-of select="$var_icon_small"/></iaixsl:attribute>
+										</source>
 
-                          <img src="/gfx/standards/loader.gif?r=1696937716" class="b-lazy">
-                            <iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_small_second"/></iaixsl:attribute>
-                            <iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_second"/></iaixsl:attribute>
-                            <iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="$var_name"/></iaixsl:attribute>
-                          </img>
+										<img src="/gfx/standards/loader.gif?r=1696937716" class="b-lazy">
+											<iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_small_second"/></iaixsl:attribute>
+											<iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_second"/></iaixsl:attribute>
+											<iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="$var_name"/></iaixsl:attribute>
+										</img>
 
-                        </picture>
-                      </iaixsl:when>
-                      <iaixsl:otherwise>
-                        <img src="/gfx/standards/loader.gif?r=1696937716" class="b-lazy">
-                          <iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_small"/></iaixsl:attribute>
-                          <iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon"/></iaixsl:attribute>
-                          <iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="$var_name"/></iaixsl:attribute>
-                        </img>
-                      </iaixsl:otherwise>
-                    </iaixsl:choose>
+										</picture>
+									</iaixsl:when>
+									<iaixsl:otherwise>
+										<img src="/gfx/standards/loader.gif?r=1696937716" class="b-lazy">
+										<iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_small"/></iaixsl:attribute>
+										<iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon"/></iaixsl:attribute>
+										<iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="$var_name"/></iaixsl:attribute>
+										</img>
+									</iaixsl:otherwise>
+									</iaixsl:choose>
 									</a>
 
 									
@@ -683,30 +683,37 @@
 											</iaixsl:if>
 										</div>
 									</iaixsl:if>
+										<div class="d-none justify-content-around align-items-center checkBtns">
+												<a class=" product__check_item --add btn " rel="nofollow" title="Kliknij, aby zobaczyć produkt " >
+													<iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute>
+														<div class="d-inline-flex justify-content-center align-items-center"><span class="checkProduct">Sprawdź</span> <span class="fa fa-angle-right ml-2"></span></div>
+												</a>
+										</div>
 								</div>
+								
 							</iaixsl:for-each>
 						</div>
 					</iaixsl:when>
 					<iaixsl:otherwise>
 						<div class="hotspot mb-5 skeleton">
 							<span class="headline"/>
-							<div class="products d-flex flex-wrap">
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+							<div class="products search-product d-flex flex-wrap">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>
 								</div>
-								<div class="product col-6 col-sm-3 col-xl-2 py-3">
+								<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 									<span class="product__icon d-flex justify-content-center align-items-center"/>
 									<span class="product__name"/>
 									<div class="product__prices"/>

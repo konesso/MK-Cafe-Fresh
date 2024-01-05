@@ -42,10 +42,11 @@
     &:after {
         display: block;
         content: " ";
-        width: 4rem;
-        height: 4rem;
-        background-position: -100px -75px;
-        background-image: url(../img/icons.png);
+        width: 5rem;
+        height: 5rem;
+        // background-position: -100px -75px;
+        background-image: url(/data/include/cms/MkFresh/theme/shoppingBag.png);
+        background-size: cover;
     }
     &:before {
         display: none;

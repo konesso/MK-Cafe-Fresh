@@ -2,7 +2,7 @@
 <iaixsl:stylesheet xmlns:php="http://php.net/xsl" xmlns:iaixsl="http://www.w3.org/1999/XSL/Transform" xmlns:iaielement="http://iai-system.com/ddd" xmlns:fb="http://www.facebook.com/2008/fbml" version="1.0" exclude-result-prefixes="php iaielement fb"><iaixsl:output indent="no" method="html" doctype-system="about:legacy-compat" version="1.0" encoding="UTF-8"/><iaixsl:strip-space elements="table tr td img"/><iaixsl:decimal-format name="yen" NaN="" grouping-separator="," decimal-separator="."/><iaixsl:template match="shop">
 		<iaixsl:if test="/shop/page/additional/hotspot/products_zone1">
 
-			<section id="noproduct_hotspot_zone1" class="hotspot mb-5">
+			<section id="noproduct_hotspot_zone1" class="hotspot mb-5 search-product">
 				
 				<iaixsl:variable name="headline_after_noproduct_hotspot_zone1">Zobacz wszystkie</iaixsl:variable>
 				
@@ -51,7 +51,7 @@
 						</iaixsl:choose>
 					</h2>
 
-					<div class="products d-flex flex-wrap">
+					<div class="products search-product d-flex flex-wrap">
 						<iaixsl:for-each select="/shop/page/additional/hotspot/products_zone1/*">
 							
 							<iaixsl:variable name="var_name"><iaixsl:choose><iaixsl:when test="product"><iaixsl:value-of disable-output-escaping="yes" select="product/name/text()"/></iaixsl:when><iaixsl:otherwise><iaixsl:value-of disable-output-escaping="yes" select="name/text()"/></iaixsl:otherwise></iaixsl:choose></iaixsl:variable>
@@ -690,23 +690,23 @@
 				<iaixsl:otherwise>
 					<div class="hotspot mb-5 skeleton">
 						<span class="headline"/>
-						<div class="products d-flex flex-wrap">
-							<div class="product col-6 col-sm-3 col-xl-2 py-3">
+						<div class="products search-product d-flex flex-wrap">
+							<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 								<span class="product__icon d-flex justify-content-center align-items-center"/>
 								<span class="product__name"/>
 								<div class="product__prices"/>
 							</div>
-							<div class="product col-6 col-sm-3 col-xl-2 py-3">
+							<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 								<span class="product__icon d-flex justify-content-center align-items-center"/>
 								<span class="product__name"/>
 								<div class="product__prices"/>
 							</div>
-							<div class="product col-6 col-sm-3 col-xl-2 py-3">
+							<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 								<span class="product__icon d-flex justify-content-center align-items-center"/>
 								<span class="product__name"/>
 								<div class="product__prices"/>
 							</div>
-							<div class="product col-6 col-sm-3 col-xl-2 py-3">
+							<div class="product col-6 col-sm-3 col-xl-2 py-3 py-3">
 								<span class="product__icon d-flex justify-content-center align-items-center"/>
 								<span class="product__name"/>
 								<div class="product__prices"/>
