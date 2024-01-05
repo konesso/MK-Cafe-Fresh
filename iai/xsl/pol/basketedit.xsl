@@ -6869,7 +6869,8 @@
 							<iaixsl:if test="not((basket/@shipping_undefined = 'true') or (basket/@hide_shipping_cost = 'true') or (basket/@hide_cost='true'))">
 								<div class="basketedit_product_summary">
 									<iaixsl:if test="not(basket/@shipping_after_rebate &gt; '0' or basket/@shipping = '')">
-										<iaixsl:attribute name="class">basketedit_product_summary d-none</iaixsl:attribute>
+									
+										<iaixsl:attribute name="class">basketedit_product_summary</iaixsl:attribute>
 									</iaixsl:if>
 									<label>
 										<iaixsl:choose>
@@ -6904,7 +6905,7 @@
 												b/d
 											</iaixsl:when>
 											<iaixsl:otherwise>
-												gratis!
+												 <span style="color: red;"> GRATIS !</span>
 											</iaixsl:otherwise>
 										</iaixsl:choose>
 									</strong>
