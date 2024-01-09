@@ -6810,7 +6810,7 @@
 						
 						<iaixsl:if test="basket/@toshippingfree&gt; 0 and not(basket/@toshippingfree= '')">
 							<div class="toshippingfree">
-								<div class="toshippingfree_sub">DARMOWA DOSTAWA od 
+								<div class="toshippingfree_sub">DARMOWA DOSTAWA DO PUNKTU ODBIORU od
 									<span class="price"><iaixsl:value-of select="basket/@shippinglimitfree_formatted"/></span><iaixsl:if test="$wholesaler_shipping_gross"> <iaixsl:value-of select="$wholesaler_shipping_gross"/></iaixsl:if></div>
 
 								Brakuje Ci tylko 

@@ -5329,7 +5329,8 @@
         <div class="questions__block --banner col-12 col-md-5 col-lg-4">
             <div class="questions__banner"><strong class="questions__banner_item --label">Zapisz się do
                     naszego newslettera</strong><span class="questions__banner_item --text">Bądź na
-                    bieżąco z promocjami</span>
+                    bieżąco z promocjami i <strong>odbierz 20 zł na zakupy kawy</strong></span>
+					
                 <div class="questions__banner_item --button"><a class="btn --solid --medium questions__button">Zapisz
                         się!</a></div>
             </div>
