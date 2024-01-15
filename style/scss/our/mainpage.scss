@@ -344,3 +344,11 @@ $overlay-color: rgba(0, 0, 0, 0.5);
     align-items: center;
     gap: 1rem;
 }
+
+#menu_categories .nav-link[title="PROMOCJE"] {
+    display: none;
+}
+
+#menu_categories .text-l {
+    display: none;
+}
