@@ -2706,6 +2706,9 @@
 										<iaixsl:if test="(position()=1)">
 											<iaixsl:attribute name="class">article__item  col-12 col-md-6</iaixsl:attribute>
 										</iaixsl:if>
+										<iaixsl:if test="(position()=10)">
+											<iaixsl:attribute name="class">article__item  col-12 col-md-6</iaixsl:attribute>
+										</iaixsl:if>
 									<iaixsl:attribute name="href"><iaixsl:value-of select="more/@href"/></iaixsl:attribute>
 									<iaixsl:attribute name="title"><iaixsl:value-of disable-output-escaping="yes" select="title"/></iaixsl:attribute>
 									

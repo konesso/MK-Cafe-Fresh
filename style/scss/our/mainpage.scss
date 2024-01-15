@@ -137,6 +137,8 @@ $overlay-color: rgba(0, 0, 0, 0.5);
         height: 100%;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
         transition: background 0.3s ease; /* Dodano przejście dla tła */
+        top: 0;
+        right: 0;
     }
 
     @media all and (max-width: 976px) {
@@ -304,7 +306,7 @@ $overlay-color: rgba(0, 0, 0, 0.5);
     }
 }
 
-.newsletter_page #layout #content .full-width-row .newsletter-row * {
+.newsletter_page #newsletter_form * {
     &:not(input) {
         border: 0 !important;
     }

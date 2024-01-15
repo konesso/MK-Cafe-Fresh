@@ -1,62 +1,29 @@
-<form action="/settings.php" method="post" class="newsletter_form row flex-column align-items-center">
-    <div class="col-md-6 col-12 form-bg-white mx-auto">
-        <input id="mailing_action_contact" name="mailing_action" value="add" type="hidden" />
-        <div class="row headings py-4">
-            <div class="col-12">
-                <div class="colored-heading">Odbierz <big>20</big> zł </div><br />
-                <div class="black-heading">za zapis do newslettera</div>
-            </div>
-        </div>
-
-        <div class="form-group col-12">
-            <div class="has-feedback">
-                <input class="newsletter_form_field form-control validate" name="mailing_email" id="mailing_email"
-                    type="text" data-validate="email" />
-                <label for="mailing_email" class="control-label">
-                    Podaj Twój e-mail
-                </label>
-                <span class="form-control-feedback" />
-            </div>
-        </div>
-
-        <div class="form-group col-12">
-            <div class="has-feedback">
-                <input class="newsletter_form_field form-control validate" name="mailing_name" id="mailing_name"
-                    type="text" maxlength="50" minlength="3" />
-                <label for="mailing_name" class="control-label">
-                    Podaj Twoje imię
-                </label>
-                <span class="form-control-feedback" />
-            </div>
-        </div>
-
-        <div id="newsletter_privacy_consent" class="form-group col-12">
-            <div class="has-feedback">
-                <label class="control-label d-flex align-items-center">
-                    <div class="text_to_right">
-                        <input class="newsletter_form_field validate" name="newsletter_consent" id="newsletter_consent"
-                            type="checkbox" />
-                    </div>
-                    <div class="text_to_left">
-                        Chcę otrzymywać E-mail Newsletter. Wyrażam zgodę na przetwarzanie moich danych osobowych do
-                        celów marketingowych zgodnie z <a>
-                            <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/private_policy/@url" />
-                            </iaixsl:attribute>polityką prywatności
-                        </a>
-                    </div>
-                </label>
-            </div>
-        </div>
-        <div class="newsletter_button_wrapper col-12">
-            <button type="submit" style="display: none;" />
-
-            <button id="newsletter_button_add" type="submit" class="btn --large --solid">
-                <iaixsl:attribute name="value">Zapisz się</iaixsl:attribute>Zapisz się
-            </button>
-
-            <button id="newsletter_button_remove" type="submit" class="btn --large --solid --secondary">
-                <iaixsl:attribute name="value">Wypisz się</iaixsl:attribute>Wypisz się
-            </button>
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-12 my-3"><a href="/UNIKATOWA-PALARNIA-KAWY-cabout-pol-251.html"
+                class="image-block text-left">
+                <picture><img src="/data/designs/xsl/11_1/gfx/assets/blog-1.jpg" alt="Description"></picture>
+                <div class="overlay"></div><span class="title-text text-uppercase">Unikatowa Manufaktura</span><span
+                    class="btn-like">Dowiedz się więcej <i class="icon-angle-right ml-2"></i></span>
+            </a></div>
+        <div class="col-lg-3 col-md-6 col-12 my-3"><a
+                href="/data/include/cms/MkFresh/MK_EFOLDER_2021_last.pdf?v=1703082120124" class="image-block text-left">
+                <picture><img src="/data/designs/xsl/11_1/gfx/assets/blog-2.jpg" alt="Description"></picture>
+                <div class="overlay"></div><span class="title-text text-uppercase">Oferta prezentowa</span><span
+                    class="btn-like">Sprawdź<i class="icon-angle-right ml-2"></i></span>
+            </a></div>
+        <div class="col-lg-3 col-md-6 col-12 my-3"><a href="/pol_m_KAWY-8811.html" class="image-block text-left">
+                <picture><img src="/data/designs/xsl/11_1/gfx/assets/blog-3.jpg" alt="Description"></picture>
+                <div class="overlay"></div><span class="title-text text-uppercase">znajdź kawę dla siebie</span><span
+                    class="btn-like">Odkryj kawy<i class="icon-angle-right ml-2"></i></span>
+            </a></div>
+        <div class="col-lg-3 col-md-6 col-12 my-3">
+            <a href="/Porady-i-przepisy-bloglist-pol-40.html" class="image-block text-left">
+                <picture><img src="/data/designs/xsl/11_1/gfx/assets/blog-4.jpg" alt="Description"></picture>
+                <div class="overlay"></div>
+                <span class="title-text text-uppercase">Porady Baristy</span>
+                <span class="btn-like">Sprawdź<i class="icon-angle-right ml-2"></i></span>
+            </a>
         </div>
     </div>
-</form>
+</div>
