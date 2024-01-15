@@ -2552,7 +2552,7 @@
 						<div class="col-md-6 col-12 form-bg-white mx-auto">
 		                	<div class="newsletter_form_label">
 			                    <iaixsl:attribute name="class">newsletter_form_label big_label py-4</iaixsl:attribute>
-			                    <span class="newsletter_form_label">Newsletter - bądź na bierząco</span>
+			                    <span class="newsletter_form_label">Newsletter - bądź na bieżąco</span>
 			                </div>
 							<iaixsl:if test="/shop/page/communicates_newsletter/message">
 								<div class="newsletter_message_wrapper">

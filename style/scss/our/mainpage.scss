@@ -311,6 +311,13 @@ $overlay-color: rgba(0, 0, 0, 0.5);
         border: 0 !important;
     }
 }
+@media screen and (max-width: 760px) {
+    .newsletter_page #newsletter_form * {
+        &:not(input) {
+            border: 0 !important;
+        }
+    }
+}
 
 .newsletter_page #content .black-heading {
     font-size: 2.2rem;
