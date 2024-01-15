@@ -259,3 +259,79 @@ $overlay-color: rgba(0, 0, 0, 0.5);
         }
     }
 }
+
+.newsletter-row {
+    background-image: url(/data/include/cms/MkFresh/theme/newsletter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#newsletter_form .headings .colored-heading {
+    font-size: 4.2rem;
+    text-align: center;
+    line-height: 0.9;
+    color: #b29370;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+#newsletter_form .headings .black-heading {
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 0.9;
+    color: black;
+
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+#newsletter_form .form-bg-white {
+    background-color: white;
+}
+.newsletter-bottom-paragraph > p {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 200;
+}
+
+.newsletter_page #content * {
+    &:not(input) {
+        border: 0 !important;
+    }
+}
+
+.newsletter_page #layout #content .full-width-row .newsletter-row * {
+    &:not(input) {
+        border: 0 !important;
+    }
+}
+
+.newsletter_page #content .black-heading {
+    font-size: 2.2rem;
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.newsletter_page #layout #content .second-heading {
+    font-size: 2.2rem;
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.newsletter_page #content .korzysci-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}

@@ -2551,6 +2551,16 @@
 						</h1>
 					</iaixsl:if>
 				</div>
+					<iaixsl:if test="/shop/page/news/image/@src and /shop/page/news/image/@src!=''">
+						<div class="news-image">
+							<img src="/gfx/standards/loader.gif?r=1696937716" class="article__image b-lazy">
+								<iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="/shop/page/news/image/@src"/></iaixsl:attribute>
+								<iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="/shop/page/news/image/@src"/></iaixsl:attribute>
+								<iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="/shop/page/news/title/text()"/></iaixsl:attribute>
+							</img>
+						</div>
+					</iaixsl:if>
+
 				<div class="news__description cm"><iaixsl:value-of disable-output-escaping="yes" select="/shop/page/news/description"/></div>
 			</section>
 		</iaixsl:when>
