@@ -2823,26 +2823,26 @@
 				<div class="container max-width-1200">
 					<div class="row pt-5">
 						<div class="col-md-3 korzysci-element">
-							<img src="/data/include/cms/podstrony/zapis-na-newsletter/promocje.png?v=1582012381522"
+							<img src="/data/include/cms/MkFresh/theme/promocje.png"
 								alt="Promocje w sklepie"/>
 							<div class="black-heading">Ekskluzywne promocje
 								tylko dla
 								czytelników newslettera</div>
 						</div>
 						<div class="col-md-3 korzysci-element">
-							<img src="/data/include/cms/podstrony/zapis-na-newsletter/nowosci.png?v=1582012381522"
+							<img src="/data/include/cms/MkFresh/theme/nowosci.png"
 								alt="Informacje o nowościach"/>
 							<div class="black-heading">Informacje o nowościach
 								w naszej ofercie</div>
 						</div>
 						<div class="col-md-3 korzysci-element">
-							<img src="/data/include/cms/podstrony/zapis-na-newsletter/konkursy.png?v=1582012381523"
+							<img src="/data/include/cms/MkFresh/theme/konkursy.png"
 								alt="Konkursy z nagrodami"/>
 							<div class="black-heading">Ciekawe
 								konkursy z nagrodami </div>
 						</div>
 						<div class="col-md-3 korzysci-element">
-							<img src="/data/include/cms/podstrony/zapis-na-newsletter/wiedza.png?v=1582012381521"
+							<img src="/data/include/cms/MkFresh/theme/wiedza.png"
 								alt="Wiedza o kawie"/>
 							<div class="black-heading">Pasję i wiedzę
 								o świecie kawy</div>
