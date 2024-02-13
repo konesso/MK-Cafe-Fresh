@@ -414,7 +414,7 @@
 					<iaixsl:if test="/shop/basket/@toshippingfree = 0">
 						<iaixsl:attribute name="class">freeShipping --active</iaixsl:attribute>
 					</iaixsl:if>
-					<span class="freeShipping__info">Darmowa dostawa</span>
+					<span class="freeShipping__info">Darmowa dostawa do punktu</span>
 					<strong class="freeShipping__val">
 						od 
 						<iaixsl:value-of select="/shop/basket/@shippinglimitfree_formatted"/>
