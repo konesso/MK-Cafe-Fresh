@@ -5396,12 +5396,13 @@
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6 col-12 my-3">
-					<a href="/data/include/cms/MkFresh/MK_EFOLDER_2021_last.pdf?v=1703082120124" class="image-block text-left">
+					<a href="https://mkfresh.pl/O-nas-cabout-pol-250.html" class="image-block text-left">
+					
 						<picture>
 							<img src="/data/designs/xsl/11_1/gfx/assets/blog-2.jpg" alt="Description"/>
 						</picture>
 						<div class="overlay"></div>
-						<span class="title-text text-uppercase">Oferta prezentowa</span>
+						<span class="title-text text-uppercase">Poznaj Nas</span>
 						<span class="btn-like">Sprawdź<i class="icon-angle-right ml-2"></i></span>
 					</a>
 				</div>

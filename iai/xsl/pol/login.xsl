@@ -2852,7 +2852,7 @@
 				</iaixsl:if>
 
 				<iaixsl:if test="(/shop/page/actions/client_rebate_points/@url and not(/shop/page/actions/client_rebate_points/@url='')) or /shop/page/actions/products_points/@available='true' or (/shop/page/actions/points_cms/@url and not(/shop/page/actions/points_cms/@url=''))">
-					<div class="login_menu" id="points_login">
+					<div class="login_menu d-none" id="points_login">
 						<div class="login_menu_sub">
 							<h3>
 								<iaixsl:choose><iaixsl:when test="$iconspoints"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconspoints"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="points" src="/gfx/standards/points.png?r=1696937716"/></iaixsl:otherwise></iaixsl:choose>
