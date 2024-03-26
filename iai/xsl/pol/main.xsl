@@ -839,9 +839,12 @@
 		
 			<!-- START LOGO -->
 			<div class="row align-items-center justify-content-around main-holder">
-				
+	
+
 				<div class="col col-md-2">
-					<div id="logo" class=""><a href="https://mkfresh.pl" target="_self">
+					<div id="logo" class=""><a href=""  target="_self">
+					<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/mask/top/link/@href"/></iaixsl:attribute>
+
 							<div class="large"></div>
 							<div class="small "></div>
 						</a></div>
@@ -5323,7 +5326,7 @@
 		</iaixsl:if>
 
 
-	<!-- newsletter -->
+<iaixsl:if test="/shop/@baseurl != 'http://pracownicy.mkfresh.pl/'">
 	<section id="product_questions_list" class="questions my-5 py-5 col-12">
     <div class="questions__wrapper row align-items-start">
         <div class="questions__block --banner col-12 col-md-5 col-lg-4">
@@ -5337,6 +5340,8 @@
         </div>
     </div>
 	</section>
+</iaixsl:if>
+
 		<section id="product_askforproduct" class="askforproduct mb-5 col-12">
 		<div id="newsletter_form">
 			<div class="newsletter_form_label big_label"><span class="newsletter_form_label">Newsletter</span></div>
