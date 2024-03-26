@@ -156,12 +156,12 @@
 			<iaixsl:choose>
 				<iaixsl:when test="/shop/page/@meta_robots">
 					<meta name="robots">
-						<iaixsl:attribute name="content"><iaixsl:value-of select="/shop/page/@meta_robots"/></iaixsl:attribute>
+						 <iaixsl:attribute name="content">NOINDEX,NOFOLLOW</iaixsl:attribute>
 					</meta>
 				</iaixsl:when>
 				<iaixsl:otherwise>
 					<meta name="robots">
-						<iaixsl:attribute name="content">INDEX,FOLLOW</iaixsl:attribute>
+						<iaixsl:attribute name="content">NOINDEX,NOFOLLOW</iaixsl:attribute>
 					</meta>
 				</iaixsl:otherwise>
 			</iaixsl:choose>
