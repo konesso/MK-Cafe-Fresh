@@ -2657,7 +2657,11 @@
                              (<iaixsl:if test="/shop/page/contact/shop_data/@province"><iaixsl:value-of select="/shop/page/contact/shop_data/@province"/><iaixsl:text>, </iaixsl:text></iaixsl:if><iaixsl:value-of select="/shop/page/contact/shop_data/@country"/>)
                         </span>
                     </iaixsl:if> 
-                    </p> 
+                    </p>
+					<p>
+					<strong>Punkt kontaktowy:</strong>
+					<span>Usługodawca wyznacza adres poczty elektronicznej sklep@konesso.pl jako pojedynczy punkt kontaktowy. Punkt kontaktowy umożliwia bezpośrednią komunikację Usługodawcy z organami państw członkowskich, Komisją Europejską i Radą Usług Cyfrowych oraz jednocześnie umożliwia odbiorcom usługi (w tym Usługobiorcom) bezpośrednią, szybką i przyjazną komunikację z Usługodawcą drogą elektroniczną, na potrzeby stosowania Aktu o Usługach Cyfrowych. Usługodawca wskazuje język polski oraz język angielski do celów komunikacji z jego punktem kontaktowym.</span>
+					</p> 
                 </div> 
             </div>
         </div>
