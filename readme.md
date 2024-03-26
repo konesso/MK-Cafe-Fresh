@@ -58,3 +58,24 @@ Allow from all
 aby zbudować projekt:
 nvm use 6
 gulp live
+
+function replaceURL() {
+var currentURL = window.location.href;
+var targetURL = 'https://pracownicy.mkfresh.pl/client-new.php?register';
+
+    if (currentURL === targetURL) {
+        let newURL = currentURL + '&wholesaler=true';
+        window.locaction.href = newURL;
+    }
+
+}
+
+app_shop.run(
+replaceURL(),
+'all',
+'.client-new_page',
+true,
+)
+
+pracownicy.mkfresh.pl/client-new.php?register&wholesaler=true
+tutaj jest inny kod: tzn baza ta sama ale noindex i dodany element do href z powyższego kodu
