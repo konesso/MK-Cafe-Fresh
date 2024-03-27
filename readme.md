@@ -79,3 +79,8 @@ true,
 
 pracownicy.mkfresh.pl/client-new.php?register&wholesaler=true
 tutaj jest inny kod: tzn baza ta sama ale noindex i dodany element do href z powyższego kodu
+
+ <div id="signin-form_box_right" class="signin-form_box col-md-4 col-sm-5 col-12">
+                    <div class="signin-form_box_sub d-flex justify-content-center flex-column align-items-center">
+
+NA PRACOWNICY USUNĄĆ &WHOLESALER=TRUE

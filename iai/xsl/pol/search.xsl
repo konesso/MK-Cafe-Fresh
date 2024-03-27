@@ -165,18 +165,15 @@
 			<iaixsl:variable name="meta_variable_expires">never</iaixsl:variable>
 			<iaixsl:variable name="meta_variable_distribution">global</iaixsl:variable>
 			<iaixsl:variable name="meta_variable_rating">general</iaixsl:variable>
-			<iaixsl:choose>
-				<iaixsl:when test="/shop/page/@meta_robots">
-					<meta name="robots">
-						<iaixsl:attribute name="content"><iaixsl:value-of select="/shop/page/@meta_robots"/></iaixsl:attribute>
-					</meta>
-				</iaixsl:when>
-				<iaixsl:otherwise>
-					<meta name="robots">
-						<iaixsl:attribute name="content">INDEX,FOLLOW</iaixsl:attribute>
-					</meta>
-				</iaixsl:otherwise>
-			</iaixsl:choose>
+		<iaixsl:choose>
+    <iaixsl:when test="/shop/page/@meta_robots">
+        <meta name="robots" content="noindex, nofollow"/>
+    </iaixsl:when>
+    <iaixsl:otherwise>
+        <meta name="robots" content="noindex, nofollow"/>
+    </iaixsl:otherwise>
+</iaixsl:choose>
+
 			<iaixsl:if test="not($html5_layout)">
 				<iaixsl:if test="$meta_variable_expires">
 					<meta name="expires"><iaixsl:attribute name="content"><iaixsl:value-of select="$meta_variable_expires"/></iaixsl:attribute></meta>

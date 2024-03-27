@@ -150,18 +150,15 @@
 			<iaixsl:variable name="meta_variable_expires">never</iaixsl:variable>
 			<iaixsl:variable name="meta_variable_distribution">global</iaixsl:variable>
 			<iaixsl:variable name="meta_variable_rating">general</iaixsl:variable>
-			<iaixsl:choose>
-				<iaixsl:when test="/shop/page/@meta_robots">
-					<meta name="robots">
-						<iaixsl:attribute name="content"><iaixsl:value-of select="/shop/page/@meta_robots"/></iaixsl:attribute>
-					</meta>
-				</iaixsl:when>
-				<iaixsl:otherwise>
-					<meta name="robots">
-						<iaixsl:attribute name="content">INDEX,FOLLOW</iaixsl:attribute>
-					</meta>
-				</iaixsl:otherwise>
-			</iaixsl:choose>
+		<iaixsl:choose>
+    <iaixsl:when test="/shop/page/@meta_robots">
+        <meta name="robots" content="noindex, nofollow"/>
+    </iaixsl:when>
+    <iaixsl:otherwise>
+        <meta name="robots" content="noindex, nofollow"/>
+    </iaixsl:otherwise>
+</iaixsl:choose>
+
 			<iaixsl:if test="not($html5_layout)">
 				<iaixsl:if test="$meta_variable_expires">
 					<meta name="expires"><iaixsl:attribute name="content"><iaixsl:value-of select="$meta_variable_expires"/></iaixsl:attribute></meta>
@@ -3805,17 +3802,7 @@
                 </h2>
 
 
-				<div class="badge-important p-5 mb-2 text-center">
-					<p>
-						Od dnia 2 stycznia 2024 r. zmienia się podmiot obsługujący sklep.
-						W związku ze zmianą, podczas składania pierwszego zamówienia w tym roku na stronie mkfresh.pl, będą Państwo proszeni o ponowne założenie konta. Za utrudnienia serdecznie przepraszamy.<br/><br/>
-
-						Jednocześnie chcąc zrekompensować Państwu niedogodności z tym związane, otrzymają Państwo
-						rabat w wysokości 25% na pierwsze zamówienie po wpisaniu kodu rabatowego: powitalny25<br/><br/>
-
-						Rabat obowiązuje na wszystkie kawy MK Cafe Fresh niebędące w promocji.
-					</p>
-				</div>
+				
 
 
                 <iaixsl:choose>
@@ -4144,8 +4131,8 @@
             </div>
 
             <iaixsl:if test="not(/shop/client_data/@signin = 'cookie')">
-                <div id="signin-form_box_right" class="signin-form_box col-md-4 col-sm-5 col-12">
-                    <div class="signin-form_box_sub">
+               <div id="signin-form_box_right" class="signin-form_box col-md-4 col-sm-5 col-12">
+                    <div class="signin-form_box_sub d-flex justify-content-center flex-column align-items-center">
                         <iaixsl:choose>
                             <iaixsl:when test="page/actions/client_once">
                                 <h2 class="big_label">
