@@ -2875,6 +2875,636 @@
 			</form>
 		</section>
 	</iaixsl:if>
+	<section id="Filters2" style="position: absolute; width: 0; height: 0; overflow: hidden;" class="filters mb-4">
+			<form class="filters__form" method="get">
+				<iaixsl:attribute name="action"><iaixsl:value-of select="/shop/page/products/navigation/search_link/@value"/></iaixsl:attribute>
+
+				
+				<iaixsl:for-each select="/shop/page/products/navigation/filtering/filter[not(@id = 'filter_nextday' or @id = 'filter_sameday')]">
+					<iaixsl:variable name="firstDual"><iaixsl:value-of select="/shop/page/products/navigation/filtering/filter[@type = 'dual'][not(@id = 'filter_nextday' or @id = 'filter_sameday')][1]/@id"/></iaixsl:variable>
+
+					<iaixsl:if test="(@type = 'dual' and @id = $firstDual) or not(@type = 'dual')">
+						
+						<iaixsl:variable name="id"><iaixsl:choose><iaixsl:when test="@type = 'dual'">filter_dual</iaixsl:when><iaixsl:otherwise><iaixsl:value-of select="translate (@id, '[]', '')"/></iaixsl:otherwise></iaixsl:choose></iaixsl:variable>
+
+						<div class="filters__block mb-1">
+							
+							<iaixsl:if test="not(@type = 'text') and not(@type = 'dual')">
+								<input type="hidden" class="__serialize">
+									<iaixsl:attribute name="id"><iaixsl:value-of select="$id"/>_input</iaixsl:attribute>
+									<iaixsl:attribute name="name"><iaixsl:value-of select="@id"/></iaixsl:attribute>
+									<iaixsl:attribute name="value"><iaixsl:for-each select="item[@selected]"><iaixsl:value-of select="@value"/><iaixsl:if test="not(position() = last())">,</iaixsl:if></iaixsl:for-each><iaixsl:for-each select="group"><iaixsl:for-each select="item[@selected]"><iaixsl:value-of select="@value"/><iaixsl:if test="not(position() = last())">,</iaixsl:if></iaixsl:for-each><iaixsl:if test="not(position() = last())">,</iaixsl:if></iaixsl:for-each></iaixsl:attribute>
+									<iaixsl:if test="$id = 'filter_price' and (@selected and not(@selected) = '')">
+										<iaixsl:attribute name="value"><iaixsl:value-of select="@selected"/></iaixsl:attribute>
+									</iaixsl:if>
+								</input>
+							</iaixsl:if>
+
+							
+							<a class="filters__toggler">
+								<iaixsl:attribute name="data-id"><iaixsl:value-of select="$id"/></iaixsl:attribute>
+
+								<iaixsl:attribute name="class">filters__toggler
+									<iaixsl:choose>
+										<iaixsl:when test="@type = 'dual' and /shop/page/products/navigation/filtering/filter[@type = 'dual'][not(@id = 'filter_nextday' or @id = 'filter_sameday')]/@selected">
+											 --selected
+										</iaixsl:when>
+										<iaixsl:when test="@selected">
+											 --selected
+										</iaixsl:when>
+									</iaixsl:choose>
+										<iaixsl:if test="@selected"/>
+								</iaixsl:attribute>
+
+								
+								<div class="btn --icon-right d-block pr-4">
+									<iaixsl:choose>
+										<iaixsl:when test="@type = 'dual'">
+											<span>Pokaż tylko</span>
+										</iaixsl:when>
+										<iaixsl:otherwise>
+											<span><iaixsl:value-of select="@name"/></span>
+										</iaixsl:otherwise>
+									</iaixsl:choose>
+								</div>
+							</a>
+
+							
+							<div class="filters__expand">
+								<iaixsl:attribute name="id"><iaixsl:value-of select="$id"/>_expand</iaixsl:attribute>
+
+								<iaixsl:choose>
+									
+									<iaixsl:when test="@type = 'text'">
+										<div class="filters__content --search">
+											<div class="f-group mb-0">
+												<input type="text" class="f-control --search_by_text __serialize">
+													<iaixsl:attribute name="id"><iaixsl:value-of select="$id"/>_input</iaixsl:attribute>
+													<iaixsl:attribute name="name"><iaixsl:value-of select="$id"/></iaixsl:attribute>
+
+													<iaixsl:if test="(@selected) and not (@selected = '')">
+														<iaixsl:attribute name="value"><iaixsl:value-of select="@selected"/></iaixsl:attribute>
+													</iaixsl:if>
+
+													<iaixsl:attribute name="placeholder">Wpisz czego szukasz</iaixsl:attribute>
+												</input>
+												<button type="submit" class="btn --secondary">
+													<i class="icon-search"/>
+												</button>
+											</div>
+										</div>
+									</iaixsl:when>
+
+									
+									<iaixsl:when test="@display = 'gfx' or @display = 'name_gfx'">
+										<ul class="filters__content d-flex">
+											<iaixsl:attribute name="id"><iaixsl:value-of select="$id"/>_content</iaixsl:attribute>
+											<iaixsl:attribute name="class">filters__content
+												<iaixsl:if test="@display = 'gfx'"> --gfx d-flex flex-wrap</iaixsl:if>
+												<iaixsl:if test="@display = 'name_gfx'"> --gfx-name</iaixsl:if>
+											</iaixsl:attribute>
+
+											<iaixsl:for-each select="item">
+												<iaixsl:sort select="@selected" order="descending"/>
+
+												<li class="filters__item">
+													<iaixsl:attribute name="class">filters__item 
+														<iaixsl:if test="position() = $showAll and ../@display = 'name_gfx'"> --last-not-hidden</iaixsl:if>
+														<iaixsl:if test="position() &gt; $showAll and ../@display = 'name_gfx'"> --hidden</iaixsl:if>
+													</iaixsl:attribute>
+													<div class="f-group --small --checkbox mb-0">
+														<input type="checkbox" class="f-control">
+															<iaixsl:attribute name="id"><iaixsl:value-of select="$id"/>_<iaixsl:value-of select="@value"/></iaixsl:attribute>
+															<iaixsl:attribute name="data-id"><iaixsl:value-of select="$id"/></iaixsl:attribute>
+
+															<iaixsl:attribute name="value"><iaixsl:value-of select="@value"/></iaixsl:attribute>
+
+															<iaixsl:if test="@selected='selected'">
+																<iaixsl:attribute name="checked">checked</iaixsl:attribute>
+															</iaixsl:if>
+
+															<iaixsl:if test="@quantity = '0'">
+																<iaixsl:attribute name="disabled">disabled</iaixsl:attribute>
+															</iaixsl:if>
+														</input>
+
+														<label class="f-label">
+															<iaixsl:attribute name="for"><iaixsl:value-of select="$id"/>_<iaixsl:value-of select="@value"/></iaixsl:attribute>
+
+															
+															<span class="--name">
+																<iaixsl:if test="@gfx_normal">
+																	<img class="--img">
+																		<iaixsl:attribute name="src"><iaixsl:value-of select="@gfx_normal"/></iaixsl:attribute>
+																		<iaixsl:attribute name="alt"><iaixsl:value-of select="@name"/></iaixsl:attribute>
+																		<iaixsl:attribute name="title"><iaixsl:value-of select="@name"/></iaixsl:attribute>
+																	</img>
+																</iaixsl:if>
+																<iaixsl:if test="../@display = 'name_gfx'">
+																	<span><iaixsl:value-of select="@name"/></span>
+																</iaixsl:if>
+															</span>
+
+															
+															<span class="--quantity">
+																<iaixsl:if test="not(@quantity)">
+																	<iaixsl:attribute name="class">--quantity d-none</iaixsl:attribute>
+																</iaixsl:if>
+																<iaixsl:choose>
+																	<iaixsl:when test="@quantity">
+																		<iaixsl:value-of select="@quantity"/>
+																	</iaixsl:when>
+																	<iaixsl:otherwise>0</iaixsl:otherwise>
+																</iaixsl:choose>
+															</span>
+														</label>
+													</div>
+												</li>
+
+											</iaixsl:for-each>
+										</ul>
+										
+										<div class="filters__options">
+											
+											<button type="submit" class="--submit d-none btn py-0 pl-0 pr-3">
+												Zastosuj
+											</button>
+
+											
+											<iaixsl:if test="count(item) &gt; $showAll and @display = 'name_gfx'">
+												<a class="--show-hidden btn py-0 pl-3 pr-0">
+													<iaixsl:attribute name="data-id"><iaixsl:value-of select="$id"/></iaixsl:attribute>
+
+													<span class="--show">+ Rozwiń</span>
+													<span class="--hide">- Ukryj</span>
+												</a>
+											</iaixsl:if>
+										</div>
+									</iaixsl:when>
+
+									
+									<iaixsl:when test="(@id = 'filter_price' or @id = 'filter_pricenet') and not($showPriceRange = '')">
+										<div class="filters__content --range">
+													<iaixsl:if test="/shop/page/products/navigation/filtering/filter[(@id = 'filter_price')]/@selected">
+															<input type="hidden" id="min_price_set"><iaixsl:attribute name="value"><iaixsl:value-of select="substring-before(/shop/page/products/navigation/filtering/filter[(@id = 'filter_price')]/@selected,'-')"/></iaixsl:attribute></input>
+															<input type="hidden" id="max_price_set"><iaixsl:attribute name="value"><iaixsl:value-of select="substring-after(/shop/page/products/navigation/filtering/filter[(@id = 'filter_price')]/@selected,'-')"/></iaixsl:attribute></input>
+													</iaixsl:if>
+													<input type="hidden" id="min_price_start"><iaixsl:attribute name="value">0</iaixsl:attribute></input>
+													<input type="hidden" id="max_price_start"><iaixsl:attribute name="value"><iaixsl:value-of select="substring-before(substring-after(/shop/page/products/navigation/filtering/filter[@id = 'filter_price']/item[position() = last()]/@name,'- '), '.')"/></iaixsl:attribute></input>
+
+													<div class="filters__price-slider"><div class="--price"/></div>
+													<div class="filters__price">
+															<div class="filters__range d-flex justify-content-between align-items-center">
+																	<label for="PriceRangeFrom" class="--from">
+																			<input id="PriceRangeFrom" type="text" class="--input-from">
+																					<iaixsl:choose>
+																							<iaixsl:when test="not(item[@selected = 'selected']) and (@selected and not(@selected = ''))">
+																									<iaixsl:attribute name="value"><iaixsl:value-of select="substring-before(@selected, '-')"/></iaixsl:attribute>
+																							</iaixsl:when>
+																							<iaixsl:otherwise>
+																									<iaixsl:attribute name="value">0</iaixsl:attribute>
+																							</iaixsl:otherwise>
+																					</iaixsl:choose>
+																			</input>
+																			<span class="--currency"><iaixsl:value-of select="/shop/currency/option[@selected = 'true']/@symbol"/></span>
+																	</label>
+																	<span class="--gap">
+																			-
+																	</span>
+																	<label for="PriceRangeTo" class="--to">
+																			<input id="PriceRangeTo" type="text" class="--input-to">
+																					<iaixsl:choose>
+																							<iaixsl:when test="not(item[@selected = 'selected']) and (@selected and not(@selected = ''))">
+																									<iaixsl:attribute name="value"><iaixsl:value-of select="substring-after(@selected, '-')"/></iaixsl:attribute>
+																							</iaixsl:when>
+																							<iaixsl:otherwise>
+																									<iaixsl:attribute name="value"><iaixsl:value-of select="substring-before(substring-after(/shop/page/products/navigation/filtering/filter[@id = 'filter_price']/item[position() = last()]/@name,'- '), '.')"/></iaixsl:attribute>
+																							</iaixsl:otherwise>
+																					</iaixsl:choose>
+																			</input>
+																			<span class="--currency"><iaixsl:value-of select="/shop/currency/option[@selected = 'true']/@symbol"/></span>
+																	</label>
+															</div>
+															<div class="filters_options">
+																	<button type="submit" class="btn p-md-0 mt-md-2">
+																			Zastosuj zakres cen
+																	</button>
+															</div>
+													</div>
+										</div>
+									</iaixsl:when>
+
+									
+									<iaixsl:when test="@id = 'filter_date'">
+										<ul class="filters__content --date">
+											<iaixsl:for-each select="item[@desc = '1week' or @desc = '1month' or @desc = '3months' or @desc = '6months' or @desc = '1year']">
+												<li class="filters__item mb-2">
+													<div class="f-group --small --checkbox mb-0">
+														<input type="checkbox" class="f-control">
+															<iaixsl:attribute name="id"><iaixsl:value-of select="$id"/>_<iaixsl:value-of select="@value"/></iaixsl:attribute>
+															<iaixsl:attribute name="data-id"><iaixsl:value-of select="$id"/></iaixsl:attribute>
+
+															<iaixsl:attribute name="value"><iaixsl:value-of select="@value"/></iaixsl:attribute>
+
+															<iaixsl:if test="@selected='selected'">
+																<iaixsl:attribute name="checked">checked</iaixsl:attribute>
+															</iaixsl:if>
+
+															<iaixsl:if test="@quantity = '0'">
+																<iaixsl:attribute name="disabled">disabled</iaixsl:attribute>
+															</iaixsl:if>
+														</input>
+														<label class="f-label">
+															<iaixsl:attribute name="for"><iaixsl:value-of select="$id"/>_<iaixsl:value-of select="@value"/></iaixsl:attribute>
+
+															
+															<span class="--name">
+																<iaixsl:choose>
+																	<iaixsl:when test="@desc = '1week'">Ostatni tydzień</iaixsl:when>
+																	<iaixsl:when test="@desc = '1month'">Ostatni miesiąc</iaixsl:when>
+																	<iaixsl:when test="@desc = '3months'">Ostatnie 3 miesiące</iaixsl:when>
+																	<iaixsl:when test="@desc = '6months'">Ostatnie pół roku</iaixsl:when>
+																	<iaixsl:when test="@desc = '1year'">Ostatni rok</iaixsl:when>
+																</iaixsl:choose>
+															</span>
+
+															
+															<span class="--quantity">
+																<iaixsl:if test="not(@quantity)">
+																	<iaixsl:attribute name="class">--quantity d-none</iaixsl:attribute>
+																</iaixsl:if>
+																<iaixsl:choose>
+																	<iaixsl:when test="@quantity">
+																		<iaixsl:value-of select="@quantity"/>
+																	</iaixsl:when>
+																	<iaixsl:otherwise>0</iaixsl:otherwise>
+																</iaixsl:choose>
+															</span>
+														</label>
+													</div>
+												</li>
+											</iaixsl:for-each>
+										</ul>
+										
+										<div class="filters__options">
+											
+											<button type="submit" class="--submit d-none btn py-0 pl-0 pr-3">
+												Zastosuj
+											</button>
+										</div>
+									</iaixsl:when>
+
+									
+									<iaixsl:otherwise>
+										<iaixsl:choose>
+											
+											<iaixsl:when test="group">
+												<ul class="filters__content --group">
+													<iaixsl:for-each select="group">
+														<li class="filters__item mb-1">
+															<iaixsl:if test="not(@id = -1)">
+																<a class="filters__toggler">
+																	<div class="btn d-block">
+																		<span>
+																			<iaixsl:choose>
+																				<iaixsl:when test="@title and not(@title = '')">
+																					<iaixsl:value-of select="@title"/>
+																				</iaixsl:when>
+																				<iaixsl:otherwise>
+																					Pozostałe
+																				</iaixsl:otherwise>
+																			</iaixsl:choose>
+																		</span>
+																	</div>
+																</a>
+															</iaixsl:if>
+															<ul class="filters__content --list">
+																<iaixsl:attribute name="id"><iaixsl:value-of select="$id"/><iaixsl:value-of select="position()"/>_content</iaixsl:attribute>
+
+																<iaixsl:for-each select="item">
+																	<iaixsl:sort select="@selected" order="descending"/>
+
+																	<li class="filters__item mb-2">
+																		<iaixsl:attribute name="class">filters__item mb-2
+																			<iaixsl:if test="position() = $showAll"> --last-not-hidden</iaixsl:if>
+																			<iaixsl:if test="position() &gt; $showAll"> --hidden</iaixsl:if>
+																		</iaixsl:attribute>
+
+																		<div class="f-group --small --checkbox mb-0">
+																			<input type="checkbox" class="f-control">
+																				<iaixsl:attribute name="id"><iaixsl:value-of select="$id"/>_<iaixsl:value-of select="@value"/></iaixsl:attribute>
+																				<iaixsl:attribute name="data-id"><iaixsl:value-of select="$id"/></iaixsl:attribute>
+
+																				<iaixsl:attribute name="value"><iaixsl:value-of select="@value"/></iaixsl:attribute>
+
+																				<iaixsl:if test="@selected='selected'">
+																					<iaixsl:attribute name="checked">checked</iaixsl:attribute>
+																				</iaixsl:if>
+
+																				<iaixsl:if test="@quantity = '0'">
+																					<iaixsl:attribute name="disabled">disabled</iaixsl:attribute>
+																				</iaixsl:if>
+																			</input>
+
+																			<label class="f-label">
+																				<iaixsl:attribute name="for"><iaixsl:value-of select="$id"/>_<iaixsl:value-of select="@value"/></iaixsl:attribute>
+
+																				
+																				<span class="--name">
+																					<iaixsl:value-of select="@name"/>
+																				</span>
+
+																				
+																				<span class="--quantity">
+																					<iaixsl:if test="not(@quantity)">
+																						<iaixsl:attribute name="class">--quantity d-none</iaixsl:attribute>
+																					</iaixsl:if>
+																					<iaixsl:choose>
+																						<iaixsl:when test="@quantity">
+																							<iaixsl:value-of select="@quantity"/>
+																						</iaixsl:when>
+																						<iaixsl:otherwise>0</iaixsl:otherwise>
+																					</iaixsl:choose>
+																				</span>
+																			</label>
+																		</div>
+																	</li>
+																</iaixsl:for-each>
+															</ul>
+															
+															<div class="filters__options">
+																
+																<button type="submit" class="--submit d-none btn py-0 pl-0 pr-3">
+																	Zastosuj
+																</button>
+
+																
+																<iaixsl:if test="count(item) &gt; $showAll">
+																	<a class="--show-hidden btn py-0 pl-3 pr-0">
+																		<iaixsl:attribute name="data-id"><iaixsl:value-of select="$id"/><iaixsl:value-of select="position()"/></iaixsl:attribute>
+
+																		<span class="--show">+ Rozwiń</span>
+																		<span class="--hide">- Ukryj</span>
+																	</a>
+																</iaixsl:if>
+															</div>
+														</li>
+													</iaixsl:for-each>
+												</ul>
+											</iaixsl:when>
+
+											
+											<iaixsl:otherwise>
+												<ul class="filters__content --list">
+													<iaixsl:attribute name="id"><iaixsl:value-of select="$id"/>_content</iaixsl:attribute>
+
+													<iaixsl:choose>
+														<iaixsl:when test="@type = 'dual'">
+															<iaixsl:for-each select="/shop/page/products/navigation/filtering/filter[@type = 'dual'][not(@id = 'filter_nextday' or @id = 'filter_sameday')]">
+																
+																<iaixsl:variable name="id_dual"><iaixsl:value-of select="translate (@id, '[]', '')"/></iaixsl:variable>
+
+																<iaixsl:for-each select="item[@value = 'y']">
+																	<li class="filters__item mb-2">
+																		<div class="f-group --small --checkbox mb-0">
+																			<input type="checkbox" class="f-control __serialize">
+																				<iaixsl:attribute name="id"><iaixsl:value-of select="$id_dual"/>_<iaixsl:value-of select="@value"/></iaixsl:attribute>
+																				<iaixsl:attribute name="value"><iaixsl:value-of select="@value"/></iaixsl:attribute>
+																				<iaixsl:attribute name="name"><iaixsl:value-of select="$id_dual"/></iaixsl:attribute>
+
+																				<iaixsl:if test="@selected='selected'">
+																					<iaixsl:attribute name="checked">checked</iaixsl:attribute>
+																				</iaixsl:if>
+
+																				<iaixsl:if test="@quantity = '0'">
+																					<iaixsl:attribute name="disabled">disabled</iaixsl:attribute>
+																				</iaixsl:if>
+																			</input>
+																			<label class="f-label">
+																				<iaixsl:attribute name="for"><iaixsl:value-of select="$id_dual"/>_<iaixsl:value-of select="@value"/></iaixsl:attribute>
+
+																				
+																				<span class="--name">
+																					<iaixsl:value-of select="../@name"/>
+																				</span>
+
+																				
+																				<span class="--quantity">
+																					<iaixsl:if test="not(@quantity)">
+																						<iaixsl:attribute name="class">--quantity d-none</iaixsl:attribute>
+																					</iaixsl:if>
+																					<iaixsl:choose>
+																						<iaixsl:when test="@quantity">
+																							<iaixsl:value-of select="@quantity"/>
+																						</iaixsl:when>
+																						<iaixsl:otherwise>0</iaixsl:otherwise>
+																					</iaixsl:choose>
+																				</span>
+																			</label>
+																		</div>
+																	</li>
+																</iaixsl:for-each>
+															</iaixsl:for-each>
+														</iaixsl:when>
+														<iaixsl:otherwise>
+															<iaixsl:for-each select="item">
+																<iaixsl:sort select="@selected" order="descending"/>
+
+																<li class="filters__item mb-2">
+																	<iaixsl:attribute name="class">filters__item mb-2
+																		<iaixsl:if test="position() = $showAll"> --last-not-hidden</iaixsl:if>
+																		<iaixsl:if test="position() &gt; $showAll"> --hidden</iaixsl:if>
+																	</iaixsl:attribute>
+
+																	<div class="f-group --small --checkbox mb-0">
+																		<input type="checkbox" class="f-control">
+																			<iaixsl:attribute name="id"><iaixsl:value-of select="$id"/>_<iaixsl:value-of select="@value"/></iaixsl:attribute>
+																			<iaixsl:attribute name="data-id"><iaixsl:value-of select="$id"/></iaixsl:attribute>
+
+																			<iaixsl:attribute name="value"><iaixsl:value-of select="@value"/></iaixsl:attribute>
+
+																			<iaixsl:if test="@selected='selected'">
+																				<iaixsl:attribute name="checked">checked</iaixsl:attribute>
+																			</iaixsl:if>
+
+																			<iaixsl:if test="@quantity = '0'">
+																				<iaixsl:attribute name="disabled">disabled</iaixsl:attribute>
+																			</iaixsl:if>
+																		</input>
+
+																		<label class="f-label">
+																			<iaixsl:attribute name="for"><iaixsl:value-of select="$id"/>_<iaixsl:value-of select="@value"/></iaixsl:attribute>
+
+																			
+																			<span class="--name">
+																				<iaixsl:value-of select="@name"/>
+																			</span>
+
+																			
+																			<span class="--quantity">
+																				<iaixsl:if test="not(@quantity)">
+																					<iaixsl:attribute name="class">--quantity d-none</iaixsl:attribute>
+																				</iaixsl:if>
+																				<iaixsl:choose>
+																					<iaixsl:when test="@quantity">
+																						<iaixsl:value-of select="@quantity"/>
+																					</iaixsl:when>
+																					<iaixsl:otherwise>0</iaixsl:otherwise>
+																				</iaixsl:choose>
+																			</span>
+																		</label>
+																	</div>
+																</li>
+															</iaixsl:for-each>
+														</iaixsl:otherwise>
+													</iaixsl:choose>
+												</ul>
+
+												
+												<div class="filters__options">
+													
+													<button type="submit" class="--submit d-none btn py-0 pl-0 pr-3">
+														Zastosuj
+													</button>
+
+													
+													<iaixsl:if test="count(item) &gt; $showAll">
+														<a class="--show-hidden btn py-0 pl-3 pr-0">
+															<iaixsl:attribute name="data-id"><iaixsl:value-of select="$id"/></iaixsl:attribute>
+
+															<span class="--show">+ Rozwiń</span>
+															<span class="--hide">- Ukryj</span>
+														</a>
+													</iaixsl:if>
+												</div>
+											</iaixsl:otherwise>
+										</iaixsl:choose>
+									</iaixsl:otherwise>
+								</iaixsl:choose>
+							</div>
+						</div>
+					</iaixsl:if>
+				</iaixsl:for-each>
+
+				
+				<iaixsl:if test="/shop/page/products/navigation/filtering/filter[@type='dual'] and ($samedayCouriersAvail = 'true' and $samedayClientLocal = 'false') or ($samedayCouriersAvail = 'true' and $samedayClientLocal = 'true' and $samedayServiceAvail = 'true') or ($nextdayCouriersAvail = 'true' and $nextdayClientLocal = 'false') or ($nextdayCouriersAvail = 'true' and $nextdayClientLocal = 'true' and $nextdayServiceAvail = 'true')">
+					
+					<iaixsl:variable name="id">filter_xpress</iaixsl:variable>
+
+					<div class="filters__block mb-1">
+						<a class="filters__toggler">
+							<iaixsl:attribute name="data-id"><iaixsl:value-of select="$id"/></iaixsl:attribute>
+
+							<iaixsl:attribute name="class">filters__toggler
+								<iaixsl:if test="@selected"> --selected</iaixsl:if>
+							</iaixsl:attribute>
+
+							
+							<div class="btn --icon-right d-block pr-4">
+								<span>Ekspresowa dostawa</span>
+							</div>
+						</a>
+
+						
+						<div class="filters__expand">
+							<iaixsl:attribute name="id"><iaixsl:value-of select="$id"/>_expand</iaixsl:attribute>
+
+							<ul class="filters__content --dual">
+								
+								<iaixsl:if test="($nextdayCouriersAvail = 'true' and $nextdayClientLocal = 'false') or ($nextdayCouriersAvail = 'true' and $nextdayClientLocal = 'true' and $nextdayServiceAvail = 'true')">
+									<li class="filters__item mb-2">
+										<div class="f-group --small --checkbox mb-0">
+											<input name="filter_nextday" type="checkbox" class="f-control __serialize">
+												<iaixsl:attribute name="id">filter_nextday_form</iaixsl:attribute>
+												<iaixsl:attribute name="value">y</iaixsl:attribute>
+												<iaixsl:attribute name="name">filter_nextday</iaixsl:attribute>
+
+												<iaixsl:attribute name="data-xpress">true</iaixsl:attribute>
+												<iaixsl:attribute name="data-localized"><iaixsl:value-of select="$nextdayClientLocal"/></iaixsl:attribute>
+												<iaixsl:attribute name="data-available"><iaixsl:value-of select="$nextdayCouriersAvail"/></iaixsl:attribute>
+
+												<iaixsl:if test="/shop/page/products/navigation/filtering/filter[@id = 'filter_nextday']/@selected">
+													<iaixsl:attribute name="checked">checked</iaixsl:attribute>
+												</iaixsl:if>
+											</input>
+
+											<label for="filter_nextday_form" class="f-label">
+												
+												<span class="--name">
+													Następnego dnia <strong>24h</strong>
+												</span>
+											</label>
+										</div>
+									</li>
+								</iaixsl:if>
+
+								
+								<iaixsl:if test="($samedayCouriersAvail = 'true' and $samedayClientLocal = 'false') or ($samedayCouriersAvail = 'true' and $samedayClientLocal = 'true' and $samedayServiceAvail = 'true')">
+									<li class="filters__item mb-2">
+										<div class="f-group --small --checkbox mb-0">
+											<input name="filter_sameday" type="checkbox" class="f-control __serialize">
+												<iaixsl:attribute name="id">filter_sameday_form</iaixsl:attribute>
+												<iaixsl:attribute name="value">y</iaixsl:attribute>
+												<iaixsl:attribute name="name">filter_sameday</iaixsl:attribute>
+
+												<iaixsl:attribute name="data-xpress">true</iaixsl:attribute>
+												<iaixsl:attribute name="data-localized"><iaixsl:value-of select="$samedayClientLocal"/></iaixsl:attribute>
+												<iaixsl:attribute name="data-available"><iaixsl:value-of select="$samedayCouriersAvail"/></iaixsl:attribute>
+
+												<iaixsl:if test="/shop/page/products/navigation/filtering/filter[@id = 'filter_sameday']/@selected">
+													<iaixsl:attribute name="checked">checked</iaixsl:attribute>
+												</iaixsl:if>
+											</input>
+
+											<label for="filter_sameday_form" class="f-label">
+												
+												<span class="--name">
+													Tego samego dnia <i class="icon-clock"/>
+												</span>
+											</label>
+										</div>
+									</li>
+								</iaixsl:if>
+							</ul>
+							
+							<div class="filters__options">
+								
+								<button type="submit" class="--submit d-none btn py-0 pl-0 pr-3">
+									Zastosuj
+								</button>
+							</div>
+						</div>
+					</div>
+
+					
+					<script src="//maps.googleapis.com/maps/api/js?sensor=false"/>
+				</iaixsl:if>
+
+				
+				<div class="f-group filters__buttons mt-3 row">
+					
+					
+						<button type="submit" class="btn --large --solid d-block">
+							<iaixsl:attribute name="title">Kliknij aby zastosować wybrane filtry</iaixsl:attribute>
+							Zastosuj wybrane filtry
+						</button>
+					
+
+					
+					
+						<iaixsl:if test="(/shop/page/products/navigation/filtering/filter/item/@selected='selected') or count(/shop/page/products/navigation/filtering/filter/@selected)">
+							<a class="btn d-block" href="/settings.php?filter_remove=all">
+								<iaixsl:if test="/shop/page/products/navigation/search_link/@value">
+									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/page/products/navigation/search_link/@value "/></iaixsl:attribute>
+								</iaixsl:if>
+								<iaixsl:attribute name="title">Kliknij aby wyczyścić listę aktywnych filtrów</iaixsl:attribute>
+								Usuń wszystkie filtry
+							</a>
+						</iaixsl:if>
+				
+				</div>
+			</form>
+		</section>
 	<iaixsl:if test="/shop/page/products/navigation/filtering/filter/@mode"> </iaixsl:if>
 	<iaixsl:if test="/shop/page/products/navigation/filtering/filter/@id='filter_instock'"> </iaixsl:if>
 <!-- (menu_buttons3, 60dd8e7e6e3ca3.91526215.5)-->
