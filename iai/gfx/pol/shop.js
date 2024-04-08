@@ -22104,3 +22104,20 @@ app_shop.run(
     true,
 )
 
+function showAllFiltersOptions() {
+    $('.filters__options .--show-hidden').on('click', function () {
+        const contentId = $(this).data('id') + '_content';
+        return $(`#${contentId}`).toggleClass('--shown'),
+            $(this).toggleClass('--shown');
+    });
+}
+
+
+app_shop.run(
+    function () {
+        showAllFiltersOptions();
+    },
+    'all',
+    '#search'
+)
+

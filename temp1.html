@@ -1,19 +1,30 @@
-<div id="projector_dictionary">
-    <div class="dictionary__group --first --no-group">
-        <div class="dictionary__param mb-4" data-duplicate="true">
-            <div class="dictionary__name mr-1"><span class="dictionary__name_txt">Opakowanie</span></div>
-            <div class="dictionary__values">
-                <div class="dictionary__value"><span class="dictionary__value_txt">1000g</span></div>
-            </div>
-        </div>
-    </div>
-</div>
+<iaixsl:for-each select="/shop/page/products/navigation/filtering/filter[(@type='list') or (@type='text')]">
+    <iaixsl:if test="(@selected != '') or count(item/@selected) &gt; 0">
+        <iaixsl:choose>
 
-// dodać datę palenia i datę ważności z https://public.konesso.pl/?json=true&module=productInfo&id=15
-// tutaj append ceny przeliczeniowej za gram "projector_prices_wrapper" to dodać <div class="projector_prices__info">
-    // z tego pobrać cenę #projector_price_value
-    waga: <div class="traits__item mb-4 d-flex" data-hide="false"><span
-            class="traits__label mr-1">Opakowanie</span><span class="traits__values"><a class="traits__value"
-                href="/tra-pol-1335603658-1000g.html">1000g</a></span></div>
+            <iaixsl:when test="(@id = 'filter_price') and (@selected) and not(@selected = '')">
+                ....
+            </iaixsl:when>
 
-    // endpoint https://public.konesso.pl/?json=true&module=productInfo&id=15
+            <iaixsl:when test="(@id = 'filter_date') and (@selected) and not(@selected = '')">
+                ....
+            </iaixsl:when>
+            <iaixsl:when test="(@id = 'filter_text') and (@selected) and not(@selected = '')">
+                <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                    <iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove" /></iaixsl:attribute>
+                    <span><iaixsl:value-of select="@selected" /></span>
+
+                </a>
+            </iaixsl:when>
+            <iaixsl:otherwise>
+                <iaixsl:for-each select="item[@selected = 'selected']">
+                    <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                        <iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove" /></iaixsl:attribute>
+                        <span><iaixsl:value-of select="@name" /></span>
+                        <span><iaixsl:value-of select="tutaj name" /></span>
+                    </a>
+                </iaixsl:for-each>
+            </iaixsl:otherwise>
+        </iaixsl:choose>
+    </iaixsl:if>
+</iaixsl:for-each>
