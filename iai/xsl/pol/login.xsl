@@ -2851,58 +2851,10 @@
 					</div>
 				</iaixsl:if>
 
-				<iaixsl:if test="(/shop/page/actions/client_rebate_points/@url and not(/shop/page/actions/client_rebate_points/@url='')) or /shop/page/actions/products_points/@available='true' or (/shop/page/actions/points_cms/@url and not(/shop/page/actions/points_cms/@url=''))">
-					<div class="login_menu" id="points_login">
-						<div class="login_menu_sub">
-							<h3>
-								<iaixsl:choose><iaixsl:when test="$iconspoints"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconspoints"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="points" src="/gfx/standards/points.png?r=1696937716"/></iaixsl:otherwise></iaixsl:choose>
-								Program lojalnościowy
-							</h3>
-							<div><span>W tym miejscu możesz zapoznać się z zasadami korzystania z Programu Lojalnościowego sklepu a także w przypadku posiadania na koncie punktów możliwości ich wykorzystania.</span></div>
+				
 
-							<iaixsl:if test="/shop/basket/@client_points">
-								<span class="points_info">Obecnie posiadasz<strong><iaixsl:value-of select="/shop/basket/@client_points"/> pkt.</strong></span>
-							</iaixsl:if>
-
-							<iaixsl:if test="/shop/page/actions/points_cms/@url and not(/shop/page/actions/points_cms/@url='')">
-								<a class="btn --outline --extrasmall">
-									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/page/actions/points_cms/@url"/></iaixsl:attribute>
-									Jak zbierać punkty
-								</a>
-							</iaixsl:if>
-							<iaixsl:if test="/shop/page/actions/client_rebate_points and /shop/page/actions/client_rebate_points/@url and not(/shop/page/actions/client_rebate_points/@url='')">
-								<a class="btn --outline --extrasmall">
-									<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/page/actions/client_rebate_points/@url"/></iaixsl:attribute>
-									Wymień punkty na rabat
-								</a>
-							</iaixsl:if>
-							<iaixsl:if test="/shop/page/actions/products_points/@available='true'">
-								<a class="btn --outline --extrasmall" href="/search.php?forpoints=y">
-								<iaixsl:if test="/shop/action/search/@url">
-										<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/action/search/@url"/>?forpoints=y</iaixsl:attribute>
-								</iaixsl:if>
-								Produkty za punkty
-								</a>
-						</iaixsl:if>
-						</div>
-					</div>
-				</iaixsl:if>
-
-				<iaixsl:if test="/shop/page/affiliate and /shop/page/affiliate/@link">
-					<div class="login_menu" id="affiliate_login">
-						<div class="login_menu_sub">
-							<h3>
-								<iaixsl:choose><iaixsl:when test="$iconsaffiliate"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconsaffiliate"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="affiliate" src="/gfx/standards/affiliate.png?r=1696937716"/></iaixsl:otherwise></iaixsl:choose>
-								Program partnerski
-							</h3>
-							<div><span>Zarabiaj z nami! Korzystaj z systemu Programu Partnerskiego i polecaj nasz sklep innym. Możesz dzięki niemu wygenerować reklamy, które pozwolą zarobić Twojej stronie lub na kolejne zakupy.</span></div>
-							<a class="btn --outline --extrasmall">
-								<iaixsl:attribute name="href"><iaixsl:value-of select="/shop/page/affiliate/@link"/></iaixsl:attribute>
-								Sprawdź szczegóły
-							</a>
-						</div>
-					</div>
-				</iaixsl:if>
+				
+				
 
 				<iaixsl:if test="/shop/page/actions/associated_clients and /shop/page/actions/associated_clients/@url and $associated_clients">
 					<div class="login_menu" id="associated_clients">

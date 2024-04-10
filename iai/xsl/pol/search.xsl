@@ -3406,9 +3406,9 @@
             <iaixsl:if test="(count(/shop/page/products/navigation/filtering/filter/@selected) &gt; 0) or count(/shop/page/products/navigation/filtering/filter/item/@selected) &gt; 0">
                 <iaixsl:variable name="show_remove_button">true</iaixsl:variable>
                 <div id="filter_list">
-                    <div class="filter_list_content">
+                    <div class="filter_list_content d-flex" style="height: 50px">
                         <iaixsl:if test="$show_remove_button">
-                            <a class="remove_all_list_filters btn --solid --secondary mr-2 mr-sm-3" href="/settings.php?filter_remove=all">
+                            <a class="remove_all_list_filters btn --solid --secondary mr-2 mr-sm-3 d-flex justify-content-center align-items-center" href="/settings.php?filter_remove=all">
                                 <iaixsl:if test="/shop/page/products/navigation/search_link/@value">
                                     <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/page/products/navigation/search_link/@value "/></iaixsl:attribute>
                                 </iaixsl:if>
@@ -3482,33 +3482,33 @@
                                     </iaixsl:when>
                                     <iaixsl:otherwise>
                                         <iaixsl:for-each select="item[@selected = 'selected']">
-                                            <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
-                                                <iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove"/></iaixsl:attribute>
-                                                <iaixsl:attribute name="data-toggle">tooltip</iaixsl:attribute>
-                                                <iaixsl:attribute name="title"><iaixsl:value-of select="../@name"/></iaixsl:attribute>
-                                                <span>
-													<iaixsl:value-of select="@name"/>
-												</span>
-												<iaixsl:if test="string-length(@name) &lt; 4">
-                                                	<span>
-														<iaixsl:attribute name="style">opacity: 0.5; font-size: 1rem;</iaixsl:attribute>
-														(<iaixsl:value-of select="../@name"/>)
+                                            <div> 
+                                            	<a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3 text-left" >
+													<iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove"/></iaixsl:attribute>
+	                                                <iaixsl:attribute name="data-toggle">tooltip</iaixsl:attribute>
+	                                                <iaixsl:attribute name="title"><iaixsl:value-of select="../@name"/></iaixsl:attribute>
+													<!-- <iaixsl:if test="string-length(@name) &lt; 4"> -->
+													<p style="text-transform: uppercase; font-size: 1rem; opacity: 0.7;" >
+														<iaixsl:value-of select="../@name"/>
+													</p>
+													<span>
+														<iaixsl:value-of select="@name"/>
 													</span>
-												</iaixsl:if>
-                                            </a>
+	                                            </a>
+                                            </div>
                                         </iaixsl:for-each>
                                     </iaixsl:otherwise>
                                 </iaixsl:choose>
                             </iaixsl:if>
                         </iaixsl:for-each>
                         <iaixsl:for-each select="/shop/page/products/navigation/filtering/filter[@type='dual']/item[@selected = 'selected']">
-                            <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                            <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3 d-flex justify-content-center align-items-center">
                                 <iaixsl:attribute name="href"><iaixsl:value-of select="../@link_remove"/></iaixsl:attribute>
                                 <span><iaixsl:value-of select="../@name"/></span>
                             </a>
                         </iaixsl:for-each>
                         <iaixsl:for-each select="/shop/page/products/navigation/filtering/filter[@selected != '' or count(item/@selected) &gt; 0]/group/item[@selected = 'selected']">
-                            <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                            <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3 d-flex justify-content-center align-items-center" >
                                 <iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove"/></iaixsl:attribute>
                                 <span><iaixsl:value-of select="@name"/></span>
                             </a>
@@ -4402,10 +4402,10 @@
 			       <!-- (search_filters, 60dd8e79c0ea13.64200683.5)-->
             <iaixsl:if test="(count(/shop/page/products/navigation/filtering/filter/@selected) &gt; 0) or count(/shop/page/products/navigation/filtering/filter/item/@selected) &gt; 0">
                 <iaixsl:variable name="show_remove_button">true</iaixsl:variable>
-                <div id="filter_list">
-                    <div class="filter_list_content">
+                 <div id="filter_list">
+                    <div class="filter_list_content d-flex" style="height: 50px">
                         <iaixsl:if test="$show_remove_button">
-                            <a class="remove_all_list_filters btn --solid --secondary mr-2 mr-sm-3" href="/settings.php?filter_remove=all">
+                            <a class="remove_all_list_filters btn --solid --secondary mr-2 mr-sm-3 d-flex justify-content-center align-items-center" href="/settings.php?filter_remove=all">
                                 <iaixsl:if test="/shop/page/products/navigation/search_link/@value">
                                     <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/page/products/navigation/search_link/@value "/></iaixsl:attribute>
                                 </iaixsl:if>
@@ -4474,37 +4474,38 @@
                                         <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
                                             <iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove"/></iaixsl:attribute>
                                             <span><iaixsl:value-of select="@selected"/></span>
+                                  
                                         </a>
                                     </iaixsl:when>
-                                        <iaixsl:otherwise>
-											<iaixsl:for-each select="item[@selected = 'selected']">
-												<a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                                    <iaixsl:otherwise>
+                                        <iaixsl:for-each select="item[@selected = 'selected']">
+                                            <div> 
+                                            	<a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3 text-left" >
 													<iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove"/></iaixsl:attribute>
-													<iaixsl:attribute name="data-toggle">tooltip</iaixsl:attribute>
-													<iaixsl:attribute name="title"><iaixsl:value-of select="../@name"/></iaixsl:attribute>
+	                                                <iaixsl:attribute name="data-toggle">tooltip</iaixsl:attribute>
+	                                                <iaixsl:attribute name="title"><iaixsl:value-of select="../@name"/></iaixsl:attribute>
+													<!-- <iaixsl:if test="string-length(@name) &lt; 4"> -->
+													<p style="text-transform: uppercase; font-size: 1rem; opacity: 0.7;" >
+														<iaixsl:value-of select="../@name"/>
+													</p>
 													<span>
 														<iaixsl:value-of select="@name"/>
 													</span>
-													<iaixsl:if test="string-length(@name) &lt; 4">
-														<span>
-															<iaixsl:attribute name="style">opacity: 0.5; font-size: 1rem;</iaixsl:attribute>
-															(<iaixsl:value-of select="../@name"/>)
-														</span>
-													</iaixsl:if>
-												</a>
-											</iaixsl:for-each>
+	                                            </a>
+                                            </div>
+                                        </iaixsl:for-each>
                                     </iaixsl:otherwise>
                                 </iaixsl:choose>
                             </iaixsl:if>
                         </iaixsl:for-each>
                         <iaixsl:for-each select="/shop/page/products/navigation/filtering/filter[@type='dual']/item[@selected = 'selected']">
-                            <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                            <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3 d-flex justify-content-center align-items-center">
                                 <iaixsl:attribute name="href"><iaixsl:value-of select="../@link_remove"/></iaixsl:attribute>
                                 <span><iaixsl:value-of select="../@name"/></span>
                             </a>
                         </iaixsl:for-each>
                         <iaixsl:for-each select="/shop/page/products/navigation/filtering/filter[@selected != '' or count(item/@selected) &gt; 0]/group/item[@selected = 'selected']">
-                            <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3">
+                            <a class="filter_list_remove btn --solid --icon-right icon-x mr-2 mr-sm-3 d-flex justify-content-center align-items-center" >
                                 <iaixsl:attribute name="href"><iaixsl:value-of select="@link_remove"/></iaixsl:attribute>
                                 <span><iaixsl:value-of select="@name"/></span>
                             </a>

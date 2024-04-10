@@ -22113,9 +22113,11 @@ function showAllFiltersOptions() {
 }
 
 
+
 app_shop.run(
     function () {
         showAllFiltersOptions();
+
     },
     'all',
     '#search'
