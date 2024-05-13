@@ -400,12 +400,13 @@
 			<iaixsl:variable name="disableBar"/>
 			<iaixsl:variable name="disableReturns"/>
 			<iaixsl:if test="not($disableBar) and /shop/basket/@toshippingfree != ''">
-				<div id="freeShipping" class="freeShipping">
+					<div id="freeShipping" class="freeShipping">
 					<iaixsl:if test="/shop/basket/@toshippingfree = 0">
 						<iaixsl:attribute name="class">freeShipping --active</iaixsl:attribute>
 					</iaixsl:if>
 					<span class="freeShipping__info">Darmowa dostawa</span>
-					<strong class="freeShipping__val">
+					<span class="ml-1">do punktu</span>
+					<strong class="freeShipping__val ml-2">
 						od 
 						<iaixsl:value-of select="/shop/basket/@shippinglimitfree_formatted"/>
 					</strong>
