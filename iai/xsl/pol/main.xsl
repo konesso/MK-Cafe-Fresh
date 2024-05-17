@@ -5396,7 +5396,7 @@
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6 col-12 my-3">
-					<a href="/data/include/cms/MkFresh/MK_EFOLDER_2021_last.pdf?v=1703082120124" class="image-block text-left">
+					<a href="https://mkfresh.pl/Promocja-spromo-pol.html" class="image-block text-left">
 						<picture>
 							<img src="/data/designs/xsl/11_1/gfx/assets/blog-2.jpg" alt="Description"/>
 						</picture>
