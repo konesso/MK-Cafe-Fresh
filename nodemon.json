@@ -1,0 +1,5 @@
+{
+  "watch": ["style/", "shop.js", "index.html"],
+  "ext": "js,css,html,scss",
+  "exec": "npm run build"
+}

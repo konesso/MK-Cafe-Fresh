@@ -1,0 +1,1430 @@
+{
+    "FAQ": [
+        {
+            "question": "Co robimy?",
+            "answer": "Konesso.pl to sklep internetowy specjalizujący się w sprzedaży wysokiej jakości kawy, herbaty, akcesoriów do parzenia oraz ekspresów do kawy. Oferujemy produkty zarówno dla klientów indywidualnych, jak i firm."
+        },
+        {
+            "question": "Jak to robimy?",
+            "answer": "Współpracujemy z najlepszymi dostawcami na świecie, aby zapewnić naszym klientom produkty najwyższej jakości. Każdy produkt jest starannie wyselekcjonowany, aby spełniał oczekiwania nawet najbardziej wymagających smakoszy."
+        },
+        {
+            "question": "Jak wysyłane są produkty?",
+            "answer": "Produkty zamówione w naszym sklepie są dostarczane bezpośrednio do Twojego domu lub biura. Po złożeniu zamówienia i jego opłaceniu, otrzymasz od nas wiadomość e-mail z potwierdzeniem oraz informacjami o dostawie."
+        },
+        {
+            "question": "Darmowa dostawa i zwroty",
+            "answer": "Oferujemy darmową dostawę dla zamówień powyżej określonej kwoty. Dodatkowo, jeśli nie jesteś zadowolony z zakupionych produktów, możesz je zwrócić w ciągu 30 dni od daty zakupu, a my zwrócimy Ci pełną kwotę."
+        },
+        {
+            "question": "Opcje płatności",
+            "answer": "W naszym sklepie akceptujemy różne formy płatności, w tym przelewy bankowe, płatności kartą kredytową i debetową oraz płatności online za pośrednictwem serwisów takich jak PayPal."
+        }
+    ],
+    "LINKS": [
+        {
+            "name": "Główna",
+            "link": "index.html"
+        },
+        {
+            "name": "Usługi",
+            "link": "#",
+            "subMenuItems": [
+                {
+                    "name": "item 1",
+                    "link": "#"
+                },
+                {
+                    "name": "item 2",
+                    "link": "#"
+                },
+                {
+                    "name": "item 3",
+                    "link": "#"
+                },
+                {
+                    "name": "item 4",
+                    "link": "#"
+                },
+                {
+                    "name": "item 5",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "Inne",
+            "link": "portfolio-standard.html",
+            "subMenuItems": [
+                {
+                    "name": "item 1",
+                    "link": "#"
+                },
+                {
+                    "name": "item 2",
+                    "link": "#"
+                },
+                {
+                    "name": "item 3",
+                    "link": "#"
+                },
+                {
+                    "name": "item 4",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "O nas",
+            "link": "blog-list.html",
+            "subMenuItems": [
+                {
+                    "name": "item 1",
+                    "link": "#"
+                },
+                {
+                    "name": "item 2",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "Kontakt",
+            "link": "contact.html",
+            "subMenuItems": [
+                {
+                    "name": "item 1",
+                    "link": "#"
+                },
+                {
+                    "name": "item 2",
+                    "link": "#"
+                },
+                {
+                    "name": "item 3",
+                    "link": "#"
+                }
+            ]
+        }
+    ],
+    "OPINIONS": [
+        {
+            "author": "John Doe",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt."
+        },
+        {
+            "author": "Jane Doe",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt."
+        },
+        {
+            "author": "John Smith",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt."
+        },
+        {
+            "author": "Jane Smith",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt."
+        }
+    ],
+    "HomePage": {
+        "HeroSection": {
+            "title": "Najlepsza kawa i herbata w jednym miejscu",
+            "subtitle": "Znajdź swoje ulubione smaki",
+            "button": "Zobacz więcej",
+            "link": "products.html"
+        },
+        "AboutSection": {
+            "title": "O nas",
+            "text": "Jako największy sprzedawca kawy w Polsce, koncentrujemy się  na dostarczaniu najwyższej jakości produktów, szybkiej dostawie i wygodnych formach płatności, zdobywając zaufanie  setek tysięcy klientów.",
+            "list": [
+                "jakość",
+                "Szybka dostawa",
+                "Wygoda",
+                "Zaufanie",
+                "Profesjonalizm",
+                "Doświadczenie",
+                "Innowacyjność",
+                "Pasja",
+                "Zadowolenie klienta",
+                "Dostępność",
+                "Bezpieczeństwo"
+            ],
+            "firstText": "Dzięki wieloletniemu doświadczeniu i zaangażowaniu. Nasz sklep oferuje szeroki asortyment produktów najwyższej jakości dla miłośników kawy i profesjonalistów, stając się synonimem niezawodności i profesjonalizmu.",
+            "secondText": "Naszym celem jest dostarczanie produktów spełniających najwyższe standardy. Współpracujemy z renomowanymi producentami kawy, herbaty i akcesoriów, aby zapewnić klientom najlepsze doświadczenia smakowe. Dbamy o szybką i bezpieczną dostawę, dzięki zaawansowanemu systemowi pakowania i współpracy z firmami kurierskimi.",
+            "thirdText": "Konesso.pl to także wygodne formy płatności, w tym szybkie przelewy i płatność za pobraniem. Prowadzimy również hurtownię, umożliwiając sklepom stacjonarnym i internetowym zaopatrzenie się w nasze produkty w atrakcyjnych cenach."
+        },
+        "BrandsSection": {
+            "title": "Nasze marki",
+            "brands": [
+                {
+                    "name": "Lavazza",
+                    "image": "lavazza.png",
+                    "link": "https://www.lavazza.pl/"
+                },
+                {
+                    "name": "Tchibo",
+                    "image": "tchibo.png",
+                    "link": "https://www.tchibo.pl/"
+                },
+                {
+                    "name": "Dilmah",
+                    "image": "dilmah.png",
+                    "link": "https://www.dilmah.pl/"
+                },
+                {
+                    "name": "Bosch",
+                    "image": "bosch.png",
+                    "link": "https://www.bosch.pl/"
+                }
+            ]
+        },
+        "Services": {
+            "title": "Nasze usługi",
+            "services": [
+                {
+                    "title": "Szkolenia - Edukacja Baristyczna",
+                    "category": "szkolenia",
+                    "description": "Oferujemy profesjonalne szkolenia dla baristów oraz miłośników kawy, które pomogą w podniesieniu umiejętności parzenia kawy do poziomu mistrzowskiego.",
+                    "image": "icon-coffee.png",
+                    "list": [
+                        "Kursy dla początkujących i zaawansowanych baristów",
+                        "Warsztaty z latte art",
+                        "Szkolenia dla firm",
+                        "Szkolenia produktowe"
+                    ],
+                    "link": "services.html"
+                },
+                {
+                    "title": "Sklep Online - Kawa i Akcesoria",
+                    "category": "sklep",
+                    "description": "Nasz sklep online oferuje szeroki asortyment kawy, ekspresów oraz akcesoriów do kawy, dostarczając wszystko, co potrzebne do przyrządzenia idealnej kawy w domu.",
+                    "image": "icon-coffee.png",
+                    "list": [
+                        "Bogaty wybór kaw ziarnistych i mielonych",
+                        "Ekspresy do kawy domowe i profesjonalne",
+                        "Akcesoria baristyczne i filtry"
+                    ],
+                    "link": "services.html"
+                },
+                {
+                    "title": "Kawiarnia - Miejsce Pełne Smaku",
+                    "category": "kawiarnia",
+                    "description": "Kawiarnia Konesso to idealne miejsce na relaks przy filiżance doskonale zaparzonej kawy. Oferujemy szeroki wybór kaw oraz domowych wypieków.",
+                    "image": "icon-coffee.png",
+                    "list": [
+                        "Wyjątkowa atmosfera",
+                        "Profesjonalnie przygotowana kawa",
+                        "Własne wypieki i desery"
+                    ],
+                    "link": "services.html"
+                }
+            ]
+        },
+        "Other": {
+            "title": "Inne",
+            "OtherServices": [
+                {
+                    "title": "O nas",
+                    "description": "Dowiedz się więcej o nas",
+                    "image": "icon-coffee.png",
+                    "link": "contact.html"
+                },
+                {
+                    "title": "Pozostałe usługi",
+                    "description": "Zobacz pozostałe usługi",
+                    "image": "icon-coffee.png",
+                    "link": "blog-list.html"
+                }
+            ]
+        }
+    },
+    "AboutUsPage": {
+        "title": "O nas",
+        "text": "Dowiedz się więcej o naszej firmie",
+        "subtitle": "Sprzedajemy miłość do kawy",
+        "images": [
+            {
+                "image": "about-us-1.jpg",
+                "alt": "Kawa"
+            },
+            {
+                "image": "about-us-2.jpg",
+                "alt": "Kawa"
+            },
+            {
+                "image": "about-us-3.jpg",
+                "alt": "Kawa"
+            }
+        ],
+        "description": "",
+        "firstList": [
+            "jakość",
+            "Szybka dostawa",
+            "Wygoda",
+            "Zaufanie",
+            "Profesjonalizm",
+            "Doświadczenie",
+            "Innowacyjność",
+            "Pasja",
+            "Zadowolenie klienta",
+            "Dostępność",
+            "Bezpieczeństwo"
+        ],
+        "secondList": [
+            "jakość",
+            "Szybka dostawa",
+            "Wygoda",
+            "Zaufanie",
+            "Profesjonalizm",
+            "Doświadczenie",
+            "Innowacyjność",
+            "Pasja",
+            "Zadowolenie klienta",
+            "Dostępność",
+            "Bezpieczeństwo"
+        ]
+    },
+    "ProductsPage": {
+        "title": "Nasze produkty",
+        "subtitle": "Znajdź swoje ulubione produkty w naszym sklepie",
+        "products": [
+            {
+                "image": "https://picsum.photos/800/1200?random=2",
+                "smallImage": "https://picsum.photos/300/200?random=2",
+                "category": "Kawa",
+                "shortDescription": "Najlepsza kawa ziarnista",
+                "numberOfProducts": 3010,
+                "path": "produkty/kawa",
+                "title": "Kawy Mielone",
+                "link": "portfolio-details-1.html"
+            },
+            {
+                "image": "https://picsum.photos/800/1200?random=3",
+                "smallImage": "https://picsum.photos/300/150?random=1",
+                "category": "Szkolenia",
+                "shortDescription": "Szkolenia dla baristów",
+                "path": "produkty/szkolenia",
+                "title": "Szkolimy Baristów",
+                "link": "portfolio-details-1.html"
+            },
+            {
+                "image": "https://picsum.photos/800/1200?random=9",
+                "smallImage": "https://picsum.photos/300/150?random=4",
+                "category": "Eventy",
+                "path": "produkty/eventy",
+                "shortDescription": "Imprezy nie tylko kawowe",
+                "title": "Imprezy nie tylko kawowe",
+                "link": "portfolio-details-1.html"
+            },
+            {
+                "image": "https://picsum.photos/800/1200?random=7",
+                "smallImage": "https://picsum.photos/300/150?random=6",
+                "category": "HoReCa",
+                "path": "produkty/horeca",
+                "shortDescription": "Kompletne usługi w gastronomii",
+                "title": "Kompletne usługi w gastronomii",
+                "link": "portfolio-details-1.html"
+            },
+            {
+                "image": "https://picsum.photos/800/1200?random=5",
+                "smallImage": "https://picsum.photos/300/150?random=9",
+                "category": "Serwis",
+                "path": "produkty/serwis",
+                "shortDescription": "Naprawiamy ekspresy",
+                "title": "Naprawiamy ekspresy",
+                "link": "portfolio-details-1.html"
+            },
+            {
+                "image": "https://picsum.photos/800/1200?random=4",
+                "smallImage": "https://picsum.photos/300/150?random=6",
+                "category": "Sklep",
+                "path": "produkty/sklep",
+                "shortDescription": "Największy sklep z kawą",
+                "numberOfProducts": 20024,
+                "title": "Największy sklep z kawą",
+                "link": "portfolio-details-1.html"
+            },
+            {
+                "image": "https://picsum.photos/800/1200?random=1",
+                "smallImage": "https://picsum.photos/300/150?random=12",
+                "category": "Akcesoria",
+                "path": "produkty/akcesoria",
+                "shortDescription": "Akcesoria do parzenia",
+                "numberOfProducts": 2022,
+                "title": "Wszytko co potrzebujesz",
+                "link": "portfolio-details-1.html"
+            },
+            {
+                "image": "https://picsum.photos/800/1200?random=4",
+                "smallImage": "https://picsum.photos/300/150?random=6",
+                "category": "Palarnia",
+                "path": "produkty/palarnia",
+                "shortDescription": "Wypalamy własną kawę",
+                "numberOfProducts": 2022,
+                "title": "Wypalamy własną kawę",
+                "link": "portfolio-details-1.html"
+            }
+        ]
+    },
+    "KawaPage": {
+        "title": "Kawa",
+        "subtitle": "Najlepsza kawa w jednym miejscu",
+        "mainImages": [
+            {
+                "image": "https://picsum.photos/1920/1200?random=4",
+                "alt": "Kawa"
+            },
+            {
+                "image": "https://picsum.photos/1920/1200?random=3",
+                "alt": "Kawa"
+            },
+            {
+                "image": "https://picsum.photos/1920/1200?random=2",
+                "alt": "Kawa"
+            }
+        ],
+        "benitoLinks": [
+            {
+                "name": "Kawa 1",
+                "link": "https://konesso.pl/kawa-ziarnista",
+                "image": "https://picsum.photos/1920/1200?random=14"
+            },
+            {
+                "name": "Kawa 2",
+                "link": "https://konesso.pl/kawa-mielona",
+                "image": "https://picsum.photos/1920/1200?random=14"
+            },
+            {
+                "name": "Kawa 3",
+                "link": "https://konesso.pl/kawa-rozpuszczalan",
+                "image": "https://picsum.photos/1920/1200?random=14"
+            },
+            {
+                "name": "Kawa  4",
+                "link": "https://konesso.pl/kawa-kaspulki",
+                "image": "https://picsum.photos/1920/1200?random=14"
+            },
+            {
+                "name": "Kawa 5",
+                "link": "https://konesso.pl/kawa-kaspulki",
+                "image": "https://picsum.photos/1920/1200?random=14"
+            },
+            {
+                "name": "Kawa 6",
+                "link": "https://konesso.pl/kawa-kaspulki",
+                "image": "https://picsum.photos/1920/1200?random=14"
+            },
+            {
+                "name": "Kawa 7",
+                "link": "https://konesso.pl/kawa-kaspulki",
+                "image": "https://picsum.photos/1920/1200?random=14"
+            },
+            {
+                "name": "Kawa 8",
+                "link": "https://konesso.pl/kawa-kaspulki",
+                "image": "https://picsum.photos/1920/1200?random=14"
+            },
+            {
+                "name": "Kawa 9",
+                "link": "https://konesso.pl/kawa-kaspulki",
+                "image": "https://picsum.photos/1920/1200?random=14"
+            }
+        ],
+        "benitoImages": [
+            {
+                "image": "https://picsum.photos/1920/1200?random=9",
+                "alt": "Kawa"
+            },
+            {
+                "image": "https://picsum.photos/1920/1200?random=9",
+                "alt": "Kawa"
+            },
+            {
+                "image": "https://picsum.photos/1920/1200?random=9",
+                "alt": "Kawa"
+            },
+            {
+                "image": "https://picsum.photos/1920/1200?random=9",
+                "alt": "Kawa"
+            },
+            {
+                "image": "https://picsum.photos/1920/1200?random=9",
+                "alt": "Kawa"
+            },
+            {
+                "image": "https://picsum.photos/1920/1200?random=9",
+                "alt": "Kawa"
+            }
+        ]
+    },
+    "People": {
+        "path": "https://konesso.pl/data/include/cms/Podstrony-mario/O-firmie/Pracownicy/Nowe/",
+        "departments": [
+            {
+                "name": "Kadra kierownicza",
+                "filter": "Board",
+                "icon": "person.png",
+                "description": "Na straży odpowiedniej organizacji całej firmy stoi {ilosc} kierowników i menadżerów."
+            },
+            {
+                "name": "Obsługa Klienta",
+                "filter": "BOK",
+                "icon": "socialmedia.png",
+                "description": "{ilosc} pracowników Biura Obsługi Klienta służy Wam pomocą w każdej sytuacji."
+            },
+            {
+                "name": "Marketing",
+                "filter": "Marketing",
+                "icon": "marketing.png",
+                "description": "Za działanie i oprawę strony, a także social media czy promocje odpowiedzialnych jest {ilosc} marketingowców."
+            },
+            {
+                "name": "Księgowość",
+                "filter": "Accountancy",
+                "icon": "acounts.png",
+                "description": "{ilosc} księgowych codziennie stawia czoła rachunkom, fakturom i rozliczeniom."
+            },
+            {
+                "name": "Zaopatrzenie",
+                "filter": "Supplies",
+                "icon": "pen.png",
+                "description": "Dział zakupów reprezentuje {ilosc} pracowników. To oni zapewniaj szeroką ofertę sklepu i zapełniają nasz magazyn."
+            },
+            {
+                "name": "Serwis",
+                "filter": "Service",
+                "icon": "service.png",
+                "description": "Naszych {ilosc} doświadczonych serwisantów każdego dnia przywraca do życia uszkodzone ekspresy."
+            },
+            {
+                "name": "B2C",
+                "filter": "B2C",
+                "icon": "socialmedia.png",
+                "description": "Niezawodna {ilosc}, z którą zakupy w naszym sklepie to czysta przyjemność."
+            },
+            {
+                "name": "B2B",
+                "filter": "B2B",
+                "icon": "it.png",
+                "description": "{ilosc} specjalistów, którzy zajmują się kompleksową obsługą Klienta hurtowego."
+            },
+            {
+                "name": "Magazyn",
+                "filter": "Warehouse",
+                "icon": "warehouse.png",
+                "description": "Załoga licząca {ilosc} pracowników. To właśnie oni zapewniają szybką i bezpieczną wysyłkę Twojego zamówienia."
+            },
+            {
+                "name": "Kawiarnia",
+                "filter": "Cafe",
+                "icon": "coffee.png",
+                "description": "Za wyśmienitą kawą i słodkimi wypiekami stoi {ilosc} baristek i baristów."
+            },
+            {
+                "name": "Wsparcie techniczne",
+                "filter": "Returns",
+                "icon": "return.png",
+                "description": "Dzielna {ilosc} obsługująca zwroty i reklamacje."
+            },
+            {
+                "name": "Marketplace",
+                "filter": "Marketplace",
+                "icon": "marketplace.png",
+                "description": "Dział marketplace liczy {ilosc} pracowników. To oni zajmują się sprzedażą w oddzielnych platformach handlowych."
+            },
+            {
+                "name": "Administracja",
+                "filter": "Administration",
+                "icon": "script.png",
+                "description": "Za koordynowanie pracy całego biura odpowiada {ilosc} wykwalifikowanych pracowników."
+            }
+        ],
+        "workers": [
+            {
+                "name": "Grzegorz",
+                "surname": "",
+                "sex": "Men",
+                "position": "Właściciel",
+                "image": "g.bienko.jpg",
+                "filter": "Board",
+                "id": 1
+            },
+            {
+                "name": "Paweł",
+                "surname": "",
+                "sex": "Men",
+                "position": "Menedżer ds. rozwoju",
+                "image": "paw-bie-new.jpg",
+                "filter": "Board",
+                "id": 2
+            },
+            {
+                "name": "Magda",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Project Manager",
+                "image": "m.zieba.jpg",
+                "filter": [
+                    "Board"
+                ],
+                "id": 3
+            },
+            {
+                "name": "Magdalena",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Menedżer działu sprzedaży B2C i działu obsługi Klienta",
+                "image": "mag-oc.jpg",
+                "filter": [
+                    "Board",
+                    "BOK"
+                ],
+                "id": 4
+            },
+            {
+                "name": "Justyna",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Lider działu obsługi Klienta",
+                "image": "",
+                "filter": "BOK",
+                "id": 5,
+                "randomImage": "/woman/1.jpg"
+            },
+            {
+                "name": "Elżbieta",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Starszy Specjalista ds. Obsługi Klienta",
+                "image": "e.partyka.jpg",
+                "filter": "BOK",
+                "id": 6
+            },
+            {
+                "name": "Natalia",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Starszy Specjalista ds. Obsługi Klienta",
+                "image": "",
+                "filter": "BOK",
+                "id": 7,
+                "randomImage": "/woman/4.jpg"
+            },
+            {
+                "name": "Justyna",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Starszy Specjalista ds. Obsługi Klienta",
+                "image": "",
+                "filter": "BOK",
+                "id": 8,
+                "randomImage": "/woman/8.jpg"
+            },
+            {
+                "name": "Lucyna",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Młodszy Specjalista ds. Obsługi Klienta",
+                "image": "",
+                "filter": "BOK",
+                "id": 9,
+                "randomImage": "/woman/9.jpg"
+            },
+            {
+                "name": "Kinga",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. windykacji i obsługi Klienta",
+                "image": "",
+                "filter": "BOK",
+                "id": 10,
+                "randomImage": "/woman/9.jpg"
+            },
+            {
+                "name": "Iwona",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Starszy Specjalista ds. Sprzedaży B2C",
+                "image": "i.del.jpg",
+                "filter": "B2C",
+                "id": 11
+            },
+            {
+                "name": "Oliwia",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Starszy Specjalista ds. Sprzedaży B2C",
+                "image": "oli.jpg",
+                "filter": "B2C",
+                "id": 12
+            },
+            {
+                "name": "Sylwia",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Starszy Specjalista ds. Sprzedaży B2C",
+                "image": "b-sylwia.jpg",
+                "filter": "B2C",
+                "id": 13
+            },
+            {
+                "name": "Ilona",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. Sprzedaży B2C",
+                "image": "illy-pie.jpg",
+                "filter": "B2C",
+                "id": 14
+            },
+            {
+                "name": "Elżbieta",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Kierownik działu wsparcia technicznego",
+                "image": "ela.jpg",
+                "filter": [
+                    "Board",
+                    "Returns"
+                ],
+                "id": 15
+            },
+            {
+                "name": "Magdalena",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Starszy specjalista ds. wsparcia technicznego",
+                "image": "mag-kras3.jpg",
+                "filter": "Returns",
+                "id": 16
+            },
+            {
+                "name": "Dominika",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. zwrotów i reklamacji",
+                "image": "dom_ty_1.jpg",
+                "filter": "Returns",
+                "id": 17
+            },
+            {
+                "name": "Paulina",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. wsparcia technicznego",
+                "image": "pau-sta.jpg",
+                "filter": "Returns",
+                "id": 18
+            },
+            {
+                "name": "Dominika",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. wsparcia technicznego",
+                "image": "dom-lic_1.jpg",
+                "filter": "Returns",
+                "id": 19
+            },
+            {
+                "name": "Weronika",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. wsparcia technicznego",
+                "image": "wero-b.jpg",
+                "filter": "Returns",
+                "id": 20
+            },
+            {
+                "name": "Karolina",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. zwrotów i reklamacji",
+                "image": "",
+                "filter": "Returns",
+                "id": 21,
+                "randomImage": "/woman/2.jpg"
+            },
+            {
+                "name": "Magdalena",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. zwrotów i reklamacji",
+                "image": "",
+                "filter": "Returns",
+                "id": 22,
+                "randomImage": "/woman/6.jpg"
+            },
+            {
+                "name": "Angelika",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Menedżer ds. e-commerce",
+                "image": "",
+                "filter": "Marketplace",
+                "id": 23,
+                "randomImage": "/woman/4.jpg"
+            },
+            {
+                "name": "Ilona",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. e-commerce",
+                "image": "",
+                "filter": "Marketplace",
+                "id": 24,
+                "randomImage": "/woman/1.jpg"
+            },
+            {
+                "name": "Magdalena",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Pracownik Administracyjny",
+                "image": "mag-jan.jpg",
+                "filter": "Administration",
+                "id": 25
+            },
+            {
+                "name": "Fabian",
+                "surname": "",
+                "sex": "Men",
+                "position": "Menedżer ds. sprzedaży B2B",
+                "image": "fab-ucz.jpg",
+                "filter": [
+                    "Board",
+                    "B2B"
+                ],
+                "id": 26
+            },
+            {
+                "name": "Justyna",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Junior Key Account Manager",
+                "image": "jus-mus-new.jpg",
+                "filter": "B2B",
+                "id": 27
+            },
+            {
+                "name": "Ilona",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Junior Key Account Manager",
+                "image": "ilo_luk.jpg",
+                "filter": "B2B",
+                "id": 28
+            },
+            {
+                "name": "Dorota",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. przetargów",
+                "image": "dor-now_1.jpg",
+                "filter": "B2B",
+                "id": 29
+            },
+            {
+                "name": "Michał",
+                "surname": "",
+                "sex": "Men",
+                "position": "Menedżer ds. marketingu",
+                "image": "m.rak.jpg",
+                "filter": [
+                    "Board",
+                    "Marketing"
+                ],
+                "id": 30
+            },
+            {
+                "name": "Paweł",
+                "surname": "",
+                "sex": "Men",
+                "position": "Content manager",
+                "image": "pawe-brani2.jpg",
+                "filter": "Marketing",
+                "id": 31
+            },
+            {
+                "name": "Sylwia",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. social media i buzz marketingu",
+                "image": "sylw-tark.jpg",
+                "filter": "Marketing",
+                "id": 32
+            },
+            {
+                "name": "Dominika",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. social media i buzz marketingu",
+                "image": "dominika-l.jpg",
+                "filter": "Marketing",
+                "id": 33
+            },
+            {
+                "name": "Mariusz",
+                "surname": "",
+                "sex": "Men",
+                "position": "Grafik komputerowy",
+                "image": "Mariusz_box.png",
+                "filter": "Marketing",
+                "id": 34
+            },
+            {
+                "name": "Joanna",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Copywriter",
+                "image": "joa-do.jpg",
+                "filter": "Marketing",
+                "id": 35
+            },
+            {
+                "name": "Tomasz",
+                "surname": "",
+                "sex": "Men",
+                "position": "Webdeveloper",
+                "image": "t.zieba.jpg",
+                "filter": "Marketing",
+                "id": 36
+            },
+            {
+                "name": "Krzysztof",
+                "surname": "",
+                "sex": "Men",
+                "position": "Webdeveloper",
+                "image": "krzysztof.jpg",
+                "filter": "Marketing",
+                "id": 37
+            },
+            {
+                "name": "Iwona",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Kierownik działu zakupów",
+                "image": "i.tyburska2.jpg",
+                "filter": [
+                    "Board",
+                    "Supplies"
+                ],
+                "id": 38
+            },
+            {
+                "name": "Justyna",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Zastępca kierownika działu zakupów",
+                "image": "just-g_1.jpg",
+                "filter": "Supplies",
+                "id": 39
+            },
+            {
+                "name": "Mateusz",
+                "surname": "",
+                "sex": "Men",
+                "position": "Starszy Specjalista ds. zakupów",
+                "image": "m.niemiec.jpg",
+                "filter": "Supplies",
+                "id": 40
+            },
+            {
+                "name": "Patrycja",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. zakupów",
+                "image": "pat-wal.jpg",
+                "filter": "Supplies",
+                "id": 41
+            },
+            {
+                "name": "Monika",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Młodszy specjalista ds. zakupów",
+                "image": "mon-ku2.jpg",
+                "filter": "Supplies",
+                "id": 42
+            },
+            {
+                "name": "Agnieszka",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Młodszy specjalista ds. zakupów",
+                "image": "agn-k_2.jpg",
+                "filter": "Supplies",
+                "id": 43
+            },
+            {
+                "name": "Magdalena",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Główna Księgowa",
+                "image": "",
+                "filter": [
+                    "Board",
+                    "Accountancy"
+                ],
+                "id": 44,
+                "randomImage": "/woman/6.jpg"
+            },
+            {
+                "name": "Magdalena",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Księgowa",
+                "image": "",
+                "filter": "Accountancy",
+                "id": 45,
+                "randomImage": "/woman/2.jpg"
+            },
+            {
+                "name": "Katarzyna",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Młodsza Księgowa",
+                "image": "kata-kol.jpg",
+                "filter": "Accountancy",
+                "id": 46
+            },
+            {
+                "name": "Małgorzata",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Młodsza Księgowa",
+                "image": "mal-sur.jpg",
+                "filter": "Accountancy",
+                "id": 47
+            },
+            {
+                "name": "Barbara",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Asystent Kadrowo- Księgowy",
+                "image": "barb-go.jpg",
+                "filter": "Accountancy",
+                "id": 48
+            },
+            {
+                "name": "Łukasz",
+                "surname": "",
+                "sex": "Men",
+                "position": "Kierownik techniczny serwisu",
+                "image": "ukasz-Dbal.jpg?v=1634202196249",
+                "filter": [
+                    "Board",
+                    "Service"
+                ],
+                "id": 49
+            },
+            {
+                "name": "Dariusz",
+                "surname": "",
+                "sex": "Men",
+                "position": "Kierownik operacyjny serwisu",
+                "image": "darek.jpg",
+                "filter": [
+                    "Board",
+                    "Service"
+                ],
+                "id": 50
+            },
+            {
+                "name": "Krystian",
+                "surname": "",
+                "sex": "Men",
+                "position": "Technik serwisu",
+                "image": "k.delekta.jpg",
+                "filter": "Service",
+                "id": 51
+            },
+            {
+                "name": "Łukasz",
+                "surname": "",
+                "sex": "Men",
+                "position": "Technik serwisu",
+                "image": "luk.zaj.jpg",
+                "filter": "Service",
+                "id": 52
+            },
+            {
+                "name": "Daniel",
+                "surname": "",
+                "sex": "Men",
+                "position": "Technik serwisu",
+                "image": "daniel-w.jpg",
+                "filter": "Service",
+                "id": 53
+            },
+            {
+                "name": "Mateusz",
+                "surname": "",
+                "sex": "Men",
+                "position": "Technik serwisu",
+                "image": "mat-szk.jpg",
+                "filter": "Service",
+                "id": 54
+            },
+            {
+                "name": "Łukasz",
+                "surname": "",
+                "sex": "Men",
+                "position": "Technik serwisu",
+                "image": "l.oczkowski.jpg",
+                "filter": "Service",
+                "id": 55
+            },
+            {
+                "name": "Karolina",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Technik serwisu",
+                "image": "karo-go.jpg",
+                "filter": "Service",
+                "id": 56
+            },
+            {
+                "name": "Oskar",
+                "surname": "",
+                "sex": "Men",
+                "position": "Technik serwisu",
+                "image": "",
+                "filter": "Service",
+                "id": 57,
+                "randomImage": "/men/2.jpg"
+            },
+            {
+                "name": "Paweł",
+                "surname": "",
+                "sex": "Men",
+                "position": "Koordynator magazynu",
+                "image": "paw-tar.jpg",
+                "filter": [
+                    "Board",
+                    "Warehouse"
+                ],
+                "id": 58
+            },
+            {
+                "name": "Piotr",
+                "surname": "",
+                "sex": "Men",
+                "position": "Kierownik magazynu",
+                "image": "pio-halt.jpg",
+                "filter": [
+                    "Board",
+                    "Warehouse"
+                ],
+                "id": 59
+            },
+            {
+                "name": "Rafał",
+                "surname": "",
+                "sex": "Men",
+                "position": "Lider ds. organizacji działu dostaw, zwrotów i reklamacji",
+                "image": "rafal.jpg",
+                "filter": "Warehouse",
+                "id": 60
+            },
+            {
+                "name": "Kacper",
+                "surname": "",
+                "sex": "Men",
+                "position": "Lider zespołu pakowania",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 61,
+                "randomImage": "/men/7.jpg"
+            },
+            {
+                "name": "Barbara",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Lider zespołu kompletacji",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 62,
+                "randomImage": "/woman/5.jpg"
+            },
+            {
+                "name": "Weronika",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. kontroli zapasów",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 63,
+                "randomImage": "/woman/3.jpg"
+            },
+            {
+                "name": "Piotr",
+                "surname": "",
+                "sex": "Men",
+                "position": "Magazynier",
+                "image": "p.malek.jpg",
+                "filter": "Warehouse",
+                "id": 64
+            },
+            {
+                "name": "Sylwia",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Magazynier",
+                "image": "s.kwiecien.jpg",
+                "filter": "Warehouse",
+                "id": 65
+            },
+            {
+                "name": "Lucyna",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Magazynier",
+                "image": "l.partyka.jpg",
+                "filter": "Warehouse",
+                "id": 66
+            },
+            {
+                "name": "Bartłomiej",
+                "surname": "",
+                "sex": "Men",
+                "position": "Magazynier",
+                "image": "b.karbarz.jpg",
+                "filter": "Warehouse",
+                "id": 67
+            },
+            {
+                "name": "Norbert",
+                "surname": "",
+                "sex": "Men",
+                "position": "Magazynier",
+                "image": "Norbert.jpg",
+                "filter": "Warehouse",
+                "id": 68
+            },
+            {
+                "name": "Barbara",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Magazynier",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 69,
+                "randomImage": "/woman/1.jpg"
+            },
+            {
+                "name": "Monika",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Magazynier",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 70,
+                "randomImage": "/woman/9.jpg"
+            },
+            {
+                "name": "Katarzyna",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Magazynier",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 71,
+                "randomImage": "/woman/9.jpg"
+            },
+            {
+                "name": "Mariola",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Magazynier",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 72,
+                "randomImage": "/woman/7.jpg"
+            },
+            {
+                "name": "Magdalena",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Magazynier",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 73,
+                "randomImage": "/woman/1.jpg"
+            },
+            {
+                "name": "Marzena",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Magazynier",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 74,
+                "randomImage": "/woman/4.jpg"
+            },
+            {
+                "name": "Katarzyna",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Magazynier",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 75,
+                "randomImage": "/woman/6.jpg"
+            },
+            {
+                "name": "Aleksandra",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Magazynier",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 76,
+                "randomImage": "/woman/7.jpg"
+            },
+            {
+                "name": "Nastazja",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Magazynier",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 77,
+                "randomImage": "/woman/1.jpg"
+            },
+            {
+                "name": "Dagmara",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Magazynier",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 78,
+                "randomImage": "/woman/5.jpg"
+            },
+            {
+                "name": "Anna",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Magazynier",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 79,
+                "randomImage": "/woman/6.jpg"
+            },
+            {
+                "name": "Dawid",
+                "surname": "",
+                "sex": "Men",
+                "position": "Specjalista ds. organizacji dostaw",
+                "image": "d.skowronek.jpg",
+                "filter": "Warehouse",
+                "id": 80
+            },
+            {
+                "name": "Damian",
+                "surname": "",
+                "sex": "Men",
+                "position": "Specjalista ds. organizacji dostaw",
+                "image": "d.swieca.jpg",
+                "filter": "Warehouse",
+                "id": 81
+            },
+            {
+                "name": "Marcin",
+                "surname": "",
+                "sex": "Men",
+                "position": "Specjalista ds. organizacji dostaw",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 82,
+                "randomImage": "/men/5.jpg"
+            },
+            {
+                "name": "Kamil",
+                "surname": "",
+                "sex": "Men",
+                "position": "Specjalista ds. organizacji dostaw",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 83,
+                "randomImage": "/men/7.jpg"
+            },
+            {
+                "name": "Renata",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Specjalista ds. organizacji dostaw",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 84,
+                "randomImage": "/woman/6.jpg"
+            },
+            {
+                "name": "Mateusz",
+                "surname": "",
+                "sex": "Men",
+                "position": "Specjalista ds. zamówień B2B",
+                "image": "m.przedpelski.jpg",
+                "filter": "Warehouse",
+                "id": 85
+            },
+            {
+                "name": "Paweł",
+                "surname": "",
+                "sex": "Men",
+                "position": "Specjalista ds. zamówień B2B",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 86,
+                "randomImage": "/men/2.jpg"
+            },
+            {
+                "name": "Patryk",
+                "surname": "",
+                "sex": "Men",
+                "position": "Specjalista ds. zamówień B2B",
+                "image": "",
+                "filter": "Warehouse",
+                "id": 87,
+                "randomImage": "/men/4.jpg"
+            },
+            {
+                "name": "Joanna",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Kierownik kawiarni",
+                "image": "",
+                "filter": "Cafe",
+                "id": 88,
+                "randomImage": "/woman/7.jpg"
+            },
+            {
+                "name": "Rachela",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Barista",
+                "image": "",
+                "filter": "Cafe",
+                "id": 89,
+                "randomImage": "/woman/2.jpg"
+            },
+            {
+                "name": "Klaudia",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Barista",
+                "image": "",
+                "filter": "Cafe",
+                "id": 90,
+                "randomImage": "/woman/7.jpg"
+            },
+            {
+                "name": "Natalia",
+                "surname": "",
+                "sex": "Woman",
+                "position": "Barista",
+                "image": "",
+                "filter": "Cafe",
+                "id": 91,
+                "randomImage": "/woman/5.jpg"
+            }
+        ]
+    }
+}

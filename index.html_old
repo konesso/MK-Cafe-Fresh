@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="pl" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Hind:100,300,400,600&amp;subset=latin-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="js/countdown.js" type="text/javascript"></script>
+	
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-25992493-18"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-25992493-18');
+	</script>
+	
+	<title>Mudial 2018 w Konesso.pl</title>
+</head>
+<body>
+	<a class="konesso-logo" href="#index" title="Włoska kawa ziarnista do ekspresu, sklep internetowy z kawą Konesso.pl"><svg id="konesso_logo" viewBox="0 0 284 104" width="100%" height="100%"><path d="M117.6 28.6v30.7c0 1.2-.7 1.9-1.9 1.9H114c-1.2 0-1.9-.7-1.9-1.9V28.6c0-1.2.7-1.9 1.9-1.9h1.7c1.2-.1 1.9.6 1.9 1.9zm13.4.3l-6.5 14.5 7 15.6c.6 1.3-.1 2.2-1.5 2.2h-2.2c-1.1 0-1.8-.5-2.2-1.5l-6.4-15c-.4-.9-.4-1.6.1-2.5l6.1-14.1c.5-1 1.1-1.5 2.2-1.5h2c1.4 0 2 .9 1.4 2.3zm13.5 32.8c-5.7 0-9-3.1-9-8.4V39.7c0-5.2 3.3-8.4 9-8.4 5.6 0 9 3.1 9 8.4v13.6c-.1 5.3-3.4 8.4-9 8.4zm0-25.5c-2.4 0-3.6 1.3-3.6 3.5v13.6c0 2.2 1.2 3.5 3.6 3.5 2.4 0 3.6-1.3 3.6-3.5V39.7c0-2.2-1.2-3.5-3.6-3.5zm15.3 23.1V33.8c0-1.2.7-1.9 1.9-1.9h1.3c1.2 0 1.9.7 1.9 1.9v1.1c.6-1.2 2.4-3.2 5.9-3.2 4.3 0 6.8 2.8 6.8 7v20.6c0 1.2-.7 1.9-1.9 1.9H174c-1.2 0-1.9-.7-1.9-1.9V39.8c0-2.2-1.2-3.4-3.4-3.4-1.9 0-3.6 1.2-3.6 3.4v19.6c0 1.2-.7 1.9-1.9 1.9h-1.6c-1.2-.1-1.8-.8-1.8-2zm29.1-11.2v5.4c0 2.2 1.2 3.4 3.7 3.4s3.7-1.2 3.7-3.3v-.5c0-1.2.7-1.8 1.9-1.8h1.5c1.2 0 1.9.6 1.9 1.7v.4c0 5.2-3.4 8.3-9 8.3-5.7 0-9-3.1-9-8.4V39.7c0-5.2 3.3-8.4 9-8.4s9 3.1 9 8.4v6.4c0 1-.5 1.6-1.2 1.8-.3.1-.6.2-.9.2h-10.6zm0-8.5v4.2h7.4v-4.2c0-2.2-1.3-3.4-3.7-3.4-2.5 0-3.7 1.2-3.7 3.4zm35.3 12.9v1.2c0 5.2-3.2 8-8.9 8-5.6 0-8.8-2.7-8.8-7.9v-.2c0-1.2.6-1.8 1.9-1.8h1.5c1.4 0 1.9.7 1.9 1.9v.1c0 2.1 1.1 3.1 3.5 3.1s3.6-1 3.6-3.1v-.9c0-1.4-.7-2.3-2.3-3.1l-5.4-2.6c-2.8-1.4-4.5-3.5-4.5-6.8v-1c0-5.2 2.9-8 8.6-8 5.6 0 8.6 2.8 8.6 7.8v.2c0 1-.5 1.7-1.8 1.7h-1.6c-1.3 0-1.9-.6-1.9-1.7v-.1c0-2.1-.9-3.3-3.3-3.3s-3.3 1.1-3.3 3.2v.8c0 1.7.7 2.5 2.3 3.2l5.2 2.7c2.8 1.3 4.7 3.4 4.7 6.6zm21.6 0v1.2c0 5.2-3.2 8-8.9 8-5.6 0-8.8-2.7-8.8-7.9v-.2c0-1.2.6-1.8 1.9-1.8h1.5c1.4 0 1.9.7 1.9 1.9v.1c0 2.1 1.1 3.1 3.5 3.1s3.6-1 3.6-3.1v-.9c0-1.4-.7-2.3-2.3-3.1l-5.4-2.6c-2.8-1.4-4.5-3.5-4.5-6.8v-1c0-5.2 2.9-8 8.6-8 5.6 0 8.6 2.8 8.6 7.8v.2c0 1-.5 1.7-1.8 1.7h-1.6c-1.3 0-1.9-.6-1.9-1.7v-.1c0-2.1-.9-3.3-3.3-3.3-2.5 0-3.3 1.1-3.3 3.2v.8c0 1.7.7 2.5 2.3 3.2l5.2 2.7c2.9 1.3 4.7 3.4 4.7 6.6zm14 9.2c-5.7 0-9-3.1-9-8.4V39.7c0-5.2 3.3-8.4 9-8.4 5.6 0 9 3.1 9 8.4v13.6c-.1 5.3-3.4 8.4-9 8.4zm0-25.5c-2.4 0-3.6 1.3-3.6 3.5v13.6c0 2.2 1.2 3.5 3.6 3.5 2.4 0 3.6-1.3 3.6-3.5V39.7c0-2.2-1.2-3.5-3.6-3.5zM52.9 16.5c19.3 0 34.9 15.7 34.9 34.9S72.2 86.3 52.9 86.3 18 70.7 18 51.4s15.6-34.9 34.9-34.9m0-4.4c-21.7 0-39.3 17.6-39.3 39.3 0 21.7 17.6 39.3 39.3 39.3s39.3-17.6 39.3-39.3c0-21.7-17.6-39.3-39.3-39.3z" class="st0"></path><path d="M41.3 70.2c0 .5-.4.8-.8.8H38c-.5 0-.8-.4-.8-.8V32.6c0-.5.4-.8.8-.8h2.4c.5 0 .8.4.8.8v37.6zm25.5-39c-.2-.2-.5-.2-.7-.2l-1.7.5C56.5 33.9 45.9 43 43.6 51.4c1.4 5 5.4 10 10.1 13.8v6a6.7 6.7 0 0 0 13.4 0V31.8c0-.2-.1-.5-.3-.6zM48.1 51.4c1.6-4.6 8.2-11.5 14.7-14.6V66c-6.5-3.1-13-9.9-14.7-14.6zm12.3 22.2c-1.3 0-2.4-1.1-2.4-2.4v-2.9c1.6 1 3.2 1.8 4.8 2.4v.5c0 1.3-1.1 2.4-2.4 2.4z" class="st0"></path><path d="M112.4 72.4c0-.3.1-.4.4-.4h.4c.3 0 .4.1.4.4v3.4h1.4l2.1-3.6c.1-.2.3-.3.5-.3h.5c.3 0 .5.2.3.5l-2.4 3.8 2.5 4.3c.2.3.1.5-.3.5h-.5c-.2 0-.4-.1-.5-.3l-2.3-3.9h-1.4v3.8c0 .3-.1.4-.4.4h-.4c-.3 0-.4-.1-.4-.4v-8.2zm11.1 4.7h.3v-.2c0-1.1-.6-1.4-1.4-1.4-.7 0-1.2.2-1.5.4-.2.1-.4.1-.6-.2l-.1-.2c-.1-.2-.1-.5.1-.6.4-.2 1.1-.6 2.1-.6 1.6 0 2.6.9 2.6 2.6v3.7c0 .3-.2.4-.4.4h-.3c-.3 0-.4-.1-.4-.4v-.8s-.6 1.4-2.1 1.4c-1.2 0-2.2-.7-2.2-2-.1-1.9 2.5-2.1 3.9-2.1zm-1.5 3.2c1.1 0 1.8-1.1 1.8-2.1v-.3h-.3c-.9 0-2.7.1-2.7 1.3 0 .6.4 1.1 1.2 1.1zm4.2-5.3c-.1-.3.1-.5.4-.5h.4c.3 0 .4.1.5.4l1.3 4.3c.1.3.2.7.2.7s.1-.4.2-.7l1.3-4.2c.1-.2.2-.4.5-.4h.4c.3 0 .4.1.5.4l1.3 4.2c.1.3.2.7.2.7s.1-.4.2-.7l1.3-4.3c.1-.2.2-.4.5-.4h.4c.3 0 .5.2.4.5l-1.9 5.7c-.1.2-.2.4-.5.4h-.6c-.3 0-.4-.1-.5-.4l-1.3-3.9c-.1-.3-.2-.7-.2-.7s-.1.4-.2.7l-1.2 3.9c-.1.2-.2.4-.5.4h-.7c-.2 0-.4-.1-.5-.4l-1.9-5.7zm11 7.7c.1.1.3.1.5.1.5 0 .9-.5 1.1-1l.3-.8-2.5-6c-.1-.3 0-.5.3-.5h.5c.2 0 .4.1.5.3l1.5 4c.1.3.2.8.2.8l.2-.8 1.5-4c.1-.2.2-.4.5-.4h.5c.3 0 .5.2.3.5l-2.9 7.2c-.4 1-1.2 1.6-2.1 1.6-.4 0-.7-.1-.9-.2-.2-.1-.3-.3-.2-.6l.1-.2c.2-.1.4-.1.6 0zm20.4-10.3c0-.3.1-.4.4-.4h.4c.3 0 .4.1.4.4V76h4.8v-3.6c0-.3.2-.4.4-.4h.4c.3 0 .4.1.4.4v8.3c0 .3-.1.4-.4.4h-.4c-.3 0-.4-.1-.4-.4v-3.6h-4.8v3.6c0 .3-.1.4-.4.4h-.4c-.3 0-.4-.1-.4-.4v-8.3zm12.2 2c1.8 0 2.8 1.3 2.8 3.1 0 .2-.2.4-.4.4h-4.4c.1 1.4 1.1 2.2 2.3 2.2.7 0 1.3-.3 1.6-.5.2-.1.4-.1.6.1l.1.2c.1.2.1.4-.1.6-.4.3-1.2.7-2.2.7-2.1 0-3.5-1.5-3.5-3.4 0-2.1 1.4-3.4 3.2-3.4zm1.6 2.7c0-1.2-.7-1.8-1.6-1.8-1 0-1.7.6-1.9 1.8h3.5zm2.7-2.1c0-.3.2-.4.4-.4h.4c.3 0 .4.1.4.4v1.3c.3-.9 1-1.7 2-1.7.3 0 .4.1.4.4v.4c0 .3-.2.4-.5.4-1.3 0-1.9 1.4-1.9 2.7v2.3c0 .3-.1.4-.4.4h-.4c-.3 0-.4-.1-.4-.4V75zm4.8-2.6c0-.3.1-.4.4-.4h.4c.3 0 .4.1.4.4v3.2s.6-1.2 2.1-1.2c1.7 0 2.9 1.4 2.9 3.4 0 2.1-1.3 3.5-3 3.5-1.5 0-2.1-1.2-2.1-1.2v.7c0 .2-.2.4-.4.4h-.3c-.3 0-.4-.1-.4-.4v-8.4zm3 7.8c1.1 0 1.9-.8 1.9-2.3 0-1.4-.8-2.4-1.9-2.4-1 0-1.9.7-1.9 2.3.1 1.3.7 2.4 1.9 2.4zm8.1-3.1h.3v-.2c0-1.1-.6-1.4-1.4-1.4-.7 0-1.2.2-1.5.4-.2.1-.4.1-.6-.2l-.1-.2c-.1-.2-.1-.5.1-.6.4-.2 1.1-.6 2.1-.6 1.6 0 2.6.9 2.6 2.6v3.7c0 .3-.2.4-.4.4h-.3c-.3 0-.4-.1-.4-.4v-.8s-.6 1.4-2.1 1.4c-1.2 0-2.2-.7-2.2-2 0-1.9 2.6-2.1 3.9-2.1zm-1.4 3.2c1.1 0 1.8-1.1 1.8-2.1v-.3h-.3c-.9 0-2.7.1-2.7 1.3 0 .6.4 1.1 1.2 1.1zm5.1-4.7h-.5c-.3 0-.4-.2-.4-.4V75c0-.3.1-.4.4-.4h.5v-1.4c0-.3.2-.4.4-.4h.4c.3 0 .4.1.4.4v1.4h1.1c.3 0 .4.2.4.4v.2c0 .3-.1.4-.4.4h-1v2.9c0 1.2.8 1.4 1.2 1.5.3 0 .5.1.5.4v.3c0 .3-.2.4-.5.4-1.3 0-2.4-.8-2.4-2.4v-3.1zm4.1 7.1c.1.1.3.1.5.1.5 0 .9-.5 1.1-1l.3-.8-2.5-6c-.1-.3 0-.5.3-.5h.5c.2 0 .4.1.5.3l1.5 4c.1.3.2.8.2.8l.2-.8 1.5-4c.1-.2.2-.4.5-.4h.5c.3 0 .5.2.3.5l-2.9 7.2c-.4 1-1.2 1.6-2.1 1.6-.4 0-.7-.1-.9-.2-.2-.1-.3-.3-.2-.6l.1-.2c.2-.1.4-.1.6 0zm20.4-10.3c0-.3.1-.4.4-.4h4.5c.3 0 .4.1.4.4v.3c0 .3-.1.4-.4.4h-3.6V76h2.9c.3 0 .4.1.4.4v.3c0 .3-.2.4-.4.4h-2.9v3h3.8c.3 0 .4.1.4.4v.3c0 .3-.1.4-.4.4h-4.7c-.3 0-.4-.1-.4-.4v-8.4zm7 0c0-.3.1-.4.4-.4h.4c.3 0 .4.1.4.4V77h.9l1.6-2.1c.1-.2.3-.3.5-.3h.5c.4 0 .5.2.3.5l-1.8 2.4 2.1 3.1c.2.3.1.5-.3.5h-.5c-.2 0-.4-.1-.5-.3l-1.8-2.8h-1v2.7c0 .3-.1.4-.4.4h-.4c-.3 0-.4-.1-.4-.4v-8.3zm6.4 7.6l.1-.2c.2-.2.3-.2.6-.1.3.2.8.5 1.6.5.7 0 1.1-.3 1.1-.9 0-1.3-3.4-.9-3.4-3.1 0-1.2 1.1-1.9 2.4-1.9.9 0 1.5.3 1.8.5.2.1.3.3.1.6l-.1.2c-.1.2-.3.3-.6.1-.3-.2-.7-.4-1.3-.4s-1.1.3-1.1.8c0 1.3 3.4.8 3.4 3.1 0 1.1-.9 1.9-2.4 1.9-1.1 0-1.8-.4-2.2-.7-.2 0-.2-.2 0-.4zm6.1-5c0-.3.1-.4.4-.4h.3c.3 0 .4.1.4.4v.8s.6-1.3 2.2-1.3c1.8 0 2.9 1.4 2.9 3.4 0 2.1-1.3 3.4-3 3.4-1.5 0-2-1.2-2-1.2v3.2c0 .3-.1.4-.4.4h-.4c-.3 0-.4-.1-.4-.4V75zm3.1 5.2c1 0 1.9-.8 1.9-2.3 0-1.4-.8-2.4-1.9-2.4-1 0-1.9.7-1.9 2.4.1 1.1.7 2.3 1.9 2.3zm4.7-5.2c0-.3.2-.4.4-.4h.4c.3 0 .4.1.4.4v1.3c.3-.9 1-1.7 2-1.7.3 0 .4.1.4.4v.4c0 .3-.2.4-.5.4-1.3 0-1.9 1.4-1.9 2.7v2.3c0 .3-.1.4-.4.4h-.4c-.3 0-.4-.1-.4-.4V75zm7.4-.6c1.8 0 2.8 1.3 2.8 3.1 0 .2-.2.4-.4.4h-4.4c.1 1.4 1.1 2.2 2.3 2.2.7 0 1.3-.3 1.6-.5.2-.1.4-.1.6.1l.1.2c.1.2.1.4-.1.6-.4.3-1.2.7-2.2.7-2.1 0-3.5-1.5-3.5-3.4-.1-2.1 1.3-3.4 3.2-3.4zm1.6 2.7c0-1.2-.7-1.8-1.6-1.8-1 0-1.7.6-1.9 1.8h3.5zm2.3 2.9l.1-.2c.2-.2.3-.2.6-.1.3.2.8.5 1.6.5.6 0 1.1-.3 1.1-.9 0-1.3-3.4-.9-3.4-3.1 0-1.2 1.1-1.9 2.4-1.9.9 0 1.5.3 1.8.5.2.1.3.3.1.6l-.1.2c-.1.2-.3.3-.6.1-.3-.2-.7-.4-1.3-.4s-1.1.3-1.1.8c0 1.3 3.4.8 3.4 3.1 0 1.1-.9 1.9-2.4 1.9-1.1 0-1.8-.4-2.2-.7-.1 0-.1-.2 0-.4zm6 2.7c.1.1.3.1.5.1.5 0 .9-.5 1.1-1l.3-.8-2.5-6c-.1-.3 0-.5.3-.5h.5c.2 0 .4.1.5.3l1.5 4c.1.3.2.8.2.8l.2-.8 1.5-4c.1-.2.2-.4.5-.4h.5c.3 0 .5.2.3.5l-2.9 7.2c-.4 1-1.2 1.6-2.1 1.6-.4 0-.7-.1-.9-.2-.2-.1-.3-.3-.2-.6l.1-.2c.3-.1.5-.1.6 0z"></path><circle cx="150.2" cy="77.3" r="1.7"></circle><circle cx="210.2" cy="77.3" r="1.7"></circle></svg></a>
+
+	<a class="ks-nav-trigger ks-text-replace" href="#primary-nav">Menu<span aria-hidden="true" class="ks-icon"></span></a>
+<!--	
+	<div class="lysy-content wytypuj">
+		<img src="img/polska-hipisi2ab.jpg">
+		<img src="img/wytypuj-strzelca.jpg" alt="">
+	</div>-->
+	<div class="ks-projects-container">
+		<ul class="ks-projects-previews">
+			<li>
+				<a href="#konkurs">
+					<div class="ks-project-title">
+						<h2>Zostań mistrzem <span>i wygraj ekspres do kawy Nivona<br>o wartości <b>3999 zł</b></span></h2>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#promocja">
+					<div class="ks-project-title">
+						<h2>Mistrzowska promocja <span>Rabat 15% na wszystkie kawy</span></h2>
+						<p>Bazzara, Zicaffe, Caffe del Faro z kodem rabatowym</p>
+						<div  class="kod_rabatowy_mundail"><b>mundial2018</b></div>
+					</div>
+				</a>
+			</li>
+			
+			
+		</ul> <!-- .ks-projects-previews -->
+
+		<ul class="ks-projects">
+			<li id="konkurs">
+				<div class="preview-image">
+					<div class="ks-project-title">
+						<h2>Wytypuj wyniki 3 meczów<span>Polski na mundialu<br>i wygraj <b>ekspres Nivona 841 </b></span></h2>
+					</div> 
+				</div>
+
+				<div class="ks-project-info">
+					<div class="content">
+						<div class="main-desc konkurs">
+							
+							<h2>Do końca zgłoszeń konkursowych pozostało</h2>
+							<div id="countdown">
+								<script type="application/javascript">
+							
+									var windWidth = $(window).width();
+									$(window).resize(function(){
+										var windWidth = $(window).width();
+										
+									})
+										
+										if(windWidth > 769){
+											var timerWidth = 500,
+												timerHeight = 100;
+										}else{
+											var timerWidth = 300,
+												timerHeight = 60;
+										}
+										
+										
+										
+										var today = new Date().getTime(),
+											end = new Date('2018/06/19 15:00').getTime(),
+											finalTime = (end - today)/ 1000;
+											
+
+										var myCountdown1 = new Countdown({
+											time: finalTime, // 86400 seconds = 1 day
+											width:timerWidth, 
+											height:timerHeight,  
+											rangeHi:"day",
+											style:"flip",	
+											labels	:	{
+												//font  	: "Open Sans",
+												color 	: "#000000",
+												offset : 0, 
+												textScale 	: 0.7, 
+												weight	: "normal"	
+											}
+										});
+								
+								</script>
+							</div>
+
+							<h3>Dobrze wiemy, że bez odpowiedniego trofeum nie ma Mistrzostw Świata. </h3>
+							<p>Weź udział w naszym konkursie, zostań mistrzem i odbierz ekskluzywną nagrodę - <b>ekspres do kawy Nivona 841 o wartości 3999 zł </b></p>
+						</div>
+						<div class="konkurs-desc">
+							
+								<h4>Jak zostać mistrzem i wygrać? </h4>
+								<p>To bardzo proste!<br>
+									Wystarczy poprawnie wytypować wyniki polskiej drużyny w fazie grupowej Mistrzostw Świata. </p>
+							<div class="konkurs-desc2">
+								<div class="img">
+									<a href="https://www.facebook.com/sklepkonesso/photos/a.715408251830011.1073741828.709644209073082/1636673799703447/?type=3&theater" target="_blank"><img src="img/facebook-like.jpg" alt="Facebook Konesso"></a>
+								</div>
+								<div class="desc">	
+									<div class="custom-counter">
+										<div>Odwiedź i polub profil Konesso w serwisie Facebook<br></div>
+
+										<div>Przejdź do postu konkursowego: <br><a href="https://www.facebook.com/sklepkonesso/photos/a.715408251830011.1073741828.709644209073082/1636673799703447/?type=3&theater" class="facebook-link" target="_blank"><svg viewBox="0 0 408.788 408.788"><path fill="#475993" d="M353.701 0H55.087C24.665 0 .002 24.662.002 55.085v298.616c0 30.423 24.662 55.085 55.085 55.085h147.275l.251-146.078h-37.951a8.954 8.954 0 0 1-8.954-8.92l-.182-47.087a8.955 8.955 0 0 1 8.955-8.989h37.882v-45.498c0-52.8 32.247-81.55 79.348-81.55h38.65a8.955 8.955 0 0 1 8.955 8.955v39.704a8.955 8.955 0 0 1-8.95 8.955l-23.719.011c-25.615 0-30.575 12.172-30.575 30.035v39.389h56.285c5.363 0 9.524 4.683 8.892 10.009l-5.581 47.087a8.955 8.955 0 0 1-8.892 7.901h-50.453l-.251 146.078h87.631c30.422 0 55.084-24.662 55.084-55.084V55.085C408.786 24.662 384.124 0 353.701 0z"/></svg><span>https://www.facebook.com/sklepkonesso/photos/a.715408251830011 .1073741828.709644209073082/1636673799703447/?type=3&theater</span></a></div>
+
+										<div>W komentarzu pod postem wytypuj wyniki 3 meczów grupowych reprezentacji Polski<br>
+										
+											<blockquote><p><span>Przykładowo</span><br>Polska-Senegal 4:0, <br>Polska-Kolumbia 2:0,<br>Japonia-Polska 4:4</p></blockquote >
+										</div>
+									</div>
+								</div>
+							</div>
+							
+
+								<p>
+									<b>Uczestnik, który jako pierwszy poda poprawne wyniki spotkań reprezentacji Polski w fazie grupowej Mistrzostw Świata, otrzyma nagrodę główną w postaci ekspresu do kawy.</b> Pięciu kolejnych uczestników konkursu, którzy podadzą poprawne wyniki otrzymają <b>nagrodę pocieszenia w postaci Vouchera 200 zł </b>na zakupy w Konesso.pl <br><br>
+
+									Warunkiem udziału w konkursie jest posiadanie aktywnego profilu w serwisie społecznościowym Facebook oraz polubienie profilu organizatora <a href="https://www.facebook.com/sklepkonesso" alt="Profil Konesso Facebook" target="_blank">https://www.facebook.com/sklepkonesso</a><br><br>
+									
+									<center>
+									<b>Udostępnij post konkursowy i zaproś do zabawy swoich znajomych!</b> <br> <br>
+									
+									Zakończenie zgłoszeń do konkursu: <b>19 czerwca 2018 godzina 15:00 </b><br><br>
+
+									<a href="/regulamin_konkursu.pdf" style="display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 512 512" style="width:35px;margin-right:10px;"><path d="M368 256h-64c-8.837 0-16 7.163-16 16v128c0 8.837 7.163 16 16 16h64c17.673 0 32-14.327 32-32v-96c0-17.673-14.327-32-32-32zm0 128h-48v-96h48v96zm144-96v-32h-80c-8.837 0-16 7.163-16 16v144h32v-64h64v-32h-64v-32h64z"/><path d="M32 464V48c0-8.837 7.163-16 16-16h240v64c0 17.673 14.327 32 32 32h64v48h32v-64a15.997 15.997 0 0 0-4.64-11.36l-96-96A16.001 16.001 0 0 0 304 0H48C21.49 0 0 21.491 0 48v416c0 26.51 21.49 48 48 48h112v-32H48c-8.836 0-16-7.163-16-16z"/><path d="M240 256h-64c-8.837 0-16 7.163-16 16v144h32v-48h48c17.673 0 32-14.327 32-32v-48c0-17.673-14.327-32-32-32zm0 80h-48v-48h48v48z"/></svg><b>Biorąc udział w konkursie akceptujesz regulamin konkursu</b></a>
+									</center>
+								</p>
+							
+						</div>
+					</div>
+				</div> <!-- .ks-project-info -->
+			</li>
+
+			<li id="promocja">
+				<div class="preview-image">
+					<div class="ks-project-title">
+						<h2>Mistrzowska promocja <span>Rabat 15% na wszystkie kawy</span></h2>
+						<p>Bazzara, Zicaffe, Caffe del Faro z kodem rabatowym</p>
+						<div  class="kod_rabatowy_mundail"><b>mundial2018</b></div>
+						<p><small style="font-size: 70%;">Kod rabatowy nie łączy się z innymi promocjami</small></p>
+					</div> 
+				</div>
+
+				<div class="ks-project-info">
+					<div class="content">
+						<div class="main-desc">
+							<span>Na mistrzostwach zabrakło Włochów, <span>ale nie zabraknie włoskiej kawy</span></span>
+							<h1>MISTRZOSTWA ŚWIATA W KONESSO</h1>
+							<p>Do 15 lipca mistrzowski rabat na wszystkie kawy Bazzara, Zicaffe oraz Caffe del Faro.<br> 
+								Skorzystaj z kodu rabatowego i zaoszczędź aż 15% </p>
+						</div>
+						<div class="products-desc bazzara-color">
+							<div class="img"><img src="img/bazzara.png" alt="Bazzara espresso"></div>
+							<div>
+								<h2>Bazzara</h2>
+								<p>
+									<strong>Przedstawiamy Państwu głównego faworyta turnieju,</strong>
+									którego mieszanki zaliczają się do najlepszych na
+									świecie. Główną zaletą palarni Bazzara jest przywiązanie
+									do włoskiej tradycji, a ich taktyka opiera się na najwyższej
+									jakości oraz starannej, rzemieślniczej pracy. Największą
+									gwiazdą zespołu Bazzara jest mieszanka
+									DODICIGRANCRU. Fani kaw Bazzara już nie mogą
+									doczekać się Mistrzostw Świata.
+								</p>
+							</div>
+						</div>
+						<div class="products bazzara-color">
+							<a href="https://www.konesso.pl/product-pol-25-Kawa-ziarnista-Bazzara-DOLCEVIVACE-1kg.html" title="" class="card">
+								<span>Kawa ziarnista Bazzara DOLCEVIVACE 1kg</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-ziarnista-Bazzara-DOLCEVIVACE-1kg-25.jpg" alt="">
+							</a>
+
+							<a href="https://www.konesso.pl/product-pol-26-Kawa-ziarnista-Bazzara-AROMAMORE-1kg.html" title="" class="card">
+								<span>Kawa ziarnista Bazzara AROMAMORE 1kg</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-ziarnista-Bazzara-AROMAMORE-1kg-26.jpg" alt="">
+							</a>
+
+							<a href="https://www.konesso.pl/product-pol-1572-Kawa-ziarnista-Bazzara-GranCappuccino-1kg.html" title="" class="card">
+								<span>Kawa ziarnista Bazzara GranCappuccino 1kg</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-ziarnista-Bazzara-GranCappuccino-1kg-1572.jpg" alt="">
+							</a>
+
+							<a href="https://www.konesso.pl/product-pol-28-Kawa-ziarnista-Bazzara-PIACEREPURO-1kg.html" title="" class="card">
+								<span>Kawa ziarnista Bazzara PIACEREPURO 1kg</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-ziarnista-Bazzara-PIACEREPURO-1kg-28.jpg" alt="">
+							</a>
+
+							<a href="https://www.konesso.pl/product-pol-29-Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg.html" title="" class="card">
+								<span>Kawa ziarnista Bazzara DODICIGRANCRU 1kg</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-ziarnista-Bazzara-DODICIGRANCRU-1kg-29.jpg" alt="">
+							</a>
+							
+						</div>
+						<div class="viewall bazzara-color">
+							<a href="https://www.konesso.pl/pol_m_Kawa-2147.html?filter_producer=1320750793&filter_traits%5B1335603539%5D=&filter_traits%5B1335603421%5D=&filter_traits%5B1335603487%5D=&filter_traits%5B1335603491%5D=&filter_traits%5B1335603574%5D=&filter_traits%5B1335603533%5D=&filter_traits%5B1335603586%5D=&filter_bestseller=&filter_promotion=&filter_discount=&filter_new=&filter_price=0-800&filter_availability=" target="_blank">Zobacz wszystkie kawy Bazzara</a>
+						</div>
+
+						<div class="products-desc zicaffe-color">
+							<div class="img"><img src="img/Zicaffe-logo.png" alt="Zicaffe "></div>
+							<div>
+								<h2>Zicaffe </h2>
+								<p>
+								Typowo południowowłoski styl
+								palenia sprawia, że Zicaffe to idealna
+								propozycja dla fanów espresso. Palarnia od
+								samego początku swojej działalności jest
+								prowadzona przez jedną rodzinę, dla której
+								najważniejsza jest tradycja. Reprezentant
+								Sycylii może mocno namieszać w całym
+								turnieju i z pewnością warto go obserwować.
+								</p>
+							</div>
+						</div>
+						<div class="products zicaffe-color">
+							<a href="https://www.konesso.pl/product-pol-341-Kawa-Zicaffe-Cinquantenario-1kg.html" title="" class="card">
+								<span>Kawa Zicaffe Cinquantenario 1kg</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-Zicaffe-Cinquantenario-1kg-341.jpg" alt="">
+							</a>
+
+							<a href="https://www.konesso.pl/product-pol-340-Kawa-Zicaffe-Antico-Aroma-1kg.html" title="" class="card">
+								<span>Kawa Zicaffe Antico Aroma 1kg</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-Zicaffe-Antico-Aroma-1kg-340.jpg" alt="">
+							</a>
+
+							<a href="https://www.konesso.pl/product-pol-2552-Kawa-ziarnista-Zicaffe-PROFESSIONAL-BAR-1kg.html" title="" class="card">
+								<span>Kawa ziarnista Zicaffe PROFESSIONAL BAR 1kg</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-ziarnista-Zicaffe-PROFESSIONAL-BAR-1kg-2552.jpg" alt="">
+							</a>
+
+							<a href="https://www.konesso.pl/product-pol-3328-Kawa-ziarnista-Zicaffe-Black-of-Italy-100-ARABICA-1kg.html" title="" class="card">
+								<span>Kawa ziarnista Zicaffe Black of Italy 100% ARABICA 1kg</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-ziarnista-Zicaffe-Black-of-Italy-100-ARABICA-1kg-3328.jpg" alt="">
+							</a>
+
+							<a href="https://www.konesso.pl/product-pol-3330-Kawa-ziarnista-Zicaffe-Supercrema-La-Crema-in-Tazza-1kg.html" title="" class="card">
+								<span>Kawa ziarnista Zicaffe Supercrema La Crema in Tazza 1kg</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-ziarnista-Zicaffe-Supercrema-La-Crema-in-Tazza-1kg-3330.jpg" alt="">
+							</a>
+						</div>
+						<div class="viewall zicaffe-color">
+							<a href="https://www.konesso.pl/pol_m_Kawa-2147.html?filter_producer=1352545434&filter_traits%5B1335603539%5D=&filter_traits%5B1335603421%5D=&filter_traits%5B1335603487%5D=&filter_traits%5B1335603491%5D=&filter_traits%5B1335603574%5D=&filter_traits%5B1335603533%5D=&filter_traits%5B1335603586%5D=&filter_bestseller=&filter_promotion=&filter_discount=&filter_new=&filter_price=0-800&filter_availability=" target="_blank">Zobacz wszystkie kawy Zicaffe</a>
+						</div>
+
+						<div class="products-desc caffe-del-faro-color">
+							<div class="img"><img src="img/caffe-del-faro.png" alt="Caffe del Faro"></div>
+							<div>
+								<h2>Caffe del Faro </h2>
+								<p>
+								Stosunkowo młoda palarnia, która może pochwalić się wieloma
+								sukcesami na arenie międzynarodowej. Starają się kreować zupełnie
+								nowy styl włoskiej kawy, który już doceniło wielu ekspertów
+								z całego świata. Ich taktyka to przede wszystkim świeża wizja,
+								dbałość o najdrobniejsze szczegóły oraz wysoka jakość.
+								Caffe del Faro może okazać się czarnym koniem tych rozgrywek.
+
+								</p>
+							</div>
+						</div>
+						<div class="products  caffe-del-faro-color">
+							<a href="https://www.konesso.pl/product-pol-1969-Kawa-ziarnista-Caffe-del-Faro-Espresso-Italiano-1kg.html" title="" class="card">
+								<span>Kawa ziarnista Caffe del Faro Espresso Italiano 1kg</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-ziarnista-Caffe-del-Faro-Espresso-Italiano-1kg-1969.jpg" alt="">
+							</a>
+
+							<a href="https://www.konesso.pl/product-pol-1973-Kawa-mielona-Caffe-del-Faro-Suprema-100-Arabika-250g.html" title="" class="card">
+								<span>Kawa mielona Caffe del Faro Suprema 100% Arabika 250g</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-mielona-Caffe-del-Faro-Suprema-100-Arabika-250g-1973.jpg" alt="">
+							</a>
+
+							<a href="https://www.konesso.pl/product-pol-1968-Kawa-ziarnista-Caffe-del-Faro-Gold-Extra-Bar-1kg.html" title="" class="card">
+								<span>Kawa ziarnista Caffe del Faro Gold Extra Bar 1kg</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-ziarnista-Caffe-del-Faro-Gold-Extra-Bar-1kg-1968.jpg" alt="">
+							</a>
+
+							<a href="https://www.konesso.pl/product-pol-1972-Kawa-ziarnista-Caffe-del-Faro-Suprema-100-Arabica-250g.html" title="" class="card">
+								<span>Kawa ziarnista Caffe del Faro Suprema 100% Arabica 250g</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-ziarnista-Caffe-del-Faro-Suprema-100-Arabica-250g-1972.jpg" alt="">
+							</a>
+
+							<a href="https://www.konesso.pl/product-pol-1967-Kawa-ziarnista-Caffe-del-Faro-Suprema-100-Arabica-1kg.html" title="" class="card">
+								<span>Kawa ziarnista Caffe del Faro Suprema 100% Arabica 1kg</span>
+								<img src="https://www.konesso.pl/pol_il_Kawa-ziarnista-Caffe-del-Faro-Suprema-100-Arabica-1kg-1967.jpg" alt="">
+							</a>
+
+							
+
+							
+						</div>
+						<div class="viewall caffe-del-faro-color">
+							<a href="https://www.konesso.pl/pol_m_Kawa-2147.html?filter_producer=1462196520&filter_traits%5B1335603539%5D=&filter_traits%5B1335603421%5D=&filter_traits%5B1335603487%5D=&filter_traits%5B1335603491%5D=&filter_traits%5B1335603574%5D=&filter_traits%5B1335603533%5D=&filter_traits%5B1335603586%5D=&filter_bestseller=&filter_promotion=&filter_discount=&filter_new=&filter_price=0-800&filter_availability=" target="_blank">Zobacz wszystkie kawy Caffe del Faro</a>
+						</div>
+					</div>
+				</div> <!-- .ks-project-info -->
+			</li>
+
+		</ul> <!-- .ks-projects -->
+
+		<!--<button class="scroll ks-text-replace">Scroll</button>-->
+	</div> <!-- .ks-project-container -->
+
+	<nav class="ks-primary-nav" id="primary-nav">
+		<ul>
+			<li class="ks-label">Menu</li>
+			<!--<li><a href="#index" title="">Strona główna</a></li>
+			<li><a href="#konkurs" title="">Konkurs</a></li>-->
+			<li>17 777 01 30<br>sklep@konesso.pl</li>
+			<li><a href="/regulamin_konkursu.pdf" title="">Regulamin konkursu</a></li>
+			<!--<li><a href="#promocja" title="">Promocje</a></li>-->
+			<li><a href="https://konesso.pl" title="Włoska kawa ziarnista do ekspresu, sklep internetowy z kawą Konesso.pl">Sklep Konesso</a></li>
+			
+		</ul>
+	</nav> <!-- .ks-primary-nav -->
+
+</body>
+</html>
