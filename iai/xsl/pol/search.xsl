@@ -91,7 +91,7 @@
 			
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-			<link rel="shortcut icon" href="/data/designs/xsl/11_1/gfx/assets/favicon.ico" />
+			<link rel="shortcut icon" href="/data/include/cms/MkFresh/theme/favicon.ico" />
 		
 			
 			<iaixsl:choose>
