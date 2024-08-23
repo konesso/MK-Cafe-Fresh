@@ -5388,7 +5388,7 @@
 				<div class="col-lg-3 col-md-6 col-12 my-3">
 					<a href="/UNIKATOWA-PALARNIA-KAWY-cabout-pol-251.html" class="image-block text-left">
 						<picture>
-							<img src="/data/designs/xsl/11_1/gfx/assets/blog-1.jpg" alt="Description"/>
+							<img src="/data/include/cms/MkFresh/Blog/blog-1.jpg" alt="Description"/>
 						</picture>
 						<div class="overlay"></div>
 						<span class="title-text text-uppercase">Unikatowa Manufaktura</span>
@@ -5398,7 +5398,7 @@
 				<div class="col-lg-3 col-md-6 col-12 my-3">
 					<a href="https://mkfresh.pl/Promocja-spromo-pol.html" class="image-block text-left">
 						<picture>
-							<img src="/data/designs/xsl/11_1/gfx/assets/blog-2.jpg" alt="Description"/>
+							<img src="/data/include/cms/MkFresh/Blog/blog-2.jpg" alt="Description"/>
 						</picture>
 						<div class="overlay"></div>
 						<span class="title-text text-uppercase">Oferta prezentowa</span>
@@ -5408,7 +5408,7 @@
 				<div class="col-lg-3 col-md-6 col-12 my-3">
 					<a href="/pol_m_KAWY-8811.html" class="image-block text-left">
 						<picture>
-							<img src="/data/designs/xsl/11_1/gfx/assets/blog-3.jpg" alt="Description"/>
+							<img src="/data/include/cms/MkFresh/Blog/blog-3.jpg" alt="Description"/>
 						</picture>
 						<div class="overlay"></div>
 						<span class="title-text text-uppercase">znajdź kawę dla siebie</span>
@@ -5418,7 +5418,7 @@
 				<div class="col-lg-3 col-md-6 col-12 my-3">
 					<a href="/Porady-i-przepisy-bloglist-pol-40.html" class="image-block text-left">
 						<picture>
-							<img src="/data/designs/xsl/11_1/gfx/assets/blog-4.jpg" alt="Description"/>
+							<img src="/data/include/cms/MkFresh/Blog/blog-4.jpg" alt="Description"/>
 						</picture>
 						<div class="overlay"></div>
 						<span class="title-text text-uppercase">Porady Baristy</span>
