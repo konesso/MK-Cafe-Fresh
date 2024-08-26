@@ -3803,17 +3803,7 @@
                 <h2 class="big_label">
                     Logowanie
                 </h2>
-				<div class="badge-important p-5 mb-2 text-center">
-					<p>
-						Od dnia 2 stycznia 2024 r. zmienia się podmiot obsługujący sklep.
-						W związku ze zmianą, podczas składania pierwszego zamówienia w tym roku na stronie mkfresh.pl, będą Państwo proszeni o ponowne założenie konta. Za utrudnienia serdecznie przepraszamy.<br/><br/>
-
-						Jednocześnie chcąc zrekompensować Państwu niedogodności z tym związane, otrzymają Państwo
-						rabat w wysokości 25% na pierwsze zamówienie po wpisaniu kodu rabatowego: powitalny25<br/><br/>
-
-						Rabat obowiązuje na wszystkie kawy MK Cafe Fresh niebędące w promocji.
-					</p>
-				</div>
+				
 
 
 				

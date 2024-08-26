@@ -127,10 +127,10 @@
     ],
     "HomePage": {
         "HeroSection": {
-            "title": "Najlepsza kawa i herbata w jednym miejscu",
-            "subtitle": "Znajdź swoje ulubione smaki",
-            "button": "Zobacz więcej",
-            "link": "products.html"
+            "title": "Najwięksi w Polsce",
+            "subtitle": "Rozlewamy kawę na skalę krajową, serwujemy z sercem każdą filiżankę.",
+            "button": "Odwiedź Nasz sklep",
+            "linkTo": "products.html"
         },
         "AboutSection": {
             "title": "O nas",
@@ -238,6 +238,13 @@
         }
     },
     "AboutUsPage": {
+        "HeroSection": {
+            "title": "Poznajmy się",
+            "subtitle": "Rozlewamy kawę na skalę krajową, serwujemy z sercem każdą filiżankę.",
+            "buttonText": "Odwiedź Nasz sklep",
+            "linkTo": "products.html",
+            "image": "about-us.jpg"
+        },
         "title": "O nas",
         "text": "Dowiedz się więcej o naszej firmie",
         "subtitle": "Sprzedajemy miłość do kawy",
