@@ -419,7 +419,7 @@
 								<iaixsl:attribute name="class">freeShipping --active</iaixsl:attribute>
 							</iaixsl:if>
 							<span class="freeShipping__info">Darmowa dostawa</span>
-							<span class="ml-1">do punktu</span>
+							
 							<strong class="freeShipping__val ml-2">
 								od 
 								<iaixsl:value-of select="/shop/basket/@shippinglimitfree_formatted"/>
