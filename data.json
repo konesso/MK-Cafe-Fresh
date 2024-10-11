@@ -366,240 +366,6 @@
             }
         },
         {
-            "name": "MarkiPage",
-            "link": "/marki",
-            "pageTitle": "Marki",
-            "HeroSection": {
-                "title": "Najwięksi w Polsce",
-                "subtitle": "Rozlewamy kawę na skalę krajową, serwujemy z sercem każdą filiżankę.",
-                "button": "Odwiedź Nasz sklep",
-                "linkTo": "/marki",
-                "infiniteGallery": [
-                    {
-                        "link": "https://picsum.photos/300/200?random=0",
-                        "alt": "Image 0"
-                    },
-                    {
-                        "link": "https://picsum.photos/200/300?random=1",
-                        "alt": "Image 1"
-                    },
-                    {
-                        "link": "https://picsum.photos/300/200?random=2",
-                        "alt": "Image 2"
-                    },
-                    {
-                        "link": "https://picsum.photos/300/200?random=3",
-                        "alt": "Image 3"
-                    },
-                    {
-                        "link": "https://picsum.photos/200/300?random=4",
-                        "alt": "Image 4"
-                    },
-                    {
-                        "link": "https://picsum.photos/300/200?random=5",
-                        "alt": "Image 5"
-                    },
-                    {
-                        "link": "https://picsum.photos/200/300?random=6",
-                        "alt": "Image 6"
-                    },
-                    {
-                        "link": "https://picsum.photos/300/200?random=7",
-                        "alt": "Image 7"
-                    },
-                    {
-                        "link": "https://picsum.photos/200/300?random=8",
-                        "alt": "Image 8"
-                    },
-                    {
-                        "link": "https://picsum.photos/300/200?random=9",
-                        "alt": "Image 9"
-                    },
-                    {
-                        "link": "https://picsum.photos/300/200?random=10",
-                        "alt": "Image 10"
-                    },
-                    {
-                        "link": "https://picsum.photos/300/200?random=11",
-                        "alt": "Image 11"
-                    },
-                    {
-                        "link": "https://picsum.photos/200/300?random=12",
-                        "alt": "Image 12"
-                    },
-                    {
-                        "link": "https://picsum.photos/300/200?random=13",
-                        "alt": "Image 13"
-                    },
-                    {
-                        "link": "https://picsum.photos/300/200?random=14",
-                        "alt": "Image 14"
-                    },
-                    {
-                        "link": "https://picsum.photos/200/300?random=15",
-                        "alt": "Image 15"
-                    },
-                    {
-                        "link": "https://picsum.photos/300/200?random=16",
-                        "alt": "Image 16"
-                    },
-                    {
-                        "link": "https://picsum.photos/300/200?random=17",
-                        "alt": "Image 17"
-                    }
-                ]
-            },
-            "AboutSection": {
-                "title": "O nas",
-                "text": "Jako największy sprzedawca kawy w Polsce, koncentrujemy się  na dostarczaniu najwyższej jakości produktów, szybkiej dostawie i wygodnych formach płatności, zdobywając zaufanie  setek tysięcy klientów.",
-                "list": [
-                    "jakość",
-                    "Szybka dostawa",
-                    "Wygoda",
-                    "Zaufanie",
-                    "Profesjonalizm",
-                    "Doświadczenie",
-                    "Innowacyjność",
-                    "Pasja",
-                    "Zadowolenie klienta",
-                    "Dostępność",
-                    "Bezpieczeństwo"
-                ],
-                "firstText": "Dzięki wieloletniemu doświadczeniu i zaangażowaniu. Nasz sklep oferuje szeroki asortyment produktów najwyższej jakości dla miłośników kawy i profesjonalistów, stając się synonimem niezawodności i profesjonalizmu.",
-                "secondText": "Naszym celem jest dostarczanie produktów spełniających najwyższe standardy. Współpracujemy z renomowanymi producentami kawy, herbaty i akcesoriów, aby zapewnić klientom najlepsze doświadczenia smakowe. Dbamy o szybką i bezpieczną dostawę, dzięki zaawansowanemu systemowi pakowania i współpracy z firmami kurierskimi.",
-                "thirdText": "Konesso.pl to także wygodne formy płatności, w tym szybkie przelewy i płatność za pobraniem. Prowadzimy również hurtownię, umożliwiając sklepom stacjonarnym i internetowym zaopatrzenie się w nasze produkty w atrakcyjnych cenach."
-            },
-            "BrandsSection": {
-                "firstTitle": "Współpracujemy z <span class=\"bold\">największymi</span><br />markami <span class=\"bold\">kawowymi</span> na rynku",
-                "smallText": "15+ lat na rynku",
-                "secondTitle": "Niektóre z <span class=\"bold\">Naszych</span>",
-                "brands": [
-                    {
-                        "name": "Nivona",
-                        "image": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/loga/logo-color1.jpg",
-                        "link": "https://www.konesso.pl/firm-pol-1320750976-NIVONA.html"
-                    },
-                    {
-                        "name": "Tom Caffe",
-                        "image": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/loga/logo-color2.jpg",
-                        "link": "https://www.konesso.pl/firm-pol-1661424659-TOM-CAFFE.html"
-                    },
-                    {
-                        "name": "Melitta",
-                        "image": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/loga/logo-color3.jpg",
-                        "link": "https://www.konesso.pl/firm-pol-1519810309-MELITTA.html"
-                    },
-                    {
-                        "name": "Lavazza",
-                        "image": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/loga/logo-color4.jpg",
-                        "link": "https://www.konesso.pl/firm-pol-1320750707-LAVAZZA.html"
-                    },
-                    {
-                        "name": "Costa",
-                        "image": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/loga/logo-color5.jpg",
-                        "link": "https://www.konesso.pl/firm-pol-1601275587-COSTA-COFFEE.html"
-                    },
-                    {
-                        "name": "Philips",
-                        "image": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/loga/logo-color8.jpg",
-                        "link": "https://www.konesso.pl/firm-pol-1671709671-PHILIPS.html"
-                    },
-                    {
-                        "name": "Jura",
-                        "image": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/loga/logo-color10.jpg",
-                        "link": "https://www.konesso.pl/firm-pol-1320750906-JURA.html"
-                    },
-                    {
-                        "name": "Saeco",
-                        "image": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/loga/logo-color9.jpg",
-                        "link": "https://www.konesso.pl/firm-pol-1320750993-SAECO.html"
-                    },
-                    {
-                        "name": "Trip Coffee",
-                        "image": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/loga/logo-color11.jpg",
-                        "link": "https://www.konesso.pl/firm-pol-1693470639-TRIP-COFFEE.html"
-                    },
-                    {
-                        "name": "Starbucks",
-                        "image": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/loga/logo-color12.jpg",
-                        "link": "https://www.konesso.pl/firm-pol-1614324792-STARBUCKS-R.html"
-                    },
-                    {
-                        "name": "Lavazza",
-                        "image": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/loga/logo-color4.jpg",
-                        "link": "https://www.konesso.pl/firm-pol-1320750707-LAVAZZA.html"
-                    },
-                    {
-                        "name": "Miele",
-                        "image": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/loga/logo-color14.jpg",
-                        "link": "https://www.konesso.pl/firm-pol-1630307309-MIELE.html"
-                    }
-                ]
-            },
-            "Services": {
-                "title": "Niektóre z <span class=\"bold\">Naszych</span> usług",
-                "services": [
-                    {
-                        "index": "1",
-                        "title": "Szkolenia - Edukacja Baristyczna",
-                        "category": "szkolenia",
-                        "description": "Oferujemy profesjonalne szkolenia dla baristów oraz miłośników kawy, które pomogą w podniesieniu umiejętności parzenia kawy do poziomu mistrzowskiego.",
-                        "img": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/produkty-i-uslugi/panel-img1.jpg",
-                        "list": [
-                            "Kursy dla początkujących i zaawansowanych baristów",
-                            "Warsztaty z latte art",
-                            "Szkolenia dla firm",
-                            "Szkolenia produktowe"
-                        ],
-                        "link": "services.html"
-                    },
-                    {
-                        "index": "2",
-                        "title": "Sklep Online - Kawa i Akcesoria",
-                        "category": "sklep",
-                        "description": "Nasz sklep online oferuje szeroki asortyment kawy, ekspresów oraz akcesoriów do kawy, dostarczając wszystko, co potrzebne do przyrządzenia idealnej kawy w domu.",
-                        "img": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/produkty-i-uslugi/panel-img2.jpg",
-                        "list": [
-                            "Bogaty wybór kaw ziarnistych i mielonych",
-                            "Ekspresy do kawy domowe i profesjonalne",
-                            "Akcesoria baristyczne i filtry"
-                        ],
-                        "link": "services.html"
-                    },
-                    {
-                        "index": "3",
-                        "title": "Kawiarnia - Miejsce Pełne Smaku",
-                        "category": "kawiarnia",
-                        "description": "Kawiarnia Konesso to idealne miejsce na relaks przy filiżance doskonale zaparzonej kawy. Oferujemy szeroki wybór kaw oraz domowych wypieków.",
-                        "img": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/produkty-i-uslugi/panel-img3.jpg",
-                        "list": [
-                            "Wyjątkowa atmosfera",
-                            "Profesjonalnie przygotowana kawa",
-                            "Własne wypieki i desery"
-                        ],
-                        "link": "services.html"
-                    }
-                ]
-            },
-            "Other": {
-                "title": "Inne",
-                "OtherServices": [
-                    {
-                        "title": "O nas",
-                        "description": "Dowiedz się więcej o nas",
-                        "image": "icon-coffee.png",
-                        "link": "contact.html"
-                    },
-                    {
-                        "title": "Pozostałe usługi",
-                        "description": "Zobacz pozostałe usługi",
-                        "image": "icon-coffee.png",
-                        "link": "blog-list.html"
-                    }
-                ]
-            }
-        },
-        {
             "name": "AboutUsPage",
             "link": "/o-nas",
             "pageTitle": "O nas",
@@ -610,9 +376,6 @@
                 "linkTo": "https://www.konesso.pl",
                 "image": "about-us.jpg"
             },
-            "title": "O nas",
-            "text": "Dowiedz się więcej o naszej firmie",
-            "subtitle": "Sprzedajemy miłość do kawy",
             "aboutImages": {
                 "heroBackground": {
                     "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/notCompressed/people-20.webp",
@@ -680,21 +443,7 @@
                 ]
             },
             "mainDescription": "Jako największy sprzedawca kawy w Polsce koncentrujemy się na dostarczaniu najwyższej jakości produktów, szybkiej dostawie i wygodnych formach płatności, zdobywając zaufanie setek tysięcy klientów.",
-            "listOfProducts": [
-                "Kawa",
-                "Herbata",
-                "Syropy",
-                "Akcesoria",
-                "Ekspresy"
-            ],
-            "listOfServices": [
-                "Szkolenia",
-                "Sklep",
-                "Kawiarnia",
-                "Hurtownia",
-                "Dostawa"
-            ],
-            "managementTitle": "Nasz zespół",
+            "smallTextDescription": "Konesso.pl to internetowy sklep z kawą, ekspresami do kawy, herbatą oraz różnego rodzaju akcesoriami do parzenia i podawania kawy, oraz herbaty. Nie oszukujmy się. Nasz sklep powstał z myślą o prawdziwych miłośnikach dobrego smaku, którzy z małych, codziennych czynności pragną czerpać jak najwięcej.",
             "managementSubtitle": "Zaangażowani i profesjonalni",
             "management": [
                 {
@@ -738,31 +487,69 @@
                     "alt": "kierownik"
                 }
             ],
-            "firstList": [
-                "jakość",
-                "Szybka dostawa",
-                "Wygoda",
-                "Zaufanie",
-                "Profesjonalizm",
-                "Doświadczenie",
-                "Innowacyjność",
-                "Pasja",
-                "Zadowolenie klienta",
-                "Dostępność",
-                "Bezpieczeństwo"
-            ],
-            "secondList": [
-                "jakość",
-                "Szybka dostawa",
-                "Wygoda",
-                "Zaufanie",
-                "Profesjonalizm",
-                "Doświadczenie",
-                "Innowacyjność",
-                "Pasja",
-                "Zadowolenie klienta",
-                "Dostępność",
-                "Bezpieczeństwo"
+            "Services": {
+                "title": "Czym się zajmujemy",
+                "services": [
+                    {
+                        "title": "Palarnia Kawy",
+                        "description": "Nasza palarnia kawy oferuje świeżo palone ziarna najwyższej jakości, zapewniając niezrównany smak i aromat w każdej filiżance.",
+                        "icon": "https://www.konesso.pl/data/include/cms/KonessoBiz/assets/service-icon-3.png",
+                        "link": "service.html"
+                    },
+                    {
+                        "title": "Sklep Konesso",
+                        "description": "Nasz sklep online oferuje szeroki asortyment kawy, ekspresów oraz akcesoriów do kawy, dostarczając wszystko, co potrzebne do przyrządzenia idealnej kawy w domu.",
+                        "icon": "https://www.konesso.pl/data/include/cms/KonessoBiz/assets/service-icon-3.png",
+                        "link": "service.html"
+                    },
+                    {
+                        "title": "Produkty",
+                        "description": "Oferujemy bogaty wybór produktów, od kaw ziarnistych i mielonych po ekspresy do kawy domowe i profesjonalne oraz akcesoria baristyczne.",
+                        "icon": "https://www.konesso.pl/data/include/cms/KonessoBiz/assets/service-icon-3.png",
+                        "link": "service.html"
+                    },
+                    {
+                        "title": "Szkolenia",
+                        "description": "Oferujemy profesjonalne szkolenia dla baristów oraz miłośników kawy, które pomogą w podniesieniu umiejętności parzenia kawy do poziomu mistrzowskiego.",
+                        "icon": "https://www.konesso.pl/data/include/cms/KonessoBiz/assets/service-icon-3.png",
+                        "link": "service.html"
+                    },
+                    {
+                        "title": "Eventy",
+                        "description": "Organizujemy wyjątkowe wydarzenia kawowe, degustacje i warsztaty, które pozwalają naszym klientom zgłębić tajniki świata kawy.",
+                        "icon": "https://www.konesso.pl/data/include/cms/KonessoBiz/assets/service-icon-3.png",
+                        "link": "service.html"
+                    },
+                    {
+                        "title": "Serwis",
+                        "description": "Nasi doświadczeni serwisanci każdego dnia przywracają do życia uszkodzone ekspresy, zapewniając niezawodne działanie Twojego sprzętu.",
+                        "icon": "https://www.konesso.pl/data/include/cms/KonessoBiz/assets/service-icon-3.png",
+                        "link": "service.html"
+                    },
+                    {
+                        "title": "Hurtownia",
+                        "description": "Nasza hurtownia oferuje kompleksową obsługę klientów biznesowych, zapewniając szeroki wybór produktów w atrakcyjnych cenach.",
+                        "icon": "https://www.konesso.pl/data/include/cms/KonessoBiz/assets/service-icon-3.png",
+                        "link": "service.html"
+                    }
+                ]
+            },
+            "mainCategories": [
+                {
+                    "name": "Szybka i bezpieczna <span class=\"bold\">dostawa </span>",
+                    "description": "Opracowany przez lata w naszym magazynie nowoczesny system pakowania w połączeniu z profesjonalnym zabezpieczeniem przesyłek sprawiają, że zamówiony towar dotrze do Ciebie w nienaruszonym stanie. Dla wielu z Was krótki czas dostawy jest szalenie istotny, dlatego ściśle współpracujemy z firmami kurierskimi, które zapewniają błyskawiczny transport na terenie całej Polski. Twoje zamówienie może dotrzeć do Ciebie już w następnym dniu roboczym. Sklep Konesso oferuje błyskawiczną i bezpieczną dostawę zamówionego towaru.",
+                    "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/assets/package.svg"
+                },
+                {
+                    "name": "Szeroki asortyment <span class=\"bold\">produktów </span>",
+                    "description": "Sklep Konesso oferuje klientom najwyższej jakości produkty, które sprawdzą się w domu, biurze i gastronomii. Dodatkowo staramy się wyjść naprzeciw ich oczekiwaniom, oferując wygodne formy płatności. Zapłatę za założone zamówienie możecie dokonać poprzez wpłatę na konto bankowe lub płacąc za pobraniem podczas odbioru przesyłki. Szybki przelew sprawi, że Twoja płatność zostanie do nas przekazana w ekspresowym tempie, a Ty spokojnie będziesz mógł czekać na dostawę. Przedsiębiorcy, którzy zechcą odłożyć termin płatności w czasie, mogą skorzystać z także kredytu kupieckiego.",
+                    "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/assets/productss.svg"
+                },
+                {
+                    "name": "Wygodne formy <span class=\"bold\">płatności </span>",
+                    "description": "Konesso.pl to sklep internetowy posiadający bogatą ofertę skierowaną do każdego konsumenta. Oprócz najwyższej jakości kawy ziarnistej, mielonej czy w kapsułkach w naszej ofercie znajdziecie również akcesoria do kawy, zaparzacze, sosy i syropy smakowe, czekolady, miody, a także saturatory do wody. Naszym klientom dostarczamy automatyczne i kolbo ekspresy do kawy oraz te przeznaczone do domu, a także akcesoria wykorzystywane do przechowywania i parzenia kawy. Opróćz tematu kawy zjamujemy się również hurtem herbaty i z powodzeniem prowadzimy hurtownie herbaty wielu znanych na całym świecie producentów.Szeroka oferta naszej hurtowni sprawia, że wszystko, czego potrzebujesz, znajduje się w jednym miejscu.",
+                    "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/assets/payments.svg"
+                }
             ]
         },
         {
@@ -1727,8 +1514,13 @@
             "name": "ServicesPage",
             "link": "/uslugi",
             "pageTitle": "Usługi",
-            "title": "Nasze usługi",
-            "subtitle": "Znajdź swoje ulubione usługi w naszym sklepie",
+            "heroSection": {
+                "title": "Nasze usługi",
+                "subtitle": "Zobacz co jeszcze możemy dla Ciebie zrobić",
+                "buttonText": "Zobacz w sklepie",
+                "link": "https://www.konesso.pl/pol_m_Kawa-2147.html",
+                "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-7.webp"
+            },
             "services": [
                 {
                     "name": "Nivona",
@@ -1799,117 +1591,41 @@
                     "category": "szkolenia",
                     "heroSection": {
                         "title": "Szkolenia",
-                        "subtitle": "",
-                        "buttonText": "Zobacz w sklepie",
+                        "subtitle": "Podnieś swoje umiejętności parzenia kawy do poziomu mistrzowskiego.",
+                        "buttonText": "Zobacz Więcej",
                         "link": "https://www.konesso.pl/pol_m_Kawa-2147.html",
-                        "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-1.jpg"
+                        "backgroundImage": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/produkty-i-uslugi/panel-img1.jpg"
                     },
-                    "shortDescription": "Poznaj naszą starannie wyselekcjonowaną ofertę kaw, które zachwycą każdego miłośnika tego aromatycznego napoju. Od intensywnych espresso po delikatne blendy – nasz wybór gwarantuje niezrównany smak i najwyższą jakość ziaren. Znajdź swoją ulubioną kawę i ciesz się wyjątkowymi chwilami z każdą filiżanką.",
+                    "shortDescription": "Profesjonalne szkolenia dla baristów i miłośników kawy.",
                     "path": "uslugi/szkolenia",
                     "title": "Szkolenia",
                     "link": "uslugi/szkolenia",
-                    "categoriesTitle": "Poznaj <span class=\"bold\">szeroką </span> gamę <span class=\"bold\">szkoleń </span> <br/>, które oferujemy",
-                    "categoriesSmallText": "Szkolenia na każdą okazję",
+                    "categoriesTitle": "Poznaj <span class=\"bold\">szeroką</span> gamę <span class=\"bold\">szkoleń</span><br/>, które oferujemy",
+                    "categoriesSmallText": "Rozwiń swoją pasję z naszymi szkoleniami.",
                     "mainCategories": [
                         {
-                            "name": "Nasz wybór",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista_Wybor-Konesso-8478.html",
-                            "description": "Poznaj naszą starannie wyselekcjonowaną ofertę kaw, które zachwycą każdego miłośnika tego aromatycznego napoju. Od intensywnych espresso po delikatne blendy – nasz wybór gwarantuje niezrównany smak i najwyższą jakość ziaren. Znajdź swoją ulubioną kawę i ciesz się wyjątkowymi chwilami z każdą filiżanką.",
-                            "topSellers": [
-                                {
-                                    "name": "MRC. Americano Blend",
-                                    "link": "https://www.konesso.pl/product-pol-19351-Kawa-ziarnista-MRC-Americano-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Tatry 250g",
-                                    "link": "https://www.konesso.pl/product-pol-19618-Kawa-ziarnista-Trip-Coffee-Tatry-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Szkolenia",
+                            "title": "Szkolenia - Edukacja Baristyczna",
+                            "category": "szkolenia",
+                            "description": "Oferujemy profesjonalne szkolenia dla baristów oraz miłośników kawy, które pomogą w podniesieniu umiejętności parzenia kawy do poziomu mistrzowskiego.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-66.webp",
+                            "link": "https://konesso.pl/szkolenia"
                         },
                         {
-                            "name": "Kawy Mielone",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-mielona-2161.html",
-                            "description": "Odkryj bogactwo aromatów naszych mielonych kaw, które zapewnią Ci niezapomniane doznania smakowe każdego ranka. Świeżość i najwyższa jakość ziaren gwarantują perfekcyjny smak w każdej filiżance.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-80-Kawa-mielona-Lavazza-Qualita-Oro-250g-puszka.html"
-                                },
-                                {
-                                    "name": "Dallmayr Classic",
-                                    "link": "https://www.konesso.pl/product-pol-15736-Kawa-mielona-Dallmayr-Classic-500g.html"
-                                },
-                                {
-                                    "name": "Bristot Wellcaffe",
-                                    "link": "https://www.konesso.pl/product-pol-14276-Kawa-mielona-Bristot-Wellcaffe-200g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Szkolenia",
+                            "title": "Edukacja dla wszystkich",
+                            "category": "szkolenia",
+                            "description": "Otwieramy drzwi do świata kawy dla każdego, oferując szkolenia i warsztaty zarówno dla profesjonalistów, jak i amatorów.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-37.jpg",
+                            "link": "https://konesso.pl/szkolenia"
                         },
                         {
-                            "name": "Kawy Ziarniste",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista-2160.html",
-                            "description": "Nasze kawy ziarniste to synonim świeżości i intensywnego smaku. Wybierz spośród starannie wyselekcjonowanych mieszanek, które zaspokoją gusta nawet najbardziej wymagających kawoszy.",
-                            "topSellers": [
-                                {
-                                    "name": "Costa Coffee Signature",
-                                    "link": "https://www.konesso.pl/product-pol-6769-Kawa-ziarnista-Costa-Coffee-Signature-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "HAYB Konesso",
-                                    "link": "https://www.konesso.pl/product-pol-19307-Kawa-ziarnista-HAYB-Konesso-Letnie-Espresso-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-101.webp"
-                        },
-                        {
-                            "name": "Kawy bezkofeinowe",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-Bezkofeinowa-7503.html",
-                            "description": "Ciesz się pełnią smaku bez kofeiny dzięki naszym starannie wyselekcjonowanym kawom bezkofeinowym. Idealne dla tych, którzy pragną delektować się kawą o każdej porze dnia.",
-                            "topSellers": [
-                                {
-                                    "name": "illy Decaf",
-                                    "link": "https://www.konesso.pl/product-pol-878-Kawa-mielona-illy-Decaf-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "ZIDEC Decaffeinato",
-                                    "link": "https://www.konesso.pl/product-pol-3670-Kawa-mielona-ZIDEC-Decaffeinato-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "Cornella Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-4181-Kawa-ziarnista-Cornella-Espresso-Market-Grade-Decaf-68-1kg.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-102.webp"
-                        },
-                        {
-                            "name": "Kawy w kapsułkach",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-w-kapsulkach-2162.html",
-                            "description": "Praktyczne i aromatyczne kawy w kapsułkach, które pozwolą Ci cieszyć się ulubionym napojem w mgnieniu oka. Idealne dla osób ceniących wygodę bez kompromisów w smaku.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Rossa",
-                                    "link": "https://www.konesso.pl/product-pol-14533-Kapsulki-do-Nespresso-Lavazza-Rossa-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-11804-Kapsulki-do-Nespresso-Lavazza-Qualita-Oro-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Cortado Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-7754-Kapsulki-Nescafe-Dolce-Gusto-Cortado-Espresso-Macchiato-16-sztuk.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Szkolenia",
+                            "title": "Bogactwo ciekawych tematów",
+                            "category": "szkolenia",
+                            "description": "Nasze szkolenia obejmują szeroki zakres tematów od technik parzenia kawy po sztukę latte.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-18.webp",
+                            "link": "https://konesso.pl/szkolenia"
                         }
                     ],
                     "otherProductsTitle": "Pozostałe <span class=\"bold\">usługi </span>",
@@ -1921,118 +1637,42 @@
                     "smallImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/people-2.webp",
                     "category": "eventy",
                     "heroSection": {
-                        "title": "Eventy",
-                        "subtitle": "eventy",
-                        "buttonText": "Zobacz w sklepie",
+                        "title": "Kawowe wydarzenia",
+                        "subtitle": "Dołącz do naszych wyjątkowych eventów kawowych.",
+                        "buttonText": "Zobacz więcej",
                         "link": "https://www.konesso.pl/pol_m_Kawa-2147.html",
-                        "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/people-10.jpg"
+                        "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/events.webp"
                     },
-                    "shortDescription": "",
                     "path": "uslugi/eventy",
                     "title": "Eventy",
                     "link": "https://www.konesso.pl/firm-pol-1682416174-PREZENT.html",
-                    "categoriesTitle": "Poznaj <span class=\"bold\">szeroką </span> gamę <span class=\"bold\">Eventów </span> <br/>, które oferujemy",
-                    "categoriesSmallText": "Eventy na każdą okazję",
+                    "shortDescription": "Dzielimy się pasją i wiedzą o kawie.",
+                    "categoriesSmallText": "Sprawdź nadchodzące wydarzenia.",
+                    "categoriesTitle": "Poznaj niezwykłe <span class=\"bold\">ewenty</span><br/>, które organizujemy",
                     "mainCategories": [
                         {
-                            "name": "Nasz wybór",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista_Wybor-Konesso-8478.html",
-                            "description": "Poznaj naszą starannie wyselekcjonowaną ofertę kaw, które zachwycą każdego miłośnika tego aromatycznego napoju. Od intensywnych espresso po delikatne blendy – nasz wybór gwarantuje niezrównany smak i najwyższą jakość ziaren. Znajdź swoją ulubioną kawę i ciesz się wyjątkowymi chwilami z każdą filiżanką.",
-                            "topSellers": [
-                                {
-                                    "name": "MRC. Americano Blend",
-                                    "link": "https://www.konesso.pl/product-pol-19351-Kawa-ziarnista-MRC-Americano-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Tatry 250g",
-                                    "link": "https://www.konesso.pl/product-pol-19618-Kawa-ziarnista-Trip-Coffee-Tatry-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Ewenty",
+                            "title": "Kawowe wydarzenia pełne pasji",
+                            "category": "ewenty",
+                            "description": "Zapraszamy na wyjątkowe wydarzenia kawowe, podczas których dzielimy się naszą pasją i wiedzą o kawie.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-12.webp",
+                            "link": "https://konesso.pl/ewenty"
                         },
                         {
-                            "name": "Kawy Mielone",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-mielona-2161.html",
-                            "description": "Odkryj bogactwo aromatów naszych mielonych kaw, które zapewnią Ci niezapomniane doznania smakowe każdego ranka. Świeżość i najwyższa jakość ziaren gwarantują perfekcyjny smak w każdej filiżance.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-80-Kawa-mielona-Lavazza-Qualita-Oro-250g-puszka.html"
-                                },
-                                {
-                                    "name": "Dallmayr Classic",
-                                    "link": "https://www.konesso.pl/product-pol-15736-Kawa-mielona-Dallmayr-Classic-500g.html"
-                                },
-                                {
-                                    "name": "Bristot Wellcaffe",
-                                    "link": "https://www.konesso.pl/product-pol-14276-Kawa-mielona-Bristot-Wellcaffe-200g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Ewenty",
+                            "title": "Spotkania dla miłośników kawy",
+                            "category": "ewenty",
+                            "description": "Organizujemy spotkania i warsztaty dla wszystkich, którzy chcą pogłębić swoją wiedzę o kawie.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/people-4.webp",
+                            "link": "https://konesso.pl/ewenty"
                         },
                         {
-                            "name": "Kawy Ziarniste",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista-2160.html",
-                            "description": "Nasze kawy ziarniste to synonim świeżości i intensywnego smaku. Wybierz spośród starannie wyselekcjonowanych mieszanek, które zaspokoją gusta nawet najbardziej wymagających kawoszy.",
-                            "topSellers": [
-                                {
-                                    "name": "Costa Coffee Signature",
-                                    "link": "https://www.konesso.pl/product-pol-6769-Kawa-ziarnista-Costa-Coffee-Signature-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "HAYB Konesso",
-                                    "link": "https://www.konesso.pl/product-pol-19307-Kawa-ziarnista-HAYB-Konesso-Letnie-Espresso-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-101.webp"
-                        },
-                        {
-                            "name": "Kawy bezkofeinowe",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-Bezkofeinowa-7503.html",
-                            "description": "Ciesz się pełnią smaku bez kofeiny dzięki naszym starannie wyselekcjonowanym kawom bezkofeinowym. Idealne dla tych, którzy pragną delektować się kawą o każdej porze dnia.",
-                            "topSellers": [
-                                {
-                                    "name": "illy Decaf",
-                                    "link": "https://www.konesso.pl/product-pol-878-Kawa-mielona-illy-Decaf-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "ZIDEC Decaffeinato",
-                                    "link": "https://www.konesso.pl/product-pol-3670-Kawa-mielona-ZIDEC-Decaffeinato-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "Cornella Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-4181-Kawa-ziarnista-Cornella-Espresso-Market-Grade-Decaf-68-1kg.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-102.webp"
-                        },
-                        {
-                            "name": "Kawy w kapsułkach",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-w-kapsulkach-2162.html",
-                            "description": "Praktyczne i aromatyczne kawy w kapsułkach, które pozwolą Ci cieszyć się ulubionym napojem w mgnieniu oka. Idealne dla osób ceniących wygodę bez kompromisów w smaku.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Rossa",
-                                    "link": "https://www.konesso.pl/product-pol-14533-Kapsulki-do-Nespresso-Lavazza-Rossa-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-11804-Kapsulki-do-Nespresso-Lavazza-Qualita-Oro-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Cortado Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-7754-Kapsulki-Nescafe-Dolce-Gusto-Cortado-Espresso-Macchiato-16-sztuk.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Ewenty",
+                            "title": "Warsztaty i degustacje kawowe",
+                            "category": "ewenty",
+                            "description": "Dołącz do naszych warsztatów i poznaj różnorodność smaków i aromatów kaw z całego świata.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/people-5.webp",
+                            "link": "https://konesso.pl/ewenty"
                         }
                     ],
                     "otherProductsTitle": "Pozostałe <span class=\"bold\">usługi </span>",
@@ -2044,118 +1684,42 @@
                     "smallImage": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/produkty-i-uslugi/panel-img2.jpg",
                     "category": "Kawiarnia",
                     "heroSection": {
-                        "title": "Kawiarnia",
-                        "subtitle": "",
-                        "buttonText": "Zobacz w sklepie",
+                        "title": "Kawiarnia Konesso",
+                        "subtitle": "Odpocznij przy filiżance wyśmienitej kawy.",
+                        "buttonText": "Zobacz kawiarnię",
                         "link": "https://www.konesso.pl/pol_m_Kawa-2147.html",
-                        "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-1.jpg"
+                        "backgroundImage": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/produkty-i-uslugi/panel-img2.jpg"
                     },
-                    "shortDescription": "",
                     "path": "uslugi/Kawiarnia",
                     "title": "Kawiarnia",
                     "link": "https://kawiarnia.konesso.pl/",
-                    "categoriesTitle": "Poznaj <span class=\"bold\">szeroką </span> gamę <span class=\"bold\">Kawiarnia </span> <br/>, które oferujemy",
-                    "categoriesSmallText": "Kawiarnia na każdą okazję",
+                    "shortDescription": "Klimatyczne miejsce z profesjonalną obsługą.",
+                    "categoriesSmallText": "Odwiedź naszą kawiarnię już dziś.",
+                    "categoriesTitle": "Odkryj <span class=\"bold\">niepowtarzalny</span> klimat naszej <span class=\"bold\">kawiarni</span>",
                     "mainCategories": [
                         {
-                            "name": "Nasz wybór",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista_Wybor-Konesso-8478.html",
-                            "description": "Poznaj naszą starannie wyselekcjonowaną ofertę kaw, które zachwycą każdego miłośnika tego aromatycznego napoju. Od intensywnych espresso po delikatne blendy – nasz wybór gwarantuje niezrównany smak i najwyższą jakość ziaren. Znajdź swoją ulubioną kawę i ciesz się wyjątkowymi chwilami z każdą filiżanką.",
-                            "topSellers": [
-                                {
-                                    "name": "MRC. Americano Blend",
-                                    "link": "https://www.konesso.pl/product-pol-19351-Kawa-ziarnista-MRC-Americano-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Tatry 250g",
-                                    "link": "https://www.konesso.pl/product-pol-19618-Kawa-ziarnista-Trip-Coffee-Tatry-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Kawiarnia",
+                            "title": "Kawiarnia Konesso - Twoje miejsce relaksu",
+                            "category": "kawiarnia",
+                            "description": "Zapraszamy do naszej klimatycznej kawiarni, gdzie możesz odpocząć przy filiżance wyśmienitej kawy.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-25.webp",
+                            "link": "https://konesso.pl/kawiarnia"
                         },
                         {
-                            "name": "Kawy Mielone",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-mielona-2161.html",
-                            "description": "Odkryj bogactwo aromatów naszych mielonych kaw, które zapewnią Ci niezapomniane doznania smakowe każdego ranka. Świeżość i najwyższa jakość ziaren gwarantują perfekcyjny smak w każdej filiżance.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-80-Kawa-mielona-Lavazza-Qualita-Oro-250g-puszka.html"
-                                },
-                                {
-                                    "name": "Dallmayr Classic",
-                                    "link": "https://www.konesso.pl/product-pol-15736-Kawa-mielona-Dallmayr-Classic-500g.html"
-                                },
-                                {
-                                    "name": "Bristot Wellcaffe",
-                                    "link": "https://www.konesso.pl/product-pol-14276-Kawa-mielona-Bristot-Wellcaffe-200g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Kawiarnia",
+                            "title": "Wyśmienita kawa w klimatycznym miejscu",
+                            "category": "kawiarnia",
+                            "description": "Odkryj wyjątkowy smak naszej kawy w przytulnej atmosferze Kawiarni Konesso.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/kawiarnia.webp",
+                            "link": "https://konesso.pl/kawiarnia"
                         },
                         {
-                            "name": "Kawy Ziarniste",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista-2160.html",
-                            "description": "Nasze kawy ziarniste to synonim świeżości i intensywnego smaku. Wybierz spośród starannie wyselekcjonowanych mieszanek, które zaspokoją gusta nawet najbardziej wymagających kawoszy.",
-                            "topSellers": [
-                                {
-                                    "name": "Costa Coffee Signature",
-                                    "link": "https://www.konesso.pl/product-pol-6769-Kawa-ziarnista-Costa-Coffee-Signature-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "HAYB Konesso",
-                                    "link": "https://www.konesso.pl/product-pol-19307-Kawa-ziarnista-HAYB-Konesso-Letnie-Espresso-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-101.webp"
-                        },
-                        {
-                            "name": "Kawy bezkofeinowe",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-Bezkofeinowa-7503.html",
-                            "description": "Ciesz się pełnią smaku bez kofeiny dzięki naszym starannie wyselekcjonowanym kawom bezkofeinowym. Idealne dla tych, którzy pragną delektować się kawą o każdej porze dnia.",
-                            "topSellers": [
-                                {
-                                    "name": "illy Decaf",
-                                    "link": "https://www.konesso.pl/product-pol-878-Kawa-mielona-illy-Decaf-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "ZIDEC Decaffeinato",
-                                    "link": "https://www.konesso.pl/product-pol-3670-Kawa-mielona-ZIDEC-Decaffeinato-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "Cornella Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-4181-Kawa-ziarnista-Cornella-Espresso-Market-Grade-Decaf-68-1kg.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-102.webp"
-                        },
-                        {
-                            "name": "Kawy w kapsułkach",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-w-kapsulkach-2162.html",
-                            "description": "Praktyczne i aromatyczne kawy w kapsułkach, które pozwolą Ci cieszyć się ulubionym napojem w mgnieniu oka. Idealne dla osób ceniących wygodę bez kompromisów w smaku.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Rossa",
-                                    "link": "https://www.konesso.pl/product-pol-14533-Kapsulki-do-Nespresso-Lavazza-Rossa-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-11804-Kapsulki-do-Nespresso-Lavazza-Qualita-Oro-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Cortado Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-7754-Kapsulki-Nescafe-Dolce-Gusto-Cortado-Espresso-Macchiato-16-sztuk.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Kawiarnia",
+                            "title": "Desery i koktajle w Kawiarni Konesso",
+                            "category": "kawiarnia",
+                            "description": "Spróbuj naszych pysznych deserów i orzeźwiających koktajli przygotowanych z najwyższej jakości składników.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/akcesoria1.webp",
+                            "link": "https://konesso.pl/kawiarnia"
                         }
                     ],
                     "otherProductsTitle": "Pozostałe <span class=\"bold\">usługi </span>",
@@ -2167,118 +1731,42 @@
                     "smallImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-96.webp",
                     "category": "HoReCa",
                     "heroSection": {
-                        "title": "HoReCa",
-                        "subtitle": "",
-                        "buttonText": "Zobacz w sklepie",
+                        "title": "Profesjonalne rozwiązania",
+                        "subtitle": "Specjalistyczne produkty i usługi dla gastronomii.",
+                        "buttonText": "Zobacz na Konesso",
                         "link": "https://www.konesso.pl/tra-pol-1335611843-HoReCa.html",
-                        "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-1.jpg"
+                        "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-96.webp"
                     },
-                    "shortDescription": "",
                     "path": "uslugi/HoReCa",
                     "title": "HoReCa",
                     "link": "https://www.konesso.pl/tra-pol-1335611843-HoReCa.html",
-                    "categoriesTitle": "Poznaj <span class=\"bold\">szeroką </span> gamę <span class=\"bold\">HoReCa </span> <br/>, które oferujemy",
-                    "categoriesSmallText": "HoReCa na każdą okazję",
+                    "shortDescription": "Oferta dla hoteli, restauracji i firm cateringowych.",
+                    "categoriesSmallText": "Zobacz, co możemy zaoferować Twojemu biznesowi.",
+                    "categoriesTitle": "Poznaj <span class=\"bold\">profesjonalne</span> rozwiązania <span class=\"bold\">dla HoReCa</span>",
                     "mainCategories": [
                         {
-                            "name": "Nasz wybór",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista_Wybor-Konesso-8478.html",
-                            "description": "Poznaj naszą starannie wyselekcjonowaną ofertę kaw, które zachwycą każdego miłośnika tego aromatycznego napoju. Od intensywnych espresso po delikatne blendy – nasz wybór gwarantuje niezrównany smak i najwyższą jakość ziaren. Znajdź swoją ulubioną kawę i ciesz się wyjątkowymi chwilami z każdą filiżanką.",
-                            "topSellers": [
-                                {
-                                    "name": "MRC. Americano Blend",
-                                    "link": "https://www.konesso.pl/product-pol-19351-Kawa-ziarnista-MRC-Americano-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Tatry 250g",
-                                    "link": "https://www.konesso.pl/product-pol-19618-Kawa-ziarnista-Trip-Coffee-Tatry-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "HoReCa",
+                            "title": "Profesjonalne rozwiązania dla HoReCa",
+                            "category": "horeca",
+                            "description": "Oferujemy specjalistyczne produkty i usługi dla sektora hotelarsko-gastronomicznego.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/horeca-1.webp",
+                            "link": "https://konesso.pl/horeca"
                         },
                         {
-                            "name": "Kawy Mielone",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-mielona-2161.html",
-                            "description": "Odkryj bogactwo aromatów naszych mielonych kaw, które zapewnią Ci niezapomniane doznania smakowe każdego ranka. Świeżość i najwyższa jakość ziaren gwarantują perfekcyjny smak w każdej filiżance.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-80-Kawa-mielona-Lavazza-Qualita-Oro-250g-puszka.html"
-                                },
-                                {
-                                    "name": "Dallmayr Classic",
-                                    "link": "https://www.konesso.pl/product-pol-15736-Kawa-mielona-Dallmayr-Classic-500g.html"
-                                },
-                                {
-                                    "name": "Bristot Wellcaffe",
-                                    "link": "https://www.konesso.pl/product-pol-14276-Kawa-mielona-Bristot-Wellcaffe-200g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "HoReCa",
+                            "title": "Oferta dla hoteli i restauracji",
+                            "category": "horeca",
+                            "description": "Dostarczamy kawę, herbatę i akcesoria dla profesjonalnej gastronomii.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/horeca-2.webp",
+                            "link": "https://konesso.pl/horeca"
                         },
                         {
-                            "name": "Kawy Ziarniste",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista-2160.html",
-                            "description": "Nasze kawy ziarniste to synonim świeżości i intensywnego smaku. Wybierz spośród starannie wyselekcjonowanych mieszanek, które zaspokoją gusta nawet najbardziej wymagających kawoszy.",
-                            "topSellers": [
-                                {
-                                    "name": "Costa Coffee Signature",
-                                    "link": "https://www.konesso.pl/product-pol-6769-Kawa-ziarnista-Costa-Coffee-Signature-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "HAYB Konesso",
-                                    "link": "https://www.konesso.pl/product-pol-19307-Kawa-ziarnista-HAYB-Konesso-Letnie-Espresso-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-101.webp"
-                        },
-                        {
-                            "name": "Kawy bezkofeinowe",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-Bezkofeinowa-7503.html",
-                            "description": "Ciesz się pełnią smaku bez kofeiny dzięki naszym starannie wyselekcjonowanym kawom bezkofeinowym. Idealne dla tych, którzy pragną delektować się kawą o każdej porze dnia.",
-                            "topSellers": [
-                                {
-                                    "name": "illy Decaf",
-                                    "link": "https://www.konesso.pl/product-pol-878-Kawa-mielona-illy-Decaf-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "ZIDEC Decaffeinato",
-                                    "link": "https://www.konesso.pl/product-pol-3670-Kawa-mielona-ZIDEC-Decaffeinato-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "Cornella Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-4181-Kawa-ziarnista-Cornella-Espresso-Market-Grade-Decaf-68-1kg.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-102.webp"
-                        },
-                        {
-                            "name": "Kawy w kapsułkach",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-w-kapsulkach-2162.html",
-                            "description": "Praktyczne i aromatyczne kawy w kapsułkach, które pozwolą Ci cieszyć się ulubionym napojem w mgnieniu oka. Idealne dla osób ceniących wygodę bez kompromisów w smaku.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Rossa",
-                                    "link": "https://www.konesso.pl/product-pol-14533-Kapsulki-do-Nespresso-Lavazza-Rossa-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-11804-Kapsulki-do-Nespresso-Lavazza-Qualita-Oro-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Cortado Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-7754-Kapsulki-Nescafe-Dolce-Gusto-Cortado-Espresso-Macchiato-16-sztuk.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "HoReCa",
+                            "title": "Wyposażenie kawowe dla gastronomii",
+                            "category": "horeca",
+                            "description": "Zapewniamy ekspresy do kawy i niezbędne akcesoria dla Twojego lokalu.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/horeca.webp",
+                            "link": "https://konesso.pl/horeca"
                         }
                     ],
                     "otherProductsTitle": "Pozostałe <span class=\"bold\">usługi </span>",
@@ -2290,118 +1778,42 @@
                     "smallImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/people-1.webp",
                     "category": "Serwis",
                     "heroSection": {
-                        "title": "Serwis",
-                        "subtitle": "",
-                        "buttonText": "Zobacz w sklepie",
+                        "title": "Serwis - gwarancja jakości",
+                        "subtitle": "Profesjonalna opieka nad Twoim ekspresem.",
+                        "buttonText": "Zobacz Serwis",
                         "link": "https://serwis.konesso.pl/",
-                        "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-1.jpg"
+                        "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/people-1.webp"
                     },
-                    "shortDescription": "",
                     "path": "uslugi/Serwis",
                     "title": "Serwis",
                     "link": "https://serwis.konesso.pl/",
-                    "categoriesTitle": "Poznaj <span class=\"bold\">szeroką </span> gamę <span class=\"bold\">Serwis </span> <br/>, które oferujemy",
-                    "categoriesSmallText": "Serwis na każdą okazję",
+                    "shortDescription": "Zapewniamy długą żywotność Twojego urządzenia.",
+                    "categoriesSmallText": "Dowiedz się więcej o naszym serwisie.",
+                    "categoriesTitle": "Skorzystaj z <span class=\"bold\">profesjonalnego</span> serwisu",
                     "mainCategories": [
                         {
-                            "name": "Nasz wybór",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista_Wybor-Konesso-8478.html",
-                            "description": "Poznaj naszą starannie wyselekcjonowaną ofertę kaw, które zachwycą każdego miłośnika tego aromatycznego napoju. Od intensywnych espresso po delikatne blendy – nasz wybór gwarantuje niezrównany smak i najwyższą jakość ziaren. Znajdź swoją ulubioną kawę i ciesz się wyjątkowymi chwilami z każdą filiżanką.",
-                            "topSellers": [
-                                {
-                                    "name": "MRC. Americano Blend",
-                                    "link": "https://www.konesso.pl/product-pol-19351-Kawa-ziarnista-MRC-Americano-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Tatry 250g",
-                                    "link": "https://www.konesso.pl/product-pol-19618-Kawa-ziarnista-Trip-Coffee-Tatry-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Serwis",
+                            "title": "Serwis ekspresów - gwarancja jakości",
+                            "category": "serwis-ekspresow",
+                            "description": "Profesjonalny serwis ekspresów do kawy zapewnia długą żywotność Twojego urządzenia.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/konserwacja.webp",
+                            "link": "https://konesso.pl/serwis"
                         },
                         {
-                            "name": "Kawy Mielone",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-mielona-2161.html",
-                            "description": "Odkryj bogactwo aromatów naszych mielonych kaw, które zapewnią Ci niezapomniane doznania smakowe każdego ranka. Świeżość i najwyższa jakość ziaren gwarantują perfekcyjny smak w każdej filiżance.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-80-Kawa-mielona-Lavazza-Qualita-Oro-250g-puszka.html"
-                                },
-                                {
-                                    "name": "Dallmayr Classic",
-                                    "link": "https://www.konesso.pl/product-pol-15736-Kawa-mielona-Dallmayr-Classic-500g.html"
-                                },
-                                {
-                                    "name": "Bristot Wellcaffe",
-                                    "link": "https://www.konesso.pl/product-pol-14276-Kawa-mielona-Bristot-Wellcaffe-200g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Serwis",
+                            "title": "Naprawa i konserwacja ekspresów",
+                            "category": "serwis-ekspresow",
+                            "description": "Oferujemy kompleksowe usługi naprawy i konserwacji ekspresów do kawy wszystkich marek.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/serwis.webp",
+                            "link": "https://konesso.pl/serwis"
                         },
                         {
-                            "name": "Kawy Ziarniste",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista-2160.html",
-                            "description": "Nasze kawy ziarniste to synonim świeżości i intensywnego smaku. Wybierz spośród starannie wyselekcjonowanych mieszanek, które zaspokoją gusta nawet najbardziej wymagających kawoszy.",
-                            "topSellers": [
-                                {
-                                    "name": "Costa Coffee Signature",
-                                    "link": "https://www.konesso.pl/product-pol-6769-Kawa-ziarnista-Costa-Coffee-Signature-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "HAYB Konesso",
-                                    "link": "https://www.konesso.pl/product-pol-19307-Kawa-ziarnista-HAYB-Konesso-Letnie-Espresso-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-101.webp"
-                        },
-                        {
-                            "name": "Kawy bezkofeinowe",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-Bezkofeinowa-7503.html",
-                            "description": "Ciesz się pełnią smaku bez kofeiny dzięki naszym starannie wyselekcjonowanym kawom bezkofeinowym. Idealne dla tych, którzy pragną delektować się kawą o każdej porze dnia.",
-                            "topSellers": [
-                                {
-                                    "name": "illy Decaf",
-                                    "link": "https://www.konesso.pl/product-pol-878-Kawa-mielona-illy-Decaf-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "ZIDEC Decaffeinato",
-                                    "link": "https://www.konesso.pl/product-pol-3670-Kawa-mielona-ZIDEC-Decaffeinato-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "Cornella Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-4181-Kawa-ziarnista-Cornella-Espresso-Market-Grade-Decaf-68-1kg.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-102.webp"
-                        },
-                        {
-                            "name": "Kawy w kapsułkach",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-w-kapsulkach-2162.html",
-                            "description": "Praktyczne i aromatyczne kawy w kapsułkach, które pozwolą Ci cieszyć się ulubionym napojem w mgnieniu oka. Idealne dla osób ceniących wygodę bez kompromisów w smaku.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Rossa",
-                                    "link": "https://www.konesso.pl/product-pol-14533-Kapsulki-do-Nespresso-Lavazza-Rossa-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-11804-Kapsulki-do-Nespresso-Lavazza-Qualita-Oro-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Cortado Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-7754-Kapsulki-Nescafe-Dolce-Gusto-Cortado-Espresso-Macchiato-16-sztuk.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Serwis",
+                            "title": "Zadbaj o swój ekspres z Konesso",
+                            "category": "serwis-ekspresow",
+                            "description": "Regularny serwis Twojego ekspresu gwarantuje niezawodne działanie i doskonały smak kawy.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/serwis-1.webp",
+                            "link": "https://konesso.pl/serwis"
                         }
                     ],
                     "otherProductsTitle": "Pozostałe <span class=\"bold\">usługi </span>",
@@ -2409,245 +1821,93 @@
                 },
                 {
                     "name": "Sklep",
-                    "image": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/produkty-i-uslugi/panel-img3.jpg",
-                    "smallImage": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/produkty-i-uslugi/panel-img3.jpg",
+                    "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/Mockup-4.webp",
+                    "smallImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/Mockup-4.webp",
                     "category": "Sklep",
                     "heroSection": {
-                        "title": "Sklep",
-                        "subtitle": "",
-                        "buttonText": "Zobacz w sklepie",
+                        "title": "Sklep - szeroki wybór produktów",
+                        "subtitle": "Setki kaw, herbat i akcesoriów w jednym miejscu.",
+                        "buttonText": "Odwiedź Konesso",
                         "link": "https://konesso.pl/",
-                        "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-1.jpg"
+                        "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/Mockup-4.webp"
                     },
-                    "shortDescription": "",
                     "path": "uslugi/Sklep",
                     "title": "Sklep",
                     "link": "https://konesso.pl/",
-                    "categoriesTitle": "Poznaj <span class=\"bold\">szeroką </span> gamę <span class=\"bold\">Sklep </span> <br/>, które oferujemy",
-                    "categoriesSmallText": "Sklep na każdą okazję",
+                    "shortDescription": "Twój internetowy sklep dla miłośników kawy.",
+                    "categoriesSmallText": "Odkryj naszą bogatą ofertę.",
+                    "categoriesTitle": "Odwiedź nasz <span class=\"bold\">sklep</span> i znajdź coś dla <span class=\"bold\">siebie</span>",
                     "mainCategories": [
                         {
-                            "name": "Nasz wybór",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista_Wybor-Konesso-8478.html",
-                            "description": "Poznaj naszą starannie wyselekcjonowaną ofertę kaw, które zachwycą każdego miłośnika tego aromatycznego napoju. Od intensywnych espresso po delikatne blendy – nasz wybór gwarantuje niezrównany smak i najwyższą jakość ziaren. Znajdź swoją ulubioną kawę i ciesz się wyjątkowymi chwilami z każdą filiżanką.",
-                            "topSellers": [
-                                {
-                                    "name": "MRC. Americano Blend",
-                                    "link": "https://www.konesso.pl/product-pol-19351-Kawa-ziarnista-MRC-Americano-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Tatry 250g",
-                                    "link": "https://www.konesso.pl/product-pol-19618-Kawa-ziarnista-Trip-Coffee-Tatry-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Sklep",
+                            "title": "Sklep z kawą - szeroki wybór produktów",
+                            "category": "sklep",
+                            "description": "Odwiedź nasz sklep internetowy i wybierz spośród setek kaw, herbat i akcesoriów.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/Mockup.webp",
+                            "link": "https://konesso.pl"
                         },
                         {
-                            "name": "Kawy Mielone",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-mielona-2161.html",
-                            "description": "Odkryj bogactwo aromatów naszych mielonych kaw, które zapewnią Ci niezapomniane doznania smakowe każdego ranka. Świeżość i najwyższa jakość ziaren gwarantują perfekcyjny smak w każdej filiżance.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-80-Kawa-mielona-Lavazza-Qualita-Oro-250g-puszka.html"
-                                },
-                                {
-                                    "name": "Dallmayr Classic",
-                                    "link": "https://www.konesso.pl/product-pol-15736-Kawa-mielona-Dallmayr-Classic-500g.html"
-                                },
-                                {
-                                    "name": "Bristot Wellcaffe",
-                                    "link": "https://www.konesso.pl/product-pol-14276-Kawa-mielona-Bristot-Wellcaffe-200g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Sklep",
+                            "title": "Zakupy online dla miłośników kawy",
+                            "category": "sklep",
+                            "description": "Zamów ulubioną kawę z dostawą do domu i ciesz się jej smakiem bez wychodzenia z domu.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/Mockup-1.webp",
+                            "link": "https://konesso.pl"
                         },
                         {
-                            "name": "Kawy Ziarniste",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista-2160.html",
-                            "description": "Nasze kawy ziarniste to synonim świeżości i intensywnego smaku. Wybierz spośród starannie wyselekcjonowanych mieszanek, które zaspokoją gusta nawet najbardziej wymagających kawoszy.",
-                            "topSellers": [
-                                {
-                                    "name": "Costa Coffee Signature",
-                                    "link": "https://www.konesso.pl/product-pol-6769-Kawa-ziarnista-Costa-Coffee-Signature-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "HAYB Konesso",
-                                    "link": "https://www.konesso.pl/product-pol-19307-Kawa-ziarnista-HAYB-Konesso-Letnie-Espresso-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-101.webp"
-                        },
-                        {
-                            "name": "Kawy bezkofeinowe",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-Bezkofeinowa-7503.html",
-                            "description": "Ciesz się pełnią smaku bez kofeiny dzięki naszym starannie wyselekcjonowanym kawom bezkofeinowym. Idealne dla tych, którzy pragną delektować się kawą o każdej porze dnia.",
-                            "topSellers": [
-                                {
-                                    "name": "illy Decaf",
-                                    "link": "https://www.konesso.pl/product-pol-878-Kawa-mielona-illy-Decaf-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "ZIDEC Decaffeinato",
-                                    "link": "https://www.konesso.pl/product-pol-3670-Kawa-mielona-ZIDEC-Decaffeinato-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "Cornella Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-4181-Kawa-ziarnista-Cornella-Espresso-Market-Grade-Decaf-68-1kg.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-102.webp"
-                        },
-                        {
-                            "name": "Kawy w kapsułkach",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-w-kapsulkach-2162.html",
-                            "description": "Praktyczne i aromatyczne kawy w kapsułkach, które pozwolą Ci cieszyć się ulubionym napojem w mgnieniu oka. Idealne dla osób ceniących wygodę bez kompromisów w smaku.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Rossa",
-                                    "link": "https://www.konesso.pl/product-pol-14533-Kapsulki-do-Nespresso-Lavazza-Rossa-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-11804-Kapsulki-do-Nespresso-Lavazza-Qualita-Oro-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Cortado Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-7754-Kapsulki-Nescafe-Dolce-Gusto-Cortado-Espresso-Macchiato-16-sztuk.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Sklep",
+                            "title": "Kawa, herbata i akcesoria w jednym miejscu",
+                            "category": "sklep",
+                            "description": "Konesso.pl to Twój sklep z kompletną ofertą produktów dla prawdziwych smakoszy.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/Mockup-2.webp",
+                            "link": "https://konesso.pl"
                         }
                     ],
                     "otherProductsTitle": "Pozostałe <span class=\"bold\">usługi </span>",
                     "otherProductsSmallText": "Zobacz inne usługi w naszym sklepie"
                 },
                 {
-                    "name": "Subskrypcja",
-                    "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-36.webp",
-                    "smallImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-36.webp",
-                    "category": "Subskrypcja",
+                    "name": "Hurtownia",
+                    "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/hurtownia-1.webp",
+                    "smallImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/hurtownia-1.webp",
+                    "category": "Hurtownia",
                     "heroSection": {
-                        "title": "Subskrypcja",
-                        "subtitle": "",
-                        "buttonText": "Zobacz w Subskrypcjaie",
+                        "title": "Hurtownia kawy i herbaty",
+                        "subtitle": "Szeroki asortyment dla sklepów i przedsiębiorstw.",
+                        "buttonText": "Zobacz w Hurtownię",
                         "link": "https://konesso.pl/",
-                        "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-1.jpg"
+                        "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/hurtownia-1.webp"
                     },
-                    "shortDescription": "",
-                    "path": "uslugi/Subskrypcja",
-                    "title": "Subskrypcja",
+                    "path": "uslugi/hurtownia",
+                    "title": "Hurtownia",
                     "link": "https://konesso.pl/",
-                    "categoriesTitle": "Poznaj <span class=\"bold\">szeroką </span> gamę <span class=\"bold\">Subskrypcja </span> <br/>, które oferujemy",
-                    "categoriesSmallText": "Subskrypcja na każdą okazję",
+                    "shortDescription": "Wszystko, czego potrzebujesz dla swojego biznesu.",
+                    "categoriesSmallText": "Poznaj naszą ofertę hurtową.",
+                    "categoriesTitle": "Współpracuj z naszą <span class=\"bold\">hurtownią</span> i rozwijaj <span class=\"bold\">swój biznes</span>",
                     "mainCategories": [
                         {
-                            "name": "Nasz wybór",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista_Wybor-Konesso-8478.html",
-                            "description": "Poznaj naszą starannie wyselekcjonowaną ofertę kaw, które zachwycą każdego miłośnika tego aromatycznego napoju. Od intensywnych espresso po delikatne blendy – nasz wybór gwarantuje niezrównany smak i najwyższą jakość ziaren. Znajdź swoją ulubioną kawę i ciesz się wyjątkowymi chwilami z każdą filiżanką.",
-                            "topSellers": [
-                                {
-                                    "name": "MRC. Americano Blend",
-                                    "link": "https://www.konesso.pl/product-pol-19351-Kawa-ziarnista-MRC-Americano-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Tatry 250g",
-                                    "link": "https://www.konesso.pl/product-pol-19618-Kawa-ziarnista-Trip-Coffee-Tatry-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Hurtownia",
+                            "title": "Hurtownia kawy i herbaty Konesso",
+                            "category": "hurtownia",
+                            "description": "Oferujemy szeroki asortyment kaw i herbat dla sklepów i przedsiębiorstw.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/hurtownia-2.webp",
+                            "link": "https://konesso.pl/hurtownia"
                         },
                         {
-                            "name": "Kawy Mielone",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-mielona-2161.html",
-                            "description": "Odkryj bogactwo aromatów naszych mielonych kaw, które zapewnią Ci niezapomniane doznania smakowe każdego ranka. Świeżość i najwyższa jakość ziaren gwarantują perfekcyjny smak w każdej filiżance.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-80-Kawa-mielona-Lavazza-Qualita-Oro-250g-puszka.html"
-                                },
-                                {
-                                    "name": "Dallmayr Classic",
-                                    "link": "https://www.konesso.pl/product-pol-15736-Kawa-mielona-Dallmayr-Classic-500g.html"
-                                },
-                                {
-                                    "name": "Bristot Wellcaffe",
-                                    "link": "https://www.konesso.pl/product-pol-14276-Kawa-mielona-Bristot-Wellcaffe-200g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Hurtownia",
+                            "title": "Oferta hurtowa dla Twojego biznesu",
+                            "category": "hurtownia",
+                            "description": "Współpracuj z nami i zyskaj dostęp do produktów najwyższej jakości w atrakcyjnych cenach.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/hurtownia-3.webp",
+                            "link": "https://konesso.pl/hurtownia"
                         },
                         {
-                            "name": "Kawy Ziarniste",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista-2160.html",
-                            "description": "Nasze kawy ziarniste to synonim świeżości i intensywnego smaku. Wybierz spośród starannie wyselekcjonowanych mieszanek, które zaspokoją gusta nawet najbardziej wymagających kawoszy.",
-                            "topSellers": [
-                                {
-                                    "name": "Costa Coffee Signature",
-                                    "link": "https://www.konesso.pl/product-pol-6769-Kawa-ziarnista-Costa-Coffee-Signature-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "HAYB Konesso",
-                                    "link": "https://www.konesso.pl/product-pol-19307-Kawa-ziarnista-HAYB-Konesso-Letnie-Espresso-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-101.webp"
-                        },
-                        {
-                            "name": "Kawy bezkofeinowe",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-Bezkofeinowa-7503.html",
-                            "description": "Ciesz się pełnią smaku bez kofeiny dzięki naszym starannie wyselekcjonowanym kawom bezkofeinowym. Idealne dla tych, którzy pragną delektować się kawą o każdej porze dnia.",
-                            "topSellers": [
-                                {
-                                    "name": "illy Decaf",
-                                    "link": "https://www.konesso.pl/product-pol-878-Kawa-mielona-illy-Decaf-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "ZIDEC Decaffeinato",
-                                    "link": "https://www.konesso.pl/product-pol-3670-Kawa-mielona-ZIDEC-Decaffeinato-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "Cornella Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-4181-Kawa-ziarnista-Cornella-Espresso-Market-Grade-Decaf-68-1kg.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-102.webp"
-                        },
-                        {
-                            "name": "Kawy w kapsułkach",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-w-kapsulkach-2162.html",
-                            "description": "Praktyczne i aromatyczne kawy w kapsułkach, które pozwolą Ci cieszyć się ulubionym napojem w mgnieniu oka. Idealne dla osób ceniących wygodę bez kompromisów w smaku.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Rossa",
-                                    "link": "https://www.konesso.pl/product-pol-14533-Kapsulki-do-Nespresso-Lavazza-Rossa-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-11804-Kapsulki-do-Nespresso-Lavazza-Qualita-Oro-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Cortado Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-7754-Kapsulki-Nescafe-Dolce-Gusto-Cortado-Espresso-Macchiato-16-sztuk.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Hurtownia",
+                            "title": "Współpraca z hurtownią Konesso",
+                            "category": "hurtownia",
+                            "description": "Zapewniamy kompleksowe wsparcie i szeroki wybór produktów dla Twojego sklepu.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/hurtownia-4.webp",
+                            "link": "https://konesso.pl/hurtownia"
                         }
                     ],
                     "otherProductsTitle": "Pozostałe <span class=\"bold\">usługi </span>",
@@ -2659,118 +1919,42 @@
                     "smallImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/people-15.jpg",
                     "category": "Palarnia",
                     "heroSection": {
-                        "title": "Palarnia",
-                        "subtitle": "",
-                        "buttonText": "Zobacz w Palarniaie",
+                        "title": "Palarnia Konesso",
+                        "subtitle": "Kawa palona z pasją i doświadczeniem.",
+                        "buttonText": "Zobacz Palarnię",
                         "link": "https://konesso.pl/",
-                        "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-1.jpg"
+                        "backgroundImage": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/people-15.jpg"
                     },
-                    "shortDescription": "",
                     "path": "uslugi/Palarnia",
                     "title": "Palarnia",
                     "link": "https://konesso.pl/",
-                    "categoriesTitle": "Poznaj <span class=\"bold\">szeroką </span> gamę <span class=\"bold\">Palarnia </span> <br/>, które oferujemy",
-                    "categoriesSmallText": "Palarnia na każdą okazję",
+                    "shortDescription": "Wyjątkowy smak i aromat naszej kawy.",
+                    "categoriesSmallText": "Poznaj nasze świeżo palone kawy.",
+                    "categoriesTitle": "Odkryj <span class=\"bold\">smak</span> naszej <span class=\"bold\">świeżo palonej kawy</span>",
                     "mainCategories": [
                         {
-                            "name": "Nasz wybór",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista_Wybor-Konesso-8478.html",
-                            "description": "Poznaj naszą starannie wyselekcjonowaną ofertę kaw, które zachwycą każdego miłośnika tego aromatycznego napoju. Od intensywnych espresso po delikatne blendy – nasz wybór gwarantuje niezrównany smak i najwyższą jakość ziaren. Znajdź swoją ulubioną kawę i ciesz się wyjątkowymi chwilami z każdą filiżanką.",
-                            "topSellers": [
-                                {
-                                    "name": "MRC. Americano Blend",
-                                    "link": "https://www.konesso.pl/product-pol-19351-Kawa-ziarnista-MRC-Americano-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Tatry 250g",
-                                    "link": "https://www.konesso.pl/product-pol-19618-Kawa-ziarnista-Trip-Coffee-Tatry-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Palarnia",
+                            "title": "Palarnia Konesso - świeżo palona kawa",
+                            "category": "palarnia",
+                            "description": "Nasza palarnia dostarcza kawę o wyjątkowym smaku i aromacie, paloną z pasją.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/people-12.jpg",
+                            "link": "https://konesso.pl/palarnia"
                         },
                         {
-                            "name": "Kawy Mielone",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-mielona-2161.html",
-                            "description": "Odkryj bogactwo aromatów naszych mielonych kaw, które zapewnią Ci niezapomniane doznania smakowe każdego ranka. Świeżość i najwyższa jakość ziaren gwarantują perfekcyjny smak w każdej filiżance.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-80-Kawa-mielona-Lavazza-Qualita-Oro-250g-puszka.html"
-                                },
-                                {
-                                    "name": "Dallmayr Classic",
-                                    "link": "https://www.konesso.pl/product-pol-15736-Kawa-mielona-Dallmayr-Classic-500g.html"
-                                },
-                                {
-                                    "name": "Bristot Wellcaffe",
-                                    "link": "https://www.konesso.pl/product-pol-14276-Kawa-mielona-Bristot-Wellcaffe-200g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Palarnia",
+                            "title": "Poznaj smak naszej świeżo palonej kawy",
+                            "category": "palarnia",
+                            "description": "Zapraszamy do odkrycia różnorodności smaków naszej kawy palonej na miejscu.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/people-14.jpg",
+                            "link": "https://konesso.pl/palarnia"
                         },
                         {
-                            "name": "Kawy Ziarniste",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-ziarnista-2160.html",
-                            "description": "Nasze kawy ziarniste to synonim świeżości i intensywnego smaku. Wybierz spośród starannie wyselekcjonowanych mieszanek, które zaspokoją gusta nawet najbardziej wymagających kawoszy.",
-                            "topSellers": [
-                                {
-                                    "name": "Costa Coffee Signature",
-                                    "link": "https://www.konesso.pl/product-pol-6769-Kawa-ziarnista-Costa-Coffee-Signature-Blend-1kg.html"
-                                },
-                                {
-                                    "name": "Trip Coffee Brazylia",
-                                    "link": "https://www.konesso.pl/product-pol-19691-ZESTAW-Kawa-ziarnista-Trip-Coffee-Brazylia-1kg-Trip-Coffee-Nikaragua-1kg.html"
-                                },
-                                {
-                                    "name": "HAYB Konesso",
-                                    "link": "https://www.konesso.pl/product-pol-19307-Kawa-ziarnista-HAYB-Konesso-Letnie-Espresso-250g.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-101.webp"
-                        },
-                        {
-                            "name": "Kawy bezkofeinowe",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-Bezkofeinowa-7503.html",
-                            "description": "Ciesz się pełnią smaku bez kofeiny dzięki naszym starannie wyselekcjonowanym kawom bezkofeinowym. Idealne dla tych, którzy pragną delektować się kawą o każdej porze dnia.",
-                            "topSellers": [
-                                {
-                                    "name": "illy Decaf",
-                                    "link": "https://www.konesso.pl/product-pol-878-Kawa-mielona-illy-Decaf-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "ZIDEC Decaffeinato",
-                                    "link": "https://www.konesso.pl/product-pol-3670-Kawa-mielona-ZIDEC-Decaffeinato-bezkofeinowa-250g.html"
-                                },
-                                {
-                                    "name": "Cornella Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-4181-Kawa-ziarnista-Cornella-Espresso-Market-Grade-Decaf-68-1kg.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-102.webp"
-                        },
-                        {
-                            "name": "Kawy w kapsułkach",
-                            "link": "https://www.konesso.pl/pol_m_Kawa_Rodzaj_Kawa-w-kapsulkach-2162.html",
-                            "description": "Praktyczne i aromatyczne kawy w kapsułkach, które pozwolą Ci cieszyć się ulubionym napojem w mgnieniu oka. Idealne dla osób ceniących wygodę bez kompromisów w smaku.",
-                            "topSellers": [
-                                {
-                                    "name": "Lavazza Rossa",
-                                    "link": "https://www.konesso.pl/product-pol-14533-Kapsulki-do-Nespresso-Lavazza-Rossa-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Lavazza Qualita Oro",
-                                    "link": "https://www.konesso.pl/product-pol-11804-Kapsulki-do-Nespresso-Lavazza-Qualita-Oro-10-sztuk.html"
-                                },
-                                {
-                                    "name": "Cortado Espresso",
-                                    "link": "https://www.konesso.pl/product-pol-7754-Kapsulki-Nescafe-Dolce-Gusto-Cortado-Espresso-Macchiato-16-sztuk.html"
-                                }
-                            ],
-                            "image": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/bizImage-20.webp"
+                            "name": "Palarnia",
+                            "title": "Autorskie mieszanki prosto z palarni",
+                            "category": "palarnia",
+                            "description": "Poznaj nasze unikalne mieszanki kawy tworzone przez doświadczonych baristów.",
+                            "img": "https://www.konesso.pl/data/include/cms/KonessoBiz/img/compressed/horeca.jpg",
+                            "link": "https://konesso.pl/palarnia"
                         }
                     ],
                     "otherProductsTitle": "Pozostałe <span class=\"bold\">usługi </span>",
@@ -2783,8 +1967,7 @@
             "link": "/kontakt",
             "pageTitle": "Kontakt",
             "title": "Skontaktuj się z nami",
-            "subtitle": "Masz pytania? Napisz do nas!",
-            "subPages": []
+            "subtitle": "Masz pytania? Napisz do nas!"
         },
         {
             "name": "FAQPage",
@@ -2813,8 +1996,7 @@
                     "question": "Opcje płatności",
                     "answer": "W naszym sklepie akceptujemy różne formy płatności, w tym przelewy bankowe, płatności kartą kredytową i debetową oraz płatności online za pośrednictwem serwisów takich jak PayPal."
                 }
-            ],
-            "subPages": []
+            ]
         },
         {
             "name": "PeoplePage",
