@@ -205,7 +205,7 @@
             },
             "AboutSection": {
                 "title": "O nas",
-                "text": "Jako największy sprzedawca kawy w Polsce, koncentrujemy się  na dostarczaniu najwyższej jakości produktów, szybkiej dostawie i wygodnych formach płatności, zdobywając zaufanie  setek tysięcy klientów.",
+                "text": "Jako <span class=\"bold\">największy</span> sprzedawca kawy w Polsce, koncentrujemy się <span class=\"svg-circles px-1\">{{CircleSVG}}</span> na dostarczaniu <span class=\"bold\">najwyższej</span> jakości produktów, <b>szybkiej</b> dostawie i wygodnych formach płatności, zdobywając <span class=\"bold\">zaufanie</span><span class=\"svg-circles px-1\">{{CircleSVG}}</span> setek tysięcy klientów.",
                 "list": [
                     "jakość",
                     "Szybka dostawa",
@@ -445,6 +445,7 @@
             "mainDescription": "Jako największy sprzedawca kawy w Polsce koncentrujemy się na dostarczaniu najwyższej jakości produktów, szybkiej dostawie i wygodnych formach płatności, zdobywając zaufanie setek tysięcy klientów.",
             "smallTextDescription": "Konesso.pl to internetowy sklep z kawą, ekspresami do kawy, herbatą oraz różnego rodzaju akcesoriami do parzenia i podawania kawy, oraz herbaty. Nie oszukujmy się. Nasz sklep powstał z myślą o prawdziwych miłośnikach dobrego smaku, którzy z małych, codziennych czynności pragną czerpać jak najwięcej.",
             "managementSubtitle": "Zaangażowani i profesjonalni",
+            "managementTitle": "Zobacz, kto tworzy Konesso",
             "management": [
                 {
                     "img": "https://www.konesso.pl/data/include/cms/Podstrony-mario/O-firmie/kierownicy/kier-1.jpg",
@@ -487,6 +488,8 @@
                     "alt": "kierownik"
                 }
             ],
+            "whyUsTitle": "Długie lata pracy i różne doświadczenia sprawiły, że zapracowaliśmy <br/> na <span class=\"bold\">zaufanie</span> setek tysięcy Klientów, z których wielu  zostało z nami na stałe<br/> a ich liczba <span class=\"bold\">ciągle rośnie</span>",
+            "whyUsSubtitle": "Dlaczego Konesso?",
             "Services": {
                 "title": "Czym się zajmujemy",
                 "services": [
@@ -761,7 +764,7 @@
                     "shortDescription": "Nowoczesne młynki do kawy, które umożliwiają precyzyjne mielenie ziaren, zapewniając pełnię smaku każdej filiżanki kawy. Idealne zarówno dla amatorów, jak i profesjonalnych baristów.",
                     "path": "produkty/młynki",
                     "title": "Młynki do kawy",
-                    "link": "portfolio-details-1.html",
+                    "link": "produkty/młynki",
                     "heroSection": {
                         "title": "Młynki do kawy",
                         "subtitle": "Zarówno dla amatorów, jak i profesjonalnych baristów.",
@@ -868,7 +871,7 @@
                     "path": "produkty/ekspresy",
                     "shortDescription": "Wysokiej klasy ekspresy do kawy, oferujące zaawansowane funkcje parzenia i trwałość. Zapewniają perfekcyjny smak każdej kawy dzięki precyzyjnej kontroli temperatury i ciśnienia.",
                     "title": "Ekspresy do kawy",
-                    "link": "portfolio-details-1.html",
+                    "link": "produkty/ekspresy",
                     "heroSection": {
                         "title": "Ekspresy do kawy",
                         "subtitle": "Perfekcyjny smak każdej kawy dzięki precyzyjnej kontroli temperatury i ciśnienia.",
@@ -991,7 +994,7 @@
                     "path": "produkty/herbaty",
                     "shortDescription": "Bogata oferta herbat, od klasycznych czarnych i zielonych po wyjątkowe mieszanki ziołowe. Odkryj pełnię aromatów i smaków, które zaspokoją każdego miłośnika herbaty.",
                     "title": "Herbaty",
-                    "link": "portfolio-details-1.html",
+                    "link": "produkty/herbaty",
                     "heroSection": {
                         "title": "Herbaty",
                         "subtitle": "Odkryj pełnię aromatów i smaków, które zaspokoją każdego miłośnika herbaty.",
@@ -1114,7 +1117,7 @@
                     "path": "produkty/słodycze",
                     "shortDescription": "Wyśmienite słodycze, od luksusowych czekoladek po oryginalne praliny. Idealne do kawy, na prezent lub jako codzienna przyjemność dla każdego łasucha.",
                     "title": "Słodkie dodatki",
-                    "link": "portfolio-details-1.html",
+                    "link": "produkty/słodycze",
                     "heroSection": {
                         "title": "Słodycze i dodatki",
                         "subtitle": "Idealne do kawy, na prezent lub jako codzienna przyjemność dla każdego łasucha.",
@@ -1237,7 +1240,7 @@
                     "path": "produkty/prezenty",
                     "shortDescription": "Eleganckie zestawy prezentowe i unikalne upominki dla miłośników kawy. Znajdź idealny prezent na każdą okazję, który zachwyci każdego kawosza.",
                     "title": "Prezenty dla kawoszy",
-                    "link": "portfolio-details-1.html",
+                    "link": "produkty/prezenty",
                     "heroSection": {
                         "title": "Prezenty dla kawoszy",
                         "subtitle": "Znajdź idealny prezent na każdą okazję, który zachwyci każdego kawosza.",
@@ -1360,7 +1363,7 @@
                     "path": "produkty/akcesoria",
                     "shortDescription": "Wszechstronne akcesoria do parzenia kawy, w tym tłoczki, dysze parowe, filtry i wiele innych. Wszystko, czego potrzebujesz, aby cieszyć się doskonałą kawą każdego dnia.",
                     "title": "Wszytko co potrzebujesz",
-                    "link": "portfolio-details-1.html",
+                    "link": "produkty/akcesoria",
                     "heroSection": {
                         "title": "Akcesoria nie tylko do kawy",
                         "subtitle": "Wszystko, czego potrzebujesz, aby cieszyć się doskonałą kawą każdego dnia.",
@@ -1463,7 +1466,7 @@
                     "path": "produkty/konserwacja",
                     "shortDescription": "Profesjonalne produkty do konserwacji ekspresów, które zapewniają długą żywotność urządzeń i najwyższą jakość parzenia kawy. Oferujemy środki czyszczące i akcesoria do regularnej pielęgnacji.",
                     "title": "Konserwacja",
-                    "link": "portfolio-details-1.html",
+                    "link": "produkty/konserwacja",
                     "heroSection": {
                         "title": "Konserwacja",
                         "subtitle": "Długa żywotność urządzeń i najwyższą jakość parzenia kawy",
@@ -1967,7 +1970,44 @@
             "link": "/kontakt",
             "pageTitle": "Kontakt",
             "title": "Skontaktuj się z nami",
-            "subtitle": "Masz pytania? Napisz do nas!"
+            "subtitle": "Masz pytania? Napisz do nas!",
+            "AddressBiuro": {
+                "nazwa": "Biuro",
+                "adres": "ul. Świerkowa 9B",
+                "kodPocztowy": "37-464",
+                "telefon": "15 8787878",
+                "email": "sklep@konesso.pl",
+                "godziny": "8:00 - 16:00",
+                "kom": "544 566 544"
+            },
+            "AddressWsparcie": {
+                "nazwa": "Dział Wsparcia Technicznego",
+                "adres": "ul. Komunalna 6",
+                "kodPocztowy": "37-403",
+                "telefon": "15 649 95 15",
+                "email": "rma@konesso.pl",
+                "godziny": "8:00 - 16:00"
+            },
+            "AddressKlient": {
+                "nazwa": "Dział Obsługi Klienta",
+                "adres": "ul. Świerkowa 9B",
+                "kodPocztowy": "37-403",
+                "telefon": "17 777 01 30",
+                "email": "rma@konesso.pl",
+                "godziny": "8:00 - 16:00"
+            },
+            "OtherInfo": {
+                "owner": "Grzegorz Bieńko",
+                "adres": "ul. Świerkowa 9B",
+                "kodPocztowy": "37-403",
+                "kraj": "Polska",
+                "nip": "8652432155",
+                "bank": "PKO Inteligo",
+                "nrKonta": "42102049390000020200420083",
+                "regon": "180336447",
+                "informacjaDodatkowa": "Zarejestrowany w Centralnej Ewidencji i Informacji o Działalności Gospodarczej (CEIDG), prowadzonej przez Ministra właściwego do spraw gospodarki.",
+                "punktKontaktowy": "Usługodawca wyznacza adres poczty elektronicznej sklep@konesso.pl jako pojedynczy punkt kontaktowy. Punkt kontaktowy umożliwia bezpośrednią komunikację Usługodawcy z organami państw członkowskich, Komisją Europejską i Radą Usług Cyfrowych oraz jednocześnie umożliwia odbiorcom usługi (w tym Usługobiorcom) bezpośrednią, szybką i przyjazną komunikację z Usługodawcą drogą elektroniczną, na potrzeby stosowania Aktu o Usługach Cyfrowych. Usługodawca wskazuje język polski oraz język angielski do celów komunikacji z jego punktem kontaktowym."
+            }
         },
         {
             "name": "FAQPage",
